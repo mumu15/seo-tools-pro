@@ -89,6 +89,40 @@ export default function CharacterCounter() {
           <button onClick={() => setText('')} className="btn-secondary">Clear</button>
           <button onClick={() => navigator.clipboard.writeText(text)} className="btn-secondary">Copy Text</button>
         </div>
+
+        <div className="space-y-6 mt-12">
+          <div className="result-box">
+            <h2 className="text-xl font-display font-bold text-white mb-4">Free Online Character Counter</h2>
+            <p className="text-slate-400 text-sm leading-relaxed">Our free character counter tool counts characters instantly as you type. It shows characters with spaces, characters without spaces, word count and line count. It also shows you exactly how many characters you have used compared to the limits of popular platforms like Twitter, Instagram, LinkedIn and more.</p>
+          </div>
+          <div className="result-box">
+            <h2 className="text-xl font-display font-bold text-white mb-4">Character Limits for Popular Platforms</h2>
+            <div className="text-slate-400 text-sm leading-relaxed space-y-3">
+              <p><strong className="text-white">Twitter/X</strong> has a limit of 280 characters per tweet. This includes spaces and punctuation. URLs count as 23 characters regardless of their actual length.</p>
+              <p><strong className="text-white">Instagram</strong> captions can be up to 2,200 characters but only the first 125 characters show before the "more" button. Instagram bios are limited to 150 characters.</p>
+              <p><strong className="text-white">LinkedIn</strong> posts can be up to 3,000 characters. Articles on LinkedIn can be much longer.</p>
+              <p><strong className="text-white">Meta descriptions</strong> should be under 160 characters. Google typically displays the first 155-160 characters in search results.</p>
+              <p><strong className="text-white">SMS messages</strong> are limited to 160 characters per message. Longer messages are split into multiple SMS which costs more to send.</p>
+            </div>
+          </div>
+          <div className="result-box">
+            <h2 className="text-xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+            <div className="space-y-4 text-sm">
+              <div className="border-b pb-4" style={{borderColor: "rgba(52,211,153,0.1)"}}>
+                <h3 className="text-white font-semibold mb-2">What is the difference between characters with and without spaces?</h3>
+                <p className="text-slate-400">Characters with spaces counts every character including spaces. Characters without spaces only counts letters, numbers and punctuation. Most social media platforms count spaces as characters.</p>
+              </div>
+              <div className="border-b pb-4" style={{borderColor: "rgba(52,211,153,0.1)"}}>
+                <h3 className="text-white font-semibold mb-2">Is this character counter free?</h3>
+                <p className="text-slate-400">Yes, completely free with no sign up required and no usage limits.</p>
+              </div>
+              <div className="pb-4">
+                <h3 className="text-white font-semibold mb-2">Does it work on mobile?</h3>
+                <p className="text-slate-400">Yes, our character counter works on all devices including phones and tablets.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <Footer />
     </>
