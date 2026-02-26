@@ -9,7 +9,7 @@ export default function ReadabilityChecker() {
   const analyze = useCallback(() => {
     if (!text.trim()) return null
     const words = text.trim().split(/\s+/).length
-    const sentences = (text.match(/[^.!?]*[.!?]+/g) || [text]).length
+    const sentences = (text.match(/[^.!?]+[.!?]+/g) || [text]).length
     const syllables = text.toLowerCase().replace(/[^a-z]/g, ' ').split(/\s+/).reduce((acc, word) => {
       if (!word) return acc
       const count = word.replace(/[^aeiouy]/g, '').replace(/[aeiou]{2,}/g, 'a').length || 1
@@ -42,7 +42,7 @@ export default function ReadabilityChecker() {
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
             Readability Checker
           </h1>
-          <p className="text-slate-400 text-lg">Check your content's readability using the Flesch-Kincaid formula</p>
+          <p className="text-slate-400 text-lg">Check your content readability using the Flesch-Kincaid formula</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -65,7 +65,6 @@ export default function ReadabilityChecker() {
               </div>
             ) : (
               <div className="space-y-4">
-                {/* Score Circle */}
                 <div className="result-box text-center">
                   <div className="relative inline-flex items-center justify-center w-32 h-32 mb-4">
                     <svg className="w-32 h-32 -rotate-90" viewBox="0 0 120 120">
@@ -84,7 +83,6 @@ export default function ReadabilityChecker() {
                   <div className="text-slate-400 text-sm">{result.desc}</div>
                 </div>
 
-                {/* Stats */}
                 <div className="grid grid-cols-2 gap-3">
                   {[
                     { label: 'Words', value: result.words },
@@ -99,18 +97,45 @@ export default function ReadabilityChecker() {
                   ))}
                 </div>
 
-                {/* Tips */}
                 <div className="result-box">
                   <h4 className="text-white font-medium mb-2 text-sm">💡 Tips to Improve</h4>
                   <ul className="space-y-1 text-slate-400 text-xs">
-                    {result.avgWordsPerSentence > 20 && <li>• Shorten your sentences (aim for under 20 words)</li>}
-                    {result.avgSyllablesPerWord > 1.7 && <li>• Use simpler words with fewer syllables</li>}
+                    {parseFloat(result.avgWordsPerSentence) > 20 && <li>• Shorten your sentences (aim for under 20 words)</li>}
+                    {parseFloat(result.avgSyllablesPerWord) > 1.7 && <li>• Use simpler words with fewer syllables</li>}
                     {result.score < 60 && <li>• Break long paragraphs into shorter ones</li>}
                     {result.score >= 60 && <li>✅ Your content is readable for most audiences!</li>}
                   </ul>
                 </div>
               </div>
             )}
+          </div>
+        </div>
+
+        <div className="space-y-6 mt-12">
+          <div className="result-box">
+            <h2 className="text-xl font-display font-bold text-white mb-4">What is Readability?</h2>
+            <p className="text-slate-400 text-sm leading-relaxed">Readability measures how easy it is for a reader to understand your text. Content with high readability uses short sentences, simple words and clear structure. Content with low readability uses long sentences, complex words and dense paragraphs. For most online content, you should aim for a readability level that is accessible to a general audience.</p>
+          </div>
+          <div className="result-box">
+            <h2 className="text-xl font-display font-bold text-white mb-4">What is the Flesch-Kincaid Score?</h2>
+            <p className="text-slate-400 text-sm leading-relaxed">The Flesch-Kincaid Reading Ease score measures how easy a piece of English text is to read. The score ranges from 0 to 100. A higher score means the text is easier to read. The formula takes into account the average number of words per sentence and the average number of syllables per word. A score of 60-70 is considered standard and suitable for most general audiences.</p>
+          </div>
+          <div className="result-box">
+            <h2 className="text-xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+            <div className="space-y-4 text-sm">
+              <div className="border-b pb-4" style={{borderColor: "rgba(52,211,153,0.1)"}}>
+                <h3 className="text-white font-semibold mb-2">What readability score should I aim for?</h3>
+                <p className="text-slate-400">For blog posts and general web content, aim for a score of 60-70. For content aimed at professionals or experts, a score of 50-60 is acceptable. For content aimed at children or general consumers, aim for 70 or above.</p>
+              </div>
+              <div className="border-b pb-4" style={{borderColor: "rgba(52,211,153,0.1)"}}>
+                <h3 className="text-white font-semibold mb-2">How can I improve my readability score?</h3>
+                <p className="text-slate-400">Use shorter sentences, choose simpler words, break up long paragraphs, use bullet points and headings, and avoid jargon and technical terms where possible.</p>
+              </div>
+              <div className="pb-4">
+                <h3 className="text-white font-semibold mb-2">Is this readability checker free?</h3>
+                <p className="text-slate-400">Yes, completely free with no sign up required.</p>
+              </div>
+            </div>
           </div>
         </div>
       </main>
