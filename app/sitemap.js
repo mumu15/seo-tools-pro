@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://www.seotoolspro.net'
+  const baseUrl = 'https://wordcountertool.net'
   const pages = [
     '',
     '/word-counter',

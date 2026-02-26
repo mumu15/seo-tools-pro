@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  metadataBase: new URL('https://www.seotoolspro.net'),
+  metadataBase: new URL('https://www.wordcountertool.net'),
   title: {
     default: 'SEO Tools Pro – Free Online SEO & Writing Tools',
     template: '%s | SEO Tools Pro'
