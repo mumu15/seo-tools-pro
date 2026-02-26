@@ -24,12 +24,69 @@ export default function WordCounter() {
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-            Word Counter
-          </h1>
-          <p className="text-slate-400 text-lg">Count words, characters, sentences and more — instantly as you type</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Word Counter</h1>
+          <p className="text-slate-400 text-lg">Count words, characters, sentences and more instantly as you type</p>
         </div>
-
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-          {[
-            { label: 'Words', value: s.words, color:
+          <div className="stat-card"><div className="text-3xl font-display font-bold text-emerald-400">{s.words}</div><div className="text-slate-500 text-sm mt-1">Words</div></div>
+          <div className="stat-card"><div className="text-3xl font-display font-bold text-blue-400">{s.chars}</div><div className="text-slate-500 text-sm mt-1">Characters</div></div>
+          <div className="stat-card"><div className="text-3xl font-display font-bold text-purple-400">{s.sentences}</div><div className="text-slate-500 text-sm mt-1">Sentences</div></div>
+          <div className="stat-card"><div className="text-3xl font-display font-bold text-yellow-400">{s.readTime} min</div><div className="text-slate-500 text-sm mt-1">Read Time</div></div>
+        </div>
+        <div className="mb-6">
+          <textarea value={text} onChange={e => setText(e.target.value)} placeholder="Start typing or paste your text here..." rows={12} className="text-base" />
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8">
+          <div className="stat-card"><div className="text-2xl font-display font-bold text-white">{s.charsNoSpaces}</div><div className="text-slate-500 text-sm mt-1">Characters (no spaces)</div></div>
+          <div className="stat-card"><div className="text-2xl font-display font-bold text-white">{s.paragraphs}</div><div className="text-slate-500 text-sm mt-1">Paragraphs</div></div>
+          <div className="stat-card"><div className="text-2xl font-display font-bold text-white">{s.uniqueWords}</div><div className="text-slate-500 text-sm mt-1">Unique Words</div></div>
+        </div>
+        <div className="flex gap-3">
+          <button onClick={() => setText('')} className="btn-secondary">Clear Text</button>
+          <button onClick={() => navigator.clipboard.writeText(text)} className="btn-secondary">Copy Text</button>
+        </div>
+        <div className="space-y-6 mt-12">
+          <div className="result-box">
+            <h2 className="text-xl font-display font-bold text-white mb-4">Free Online Word Counter Tool</h2>
+            <p className="text-slate-400 text-sm leading-relaxed">Our free word counter tool instantly counts words, characters, sentences, paragraphs and reading time as you type. Perfect for students writing essays, bloggers checking article length, social media managers counting post length, and writers meeting manuscript requirements. No sign up required.</p>
+          </div>
+          <div className="result-box">
+            <h2 className="text-xl font-display font-bold text-white mb-4">How to Use the Word Counter</h2>
+            <p className="text-slate-400 text-sm leading-relaxed">Just type or paste your text into the text box above and the results update instantly. The tool automatically counts your words, characters, sentences, paragraphs, reading time and unique words in real time. To clear the text, click the Clear Text button. To copy your text, use the Copy Text button.</p>
+          </div>
+          <div className="result-box">
+            <h2 className="text-xl font-display font-bold text-white mb-4">Who Uses a Word Counter?</h2>
+            <div className="text-slate-400 text-sm leading-relaxed space-y-3">
+              <p><strong className="text-white">Students and academics</strong> use word counters to meet essay and assignment word count requirements.</p>
+              <p><strong className="text-white">Bloggers and content writers</strong> check article length for SEO. Blog posts of 1,500 to 2,000 words tend to rank better in Google.</p>
+              <p><strong className="text-white">Social media managers</strong> count characters for Twitter (280), Instagram (2,200) and LinkedIn (3,000).</p>
+              <p><strong className="text-white">Authors and novelists</strong> track manuscript word counts. A typical novel is 70,000 to 100,000 words.</p>
+            </div>
+          </div>
+          <div className="result-box">
+            <h2 className="text-xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+            <div className="space-y-4 text-sm">
+              <div className="border-b pb-4" style={{borderColor:"rgba(52,211,153,0.1)"}}>
+                <h3 className="text-white font-semibold mb-2">How does the word counter work?</h3>
+                <p className="text-slate-400">Our tool splits your text by spaces and punctuation to count individual words. It updates in real time as you type or paste text.</p>
+              </div>
+              <div className="border-b pb-4" style={{borderColor:"rgba(52,211,153,0.1)"}}>
+                <h3 className="text-white font-semibold mb-2">Is this word counter free?</h3>
+                <p className="text-slate-400">Yes, completely free. No sign up, no account required, no usage limits.</p>
+              </div>
+              <div className="border-b pb-4" style={{borderColor:"rgba(52,211,153,0.1)"}}>
+                <h3 className="text-white font-semibold mb-2">How is reading time calculated?</h3>
+                <p className="text-slate-400">Reading time is based on an average reading speed of 200 words per minute.</p>
+              </div>
+              <div className="pb-4">
+                <h3 className="text-white font-semibold mb-2">Is my text saved or stored?</h3>
+                <p className="text-slate-400">No. All processing happens in your browser. Your text never leaves your device.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
+  )
+}
