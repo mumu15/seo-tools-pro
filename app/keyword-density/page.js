@@ -50,7 +50,6 @@ export default function KeywordDensity() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Input */}
           <div>
             <div className="flex items-center justify-between mb-3">
               <label className="text-white font-medium">Your Content</label>
@@ -78,7 +77,6 @@ export default function KeywordDensity() {
             </div>
           </div>
 
-          {/* Results */}
           <div>
             <h3 className="text-white font-medium mb-3">Top Keywords</h3>
             {result.words.length === 0 ? (
@@ -123,13 +121,38 @@ export default function KeywordDensity() {
           </div>
         </div>
 
-        <div className="result-box mt-12">
-          <h2 className="text-xl font-display font-bold text-white mb-4">About Keyword Density</h2>
-          <p className="text-slate-400 text-sm leading-relaxed">
-            Keyword density is the percentage of times a keyword appears in your content compared to the total word count. 
-            Ideal keyword density is typically 1–3%. Too low and Google may not associate your page with that keyword. 
-            Too high and you risk keyword stuffing penalties. Use this free tool to analyze your content before publishing.
-          </p>
+        <div className="space-y-6 mt-12">
+          <div className="result-box">
+            <h2 className="text-xl font-display font-bold text-white mb-4">What is Keyword Density?</h2>
+            <p className="text-slate-400 text-sm leading-relaxed">Keyword density is the percentage of times a keyword appears in your content compared to the total word count. For example, if your article is 1,000 words and your target keyword appears 15 times, the keyword density is 1.5%. Understanding keyword density is essential for SEO because it helps search engines understand what your content is about.</p>
+          </div>
+
+          <div className="result-box">
+            <h2 className="text-xl font-display font-bold text-white mb-4">What is the Ideal Keyword Density?</h2>
+            <p className="text-slate-400 text-sm leading-relaxed">The ideal keyword density is generally between 1% and 3%. Using your target keyword too rarely may mean Google does not associate your page with that keyword. Using it too frequently — above 5% — is called keyword stuffing and can result in Google penalties that lower your rankings. Always aim for natural, reader-friendly writing rather than forcing keywords into your content.</p>
+          </div>
+
+          <div className="result-box">
+            <h2 className="text-xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+            <div className="space-y-4 text-sm">
+              <div className="border-b pb-4" style={{borderColor: "rgba(52,211,153,0.1)"}}>
+                <h3 className="text-white font-semibold mb-2">How do I use the keyword density checker?</h3>
+                <p className="text-slate-400">Paste your article or blog post into the text box. The tool will automatically analyze all keywords and show their frequency and density percentage ranked from highest to lowest.</p>
+              </div>
+              <div className="border-b pb-4" style={{borderColor: "rgba(52,211,153,0.1)"}}>
+                <h3 className="text-white font-semibold mb-2">Does keyword density still matter for SEO?</h3>
+                <p className="text-slate-400">Yes, keyword density still matters but it is less important than it used to be. Modern SEO focuses more on topical relevance and natural language. However, having your target keyword appear at a natural frequency (1-3%) still helps Google understand your page topic.</p>
+              </div>
+              <div className="border-b pb-4" style={{borderColor: "rgba(52,211,153,0.1)"}}>
+                <h3 className="text-white font-semibold mb-2">What are stop words?</h3>
+                <p className="text-slate-400">Stop words are common words like "the", "and", "for" that are filtered out from keyword analysis because they appear in almost every piece of text and have no SEO value.</p>
+              </div>
+              <div className="pb-4">
+                <h3 className="text-white font-semibold mb-2">Is this keyword density checker free?</h3>
+                <p className="text-slate-400">Yes, completely free with no sign up or usage limits required.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <Footer />
