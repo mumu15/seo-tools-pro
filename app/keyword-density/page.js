@@ -2,6 +2,15 @@
 import { useState, useCallback } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import FaqSchema from '../../components/FaqSchema'
+
+const faqs = [
+  { q: 'How do I use the keyword density checker?', a: 'Paste your article or blog post into the text box. The tool will automatically analyze all keywords and show their frequency and density percentage ranked from highest to lowest.' },
+  { q: 'What is the ideal keyword density?', a: 'The ideal keyword density is generally between 1% and 3%. Using your target keyword too rarely may mean Google does not associate your page with that keyword. Using it too frequently above 5% is called keyword stuffing and can result in Google penalties.' },
+  { q: 'Does keyword density still matter for SEO?', a: 'Yes, keyword density still matters but it is less important than it used to be. Modern SEO focuses more on topical relevance and natural language. However having your target keyword appear at a natural frequency of 1-3% still helps Google understand your page topic.' },
+  { q: 'What are stop words?', a: 'Stop words are common words like the, and, for that are filtered out from keyword analysis because they appear in almost every piece of text and have no SEO value.' },
+  { q: 'Is this keyword density checker free?', a: 'Yes, completely free with no sign up or usage limits required.' },
+]
 
 export default function KeywordDensity() {
   const [text, setText] = useState('')
@@ -21,11 +30,7 @@ export default function KeywordDensity() {
     const sorted = Object.entries(freq)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 20)
-      .map(([word, count]) => ({
-        word,
-        count,
-        density: ((count / total) * 100).toFixed(2)
-      }))
+      .map(([word, count]) => ({ word, count, density: ((count / total) * 100).toFixed(2) }))
     return { words: sorted, total }
   }, [text, minLength])
 
@@ -40,12 +45,11 @@ export default function KeywordDensity() {
 
   return (
     <>
+      <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-            Keyword Density Checker
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Keyword Density Checker</h1>
           <p className="text-slate-400 text-lg">Analyze keyword frequency and density — optimize your content for SEO</p>
         </div>
 
@@ -55,22 +59,14 @@ export default function KeywordDensity() {
               <label className="text-white font-medium">Your Content</label>
               <div className="flex items-center gap-2">
                 <span className="text-slate-500 text-sm">Min word length:</span>
-                <select
-                  value={minLength}
-                  onChange={e => setMinLength(Number(e.target.value))}
+                <select value={minLength} onChange={e => setMinLength(Number(e.target.value))}
                   className="bg-dark-800 border border-dark-600 text-white text-sm rounded-lg px-2 py-1"
-                  style={{ background: '#0f172a', border: '1px solid #1e293b' }}
-                >
+                  style={{ background: '#0f172a', border: '1px solid #1e293b' }}>
                   {[3,4,5,6].map(n => <option key={n} value={n}>{n}+</option>)}
                 </select>
               </div>
             </div>
-            <textarea
-              value={text}
-              onChange={e => setText(e.target.value)}
-              placeholder="Paste your article or blog post here..."
-              rows={14}
-            />
+            <textarea value={text} onChange={e => setText(e.target.value)} placeholder="Paste your article or blog post here..." rows={14} />
             <div className="flex gap-3 mt-3">
               <button onClick={() => setText('')} className="btn-secondary text-sm">Clear</button>
               <span className="text-slate-600 text-sm self-center">{result.total} words analyzed</span>
@@ -93,21 +89,14 @@ export default function KeywordDensity() {
                       <span className="text-white font-medium">{kw.word}</span>
                     </div>
                     <div className="flex items-center gap-4">
-                      <div className="w-24">
-                        <div className="progress-bar">
-                          <div className="progress-fill" style={{ width: `${Math.min(100, parseFloat(kw.density) * 20)}%` }} />
-                        </div>
-                      </div>
+                      <div className="w-24"><div className="progress-bar"><div className="progress-fill" style={{ width: `${Math.min(100, parseFloat(kw.density) * 20)}%` }} /></div></div>
                       <span className="text-slate-500 text-xs w-6 text-right">{kw.count}x</span>
-                      <span className={`text-sm font-mono font-bold w-14 text-right ${getDensityColor(kw.density)}`}>
-                        {kw.density}%
-                      </span>
+                      <span className={`text-sm font-mono font-bold w-14 text-right ${getDensityColor(kw.density)}`}>{kw.density}%</span>
                     </div>
                   </div>
                 ))}
               </div>
             )}
-
             {result.words.length > 0 && (
               <div className="result-box mt-4">
                 <h4 className="text-white font-medium mb-2 text-sm">Density Guide</h4>
@@ -124,33 +113,17 @@ export default function KeywordDensity() {
         <div className="space-y-6 mt-12">
           <div className="result-box">
             <h2 className="text-xl font-display font-bold text-white mb-4">What is Keyword Density?</h2>
-            <p className="text-slate-400 text-sm leading-relaxed">Keyword density is the percentage of times a keyword appears in your content compared to the total word count. For example, if your article is 1,000 words and your target keyword appears 15 times, the keyword density is 1.5%. Understanding keyword density is essential for SEO because it helps search engines understand what your content is about.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">Keyword density is the percentage of times a keyword appears in your content compared to the total word count. Understanding keyword density is essential for SEO because it helps search engines understand what your content is about. The ideal keyword density is between 1% and 3%.</p>
           </div>
-
-          <div className="result-box">
-            <h2 className="text-xl font-display font-bold text-white mb-4">What is the Ideal Keyword Density?</h2>
-            <p className="text-slate-400 text-sm leading-relaxed">The ideal keyword density is generally between 1% and 3%. Using your target keyword too rarely may mean Google does not associate your page with that keyword. Using it too frequently — above 5% — is called keyword stuffing and can result in Google penalties that lower your rankings. Always aim for natural, reader-friendly writing rather than forcing keywords into your content.</p>
-          </div>
-
           <div className="result-box">
             <h2 className="text-xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
             <div className="space-y-4 text-sm">
-              <div className="border-b pb-4" style={{borderColor: "rgba(52,211,153,0.1)"}}>
-                <h3 className="text-white font-semibold mb-2">How do I use the keyword density checker?</h3>
-                <p className="text-slate-400">Paste your article or blog post into the text box. The tool will automatically analyze all keywords and show their frequency and density percentage ranked from highest to lowest.</p>
-              </div>
-              <div className="border-b pb-4" style={{borderColor: "rgba(52,211,153,0.1)"}}>
-                <h3 className="text-white font-semibold mb-2">Does keyword density still matter for SEO?</h3>
-                <p className="text-slate-400">Yes, keyword density still matters but it is less important than it used to be. Modern SEO focuses more on topical relevance and natural language. However, having your target keyword appear at a natural frequency (1-3%) still helps Google understand your page topic.</p>
-              </div>
-              <div className="border-b pb-4" style={{borderColor: "rgba(52,211,153,0.1)"}}>
-                <h3 className="text-white font-semibold mb-2">What are stop words?</h3>
-                <p className="text-slate-400">Stop words are common words like "the", "and", "for" that are filtered out from keyword analysis because they appear in almost every piece of text and have no SEO value.</p>
-              </div>
-              <div className="pb-4">
-                <h3 className="text-white font-semibold mb-2">Is this keyword density checker free?</h3>
-                <p className="text-slate-400">Yes, completely free with no sign up or usage limits required.</p>
-              </div>
+              {faqs.map((faq, i) => (
+                <div key={i} className={i < faqs.length - 1 ? "border-b pb-4" : "pb-4"} style={{borderColor:"rgba(52,211,153,0.1)"}}>
+                  <h3 className="text-white font-semibold mb-2">{faq.q}</h3>
+                  <p className="text-slate-400">{faq.a}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
