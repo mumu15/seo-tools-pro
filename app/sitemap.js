@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://wordcountertool.net'
+  const baseUrl = 'https://www.wordcountertool.net'
   const pages = [
     '',
     '/word-counter',
@@ -8,6 +8,9 @@ export default function sitemap() {
     '/readability-checker',
     '/character-counter',
     '/sentence-counter',
+    '/about',
+    '/contact',
+    '/privacy-policy',
   ]
   return pages.map(page => ({
     url: `${baseUrl}${page}`,
