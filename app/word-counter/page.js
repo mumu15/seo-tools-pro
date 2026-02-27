@@ -2,6 +2,15 @@
 import { useState, useCallback } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import FaqSchema from '../../components/FaqSchema'
+
+const faqs = [
+  { q: 'How does the word counter work?', a: 'Our tool splits your text by spaces and punctuation to count individual words. It updates in real time as you type or paste text.' },
+  { q: 'Is this word counter free?', a: 'Yes, completely free. No sign up, no account required, no usage limits.' },
+  { q: 'How is reading time calculated?', a: 'Reading time is based on an average reading speed of 200 words per minute, which is the typical adult reading speed.' },
+  { q: 'Is my text saved or stored?', a: 'No. All processing happens in your browser. Your text never leaves your device and is never stored on our servers.' },
+  { q: 'What is a unique word count?', a: 'Unique word count shows how many different words you have used. A high unique word count indicates rich vocabulary and varied writing.' },
+]
 
 export default function WordCounter() {
   const [text, setText] = useState('')
@@ -21,6 +30,7 @@ export default function WordCounter() {
 
   return (
     <>
+      <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">
@@ -66,22 +76,12 @@ export default function WordCounter() {
           <div className="result-box">
             <h2 className="text-xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
             <div className="space-y-4 text-sm">
-              <div className="border-b pb-4" style={{borderColor:"rgba(52,211,153,0.1)"}}>
-                <h3 className="text-white font-semibold mb-2">How does the word counter work?</h3>
-                <p className="text-slate-400">Our tool splits your text by spaces and punctuation to count individual words. It updates in real time as you type or paste text.</p>
-              </div>
-              <div className="border-b pb-4" style={{borderColor:"rgba(52,211,153,0.1)"}}>
-                <h3 className="text-white font-semibold mb-2">Is this word counter free?</h3>
-                <p className="text-slate-400">Yes, completely free. No sign up, no account required, no usage limits.</p>
-              </div>
-              <div className="border-b pb-4" style={{borderColor:"rgba(52,211,153,0.1)"}}>
-                <h3 className="text-white font-semibold mb-2">How is reading time calculated?</h3>
-                <p className="text-slate-400">Reading time is based on an average reading speed of 200 words per minute.</p>
-              </div>
-              <div className="pb-4">
-                <h3 className="text-white font-semibold mb-2">Is my text saved or stored?</h3>
-                <p className="text-slate-400">No. All processing happens in your browser. Your text never leaves your device.</p>
-              </div>
+              {faqs.map((faq, i) => (
+                <div key={i} className={i < faqs.length - 1 ? "border-b pb-4" : "pb-4"} style={{borderColor:"rgba(52,211,153,0.1)"}}>
+                  <h3 className="text-white font-semibold mb-2">{faq.q}</h3>
+                  <p className="text-slate-400">{faq.a}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
