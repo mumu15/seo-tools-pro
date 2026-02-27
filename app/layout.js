@@ -7,11 +7,37 @@ export const metadata = {
     template: '%s | WordCounterTool.net'
   },
   description: 'Free professional word counter and SEO writing tools. Word counter, keyword density checker, meta tag generator, readability checker and more. Instant results, no sign up.',
-  keywords: ['word counter', 'keyword density checker', 'meta tag generator', 'readability checker', 'seo tools', 'free seo tools'],
+  keywords: ['word counter', 'keyword density checker', 'meta tag generator', 'readability checker', 'character counter', 'sentence counter', 'free seo tools'],
+  authors: [{ name: 'WordCounterTool.net' }],
+  creator: 'WordCounterTool.net',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.wordcountertool.net',
+    siteName: 'WordCounterTool.net',
+    title: 'WordCounterTool.net – Free Online Word Counter & SEO Tools',
+    description: 'Free professional word counter and SEO writing tools. Word counter, keyword density checker, meta tag generator, readability checker and more. Instant results, no sign up.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'WordCounterTool.net – Free Online Word Counter & SEO Tools',
+    description: 'Free professional word counter and SEO writing tools. Instant results, no sign up.',
+    site: '@wordcountertool',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: '/favicon.svg',
   },
-  robots: { index: true, follow: true }
 }
 
 export default function RootLayout({ children }) {
