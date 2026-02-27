@@ -2,6 +2,15 @@
 import { useState, useCallback } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import FaqSchema from '../../components/FaqSchema'
+
+const faqs = [
+  { q: 'What is the Flesch-Kincaid reading ease score?', a: 'The Flesch-Kincaid Reading Ease score measures how easy a piece of English text is to read. The score ranges from 0 to 100. A higher score means the text is easier to read. A score of 60-70 is considered standard and suitable for most general audiences.' },
+  { q: 'What readability score should I aim for?', a: 'For blog posts and general web content, aim for a score of 60-70. For content aimed at professionals or experts, a score of 50-60 is acceptable. For content aimed at children or general consumers, aim for 70 or above.' },
+  { q: 'How can I improve my readability score?', a: 'Use shorter sentences, choose simpler words, break up long paragraphs, use bullet points and headings, and avoid jargon and technical terms where possible.' },
+  { q: 'Why does readability matter for SEO?', a: 'Google uses readability as a ranking factor. Content that is easy to read tends to have lower bounce rates and higher engagement, which signals to Google that your content is valuable. Readable content also ranks better for featured snippets.' },
+  { q: 'Is this readability checker free?', a: 'Yes, completely free with no sign up required.' },
+]
 
 export default function ReadabilityChecker() {
   const [text, setText] = useState('')
@@ -36,24 +45,18 @@ export default function ReadabilityChecker() {
 
   return (
     <>
+      <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-            Readability Checker
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Readability Checker</h1>
           <p className="text-slate-400 text-lg">Check your content readability using the Flesch-Kincaid formula</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
             <label className="text-white font-medium block mb-3">Your Content</label>
-            <textarea
-              value={text}
-              onChange={e => setText(e.target.value)}
-              placeholder="Paste your article, blog post or any text here..."
-              rows={14}
-            />
+            <textarea value={text} onChange={e => setText(e.target.value)} placeholder="Paste your article, blog post or any text here..." rows={14} />
             <button onClick={() => setText('')} className="btn-secondary mt-3 text-sm">Clear</button>
           </div>
 
@@ -82,7 +85,6 @@ export default function ReadabilityChecker() {
                   <div className="text-xl font-display font-bold text-white mb-1">{result.level}</div>
                   <div className="text-slate-400 text-sm">{result.desc}</div>
                 </div>
-
                 <div className="grid grid-cols-2 gap-3">
                   {[
                     { label: 'Words', value: result.words },
@@ -96,7 +98,6 @@ export default function ReadabilityChecker() {
                     </div>
                   ))}
                 </div>
-
                 <div className="result-box">
                   <h4 className="text-white font-medium mb-2 text-sm">💡 Tips to Improve</h4>
                   <ul className="space-y-1 text-slate-400 text-xs">
@@ -114,27 +115,17 @@ export default function ReadabilityChecker() {
         <div className="space-y-6 mt-12">
           <div className="result-box">
             <h2 className="text-xl font-display font-bold text-white mb-4">What is Readability?</h2>
-            <p className="text-slate-400 text-sm leading-relaxed">Readability measures how easy it is for a reader to understand your text. Content with high readability uses short sentences, simple words and clear structure. Content with low readability uses long sentences, complex words and dense paragraphs. For most online content, you should aim for a readability level that is accessible to a general audience.</p>
-          </div>
-          <div className="result-box">
-            <h2 className="text-xl font-display font-bold text-white mb-4">What is the Flesch-Kincaid Score?</h2>
-            <p className="text-slate-400 text-sm leading-relaxed">The Flesch-Kincaid Reading Ease score measures how easy a piece of English text is to read. The score ranges from 0 to 100. A higher score means the text is easier to read. The formula takes into account the average number of words per sentence and the average number of syllables per word. A score of 60-70 is considered standard and suitable for most general audiences.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">Readability measures how easy it is for a reader to understand your text. Content with high readability uses short sentences, simple words and clear structure. For most online content, you should aim for a readability level that is accessible to a general audience with a Flesch-Kincaid score of 60 or above.</p>
           </div>
           <div className="result-box">
             <h2 className="text-xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
             <div className="space-y-4 text-sm">
-              <div className="border-b pb-4" style={{borderColor: "rgba(52,211,153,0.1)"}}>
-                <h3 className="text-white font-semibold mb-2">What readability score should I aim for?</h3>
-                <p className="text-slate-400">For blog posts and general web content, aim for a score of 60-70. For content aimed at professionals or experts, a score of 50-60 is acceptable. For content aimed at children or general consumers, aim for 70 or above.</p>
-              </div>
-              <div className="border-b pb-4" style={{borderColor: "rgba(52,211,153,0.1)"}}>
-                <h3 className="text-white font-semibold mb-2">How can I improve my readability score?</h3>
-                <p className="text-slate-400">Use shorter sentences, choose simpler words, break up long paragraphs, use bullet points and headings, and avoid jargon and technical terms where possible.</p>
-              </div>
-              <div className="pb-4">
-                <h3 className="text-white font-semibold mb-2">Is this readability checker free?</h3>
-                <p className="text-slate-400">Yes, completely free with no sign up required.</p>
-              </div>
+              {faqs.map((faq, i) => (
+                <div key={i} className={i < faqs.length - 1 ? "border-b pb-4" : "pb-4"} style={{borderColor:"rgba(52,211,153,0.1)"}}>
+                  <h3 className="text-white font-semibold mb-2">{faq.q}</h3>
+                  <p className="text-slate-400">{faq.a}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
