@@ -8,6 +8,8 @@ export default function sitemap() {
     '/readability-checker',
     '/character-counter',
     '/sentence-counter',
+    '/words-per-page',
+    '/reading-time',
     '/about',
     '/contact',
     '/privacy-policy',
