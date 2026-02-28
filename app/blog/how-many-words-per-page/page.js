@@ -4,7 +4,7 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  title: 'How Many Words Per Page? Complete Guide (2024)',
+  title: 'How Many Words Per Page? Complete Guide (2026)',
   description: 'Find out exactly how many words per page for any font, font size and spacing. Includes double spaced, single spaced and common essay formats.',
 }
 
@@ -26,8 +26,8 @@ export default function HowManyWordsPerPage() {
           <Link href="/blog" className="text-emerald-400 text-sm hover:underline">← Back to Blog</Link>
         </div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">How Many Words Per Page? Complete Guide (2024)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated January 2024 · 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">How Many Words Per Page? Complete Guide (2026)</h1>
+          <p className="text-slate-400 text-sm mb-8">Updated February 2026 · 8 min read</p>
 
           <div className="result-box mb-8 border-emerald-500/30">
             <h2 className="text-emerald-400 font-bold mb-3">Quick Answer</h2>

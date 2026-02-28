@@ -25,7 +25,7 @@ export default function HowManyWordsInANovel() {
         <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">← Back to Blog</Link></div>
         <article>
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">How Many Words in a Novel? Word Counts for Every Genre</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated January 2024 · 8 min read</p>
+          <p className="text-slate-400 text-sm mb-8">Updated February 2026 · 8 min read</p>
 
           <div className="result-box mb-8 border-emerald-500/30">
             <h2 className="text-emerald-400 font-bold mb-3">Quick Answer</h2>

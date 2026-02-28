@@ -4,7 +4,7 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  title: 'What is Keyword Density? The Complete SEO Guide (2024)',
+  title: 'What is Keyword Density? The Complete SEO Guide (2026)',
   description: 'Learn what keyword density is, what the ideal percentage is, and how to optimize your content for search engines without keyword stuffing.',
 }
 
@@ -24,8 +24,8 @@ export default function WhatIsKeywordDensity() {
       <main className="max-w-4xl mx-auto px-4 py-12">
         <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">← Back to Blog</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">What is Keyword Density? The Complete SEO Guide (2024)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated January 2024 · 9 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">What is Keyword Density? The Complete SEO Guide (2026)</h1>
+          <p className="text-slate-400 text-sm mb-8">Updated February 2026 · 9 min read</p>
 
           <div className="result-box mb-8 border-emerald-500/30">
             <h2 className="text-emerald-400 font-bold mb-3">Quick Answer</h2>
