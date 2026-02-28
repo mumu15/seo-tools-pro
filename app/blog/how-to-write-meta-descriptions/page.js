@@ -12,7 +12,7 @@ const faqs = [
   { q: 'How long should a meta description be?', a: 'Meta descriptions should be 150-160 characters. Google truncates longer descriptions. Aim for 150-155 to be safe.' },
   { q: 'Do meta descriptions affect SEO rankings?', a: 'Meta descriptions do not directly affect rankings but significantly affect click through rate which indirectly influences rankings.' },
   { q: 'What happens if I do not write a meta description?', a: 'Google will automatically generate one from your page content. Auto-generated descriptions are often poorly written and do not encourage clicks.' },
-  { q: 'Should I include keywords in my meta description?', a: 'Yes. Google bolds keywords in meta descriptions when they match the search query which catches the searcher's eye.' },
+  { q: 'Should I include keywords in my meta description?', a: 'Yes. Google bolds keywords in meta descriptions when they match the search query which catches the searcher eye.' },
   { q: 'Can I use the same meta description on multiple pages?', a: 'No. Every page should have a unique meta description. Duplicate descriptions reduce click through rate.' },
 ]
 
