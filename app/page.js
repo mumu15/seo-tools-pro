@@ -4,46 +4,60 @@ import Footer from '../components/Footer'
 
 const tools = [
   {
+    title: 'Word Counter',
+    description: 'Count words, characters, sentences, paragraphs and reading time instantly.',
     href: '/word-counter',
     icon: '📝',
-    title: 'Word Counter',
-    description: 'Count words, characters, sentences and paragraphs instantly. Perfect for essays, articles and social media posts.',
-    tags: ['Writing', 'Free'],
+    color: 'from-emerald-500 to-teal-500',
   },
   {
+    title: 'Keyword Density Checker',
+    description: 'Analyze keyword frequency and density to optimize your content for SEO.',
     href: '/keyword-density',
     icon: '🔍',
-    title: 'Keyword Density Checker',
-    description: 'Analyze keyword frequency and density in your content. Optimize your text for better SEO rankings.',
-    tags: ['SEO', 'Free'],
+    color: 'from-blue-500 to-cyan-500',
   },
   {
+    title: 'Meta Tag Generator',
+    description: 'Generate perfect meta tags for SEO, Facebook and Twitter sharing.',
     href: '/meta-tag-generator',
     icon: '🏷️',
-    title: 'Meta Tag Generator',
-    description: 'Generate perfect meta titles and descriptions for your web pages. Preview how they appear in Google search results.',
-    tags: ['SEO', 'Free'],
+    color: 'from-purple-500 to-pink-500',
   },
   {
+    title: 'Readability Checker',
+    description: 'Check your content readability score using the Flesch-Kincaid formula.',
     href: '/readability-checker',
     icon: '📖',
-    title: 'Readability Checker',
-    description: 'Check the readability score of your content using Flesch-Kincaid formula. Make your writing clearer.',
-    tags: ['Writing', 'Free'],
+    color: 'from-yellow-500 to-orange-500',
   },
   {
-    href: '/character-counter',
-    icon: '🔤',
     title: 'Character Counter',
-    description: 'Count characters with and without spaces. Essential for Twitter, Instagram bios, SMS and meta descriptions.',
-    tags: ['Writing', 'Free'],
+    description: 'Count characters for Twitter, Instagram, SMS, meta tags and more.',
+    href: '/character-counter',
+    icon: '🔢',
+    color: 'from-red-500 to-rose-500',
   },
   {
+    title: 'Sentence Counter',
+    description: 'Count sentences and analyze your writing structure and sentence length.',
     href: '/sentence-counter',
     icon: '📊',
-    title: 'Sentence Counter',
-    description: 'Count sentences and analyze average sentence length. Improve your writing structure and flow.',
-    tags: ['Writing', 'Free'],
+    color: 'from-indigo-500 to-violet-500',
+  },
+  {
+    title: 'Words Per Page Calculator',
+    description: 'Convert word counts to pages or pages to words for any font and spacing.',
+    href: '/words-per-page',
+    icon: '📄',
+    color: 'from-teal-500 to-emerald-500',
+  },
+  {
+    title: 'Reading Time Calculator',
+    description: 'Calculate how long it takes to read any article or text instantly.',
+    href: '/reading-time',
+    icon: '⏱️',
+    color: 'from-cyan-500 to-blue-500',
   },
 ]
 
@@ -51,96 +65,42 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
-        {/* Hero */}
-        <section className="relative pt-24 pb-20 px-4 text-center overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full opacity-5"
-              style={{ background: 'radial-gradient(circle, #10b981, transparent 70%)' }} />
+      <main className="max-w-6xl mx-auto px-4 py-16">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6"
+            style={{ background: 'rgba(52,211,153,0.1)', color: '#34d399', border: '1px solid rgba(52,211,153,0.2)' }}>
+            ✨ Free SEO Writing Tools — No Sign Up Required
           </div>
-          <div className="relative max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-dark-800 border border-emerald-500 border-opacity-20 rounded-full px-4 py-1.5 mb-6">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-emerald-400 text-sm font-medium">100% Free — No Sign Up Required</span>
-            </div>
-            <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6 leading-tight">
-              Free SEO &<br />
-              <span style={{ background: 'linear-gradient(135deg, #10b981, #34d399)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-                Writing Tools
-              </span>
-            </h1>
-            <p className="text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Professional tools for bloggers, writers, and marketers. Analyze your content, optimize for SEO, and write better — completely free.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/word-counter" className="btn-primary text-lg px-8 py-4 rounded-xl">
-                Try Word Counter →
-              </Link>
-              <Link href="/keyword-density" className="btn-secondary text-lg px-8 py-4 rounded-xl">
-                Keyword Density Tool
-              </Link>
-            </div>
-          </div>
-        </section>
+          <h1 className="text-5xl md:text-6xl font-display font-bold text-white mb-6 leading-tight">
+            Free Online<br />
+            <span className="text-emerald-400">Writing & SEO Tools</span>
+          </h1>
+          <p className="text-slate-400 text-xl max-w-2xl mx-auto leading-relaxed">
+            Professional word counting, SEO analysis and writing tools — completely free, instant results, no sign up required.
+          </p>
+        </div>
 
-        {/* Stats */}
-        <section className="max-w-4xl mx-auto px-4 mb-20">
-          <div className="grid grid-cols-3 gap-4">
-            {[
-              { value: '6+', label: 'Free Tools' },
-              { value: '100%', label: 'No Sign Up' },
-              { value: '∞', label: 'Unlimited Use' },
-            ].map((stat, i) => (
-              <div key={i} className="stat-card">
-                <div className="text-3xl font-display font-bold text-emerald-400">{stat.value}</div>
-                <div className="text-slate-500 text-sm mt-1">{stat.label}</div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {tools.map((tool) => (
+            <Link key={tool.href} href={tool.href}
+              className="group result-box hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1">
+              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${tool.color} flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform`}>
+                {tool.icon}
               </div>
-            ))}
-          </div>
-        </section>
+              <h2 className="text-white font-display font-bold text-lg mb-2 group-hover:text-emerald-400 transition-colors">
+                {tool.title}
+              </h2>
+              <p className="text-slate-400 text-sm leading-relaxed">{tool.description}</p>
+            </Link>
+          ))}
+        </div>
 
-        {/* Tools Grid */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-          <h2 className="text-3xl font-display font-bold text-white text-center mb-12">
-            All Free Tools
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {tools.map((tool, i) => (
-              <Link key={i} href={tool.href}>
-                <div className="tool-card rounded-2xl p-6 h-full cursor-pointer">
-                  <div className="text-4xl mb-4">{tool.icon}</div>
-                  <h3 className="text-xl font-display font-bold text-white mb-2">{tool.title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed mb-4">{tool.description}</p>
-                  <div className="flex gap-2 flex-wrap">
-                    {tool.tags.map(tag => (
-                      <span key={tag} className="text-xs px-2 py-1 rounded-full bg-emerald-500 bg-opacity-10 text-emerald-400 font-medium">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        {/* Why use section */}
-        <section className="max-w-4xl mx-auto px-4 pb-20">
-          <div className="result-box text-center">
-            <h2 className="text-2xl font-display font-bold text-white mb-4">Why Use SEOToolsPro?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              {[
-                { icon: '⚡', title: 'Instant Results', desc: 'No loading screens. Results appear as you type.' },
-                { icon: '🔒', title: 'Privacy First', desc: 'Your text never leaves your browser. 100% private.' },
-                { icon: '📱', title: 'Works Everywhere', desc: 'Desktop, tablet, mobile — works on all devices.' },
-              ].map((item, i) => (
-                <div key={i}>
-                  <div className="text-3xl mb-3">{item.icon}</div>
-                  <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                  <p className="text-slate-500 text-sm">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <div className="mt-20 result-box text-center">
+          <h2 className="text-3xl font-display font-bold text-white mb-4">Free SEO & Writing Tools</h2>
+          <p className="text-slate-400 text-sm leading-relaxed max-w-3xl mx-auto">
+            WordCounterTool.net provides free professional writing and SEO tools for students, bloggers, content writers, social media managers and SEO professionals. All tools work instantly in your browser with no sign up, no downloads and no usage limits. Count words, check keyword density, generate meta tags, analyze readability, count characters and more — all completely free.
+          </p>
+        </div>
       </main>
       <Footer />
     </>
