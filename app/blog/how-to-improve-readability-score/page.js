@@ -65,7 +65,7 @@ export default function Post() {
                   {num:'7',title:'Avoid jargon',desc:'Unless writing for experts avoid technical jargon. When you use a technical term explain it immediately after.'},
                   {num:'8',title:'Use transition words',desc:'Words like "however" and "therefore" help readers follow your logic and make content flow smoothly.'},
                   {num:'9',title:'Read your content aloud',desc:'If you stumble over a sentence aloud your readers will too. Rewrite any sentence that feels awkward.'},
-                  {num:'10',title:'Use contractions',desc:'Write "it's" instead of "it is". Contractions make writing more natural and improve your readability score.'},
+                  {num:'10',title:'Use contractions',desc:'Write 'it is' instead of "it is". Contractions make writing more natural and improve your readability score.'},
                 ].map((item,i)=>(
                   <div key={i} className="result-box flex gap-3">
                     <div className="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm flex-shrink-0">{item.num}</div>
