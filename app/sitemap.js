@@ -10,6 +10,7 @@ export default function sitemap() {
     '/sentence-counter',
     '/words-per-page',
     '/reading-time',
+    '/words-per-minute',
     '/about',
     '/contact',
     '/privacy-policy',
