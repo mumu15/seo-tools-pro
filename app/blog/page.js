@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 const posts = [
   { slug: 'how-many-words-per-page', title: 'How Many Words Per Page? Complete Guide (2026)', description: 'Find out exactly how many words per page for any font, font size and spacing. Includes double spaced, single spaced and common essay formats.', date: '2026-02-01' },
@@ -18,7 +18,7 @@ const posts = [
 
 export const metadata = {
   title: 'Blog – Writing & SEO Tips | WordCounterTool.net',
-  description: 'Free guides and tips on word counts, SEO writing, readability, keyword density and more. Expert advice for bloggers and content writers updated for 2026.',
+  description: 'Free guides and tips on word counts, SEO writing, readability, keyword density and more. Expert advice updated for 2026.',
 }
 
 export default function Blog() {
