@@ -11,6 +11,8 @@ export default function sitemap() {
     '/words-per-page',
     '/reading-time',
     '/words-per-minute',
+    '/hashtag-counter',
+    '/twitter-thread-counter',
     '/about',
     '/contact',
     '/privacy-policy',

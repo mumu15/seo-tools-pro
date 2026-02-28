@@ -11,6 +11,9 @@ const tools = [
   { name: 'Sentence Counter', href: '/sentence-counter' },
   { name: 'Words Per Page', href: '/words-per-page' },
   { name: 'Reading Time', href: '/reading-time' },
+  { name: 'WPM Test', href: '/words-per-minute' },
+  { name: 'Hashtag Counter', href: '/hashtag-counter' },
+  { name: 'Thread Counter', href: '/twitter-thread-counter' },
 ]
 
 export default function Header() {
@@ -26,10 +29,10 @@ export default function Header() {
             <span className="font-display font-bold text-white">SEOTools<span className="text-emerald-400">Pro</span></span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-1 overflow-x-auto">
+          <nav className="hidden md:flex items-center gap-1 overflow-x-auto max-w-3xl">
             {tools.map(tool => (
               <Link key={tool.href} href={tool.href}
-                className="text-slate-400 hover:text-white text-sm px-3 py-2 rounded-lg hover:bg-white/5 transition-colors whitespace-nowrap">
+                className="text-slate-400 hover:text-white text-xs px-2 py-2 rounded-lg hover:bg-white/5 transition-colors whitespace-nowrap">
                 {tool.name}
               </Link>
             ))}
