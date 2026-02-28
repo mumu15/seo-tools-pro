@@ -14,6 +14,7 @@ const tools = [
   { name: 'WPM Test', href: '/words-per-minute' },
   { name: 'Hashtag Counter', href: '/hashtag-counter' },
   { name: 'Thread Counter', href: '/twitter-thread-counter' },
+  { name: 'Blog', href: '/blog' },
 ]
 
 export default function Header() {
@@ -25,8 +26,8 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
             <div className="w-7 h-7 rounded-lg flex items-center justify-center text-dark-950 font-bold text-xs"
-              style={{ background: 'linear-gradient(135deg, #10b981, #34d399)' }}>S</div>
-            <span className="font-display font-bold text-white">SEOTools<span className="text-emerald-400">Pro</span></span>
+              style={{ background: 'linear-gradient(135deg, #10b981, #34d399)' }}>W</div>
+            <span className="font-display font-bold text-white">WordCounter<span className="text-emerald-400">Tool</span></span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1 overflow-x-auto max-w-3xl">
