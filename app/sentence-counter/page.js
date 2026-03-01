@@ -3,6 +3,8 @@ import { useState, useCallback } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
+import BreadcrumbSchema from '../../components/BreadcrumbSchema'
+import WebAppSchema from '../../components/WebAppSchema'
 
 const faqs = [
   { q: 'What is the ideal sentence length?', a: 'For most web content, the ideal average sentence length is 15 to 20 words. Academic writing can have longer sentences, while marketing copy tends to use shorter sentences for impact.' },
@@ -32,6 +34,8 @@ export default function SentenceCounter() {
   return (
     <>
       <FaqSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Sentence Counter","url":"https://www.wordcountertool.net/sentence-counter"}]} />
+      <WebAppSchema name="Sentence Counter" description="Count sentences and analyze your writing structure instantly. Free online sentence counter tool." url="https://www.wordcountertool.net/sentence-counter" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

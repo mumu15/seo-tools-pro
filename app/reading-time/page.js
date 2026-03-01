@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
+import BreadcrumbSchema from '../../components/BreadcrumbSchema'
+import WebAppSchema from '../../components/WebAppSchema'
 
 const faqs = [
   { q: 'How is reading time calculated?', a: 'Reading time is calculated based on the average adult reading speed of 200-250 words per minute. Our calculator lets you adjust the reading speed to match your audience.' },
@@ -47,6 +49,8 @@ export default function ReadingTime() {
   return (
     <>
       <FaqSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Reading Time Calculator","url":"https://www.wordcountertool.net/reading-time"}]} />
+      <WebAppSchema name="Reading Time Calculator" description="Estimate how long it takes to read any text. Free reading time calculator with words per minute settings." url="https://www.wordcountertool.net/reading-time" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

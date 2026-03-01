@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
+import BreadcrumbSchema from '../../components/BreadcrumbSchema'
+import WebAppSchema from '../../components/WebAppSchema'
 
 const faqs = [
   { q: 'What is the character limit for Twitter?', a: 'Twitter has a limit of 280 characters per tweet. This includes spaces and punctuation. URLs count as 23 characters regardless of their actual length.' },
@@ -36,6 +38,8 @@ export default function CharacterCounter() {
   return (
     <>
       <FaqSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Character Counter","url":"https://www.wordcountertool.net/character-counter"}]} />
+      <WebAppSchema name="Character Counter" description="Count characters with and without spaces for Twitter, Instagram, SMS and more. Free character counter." url="https://www.wordcountertool.net/character-counter" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

@@ -3,6 +3,8 @@ import { useState, useCallback } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
+import BreadcrumbSchema from '../../components/BreadcrumbSchema'
+import WebAppSchema from '../../components/WebAppSchema'
 
 const faqs = [
   { q: 'How do I use the keyword density checker?', a: 'Paste your article or blog post into the text box. The tool will automatically analyze all keywords and show their frequency and density percentage ranked from highest to lowest.' },
@@ -46,6 +48,8 @@ export default function KeywordDensity() {
   return (
     <>
       <FaqSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Keyword Density Checker","url":"https://www.wordcountertool.net/keyword-density"}]} />
+      <WebAppSchema name="Keyword Density Checker" description="Analyze keyword frequency and density in your content for SEO optimization. Free keyword density checker." url="https://www.wordcountertool.net/keyword-density" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

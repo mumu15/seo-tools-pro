@@ -3,6 +3,8 @@ import { useState, useCallback } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
+import BreadcrumbSchema from '../../components/BreadcrumbSchema'
+import WebAppSchema from '../../components/WebAppSchema'
 
 const faqs = [
   { q: 'How does the word counter work?', a: 'Our tool splits your text by spaces and punctuation to count individual words. It updates in real time as you type or paste text.' },
@@ -43,6 +45,8 @@ export default function WordCounter() {
   return (
     <>
       <FaqSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Word Counter","url":"https://www.wordcountertool.net/word-counter"}]} />
+      <WebAppSchema name="Free Word Counter" description="Count words, characters, sentences and paragraphs instantly. Free online word counter with reading time." url="https://www.wordcountertool.net/word-counter" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

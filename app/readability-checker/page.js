@@ -3,6 +3,8 @@ import { useState, useCallback } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
+import BreadcrumbSchema from '../../components/BreadcrumbSchema'
+import WebAppSchema from '../../components/WebAppSchema'
 
 const faqs = [
   { q: 'What is the Flesch-Kincaid reading ease score?', a: 'The Flesch-Kincaid Reading Ease score measures how easy a piece of English text is to read. The score ranges from 0 to 100. A higher score means the text is easier to read. A score of 60-70 is considered standard and suitable for most general audiences.' },
@@ -46,6 +48,8 @@ export default function ReadabilityChecker() {
   return (
     <>
       <FaqSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Readability Checker","url":"https://www.wordcountertool.net/readability-checker"}]} />
+      <WebAppSchema name="Readability Checker" description="Check your content readability score using the Flesch-Kincaid formula. Free readability analysis tool." url="https://www.wordcountertool.net/readability-checker" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

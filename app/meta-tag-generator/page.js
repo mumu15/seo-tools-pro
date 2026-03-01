@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
+import BreadcrumbSchema from '../../components/BreadcrumbSchema'
+import WebAppSchema from '../../components/WebAppSchema'
 
 const faqs = [
   { q: 'What is the ideal meta title length?', a: 'The ideal meta title length is 50 to 60 characters. Google typically displays the first 60 characters of a title tag. Titles longer than 60 characters may be cut off in search results.' },
@@ -53,6 +55,8 @@ ${form.ogImage ? `<meta property="twitter:image" content="${form.ogImage}">` : '
   return (
     <>
       <FaqSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Meta Tag Generator","url":"https://www.wordcountertool.net/meta-tag-generator"}]} />
+      <WebAppSchema name="Meta Tag Generator" description="Generate perfect SEO meta tags with live Google search preview. Free meta title and description generator." url="https://www.wordcountertool.net/meta-tag-generator" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

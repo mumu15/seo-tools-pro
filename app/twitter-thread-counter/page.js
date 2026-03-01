@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
+import BreadcrumbSchema from '../../components/BreadcrumbSchema'
+import WebAppSchema from '../../components/WebAppSchema'
 
 const faqs = [
   { q: 'What is the character limit on Twitter?', a: 'Twitter has a limit of 280 characters per tweet. This includes spaces, punctuation and emojis. URLs are shortened to 23 characters regardless of their actual length.' },
@@ -37,6 +39,8 @@ export default function TwitterThreadCounter() {
   return (
     <>
       <FaqSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Twitter Thread Counter","url":"https://www.wordcountertool.net/twitter-thread-counter"}]} />
+      <WebAppSchema name="Twitter Thread Counter" description="Plan and count characters for Twitter threads. Free Twitter thread counter with character limits." url="https://www.wordcountertool.net/twitter-thread-counter" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

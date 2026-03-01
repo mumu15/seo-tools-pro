@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
+import BreadcrumbSchema from '../../components/BreadcrumbSchema'
+import WebAppSchema from '../../components/WebAppSchema'
 
 const faqs = [
   { q: 'How many hashtags should I use on Instagram?', a: 'Instagram allows up to 30 hashtags per post. Research suggests using 5-10 highly relevant hashtags performs better than using all 30. Using too many hashtags can look spammy and may reduce engagement.' },
@@ -31,6 +33,8 @@ export default function HashtagCounter() {
   return (
     <>
       <FaqSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Hashtag Counter","url":"https://www.wordcountertool.net/hashtag-counter"}]} />
+      <WebAppSchema name="Hashtag Counter" description="Count hashtags for Instagram, Twitter, TikTok and more. Free hashtag counter with platform limits." url="https://www.wordcountertool.net/hashtag-counter" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

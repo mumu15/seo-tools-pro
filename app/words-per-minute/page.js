@@ -3,6 +3,8 @@ import { useState, useRef } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
+import BreadcrumbSchema from '../../components/BreadcrumbSchema'
+import WebAppSchema from '../../components/WebAppSchema'
 
 const faqs = [
   { q: 'What is the average words per minute typing speed?', a: 'The average typing speed is 40 words per minute. Professional typists average 65-75 words per minute. Top speed typists can exceed 100-120 words per minute.' },
@@ -89,6 +91,8 @@ export default function WordsPerMinute() {
   return (
     <>
       <FaqSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Typing Speed Test","url":"https://www.wordcountertool.net/words-per-minute"}]} />
+      <WebAppSchema name="Typing Speed Test" description="Test your typing speed in words per minute. Free WPM typing speed test with instant results." url="https://www.wordcountertool.net/words-per-minute" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
+import BreadcrumbSchema from '../../components/BreadcrumbSchema'
+import WebAppSchema from '../../components/WebAppSchema'
 
 const faqs = [
   { q: 'How many words are on a page?', a: 'A standard page with 12pt font, double spacing and 1 inch margins contains approximately 250-300 words. A single spaced page contains approximately 500-600 words.' },
@@ -53,6 +55,8 @@ export default function WordsPerPage() {
   return (
     <>
       <FaqSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Words Per Page Calculator","url":"https://www.wordcountertool.net/words-per-page"}]} />
+      <WebAppSchema name="Words Per Page Calculator" description="Convert word count to pages for any font size and spacing. Free words per page calculator." url="https://www.wordcountertool.net/words-per-page" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">
