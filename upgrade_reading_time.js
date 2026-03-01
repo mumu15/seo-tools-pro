@@ -1,4 +1,6 @@
-'use client'
+const fs = require('fs');
+
+const newReadingTime = `'use client'
 import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -24,7 +26,7 @@ export default function ReadingTime() {
   const [text, setText] = useState('')
   const [activeSpeed, setActiveSpeed] = useState(1)
 
-  const words = text.trim() === '' ? 0 : text.trim().split(/\s+/).length
+  const words = text.trim() === '' ? 0 : text.trim().split(/\\s+/).length
   const wpm = SPEEDS[activeSpeed].wpm
   const readMins = words === 0 ? 0 : Math.ceil(words / wpm)
   const speakMins = words === 0 ? 0 : Math.ceil(words / 130)
@@ -35,7 +37,7 @@ export default function ReadingTime() {
     if (secs < 60) return secs + ' seconds'
     const m = Math.floor(secs / 60)
     const s = secs % 60
-    return s > 0 ? `${m} min ${s} sec` : `${m} min`
+    return s > 0 ? \`\${m} min \${s} sec\` : \`\${m} min\`
   }
 
   return (
@@ -100,7 +102,7 @@ export default function ReadingTime() {
             { label: 'Speak Time', value: speakMins + ' min', color: 'text-yellow-400' },
           ].map((stat, i) => (
             <div key={i} className="stat-card">
-              <div className={`text-2xl font-display font-bold ${stat.color}`}>{stat.value}</div>
+              <div className={\`text-2xl font-display font-bold \${stat.color}\`}>{stat.value}</div>
               <div className="text-slate-500 text-xs mt-1">{stat.label}</div>
             </div>
           ))}
@@ -165,3 +167,9 @@ export default function ReadingTime() {
     </>
   )
 }
+`;
+
+fs.writeFileSync('app/reading-time/page.js', newReadingTime, 'utf8');
+console.log('✅ Reading time calculator upgraded!');
+console.log('Features: Slow/Average/Fast reader toggle, Speaking time, Reference table');
+console.log('Run: git add . && git commit -m "Upgrade reading time with speed toggle and speaking time" && git push');
