@@ -48,7 +48,7 @@ export default function KeywordDensity() {
   return (
     <>
       <FaqSchema faqs={faqs} />
-      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Keyword Density Checker","url":"https://www.wordcountertool.net/keyword-density"}]} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Keyword Density Checker — Free SEO Tool","url":"https://www.wordcountertool.net/keyword-density"}]} />
       <WebAppSchema name="Keyword Density Checker" description="Analyze keyword frequency and density in your content for SEO optimization. Free keyword density checker." url="https://www.wordcountertool.net/keyword-density" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">

@@ -92,7 +92,7 @@ export default function WordsPerMinute() {
     <>
       <FaqSchema faqs={faqs} />
       <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Typing Speed Test","url":"https://www.wordcountertool.net/words-per-minute"}]} />
-      <WebAppSchema name="Typing Speed Test" description="Test your typing speed in words per minute. Free WPM typing speed test with instant results." url="https://www.wordcountertool.net/words-per-minute" />
+      <WebAppSchema name="Typing Speed Test your typing speed in words per minute (WPM) — free online typing speed test, no sign up in words per minute. Free WPM typing speed test with instant results." url="https://www.wordcountertool.net/words-per-minute" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

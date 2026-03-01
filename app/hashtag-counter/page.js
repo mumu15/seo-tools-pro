@@ -33,8 +33,8 @@ export default function HashtagCounter() {
   return (
     <>
       <FaqSchema faqs={faqs} />
-      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Hashtag Counter","url":"https://www.wordcountertool.net/hashtag-counter"}]} />
-      <WebAppSchema name="Hashtag Counter" description="Count hashtags for Instagram, Twitter, TikTok and more. Free hashtag counter with platform limits." url="https://www.wordcountertool.net/hashtag-counter" />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Free Hashtag Counter — Instagram, Twitter, TikTok","url":"https://www.wordcountertool.net/hashtag-counter"}]} />
+      <WebAppSchema name="Hashtag Counter" description="Count hashtags and check platform limits for Instagram, Twitter, TikTok and LinkedIn — free tool. Free hashtag counter with platform limits." url="https://www.wordcountertool.net/hashtag-counter" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

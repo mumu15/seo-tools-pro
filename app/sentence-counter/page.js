@@ -34,8 +34,8 @@ export default function SentenceCounter() {
   return (
     <>
       <FaqSchema faqs={faqs} />
-      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Sentence Counter","url":"https://www.wordcountertool.net/sentence-counter"}]} />
-      <WebAppSchema name="Sentence Counter" description="Count sentences and analyze your writing structure instantly. Free online sentence counter tool." url="https://www.wordcountertool.net/sentence-counter" />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Free Sentence Counter Online","url":"https://www.wordcountertool.net/sentence-counter"}]} />
+      <WebAppSchema name="Sentence Counter" description="Count sentences, words and paragraphs in any text instantly — free online sentence counter. Free online sentence counter tool." url="https://www.wordcountertool.net/sentence-counter" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

@@ -39,8 +39,8 @@ export default function TwitterThreadCounter() {
   return (
     <>
       <FaqSchema faqs={faqs} />
-      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Twitter Thread Counter","url":"https://www.wordcountertool.net/twitter-thread-counter"}]} />
-      <WebAppSchema name="Twitter Thread Counter" description="Plan and count characters for Twitter threads. Free Twitter thread counter with character limits." url="https://www.wordcountertool.net/twitter-thread-counter" />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Free Twitter Thread Counter — Plan Your X Threads","url":"https://www.wordcountertool.net/twitter-thread-counter"}]} />
+      <WebAppSchema name="Twitter Thread Counter" description="Plan Twitter threads and count characters per tweet — free thread counter for X (Twitter). Free Twitter thread counter with character limits." url="https://www.wordcountertool.net/twitter-thread-counter" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

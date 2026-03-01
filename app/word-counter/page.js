@@ -56,13 +56,13 @@ export default function WordCounter() {
   return (
     <>
       <FaqSchema faqs={faqs} />
-      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Word Counter","url":"https://www.wordcountertool.net/word-counter"}]} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Free Word Counter Online","url":"https://www.wordcountertool.net/word-counter"}]} />
       <WebAppSchema name="Free Word Counter" description="Count words, characters, sentences and paragraphs instantly. Free online word counter with reading time." url="https://www.wordcountertool.net/word-counter" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Word Counter</h1>
-          <p className="text-slate-400 text-lg">Count words, characters, sentences and more instantly as you type</p>
+          <p className="text-slate-400 text-lg">Count words, characters, sentences and paragraphs instantly — free, no sign up required</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
           <div className="stat-card" style={{transition:'all 0.3s ease',transform: animated && s.words > 0 ? 'scale(1.02)' : 'scale(1)'}}><div className="text-3xl font-display font-bold text-emerald-400" style={{transition:'all 0.3s ease'}}>{s.words}</div><div className="text-slate-500 text-sm mt-1">Words</div></div>

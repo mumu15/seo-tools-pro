@@ -38,8 +38,8 @@ export default function CharacterCounter() {
   return (
     <>
       <FaqSchema faqs={faqs} />
-      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Character Counter","url":"https://www.wordcountertool.net/character-counter"}]} />
-      <WebAppSchema name="Character Counter" description="Count characters with and without spaces for Twitter, Instagram, SMS and more. Free character counter." url="https://www.wordcountertool.net/character-counter" />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Free Character Counter Online","url":"https://www.wordcountertool.net/character-counter"}]} />
+      <WebAppSchema name="Character Counter" description="Count characters for Twitter, Instagram, SMS and meta tags — free character counter online. Free character counter." url="https://www.wordcountertool.net/character-counter" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

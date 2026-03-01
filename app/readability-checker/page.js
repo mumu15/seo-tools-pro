@@ -48,7 +48,7 @@ export default function ReadabilityChecker() {
   return (
     <>
       <FaqSchema faqs={faqs} />
-      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Readability Checker","url":"https://www.wordcountertool.net/readability-checker"}]} />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Free Readability Score Check your Flesch-Kincaid readability score instantly — free online readability checker-checker"}]} />
       <WebAppSchema name="Readability Checker" description="Check your content readability score using the Flesch-Kincaid formula. Free readability analysis tool." url="https://www.wordcountertool.net/readability-checker" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">

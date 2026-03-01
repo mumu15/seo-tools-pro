@@ -55,8 +55,8 @@ ${form.ogImage ? `<meta property="twitter:image" content="${form.ogImage}">` : '
   return (
     <>
       <FaqSchema faqs={faqs} />
-      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Meta Tag Generator","url":"https://www.wordcountertool.net/meta-tag-generator"}]} />
-      <WebAppSchema name="Meta Tag Generator" description="Generate perfect SEO meta tags with live Google search preview. Free meta title and description generator." url="https://www.wordcountertool.net/meta-tag-generator" />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Free Meta Tag Generator for SEO","url":"https://www.wordcountertool.net/meta-tag-generator"}]} />
+      <WebAppSchema name="Meta Tag Generator" description="Generate perfect SEO meta titles and descriptions with live Google preview — 100% free with live Google search preview. Free meta title and description generator." url="https://www.wordcountertool.net/meta-tag-generator" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

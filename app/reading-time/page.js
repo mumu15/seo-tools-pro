@@ -49,8 +49,8 @@ export default function ReadingTime() {
   return (
     <>
       <FaqSchema faqs={faqs} />
-      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Reading Time Calculator","url":"https://www.wordcountertool.net/reading-time"}]} />
-      <WebAppSchema name="Reading Time Calculator" description="Estimate how long it takes to read any text. Free reading time calculator with words per minute settings." url="https://www.wordcountertool.net/reading-time" />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Reading Time Calculator — How Long to Read Your Content?","url":"https://www.wordcountertool.net/reading-time"}]} />
+      <WebAppSchema name="Reading Time Calculator" description="Calculate how long it takes to read any text — free reading time estimator based on WPM any text. Free reading time calculator with words per minute settings." url="https://www.wordcountertool.net/reading-time" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">

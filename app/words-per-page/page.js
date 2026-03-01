@@ -55,8 +55,8 @@ export default function WordsPerPage() {
   return (
     <>
       <FaqSchema faqs={faqs} />
-      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Words Per Page Calculator","url":"https://www.wordcountertool.net/words-per-page"}]} />
-      <WebAppSchema name="Words Per Page Calculator" description="Convert word count to pages for any font size and spacing. Free words per page calculator." url="https://www.wordcountertool.net/words-per-page" />
+      <BreadcrumbSchema items={[{"name":"Home","url":"https://www.wordcountertool.net"},{"name":"Words Per Page Calculator — Free Online Tool","url":"https://www.wordcountertool.net/words-per-page"}]} />
+      <WebAppSchema name="Words Per Page Calculator" description="Convert word count to pages or pages to words — free words per page calculator for any font size for any font size and spacing. Free words per page calculator." url="https://www.wordcountertool.net/words-per-page" />
       <Header />
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="text-center mb-10">
