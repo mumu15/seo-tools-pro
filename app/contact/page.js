@@ -3,10 +3,6 @@ import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-export const metadata = {
-  title: 'Contact Us | WordCounterTool.net',
-  description: 'Contact WordCounterTool.net for support, feedback or tool suggestions.',
-}
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
