@@ -1,4 +1,6 @@
-'use client'
+const fs = require('fs');
+
+const newReadability = `'use client'
 import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -36,7 +38,7 @@ function getGradeLabel(score) {
 export default function ReadabilityChecker() {
   const [text, setText] = useState('')
 
-  const words = text.trim() === '' ? [] : text.trim().split(/\s+/)
+  const words = text.trim() === '' ? [] : text.trim().split(/\\s+/)
   const wordCount = words.length
   const sentences = text.trim() === '' ? 0 : (text.match(/[.!?]+/g) || []).length || 1
   const syllables = words.reduce((sum, word) => sum + countSyllables(word.replace(/[^a-zA-Z]/g, '')), 0)
@@ -93,7 +95,7 @@ export default function ReadabilityChecker() {
                 { label: 'Avg Sentence Length', value: avgSentenceLength + ' words', color: 'text-purple-400' },
               ].map((stat, i) => (
                 <div key={i} className="stat-card">
-                  <div className={`text-xl font-display font-bold ${stat.color}`}>{stat.value}</div>
+                  <div className={\`text-xl font-display font-bold \${stat.color}\`}>{stat.value}</div>
                   <div className="text-slate-500 text-xs mt-1">{stat.label}</div>
                 </div>
               ))}
@@ -197,3 +199,8 @@ export default function ReadabilityChecker() {
     </>
   )
 }
+`;
+
+fs.writeFileSync('app/readability-checker/page.js', newReadability, 'utf8');
+console.log('✅ Readability checker upgraded with circular score gauge, grade level badge and tips!');
+console.log('Run: git add . && git commit -m "Upgrade readability checker with score gauge and grade level" && git push');
