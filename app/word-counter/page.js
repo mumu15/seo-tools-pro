@@ -14,11 +14,6 @@ const faqs = [
   { q: 'What is the word count for common documents?', a: 'A typical blog post is 1,500-2,500 words. A short story is 1,000-7,500 words. A novel is 80,000-100,000 words. A tweet is up to 280 characters.' },
 ]
 
-export const metadata = {
-  title: 'Free Word Counter Online — Count Words Instantly, No Sign Up',
-  description: 'Free word counter online with no sign up required. Count words, characters, sentences and paragraphs instantly as you type. Trusted by 50,000+ writers monthly.',
-}
-
 const CASES = ['Original', 'UPPERCASE', 'lowercase', 'Title Case', 'Sentence case']
 
 export default function WordCounter() {
