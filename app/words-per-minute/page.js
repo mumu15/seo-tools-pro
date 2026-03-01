@@ -190,6 +190,12 @@ export default function WordsPerMinute() {
           </div>
         </div>
       </main>
+
+          {/* Internal Link to Blog */}
+          <div className="mt-8 p-4 rounded-xl border border-emerald-500/20" style={{background:'rgba(52,211,153,0.05)'}}>
+            <p className="text-slate-400 text-sm mb-2">📖 Related Guide</p>
+            <a href="/blog/average-typing-speed" className="text-emerald-400 font-semibold hover:underline">Average Typing Speed: What is Good WPM in 2026?</a>
+          </div>
       <Footer />
     </>
   )
