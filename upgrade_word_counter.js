@@ -1,4 +1,6 @@
-'use client'
+const fs = require('fs');
+
+const newWordCounter = `'use client'
 import { useState, useCallback, useEffect, useRef } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -33,7 +35,7 @@ export default function WordCounter() {
   const prevWords = useRef(0)
 
   useEffect(() => {
-    const words = text.trim() === '' ? 0 : text.trim().split(/\s+/).length
+    const words = text.trim() === '' ? 0 : text.trim().split(/\\s+/).length
     if (words !== prevWords.current) {
       setAnimated(false)
       setTimeout(() => setAnimated(true), 10)
@@ -42,21 +44,21 @@ export default function WordCounter() {
   }, [text])
 
   const stats = useCallback(() => {
-    const words = text.trim() === '' ? 0 : text.trim().split(/\s+/).length
+    const words = text.trim() === '' ? 0 : text.trim().split(/\\s+/).length
     const chars = text.length
-    const charsNoSpaces = text.replace(/\s/g, '').length
+    const charsNoSpaces = text.replace(/\\s/g, '').length
     const sentences = text.trim() === '' ? 0 : (text.match(/[.!?]+/g) || []).length
-    const paragraphs = text.trim() === '' ? 0 : text.split(/\n+/).filter(p => p.trim()).length || (text.trim() ? 1 : 0)
+    const paragraphs = text.trim() === '' ? 0 : text.split(/\\n+/).filter(p => p.trim()).length || (text.trim() ? 1 : 0)
     const readTime = Math.max(1, Math.ceil(words / 200))
     const speakTime = Math.max(1, Math.ceil(words / 130))
-    const uniqueWords = text.trim() === '' ? 0 : new Set(text.toLowerCase().match(/\b\w+\b/g) || []).size
+    const uniqueWords = text.trim() === '' ? 0 : new Set(text.toLowerCase().match(/\\b\\w+\\b/g) || []).size
     return { words, chars, charsNoSpaces, sentences, paragraphs, readTime, speakTime, uniqueWords }
   }, [text])
 
   const s = stats()
 
   const copyResults = () => {
-    const summary = `Word Count Results:\nWords: ${s.words}\nCharacters: ${s.chars}\nCharacters (no spaces): ${s.charsNoSpaces}\nSentences: ${s.sentences}\nParagraphs: ${s.paragraphs}\nReading Time: ${s.readTime} min\nSpeaking Time: ${s.speakTime} min\nUnique Words: ${s.uniqueWords}`
+    const summary = \`Word Count Results:\\nWords: \${s.words}\\nCharacters: \${s.chars}\\nCharacters (no spaces): \${s.charsNoSpaces}\\nSentences: \${s.sentences}\\nParagraphs: \${s.paragraphs}\\nReading Time: \${s.readTime} min\\nSpeaking Time: \${s.speakTime} min\\nUnique Words: \${s.uniqueWords}\`
     navigator.clipboard.writeText(summary).then(() => {
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
@@ -87,8 +89,8 @@ export default function WordCounter() {
     const t = activeCase === 'Original' ? text : originalText
     if (caseType === 'UPPERCASE') setText(t.toUpperCase())
     else if (caseType === 'lowercase') setText(t.toLowerCase())
-    else if (caseType === 'Title Case') setText(t.replace(/\w\S*/g, w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()))
-    else if (caseType === 'Sentence case') setText(t.toLowerCase().replace(/(^|[.!?]\s+)([a-z])/g, (m, p1, p2) => p1 + p2.toUpperCase()))
+    else if (caseType === 'Title Case') setText(t.replace(/\\w\\S*/g, w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()))
+    else if (caseType === 'Sentence case') setText(t.toLowerCase().replace(/(^|[.!?]\\s+)([a-z])/g, (m, p1, p2) => p1 + p2.toUpperCase()))
   }
 
   const handleFindReplace = () => {
@@ -191,7 +193,7 @@ export default function WordCounter() {
             { label: 'No Spaces', value: s.charsNoSpaces, color: 'text-rose-400' },
           ].map((stat, i) => (
             <div key={i} className="stat-card" style={{transition:'all 0.3s ease', transform: animated && stat.value !== 0 && stat.value !== '0 min' ? 'scale(1.02)' : 'scale(1)'}}>
-              <div className={`text-2xl font-display font-bold ${stat.color}`} style={{transition:'all 0.2s ease'}}>{stat.value}</div>
+              <div className={\`text-2xl font-display font-bold \${stat.color}\`} style={{transition:'all 0.2s ease'}}>{stat.value}</div>
               <div className="text-slate-500 text-xs mt-1">{stat.label}</div>
             </div>
           ))}
@@ -241,3 +243,9 @@ export default function WordCounter() {
     </>
   )
 }
+`;
+
+fs.writeFileSync('app/word-counter/page.js', newWordCounter, 'utf8');
+console.log('✅ Word counter fully upgraded!');
+console.log('Features added: Speaking Time, Case Changer, Download .txt, Find & Replace, 8 stat cards');
+console.log('Run: git add . && git commit -m "Upgrade word counter with speaking time, case changer, download and find & replace" && git push');
