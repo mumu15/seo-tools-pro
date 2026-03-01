@@ -1,4 +1,6 @@
-'use client'
+const fs = require('fs');
+
+const newThreadCounter = `'use client'
 import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -53,7 +55,7 @@ export default function TwitterThreadCounter() {
   }
 
   const copyAll = () => {
-    const all = threads.map((t, i) => `${i + 1}/${threads.length} ${t}`).join('\n\n')
+    const all = threads.map((t, i) => \`\${i + 1}/\${threads.length} \${t}\`).join('\\n\\n')
     navigator.clipboard.writeText(all)
   }
 
@@ -95,20 +97,20 @@ export default function TwitterThreadCounter() {
               onChange={e => { setText(e.target.value); setShowThreads(false) }}
               placeholder="Write your tweet or paste your thread content here..."
               className="w-full h-48 px-4 py-3 rounded-xl text-white text-sm outline-none resize-none mb-3 leading-relaxed"
-              style={{background:'rgba(255,255,255,0.03)',border:`1px solid ${isOver ? 'rgba(239,68,68,0.4)' : 'rgba(52,211,153,0.15)'}`,boxShadow: text.length > 0 ? `0 0 0 2px ${isOver ? 'rgba(239,68,68,0.15)' : 'rgba(52,211,153,0.15)'}` : 'none',transition:'all 0.3s ease'}}
+              style={{background:'rgba(255,255,255,0.03)',border:\`1px solid \${isOver ? 'rgba(239,68,68,0.4)' : 'rgba(52,211,153,0.15)'}\`,boxShadow: text.length > 0 ? \`0 0 0 2px \${isOver ? 'rgba(239,68,68,0.15)' : 'rgba(52,211,153,0.15)'}\` : 'none',transition:'all 0.3s ease'}}
             />
 
             {/* Character Bar */}
             <div className="mb-6">
               <div className="flex justify-between text-xs mb-1.5">
                 <span className="text-slate-500">{chars} characters</span>
-                <span className={`font-bold ${isOver ? 'text-red-400' : 'text-slate-400'}`}>
-                  {isOver ? `${Math.abs(remaining)} over limit` : `${remaining} remaining`}
+                <span className={\`font-bold \${isOver ? 'text-red-400' : 'text-slate-400'}\`}>
+                  {isOver ? \`\${Math.abs(remaining)} over limit\` : \`\${remaining} remaining\`}
                 </span>
               </div>
               <div className="w-full h-2 rounded-full overflow-hidden" style={{background:'rgba(255,255,255,0.05)'}}>
                 <div className="h-full rounded-full transition-all duration-300"
-                  style={{width:`${pct}%`, background: getBarColor()}}/>
+                  style={{width:\`\${pct}%\`, background: getBarColor()}}/>
               </div>
             </div>
 
@@ -151,7 +153,7 @@ export default function TwitterThreadCounter() {
               <div className="text-5xl font-bold mb-2" style={{color: getBarColor()}}>{chars}</div>
               <div className="text-slate-400 text-sm">of {LIMIT} characters</div>
               <div className="mt-3 text-2xl font-bold" style={{color: isOver ? '#ef4444' : '#34d399'}}>
-                {isOver ? `⚠️ ${Math.abs(remaining)} over` : `✅ ${remaining} left`}
+                {isOver ? \`⚠️ \${Math.abs(remaining)} over\` : \`✅ \${remaining} left\`}
               </div>
             </div>
 
@@ -230,3 +232,8 @@ export default function TwitterThreadCounter() {
     </>
   )
 }
+`;
+
+fs.writeFileSync('app/twitter-thread-counter/page.js', newThreadCounter, 'utf8');
+console.log('✅ Twitter thread counter upgraded with auto-split feature!');
+console.log('Run: git add . && git commit -m "Upgrade twitter thread counter with auto-split" && git push');

@@ -1,4 +1,6 @@
-'use client'
+const fs = require('fs');
+
+const newKeywordDensity = `'use client'
 import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -21,8 +23,8 @@ export default function KeywordDensity() {
   const [showAll, setShowAll] = useState(false)
   const [copied, setCopied] = useState(false)
 
-  const words = text.trim() === '' ? [] : text.toLowerCase().match(/\b[a-z]{3,}\b/g) || []
-  const totalWords = text.trim() === '' ? 0 : text.trim().split(/\s+/).length
+  const words = text.trim() === '' ? [] : text.toLowerCase().match(/\\b[a-z]{3,}\\b/g) || []
+  const totalWords = text.trim() === '' ? 0 : text.trim().split(/\\s+/).length
 
   const freq = {}
   words.forEach(w => {
@@ -33,9 +35,9 @@ export default function KeywordDensity() {
   const displayed = showAll ? sorted : sorted.slice(0, 15)
 
   const exportCSV = () => {
-    const csv = 'Keyword,Count,Density\n' + sorted.map(([word, count]) =>
-      `${word},${count},${((count / totalWords) * 100).toFixed(2)}%`
-    ).join('\n')
+    const csv = 'Keyword,Count,Density\\n' + sorted.map(([word, count]) =>
+      \`\${word},\${count},\${((count / totalWords) * 100).toFixed(2)}%\`
+    ).join('\\n')
     const blob = new Blob([csv], { type: 'text/csv' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
@@ -101,7 +103,7 @@ export default function KeywordDensity() {
             { label: 'Top Keyword', value: sorted[0] ? sorted[0][0] : '—', color: 'text-purple-400' },
           ].map((stat, i) => (
             <div key={i} className="stat-card">
-              <div className={`text-xl font-display font-bold ${stat.color} truncate`}>{stat.value}</div>
+              <div className={\`text-xl font-display font-bold \${stat.color} truncate\`}>{stat.value}</div>
               <div className="text-slate-500 text-xs mt-1">{stat.label}</div>
             </div>
           ))}
@@ -126,7 +128,7 @@ export default function KeywordDensity() {
                   <div key={i} className="flex items-center gap-3">
                     <span className="text-white text-sm w-28 truncate font-medium">{word}</span>
                     <div className="flex-1 h-2 rounded-full overflow-hidden" style={{background:'rgba(255,255,255,0.05)'}}>
-                      <div className="h-full rounded-full transition-all duration-300" style={{width:`${barWidth}%`,background:color}}/>
+                      <div className="h-full rounded-full transition-all duration-300" style={{width:\`\${barWidth}%\`,background:color}}/>
                     </div>
                     <span className="text-slate-400 text-xs w-8 text-right">{count}x</span>
                     <span className="text-xs w-16 text-right font-medium" style={{color}}>{pct.toFixed(2)}% <span className="text-slate-600">({getDensityLabel(pct)})</span></span>
@@ -137,7 +139,7 @@ export default function KeywordDensity() {
             {sorted.length > 15 && (
               <button onClick={() => setShowAll(!showAll)}
                 className="mt-4 text-emerald-400 text-sm hover:underline">
-                {showAll ? 'Show Less ↑' : `Show All ${sorted.length} Keywords ↓`}
+                {showAll ? 'Show Less ↑' : \`Show All \${sorted.length} Keywords ↓\`}
               </button>
             )}
           </div>
@@ -187,3 +189,8 @@ export default function KeywordDensity() {
     </>
   )
 }
+`;
+
+fs.writeFileSync('app/keyword-density/page.js', newKeywordDensity, 'utf8');
+console.log('✅ Keyword density checker upgraded with CSV export and visual bars!');
+console.log('Run: git add . && git commit -m "Upgrade keyword density with CSV export and visual bars" && git push');
