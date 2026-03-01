@@ -1,5 +1,5 @@
 'use client'
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect, useRef } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
@@ -17,6 +17,17 @@ const faqs = [
 export default function WordCounter() {
   const [text, setText] = useState('')
   const [copied, setCopied] = useState(false)
+  const [animated, setAnimated] = useState(false)
+  const prevWords = useRef(0)
+
+  useEffect(() => {
+    const s = stats()
+    if (s.words !== prevWords.current) {
+      setAnimated(false)
+      setTimeout(() => setAnimated(true), 10)
+      prevWords.current = s.words
+    }
+  }, [text])
 
   const copyResults = () => {
     const s = stats()
@@ -54,13 +65,14 @@ export default function WordCounter() {
           <p className="text-slate-400 text-lg">Count words, characters, sentences and more instantly as you type</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-          <div className="stat-card"><div className="text-3xl font-display font-bold text-emerald-400">{s.words}</div><div className="text-slate-500 text-sm mt-1">Words</div></div>
-          <div className="stat-card"><div className="text-3xl font-display font-bold text-blue-400">{s.chars}</div><div className="text-slate-500 text-sm mt-1">Characters</div></div>
-          <div className="stat-card"><div className="text-3xl font-display font-bold text-purple-400">{s.sentences}</div><div className="text-slate-500 text-sm mt-1">Sentences</div></div>
-          <div className="stat-card"><div className="text-3xl font-display font-bold text-yellow-400">{s.readTime} min</div><div className="text-slate-500 text-sm mt-1">Read Time</div></div>
+          <div className="stat-card" style={{transition:'all 0.3s ease',transform: animated && s.words > 0 ? 'scale(1.02)' : 'scale(1)'}}><div className="text-3xl font-display font-bold text-emerald-400" style={{transition:'all 0.3s ease'}}>{s.words}</div><div className="text-slate-500 text-sm mt-1">Words</div></div>
+          <div className="stat-card" style={{transition:'all 0.3s ease',transform: animated && s.chars > 0 ? 'scale(1.02)' : 'scale(1)'}}><div className="text-3xl font-display font-bold text-blue-400" style={{transition:'all 0.3s ease'}}>{s.chars}</div><div className="text-slate-500 text-sm mt-1">Characters</div></div>
+          <div className="stat-card" style={{transition:'all 0.3s ease',transform: animated && s.sentences > 0 ? 'scale(1.02)' : 'scale(1)'}}><div className="text-3xl font-display font-bold text-purple-400" style={{transition:'all 0.3s ease'}}>{s.sentences}</div><div className="text-slate-500 text-sm mt-1">Sentences</div></div>
+          <div className="stat-card" style={{transition:'all 0.3s ease',transform: animated && s.readTime > 0 ? 'scale(1.02)' : 'scale(1)'}}><div className="text-3xl font-display font-bold text-yellow-400" style={{transition:'all 0.3s ease'}}>{s.readTime} min</div><div className="text-slate-500 text-sm mt-1">Read Time</div></div>
         </div>
         <div className="mb-6">
-          <textarea value={text} onChange={e => setText(e.target.value)} placeholder="Start typing or paste your text here..." rows={12} className="text-base" />
+          <textarea
+            style={{boxShadow: text.length > 0 ? '0 0 0 2px rgba(52,211,153,0.3)' : 'none', transition:'box-shadow 0.3s ease'}} value={text} onChange={e => setText(e.target.value)} placeholder="Start typing or paste your text here..." rows={12} className="text-base" />
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8">
           <div className="stat-card"><div className="text-2xl font-display font-bold text-white">{s.charsNoSpaces}</div><div className="text-slate-500 text-sm mt-1">Characters (no spaces)</div></div>
