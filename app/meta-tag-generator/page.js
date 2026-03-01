@@ -148,6 +148,33 @@ ${form.ogImage ? `<meta property="twitter:image" content="${form.ogImage}">` : '
             </div>
           </div>
         </div>
+
+          {/* Related Tools */}
+          <div className="mt-12">
+            <h2 className="text-2xl font-display font-bold text-white mb-6">You Might Also Like</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <a href="/keyword-density" className="result-box group hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500/30">
+                <div className="text-3xl mb-3">🔍</div>
+                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-emerald-400 transition-colors">Keyword Density</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">Analyze keyword frequency in your content</p>
+              </a>
+              <a href="/word-counter" className="result-box group hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500/30">
+                <div className="text-3xl mb-3">📝</div>
+                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-emerald-400 transition-colors">Word Counter</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">Count words and characters instantly</p>
+              </a>
+              <a href="/readability-checker" className="result-box group hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500/30">
+                <div className="text-3xl mb-3">📖</div>
+                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-emerald-400 transition-colors">Readability Checker</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">Check your content readability score</p>
+              </a>
+              <a href="/character-counter" className="result-box group hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500/30">
+                <div className="text-3xl mb-3">🔤</div>
+                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-emerald-400 transition-colors">Character Counter</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">Count characters for meta tags</p>
+              </a>
+            </div>
+          </div>
       </main>
 
           {/* Internal Link to Blog */}

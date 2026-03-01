@@ -97,6 +97,33 @@ export default function WordCounter() {
             </div>
           </div>
         </div>
+
+          {/* Related Tools */}
+          <div className="mt-12">
+            <h2 className="text-2xl font-display font-bold text-white mb-6">You Might Also Like</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <a href="/character-counter" className="result-box group hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500/30">
+                <div className="text-3xl mb-3">🔤</div>
+                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-emerald-400 transition-colors">Character Counter</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">Count characters for Twitter, Instagram and more</p>
+              </a>
+              <a href="/reading-time" className="result-box group hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500/30">
+                <div className="text-3xl mb-3">⏱️</div>
+                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-emerald-400 transition-colors">Reading Time</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">Estimate how long your content takes to read</p>
+              </a>
+              <a href="/readability-checker" className="result-box group hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500/30">
+                <div className="text-3xl mb-3">📖</div>
+                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-emerald-400 transition-colors">Readability Checker</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">Check your Flesch-Kincaid readability score</p>
+              </a>
+              <a href="/words-per-page" className="result-box group hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500/30">
+                <div className="text-3xl mb-3">📄</div>
+                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-emerald-400 transition-colors">Words Per Page</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">Convert word count to number of pages</p>
+              </a>
+            </div>
+          </div>
       </main>
 
           {/* Internal Link to Blog */}

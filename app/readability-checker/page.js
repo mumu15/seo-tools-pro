@@ -129,6 +129,33 @@ export default function ReadabilityChecker() {
             </div>
           </div>
         </div>
+
+          {/* Related Tools */}
+          <div className="mt-12">
+            <h2 className="text-2xl font-display font-bold text-white mb-6">You Might Also Like</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <a href="/word-counter" className="result-box group hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500/30">
+                <div className="text-3xl mb-3">📝</div>
+                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-emerald-400 transition-colors">Word Counter</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">Count words and characters instantly</p>
+              </a>
+              <a href="/keyword-density" className="result-box group hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500/30">
+                <div className="text-3xl mb-3">🔍</div>
+                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-emerald-400 transition-colors">Keyword Density</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">Analyze keyword frequency in your content</p>
+              </a>
+              <a href="/sentence-counter" className="result-box group hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500/30">
+                <div className="text-3xl mb-3">📋</div>
+                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-emerald-400 transition-colors">Sentence Counter</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">Count sentences and analyze structure</p>
+              </a>
+              <a href="/reading-time" className="result-box group hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500/30">
+                <div className="text-3xl mb-3">⏱️</div>
+                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-emerald-400 transition-colors">Reading Time</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">Estimate reading time for your content</p>
+              </a>
+            </div>
+          </div>
       </main>
 
           {/* Internal Link to Blog */}
