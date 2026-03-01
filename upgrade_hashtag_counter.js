@@ -1,4 +1,6 @@
-'use client'
+const fs = require('fs');
+
+const newHashtagCounter = `'use client'
 import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -27,7 +29,7 @@ export default function HashtagCounter() {
   const [text, setText] = useState('')
   const [copied, setCopied] = useState(false)
 
-  const hashtags = (text.match(/#[\w]+/g) || [])
+  const hashtags = (text.match(/#[\\w]+/g) || [])
   const count = hashtags.length
   const unique = new Set(hashtags.map(h => h.toLowerCase())).size
 
@@ -81,7 +83,7 @@ export default function HashtagCounter() {
                 { label: 'Duplicates', value: count - unique, color: 'text-red-400' },
               ].map((stat, i) => (
                 <div key={i} className="stat-card">
-                  <div className={`text-2xl font-display font-bold ${stat.color}`}>{stat.value}</div>
+                  <div className={\`text-2xl font-display font-bold \${stat.color}\`}>{stat.value}</div>
                   <div className="text-slate-500 text-xs mt-1">{stat.label}</div>
                 </div>
               ))}
@@ -117,13 +119,13 @@ export default function HashtagCounter() {
                       <span className="text-slate-300 text-xs flex items-center gap-1">
                         <span>{platform.icon}</span>{platform.name}
                       </span>
-                      <span className={`text-xs font-bold ${over ? 'text-red-400' : 'text-slate-400'}`}>
+                      <span className={\`text-xs font-bold \${over ? 'text-red-400' : 'text-slate-400'}\`}>
                         {count}/{platform.limit}
                       </span>
                     </div>
                     <div className="w-full h-2 rounded-full overflow-hidden mb-1" style={{background:'rgba(255,255,255,0.05)'}}>
                       <div className="h-full rounded-full transition-all duration-300"
-                        style={{width:`${pct}%`,background: over ? '#ef4444' : pct > 80 ? '#f59e0b' : platform.color}} />
+                        style={{width:\`\${pct}%\`,background: over ? '#ef4444' : pct > 80 ? '#f59e0b' : platform.color}} />
                     </div>
                     <div className="text-slate-600 text-xs">Recommended: {platform.recommended}</div>
                   </div>
@@ -177,3 +179,9 @@ export default function HashtagCounter() {
     </>
   )
 }
+`;
+
+fs.writeFileSync('app/hashtag-counter/page.js', newHashtagCounter, 'utf8');
+console.log('✅ Hashtag counter upgraded!');
+console.log('Features: Platform limit bars, hashtag extractor, duplicate detection');
+console.log('Run: git add . && git commit -m "Upgrade hashtag counter with platform bars and hashtag extractor" && git push');
