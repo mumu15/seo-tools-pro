@@ -14,6 +14,18 @@ const faqs = [
 
 export default function WordCounter() {
   const [text, setText] = useState('')
+  const [copied, setCopied] = useState(false)
+
+  const copyResults = () => {
+    const s = stats()
+    const summary = `Word Count Results:\nWords: ${s.words}\nCharacters: ${s.chars}\nCharacters (no spaces): ${s.charsNoSpaces}\nSentences: ${s.sentences}\nParagraphs: ${s.paragraphs}\nReading Time: ${s.readTime} min\nUnique Words: ${s.uniqueWords}`
+    navigator.clipboard.writeText(summary).then(() => {
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    })
+  }
+
+  const clearText = () => setText('')
 
   const stats = useCallback(() => {
     const words = text.trim() === '' ? 0 : text.trim().split(/\s+/).length
