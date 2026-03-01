@@ -1,4 +1,6 @@
-'use client'
+const fs = require('fs');
+
+const newCharCounter = `'use client'
 import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -31,9 +33,9 @@ export default function CharacterCounter() {
   const [copied, setCopied] = useState(false)
 
   const chars = text.length
-  const charsNoSpaces = text.replace(/\s/g, '').length
-  const words = text.trim() === '' ? 0 : text.trim().split(/\s+/).length
-  const lines = text.split('\n').length
+  const charsNoSpaces = text.replace(/\\s/g, '').length
+  const words = text.trim() === '' ? 0 : text.trim().split(/\\s+/).length
+  const lines = text.split('\\n').length
 
   const copyText = () => {
     navigator.clipboard.writeText(text).then(() => {
@@ -86,7 +88,7 @@ export default function CharacterCounter() {
                 { label: 'Lines', value: lines, color: 'text-yellow-400' },
               ].map((stat, i) => (
                 <div key={i} className="stat-card">
-                  <div className={`text-2xl font-display font-bold ${stat.color}`}>{stat.value}</div>
+                  <div className={\`text-2xl font-display font-bold \${stat.color}\`}>{stat.value}</div>
                   <div className="text-slate-500 text-xs mt-1">{stat.label}</div>
                 </div>
               ))}
@@ -105,14 +107,14 @@ export default function CharacterCounter() {
                   <div key={i}>
                     <div className="flex justify-between items-center mb-1">
                       <span className="text-slate-400 text-xs">{platform.name}</span>
-                      <span className={`text-xs font-bold ${over ? 'text-red-400' : 'text-slate-400'}`}>
-                        {over ? `+${Math.abs(remaining)} over` : `${remaining} left`}
+                      <span className={\`text-xs font-bold \${over ? 'text-red-400' : 'text-slate-400'}\`}>
+                        {over ? \`+\${Math.abs(remaining)} over\` : \`\${remaining} left\`}
                       </span>
                     </div>
                     <div className="w-full h-1.5 rounded-full overflow-hidden" style={{background:'rgba(255,255,255,0.05)'}}>
                       <div className="h-full rounded-full transition-all duration-300"
                         style={{
-                          width: `${pct}%`,
+                          width: \`\${pct}%\`,
                           background: over ? '#ef4444' : pct > 80 ? '#f59e0b' : platform.color,
                         }} />
                     </div>
@@ -167,3 +169,8 @@ export default function CharacterCounter() {
     </>
   )
 }
+`;
+
+fs.writeFileSync('app/character-counter/page.js', newCharCounter, 'utf8');
+console.log('✅ Character counter upgraded with platform limit bars!');
+console.log('Run: git add . && git commit -m "Upgrade character counter with platform limit bars" && git push');
