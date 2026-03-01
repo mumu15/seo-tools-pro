@@ -1,4 +1,6 @@
-'use client'
+const fs = require('fs');
+
+const newSentenceCounter = `'use client'
 import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -20,12 +22,12 @@ export default function SentenceCounter() {
 
   const sentences = text.trim() === '' ? [] : text.match(/[^.!?]+[.!?]+/g) || (text.trim() ? [text.trim()] : [])
   const sentenceCount = sentences.length
-  const words = text.trim() === '' ? 0 : text.trim().split(/\s+/).length
+  const words = text.trim() === '' ? 0 : text.trim().split(/\\s+/).length
   const avgWordsPerSentence = sentenceCount === 0 ? 0 : Math.round(words / sentenceCount)
-  const paragraphs = text.trim() === '' ? 0 : text.split(/\n+/).filter(p => p.trim()).length || (text.trim() ? 1 : 0)
+  const paragraphs = text.trim() === '' ? 0 : text.split(/\\n+/).filter(p => p.trim()).length || (text.trim() ? 1 : 0)
 
   const longestSentence = sentences.reduce((a, b) => 
-    (a.trim().split(/\s+/).length > b.trim().split(/\s+/).length ? a : b), '')
+    (a.trim().split(/\\s+/).length > b.trim().split(/\\s+/).length ? a : b), '')
 
   const getReadabilityTip = () => {
     if (sentenceCount === 0) return null
@@ -38,7 +40,7 @@ export default function SentenceCounter() {
   const tip = getReadabilityTip()
 
   const copyResults = () => {
-    const summary = `Sentence Analysis:\nSentences: ${sentenceCount}\nWords: ${words}\nParagraphs: ${paragraphs}\nAvg Words per Sentence: ${avgWordsPerSentence}\nLongest Sentence: ${longestSentence.trim()}`
+    const summary = \`Sentence Analysis:\\nSentences: \${sentenceCount}\\nWords: \${words}\\nParagraphs: \${paragraphs}\\nAvg Words per Sentence: \${avgWordsPerSentence}\\nLongest Sentence: \${longestSentence.trim()}\`
     navigator.clipboard.writeText(summary).then(() => {
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
@@ -87,7 +89,7 @@ export default function SentenceCounter() {
             { label: 'Avg Words/Sentence', value: avgWordsPerSentence, color: 'text-yellow-400' },
           ].map((stat, i) => (
             <div key={i} className="stat-card">
-              <div className={`text-2xl font-display font-bold ${stat.color}`}>{stat.value}</div>
+              <div className={\`text-2xl font-display font-bold \${stat.color}\`}>{stat.value}</div>
               <div className="text-slate-500 text-xs mt-1">{stat.label}</div>
             </div>
           ))}
@@ -95,11 +97,11 @@ export default function SentenceCounter() {
 
         {/* Writing Quality Tip */}
         {tip && (
-          <div className="result-box mb-6" style={{borderColor:`rgba(52,211,153,0.2)`}}>
+          <div className="result-box mb-6" style={{borderColor:\`rgba(52,211,153,0.2)\`}}>
             <div className="flex items-start gap-3">
               <span className="text-2xl">{tip.icon}</span>
               <div>
-                <h3 className={`font-bold mb-1 ${tip.color}`}>Writing Quality</h3>
+                <h3 className={\`font-bold mb-1 \${tip.color}\`}>Writing Quality</h3>
                 <p className="text-slate-400 text-sm">{tip.tip}</p>
               </div>
             </div>
@@ -109,7 +111,7 @@ export default function SentenceCounter() {
         {/* Longest Sentence */}
         {longestSentence && (
           <div className="result-box mb-6">
-            <h3 className="text-white font-bold text-sm mb-2">Longest Sentence ({longestSentence.trim().split(/\s+/).length} words)</h3>
+            <h3 className="text-white font-bold text-sm mb-2">Longest Sentence ({longestSentence.trim().split(/\\s+/).length} words)</h3>
             <p className="text-slate-400 text-sm italic leading-relaxed">"{longestSentence.trim()}"</p>
           </div>
         )}
@@ -127,7 +129,7 @@ export default function SentenceCounter() {
               { range: 'Over 30 words', label: 'Very Hard', color: 'bg-red-500' },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-3">
-                <div className={`w-3 h-3 rounded-full ${item.color}`} />
+                <div className={\`w-3 h-3 rounded-full \${item.color}\`} />
                 <span className="text-slate-400 text-sm w-32">{item.range}</span>
                 <span className="text-white text-sm font-medium">{item.label}</span>
               </div>
@@ -179,3 +181,9 @@ export default function SentenceCounter() {
     </>
   )
 }
+`;
+
+fs.writeFileSync('app/sentence-counter/page.js', newSentenceCounter, 'utf8');
+console.log('✅ Sentence counter upgraded!');
+console.log('Features: Avg sentence length, longest sentence, writing quality tip, sentence length guide');
+console.log('Run: git add . && git commit -m "Upgrade sentence counter with writing analysis features" && git push');
