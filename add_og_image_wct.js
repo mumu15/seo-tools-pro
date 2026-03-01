@@ -1,0 +1,98 @@
+const fs = require('fs');
+
+// Create a premium SVG OG image (1200x630)
+const ogImage = `<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#030712;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a1628;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Glow circles -->
+  <circle cx="200" cy="200" r="300" fill="#10b981" opacity="0.05"/>
+  <circle cx="1000" cy="450" r="250" fill="#6366f1" opacity="0.05"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="315" x2="1200" y2="315" stroke="#10b981" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="630" stroke="#10b981" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Border -->
+  <rect x="2" y="2" width="1196" height="626" fill="none" stroke="#10b981" stroke-opacity="0.2" stroke-width="2" rx="16"/>
+
+  <!-- Logo box -->
+  <rect x="80" y="80" width="56" height="56" rx="14" fill="url(#green)"/>
+  <text x="108" y="118" font-family="Arial Black, sans-serif" font-size="28" font-weight="900" fill="#030712" text-anchor="middle">W</text>
+
+  <!-- Site name -->
+  <text x="152" y="104" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="white">WordCounter</text>
+  <text x="152" y="128" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#34d399">Tool.net</text>
+
+  <!-- Main headline -->
+  <text x="80" y="270" font-family="Arial Black, sans-serif" font-size="62" font-weight="900" fill="white">Free Online Writing</text>
+  <text x="80" y="350" font-family="Arial Black, sans-serif" font-size="62" font-weight="900" fill="url(#green)">&amp; SEO Tools</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="420" font-family="Arial, sans-serif" font-size="28" fill="#94a3b8">Word Counter · Keyword Density · Readability · Meta Tags</text>
+
+  <!-- Badges -->
+  <rect x="80" y="470" width="180" height="44" rx="22" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="170" y="498" font-family="Arial, sans-serif" font-size="18" fill="#34d399" text-anchor="middle">⚡ Instant Results</text>
+
+  <rect x="275" y="470" width="200" height="44" rx="22" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="375" y="498" font-family="Arial, sans-serif" font-size="18" fill="#34d399" text-anchor="middle">🔒 No Sign Up</text>
+
+  <rect x="490" y="470" width="210" height="44" rx="22" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="595" y="498" font-family="Arial, sans-serif" font-size="18" fill="#34d399" text-anchor="middle">💯 100% Free</text>
+
+  <!-- Tool count badge -->
+  <rect x="980" y="470" width="140" height="44" rx="22" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="1050" y="498" font-family="Arial Black, sans-serif" font-size="18" font-weight="900" fill="#34d399" text-anchor="middle">11 Tools</text>
+
+  <!-- Decorative tool icons on right -->
+  <text x="960" y="200" font-family="Arial, sans-serif" font-size="80" opacity="0.15">📝</text>
+  <text x="1060" y="280" font-family="Arial, sans-serif" font-size="60" opacity="0.12">🔍</text>
+  <text x="980" y="360" font-family="Arial, sans-serif" font-size="70" opacity="0.1">📖</text>
+</svg>`;
+
+// Write OG image to public folder
+fs.writeFileSync('public/og-image.svg', ogImage, 'utf8');
+console.log('✅ OG image created: public/og-image.svg');
+
+// Update layout.js to include OG image
+let layout = fs.readFileSync('app/layout.js', 'utf8');
+
+// Add images to openGraph
+layout = layout.replace(
+  `    description: 'Free professional word counter and SEO writing tools. Word counter, keyword density checker, meta tag generator, readability checker and more. Instant results, no sign up.',
+  },
+  twitter: {`,
+  `    description: 'Free professional word counter and SEO writing tools. Word counter, keyword density checker, meta tag generator, readability checker and more. Instant results, no sign up.',
+    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'WordCounterTool.net - Free Online Writing and SEO Tools' }],
+  },
+  twitter: {`
+);
+
+// Add image to twitter card
+layout = layout.replace(
+  `    description: 'Free professional word counter and SEO writing tools. Instant results, no sign up.',
+    site: '@wordcountertool',`,
+  `    description: 'Free professional word counter and SEO writing tools. Instant results, no sign up.',
+    site: '@wordcountertool',
+    images: ['/og-image.svg'],`
+);
+
+fs.writeFileSync('app/layout.js', layout, 'utf8');
+console.log('✅ layout.js updated with OG image!');
+console.log('\nRun: git add . && git commit -m "Add OG image for social sharing" && git push');

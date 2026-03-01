@@ -17,12 +17,14 @@ export const metadata = {
     siteName: 'WordCounterTool.net',
     title: 'WordCounterTool.net – Free Online Word Counter & SEO Tools',
     description: 'Free professional word counter and SEO writing tools. Word counter, keyword density checker, meta tag generator, readability checker and more. Instant results, no sign up.',
+    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'WordCounterTool.net - Free Online Writing and SEO Tools' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'WordCounterTool.net – Free Online Word Counter & SEO Tools',
     description: 'Free professional word counter and SEO writing tools. Instant results, no sign up.',
     site: '@wordcountertool',
+    images: ['/og-image.svg'],
   },
   robots: {
     index: true,
