@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url><loc>https://www.wordcountertool.net/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+  <!-- Tools -->
+  <url><loc>https://www.wordcountertool.net/word-counter</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.wordcountertool.net/character-counter</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.wordcountertool.net/reading-time</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.wordcountertool.net/hashtag-counter</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.wordcountertool.net/sentence-counter</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.wordcountertool.net/readability-checker</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.wordcountertool.net/keyword-density</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.wordcountertool.net/twitter-thread-counter</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.wordcountertool.net/words-per-page</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.wordcountertool.net/words-per-minute</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.wordcountertool.net/meta-tag-generator</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+  <!-- Blog Index -->
+  <url><loc>https://www.wordcountertool.net/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Original Blog Posts -->
+  <url><loc>https://www.wordcountertool.net/blog/how-many-words-per-page</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/ideal-blog-post-length-for-seo</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-to-improve-readability-score</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-many-words-in-a-novel</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/what-is-keyword-density</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-to-write-meta-descriptions</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/average-reading-speed</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-many-hashtags-to-use</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-to-write-twitter-thread</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/average-typing-speed</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-to-count-words-online</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- New Blog Posts -->
+  <url><loc>https://www.wordcountertool.net/blog/how-many-words-in-a-paragraph</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-many-words-in-a-short-story</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-many-words-in-a-speech</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-many-characters-in-a-tweet</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/instagram-caption-length</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-to-write-seo-title-tags</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/what-is-flesch-kincaid-score</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-many-words-in-a-resume</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-to-type-faster</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-to-write-blog-introduction</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/seo-content-length-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-to-write-product-descriptions</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/long-tail-keywords-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-to-write-headline-formulas</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-to-use-keywords-in-blog-posts</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-many-words-in-a-cover-letter</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-to-write-for-skimmable-content</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-to-write-email-subject-lines</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/how-to-write-blog-conclusion</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.wordcountertool.net/blog/words-per-minute-reading-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+</urlset>
