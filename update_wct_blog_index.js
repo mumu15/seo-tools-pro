@@ -1,4 +1,6 @@
-import Link from 'next/link'
+const fs = require('fs');
+
+const newContent = `import Link from 'next/link'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
@@ -53,7 +55,7 @@ export default function Blog() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {posts.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`}
+            <Link key={post.slug} href={\`/blog/\${post.slug}\`}
               className="result-box hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1 group">
               <div className="text-xs text-emerald-400 mb-2">{post.date}</div>
               <h2 className="text-white font-display font-bold text-lg mb-2 group-hover:text-emerald-400 transition-colors">{post.title}</h2>
@@ -67,3 +69,7 @@ export default function Blog() {
     </>
   )
 }
+`;
+
+fs.writeFileSync('app/blog/page.js', newContent, 'utf8');
+console.log('✅ Blog index updated with 31 articles!');
