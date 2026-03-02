@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
+import AdUnit from '../../components/AdUnit'
 import BreadcrumbSchema from '../../components/BreadcrumbSchema'
 import WebAppSchema from '../../components/WebAppSchema'
 
@@ -152,6 +153,8 @@ export default function ReadabilityChecker() {
             </div>
           </div>
         </div>
+
+        <AdUnit slot="3763639977" />
 
         {/* Internal Link */}
         <div className="mt-8 p-4 rounded-xl border border-emerald-500/20" style={{background:'rgba(52,211,153,0.05)'}}>

@@ -1,4 +1,5 @@
 import Header from '../../../components/Header'
+import AdUnit from '../../../components/AdUnit'
 import Footer from '../../../components/Footer'
 import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
@@ -46,7 +47,9 @@ export default function Post() {
                 ))}
               </div>
             </section>
-            <section>
+            <AdUnit slot="3248634657" />
+
+      <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Common Word Count Requirements</h2>
               <div className="result-box">
                 <div className="overflow-x-auto">

@@ -1,4 +1,5 @@
 import Header from '../../../components/Header'
+import AdUnit from '../../../components/AdUnit'
 import Footer from '../../../components/Footer'
 import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
@@ -51,7 +52,9 @@ export default function Post() {
                 ))}
               </div>
             </section>
-            <section>
+            <AdUnit slot="3248634657" />
+
+      <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Count Your Hashtags Free</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Use our free hashtag counter to instantly count all hashtags in your post and check platform limits.</p>
               <Link href="/hashtag-counter" className="btn-primary inline-block px-6 py-3">Try the Hashtag Counter Free →</Link>

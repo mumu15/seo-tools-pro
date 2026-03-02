@@ -1,4 +1,5 @@
 import Header from '../../../components/Header'
+import AdUnit from '../../../components/AdUnit'
 import Footer from '../../../components/Footer'
 import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
@@ -42,7 +43,9 @@ export default function WhatIsKeywordDensity() {
               <p className="text-slate-400 leading-relaxed mt-4">For example if your article is 1000 words and your keyword appears 15 times your density is 15 ÷ 1000 × 100 = <strong className="text-white">1.5%</strong> which is ideal.</p>
             </section>
 
-            <section>
+            <AdUnit slot="3248634657" />
+
+      <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Keyword Density Reference Guide</h2>
               <div className="result-box">
                 <div className="space-y-3">
