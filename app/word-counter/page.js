@@ -3,7 +3,7 @@ import { useState, useCallback, useEffect, useRef } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaqSchema from '../../components/FaqSchema'
-import AdUnit from '../../components/AdUnit'
+import AdUnit from '../components/AdUnit'
 import BreadcrumbSchema from '../../components/BreadcrumbSchema'
 import WebAppSchema from '../../components/WebAppSchema'
 
