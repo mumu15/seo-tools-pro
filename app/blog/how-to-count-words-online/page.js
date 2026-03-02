@@ -1,5 +1,5 @@
 import Header from '../../../components/Header'
-import AdUnit from '../../../components/AdUnit'
+import AdUnit from '../../components/AdUnit'
 import Footer from '../../../components/Footer'
 import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
