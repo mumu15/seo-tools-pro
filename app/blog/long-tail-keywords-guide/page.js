@@ -5,7 +5,7 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  title: 'Long-Tail Keywords: The Complete Beginner's Guide (2026)',
+  title: 'Long-Tail Keywords: The Complete Beginners Guide (2026)',
   description: 'Learn what long-tail keywords are, why they drive more traffic than short keywords, and how to find and use them to rank faster on Google.',
 }
 
