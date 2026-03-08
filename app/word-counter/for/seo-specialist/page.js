@@ -4,7 +4,7 @@ import AdUnit from '../../../components/AdUnit';
 
 export const metadata = {
   title: 'Word Counter for SEO Specialists | WordCounterTool.net',
-  description: 'Free word counter for SEO specialists. Check content length, keyword density and readability scores for pages you're optimizing for Google.',
+  description: 'Free word counter for SEO specialists. Check content length, keyword density and readability scores for pages you&apos;re optimizing for Google.',
   alternates: { canonical: 'https://www.wordcountertool.net/word-counter/for/seo-specialist' },
 };
 
@@ -27,7 +27,7 @@ export default function Page() {
           {/* Hero */}
           <div className="mb-10">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Word Counter for SEO Specialists</h1>
-            <p className="text-slate-400 text-lg leading-relaxed">SEO content requires precise word counts. Whether you're auditing thin content or writing new pages to outrank competitors, this tool gives you the word count data you need fast.</p>
+            <p className="text-slate-400 text-lg leading-relaxed">SEO content requires precise word counts. Whether you&apos;re auditing thin content or writing new pages to outrank competitors, this tool gives you the word count data you need fast.</p>
           </div>
 
           {/* Embedded tool CTA */}
@@ -115,10 +115,10 @@ export default function Page() {
             </div>
             <div key={2} className="border border-slate-700/50 rounded-xl p-5">
               <h3 className="text-white font-semibold mb-2">What is thin content and how do I fix it?</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">Thin content is typically under 300 words and does not fully answer the user's query. Fix it by expanding with relevant sections, FAQs, data tables and internal links. Target at least 500 to 800 words minimum.</p>
+              <p className="text-slate-400 text-sm leading-relaxed">Thin content is typically under 300 words and does not fully answer the user&apos;s query. Fix it by expanding with relevant sections, FAQs, data tables and internal links. Target at least 500 to 800 words minimum.</p>
             </div>
             <div key={3} className="border border-slate-700/50 rounded-xl p-5">
-              <h3 className="text-white font-semibold mb-2">How do I find the word count of a competitor's page?</h3>
+              <h3 className="text-white font-semibold mb-2">How do I find the word count of a competitor&apos;s page?</h3>
               <p className="text-slate-400 text-sm leading-relaxed">Open the page, select all text (Ctrl+A), copy it, then paste into our free word counter. This gives you an accurate count of the body content. Alternatively use browser extensions like Word Count Plus.</p>
             </div>
             <div key={4} className="border border-slate-700/50 rounded-xl p-5">

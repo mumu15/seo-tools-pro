@@ -128,8 +128,8 @@ export default function Page() {
               <p className="text-slate-400 text-sm leading-relaxed">YouTube descriptions can be up to 5,000 characters. For SEO include your primary keyword in the first 150 characters as that is what shows in search results. Aim for 300 to 500 words total for the best ranking results.</p>
             </div>
             <div key={4} className="border border-slate-700/50 rounded-xl p-5">
-              <h3 className="text-white font-semibold mb-2">Do hashtags count in Instagram's character limit?</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">Yes. Hashtags count toward Instagram's 2,200 character limit. However most creators put hashtags at the end after the main caption or in the first comment to keep the caption clean.</p>
+              <h3 className="text-white font-semibold mb-2">Do hashtags count in Instagram&apos;s character limit?</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">Yes. Hashtags count toward Instagram&apos;s 2,200 character limit. However most creators put hashtags at the end after the main caption or in the first comment to keep the caption clean.</p>
             </div>
             </div>
           </section>

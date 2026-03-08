@@ -92,7 +92,7 @@ export default function Page() {
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Subject lines under 50 characters are fully visible on all mobile email clients</span></li>
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Preview text is the second line readers see in their inbox so make it complement the subject line</span></li>
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Emails over 600 words see significant drop in click-through rates according to Mailchimp data</span></li>
-              <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Cold outreach emails perform best at 50 to 100 words as brevity signals respect for the recipient's time</span></li>
+              <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Cold outreach emails perform best at 50 to 100 words as brevity signals respect for the recipient&apos;s time</span></li>
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Always check your unsubscribe link and legal footer do not bloat your word count significantly</span></li>
             </ul>
           </section>

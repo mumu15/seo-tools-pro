@@ -27,7 +27,7 @@ export default function Page() {
           {/* Hero */}
           <div className="mb-10">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Word Counter for Writers</h1>
-            <p className="text-slate-400 text-lg leading-relaxed">Whether you're writing a novel, short story or submitting to literary magazines, word count is everything. Track your manuscript progress with this free word counter built for serious writers.</p>
+            <p className="text-slate-400 text-lg leading-relaxed">Whether you&apos;re writing a novel, short story or submitting to literary magazines, word count is everything. Track your manuscript progress with this free word counter built for serious writers.</p>
           </div>
 
           {/* Embedded tool CTA */}
@@ -75,7 +75,7 @@ export default function Page() {
                       <td className="text-white font-medium py-3 pr-4">Epic fantasy / sci-fi</td><td className="text-slate-300 py-3 pr-4">100,000-150,000 words</td>
                     </tr>
                     <tr className="border-b" style={{borderColor:'rgba(52,211,153,0.05)'}}>
-                      <td className="text-white font-medium py-3 pr-4">Children's picture book</td><td className="text-slate-300 py-3 pr-4">500-1,000 words</td>
+                      <td className="text-white font-medium py-3 pr-4">Children&apos;s picture book</td><td className="text-slate-300 py-3 pr-4">500-1,000 words</td>
                     </tr>
                     <tr className="border-b" style={{borderColor:'rgba(52,211,153,0.05)'}}>
                       <td className="text-white font-medium py-3 pr-4">Middle grade novel</td><td className="text-slate-300 py-3 pr-4">20,000-50,000 words</td>

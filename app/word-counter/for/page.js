@@ -14,7 +14,7 @@ const professions = [
   { slug: 'lawyer', label: 'Lawyers', description: 'Free word counter for lawyers and legal professionals. Check briefs, contracts and legal documents against court word limits and page limits.' },
   { slug: 'copywriter', label: 'Copywriters', description: 'Free word counter for copywriters. Check ad copy, landing page, email and social media copy against platform limits and client briefs.' },
   { slug: 'teacher', label: 'Teachers', description: 'Free word counter for teachers and educators. Check student assignment lengths, lesson plan word counts and educational content readability.' },
-  { slug: 'seo-specialist', label: 'SEO Specialists', description: 'Free word counter for SEO specialists. Check content length, keyword density and readability scores for pages you're optimizing for Google.' },
+  { slug: 'seo-specialist', label: 'SEO Specialists', description: 'Free word counter for SEO specialists. Check content length, keyword density and readability scores for pages you&apos;re optimizing for Google.' },
   { slug: 'social-media-manager', label: 'Social Media Managers', description: 'Free character and word counter for social media managers. Check post lengths for Twitter X, Instagram, Facebook, LinkedIn and TikTok.' },
   { slug: 'content-marketer', label: 'Content Marketers', description: 'Free word counter for content marketers. Track content length for blog posts, whitepapers, case studies, email campaigns and social copy.' },
   { slug: 'academic', label: 'Academic Researchers', description: 'Free word counter for academic researchers. Check journal article, abstract, literature review and thesis word counts against publication requirements.' },

@@ -69,7 +69,7 @@ export default function Page() {
                       <td className="text-white font-medium py-3 pr-4">Literature review</td><td className="text-slate-300 py-3 pr-4">3,000-12,000 words</td>
                     </tr>
                     <tr className="border-b" style={{borderColor:'rgba(52,211,153,0.05)'}}>
-                      <td className="text-white font-medium py-3 pr-4">Master's thesis</td><td className="text-slate-300 py-3 pr-4">15,000-50,000 words</td>
+                      <td className="text-white font-medium py-3 pr-4">Master&apos;s thesis</td><td className="text-slate-300 py-3 pr-4">15,000-50,000 words</td>
                     </tr>
                     <tr className="border-b" style={{borderColor:'rgba(52,211,153,0.05)'}}>
                       <td className="text-white font-medium py-3 pr-4">PhD thesis</td><td className="text-slate-300 py-3 pr-4">70,000-100,000 words</td>
@@ -92,7 +92,7 @@ export default function Page() {
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">Tips for Academic Researchers</h2>
             <ul className="space-y-3 bg-slate-800/40 border border-slate-700/50 rounded-2xl p-6">
-              <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Always check the target journal's author guidelines as word limits vary significantly between publications</span></li>
+              <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Always check the target journal&apos;s author guidelines as word limits vary significantly between publications</span></li>
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Most journal word counts exclude references, tables, figure captions and supplementary materials</span></li>
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Abstract word limits are strictly enforced by submission systems so check yours carefully</span></li>
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Use the readability checker to ensure your writing scores above 30 on the Flesch scale which is standard for academic writing</span></li>
@@ -107,7 +107,7 @@ export default function Page() {
               
             <div key={0} className="border border-slate-700/50 rounded-xl p-5">
               <h3 className="text-white font-semibold mb-2">Do references count in academic word limits?</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">Usually no. Most journals and universities exclude the reference list, bibliography, tables, figures and their captions from word counts. Check each publication's specific guidelines as policies vary.</p>
+              <p className="text-slate-400 text-sm leading-relaxed">Usually no. Most journals and universities exclude the reference list, bibliography, tables, figures and their captions from word counts. Check each publication&apos;s specific guidelines as policies vary.</p>
             </div>
             <div key={1} className="border border-slate-700/50 rounded-xl p-5">
               <h3 className="text-white font-semibold mb-2">How long should a research paper abstract be?</h3>
@@ -115,7 +115,7 @@ export default function Page() {
             </div>
             <div key={2} className="border border-slate-700/50 rounded-xl p-5">
               <h3 className="text-white font-semibold mb-2">What is the ideal length for a PhD thesis?</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">PhD thesis length varies by discipline and institution. Humanities theses are typically 80,000 to 100,000 words. Science and engineering theses run 50,000 to 80,000 words. Always check your institution's regulations.</p>
+              <p className="text-slate-400 text-sm leading-relaxed">PhD thesis length varies by discipline and institution. Humanities theses are typically 80,000 to 100,000 words. Science and engineering theses run 50,000 to 80,000 words. Always check your institution&apos;s regulations.</p>
             </div>
             <div key={3} className="border border-slate-700/50 rounded-xl p-5">
               <h3 className="text-white font-semibold mb-2">How long should a literature review be?</h3>

@@ -123,7 +123,7 @@ export default function Page() {
             </div>
             <div key={4} className="border border-slate-700/50 rounded-xl p-5">
               <h3 className="text-white font-semibold mb-2">How long should a LinkedIn article be?</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">LinkedIn articles that perform best are 1,500 to 2,000 words according to LinkedIn's own data. They should have a strong hook in the first 150 characters which shows before the See More cutoff.</p>
+              <p className="text-slate-400 text-sm leading-relaxed">LinkedIn articles that perform best are 1,500 to 2,000 words according to LinkedIn&apos;s own data. They should have a strong hook in the first 150 characters which shows before the See More cutoff.</p>
             </div>
             </div>
           </section>

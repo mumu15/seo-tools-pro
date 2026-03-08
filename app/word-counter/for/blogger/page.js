@@ -27,7 +27,7 @@ export default function Page() {
           {/* Hero */}
           <div className="mb-10">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Word Counter for Bloggers</h1>
-            <p className="text-slate-400 text-lg leading-relaxed">Every blogger knows the word count dilemma. Too short and you won't rank. Too long and readers bounce. This free word counter helps you hit the SEO sweet spot every time.</p>
+            <p className="text-slate-400 text-lg leading-relaxed">Every blogger knows the word count dilemma. Too short and you won&apos;t rank. Too long and readers bounce. This free word counter helps you hit the SEO sweet spot every time.</p>
           </div>
 
           {/* Embedded tool CTA */}

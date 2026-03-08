@@ -27,7 +27,7 @@ export default function Page() {
           {/* Hero */}
           <div className="mb-10">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Word Counter for Journalists</h1>
-            <p className="text-slate-400 text-lg leading-relaxed">Journalism has strict word limits. Whether you're writing for print, digital or broadcast, hitting your exact word count is professional. Use this free tool to check your story length instantly.</p>
+            <p className="text-slate-400 text-lg leading-relaxed">Journalism has strict word limits. Whether you&apos;re writing for print, digital or broadcast, hitting your exact word count is professional. Use this free tool to check your story length instantly.</p>
           </div>
 
           {/* Embedded tool CTA */}
@@ -92,7 +92,7 @@ export default function Page() {
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">Tips for Journalists</h2>
             <ul className="space-y-3 bg-slate-800/40 border border-slate-700/50 rounded-2xl p-6">
-              <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Paste your article in the counter and check against your editor's word limit before submitting</span></li>
+              <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Paste your article in the counter and check against your editor&apos;s word limit before submitting</span></li>
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Broadcast scripts use a different rule: 150 words per minute for radio, 130 words per minute for TV</span></li>
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Online articles need a minimum of 300 words to be indexed properly by Google</span></li>
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Inverted pyramid structure means your most important facts appear in the first 150 words</span></li>
@@ -123,7 +123,7 @@ export default function Page() {
             </div>
             <div key={4} className="border border-slate-700/50 rounded-xl p-5">
               <h3 className="text-white font-semibold mb-2">Do headers and captions count in a journalism word count?</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">It depends on the publication's style guide. Most count only body copy. Headlines, subheads, captions and pull quotes are usually excluded. Always confirm with your editor.</p>
+              <p className="text-slate-400 text-sm leading-relaxed">It depends on the publication&apos;s style guide. Most count only body copy. Headlines, subheads, captions and pull quotes are usually excluded. Always confirm with your editor.</p>
             </div>
             </div>
           </section>

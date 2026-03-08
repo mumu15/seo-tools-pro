@@ -27,7 +27,7 @@ export default function Page() {
           {/* Hero */}
           <div className="mb-10">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Word Counter for Teachers</h1>
-            <p className="text-slate-400 text-lg leading-relaxed">Teachers set word limits for a reason. Whether you're checking student submissions, writing lesson plans or creating educational content, this free word counter saves you time.</p>
+            <p className="text-slate-400 text-lg leading-relaxed">Teachers set word limits for a reason. Whether you&apos;re checking student submissions, writing lesson plans or creating educational content, this free word counter saves you time.</p>
           </div>
 
           {/* Embedded tool CTA */}
@@ -103,8 +103,8 @@ export default function Page() {
             <div className="space-y-4">
               
             <div key={0} className="border border-slate-700/50 rounded-xl p-5">
-              <h3 className="text-white font-semibold mb-2">How do I verify a student's word count?</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">Paste the student's submitted text into our free word counter for an instant independent count. This is more reliable than accepting the student's own reported count.</p>
+              <h3 className="text-white font-semibold mb-2">How do I verify a student&apos;s word count?</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">Paste the student&apos;s submitted text into our free word counter for an instant independent count. This is more reliable than accepting the student&apos;s own reported count.</p>
             </div>
             <div key={1} className="border border-slate-700/50 rounded-xl p-5">
               <h3 className="text-white font-semibold mb-2">What reading level is appropriate for different grades?</h3>

@@ -40,7 +40,7 @@ export default function Page() {
           {/* Quick Answer */}
           <div className="bg-slate-800/50 border border-emerald-500/20 rounded-2xl p-6 mb-10">
             <p className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2">Quick Answer</p>
-            <p className="text-white text-lg leading-relaxed" dangerouslySetInnerHTML={{__html: 'US Supreme Court briefs are limited to <strong>15,000 words</strong> for opening briefs and 9,000 words for reply briefs. Federal Court of Appeals briefs are limited to 13,000 words. Always check the specific court's local rules.'}} />
+            <p className="text-white text-lg leading-relaxed" dangerouslySetInnerHTML={{__html: 'US Supreme Court briefs are limited to <strong>15,000 words</strong> for opening briefs and 9,000 words for reply briefs. Federal Court of Appeals briefs are limited to 13,000 words. Always check the specific court&apos;s local rules.'}} />
           </div>
 
           {/* Word Count Table */}
@@ -89,7 +89,7 @@ export default function Page() {
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">Tips for Lawyers</h2>
             <ul className="space-y-3 bg-slate-800/40 border border-slate-700/50 rounded-2xl p-6">
-              <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Always verify the specific court's local rules as word limits vary by jurisdiction and court level</span></li>
+              <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Always verify the specific court&apos;s local rules as word limits vary by jurisdiction and court level</span></li>
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Most court word counts exclude footnotes, certificates of compliance and table of contents</span></li>
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Use the word counter to check your brief against limits before finalizing</span></li>
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>FRCP Rule 7 motions in federal district courts are typically limited to 10 pages or 3,500 words</span></li>
@@ -112,7 +112,7 @@ export default function Page() {
             </div>
             <div key={2} className="border border-slate-700/50 rounded-xl p-5">
               <h3 className="text-white font-semibold mb-2">Are footnotes counted in legal brief word limits?</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">Under federal rules, footnotes count toward the word limit. Some local rules exclude footnotes. Check the specific court's local rules as they vary significantly.</p>
+              <p className="text-slate-400 text-sm leading-relaxed">Under federal rules, footnotes count toward the word limit. Some local rules exclude footnotes. Check the specific court&apos;s local rules as they vary significantly.</p>
             </div>
             <div key={3} className="border border-slate-700/50 rounded-xl p-5">
               <h3 className="text-white font-semibold mb-2">What is the word limit for a motion to dismiss?</h3>
