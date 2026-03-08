@@ -1,6 +1,6 @@
-import Header from '../../../../components/Header';
-import Footer from '../../../../components/Footer';
-import AdUnit from '../../../components/AdUnit';
+import Header from '../../../components/Header';
+import Footer from '../../../components/Footer';
+import AdUnit from '../../components/AdUnit';
 
 export const metadata = {
   title: 'Meta Title Character Limit for SEO (2026 Guide) | WordCounterTool.net',

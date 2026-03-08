@@ -1,6 +1,6 @@
-import Header from '../../../../components/Header';
-import Footer from '../../../../components/Footer';
-import AdUnit from '../../../components/AdUnit';
+import Header from '../../../components/Header';
+import Footer from '../../../components/Footer';
+import AdUnit from '../../components/AdUnit';
 
 export const metadata = {
   title: 'Instagram Character Limit: Complete Guide (2026) | WordCounterTool.net',

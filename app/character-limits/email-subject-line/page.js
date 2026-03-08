@@ -1,6 +1,6 @@
-import Header from '../../../../components/Header';
-import Footer from '../../../../components/Footer';
-import AdUnit from '../../../components/AdUnit';
+import Header from '../../../components/Header';
+import Footer from '../../../components/Footer';
+import AdUnit from '../../components/AdUnit';
 
 export const metadata = {
   title: 'Email Subject Line Character Limit: Best Practices (2026) | WordCounterTool.net',
