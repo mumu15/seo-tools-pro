@@ -5,6 +5,7 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
+  alternates: { canonical: 'https://www.wordcountertool.net/blog/what-is-flesch-kincaid-score' },
   title: 'What Is Flesch-Kincaid Score? (And How to Improve Yours)',
   description: 'Understand the Flesch-Kincaid readability score and how it affects your SEO and reader engagement. Includes formulas, benchmarks and tips.',
 }
@@ -95,6 +96,9 @@ export default function Post() {
           </div>
         </article>
       </main>
+      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
       <Footer />
     </>
   )

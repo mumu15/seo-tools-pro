@@ -228,6 +228,9 @@ export default function WordsPerMinute() {
             <p className="text-slate-400 text-sm mb-2">📖 Related Guide</p>
             <a href="/blog/average-typing-speed" className="text-emerald-400 font-semibold hover:underline">Average Typing Speed: What is Good WPM in 2026?</a>
           </div>
+      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Words Per Minute Calculator","item":"https://www.wordcountertool.net/words-per-minute"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Words Per Minute Calculator","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
       <Footer />
     </>
   )

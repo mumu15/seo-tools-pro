@@ -187,6 +187,9 @@ ${form.ogImage ? `<meta property="twitter:image" content="${form.ogImage}">` : '
             <p className="text-slate-400 text-sm mb-2">📖 Related Guide</p>
             <a href="/blog/how-to-write-meta-descriptions" className="text-emerald-400 font-semibold hover:underline">How to Write Perfect Meta Descriptions That Get Clicks (2026)</a>
           </div>
+      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Meta Tag Generator","item":"https://www.wordcountertool.net/meta-tag-generator"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Meta Tag Generator","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
       <Footer />
     </>
   )

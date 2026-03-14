@@ -2,6 +2,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 export const metadata = {
+  alternates: { canonical: 'https://www.wordcountertool.net/privacy-policy' },
   title: 'Privacy Policy | WordCounterTool.net',
   description: 'Privacy policy for WordCounterTool.net. Learn how we handle your data and protect your privacy.',
 }
@@ -58,6 +59,9 @@ export default function PrivacyPolicy() {
           ))}
         </div>
       </main>
+      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Privacy Policy","item":"https://www.wordcountertool.net/privacy-policy"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Privacy Policy","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
       <Footer />
     </>
   )

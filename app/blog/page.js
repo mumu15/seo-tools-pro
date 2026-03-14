@@ -37,6 +37,7 @@ const posts = [
 ]
 
 export const metadata = {
+  alternates: { canonical: 'https://www.wordcountertool.net/blog' },
   title: 'Blog — Writing & SEO Tips | WordCounterTool.net',
   description: 'Free guides and tips on word counts, SEO writing, readability, keyword density and more. Expert advice updated for 2026.',
 }

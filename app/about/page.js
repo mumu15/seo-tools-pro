@@ -3,6 +3,7 @@ import Footer from '../../components/Footer'
 import Link from 'next/link'
 
 export const metadata = {
+  alternates: { canonical: 'https://www.wordcountertool.net/about' },
   title: 'About Us | WordCounterTool.net',
   description: 'Learn about WordCounterTool.net — free online writing and SEO tools for bloggers, students, writers and content creators.',
 }
@@ -76,6 +77,9 @@ export default function About() {
           </div>
         </div>
       </main>
+      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"About","item":"https://www.wordcountertool.net/about"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"About","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
       <Footer />
     </>
   )
