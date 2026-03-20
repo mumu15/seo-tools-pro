@@ -18,7 +18,7 @@ export default function Page() {
           <nav className="text-sm text-slate-500 mb-6">
             <a href="/" className="hover:text-emerald-400 transition-colors">Home</a>
             <span className="mx-2">/</span>
-            <a href="/word-count/for" className="hover:text-emerald-400 transition-colors">Word Count > For</a>
+            <a href="/word-count/for" className="hover:text-emerald-400 transition-colors">Word Count  /  For</a>
             <span className="mx-2">/</span>
             <span className="text-slate-300">Acceptance Speech Word Count</span>
           </nav>
