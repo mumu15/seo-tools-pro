@@ -170,7 +170,18 @@ export default function sitemap() {
     { url: "/about", priority: 0.3, freq: "monthly" },
     { url: "/contact", priority: 0.3, freq: "monthly" },
     { url: "/privacy-policy", priority: 0.3, freq: "monthly" }
-  ].map(entry => ({
+  ,
+    { url: "/blog/how-many-words-in-a-college-essay", priority: 0.7, freq: "monthly" },
+    { url: "/blog/ideal-linkedin-post-length", priority: 0.7, freq: "monthly" },
+    { url: "/blog/tiktok-caption-length-guide", priority: 0.7, freq: "monthly" },
+    { url: "/blog/how-many-words-in-a-dissertation", priority: 0.7, freq: "monthly" },
+    { url: "/blog/email-length-best-practices", priority: 0.7, freq: "monthly" },
+    { url: "/blog/how-long-should-a-youtube-script-be", priority: 0.7, freq: "monthly" },
+    { url: "/blog/how-many-words-in-a-podcast-episode", priority: 0.7, freq: "monthly" },
+    { url: "/blog/google-ads-character-limits", priority: 0.7, freq: "monthly" },
+    { url: "/blog/how-to-write-faster", priority: 0.7, freq: "monthly" },
+    { url: "/blog/best-free-writing-tools-2026", priority: 0.7, freq: "monthly" },
+].map(entry => ({
     url: base + entry.url,
     lastModified: today,
     changeFrequency: entry.freq,
