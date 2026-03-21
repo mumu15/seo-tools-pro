@@ -1,7 +1,7 @@
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
-import AdUnit from '../components/AdUnit'
-import FaqSchema from '../../components/FaqSchema'
+import Header from '../../../components/Header'
+import Footer from '../../../components/Footer'
+import AdUnit from '../../components/AdUnit'
+import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
   title: 'Word Counter for Every Language — 15 Languages Supported Free | WordCounterTool.net',

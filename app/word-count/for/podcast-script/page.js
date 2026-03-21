@@ -1,7 +1,7 @@
-import Header from '../../../components/Header'
-import Footer from '../../../components/Footer'
-import AdUnit from '../../components/AdUnit'
-import FaqSchema from '../../../components/FaqSchema'
+import Header from '../../../../components/Header'
+import Footer from '../../../../components/Footer'
+import AdUnit from '../../../components/AdUnit'
+import FaqSchema from '../../../../components/FaqSchema'
 
 export const metadata = {
   title: 'How Many Words in a Podcast Script? (2026 Guide) | WordCounterTool.net',
