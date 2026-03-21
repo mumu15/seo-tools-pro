@@ -169,6 +169,24 @@ export default function CharacterCounter() {
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Character Counter","item":"https://www.wordcountertool.net/character-counter"}]})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Character Counter","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      
+        <div className="mt-8 p-5 rounded-xl" style={{background:'rgba(52,211,153,0.04)',border:'1px solid rgba(52,211,153,0.15)'}}>
+          <h2 className="text-lg font-bold text-white mb-3">Recommended Reading</h2>
+          <a href="/blog/how-many-characters-in-a-tweet" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>Characters in a Tweet</a>
+          <a href="/blog/instagram-caption-length" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>Instagram Caption Length</a>
+          <a href="/blog/how-to-write-email-subject-lines" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>Email Subject Lines</a>
+          <a href="/blog/google-ads-character-limits" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>Google Ads Limits</a>
+        </div>
+      
+        <div className="mt-6 p-5 rounded-xl" style={{background:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.06)'}}>
+          <h2 className="text-lg font-bold text-white mb-3">Explore More Tools</h2>
+          <div className="flex flex-wrap gap-2">
+            <a href="/word-counter" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
+            <a href="/twitter-thread-counter" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Thread Counter</a>
+            <a href="/character-limits" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Character Limits</a>
+            <a href="/hashtag-counter" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Hashtag Counter</a>
+          </div>
+        </div>
       <Footer />
     </>
   )

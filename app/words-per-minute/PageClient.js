@@ -231,6 +231,23 @@ export default function WordsPerMinute() {
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Words Per Minute Calculator","item":"https://www.wordcountertool.net/words-per-minute"}]})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Words Per Minute Calculator","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      
+        <div className="mt-8 p-5 rounded-xl" style={{background:'rgba(52,211,153,0.04)',border:'1px solid rgba(52,211,153,0.15)'}}>
+          <h2 className="text-lg font-bold text-white mb-3">Recommended Reading</h2>
+          <a href="/blog/average-typing-speed" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>Average Typing Speed</a>
+          <a href="/blog/average-reading-speed" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>Average Reading Speed</a>
+          <a href="/blog/words-per-minute-reading-guide" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>WPM Reading Guide</a>
+          <a href="/blog/how-to-type-faster" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>How to Type Faster</a>
+        </div>
+      
+        <div className="mt-6 p-5 rounded-xl" style={{background:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.06)'}}>
+          <h2 className="text-lg font-bold text-white mb-3">Explore More Tools</h2>
+          <div className="flex flex-wrap gap-2">
+            <a href="/reading-time" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time</a>
+            <a href="/word-counter" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
+            <a href="/words-per-page" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Page</a>
+          </div>
+        </div>
       <Footer />
     </>
   )

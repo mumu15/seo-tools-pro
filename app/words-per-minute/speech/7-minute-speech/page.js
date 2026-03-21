@@ -121,7 +121,24 @@ export default function Page() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Words in a 7 Minute Speech","item":"https://www.wordcountertool.net/words-per-minute/speech/7-minute-speech"}]})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Words in a 7 Minute Speech","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
-      <Footer />
+      
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">More Speech Lengths</h2>
+            <div className="flex flex-wrap gap-2">
+              <a href="/words-per-minute/speech/1-minute-speech" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-3 py-2 rounded-lg transition-colors">1 Minute Speech</a>
+              <a href="/words-per-minute/speech/10-minute-speech" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-3 py-2 rounded-lg transition-colors">10 Minute Speech</a>
+              <a href="/words-per-minute/speech/15-minute-speech" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-3 py-2 rounded-lg transition-colors">15 Minute Speech</a>
+              <a href="/words-per-minute/speech/2-minute-speech" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-3 py-2 rounded-lg transition-colors">2 Minute Speech</a>
+              <a href="/words-per-minute/speech/20-minute-speech" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-3 py-2 rounded-lg transition-colors">20 Minute Speech</a>
+              <a href="/words-per-minute/speech/25-minute-speech" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-3 py-2 rounded-lg transition-colors">25 Minute Speech</a>
+              <a href="/words-per-minute/speech/3-minute-speech" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-3 py-2 rounded-lg transition-colors">3 Minute Speech</a>
+              <a href="/words-per-minute/speech/30-minute-speech" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-3 py-2 rounded-lg transition-colors">30 Minute Speech</a>
+              <a href="/words-per-minute/speech/45-minute-speech" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-3 py-2 rounded-lg transition-colors">45 Minute Speech</a>
+              <a href="/words-per-minute/speech/5-minute-speech" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-3 py-2 rounded-lg transition-colors">5 Minute Speech</a>
+              <a href="/words-per-minute/speech/60-minute-speech" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-3 py-2 rounded-lg transition-colors">60 Minute Speech</a>
+            </div>
+          </section>
+        <Footer />
     </>
   );
 }

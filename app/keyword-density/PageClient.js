@@ -189,6 +189,24 @@ export default function KeywordDensity() {
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Keyword Density Checker","item":"https://www.wordcountertool.net/keyword-density"}]})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Keyword Density Checker","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      
+        <div className="mt-8 p-5 rounded-xl" style={{background:'rgba(52,211,153,0.04)',border:'1px solid rgba(52,211,153,0.15)'}}>
+          <h2 className="text-lg font-bold text-white mb-3">Recommended Reading</h2>
+          <a href="/blog/what-is-keyword-density" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>What Is Keyword Density?</a>
+          <a href="/blog/how-to-use-keywords-in-blog-posts" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>Keywords in Blog Posts</a>
+          <a href="/blog/long-tail-keywords-guide" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>Long-Tail Keywords</a>
+          <a href="/blog/ideal-blog-post-length-for-seo" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>Ideal Blog Post Length for SEO</a>
+        </div>
+      
+        <div className="mt-6 p-5 rounded-xl" style={{background:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.06)'}}>
+          <h2 className="text-lg font-bold text-white mb-3">Explore More Tools</h2>
+          <div className="flex flex-wrap gap-2">
+            <a href="/word-counter" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Readability Checker</a>
+            <a href="/meta-tag-generator" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Meta Tag Generator</a>
+            <a href="/reading-time" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time</a>
+          </div>
+        </div>
       <Footer />
     </>
   )

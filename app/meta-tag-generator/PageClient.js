@@ -190,6 +190,23 @@ ${form.ogImage ? `<meta property="twitter:image" content="${form.ogImage}">` : '
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Meta Tag Generator","item":"https://www.wordcountertool.net/meta-tag-generator"}]})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Meta Tag Generator","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      
+        <div className="mt-8 p-5 rounded-xl" style={{background:'rgba(52,211,153,0.04)',border:'1px solid rgba(52,211,153,0.15)'}}>
+          <h2 className="text-lg font-bold text-white mb-3">Recommended Reading</h2>
+          <a href="/blog/how-to-write-meta-descriptions" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>Write Meta Descriptions</a>
+          <a href="/blog/how-to-write-seo-title-tags" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>SEO Title Tags</a>
+          <a href="/blog/what-is-keyword-density" className="block text-emerald-400 text-sm font-semibold py-1.5 hover:underline" style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>What Is Keyword Density?</a>
+        </div>
+      
+        <div className="mt-6 p-5 rounded-xl" style={{background:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.06)'}}>
+          <h2 className="text-lg font-bold text-white mb-3">Explore More Tools</h2>
+          <div className="flex flex-wrap gap-2">
+            <a href="/keyword-density" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Keyword Density</a>
+            <a href="/character-counter" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
+            <a href="/word-counter" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Readability Checker</a>
+          </div>
+        </div>
       <Footer />
     </>
   )
