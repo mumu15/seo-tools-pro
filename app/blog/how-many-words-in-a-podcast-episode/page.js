@@ -76,7 +76,7 @@ export default function Post() {
           <p className={st.p}>The key metric is completion rate, not length. A 20-minute episode that 80% of listeners finish is more valuable (to advertisers and your audience) than a 60-minute episode that only 30% complete. Use your podcast hosting analytics to find your drop-off point and trim future episodes to match.</p>
 
           <h2 className={st.h2}>How to Script a Podcast Episode</h2>
-          <p className={st.p}>Most successful podcasts use one of three scripting approaches: <strong style="color:#e2e8f0">Full script</strong> (news podcasts, storytelling shows like Serial), <strong style="color:#e2e8f0">Detailed outline</strong> (educational podcasts, topic-based shows), or <strong style="color:#e2e8f0">Question list</strong> (interview podcasts). Full scripts require 120-150 words per minute of content. Outlines typically have 30-50% of the final word count.</p>
+          <p className={st.p}>Most successful podcasts use one of three scripting approaches: <strong style={{color:'#e2e8f0'}}>Full script</strong> (news podcasts, storytelling shows like Serial), <strong style={{color:'#e2e8f0'}}>Detailed outline</strong> (educational podcasts, topic-based shows), or <strong style={{color:'#e2e8f0'}}>Question list</strong> (interview podcasts). Full scripts require 120-150 words per minute of content. Outlines typically have 30-50% of the final word count.</p>
           <p className={st.p}>For show notes and descriptions, aim for 200-400 words. Include timestamps for key topics, links mentioned, and a 2-3 sentence summary. Show notes are your podcast SEO — Google indexes them, and they help new listeners decide whether to press play.</p>
 
           <h2 className={st.h2}>Podcast Transcription and SEO</h2>
