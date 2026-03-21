@@ -46,17 +46,17 @@ export default function Home() {
         {/* HERO */}
         <section className="relative overflow-hidden">
           <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(16,185,129,0.08), transparent)' }} />
-          <div className="max-w-6xl mx-auto px-4 pt-16 pb-14 relative">
+          <div className="max-w-6xl mx-auto px-4 pt-10 pb-8 relative">
             <div className="text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 tracking-wide"
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-4 tracking-wide"
                 style={{ background: 'rgba(52,211,153,0.08)', color: '#34d399', border: '1px solid rgba(52,211,153,0.15)' }}>
                 250+ FREE TOOLS &amp; GUIDES
               </div>
-              <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-5 leading-[1.05] tracking-tight">
+              <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight tracking-tight">
                 Write Better.<br />
                 <span style={{ background: 'linear-gradient(135deg, #34d399, #10b981, #059669)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Rank Higher.</span>
               </h1>
-              <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-8">
+              <p className="text-slate-400 text-base max-w-2xl mx-auto leading-relaxed mb-6">
                 Free word counter, SEO analyzer, readability checker and 250+ writing tools. No sign up. No limits. Instant results.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -74,7 +74,7 @@ export default function Home() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-4 gap-4 mt-14 max-w-3xl mx-auto">
+            <div className="grid grid-cols-4 gap-4 mt-8 max-w-3xl mx-auto">
               {[
                 ['250+', 'Free Pages'],
                 ['11', 'Pro Tools'],
