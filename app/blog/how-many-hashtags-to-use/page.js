@@ -60,7 +60,38 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">Use our free hashtag counter to instantly count all hashtags in your post and check platform limits.</p>
               <Link href="/hashtag-counter" className="btn-primary inline-block px-6 py-3">Try the Hashtag Counter Free →</Link>
             </section>
-            <section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Hashtag Strategy by Platform (2026 Data)</h2>
+            <div className="result-box">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead><tr className="border-b" style={{borderColor:'rgba(52,211,153,0.1)'}}><th className="text-left text-emerald-400 py-2 pr-4">Platform</th><th className="text-left text-emerald-400 py-2 pr-4">Max Allowed</th><th className="text-left text-emerald-400 py-2 pr-4">Optimal Number</th><th className="text-left text-emerald-400 py-2">Placement</th></tr></thead>
+                  <tbody>
+                    {[['Instagram','30','5-10','In caption or first comment'],['Twitter/X','No limit','1-2','Inline or at end'],['LinkedIn','No limit','3-5','At end of post'],['TikTok','No limit','3-5','In caption'],['Facebook','No limit','1-3','Sparingly'],['Pinterest','20','2-5','In description'],['YouTube','15 in tags','5-10','In description and tags'],['Threads','No limit','2-4','In post']].map((r,i) => (
+                      <tr key={i} className="border-b" style={{borderColor:'rgba(52,211,153,0.05)'}}><td className="text-white py-2 pr-4">{r[0]}</td><td className="text-slate-300 py-2 pr-4">{r[1]}</td><td className="text-slate-300 py-2 pr-4">{r[2]}</td><td className="text-slate-300 py-2">{r[3]}</td></tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">How to Find the Best Hashtags</h2>
+            <div className="space-y-3">
+              <div className="result-box"><h3 className="text-white font-bold mb-2">The 3-Tier Strategy</h3><p className="text-slate-400 text-sm leading-relaxed">Use a mix of three hashtag sizes: 1-2 large hashtags (1M+ posts) for discovery, 3-4 medium hashtags (100K-1M posts) for targeted reach, and 3-4 small niche hashtags (10K-100K posts) where you can actually rank and be seen. This layered approach maximizes both reach and visibility.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Research Competitors</h3><p className="text-slate-400 text-sm leading-relaxed">Look at the hashtags used by top-performing accounts in your niche. Tools like Hashtagify and RiteTag can identify trending and related hashtags. Save sets of 10-15 hashtags for different content themes so you are not starting from scratch each time.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Create a Branded Hashtag</h3><p className="text-slate-400 text-sm leading-relaxed">A unique branded hashtag builds community and makes your content trackable. Nike uses #JustDoIt, which has generated billions of impressions from user-generated content. Even small brands benefit — a branded hashtag creates a collection of all content related to your business.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Avoid Banned and Spammy Hashtags</h3><p className="text-slate-400 text-sm leading-relaxed">Instagram regularly bans hashtags that are associated with spam or inappropriate content. Using a banned hashtag can shadowban your entire post, reducing reach to near zero. Check if a hashtag is active by searching it — if no recent posts appear, it may be banned. Also avoid generic tags like #followforfollow which attract bots, not real followers.</p></div>
+            </div>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Hashtag Mistakes That Kill Reach</h2>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">Using the same hashtags every post:</strong> Instagram algorithm treats this as spammy behavior. Rotate your hashtag sets and use different combinations for different content types. Keep 3-5 saved sets and alternate between them.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">Only using mega-popular hashtags:</strong> A hashtag with 500M+ posts means your content is buried within seconds. Your post is competing against thousands of new posts per minute. Mix in smaller, more targeted hashtags where your content can actually be discovered.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">Irrelevant hashtags:</strong> Using trending but unrelated hashtags might get initial impressions but destroys engagement rate. The algorithm notices when people see your post via a hashtag but do not engage — this trains the algorithm to show your content to fewer people over time.</p>
+          </section>
+          <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>

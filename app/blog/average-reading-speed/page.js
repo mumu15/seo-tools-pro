@@ -71,7 +71,42 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">Find out your exact reading speed with our free reading time calculator.</p>
               <Link href="/reading-time" className="btn-primary inline-block px-6 py-3">Calculate Your Reading Speed →</Link>
             </section>
-            <section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Reading Speed by Age and Education</h2>
+            <div className="result-box">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead><tr className="border-b" style={{borderColor:'rgba(52,211,153,0.1)'}}><th className="text-left text-emerald-400 py-2 pr-4">Group</th><th className="text-left text-emerald-400 py-2">Average WPM</th></tr></thead>
+                  <tbody>
+                    {[['First graders (6-7)','50-80 wpm'],['Third graders (8-9)','100-150 wpm'],['Sixth graders (11-12)','150-200 wpm'],['High school students','200-250 wpm'],['College students','250-300 wpm'],['Adults (average)','200-250 wpm'],['Speed readers','400-700 wpm'],['World record','4,700 wpm']].map((r,i) => (
+                      <tr key={i} className="border-b" style={{borderColor:'rgba(52,211,153,0.05)'}}><td className="text-white py-2 pr-4">{r[0]}</td><td className="text-slate-300 py-2">{r[1]}</td></tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">What Affects Reading Speed?</h2>
+            <div className="space-y-3">
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Text Complexity</h3><p className="text-slate-400 text-sm leading-relaxed">Technical or academic text slows reading by 30-50%. A novel might be read at 300 wpm while a physics textbook drops to 150 wpm. The Flesch-Kincaid grade level of text directly correlates with reading speed — higher grade levels mean slower reading.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Familiarity with Subject</h3><p className="text-slate-400 text-sm leading-relaxed">Reading speed increases dramatically with subject expertise. A programmer reads code documentation at 2-3x the speed of a novice. Domain knowledge reduces the cognitive load of processing unfamiliar concepts and terminology.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Reading Medium</h3><p className="text-slate-400 text-sm leading-relaxed">Studies show people read 20-30% slower on screens than on paper. E-readers with e-ink displays are closer to paper reading speeds. Scrolling reduces comprehension compared to page-turning because it disrupts spatial memory of text position.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Font and Layout</h3><p className="text-slate-400 text-sm leading-relaxed">Serif fonts (Times New Roman) and sans-serif fonts (Arial) have similar reading speeds in studies, but line length matters enormously. The optimal line length is 50-75 characters. Lines over 100 characters reduce reading speed by 15-20%.</p></div>
+            </div>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">5 Science-Backed Ways to Read Faster</h2>
+            <div className="space-y-3">
+              <div className="result-box"><h3 className="text-white font-bold mb-2">1. Stop Subvocalization</h3><p className="text-slate-400 text-sm leading-relaxed">Most people silently pronounce words while reading, capping speed at speaking pace (150-200 wpm). Training yourself to recognize words visually without internal pronunciation can boost speed to 400+ wpm. Practice by humming or counting while reading to break the subvocalization habit.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">2. Use a Pointer</h3><p className="text-slate-400 text-sm leading-relaxed">Using your finger or a pen to guide your eyes along the text can increase reading speed by 20-30%. This technique reduces regression (re-reading) and keeps your eyes moving forward consistently. It sounds simple but is one of the most effective speed reading techniques.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">3. Expand Peripheral Vision</h3><p className="text-slate-400 text-sm leading-relaxed">Instead of reading word by word, train yourself to absorb groups of 3-5 words at once. Start by focusing on the center of each line and letting your peripheral vision capture the edges. This reduces the number of eye fixations per line from 10-15 to 3-5.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">4. Preview Before Deep Reading</h3><p className="text-slate-400 text-sm leading-relaxed">Skim headings, first sentences of paragraphs, and bold text before reading in detail. This creates a mental framework that speeds up comprehension during the full read. Studies show previewing can improve both speed and retention by 20-30%.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">5. Read More</h3><p className="text-slate-400 text-sm leading-relaxed">The single best way to increase reading speed is simply to read more. Avid readers are 50-100% faster than occasional readers because their brains recognize common word patterns instantly. Reading 30 minutes per day can increase your speed by 50+ wpm within 6 months.</p></div>
+            </div>
+          </section>
+          <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>

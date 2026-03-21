@@ -73,7 +73,35 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">Use our free word counter to track your daily writing progress toward your novel word count goal.</p>
               <Link href="/word-counter" className="btn-primary inline-block px-6 py-3">Count Your Words Free →</Link>
             </section>
-            <section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Word Count by Genre (Detailed Breakdown)</h2>
+            <div className="result-box">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead><tr className="border-b" style={{borderColor:'rgba(52,211,153,0.1)'}}><th className="text-left text-emerald-400 py-2 pr-4">Genre</th><th className="text-left text-emerald-400 py-2 pr-4">Target Range</th><th className="text-left text-emerald-400 py-2">Famous Example</th></tr></thead>
+                  <tbody>
+                    {[['Romance','70,000-90,000','Pride and Prejudice: 122,000'],['Mystery/Thriller','70,000-90,000','Gone Girl: 145,000'],['Science Fiction','90,000-120,000','Dune: 188,000'],['Fantasy','90,000-150,000','Name of the Wind: 250,000'],['Literary Fiction','70,000-100,000','The Great Gatsby: 47,000'],['Horror','70,000-90,000','The Shining: 160,000'],['Young Adult','55,000-80,000','The Hunger Games: 100,000'],['Middle Grade','25,000-50,000','Harry Potter 1: 77,000'],['Memoir','70,000-90,000','Educated: 95,000'],['Historical Fiction','80,000-120,000','All the Light We Cannot See: 133,000']].map((r,i) => (
+                      <tr key={i} className="border-b" style={{borderColor:'rgba(52,211,153,0.05)'}}><td className="text-white py-2 pr-4">{r[0]}</td><td className="text-slate-300 py-2 pr-4">{r[1]}</td><td className="text-slate-300 py-2">{r[2]}</td></tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Why Word Count Matters for Publishing</h2>
+            <p className="text-slate-400 leading-relaxed mb-4">Publishers care about word count because it directly impacts printing costs and retail pricing. A 120,000-word novel costs significantly more to print than an 80,000-word one. For debut authors, publishers are reluctant to invest in longer books because the financial risk is higher. This is why agents often recommend first-time novelists aim for 80,000-90,000 words — it is the sweet spot where publishing economics and storytelling quality overlap.</p>
+            <p className="text-slate-400 leading-relaxed mb-4">For self-published authors on Amazon, word count affects reader expectations and pricing. Kindle readers expect novels priced at $2.99-$4.99 to be 60,000+ words. Anything under 40,000 words should be priced lower or labeled as a novella to avoid negative reviews about length. The KDP page count algorithm converts approximately 250 words per KENP (Kindle Edition Normalized Page).</p>
+            <p className="text-slate-400 leading-relaxed mb-4">Series novels have different expectations. The first book in a series can be shorter (70,000-80,000 words) to hook readers quickly. Later books can be longer as the audience is invested. George R.R. Martin started A Game of Thrones at 298,000 words, but he was already an established author — debut authors should not attempt this.</p>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">How to Hit Your Target Word Count</h2>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Set daily goals:</strong> Most full-time novelists write 1,000-2,000 words per day. At 1,500 words/day, an 80,000-word novel takes approximately 53 writing days — about 3 months with weekends off. Stephen King writes 2,000 words per day minimum. NaNoWriMo targets 1,667 words/day to hit 50,000 in a month.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Outline your structure:</strong> A typical novel has 20-30 chapters. For an 80,000-word novel, that is 2,500-4,000 words per chapter. Planning chapter-level beats helps you pace the story and ensures you do not run out of plot at 60,000 words or pad to reach 80,000.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Editing changes everything:</strong> First drafts are typically 10-20% longer than final manuscripts. Plan to cut ruthlessly in revision. If your target is 80,000 words, writing a 90,000-word first draft gives you room to tighten prose without losing essential content.</p>
+          </section>
+          <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>

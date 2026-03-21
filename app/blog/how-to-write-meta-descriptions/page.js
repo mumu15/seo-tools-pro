@@ -59,7 +59,29 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">Use our free meta tag generator with live Google search preview to create perfectly optimized title tags and meta descriptions.</p>
               <Link href="/meta-tag-generator" className="btn-primary inline-block px-6 py-3">Try the Meta Tag Generator Free →</Link>
             </section>
-            <section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Meta Description Examples That Get Clicks</h2>
+            <div className="space-y-3">
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Product Page</h3><p className="text-slate-400 text-sm leading-relaxed"><strong className="text-emerald-400">Bad:</strong> "We sell running shoes. Visit our store for the best selection." (Generic, no value proposition)<br/><strong className="text-emerald-400">Good:</strong> "Shop 200+ running shoes from Nike, ASICS and Brooks. Free shipping over $75. 90-day return policy. Find your perfect fit with our sizing guide." (Specific, includes benefits, numbers)</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Blog Post</h3><p className="text-slate-400 text-sm leading-relaxed"><strong className="text-emerald-400">Bad:</strong> "Learn about investing in this comprehensive guide." (Vague, no specifics)<br/><strong className="text-emerald-400">Good:</strong> "Learn 7 proven investing strategies for beginners in 2026. From index funds to REITs, start building wealth with as little as $100/month. Data-backed guide." (Specific number, year, concrete detail)</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Local Business</h3><p className="text-slate-400 text-sm leading-relaxed"><strong className="text-emerald-400">Bad:</strong> "Best pizza in town. Order now." (No differentiator, could be anyone)<br/><strong className="text-emerald-400">Good:</strong> "Wood-fired Neapolitan pizza in downtown Austin. 4.8 star rating, 2,000+ reviews. Order online for 15-min pickup or free delivery within 5 miles." (Location, social proof, convenience)</p></div>
+            </div>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Meta Description Formula</h2>
+            <p className="text-slate-400 leading-relaxed mb-4">The most effective meta descriptions follow this formula: <strong className="text-white">[Benefit/Hook] + [Specific Details/Numbers] + [Call to Action]</strong>. This structure tells the searcher what they will get (benefit), proves it is worth clicking (specifics), and guides them to take action (CTA).</p>
+            <p className="text-slate-400 leading-relaxed mb-4">Include your target keyword naturally — Google bolds matching keywords in search results, which draws the eye to your listing. However, do not stuff keywords. One natural mention is sufficient. Focus on making the description compelling to humans, not search engines.</p>
+            <p className="text-slate-400 leading-relaxed mb-4">Use active voice and power words: "Discover," "Learn," "Get," "Save," "Find," "Compare," "Calculate." Avoid passive constructions like "can be found" or "is provided." Active descriptions get 15-20% higher click-through rates than passive ones in A/B tests.</p>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Common Meta Description Mistakes</h2>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">Too short (under 120 characters):</strong> You are wasting valuable SERP real estate. Google gives you 155-160 characters — use them. Short descriptions look lazy compared to competitors with full, compelling descriptions.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">Too long (over 160 characters):</strong> Google truncates descriptions at approximately 155-160 characters on desktop and 120 characters on mobile. Front-load your most important information so it is visible even if truncated.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">Duplicate descriptions:</strong> Every page should have a unique meta description. Using the same description across multiple pages confuses search engines and provides no differentiation for searchers. Even auto-generated descriptions with the page title are better than duplicates.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">No call to action:</strong> Descriptions without a CTA get lower click-through rates. Always end with an action-oriented phrase: "Learn more," "Get started free," "Compare prices now," or "Try it today."</p>
+          </section>
+          <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>

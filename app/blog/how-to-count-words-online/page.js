@@ -70,7 +70,29 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">Instantly count words, characters, sentences and paragraphs in any text. No sign up, no downloads, completely free.</p>
               <Link href="/word-counter" className="btn-primary inline-block px-6 py-3">Count Words Free Now →</Link>
             </section>
-            <section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Why Accurate Word Counting Matters</h2>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Academic submissions:</strong> Going over or under a word limit can result in grade penalties or automatic rejection. Most universities deduct marks for exceeding the word limit by 10% or more. Some automatically fail submissions that are significantly under the minimum word count.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Freelance writing:</strong> Freelance writers are often paid per word — the difference between 990 and 1,010 words can mean the difference between meeting or missing a contract requirement. Clients expect exact word counts, and undercounting can lead to disputes over payment.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">SEO content:</strong> Search engines favor comprehensive content. Blog posts of 1,500-2,500 words consistently outrank shorter content for competitive keywords. Knowing your exact word count helps you meet the minimum threshold for ranking potential.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Social media:</strong> Every platform has character limits. A tweet is 280 characters, an Instagram caption is 2,200 characters, and a LinkedIn post is 3,000 characters. Exceeding these limits means your content gets cut off or cannot be posted at all.</p>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">How Different Tools Count Words</h2>
+            <p className="text-slate-400 leading-relaxed mb-4">Not all word counters agree on word count because they handle edge cases differently. Hyphenated words like "well-known" may count as one or two words. Numbers like "2,500" may or may not count as a word. Contractions like "don't" are sometimes counted as one word, sometimes two.</p>
+            <p className="text-slate-400 leading-relaxed mb-4">Microsoft Word counts hyphenated words as one word and contractions as one word. Google Docs uses a similar approach. Our word counter at WordCounterTool.net splits by whitespace, which gives the most accurate count for most academic and professional purposes. If your professor or client uses a specific tool, match their counting method.</p>
+            <p className="text-slate-400 leading-relaxed mb-4">For non-English languages, word counting gets more complex. Chinese and Japanese do not use spaces between words, requiring segmentation algorithms. German compound words (like "Rechtsschutzversicherung") count as one word despite being equivalent to multiple English words. Our tool handles all these languages accurately.</p>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Beyond Word Count: Other Metrics That Matter</h2>
+            <div className="space-y-3">
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Reading Time</h3><p className="text-slate-400 text-sm leading-relaxed">Calculated at 200-250 words per minute for the average adult reader. This metric is crucial for blog posts and articles — research shows that articles with a displayed reading time get 40% more engagement because readers can decide upfront if they have time to commit.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Character Count</h3><p className="text-slate-400 text-sm leading-relaxed">Essential for social media (Twitter 280 chars, Instagram 2,200 chars), meta descriptions (155-160 chars), and SMS messages (160 chars). Character count includes spaces and punctuation unless otherwise specified.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Readability Score</h3><p className="text-slate-400 text-sm leading-relaxed">The Flesch-Kincaid grade level tells you what education level is needed to understand your text. Web content should target grade 6-8 for maximum accessibility. Academic writing is typically grade 12-16. Our readability checker provides this score instantly alongside word count.</p></div>
+            </div>
+          </section>
+          <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>

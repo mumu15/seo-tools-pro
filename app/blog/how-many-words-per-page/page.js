@@ -68,7 +68,45 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">Get an exact conversion based on your specific font, size and spacing settings instantly.</p>
               <Link href="/words-per-page" className="btn-primary inline-block px-6 py-3">Try the Words Per Page Calculator →</Link>
             </section>
-            <section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Words Per Page by Font</h2>
+            <div className="result-box">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead><tr className="border-b" style={{borderColor:'rgba(52,211,153,0.1)'}}><th className="text-left text-emerald-400 py-2 pr-4">Font (12pt)</th><th className="text-left text-emerald-400 py-2 pr-4">Single Spaced</th><th className="text-left text-emerald-400 py-2">Double Spaced</th></tr></thead>
+                  <tbody>
+                    {[['Times New Roman','500-550','250-275'],['Arial','450-500','225-250'],['Calibri','450-500','225-250'],['Courier New','250-300','125-150'],['Georgia','420-470','210-235'],['Verdana','380-420','190-210'],['Garamond','550-600','275-300'],['Helvetica','450-500','225-250']].map((r,i) => (
+                      <tr key={i} className="border-b" style={{borderColor:'rgba(52,211,153,0.05)'}}><td className="text-white py-2 pr-4">{r[0]}</td><td className="text-slate-300 py-2 pr-4">{r[1]}</td><td className="text-slate-300 py-2">{r[2]}</td></tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Common Academic Format Requirements</h2>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">APA Format:</strong> 12pt Times New Roman, double-spaced, 1-inch margins on all sides. This gives approximately 250 words per page. APA is the standard for psychology, education, and social sciences. A 2,500-word APA paper is approximately 10 pages.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">MLA Format:</strong> 12pt Times New Roman, double-spaced, 1-inch margins. Identical word count to APA — about 250 words per page. MLA is standard for English, humanities, and liberal arts. The header and works cited page add to total page count but not word count.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Chicago/Turabian:</strong> 12pt Times New Roman or Palatino, double-spaced, 1-inch margins. Similar to APA and MLA at about 250 words per page. Chicago is common in history and some social sciences. Footnotes (instead of in-text citations) add slightly to page count.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Harvard Format:</strong> 12pt Arial, 1.5 or double spacing, 1-inch margins. Arial is slightly wider than Times New Roman, so expect approximately 225-250 words per page with double spacing. Common in UK and Australian universities.</p>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Page Count Quick Reference</h2>
+            <div className="result-box">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead><tr className="border-b" style={{borderColor:'rgba(52,211,153,0.1)'}}><th className="text-left text-emerald-400 py-2 pr-4">Word Count</th><th className="text-left text-emerald-400 py-2 pr-4">Single Spaced</th><th className="text-left text-emerald-400 py-2 pr-4">Double Spaced</th><th className="text-left text-emerald-400 py-2">1.5 Spaced</th></tr></thead>
+                  <tbody>
+                    {[['500','1 page','2 pages','1.5 pages'],['1,000','2 pages','4 pages','3 pages'],['1,500','3 pages','6 pages','4.5 pages'],['2,000','4 pages','8 pages','6 pages'],['2,500','5 pages','10 pages','7.5 pages'],['3,000','6 pages','12 pages','9 pages'],['5,000','10 pages','20 pages','15 pages'],['10,000','20 pages','40 pages','30 pages']].map((r,i) => (
+                      <tr key={i} className="border-b" style={{borderColor:'rgba(52,211,153,0.05)'}}><td className="text-white py-2 pr-4">{r[0]}</td><td className="text-slate-300 py-2 pr-4">{r[1]}</td><td className="text-slate-300 py-2 pr-4">{r[2]}</td><td className="text-slate-300 py-2">{r[3]}</td></tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>

@@ -70,7 +70,34 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">Use our free word counter to instantly check the word count of any blog post before publishing.</p>
               <Link href="/word-counter" className="btn-primary inline-block px-6 py-3">Check Your Word Count Free →</Link>
             </section>
-            <section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Blog Post Length by Content Type (2026)</h2>
+            <div className="result-box">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead><tr className="border-b" style={{borderColor:'rgba(52,211,153,0.1)'}}><th className="text-left text-emerald-400 py-2 pr-4">Content Type</th><th className="text-left text-emerald-400 py-2 pr-4">Ideal Length</th><th className="text-left text-emerald-400 py-2">Why</th></tr></thead>
+                  <tbody>
+                    {[['Pillar/Ultimate guide','3,000-7,000 words','Comprehensive topical authority'],['Standard blog post','1,500-2,500 words','Optimal for most keywords'],['Listicle','1,500-3,000 words','Depends on number of items'],['How-to tutorial','1,200-2,000 words','Step-by-step depth'],['News/trending topic','600-1,000 words','Timeliness over depth'],['Product review','1,500-2,500 words','Thorough evaluation needed'],['Case study','1,500-2,500 words','Data-rich analysis'],['Opinion/editorial','800-1,500 words','Focused argument'],['FAQ page','1,000-2,000 words','Comprehensive answers']].map((r,i) => (
+                      <tr key={i} className="border-b" style={{borderColor:'rgba(52,211,153,0.05)'}}><td className="text-white py-2 pr-4">{r[0]}</td><td className="text-slate-300 py-2 pr-4">{r[1]}</td><td className="text-slate-300 py-2">{r[2]}</td></tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">The Data Behind Content Length and Rankings</h2>
+            <p className="text-slate-400 leading-relaxed mb-4">Multiple studies from Backlinko, HubSpot, and Ahrefs consistently show that longer content ranks higher in Google. The average word count of a Google page 1 result is 1,447 words (Backlinko, 2024). Content over 2,000 words gets 3x more traffic, 4x more shares, and 3.5x more backlinks than content under 1,000 words (HubSpot).</p>
+            <p className="text-slate-400 leading-relaxed mb-4">However, correlation is not causation. Longer content does not rank BECAUSE it is longer — it ranks because longer content tends to be more comprehensive, answer more user questions, and earn more backlinks. A 3,000-word article that rambles will not outrank a focused 1,500-word article that perfectly answers the search query.</p>
+            <p className="text-slate-400 leading-relaxed mb-4">The key insight is <strong className="text-white">search intent match</strong>. For informational queries ("how to invest in stocks"), 2,000-3,000 word comprehensive guides perform best. For transactional queries ("buy running shoes"), a 500-word product page with clear pricing and CTAs outperforms a 3,000-word essay. Always match your content length to what the user actually wants.</p>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Quality vs Quantity: The Real Rule</h2>
+            <p className="text-slate-400 leading-relaxed mb-4">The worst SEO strategy is publishing thin content to hit a page count target. Google Helpful Content Update (2023-2024) specifically penalizes sites that produce content primarily for search engines rather than users. A site with 50 excellent 2,000-word posts will outrank a site with 500 mediocre 500-word posts every time.</p>
+            <p className="text-slate-400 leading-relaxed mb-4">The best approach: publish the minimum length needed to comprehensively cover the topic. If a topic requires 3,000 words to cover properly, write 3,000 words. If it only needs 800, do not pad it to 2,000. Use our word counter to track your progress and ensure you are meeting the minimum threshold for your target keyword without unnecessary padding.</p>
+          </section>
+          <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>

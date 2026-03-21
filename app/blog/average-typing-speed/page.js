@@ -70,7 +70,34 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">Find out your exact words per minute with our free typing speed test. Instant results, no sign up required.</p>
               <Link href="/words-per-minute" className="btn-primary inline-block px-6 py-3">Take the Free Typing Speed Test →</Link>
             </section>
-            <section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Typing Speed by Profession</h2>
+            <div className="result-box">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead><tr className="border-b" style={{borderColor:'rgba(52,211,153,0.1)'}}><th className="text-left text-emerald-400 py-2 pr-4">Profession</th><th className="text-left text-emerald-400 py-2 pr-4">Average WPM</th><th className="text-left text-emerald-400 py-2">Required WPM</th></tr></thead>
+                  <tbody>
+                    {[['General office worker','40-50 wpm','30-40 wpm'],['Secretary/Admin','50-80 wpm','60+ wpm'],['Data entry clerk','60-80 wpm','60+ wpm'],['Court reporter','180-225 wpm','180+ wpm'],['Programmer','50-70 wpm','40+ wpm'],['Journalist','60-80 wpm','50+ wpm'],['Writer/Author','50-80 wpm','No minimum'],['Transcriptionist','70-100 wpm','70+ wpm']].map((r,i) => (
+                      <tr key={i} className="border-b" style={{borderColor:'rgba(52,211,153,0.05)'}}><td className="text-white py-2 pr-4">{r[0]}</td><td className="text-slate-300 py-2 pr-4">{r[1]}</td><td className="text-slate-300 py-2">{r[2]}</td></tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">How Typing Speed Affects Productivity</h2>
+            <p className="text-slate-400 leading-relaxed mb-4">The difference between 40 wpm and 80 wpm is enormous over a career. If you type for 2 hours per day, a 40 wpm typist produces 4,800 words while an 80 wpm typist produces 9,600 words — double the output in the same time. Over a year, that is approximately 1.2 million extra words, equivalent to 12 full-length novels or 480 blog posts.</p>
+            <p className="text-slate-400 leading-relaxed mb-4">Typing speed also affects creative flow. When your fingers cannot keep up with your thoughts, ideas get lost. Writers who type 70+ wpm report fewer creative blocks because the mechanical act of typing does not interrupt their thinking process. The keyboard becomes invisible — thoughts flow directly to text.</p>
+            <p className="text-slate-400 leading-relaxed mb-4">For programmers, raw typing speed matters less than accuracy and knowledge of shortcuts. A programmer who types 50 wpm but uses keyboard shortcuts efficiently outproduces a 100 wpm typist who relies on the mouse. IDE shortcuts, code completion, and snippet libraries multiply effective speed far beyond raw wpm.</p>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Keyboard Layouts and Speed</h2>
+            <p className="text-slate-400 leading-relaxed mb-4">QWERTY is the most common keyboard layout but was not designed for speed — it was designed to prevent typewriter jams in the 1870s. Alternative layouts like Dvorak and Colemak place the most common letters on the home row, potentially increasing comfort and reducing finger travel by 60%. However, studies show only a 5-10% speed increase after full adaptation, which can take 1-3 months.</p>
+            <p className="text-slate-400 leading-relaxed mb-4">The world typing speed record is 216 wpm on QWERTY, set by Sean Wrona. Top competitive typists regularly exceed 150 wpm. For most people, reaching 80-100 wpm on any layout provides diminishing returns — the bottleneck shifts from physical typing to thinking about what to write.</p>
+          </section>
+          <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>

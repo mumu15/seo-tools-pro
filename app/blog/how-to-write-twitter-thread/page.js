@@ -67,7 +67,27 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">Use our free Twitter thread counter to check character counts for every tweet before posting.</p>
               <Link href="/twitter-thread-counter" className="btn-primary inline-block px-6 py-3">Try the Thread Counter Free →</Link>
             </section>
-            <section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Thread Structure That Gets Engagement</h2>
+            <div className="space-y-3">
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Tweet 1: The Hook</h3><p className="text-slate-400 text-sm leading-relaxed">Your first tweet determines whether anyone reads the rest. Use a bold claim, surprising statistic, or question that creates curiosity. "I analyzed 10,000 tweets and found the 7 patterns that every viral thread follows:" is irresistible. Never start with "Thread:" or "1/" — that is the fastest way to get scrolled past.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Tweets 2-8: The Value</h3><p className="text-slate-400 text-sm leading-relaxed">Each tweet should contain exactly one idea. Use line breaks for readability. Include specific examples, data, or stories. Number your points if listing tips ("3. Use data in every claim"). Avoid filler tweets — every tweet must earn its place in the thread.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Last Tweet: The CTA</h3><p className="text-slate-400 text-sm leading-relaxed">End with a clear call to action. "Follow me for more [topic] threads" or "Retweet the first tweet to help others find this." The most effective threads ask a question at the end to drive replies, which boosts the thread in the algorithm.</p></div>
+            </div>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Thread Length and Timing</h2>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Ideal length:</strong> 5-15 tweets is the sweet spot. Under 5 tweets feels too short to call a thread. Over 15 tweets sees significant drop-off in engagement. The most viral threads tend to be 7-10 tweets — enough to provide real value without losing readers.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Best posting times:</strong> Tuesday through Thursday, 8-10 AM in your target audience timezone. Threads posted on weekday mornings get 2-3x more engagement than weekend or evening threads. The reason is simple — people scroll Twitter/X during their morning routine and commute.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Pre-write your threads:</strong> Never write threads in real-time. Draft them in a notes app, edit for clarity and conciseness, then post. Real-time threads often have typos, poor pacing, and unnecessary tweets. The best thread writers spend 30-60 minutes crafting a thread before posting.</p>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Formatting Tips for Maximum Readability</h2>
+            <p className="text-slate-400 leading-relaxed mb-4">Use line breaks between sentences within a tweet. Single-sentence tweets stand out in timelines. Emojis as bullet points increase readability and engagement. Bold statements at the start of each tweet hook scanners. Never use more than 250 characters per tweet even though the limit is 280 — leave room for quote retweets.</p>
+            <p className="text-slate-400 leading-relaxed mb-4">Include images, charts, or screenshots every 3-4 tweets. Visual tweets get 2x more engagement than text-only tweets. Infographics, data visualizations, and annotated screenshots are the most-saved tweet formats. Use our character counter to make sure each tweet fits within limits.</p>
+          </section>
+          <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
