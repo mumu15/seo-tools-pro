@@ -251,7 +251,7 @@ export default function sitemap() {
     { url: base + "/blog/words-per-minute-reading-guide", lastModified: today, changeFrequency: "monthly", priority: 0.7 },
     { url: base + "/about", lastModified: today, changeFrequency: "monthly", priority: 0.3 },
     { url: base + "/contact", lastModified: today, changeFrequency: "monthly", priority: 0.3 },
-    { url: base + "/privacy-policy", lastModified: today, changeFrequency: "monthly", priority: 0.3 }
+    { url: base + "/privacy-policy", lastModified: today, changeFrequency: "monthly", priority: 0.3 },
     { url: "/blog/how-to-count-words-in-arabic", priority: 0.7, freq: "monthly" },
   { url: "/blog/arabic-writing-tips-for-better-content", priority: 0.7, freq: "monthly" },
   { url: "/blog/arabic-character-count-guide", priority: 0.7, freq: "monthly" },
