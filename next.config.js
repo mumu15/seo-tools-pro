@@ -38,6 +38,11 @@ const nextConfig = {
         destination: 'https://www.wordcountertool.net/:path*',
         permanent: true,
       },
+      {
+        source: '/word-count',
+        destination: '/word-counter',
+        permanent: true,
+      },
     ]
   },
 }
