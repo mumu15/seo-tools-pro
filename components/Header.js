@@ -34,6 +34,19 @@ const categories = [
       { name: 'Language Counters', href: '/word-counter/language', desc: '15 languages supported' },
     ]
   },
+  {
+    title: 'Data & Reference',
+    items: [
+      { name: 'Book Word Counts', href: '/word-count-popular-books', desc: 'Harry Potter, LOTR, Bible & more' },
+      { name: 'Character Limits', href: '/social-media-character-limits', desc: 'Every social media platform' },
+      { name: 'Common Words', href: '/most-common-english-words', desc: 'Top 1,000 English words ranked' },
+      { name: 'World Languages', href: '/most-spoken-languages-in-the-world', desc: 'Languages ranked by speakers' },
+      { name: 'Essay Lengths', href: '/essay-word-count-guide', desc: 'Word counts for every essay type' },
+      { name: 'Image Sizes', href: '/social-media-image-sizes', desc: 'Dimensions for every platform' },
+      { name: 'Reading Speed', href: '/average-reading-speed-by-age', desc: 'WPM by age and grade level' },
+    ],
+  },
+
 ]
 
 export default function Header() {

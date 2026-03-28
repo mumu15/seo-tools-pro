@@ -275,6 +275,27 @@ export default function Blog() {
             <a href="/reading-time" style={{padding:'10px 24px',borderRadius:12,background:'rgba(255,255,255,0.06)',border:'1px solid rgba(255,255,255,0.1)',color:'#e2e8f0',fontWeight:700,fontSize:14,textDecoration:'none'}}>Reading Time</a>
           </div>
         </div>
+      
+        {/* Data & Reference Pages */}
+        <div style={{marginBottom:40}}>
+          <h2 style={{fontSize:20,fontWeight:800,color:'#10b981',margin:'0 0 12px',paddingLeft:12,borderLeft:'4px solid #10b981'}}>Data & Reference Pages</h2>
+          <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill, minmax(280px, 1fr))',gap:10}}>
+            {[
+              {s:'/word-count-popular-books',t:'Word Count of Popular Books',d:'Harry Potter, LOTR, Bible & more'},
+              {s:'/social-media-character-limits',t:'Social Media Character Limits 2026',d:'Every platform limits'},
+              {s:'/most-common-english-words',t:'1,000 Most Common English Words',d:'Ranked by frequency'},
+              {s:'/most-spoken-languages-in-the-world',t:'Most Spoken Languages',d:'Top 30 by total speakers'},
+              {s:'/essay-word-count-guide',t:'Essay Word Count Guide',d:'Every essay type length'},
+              {s:'/social-media-image-sizes',t:'Social Media Image Sizes 2026',d:'Dimensions cheat sheet'},
+              {s:'/average-reading-speed-by-age',t:'Average Reading Speed by Age',d:'WPM data for all ages'},
+            ].map(p => (
+              <a key={p.s} href={p.s} style={{display:'block',padding:'16px 20px',borderRadius:14,background:'rgba(16,185,129,0.04)',border:'1px solid rgba(16,185,129,0.12)',textDecoration:'none'}}>
+                <div style={{fontSize:14,fontWeight:700,color:'#10b981',marginBottom:4}}>{p.t}</div>
+                <div style={{fontSize:12,color:'#64748b'}}>{p.d}</div>
+              </a>
+            ))}
+          </div>
+        </div>
       </main>
 
       <style>{`

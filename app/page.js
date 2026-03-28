@@ -206,6 +206,42 @@ export default function Home() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"WordCounterTool.net","applicationCategory":"UtilityApplication","operatingSystem":"Web","url":"https://www.wordcountertool.net","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"5241","bestRating":"5","worstRating":"1"}})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"}]})}} />
+      
+      {/* Data & Reference Pages */}
+      <div style={{maxWidth:1100,margin:'0 auto',padding:'48px 16px'}}>
+        <h2 style={{fontSize:'clamp(22px,3vw,30px)',fontWeight:900,color:'#fff',textAlign:'center',margin:'0 0 8px'}}>Data & Reference</h2>
+        <p style={{color:'#94a3b8',textAlign:'center',margin:'0 0 28px',fontSize:14}}>Popular writing and language data — free to reference and cite</p>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill, minmax(240px, 1fr))',gap:10}}>
+          <a href="/word-count-popular-books" style={{display:'block',padding:'16px 20px',borderRadius:14,background:'rgba(16,185,129,0.06)',border:'1px solid rgba(16,185,129,0.15)',textDecoration:'none'}}>
+            <div style={{fontSize:14,fontWeight:700,color:'#10b981'}}>Book Word Counts</div>
+            <div style={{fontSize:12,color:'#64748b',marginTop:4}}>Harry Potter, LOTR, Bible & 50+ books</div>
+          </a>
+          <a href="/social-media-character-limits" style={{display:'block',padding:'16px 20px',borderRadius:14,background:'rgba(59,130,246,0.06)',border:'1px solid rgba(59,130,246,0.15)',textDecoration:'none'}}>
+            <div style={{fontSize:14,fontWeight:700,color:'#3b82f6'}}>Character Limits 2026</div>
+            <div style={{fontSize:12,color:'#64748b',marginTop:4}}>Twitter, Instagram, TikTok & more</div>
+          </a>
+          <a href="/most-common-english-words" style={{display:'block',padding:'16px 20px',borderRadius:14,background:'rgba(240,200,66,0.06)',border:'1px solid rgba(240,200,66,0.15)',textDecoration:'none'}}>
+            <div style={{fontSize:14,fontWeight:700,color:'#f0c842'}}>1,000 Common Words</div>
+            <div style={{fontSize:12,color:'#64748b',marginTop:4}}>Most used English words ranked</div>
+          </a>
+          <a href="/most-spoken-languages-in-the-world" style={{display:'block',padding:'16px 20px',borderRadius:14,background:'rgba(139,92,246,0.06)',border:'1px solid rgba(139,92,246,0.15)',textDecoration:'none'}}>
+            <div style={{fontSize:14,fontWeight:700,color:'#8b5cf6'}}>World Languages</div>
+            <div style={{fontSize:12,color:'#64748b',marginTop:4}}>Top 30 languages by speakers</div>
+          </a>
+          <a href="/essay-word-count-guide" style={{display:'block',padding:'16px 20px',borderRadius:14,background:'rgba(16,185,129,0.06)',border:'1px solid rgba(16,185,129,0.15)',textDecoration:'none'}}>
+            <div style={{fontSize:14,fontWeight:700,color:'#10b981'}}>Essay Length Guide</div>
+            <div style={{fontSize:12,color:'#64748b',marginTop:4}}>Word counts for every essay type</div>
+          </a>
+          <a href="/social-media-image-sizes" style={{display:'block',padding:'16px 20px',borderRadius:14,background:'rgba(59,130,246,0.06)',border:'1px solid rgba(59,130,246,0.15)',textDecoration:'none'}}>
+            <div style={{fontSize:14,fontWeight:700,color:'#3b82f6'}}>Image Sizes 2026</div>
+            <div style={{fontSize:12,color:'#64748b',marginTop:4}}>Every platform dimensions</div>
+          </a>
+          <a href="/average-reading-speed-by-age" style={{display:'block',padding:'16px 20px',borderRadius:14,background:'rgba(240,200,66,0.06)',border:'1px solid rgba(240,200,66,0.15)',textDecoration:'none'}}>
+            <div style={{fontSize:14,fontWeight:700,color:'#f0c842'}}>Reading Speed Data</div>
+            <div style={{fontSize:12,color:'#64748b',marginTop:4}}>WPM by age, grade & education</div>
+          </a>
+        </div>
+      </div>
       <Footer />
     </>
   )
