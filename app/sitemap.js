@@ -342,5 +342,13 @@ export default function sitemap() {
   { url: base + "/blog/turkish-seo-content-strategy", priority: 0.7, changeFrequency: "monthly" },
   { url: base + "/blog/common-turkish-writing-mistakes", priority: 0.7, changeFrequency: "monthly" },
   { url: base + "/blog/turkish-content-length-guide", priority: 0.7, changeFrequency: "monthly" },
+
+  { url: base + "/word-count-popular-books", priority: 0.9, freq: "monthly" },
+  { url: base + "/social-media-character-limits", priority: 0.9, freq: "monthly" },
+  { url: base + "/most-common-english-words", priority: 0.9, freq: "monthly" },
+  { url: base + "/most-spoken-languages-in-the-world", priority: 0.9, freq: "monthly" },
+  { url: base + "/essay-word-count-guide", priority: 0.9, freq: "monthly" },
+  { url: base + "/social-media-image-sizes", priority: 0.9, freq: "monthly" },
+  { url: base + "/average-reading-speed-by-age", priority: 0.9, freq: "monthly" },
 ];
 }
