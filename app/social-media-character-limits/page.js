@@ -16,7 +16,7 @@ export const metadata = {
   },
 }
 
-const faqs = [{"q":"What is the Twitter/X character limit in 2026?","a":"Free Twitter/X users have a 280-character limit per tweet. X Premium subscribers can post up to 25,000 characters."},{"q":"What is the Instagram caption limit?","a":"Instagram captions can be up to 2,200 characters. However, only the first 125 characters show in the feed before "more" is clicked."},{"q":"What is the LinkedIn post limit?","a":"LinkedIn posts can be up to 3,000 characters. The optimal length for engagement is 1,300-2,000 characters."},{"q":"What is the TikTok caption limit?","a":"TikTok captions can be up to 4,000 characters in 2026, expanded from the original 150-character limit."}]
+const faqs = [{"q":"What is the Twitter/X character limit in 2026?","a":"Free Twitter/X users have a 280-character limit per tweet. X Premium subscribers can post up to 25,000 characters."},{"q":"What is the Instagram caption limit?","a":"Instagram captions can be up to 2,200 characters. However, only the first 125 characters show in the feed before 'more' is clicked."},{"q":"What is the LinkedIn post limit?","a":"LinkedIn posts can be up to 3,000 characters. The optimal length for engagement is 1,300-2,000 characters."},{"q":"What is the TikTok caption limit?","a":"TikTok captions can be up to 4,000 characters in 2026, expanded from the original 150-character limit."}]
 
 export default function Page() {
   const st = {

@@ -16,7 +16,7 @@ export const metadata = {
   },
 }
 
-const faqs = [{"q":"What is the most common English word?","a":""The" is the most common English word, making up about 7.14% of all words in written English. It appears approximately 69,970 times per million words."},{"q":"How many words do you need to know to speak English?","a":"Knowing the top 1,000 words covers about 80% of everyday English. 3,000 words covers 90%. For fluency, 5,000-10,000 words is recommended."},{"q":"How many words are in the English language?","a":"There are approximately 170,000+ words currently in use in English, with about 47,000 considered obsolete. The Oxford English Dictionary contains over 600,000 entries."},{"q":"What are the most common verbs in English?","a":"The most common English verbs are: be, have, do, say, get, make, go, know, take, see, come, think, look, want, and give."}]
+const faqs = [{"q":"What is the most common English word?","a":"'The' is the most common English word, making up about 7.14% of all words in written English. It appears approximately 69,970 times per million words."},{"q":"How many words do you need to know to speak English?","a":"Knowing the top 1,000 words covers about 80% of everyday English. 3,000 words covers 90%. For fluency, 5,000-10,000 words is recommended."},{"q":"How many words are in the English language?","a":"There are approximately 170,000+ words currently in use in English, with about 47,000 considered obsolete. The Oxford English Dictionary contains over 600,000 entries."},{"q":"What are the most common verbs in English?","a":"The most common English verbs are: be, have, do, say, get, make, go, know, take, see, come, think, look, want, and give."}]
 
 export default function Page() {
   const st = {
