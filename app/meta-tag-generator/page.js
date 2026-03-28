@@ -1,8 +1,8 @@
 import MetaTagGenerator from './PageClient'
 
 export const metadata = {
-  title: 'Free Meta Tag Generator | WordCounterTool.net',
-  description: 'Generate SEO-optimized meta titles and descriptions. Preview how your page looks in Google search results. Free meta tag tool.',
+  title: 'Meta Tag Generator — Perfect SEO Titles & Descriptions',
+  description: 'Generate optimized meta titles and descriptions for Google. See character count, pixel width preview, and SEO best practices. Free tool.',
   alternates: { canonical: 'https://www.wordcountertool.net/meta-tag-generator' },
 }
 

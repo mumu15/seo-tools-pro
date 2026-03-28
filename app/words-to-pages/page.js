@@ -4,8 +4,8 @@ import AdUnit from '../components/AdUnit'
 import FaqSchema from '../../components/FaqSchema'
 
 export const metadata = {
-  title: 'Words to Pages Converter — How Many Pages Is Your Text? | WordCounterTool.net',
-  description: 'Convert word count to pages instantly. See how many pages 500, 1000, 2000, 5000 words is in single and double spacing. Free words to pages calculator.',
+  title: 'Words to Pages Converter — How Many Pages Is 1000 Words?',
+  description: 'Convert any word count to pages. 250 words = 1 page double-spaced. Works for any font, size, and spacing. Free instant converter.',
   alternates: { canonical: 'https://www.wordcountertool.net/words-to-pages' },
 }
 

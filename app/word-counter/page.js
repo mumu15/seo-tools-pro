@@ -1,8 +1,8 @@
 import WordCounter from './PageClient'
 
 export const metadata = {
-  title: 'Free Word Counter Online | WordCounterTool.net',
-  description: 'Count words, characters, sentences and paragraphs instantly. Reading time, speaking time, and more. Free word counter, no sign up.',
+  title: 'Word Counter — Count Words, Characters & Sentences Instantly',
+  description: 'Paste your text and get instant word count, character count, sentences, paragraphs, and reading time. Free, no sign-up. Works in 15+ languages.',
   alternates: { canonical: 'https://www.wordcountertool.net/word-counter' },
 }
 

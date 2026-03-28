@@ -1,8 +1,8 @@
 import ReadabilityChecker from './PageClient'
 
 export const metadata = {
-  title: 'Free Readability Checker | WordCounterTool.net',
-  description: 'Check your Flesch-Kincaid readability score, grade level, and reading ease. Improve your writing with our free readability tool.',
+  title: 'Readability Checker — Is Your Writing Too Complex?',
+  description: 'Check your text readability with Flesch-Kincaid, Gunning Fog, and more. Get a grade level score and tips to simplify your writing.',
   alternates: { canonical: 'https://www.wordcountertool.net/readability-checker' },
 }
 

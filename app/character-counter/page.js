@@ -1,8 +1,8 @@
 import CharacterCounter from './PageClient'
 
 export const metadata = {
-  title: 'Free Character Counter Online | WordCounterTool.net',
-  description: 'Count characters, words, sentences and paragraphs instantly. Check character limits for Twitter, Instagram, LinkedIn and more. Free, no sign up.',
+  title: 'Character Counter — Check Twitter, Instagram & LinkedIn Limits',
+  description: 'Count characters instantly with live social media limits. See remaining characters for Twitter (280), Instagram (2200), LinkedIn (3000), and more.',
   alternates: { canonical: 'https://www.wordcountertool.net/character-counter' },
 }
 

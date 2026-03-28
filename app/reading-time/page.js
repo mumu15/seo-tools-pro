@@ -1,8 +1,8 @@
 import ReadingTime from './PageClient'
 
 export const metadata = {
-  title: 'Reading Time Calculator | WordCounterTool.net',
-  description: 'Calculate how long it takes to read any text. Get reading time, speaking time, and word count instantly. Free reading time estimator.',
+  title: 'Reading Time Calculator — How Long to Read Your Text?',
+  description: 'Calculate reading time and speaking time for any text. Adjustable speed for slow, average, and fast readers. Free reading time estimator.',
   alternates: { canonical: 'https://www.wordcountertool.net/reading-time' },
 }
 
