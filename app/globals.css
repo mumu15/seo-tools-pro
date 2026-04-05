@@ -45,3 +45,19 @@ footer { margin-top: auto; }
 @media print {
   header, footer, .adsbygoogle { display: none !important; }
 }
+
+
+/* Ensure inline grid layouts are not broken by flexbox rules */
+[style*="grid-template-columns"],
+[style*="gridTemplateColumns"] {
+  display: grid !important;
+}
+
+/* Prevent flex-direction: column from cascading into content areas */
+main * {
+  flex-direction: initial;
+}
+
+main {
+  display: block !important;
+}
