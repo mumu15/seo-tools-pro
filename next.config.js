@@ -33,6 +33,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/faq',
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: '/:path*',
         has: [{ type: 'host', value: 'wordcountertool.net' }],
         destination: 'https://www.wordcountertool.net/:path*',
