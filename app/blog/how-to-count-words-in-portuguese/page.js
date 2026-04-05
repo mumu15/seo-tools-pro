@@ -5,20 +5,26 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-count-words-in-portuguese' },
-  title: 'How to Count Words in Portuguese: Complete Guide (2026)',
-  description: 'Learn how to accurately count words in Portuguese text. Understand Portuguese word boundaries, character counting, and use our free Portuguese word counter tool.',
+  title: 'Como contar palavras em português: guia completo para 2026',
+  description: 'Aprenda a contar palavras, caracteres e frases em português corretamente. Com diferenças PT-BR vs PT-PT, tempos de leitura e ferramentas gratuitas.',
   openGraph: {
-    title: 'How to Count Words in Portuguese: Complete Guide (2026)',
-    description: 'Learn how to accurately count words in Portuguese text. Understand Portuguese word boundaries, character counting, and use our free Portuguese word counter tool.',
+    title: 'Como contar palavras em português: guia completo para 2026',
+    description: 'Aprenda a contar palavras, caracteres e frases em português corretamente. Com diferenças PT-BR vs PT-PT, tempos de leitura e ferramentas gratuitas.',
     url: 'https://www.wordcountertool.net/blog/how-to-count-words-in-portuguese',
     siteName: 'WordCounterTool',
     type: 'article',
   },
 }
 
-const faqs = [{"q":"How do I count words in Portuguese?","a":"Use our free Portuguese Word Counter at wordcountertool.net/word-counter/language/portuguese. Paste your Portuguese text and get instant word count, character count, sentence count, and reading time."},{"q":"Is the Portuguese word counter free?","a":"Yes, completely free with no sign-up required. Our Portuguese word counter tool works instantly in your browser with no data stored or sent to any server."},{"q":"How many words per minute does the average person read in Portuguese?","a":"The average Portuguese reading speed is approximately 200-250 words per minute for native speakers, though this varies based on text complexity and the reader experience level."},{"q":"Does your tool handle Latin alphabet with diacritics?","a":"Yes. Our Portuguese Word Counter is specifically designed to handle Latin alphabet with diacritics accurately. It accounts for nasal vowels and contractions as single words that generic word counters miss."}]
+const faqs = [
+  { q: 'Como contar palavras em um texto em português?', a: 'Use o contador gratuito em WordCounterTool.net. Cole seu texto e veja palavras, caracteres, frases, parágrafos e tempo de leitura. A ferramenta reconhece todos os caracteres do português (acentos, ç, ã, õ).' },
+  { q: 'Textos em português são mais longos que em inglês?', a: 'Sim. Traduções para português brasileiro ficam 10% mais longas em média. Para português europeu, o aumento é de 8%. Isso se deve a artigos contraídos, construções verbais e sintaxe mais elaborada.' },
+  { q: 'Qual a velocidade de leitura em português?', a: 'Nativos leem textos informativos a 230–260 palavras por minuto. Ficção é lida a 260–300 PPM. Textos técnicos mais devagar (180–220 PPM). O contador calcula o tempo automaticamente.' },
+  { q: 'O contador funciona para português de Portugal?', a: 'Sim. Funciona para qualquer variante — brasileiro, europeu, africano ou asiático. A contagem é baseada em espaços entre palavras, que funciona igualmente em todas as variantes.' },
+  { q: 'Contrações contam como uma ou duas palavras?', a: 'Contrações como "do" (de+o), "na" (em+a), "pelo" (por+o) são contadas como uma única palavra. Isso é linguisticamente correto — elas são escritas como uma só palavra.' },
+  { q: 'Quantas palavras preciso para um blog post em português?', a: 'Para SEO, recomendamos 1.500–2.500 palavras. Os resultados na primeira página do Google.com.br têm em média 1.950 palavras. Posts mais longos ranqueiam melhor e atraem mais backlinks.' }
+]
 
 export default function Post() {
   return (
@@ -26,72 +32,127 @@ export default function Post() {
       <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
+        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Voltar ao Blog</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">How to Count Words in Portuguese: Complete Guide (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated March 2026 | 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Como contar palavras em português: guia completo para 2026</h1>
+          <p className="text-slate-400 text-sm mb-8">Atualizado em abril de 2026 | 8 min de leitura</p>
           <div className="result-box mb-8 border-emerald-500/30">
-            <h2 className="text-emerald-400 font-bold mb-3">Quick Summary</h2>
-            <p className="text-white">Portuguese (Português) is spoken by <strong>260 million</strong> people. It uses Latin alphabet with diacritics and has unique word counting challenges due to nasal vowels and contractions as single words. Use our free <a href="/word-counter/language/portuguese" className="text-emerald-400 underline">Portuguese Word Counter</a> for accurate results.</p>
+            <h2 className="text-emerald-400 font-bold mb-3">Resumo</h2>
+            <p className="text-white">Textos em português têm, em média, <strong className="text-white">8–12% mais palavras</strong> que os equivalentes em inglês. A velocidade de leitura média é de <strong className="text-white">230–260 palavras por minuto</strong> para textos informativos. Use nosso <a href="/word-counter/language/portuguese" className="text-emerald-400 underline">contador de palavras em português</a> para resultados precisos.</p>
           </div>
           <div className="space-y-8">
+
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Why Counting Words in Portuguese Is Different</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Portuguese (Português) is spoken by 260 million people across Brazil, Portugal, Mozambique, Angola. It uses Latin alphabet with diacritics with 26 letters + accented characters (á, â, ã, à, ç, é, ê, í, ó, ô, õ, ú). Portuguese has nasal vowels unique among Romance languages. Brazilian Portuguese and European Portuguese differ significantly in pronunciation, vocabulary, and some grammar. The language has complex verb conjugations with personal infinitive.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When it comes to word counting, Portuguese presents unique challenges compared to English. Portuguese text is typically 15-20% longer than English. Brazilian Portuguese tends to use more words than European Portuguese for the same idea. Contractions like "do" (de+o) and "no" (em+o) are single words representing two English words.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Understanding these differences is critical for anyone writing, translating, or optimizing content in Portuguese. Whether you are a content creator, translator, student, or SEO professional, accurate word counting in Portuguese requires the right tools and knowledge.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Por que a contagem de palavras em português é diferente</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">O português é uma língua românica com características que afetam a contagem de palavras. Ao contrário do inglês, tem artigos contraídos (do, na, pelo, à), pronomes cliticizados (diga-me, fá-lo-ia) e uma tendência a construções mais longas. Isso faz com que textos em português sejam mais longos em número de palavras.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Dados da SDL/RWS Translation Memory de 2024 mostram que traduções do inglês para o português brasileiro são, em média, 10% mais longas. Para o português europeu, o aumento é de cerca de 8%, pois Portugal tende a usar construções mais compactas.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Contrações como "do" (de + o), "na" (em + a), "pelo" (por + o) são contadas como uma palavra cada — e isso é o correto. O português não faz elisões escritas como o francês, o que torna a contagem mais previsível.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Portuguese Writing System Explained</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Portuguese uses a alphabetic (Latin) writing system. The left-to-right reading direction and Latin alphabet with diacritics create a unique writing experience. The average word length in Portuguese is 5-6 characters, which differs significantly from English average of 4-5 characters.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The Portuguese word order follows a SVO (Subject-Verb-Object) pattern, which affects how sentences are structured and how word count relates to meaning. A sentence that takes 10 words in English might take more or fewer words in Portuguese depending on the grammatical features being used.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">One of the most distinctive features of Portuguese is nasal vowels and contractions as single words. This directly impacts how word counting tools process Portuguese text and why specialized tools are needed for accurate results.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Diferenças entre português brasileiro e europeu</h2>
+              <div className="overflow-x-auto mb-4">
+                <table className="w-full text-sm" style={{borderCollapse:'collapse'}}>
+                  <thead>
+                    <tr style={{borderBottom:'1px solid rgba(52,211,153,0.2)'}}>
+                      <th className="text-left text-emerald-400 py-2 px-3">Aspecto</th>
+                      <th className="text-left text-emerald-400 py-2 px-3">Português Brasileiro</th>
+                      <th className="text-left text-emerald-400 py-2 px-3">Português Europeu</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ['Gerúndio vs. infinitivo', '"Estou fazendo" (2 palavras)', '"Estou a fazer" (3 palavras)'],
+                      ['Colocação pronominal', '"Me diga" (antes do verbo)', '"Diga-me" (depois do verbo)'],
+                      ['Vocabulário', '"Ônibus, celular, trem"', '"Autocarro, telemóvel, comboio"'],
+                      ['Tamanho médio de texto', '10% mais longo que EN', '8% mais longo que EN'],
+                      ['Uso de "você"', 'Universal e neutro', 'Formal, preferem "tu"'],
+                    ].map((row, i) => (
+                      <tr key={i} style={{borderBottom:'1px solid rgba(52,211,153,0.1)'}}>
+                        <td className="text-white py-2 px-3 font-medium">{row[0]}</td>
+                        <td className="text-slate-400 py-2 px-3">{row[1]}</td>
+                        <td className="text-slate-400 py-2 px-3">{row[2]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">O português europeu usa "estar a + infinitivo" (3 palavras) enquanto o brasileiro usa gerúndio (2 palavras). Em um texto longo, isso pode representar uma diferença de 3–5% na contagem total de palavras.</p>
             </section>
 
-          {/* MID_AD */}
-          <AdUnit slot="3248634657" />
-
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Step-by-Step: Counting Portuguese Words Online</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The easiest way to count words in Portuguese is to use our free Portuguese Word Counter tool. Here is how to do it:</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">First, navigate to our Portuguese Word Counter at wordcountertool.net/word-counter/language/portuguese. You will see a clean text input area designed for Portuguese text.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Second, paste or type your Portuguese text into the input field. The tool instantly analyzes your text and provides word count, character count, sentence count, and paragraph count.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Third, review the detailed breakdown. Our tool handles Portuguese-specific challenges like nasal vowels and contractions as single words, giving you accurate results that generic word counters miss.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Fourth, use the reading time estimate to understand how long your Portuguese content will take to read. This is especially useful for presentations, speeches, and content planning.</p>
-            </section>
             <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Portuguese Word Count vs English Word Count</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When comparing Portuguese and English text, the word count relationship is important to understand. Portuguese text is typically 15-20% longer than English. Brazilian Portuguese tends to use more words than European Portuguese for the same idea. Contractions like "do" (de+o) and "no" (em+o) are single words representing two English words.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">This difference has practical implications for several professional contexts. Translators charging by the word need to account for the expansion or contraction between languages. Content creators targeting specific word counts must adjust their expectations. SEO professionals optimizing Portuguese content need different benchmarks than English content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">For example, a 1000-word English blog post might translate to a different word count in Portuguese. Understanding this ratio helps you plan content length appropriately and set realistic targets for Portuguese writing projects.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Our Portuguese Word Counter tool accounts for these differences and provides accurate counts regardless of the text length or complexity.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Passo a passo: contar palavras em português</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Passo 1:</strong> Acesse o <a href="/word-counter/language/portuguese" className="text-emerald-400 underline">contador de palavras em português</a> no WordCounterTool.net.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Passo 2:</strong> Cole seu texto. A ferramenta reconhece automaticamente caracteres acentuados (á, é, í, ó, ú, ã, õ, â, ê, ô, ç) e os conta corretamente.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Passo 3:</strong> Confira os resultados: palavras, caracteres (com e sem espaços), frases, parágrafos e tempo estimado de leitura.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Passo 4:</strong> Use a contagem de caracteres para posts em redes sociais e a contagem de palavras para artigos, trabalhos acadêmicos e textos de SEO.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">A velocidade de leitura em português brasileiro é de 230–260 palavras por minuto para textos informativos e 260–300 PPM para ficção. O contador calcula o tempo de leitura com base nesses valores.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Portuguese SEO Writing Tips</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Portuguese SEO must distinguish between Brazilian (PT-BR) and European (PT-PT) Portuguese. Brazil has 210 million people vs 10 million in Portugal, so Brazilian Portuguese has far more search volume.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When writing SEO content in Portuguese, word count matters but it is not the only factor. Here are key tips for optimizing Portuguese content:</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">First, use natural Portuguese phrasing rather than direct translations from English. Search engines are increasingly sophisticated at detecting and penalizing unnatural language.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Second, research keywords specifically in Portuguese. Direct keyword translations often miss the terms native speakers actually search for. Use Portuguese-specific keyword research tools and check autocomplete suggestions in Portuguese.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Third, aim for comprehensive content. Portuguese readers expect thorough coverage of topics. A minimum of 1500 words (or the Portuguese equivalent) is recommended for pillar content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Fourth, optimize your metadata in Portuguese. Title tags, meta descriptions, and header tags should all be written naturally in Portuguese with target keywords included.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Contagem de palavras por tipo de conteúdo</h2>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 260" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>Palavras recomendadas por formato (português)</text>
+                  <rect x="180" y="45" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="45" width={String(340*0.85)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="63" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Blog post</text>
+                  <text x={String(180+340*0.85+8)} y="63" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1.500–2.500</text>
+                  <rect x="180" y="81" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="81" width={String(340*0.50)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="99" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Landing page</text>
+                  <text x={String(180+340*0.50+8)} y="99" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>800–1.200</text>
+                  <rect x="180" y="117" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="117" width={String(340*0.35)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="135" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Produto</text>
+                  <text x={String(180+340*0.35+8)} y="135" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>400–700</text>
+                  <rect x="180" y="153" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="153" width={String(340*0.22)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="171" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Newsletter</text>
+                  <text x={String(180+340*0.22+8)} y="171" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>300–500</text>
+                  <rect x="180" y="189" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="189" width={String(340*1.0)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="207" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>TCC/Monografia</text>
+                  <text x={String(180+340*1.0-100)} y="207" fill="#ffffff" style={{fontSize:'12px',fontWeight:'600'}}>10.000–15.000</text>
+                </svg>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Textos em português são naturalmente mais longos que em inglês. Se traduz conteúdo, espere 8–12% mais palavras. Isso não é excesso — é a natureza da língua.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Common Portuguese Word Counting Mistakes</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Many people make mistakes when counting words in Portuguese. Here are the most common errors and how to avoid them.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The first mistake is using English-optimized word counters that do not properly handle Latin alphabet with diacritics. These tools may miscount or completely fail with Portuguese text. Always use a tool specifically designed for Portuguese.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The second mistake is confusing character count with word count. In Portuguese, these can be very different numbers. A Portuguese text with 500 characters might have a very different word count than an English text with 500 characters.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The third mistake is not accounting for nasal vowels and contractions as single words. This feature of Portuguese means that standard whitespace-based counting may not give accurate results.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The fourth mistake is applying English word count benchmarks to Portuguese content. Because of the structural differences between the languages, you need Portuguese-specific benchmarks for content length.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">O mercado lusófono em números</h2>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 260" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>Falantes de português por país (2024)</text>
+                  <rect x="140" y="45" width="370" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="140" y="45" width={String(370*0.82)} height="28" rx="4" fill="#10b981" />
+                  <text x="130" y="63" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Brasil</text>
+                  <text x={String(140+370*0.82+8)} y="63" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>214M</text>
+                  <rect x="140" y="81" width="370" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="140" y="81" width={String(370*0.13)} height="28" rx="4" fill="#10b981" />
+                  <text x="130" y="99" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Moçambique</text>
+                  <text x={String(140+370*0.13+8)} y="99" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>33M</text>
+                  <rect x="140" y="117" width="370" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="140" y="117" width={String(370*0.12)} height="28" rx="4" fill="#10b981" />
+                  <text x="130" y="135" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Angola</text>
+                  <text x={String(140+370*0.12+8)} y="135" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>30M</text>
+                  <rect x="140" y="153" width="370" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="140" y="153" width={String(370*0.04)} height="28" rx="4" fill="#10b981" />
+                  <text x="130" y="171" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Portugal</text>
+                  <text x={String(140+370*0.04+8)} y="171" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>10,3M</text>
+                  <rect x="140" y="189" width="370" height="28" rx="4" fill="rgba(240,200,66,0.15)" />
+                  <rect x="140" y="189" width={String(370*1.0)} height="28" rx="4" fill="#f0c842" fillOpacity="0.6" />
+                  <text x="130" y="207" textAnchor="end" fill="#f0c842" style={{fontSize:'12px',fontWeight:'700'}}>Total</text>
+                  <text x={String(140+370*1.0-80)} y="207" fill="#1e293b" style={{fontSize:'13px',fontWeight:'700'}}>260M+ falantes</text>
+                </svg>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">O português é a 6ª língua mais falada do mundo e a língua europeia mais falada no hemisfério sul. O Brasil domina o mercado digital lusófono com 84% dos internautas de língua portuguesa.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
           </div>
@@ -100,19 +161,20 @@ export default function Post() {
 
       <div className="max-w-4xl mx-auto px-4 mb-8">
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-white mb-3">Try These Portuguese Tools</h2>
+          <h2 className="text-lg font-bold text-white mb-3">Ferramentas de Escrita em Português</h2>
           <div className="flex flex-wrap gap-2">
-            <a href="/word-counter/language/portuguese" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Portuguese Word Counter</a>
-            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
-            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
-            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
-            <a href="/words-per-minute" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Minute</a>
+            <a href="/word-counter/language/portuguese" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Contador de Palavras Português</a>
+            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Contador de Palavras</a>
+            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Contador de Caracteres</a>
+            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Calculadora de Tempo de Leitura</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Verificador de Legibilidade</a>
+            <a href="/keyword-density" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Densidade de Keywords</a>
           </div>
         </div>
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How to Count Words in Portuguese: Complete Guide (2026)","description":"Learn how to accurately count words in Portuguese text. Understand Portuguese word boundaries, character counting, and use our free Portuguese word counter tool.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-22","dateModified":"2026-03-22","mainEntityOfPage":"https://www.wordcountertool.net/blog/how-to-count-words-in-portuguese"})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"How to Count Words in Portuguese: Complete Guide (2026)","item":"https://www.wordcountertool.net/blog/how-to-count-words-in-portuguese"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Como contar palavras em português: guia completo para 2026","description":"Aprenda a contar palavras, caracteres e frases em português corretamente. Com diferenças PT-BR vs PT-PT, tempos de leitura e ferramentas gratuitas.","inLanguage":"pt","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-04-05","dateModified":"2026-04-05","mainEntityOfPage":"https://www.wordcountertool.net/blog/how-to-count-words-in-portuguese"})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"Como contar palavras em português: guia completo para 2026","item":"https://www.wordcountertool.net/blog/how-to-count-words-in-portuguese"}]})}} />
 
       <Footer />
     </>
