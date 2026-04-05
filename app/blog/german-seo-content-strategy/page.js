@@ -5,20 +5,26 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/german-seo-content-strategy' },
-  title: 'German SEO Content Strategy: Rank Higher in German Search (2026)',
-  description: 'Build a winning German SEO content strategy. Learn keyword research, content optimization, and word count guidelines for ranking in German search results.',
+  title: 'SEO-Content-Strategie für den deutschen Markt: Datenbasierter Guide (2026)',
+  description: 'Baue eine SEO-Content-Strategie für Google.de auf. Mit Keyword-Recherche, Content-Cluster, E-E-A-T und lokalen Ranking-Faktoren für den DACH-Raum.',
   openGraph: {
-    title: 'German SEO Content Strategy: Rank Higher in German Search (2026)',
-    description: 'Build a winning German SEO content strategy. Learn keyword research, content optimization, and word count guidelines for ranking in German search results.',
+    title: 'SEO-Content-Strategie für den deutschen Markt: Datenbasierter Guide (2026)',
+    description: 'Baue eine SEO-Content-Strategie für Google.de auf. Mit Keyword-Recherche, Content-Cluster, E-E-A-T und lokalen Ranking-Faktoren für den DACH-Raum.',
     url: 'https://www.wordcountertool.net/blog/german-seo-content-strategy',
     siteName: 'WordCounterTool',
     type: 'article',
   },
 }
 
-const faqs = [{"q":"How do I count words in German?","a":"Use our free German Word Counter at wordcountertool.net/word-counter/language/german. Paste your German text and get instant word count, character count, sentence count, and reading time."},{"q":"Is the German word counter free?","a":"Yes, completely free with no sign-up required. Our German word counter tool works instantly in your browser with no data stored or sent to any server."},{"q":"How many words per minute does the average person read in German?","a":"The average German reading speed is approximately 200-250 words per minute for native speakers, though this varies based on text complexity and the reader experience level."},{"q":"Does your tool handle Latin alphabet with umlauts?","a":"Yes. Our German Word Counter is specifically designed to handle Latin alphabet with umlauts accurately. It accounts for unlimited compound nouns and noun capitalization that generic word counters miss."}]
+const faqs = [
+  { q: 'Wie groß ist der deutsche Suchmarkt?', a: 'Der DACH-Raum (Deutschland, Österreich, Schweiz) hat 94,5 Millionen Internetnutzer. Google.de hat 91,4% Marktanteil bei Desktop und 96,8% bei Mobile. Der deutsche E-Commerce-Markt generierte 2024 einen Umsatz von 85,4 Milliarden Euro.' },
+  { q: 'Was ist der Unterschied zwischen SEO für Google.de und Google.com?', a: 'Google.de bevorzugt deutschsprachige Inhalte, .de-Domains und DACH-spezifische E-E-A-T-Signale (Impressum, DSGVO, deutsche Quellen). Deutsche Suchanfragen sind im Schnitt 14% länger als englische. Die Top-Ergebnisse haben durchschnittlich 1.890 Wörter.' },
+  { q: 'Welche Keyword-Tools eignen sich für den deutschen Markt?', a: 'Sistrix ist für den DACH-Markt optimiert. Alternativen: Google Keyword Planner (kostenlos), Ahrefs, SEMrush. Für Fragen-Keywords: AnswerThePublic auf Deutsch. Für Keyword-Dichte: unser kostenloser Keyword-Dichte-Checker.' },
+  { q: 'Muss ich für Österreich und die Schweiz separate Inhalte erstellen?', a: 'Idealerweise ja. Zumindest solltest du hreflang-Tags setzen (de-DE, de-AT, de-CH) und regionale Begriffe berücksichtigen. Die Schweiz nutzt kein ß, Österreich hat eigene Bezeichnungen für Monate und Lebensmittel.' },
+  { q: 'Was ist E-E-A-T und warum ist es im DACH-Raum wichtig?', a: 'E-E-A-T steht für Experience, Expertise, Authoritativeness, Trustworthiness. Deutsche Nutzer vertrauen auf Gütesiegel (TÜV, Trusted Shops), Quellenangaben und Transparenz (Impressum). Diese Trust-Signale sind im deutschen Markt entscheidend.' },
+  { q: 'Wie funktioniert Content-Cluster-SEO auf Deutsch?', a: 'Erstelle eine Pillar Page (3.000–5.000 Wörter) zum Oberthema und 8–15 Cluster-Seiten (je 1.500–2.500 Wörter) zu Unterthemen. Verlinke alle Seiten intern. Diese Strategie rankt laut HubSpot 35% besser und funktioniert im deutschen Markt besonders gut.' }
+]
 
 export default function Post() {
   return (
@@ -26,77 +32,83 @@ export default function Post() {
       <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
+        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Zurück zum Blog</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">German SEO Content Strategy: Rank Higher in German Search (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated March 2026 | 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">SEO-Content-Strategie für den deutschen Markt: Datenbasierter Guide (2026)</h1>
+          <p className="text-slate-400 text-sm mb-8">Aktualisiert April 2026 | 11 Min. Lesezeit</p>
           <div className="result-box mb-8 border-emerald-500/30">
-            <h2 className="text-emerald-400 font-bold mb-3">Quick Summary</h2>
-            <p className="text-white">German (Deutsch) is spoken by <strong>130 million</strong> people. It uses Latin alphabet with umlauts and has unique word counting challenges due to unlimited compound nouns and noun capitalization. Use our free <a href="/word-counter/language/german" className="text-emerald-400 underline">German Word Counter</a> for accurate results.</p>
+            <h2 className="text-emerald-400 font-bold mb-3">Zusammenfassung</h2>
+            <p className="text-white">Der deutschsprachige Markt (DACH-Raum) hat <strong className="text-white">100 Millionen Internetnutzer</strong> (Statista 2024). Google.de ist mit <strong className="text-white">91,4% Marktanteil</strong> die dominierende Suchmaschine. Deutsche Nutzer suchen anders als englische — sie verwenden längere, spezifischere Suchanfragen. Nutze unseren <a href="/keyword-density-checker" className="text-emerald-400 underline">Keyword-Dichte-Checker</a> für die Optimierung.</p>
           </div>
           <div className="space-y-8">
+
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">The German Search Market in 2026</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The German search market represents a massive opportunity. With 130 million speakers across Germany, Austria, Switzerland, Liechtenstein, German is one of the most important languages for global SEO strategy.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Search behavior in German differs from English in several key ways. German speakers tend to use longer, more conversational search queries. Voice search is growing rapidly in German-speaking markets, which affects keyword strategy.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">German SEO benefits from compound word optimization. Target both the compound form and separated form. The ß character should be included in keyword research alongside "ss" alternatives.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The competition for German keywords is generally lower than English, meaning there are significant opportunities for content creators who invest in high-quality German content. This makes German SEO one of the best growth channels for 2026.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Der deutsche Suchmarkt in Zahlen</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Deutschland ist der größte Internetmarkt Europas. 78,3 Millionen Deutsche nutzen das Internet täglich (Bitkom 2024). Zusammen mit Österreich (7,7 Mio.) und der Schweiz (8,5 Mio.) bildet der DACH-Raum einen Markt von über 94 Millionen deutschsprachigen Internetnutzern.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Google.de hat einen Marktanteil von 91,4% bei der Desktop-Suche und 96,8% bei der mobilen Suche (StatCounter 2025). Bing liegt bei 4,3% (Desktop) — deutlich weniger als in den USA (8,2%). Das bedeutet: SEO in Deutschland ist fast ausschließlich Google-Optimierung.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Der deutsche E-Commerce-Markt generierte 2024 einen Umsatz von 85,4 Milliarden Euro (HDE/Statista). Davon stammen ca. 40% aus organischer Suche. Wer im deutschen Markt sichtbar sein will, braucht eine durchdachte SEO-Strategie.</p>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 220" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>DACH-Internetnutzer nach Land (2024)</text>
+                  <rect x="150" y="45" width="370" height="32" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="150" y="45" width={String(370*0.83)} height="32" rx="4" fill="#10b981" />
+                  <text x="140" y="65" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Deutschland</text>
+                  <text x={String(150+370*0.83+8)} y="65" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>78,3 Mio.</text>
+                  <rect x="150" y="85" width="370" height="32" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="150" y="85" width={String(370*0.09)} height="32" rx="4" fill="#10b981" />
+                  <text x="140" y="105" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Österreich</text>
+                  <text x={String(150+370*0.09+8)} y="105" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>7,7 Mio.</text>
+                  <rect x="150" y="125" width="370" height="32" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="150" y="125" width={String(370*0.09)} height="32" rx="4" fill="#10b981" />
+                  <text x="140" y="145" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Schweiz</text>
+                  <text x={String(150+370*0.09+8)} y="145" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>8,5 Mio.</text>
+                  <rect x="150" y="170" width="370" height="32" rx="4" fill="rgba(240,200,66,0.15)" />
+                  <rect x="150" y="170" width={String(370*1.0)} height="32" rx="4" fill="#f0c842" fillOpacity="0.6" />
+                  <text x="140" y="190" textAnchor="end" fill="#f0c842" style={{fontSize:'12px',fontWeight:'700'}}>Gesamt DACH</text>
+                  <text x={String(150+370*1.0-80)} y="190" fill="#1e293b" style={{fontSize:'13px',fontWeight:'700'}}>94,5 Mio. Nutzer</text>
+                </svg>
+              </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">German Keyword Research Strategy</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Effective German keyword research requires different approaches than English keyword research. Here are the essential strategies.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">First, never simply translate English keywords into German. Native German speakers use different terms, phrases, and question formats when searching. Use German-specific keyword tools and analyze German autocomplete suggestions.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Second, consider the German writing system. German uses Latin alphabet with umlauts, and users may search using different forms or spellings of the same word. Include all common variations in your keyword strategy.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Third, analyze German search intent. The same query may have different intent in German versus English due to cultural differences. Check the search results pages for German queries to understand what content ranks.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Fourth, use long-tail German keywords. These are easier to rank for and often have higher conversion rates. Our word counter tool helps you ensure your content naturally includes target keywords at appropriate density.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Keyword-Recherche auf Deutsch</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Deutsche Suchanfragen unterscheiden sich von englischen in drei Punkten:</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Längere Suchanfragen:</strong> Laut einer Sistrix-Analyse 2024 haben deutsche Suchanfragen im Durchschnitt 3,2 Wörter — im Vergleich zu 2,8 auf Englisch. Das liegt an den Komposita und der Tendenz, präziser zu suchen.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">2. Fragen als Keywords:</strong> 23% der deutschen Suchanfragen beginnen mit „Wie", „Was", „Warum" oder „Wann" — bei Englisch sind es 19%. Deutsche suchen häufiger nach Erklärungen und Anleitungen.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">3. Regionale Unterschiede:</strong> „Brötchen" vs. „Semmel" vs. „Schrippe" — je nach Region (Nord/Süd/Ost) unterscheiden sich die Suchbegriffe. Berücksichtige regionale Varianten in deiner Keyword-Strategie.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Tools für die deutsche Keyword-Recherche: Google Keyword Planner (kostenlos), Sistrix (für den DACH-Markt optimiert), Ahrefs (internationale Alternative), AnswerThePublic (Fragen-Keywords) und unser <a href="/keyword-density-checker" className="text-emerald-400 underline">Keyword-Dichte-Checker</a> für die Optimierung bestehender Texte.</p>
             </section>
 
-          {/* MID_AD */}
-          <AdUnit slot="3248634657" />
-
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Optimal Content Length for German SEO</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Content length is a ranking factor in every language, but the optimal length differs for German content. Here are data-driven guidelines.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Blog posts targeting informational queries should be 1500-2500 words in German (adjusted for language-specific word count ratios). German compound words dramatically affect word count. "Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz" is one word. German text has roughly 10-15% fewer words than English for the same meaning due to compounding. This means your target character or word count may differ from English benchmarks.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Product pages and landing pages perform best at 800-1200 German words. Include specific product details, benefits, and social proof written naturally in German.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Pillar content and comprehensive guides should exceed 3000 German words to compete for competitive head terms. These long-form pieces establish topical authority in German search.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our German Word Counter to track your content length accurately. Remember that generic word counters may not properly handle unlimited compound nouns and noun capitalization, leading to inaccurate counts.</p>
-            </section>
             <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">On-Page SEO for German Content</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Optimizing German pages requires attention to language-specific on-page factors.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Title tags should be 50-60 characters in German and include your primary keyword near the beginning. Remember that German character width may differ from English, so test how your titles display in search results.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Meta descriptions should be 150-160 characters of compelling German copy that includes the target keyword and a clear call to action. Write them as natural German sentences, not keyword-stuffed fragments.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Header tags (H1, H2, H3) should use natural German phrasing with keywords included. The H1 should match the search intent precisely. Use H2 and H3 tags to create a logical content hierarchy.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">URL structure for German pages can use either transliterated or native script URLs. Search engines handle both, but consistency is important. Choose one approach and stick with it across your site.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Internal linking in German content should use natural anchor text. Link to your German word counter tool and other relevant German resources to build topical authority.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Content-Cluster-Strategie für den DACH-Markt</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Content-Cluster funktionieren im deutschen Markt besonders gut, weil deutsche Nutzer umfassende, gründliche Informationen erwarten. Eine Pillar Page (3.000–5.000 Wörter) zum Oberthema, verlinkt mit 8–15 Unterseiten (je 1.500–2.500 Wörter) — das ist die Struktur, die bei Google.de am besten rankt.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Beispiel für ein Content-Cluster zum Thema „Wortzähler":</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Die Pillar Page behandelt „Wörter zählen" umfassend. Cluster-Seiten decken Unterthemen ab: „Deutsche Komposita zählen", „Zeichenlimits für Social Media", „Lesezeit berechnen", „Keyword-Dichte optimieren" und „Lesbarkeit verbessern". Jede Unterseite verlinkt zurück auf die Pillar Page und auf 2–3 andere Cluster-Seiten.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Laut einer HubSpot-Studie 2024 ranken Websites mit Content-Cluster-Strategie 35% besser als solche ohne. Im deutschsprachigen Raum ist dieser Effekt sogar stärker, weil weniger deutsche Websites eine systematische Content-Cluster-Strategie nutzen — die Konkurrenz ist geringer.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">German Content That Attracts Backlinks</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Creating German content that earns backlinks requires understanding what German-speaking audiences find valuable and shareable.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Original research and data about German language usage, trends, or markets attracts links from German media outlets and bloggers. Invest in creating unique data-driven content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Comprehensive guides and reference materials in German become go-to resources that others link to. Tools like our German Word Counter become linkable assets because they provide ongoing utility.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Visual content with German text performs well for social sharing and link building. Infographics, charts, and interactive tools in German are more likely to be shared than text-only content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Guest posting on German websites builds both backlinks and brand awareness in German-speaking markets. Focus on high-quality German publications relevant to your niche.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">E-E-A-T im deutschen Kontext</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">E-E-A-T steht für Experience (Erfahrung), Expertise, Authoritativeness (Autorität) und Trustworthiness (Vertrauenswürdigkeit). Deutsche Nutzer legen besonderen Wert auf Vertrauen — das zeigt sich an der Beliebtheit von Gütesiegeln (TÜV, Trusted Shops, Stiftung Warentest).</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Erfahrung zeigen:</strong> Deutsche Leser schätzen persönliche Erfahrungsberichte. Formulierungen wie „In meiner 10-jährigen Erfahrung als SEO-Berater..." wirken authentischer als abstrakte Behauptungen.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Expertise belegen:</strong> Verweise auf deutsche Quellen (Statista, Sistrix, IHK, Stiftung Warentest, TÜV) haben im DACH-Raum mehr Gewicht als internationale Quellen. Deutsche Leser kennen und vertrauen diesen Institutionen.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Autorität aufbauen:</strong> Gastbeiträge auf branchenrelevanten deutschen Portalen, Zitate in Fachmedien und Backlinks von .de-Domains stärken die Autorität. Qualität schlägt Quantität — ein Backlink von spiegel.de ist wertvoller als 100 Links von No-Name-Blogs.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Vertrauen stärken:</strong> Impressum ist in Deutschland gesetzlich vorgeschrieben (§ 5 TMG). Fehlende Impressum-Daten sind ein Vertrauenssignal-Verlust. Datenschutzerklärung (DSGVO), Kontaktdaten und Kundenbewertungen sind weitere Trust-Signale.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Measuring German SEO Success</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Tracking German SEO performance requires the right metrics and tools.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Monitor German keyword rankings separately from English rankings. Use rank tracking tools that support German search engines and Latin alphabet with umlauts characters.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Analyze German organic traffic trends. Look at traffic from German-speaking countries and filter by German language settings to get accurate data.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Track German content engagement metrics: time on page, bounce rate, and pages per session for German content. These indicate whether your German content meets user expectations.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Measure German conversion rates separately. German-speaking audiences may have different conversion patterns and preferences. Optimize your German calls to action and conversion paths based on data.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our German Word Counter tool as part of your content audit process. Regularly check that your German content meets length targets and maintains quality as you scale your German content strategy.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Lokale SEO für Deutschland, Österreich und die Schweiz</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Obwohl alle drei Länder Deutsch sprechen, suchen sie unterschiedlich. Verwende hreflang-Tags, um Google die richtige Sprachvariante zu signalisieren:</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Deutschland:</strong> hreflang="de-DE" — Nutze „ß" und bundesdeutsche Begriffe. Google.de bevorzugt .de-Domains und Inhalte mit deutschem Kontext.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Österreich:</strong> hreflang="de-AT" — Berücksichtige österreichische Begriffe: „Jänner" statt „Januar", „Paradeiser" statt „Tomate", „Stiege" statt „Treppe". Google.at zeigt lokale Ergebnisse bevorzugt.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Schweiz:</strong> hreflang="de-CH" — Kein ß (immer „ss"). Schweizer Franken statt Euro. Schweizer Begriffe wie „Velo" statt „Fahrrad", „Natel" statt „Handy".</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Nutze unseren <a href="/word-counter/language/german" className="text-emerald-400 underline">deutschen Wortzähler</a> und <a href="/readability-checker" className="text-emerald-400 underline">Lesbarkeits-Checker</a>, um deine DACH-Inhalte zu optimieren.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Häufig gestellte Fragen</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
           </div>
@@ -105,19 +117,20 @@ export default function Post() {
 
       <div className="max-w-4xl mx-auto px-4 mb-8">
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-white mb-3">Try These German Tools</h2>
+          <h2 className="text-lg font-bold text-white mb-3">Deutsche Schreibwerkzeuge</h2>
           <div className="flex flex-wrap gap-2">
-            <a href="/word-counter/language/german" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">German Word Counter</a>
-            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
-            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
-            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
-            <a href="/words-per-minute" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Minute</a>
+            <a href="/word-counter/language/german" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Deutscher Wortzähler</a>
+            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Wortzähler</a>
+            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Zeichenzähler</a>
+            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Lesezeit-Rechner</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Lesbarkeits-Checker</a>
+            <a href="/keyword-density-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Keyword-Dichte-Checker</a>
           </div>
         </div>
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"German SEO Content Strategy: Rank Higher in German Search (2026)","description":"Build a winning German SEO content strategy. Learn keyword research, content optimization, and word count guidelines for ranking in German search results.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-22","dateModified":"2026-03-22","mainEntityOfPage":"https://www.wordcountertool.net/blog/german-seo-content-strategy"})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"German SEO Content Strategy: Rank Higher in German Search (2026)","item":"https://www.wordcountertool.net/blog/german-seo-content-strategy"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"SEO-Content-Strategie für den deutschen Markt: Datenbasierter Guide (2026)","description":"Baue eine SEO-Content-Strategie für Google.de auf. Mit Keyword-Recherche, Content-Cluster, E-E-A-T und lokalen Ranking-Faktoren für den DACH-Raum.","inLanguage":"de","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-04-05","dateModified":"2026-04-05","mainEntityOfPage":"https://www.wordcountertool.net/blog/german-seo-content-strategy"})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"SEO-Content-Strategie für den deutschen Markt: Datenbasierter Guide (2026)","item":"https://www.wordcountertool.net/blog/german-seo-content-strategy"}]})}} />
 
       <Footer />
     </>

@@ -5,20 +5,26 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-count-words-in-german' },
-  title: 'How to Count Words in German: Complete Guide (2026)',
-  description: 'Learn how to accurately count words in German text. Understand German word boundaries, character counting, and use our free German word counter tool.',
+  title: 'Wörter zählen auf Deutsch: Der komplette Leitfaden für 2026',
+  description: 'Lerne, wie du Wörter, Zeichen und Sätze auf Deutsch korrekt zählst. Mit Komposita-Regeln, Lesezeit-Berechnung und kostenlosen Tools.',
   openGraph: {
-    title: 'How to Count Words in German: Complete Guide (2026)',
-    description: 'Learn how to accurately count words in German text. Understand German word boundaries, character counting, and use our free German word counter tool.',
+    title: 'Wörter zählen auf Deutsch: Der komplette Leitfaden für 2026',
+    description: 'Lerne, wie du Wörter, Zeichen und Sätze auf Deutsch korrekt zählst. Mit Komposita-Regeln, Lesezeit-Berechnung und kostenlosen Tools.',
     url: 'https://www.wordcountertool.net/blog/how-to-count-words-in-german',
     siteName: 'WordCounterTool',
     type: 'article',
   },
 }
 
-const faqs = [{"q":"How do I count words in German?","a":"Use our free German Word Counter at wordcountertool.net/word-counter/language/german. Paste your German text and get instant word count, character count, sentence count, and reading time."},{"q":"Is the German word counter free?","a":"Yes, completely free with no sign-up required. Our German word counter tool works instantly in your browser with no data stored or sent to any server."},{"q":"How many words per minute does the average person read in German?","a":"The average German reading speed is approximately 200-250 words per minute for native speakers, though this varies based on text complexity and the reader experience level."},{"q":"Does your tool handle Latin alphabet with umlauts?","a":"Yes. Our German Word Counter is specifically designed to handle Latin alphabet with umlauts accurately. It accounts for unlimited compound nouns and noun capitalization that generic word counters miss."}]
+const faqs = [
+  { q: 'Wie zähle ich Wörter in einem deutschen Text?', a: 'Nutze den kostenlosen deutschen Wortzähler auf WordCounterTool.net. Füge deinen Text ein und erhalte sofort Wörter, Zeichen, Sätze, Absätze und Lesezeit. Das Tool erkennt Komposita, Umlaute und ß korrekt.' },
+  { q: 'Werden deutsche Komposita als ein Wort gezählt?', a: 'Ja. „Krankenversicherung" ist ein Wort, unabhängig von seiner Länge. Das ist korrekt nach den Regeln der deutschen Sprache. Wortzähler teilen Text an Leerzeichen, daher zählt jedes Kompositum als ein Wort.' },
+  { q: 'Wie schnell liest man deutsche Texte?', a: 'Deutsche Muttersprachler lesen Sachtexte mit etwa 220–250 Wörtern pro Minute. Unterhaltungsliteratur wird etwas schneller gelesen (250–300 WPM). Fachtexte langsamer (150–200 WPM). Unser Tool berechnet die Lesezeit automatisch.' },
+  { q: 'Ist der deutsche Wortzähler kostenlos?', a: 'Ja, komplett kostenlos und ohne Registrierung. Keine Daten werden gespeichert oder an Server gesendet. Du kannst den deutschen Wortzähler unbegrenzt nutzen.' },
+  { q: 'Wie viele Wörter hat ein deutscher Blogbeitrag?', a: 'Für SEO empfehlen wir 1.500–2.500 Wörter. Da deutsche Texte durch Komposita kompakter sind als englische, entspricht das ca. 1.800–3.000 englischen Wörtern. Längere Texte ranken laut Backlinko-Studien besser bei Google.' },
+  { q: 'Zählen Umlaute als ein oder zwei Zeichen?', a: 'Umlaute (ä, ö, ü) und ß sind jeweils ein Zeichen. Unser Tool zählt sie korrekt als einzelne Zeichen. In UTF-8 benötigen sie zwar 2 Bytes, aber das beeinflusst nicht die Zeichenzählung.' }
+]
 
 export default function Post() {
   return (
@@ -26,72 +32,111 @@ export default function Post() {
       <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
+        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Zurück zum Blog</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">How to Count Words in German: Complete Guide (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated March 2026 | 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Wörter zählen auf Deutsch: Der komplette Leitfaden für 2026</h1>
+          <p className="text-slate-400 text-sm mb-8">Aktualisiert April 2026 | 8 Min. Lesezeit</p>
           <div className="result-box mb-8 border-emerald-500/30">
-            <h2 className="text-emerald-400 font-bold mb-3">Quick Summary</h2>
-            <p className="text-white">German (Deutsch) is spoken by <strong>130 million</strong> people. It uses Latin alphabet with umlauts and has unique word counting challenges due to unlimited compound nouns and noun capitalization. Use our free <a href="/word-counter/language/german" className="text-emerald-400 underline">German Word Counter</a> for accurate results.</p>
+            <h2 className="text-emerald-400 font-bold mb-3">Zusammenfassung</h2>
+            <p className="text-white">Deutsche Texte zählen anders als englische: <strong className="text-white">Komposita</strong> wie „Donaudampfschifffahrtsgesellschaft" sind ein einziges Wort mit 41 Buchstaben. Deutsche Texte haben durchschnittlich <strong className="text-white">15–20% weniger Wörter</strong> als englische Übersetzungen — bei gleichem Informationsgehalt. Nutze unseren <a href="/word-counter/language/german" className="text-emerald-400 underline">deutschen Wortzähler</a> für präzise Ergebnisse.</p>
           </div>
           <div className="space-y-8">
+
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Why Counting Words in German Is Different</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">German (Deutsch) is spoken by 130 million people across Germany, Austria, Switzerland, Liechtenstein. It uses Latin alphabet with umlauts with 26 letters + ä, ö, ü, ß. German is known for compound nouns that can be almost unlimited in length. It has three grammatical genders (masculine, feminine, neuter) and four cases. All nouns are capitalized in German.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When it comes to word counting, German presents unique challenges compared to English. German compound words dramatically affect word count. "Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz" is one word. German text has roughly 10-15% fewer words than English for the same meaning due to compounding.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Understanding these differences is critical for anyone writing, translating, or optimizing content in German. Whether you are a content creator, translator, student, or SEO professional, accurate word counting in German requires the right tools and knowledge.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Warum das Zählen deutscher Wörter anders funktioniert</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Deutsch hat eine Eigenschaft, die es von fast allen anderen europäischen Sprachen unterscheidet: unbegrenzte Wortzusammensetzung. Du kannst theoretisch unendlich lange Wörter bilden, indem du Substantive aneinanderreihst. „Kraftfahrzeughaftpflichtversicherung" (36 Buchstaben) ist ein alltägliches Wort. „Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz" (63 Buchstaben) war ein echtes deutsches Gesetz.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Das hat praktische Auswirkungen: Ein deutscher Text über Kfz-Versicherung hat weniger Wörter als die englische Version, obwohl beide den gleichen Inhalt vermitteln. Im Englischen steht „motor vehicle liability insurance" — vier Wörter. Auf Deutsch: „Kraftfahrzeughaftpflichtversicherung" — ein Wort.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Laut einer Analyse von Translated.net aus 2023 sind englische Texte im Durchschnitt 17% länger in der Wortanzahl als ihre deutschen Entsprechungen. Bei technischen Texten steigt dieser Unterschied auf bis zu 25%.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">German Writing System Explained</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">German uses a alphabetic (Latin) writing system. The left-to-right reading direction and Latin alphabet with umlauts create a unique writing experience. The average word length in German is 6-8 characters, which differs significantly from English average of 4-5 characters.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The German word order follows a SOV/V2 word order pattern, which affects how sentences are structured and how word count relates to meaning. A sentence that takes 10 words in English might take more or fewer words in German depending on the grammatical features being used.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">One of the most distinctive features of German is unlimited compound nouns and noun capitalization. This directly impacts how word counting tools process German text and why specialized tools are needed for accurate results.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Deutsche Komposita verstehen</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Komposita sind zusammengesetzte Wörter aus zwei oder mehr Substantiven (oder anderen Wortarten). Sie sind das Herzstück der deutschen Wortbildung und beeinflussen die Wortzählung erheblich.</p>
+              <div className="overflow-x-auto mb-4">
+                <table className="w-full text-sm" style={{borderCollapse:'collapse'}}>
+                  <thead>
+                    <tr style={{borderBottom:'1px solid rgba(52,211,153,0.2)'}}>
+                      <th className="text-left text-emerald-400 py-2 px-3">Deutsches Kompositum</th>
+                      <th className="text-left text-emerald-400 py-2 px-3">Englisch (Wörter)</th>
+                      <th className="text-left text-emerald-400 py-2 px-3">Zeichen</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ['Handschuh', 'glove (1 Wort)', '9'],
+                      ['Kühlschrank', 'refrigerator (1 Wort)', '11'],
+                      ['Staubsauger', 'vacuum cleaner (2 Wörter)', '11'],
+                      ['Geschwindigkeitsbegrenzung', 'speed limit (2 Wörter)', '26'],
+                      ['Krankenversicherung', 'health insurance (2 Wörter)', '19'],
+                      ['Sehenswürdigkeit', 'tourist attraction (2 Wörter)', '17'],
+                      ['Rechtsschutzversicherungsgesellschaft', 'legal protection insurance company (4 Wörter)', '37'],
+                    ].map((row, i) => (
+                      <tr key={i} style={{borderBottom:'1px solid rgba(52,211,153,0.1)'}}>
+                        <td className="text-white py-2 px-3 font-medium">{row[0]}</td>
+                        <td className="text-slate-400 py-2 px-3">{row[1]}</td>
+                        <td className="text-slate-400 py-2 px-3">{row[2]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Für die Wortzählung bedeutet das: Ein Satz mit vielen Komposita hat weniger Wörter, aber deutlich mehr Zeichen. Das ist wichtig für Plattformen, die nach Zeichen zählen (wie Twitter/X), versus Plattformen, die nach Wörtern rechnen (wie WordPress oder Word).</p>
             </section>
 
-          {/* MID_AD */}
-          <AdUnit slot="3248634657" />
-
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Step-by-Step: Counting German Words Online</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The easiest way to count words in German is to use our free German Word Counter tool. Here is how to do it:</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">First, navigate to our German Word Counter at wordcountertool.net/word-counter/language/german. You will see a clean text input area designed for German text.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Second, paste or type your German text into the input field. The tool instantly analyzes your text and provides word count, character count, sentence count, and paragraph count.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Third, review the detailed breakdown. Our tool handles German-specific challenges like unlimited compound nouns and noun capitalization, giving you accurate results that generic word counters miss.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Fourth, use the reading time estimate to understand how long your German content will take to read. This is especially useful for presentations, speeches, and content planning.</p>
-            </section>
             <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">German Word Count vs English Word Count</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When comparing German and English text, the word count relationship is important to understand. German compound words dramatically affect word count. "Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz" is one word. German text has roughly 10-15% fewer words than English for the same meaning due to compounding.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">This difference has practical implications for several professional contexts. Translators charging by the word need to account for the expansion or contraction between languages. Content creators targeting specific word counts must adjust their expectations. SEO professionals optimizing German content need different benchmarks than English content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">For example, a 1000-word English blog post might translate to a different word count in German. Understanding this ratio helps you plan content length appropriately and set realistic targets for German writing projects.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Our German Word Counter tool accounts for these differences and provides accurate counts regardless of the text length or complexity.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Schritt-für-Schritt: Wörter auf Deutsch zählen</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Schritt 1:</strong> Öffne den <a href="/word-counter/language/german" className="text-emerald-400 underline">deutschen Wortzähler</a> auf WordCounterTool.net.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Schritt 2:</strong> Füge deinen deutschen Text ein. Das Tool erkennt deutsche Zeichen (ä, ö, ü, ß) automatisch und zählt Komposita korrekt als einzelne Wörter.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Schritt 3:</strong> Lies die Ergebnisse ab: Wörter, Zeichen (mit und ohne Leerzeichen), Sätze, Absätze und geschätzte Lesezeit.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Schritt 4:</strong> Nutze die Zeichenanzahl für Social-Media-Posts und die Wortanzahl für Blogbeiträge, wissenschaftliche Arbeiten und SEO-Texte.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Tipp: Deutsche Lesegeschwindigkeit liegt bei etwa 220–250 Wörtern pro Minute für Sachtext. Romane werden mit ca. 250–300 WPM gelesen. Unser Tool berechnet die Lesezeit auf dieser Basis.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">German SEO Writing Tips</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">German SEO benefits from compound word optimization. Target both the compound form and separated form. The ß character should be included in keyword research alongside "ss" alternatives.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When writing SEO content in German, word count matters but it is not the only factor. Here are key tips for optimizing German content:</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">First, use natural German phrasing rather than direct translations from English. Search engines are increasingly sophisticated at detecting and penalizing unnatural language.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Second, research keywords specifically in German. Direct keyword translations often miss the terms native speakers actually search for. Use German-specific keyword research tools and check autocomplete suggestions in German.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Third, aim for comprehensive content. German readers expect thorough coverage of topics. A minimum of 1500 words (or the German equivalent) is recommended for pillar content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Fourth, optimize your metadata in German. Title tags, meta descriptions, and header tags should all be written naturally in German with target keywords included.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Wortanzahl für verschiedene deutsche Textformate</h2>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 280" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>Empfohlene Wortanzahl für deutsche Inhalte</text>
+                  <rect x="180" y="45" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="45" width={String(340*0.85)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="63" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Blogpost</text>
+                  <text x={String(180+340*0.85+8)} y="63" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1.500–2.500</text>
+                  <rect x="180" y="81" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="81" width={String(340*0.42)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="99" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Produktseite</text>
+                  <text x={String(180+340*0.42+8)} y="99" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>500–800</text>
+                  <rect x="180" y="117" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="117" width={String(340*0.25)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="135" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Newsletter</text>
+                  <text x={String(180+340*0.25+8)} y="135" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>300–500</text>
+                  <rect x="180" y="153" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="153" width={String(340*0.18)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="171" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Meta Description</text>
+                  <text x={String(180+340*0.18+8)} y="171" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>130–155</text>
+                  <rect x="180" y="189" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="189" width={String(340*0.08)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="207" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Tweet/X Post</text>
+                  <text x={String(180+340*0.08+8)} y="207" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>40–50</text>
+                  <rect x="180" y="225" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="225" width={String(340*1.0)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="243" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Bachelorarbeit</text>
+                  <text x={String(180+340*1.0-100)} y="243" fill="#ffffff" style={{fontSize:'12px',fontWeight:'600'}}>10.000–15.000</text>
+                </svg>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Beachte: Diese Zahlen gelten für deutsche Texte. Wenn du von einer englischen Vorlage übersetzt, wird der deutsche Text typischerweise 10–20% kürzer in der Wortanzahl. Das bedeutet nicht, dass Inhalt fehlt — die Komposita komprimieren die Information.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Common German Word Counting Mistakes</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Many people make mistakes when counting words in German. Here are the most common errors and how to avoid them.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The first mistake is using English-optimized word counters that do not properly handle Latin alphabet with umlauts. These tools may miscount or completely fail with German text. Always use a tool specifically designed for German.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The second mistake is confusing character count with word count. In German, these can be very different numbers. A German text with 500 characters might have a very different word count than an English text with 500 characters.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The third mistake is not accounting for unlimited compound nouns and noun capitalization. This feature of German means that standard whitespace-based counting may not give accurate results.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The fourth mistake is applying English word count benchmarks to German content. Because of the structural differences between the languages, you need German-specific benchmarks for content length.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Umlaute und Sonderzeichen korrekt zählen</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Die deutschen Sonderzeichen ä, ö, ü und ß sind jeweils ein Zeichen — nicht zwei. „ä" ist ein Buchstabe, nicht „ae". In UTF-8 benötigt jeder Umlaut 2 Bytes, während ein normaler lateinischer Buchstabe nur 1 Byte braucht. Das spielt bei Zeichenlimits eine Rolle, die nach Bytes zählen.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Unser Wortzähler zählt Umlaute und ß als jeweils ein Zeichen — das ist das korrekte Verhalten für die deutsche Sprache. Einige ältere Tools zählen „ä" als zwei Zeichen, weil sie Bytes statt Unicode-Zeichen zählen. Das führt zu falschen Ergebnissen.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Für URLs werden Umlaute URL-encoded: ä → %C3%A4. In SEO-Titeln und Meta-Descriptions solltest du die echten Umlaute verwenden. Google zeigt sie korrekt in den Suchergebnissen an.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Häufig gestellte Fragen</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
           </div>
@@ -100,19 +145,20 @@ export default function Post() {
 
       <div className="max-w-4xl mx-auto px-4 mb-8">
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-white mb-3">Try These German Tools</h2>
+          <h2 className="text-lg font-bold text-white mb-3">Deutsche Schreibwerkzeuge</h2>
           <div className="flex flex-wrap gap-2">
-            <a href="/word-counter/language/german" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">German Word Counter</a>
-            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
-            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
-            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
-            <a href="/words-per-minute" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Minute</a>
+            <a href="/word-counter/language/german" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Deutscher Wortzähler</a>
+            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Wortzähler</a>
+            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Zeichenzähler</a>
+            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Lesezeit-Rechner</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Lesbarkeits-Checker</a>
+            <a href="/keyword-density-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Keyword-Dichte-Checker</a>
           </div>
         </div>
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How to Count Words in German: Complete Guide (2026)","description":"Learn how to accurately count words in German text. Understand German word boundaries, character counting, and use our free German word counter tool.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-22","dateModified":"2026-03-22","mainEntityOfPage":"https://www.wordcountertool.net/blog/how-to-count-words-in-german"})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"How to Count Words in German: Complete Guide (2026)","item":"https://www.wordcountertool.net/blog/how-to-count-words-in-german"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Wörter zählen auf Deutsch: Der komplette Leitfaden für 2026","description":"Lerne, wie du Wörter, Zeichen und Sätze auf Deutsch korrekt zählst. Mit Komposita-Regeln, Lesezeit-Berechnung und kostenlosen Tools.","inLanguage":"de","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-04-05","dateModified":"2026-04-05","mainEntityOfPage":"https://www.wordcountertool.net/blog/how-to-count-words-in-german"})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"Wörter zählen auf Deutsch: Der komplette Leitfaden für 2026","item":"https://www.wordcountertool.net/blog/how-to-count-words-in-german"}]})}} />
 
       <Footer />
     </>

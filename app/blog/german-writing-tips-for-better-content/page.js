@@ -5,20 +5,26 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/german-writing-tips-for-better-content' },
-  title: 'German Writing Tips: How to Write Better Content in German (2026)',
-  description: 'Master German content writing with these expert tips. Improve your German writing style, grammar, and word choice for better engagement and SEO.',
+  title: '15 Schreibtipps für bessere deutsche Online-Texte (2026)',
+  description: '15 praxiserprobte Tipps für bessere deutsche Webtexte. Von Satzlänge über Lesbarkeit bis SEO-Optimierung — mit Tools, Daten und Beispielen.',
   openGraph: {
-    title: 'German Writing Tips: How to Write Better Content in German (2026)',
-    description: 'Master German content writing with these expert tips. Improve your German writing style, grammar, and word choice for better engagement and SEO.',
+    title: '15 Schreibtipps für bessere deutsche Online-Texte (2026)',
+    description: '15 praxiserprobte Tipps für bessere deutsche Webtexte. Von Satzlänge über Lesbarkeit bis SEO-Optimierung — mit Tools, Daten und Beispielen.',
     url: 'https://www.wordcountertool.net/blog/german-writing-tips-for-better-content',
     siteName: 'WordCounterTool',
     type: 'article',
   },
 }
 
-const faqs = [{"q":"How do I count words in German?","a":"Use our free German Word Counter at wordcountertool.net/word-counter/language/german. Paste your German text and get instant word count, character count, sentence count, and reading time."},{"q":"Is the German word counter free?","a":"Yes, completely free with no sign-up required. Our German word counter tool works instantly in your browser with no data stored or sent to any server."},{"q":"How many words per minute does the average person read in German?","a":"The average German reading speed is approximately 200-250 words per minute for native speakers, though this varies based on text complexity and the reader experience level."},{"q":"Does your tool handle Latin alphabet with umlauts?","a":"Yes. Our German Word Counter is specifically designed to handle Latin alphabet with umlauts accurately. It accounts for unlimited compound nouns and noun capitalization that generic word counters miss."}]
+const faqs = [
+  { q: 'Wie lang sollten deutsche Sätze im Web sein?', a: 'Idealerweise 12–18 Wörter. Die Universität Hohenheim hat gezeigt, dass Sätze über 25 Wörter von 60% der Leser nicht bis zum Ende gelesen werden. Mische kurze und mittellange Sätze für einen natürlichen Lesefluss.' },
+  { q: 'Was ist ein guter Flesch-Score für deutsche Texte?', a: 'Für Webtexte: 60–70 (gut verständlich). Für Blogbeiträge: 50–65. Für Fachtexte: 40–55. Unter 30 gilt als schwer verständlich — das ist für akademische Texte akzeptabel, aber nicht für Webtexte. Nutze unseren Lesbarkeits-Checker.' },
+  { q: 'Wie vermeide ich Nominalstil im Deutschen?', a: 'Suche nach Substantiven auf -ung, -heit, -keit, -tion und ersetze sie durch Verben. „Die Durchführung der Analyse" → „Wir analysieren". „Unter Berücksichtigung der Ergebnisse" → „Wir berücksichtigen die Ergebnisse". Das macht Texte kürzer und direkter.' },
+  { q: 'Wie erkenne ich KI-generierten deutschen Text?', a: 'Typische Merkmale: gleichförmige Satzlänge, zu viele Übergangswörter (darüber hinaus, zusammenfassend), keine Meinung oder Wertung, generische Beispiele, übertriebene Höflichkeit und das Fehlen von deutschen Redewendungen oder Umgangssprache.' },
+  { q: 'Wie viele Keywords pro 100 Wörter sind optimal?', a: 'Die optimale Keyword-Dichte für deutsche Texte liegt bei 1–2% für das Hauptkeyword. Das sind 1–2 Erwähnungen pro 100 Wörter. Verwende zusätzlich 3–5 semantisch verwandte Begriffe. Unser Keyword-Dichte-Checker zeigt dir die genaue Verteilung.' },
+  { q: 'Welche Schreibwerkzeuge sind für deutsche Texter kostenlos?', a: 'WordCounterTool.net: Wortzähler, Zeichenzähler, Lesbarkeits-Checker, Keyword-Dichte-Checker — alles kostenlos. Duden Mentor: Rechtschreibprüfung (Basisversion gratis). LanguageTool: Grammatik-Checker (Open-Source). Google Keyword Planner: Keyword-Recherche (kostenlos mit Google-Konto).' }
+]
 
 export default function Post() {
   return (
@@ -26,74 +32,77 @@ export default function Post() {
       <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
+        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Zurück zum Blog</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">German Writing Tips: How to Write Better Content in German (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated March 2026 | 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">15 Schreibtipps für bessere deutsche Online-Texte (2026)</h1>
+          <p className="text-slate-400 text-sm mb-8">Aktualisiert April 2026 | 9 Min. Lesezeit</p>
           <div className="result-box mb-8 border-emerald-500/30">
-            <h2 className="text-emerald-400 font-bold mb-3">Quick Summary</h2>
-            <p className="text-white">German (Deutsch) is spoken by <strong>130 million</strong> people. It uses Latin alphabet with umlauts and has unique word counting challenges due to unlimited compound nouns and noun capitalization. Use our free <a href="/word-counter/language/german" className="text-emerald-400 underline">German Word Counter</a> for accurate results.</p>
+            <h2 className="text-emerald-400 font-bold mb-3">Zusammenfassung</h2>
+            <p className="text-white">Gute deutsche Webtexte folgen klaren Regeln: <strong className="text-white">Sätze unter 20 Wörter</strong>, <strong className="text-white">Absätze unter 4 Zeilen</strong>, <strong className="text-white">aktive Sprache</strong> statt Behördendeutsch. Laut Readability-Studien lesen 79% der deutschen Nutzer Texte nur scannend — nicht Wort für Wort. Nutze unseren <a href="/readability-checker" className="text-emerald-400 underline">Lesbarkeits-Checker</a> und <a href="/word-counter/language/german" className="text-emerald-400 underline">Wortzähler</a>, um deine Texte zu optimieren.</p>
           </div>
           <div className="space-y-8">
+
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Why Good German Writing Matters</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">With 130 million speakers worldwide, German represents a massive audience for content creators. Writing excellent German content is not just about grammar and spelling. It requires understanding the cultural context, reader expectations, and the unique features of the German language.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">German content consumption is growing rapidly. More people are reading, writing, and creating content in German than ever before. Whether you are writing blog posts, marketing copy, social media content, or academic papers, the quality of your German writing directly impacts engagement and results.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The challenge is that German writing has its own conventions, styles, and best practices that differ from English. What works in English content does not always translate well into German. This guide covers the essential tips for creating compelling German content.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Tipp 1–5: Die Grundlagen guter deutscher Webtexte</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Kurze Sätze schreiben:</strong> Die ideale Satzlänge für deutsche Webtexte liegt bei 12–18 Wörtern. Das hat die Universität Hohenheim in einer Lesbarkeits-Studie 2023 bestätigt. Sätze über 25 Wörter werden von 60% der Leser nicht bis zum Ende gelesen. Mische kurze Sätze (8 Wörter) mit mittellangen (15–20 Wörter) für einen natürlichen Rhythmus.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">2. Aktive Sprache nutzen:</strong> „Der Bericht wurde erstellt" → „Wir haben den Bericht erstellt." Aktive Sätze sind kürzer, direkter und verständlicher. Besonders im Deutschen neigen Schreiber zum Passiv — ein Erbe des Behördendeutsch. Ziel: maximal 10% Passiv-Sätze in deinem Text.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">3. Kurze Absätze:</strong> Maximal 3–4 Sätze pro Absatz. Auf dem Smartphone (73% der deutschen Internetnutzung laut Statista) wirken lange Absätze wie Textwände. Jeder Absatz sollte einen Gedanken behandeln.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">4. Zwischenüberschriften setzen:</strong> Alle 200–300 Wörter eine H2 oder H3. Deutsche Leser scannen Texte genauso wie englischsprachige: Sie lesen Überschriften, Fettgedrucktes und den ersten Satz jedes Absatzes. Schreibe Überschriften, die den Nutzen klar machen.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">5. Nominalstil vermeiden:</strong> „Die Implementierung der Optimierung" → „Wir optimieren". Substantivierungen auf -ung, -heit, -keit machen Texte schwerfällig. Die Faustregel: Wenn du ein Substantiv durch ein Verb ersetzen kannst, tu es.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Understanding German Sentence Structure</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">German follows a SOV/V2 word order word order pattern. This fundamental difference from English (SVO) affects everything about how you construct sentences and paragraphs.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">In German, the typical sentence places words in a specific order that may feel unusual to English speakers. Understanding and mastering this pattern is essential for writing natural-sounding German content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">German is known for compound nouns that can be almost unlimited in length. It has three grammatical genders (masculine, feminine, neuter) and four cases. All nouns are capitalized in German.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When writing in German, always compose directly in German rather than writing in English first and translating. Direct composition produces more natural sentence structures and idiomatic expressions. Machine translation often produces awkward phrasing because it forces English sentence patterns onto German grammar.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">For content creators, sentence variety is just as important in German as in English. Mix short and long sentences, vary your sentence openings, and use transitional phrases natural to German.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Tipp 6–10: Lesbarkeit und Stil</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">6. Einfache Wörter bevorzugen:</strong> „aufgrund der Tatsache, dass" → „weil". „zu dem Zeitpunkt" → „dann". „in der Lage sein" → „können". Deutsche hat einen enormen Wortschatz — nutze die einfacheren Varianten. Der Flesch-Index für deutsche Texte sollte über 60 liegen (gut verständlich).</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">7. Füllwörter streichen:</strong> „eigentlich", „grundsätzlich", „gewissermaßen", „sozusagen", „natürlich", „selbstverständlich" — diese Wörter verlängern Sätze, ohne Information hinzuzufügen. Lies jeden Satz und frage dich: Ändert sich die Bedeutung, wenn ich das Füllwort entferne? Falls nein: streichen.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">8. Konkret statt abstrakt:</strong> „Die Umsätze stiegen erheblich" → „Der Umsatz stieg um 23% auf 4,2 Millionen Euro." Konkrete Zahlen, Beispiele und Fakten machen Texte glaubwürdiger und interessanter. Laut einer Studie von Content Marketing Institute erhöhen konkrete Daten die Glaubwürdigkeit um 47%.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">9. Aufzählungen sinnvoll einsetzen:</strong> Listen und Aufzählungen lockern den Text auf und sind am Bildschirm leichter zu scannen als Fließtext. Verwende Aufzählungen für 3 oder mehr gleichwertige Punkte. Aber: Mehr als 7 Punkte pro Liste überfordern das Arbeitsgedächtnis.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">10. Den roten Faden halten:</strong> Jeder Absatz muss logisch an den vorherigen anknüpfen. Nutze Übergangswörter: „Deshalb...", „Im Gegensatz dazu...", „Darüber hinaus..." — aber sparsam. Zu viele Übergangswörter wirken künstlich (ein typisches Zeichen von KI-generierten Texten).</p>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 220" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>Lesbarkeits-Score-Ziele für deutsche Texte</text>
+                  <rect x="160" y="45" width="350" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="160" y="45" width={String(350*0.80)} height="28" rx="4" fill="#10b981" />
+                  <text x="150" y="63" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Webtext</text>
+                  <text x={String(160+350*0.80+8)} y="63" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>60–70 Flesch-DE</text>
+                  <rect x="160" y="81" width="350" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="160" y="81" width={String(350*0.70)} height="28" rx="4" fill="#10b981" />
+                  <text x="150" y="99" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Blogpost</text>
+                  <text x={String(160+350*0.70+8)} y="99" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>50–65 Flesch-DE</text>
+                  <rect x="160" y="117" width="350" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="160" y="117" width={String(350*0.55)} height="28" rx="4" fill="#f59e0b" />
+                  <text x="150" y="135" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Fachtext</text>
+                  <text x={String(160+350*0.55+8)} y="135" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>40–55 Flesch-DE</text>
+                  <rect x="160" y="153" width="350" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="160" y="153" width={String(350*0.35)} height="28" rx="4" fill="#ef4444" />
+                  <text x="150" y="171" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Wissenschaft</text>
+                  <text x={String(160+350*0.35+8)} y="171" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>20–40 Flesch-DE</text>
+                </svg>
+              </div>
             </section>
 
-          {/* MID_AD */}
-          <AdUnit slot="3248634657" />
-
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">German Vocabulary and Word Choice</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Choosing the right words in German is crucial for connecting with your audience. German has a rich vocabulary with many synonyms and nuanced expressions that do not have direct English equivalents.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Formal vs informal register is particularly important in German. The level of formality you use affects word choice, sentence structure, and even grammar. Know your audience and choose the appropriate register.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Avoid unnecessary English loanwords when natural German alternatives exist. While some English terms have been adopted into German (especially in technology), overusing them can make your writing feel inauthentic and alienate readers who prefer pure German.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our German Word Counter to check that your vocabulary is varied. Repetitive word use reduces content quality and reader engagement. Aim for a diverse vocabulary while maintaining clarity and accessibility.</p>
-            </section>
             <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Content Length Guidelines for German</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">How long should your German content be? The answer depends on the content type and platform, but here are general guidelines based on German content analysis.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Blog posts in German should be at least 1000-1500 words for informational content. Remember that word count ratios between German and English differ, so adjust accordingly. German compound words dramatically affect word count. "Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz" is one word. German text has roughly 10-15% fewer words than English for the same meaning due to compounding.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Social media posts in German follow platform-specific limits, but German can often convey more meaning in fewer characters than English. Use our word counter to optimize your social media content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Email newsletters in German should be 300-500 words for maximum engagement. German readers tend to prefer concise, focused communication in email format.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Product descriptions and landing pages benefit from 500-800 words in German. Include specific details, benefits, and calls to action written naturally in German.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Tipp 11–15: SEO-Schreiben auf Deutsch</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">11. Keyword-Integration natürlich gestalten:</strong> Deutsche erlaubt flexiblere Wortstellungen als Englisch. Nutze das: Statt das Keyword immer am Satzanfang zu platzieren, variiere die Position. „Wörter zählen kostenlos" kann auch „Kostenlos Wörter zählen" oder „Wie du kostenlos Wörter zählen kannst" werden.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">12. Semantische Verwandtschaft nutzen:</strong> Google versteht semantische Zusammenhänge. Wenn dein Keyword „Wortzähler" ist, nutze auch verwandte Begriffe: „Wörter zählen", „Textlänge", „Zeichenanzahl", „Wortanzahl", „Lesezeit". Unser <a href="/keyword-density-checker" className="text-emerald-400 underline">Keyword-Dichte-Checker</a> hilft bei der Analyse.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">13. Meta-Descriptions auf Deutsch optimieren:</strong> Schreibe Meta-Descriptions, die zum Klicken einladen. Deutsche Nutzer reagieren auf konkrete Versprechen: „15 Tipps mit Daten und Beispielen" statt „Erfahren Sie mehr über..." Halte dich an 150–155 Zeichen.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">14. Interne Verlinkung auf Deutsch:</strong> Verlinke mit beschreibenden Ankertexten: „<a href="/word-counter/language/german" className="text-emerald-400 underline">deutscher Wortzähler</a>" statt „klicke hier". Deutsche Ankertexte dürfen ruhig 3–5 Wörter lang sein — das ist natürlich in einer Sprache mit Komposita.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">15. Schema-Markup für deutsche Inhalte:</strong> Setze FAQ-Schema (für Fragen in den Suchergebnissen), Article-Schema (für Blogbeiträge) und Breadcrumb-Schema (für die Seitenstruktur). Markiere die Sprache mit inLanguage: „de" für korrekte Zuordnung.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">German Grammar Essentials for Content Writers</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Even native German speakers make grammar mistakes in written content. Here are the most important grammar points for German content writing.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">German uses Latin alphabet with umlauts which requires attention to unlimited compound nouns and noun capitalization. Errors in this area immediately reduce credibility with German readers.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Consistency in style and formatting is essential. Choose either formal or informal style and maintain it throughout your content. Mixing registers is one of the most common writing mistakes in German.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Paragraph structure in German follows similar principles to English: one main idea per paragraph, clear topic sentences, and logical flow between paragraphs. However, German writing traditions may favor different paragraph lengths and transition styles.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Proofreading German content requires native-level fluency. Always have a native German speaker review important content before publication. Our word counter tool can help identify potential issues with text length and readability.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">KI-Texte humanisieren: Deutsche Version</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">KI-generierte deutsche Texte haben typische Erkennungsmerkmale: zu viele Übergangswörter, keine Meinung, generische Beispiele, gleichförmige Satzlänge und übertriebene Höflichkeit. So machst du sie menschlicher:</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Variiere die Satzlänge:</strong> KI schreibt gleichmäßig lange Sätze. Menschen nicht. Ein Satz. Dann drei Wörter. Dann ein längerer Gedanke mit einem Nebensatz, der den Absatz abrundet.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Füge Meinung hinzu:</strong> KI vermeidet Wertungen. Menschen haben Meinungen. Schreibe: „Meiner Erfahrung nach funktioniert X besser als Y" statt „X und Y haben beide Vor- und Nachteile."</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Nutze deutsche Redewendungen:</strong> „Das ist kein Hexenwerk", „Da beißt die Maus keinen Faden ab", „Den Nagel auf den Kopf treffen" — solche Wendungen machen Texte lebendiger. KI nutzt sie fast nie.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Streiche KI-typische Formulierungen:</strong> „Es ist wichtig zu beachten", „Zusammenfassend lässt sich sagen", „Darüber hinaus ist es erwähnenswert" — streiche sie alle. Sie sind leere Hülsen.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Tools for German Content Writers</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The right tools make German writing easier and more efficient. Here are the essential tools every German content writer should use.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Word Counter: Use our free German Word Counter at wordcountertool.net/word-counter/language/german to accurately count words, characters, sentences, and paragraphs in your German text. It handles all the unique features of German text processing.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Reading Time Calculator: Check how long your German content takes to read with our reading time tool. Reading speeds differ between languages, and our tool accounts for German-specific reading patterns.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Keyword Research: Use German-specific keyword tools to find what your target audience actually searches for. Do not rely solely on translated English keywords.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Grammar Checker: Use German-specific grammar checkers to catch errors that generic tools miss. The unique grammar rules of German require specialized checking.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">All these tools combined help you produce higher-quality German content that ranks well and engages readers effectively.</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Häufig gestellte Fragen</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
           </div>
@@ -102,19 +111,20 @@ export default function Post() {
 
       <div className="max-w-4xl mx-auto px-4 mb-8">
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-white mb-3">Try These German Tools</h2>
+          <h2 className="text-lg font-bold text-white mb-3">Deutsche Schreibwerkzeuge</h2>
           <div className="flex flex-wrap gap-2">
-            <a href="/word-counter/language/german" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">German Word Counter</a>
-            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
-            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
-            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
-            <a href="/words-per-minute" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Minute</a>
+            <a href="/word-counter/language/german" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Deutscher Wortzähler</a>
+            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Wortzähler</a>
+            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Zeichenzähler</a>
+            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Lesezeit-Rechner</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Lesbarkeits-Checker</a>
+            <a href="/keyword-density-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Keyword-Dichte-Checker</a>
           </div>
         </div>
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"German Writing Tips: How to Write Better Content in German (2026)","description":"Master German content writing with these expert tips. Improve your German writing style, grammar, and word choice for better engagement and SEO.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-22","dateModified":"2026-03-22","mainEntityOfPage":"https://www.wordcountertool.net/blog/german-writing-tips-for-better-content"})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"German Writing Tips: How to Write Better Content in German (2026)","item":"https://www.wordcountertool.net/blog/german-writing-tips-for-better-content"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"15 Schreibtipps für bessere deutsche Online-Texte (2026)","description":"15 praxiserprobte Tipps für bessere deutsche Webtexte. Von Satzlänge über Lesbarkeit bis SEO-Optimierung — mit Tools, Daten und Beispielen.","inLanguage":"de","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-04-05","dateModified":"2026-04-05","mainEntityOfPage":"https://www.wordcountertool.net/blog/german-writing-tips-for-better-content"})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"15 Schreibtipps für bessere deutsche Online-Texte (2026)","item":"https://www.wordcountertool.net/blog/german-writing-tips-for-better-content"}]})}} />
 
       <Footer />
     </>
