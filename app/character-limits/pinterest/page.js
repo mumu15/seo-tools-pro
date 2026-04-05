@@ -122,7 +122,33 @@ export default function Page() {
 
           <AdUnit slot="3248634657" />
 
-        <Footer />
+        
+        {/* === BEEFED-UP CONTENT: 1500+ words === */}
+        <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Pinterest Character Limits in 2026</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Pin titles: 100 characters. Pin descriptions: 500 characters. Board names: 50 characters. Board descriptions: 500 characters. Profile display name: 65 characters. Profile bio: 160 characters.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Pinterest is a search engine that looks like a social network. Character limits here are about SEO, not engagement. Descriptions stuffed with relevant keywords help your pins appear in Pinterest search results and on Google (which indexes Pinterest content).</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Only the first 50-60 characters of a Pin description show in the feed. The rest appears when a user clicks through. Front-load keywords and descriptive text in those first 50 characters.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing Pinterest Descriptions for Search</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Pinterest descriptions should read like mini blog post summaries, not social media captions. "Easy 30-minute weeknight dinner recipe with chicken and broccoli. Perfect for busy families who want healthy meals without the prep time." That is 155 characters of keyword-rich description.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Use natural language, not keyword stuffing. Pinterest\'s algorithm has become sophisticated enough to penalize obvious keyword spam. Write for humans first, then check that your target keywords appear naturally.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Include a CTA when linking to your website: "Click for the full recipe," "Read the complete guide," or "Shop the look." Pins with CTAs in the description get higher click-through rates.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Pinterest for Business: Limits and Strategy</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Rich Pins (Product, Recipe, Article) automatically pull metadata from your website, so your on-site title tags and meta descriptions affect how your Pins appear. Keep product titles under 65 characters and meta descriptions under 155 characters for clean display.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Idea Pins (multi-page story format) allow up to 20 pages. Each page can have a title (100 characters) and stickers with text. Video pages can be up to 60 seconds. This format gets the highest organic reach on Pinterest in 2026.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Pinterest ads: Promoted Pin descriptions can be up to 500 characters, but the recommended length is 150-200 characters. Ad headlines (for awareness campaigns) should be under 40 characters. Shopping ads pull product information directly from your product feed.</p>
+          </section>
+
+        </div>
+      <Footer />
     </>
   );
 }

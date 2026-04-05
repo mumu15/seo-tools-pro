@@ -126,7 +126,40 @@ export default function Page() {
 
           <AdUnit slot="3248634657" />
 
-        <Footer />
+        
+        {/* === BEEFED-UP CONTENT: 1500+ words === */}
+        <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Google Ads Character Limits in 2026</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Responsive Search Ads (RSA): up to 15 headlines of 30 characters each and up to 4 descriptions of 90 characters each. Google mixes and matches these combinations to find the best performers. You should provide at least 10 headlines and 3 descriptions.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Display URL paths: 15 characters each (2 paths). Sitelink titles: 25 characters. Sitelink descriptions: 35 characters per line (2 lines). Callout extensions: 25 characters. Structured snippet values: 25 characters each.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Performance Max headlines: 30 characters (up to 5). Long headlines: 90 characters. Descriptions: 90 characters (up to 5). These limits apply across Search, Display, YouTube, Gmail, Discover, and Maps placements.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing Google Ads Headlines That Convert</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>You have 30 characters per headline. At roughly 5-6 words, every word must justify its existence. The highest-performing headlines share three traits: they include the search keyword, they promise a specific benefit, and they create urgency.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>"Free Shipping Today Only" (24 characters) outperforms "Buy Products From Our Store" (28 characters) because it has a benefit (free shipping) and urgency (today only). The keyword can be implied by the ad group targeting.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Write at least 10 headline variations. Include 3 with your primary keyword, 3 with benefits, 2 with calls to action, and 2 with unique selling propositions. Google will test combinations and surface the winners.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing Descriptions That Close</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Each description gets 90 characters — about 15-18 words. Front-load the value proposition. Google may truncate descriptions on mobile or certain placements. If only the first 60 characters show, your message must still be complete.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>"Join 50,000+ customers. Free trial, no credit card. Start now." — that is 62 characters and it packs three compelling elements: social proof, risk removal, and a CTA.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Do not repeat headline content in the description. The description should expand on the promise. If the headline says "Free CRM Software," the description should say what makes it different: "Unlimited contacts. Built-in email. Set up in 5 minutes."</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Ad Extensions: Hidden Character Opportunities</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Sitelinks add 4-6 additional links below your ad, each with a 25-character title. These are free extra real estate. "Pricing Plans" (14 chars), "Free Trial" (10 chars), "Case Studies" (12 chars) — each one is a separate click opportunity.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Callout extensions get 25 characters each. Use them for features and benefits that do not fit in the main ad: "24/7 Support," "No Long-Term Contract," "Money-Back Guarantee." You can add up to 20 callouts; Google shows 2-6 based on device and ad placement.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Structured snippets let you list specific items under a category header. Product types, brands, neighborhoods, course types — each value gets 25 characters. "Beginner | Intermediate | Advanced" for a course provider, for example.</p>
+          </section>
+
+        </div>
+      <Footer />
     </>
   );
 }

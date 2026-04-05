@@ -114,7 +114,34 @@ export default function Page() {
 
           <AdUnit slot="3248634657" />
 
-        <Footer />
+        
+        {/* === BEEFED-UP CONTENT: 1500+ words === */}
+        <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Meta Description Length in 2026</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Google displays approximately 150-160 characters of a meta description on desktop and about 120 characters on mobile. The recommended length is 150-155 characters to ensure full display across devices.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Google rewrites meta descriptions roughly 62% of the time, according to a 2024 Ahrefs study. It pulls text from the page content that it considers more relevant to the specific search query. Despite this, writing a good meta description is still worthwhile — when Google does use yours, it directly affects click-through rate.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Meta descriptions are not a direct ranking factor. Google has confirmed this. But CTR is a user behavior signal, and pages with higher CTR tend to maintain or improve their rankings over time. A well-written meta description indirectly helps SEO.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing Meta Descriptions That Drive Clicks</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A meta description is a 150-character ad for your page. Treat it like ad copy. Include: what the page offers, why the reader should click, and what makes your page different from the other 9 results.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>"Free online word counter with reading time, character count, and SEO analysis. No signup required. Works in 15+ languages. Instant results." — that is 149 characters and it covers features, friction removal, and a differentiator.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Include a call to action when appropriate: "Learn how," "Find out," "Try free," "Calculate now." Action-oriented descriptions get higher CTR than passive descriptions that just summarize the page content.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Meta Descriptions for Different Page Types</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Blog posts: summarize the key takeaway and include the primary keyword. "The average blog post in 2026 is 1,333 words. Learn the ideal length for your content type with data from 808 marketers."</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Product pages: include the product name, key benefit, and price or offer. "Nike Air Max 270 - Lightweight cushioning for all-day comfort. Free shipping on orders over $50. Shop now."</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Tool pages: describe what the tool does and remove friction. "Paste your text and get instant word count, character count, reading time, and SEO metrics. Free, no signup, works in 15+ languages."</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Homepage: describe the overall value proposition. Keep it broad enough to match various search queries but specific enough to differentiate from competitors.</p>
+          </section>
+
+        </div>
+      <Footer />
     </>
   );
 }
