@@ -5,20 +5,20 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/turkish-character-count-guide' },
-  title: 'Turkish Character Count: Everything You Need to Know (2026)',
-  description: 'Complete guide to Turkish character counting. Learn about Latin alphabet (modified), character limits for social media, and how to count Turkish characters accurately.',
-  openGraph: {
-    title: 'Turkish Character Count: Everything You Need to Know (2026)',
-    description: 'Complete guide to Turkish character counting. Learn about Latin alphabet (modified), character limits for social media, and how to count Turkish characters accurately.',
-    url: 'https://www.wordcountertool.net/blog/turkish-character-count-guide',
-    siteName: 'WordCounterTool',
-    type: 'article',
-  },
+  title: 'Türkçe karakter sayma: platform limitleriyle birlikte rehber (2026)',
+  description: 'Türkçe karakter sayma — ç, ğ, ı, ö, ş, ü, UTF-8 ve Twitter, Google, Instagram limitleri. Ücretsiz karakter sayacı.',
+  openGraph: { title: 'Türkçe karakter sayma: platform limitleriyle birlikte rehber (2026)', description: 'Türkçe karakter sayma — ç, ğ, ı, ö, ş, ü, UTF-8 ve Twitter, Google, Instagram limitleri. Ücretsiz karakter sayacı.', url: 'https://www.wordcountertool.net/blog/turkish-character-count-guide', siteName: 'WordCounterTool', type: 'article' },
 }
 
-const faqs = [{"q":"How do I count words in Turkish?","a":"Use our free Turkish Word Counter at wordcountertool.net/word-counter/language/turkish. Paste your Turkish text and get instant word count, character count, sentence count, and reading time."},{"q":"Is the Turkish word counter free?","a":"Yes, completely free with no sign-up required. Our Turkish word counter tool works instantly in your browser with no data stored or sent to any server."},{"q":"How many words per minute does the average person read in Turkish?","a":"The average Turkish reading speed is approximately 200-250 words per minute for native speakers, though this varies based on text complexity and the reader experience level."},{"q":"Does your tool handle Latin alphabet (modified)?","a":"Yes. Our Turkish Word Counter is specifically designed to handle Latin alphabet (modified) accurately. It accounts for extreme agglutination creating very long single words that generic word counters miss."}]
+const faqs = [
+  { q: 'Türkçe metinde karakter nasıl sayılır?', a: 'WordCounterTool.net ücretsiz karakter sayacını kullanın. ç, ğ, ı, ö, ş, ü harflerini doğru şekilde tek karakter olarak sayar.' },
+  { q: 'Türkçe karakterler 1 mi 2 karakter olarak mı sayılır?', a: 'Tüm platformlarda 1 karakter olarak sayılır. UTF-8 kodlamasında 2 byte yer kaplar, ancak bu sadece veritabanları ve byte-bazlı API limitlerini etkiler.' },
+  { q: 'Google başlığı kaç karakter gösterir?', a: 'Yaklaşık 55-60 karakter (piksel olarak ölçülür). Türkçe kelimeler uzun olabildiğinden güvenli sınır 50-55 karakterdir.' },
+  { q: 'Trendyol ürün başlığı kaç karakter?', a: 'Trendyol ürün başlığı limiti 70 karakterdir. Marka, model ve en önemli özelliği başa yazın. Trendyol 60+ milyon kullanıcıyla Türkiyenin en büyük e-ticaret platformudur.' },
+  { q: 'SMS Türkçe karakterle farklı limit mi?', a: 'Evet. Türkçe karakterli SMS, GSM-7 yerine UCS-2 kodlaması kullanır ve limit 160 karakterden 70 karaktere düşer.' },
+  { q: 'İ ve I farkı neden önemli?', a: 'Türkçe büyük İ (noktalı) ve büyük I (noktasız) ayrımına sahip tek dildir. Bu ayrım yazılımda, URL kodlamada ve veritabanı sorgularında sorun yaratabilir.' }
+]
 
 export default function Post() {
   return (
@@ -26,97 +26,77 @@ export default function Post() {
       <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
+        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Bloga Dön</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Turkish Character Count: Everything You Need to Know (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated March 2026 | 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Türkçe karakter sayma: platform limitleriyle birlikte rehber (2026)</h1>
+          <p className="text-slate-400 text-sm mb-8">Güncelleme: Nisan 2026 | Okuma süresi: 8 dk</p>
           <div className="result-box mb-8 border-emerald-500/30">
-            <h2 className="text-emerald-400 font-bold mb-3">Quick Summary</h2>
-            <p className="text-white">Turkish (Türkçe) is spoken by <strong>80 million</strong> people. It uses Latin alphabet (modified) and has unique word counting challenges due to extreme agglutination creating very long single words. Use our free <a href="/word-counter/language/turkish" className="text-emerald-400 underline">Turkish Word Counter</a> for accurate results.</p>
+            <h2 className="text-emerald-400 font-bold mb-3">Özet</h2>
+            <p className="text-white">Türk alfabesi <strong className="text-white">29 harf</strong> içerir (İngilizce + ç, ğ, ı, ö, ş, ü). Karakter limitleri: Twitter/X <strong className="text-white">280 karakter</strong>, Google başlığı <strong className="text-white">55-60 karakter</strong>, meta açıklaması <strong className="text-white">155 karakter</strong>. <a href="/character-counter" className="text-emerald-400 underline">Ücretsiz karakter sayacımızı</a> kullanın.</p>
           </div>
           <div className="space-y-8">
+
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Turkish Characters and the Latin alphabet (modified)</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The Turkish writing system uses Latin alphabet (modified) consisting of 29 letters (includes ç, ğ, ı, ö, ş, ü). Unlike the English alphabet with its 26 letters, Turkish has a alphabetic (Latin) system that creates a unique counting challenge.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Turkish is an agglutinative language where suffixes stack onto root words. A single word can express an entire English sentence. Turkish has vowel harmony, no grammatical gender, and no irregular verbs. The dotless i (ı) and dotted İ are distinct letters.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Understanding how Turkish characters work is essential for anyone creating content in Turkish. Character counts affect everything from social media posts to SMS messages to metadata optimization.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The distinction between characters, bytes, and glyphs matters in Turkish. A single Turkish character may occupy 1-4 bytes in UTF-8 encoding, which affects character limits on platforms that count bytes rather than characters.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Türk karakter sistemi</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Türk alfabesi 29 harften oluşur: 23 standart Latin harfi (q, w ve x hariç) artı ç, ğ, ı, ö, ş ve ü. Bu 6 ek harf Türkçeye özgüdür ve İngilizce karşılıkları yoktur. Her biri farklı bir ses temsil eder ve kelimenin anlamını değiştirir.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">UTF-8 kodlamasında Türkçeye özgü karakterler (ç, ğ, ı, ö, ş, ü ve büyük İ) 2 byte yer kaplar. Standart Latin harfleri 1 byte kaplar. Karakter sayacımız her harfi doğru şekilde 1 karakter olarak sayar.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Özel durum: "İ" ve "I" harfleri. Türkçe bu ayrımı yapan tek dildir. Büyük İ (noktalı) → küçük i. Büyük I (noktasız) → küçük ı. Bu durum yazılım geliştirmede sık sorun yaratır.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Character Count vs Word Count in Turkish</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">In Turkish, the relationship between character count and word count is fundamentally different from English. Turkish word counting produces dramatically fewer words than English because of agglutination. The word "Çekoslovakyalılaştıramadıklarımızdanmışsınızcasına" is one word meaning "as if you were one of those whom we could not make into a Czechoslovakian." Turkish text has 30-40% fewer words than English.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The average Turkish word is 6-10 characters long, compared to 4-5 characters in English. This means that character limits on social media platforms and other tools affect Turkish content differently.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">For example, Twitter/X allows 280 characters. In English, this is roughly 40-50 words. In Turkish, the same 280 characters might represent a different number of words or convey a different amount of information.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Our Turkish character counter tool shows both character count and word count simultaneously, so you can optimize for both metrics at once. This dual view is especially important when you need to meet specific platform requirements.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Platform karakter limitleri</h2>
+              <div className="overflow-x-auto mb-4">
+                <table className="w-full text-sm" style={{borderCollapse:'collapse'}}>
+                  <thead><tr style={{borderBottom:'1px solid rgba(52,211,153,0.2)'}}><th className="text-left text-emerald-400 py-2 px-3">Platform</th><th className="text-left text-emerald-400 py-2 px-3">Limit</th><th className="text-left text-emerald-400 py-2 px-3">Türkçe ipucu</th></tr></thead>
+                  <tbody>
+                    {[['Twitter/X','280 karakter','Ekli kelimeler uzundur — dikkatli kullanın'],['Google başlığı','55-60 karakter','Anahtar kelimeyi ilk 30 karaktere yerleştirin'],['Meta açıklaması','150-155 karakter','Ana mesajı ilk 120 karakterde verin'],['Instagram','2200 karakter','İlk 125 karakter akışta görünür'],['WhatsApp Durum','700 karakter','Türkiyede 56 milyon aktif kullanıcı'],['Google Ads başlığı','30 karakter','Türkçe kelimeler uzundur — kısaltma kullanın'],['YouTube başlığı','100 karakter','İdeal: 40-60 karakter'],['Trendyol ürün başlığı','70 karakter','Marka, model ve özelliği önce yazın']].map((row,i)=>(<tr key={i} style={{borderBottom:'1px solid rgba(52,211,153,0.1)'}}><td className="text-white py-2 px-3 font-medium">{row[0]}</td><td className="text-slate-400 py-2 px-3">{row[1]}</td><td className="text-slate-400 py-2 px-3">{row[2]}</td></tr>))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Trendyol, Türkiyenin en büyük e-ticaret platformudur (60+ milyon kullanıcı). Ürün başlığı limiti 70 karakterdir. <a href="/character-counter" className="text-emerald-400 underline">Karakter sayacımızla</a> kontrol edin.</p>
             </section>
 
-          {/* MID_AD */}
-          <AdUnit slot="3248634657" />
-
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Social Media Character Limits for Turkish</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Every social media platform has character limits that affect Turkish content differently. Here is how to optimize your Turkish social media posts.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Twitter/X: 280 characters. Turkish can express more or less than English within this limit depending on the language structure. Use our character counter to maximize impact.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Instagram captions: 2,200 characters. Turkish content should front-load the most important message in the first 125 characters (the preview length). Write compelling Turkish hooks.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Facebook posts: 63,206 characters. While the limit is generous, optimal Turkish Facebook posts are 40-80 characters for maximum engagement. Longer posts work for storytelling content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">LinkedIn: 3,000 characters for posts. Professional Turkish content on LinkedIn should be well-structured with clear paragraphs. Use our counter to stay within limits.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">YouTube descriptions: 5,000 characters. Turkish YouTube descriptions should include timestamps, links, and keywords. Character efficiency matters for SEO.</p>
-            </section>
             <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">How to Count Turkish Characters Online</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Counting Turkish characters accurately requires a tool that understands Latin alphabet (modified). Here is the best method.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Step one: Open our free Word Counter tool at wordcountertool.net. The tool supports Turkish text natively.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Step two: Paste your Turkish text into the input area. The tool instantly displays character count (with and without spaces), word count, sentence count, and paragraph count.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Step three: Review the breakdown. Characters with spaces includes all visible characters plus whitespace. Characters without spaces gives you the pure text length. This distinction matters for different platform limits.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Step four: For Turkish-specific counting, visit our dedicated Turkish Word Counter at wordcountertool.net/word-counter/language/turkish. This specialized tool accounts for extreme agglutination creating very long single words that generic counters may miss.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Our tool processes Turkish text in real time with zero delay. No data is stored or sent to any server, ensuring your Turkish content remains completely private.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">UTF-8 ve Türkçe karakterler</h2>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 180" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>UTF-8 byte boyutu (Türkçe karakterler)</text>
+                  <rect x="150" y="45" width="350" height="28" rx="4" fill="rgba(16,185,129,0.15)" /><rect x="150" y="45" width={String(350*0.25)} height="28" rx="4" fill="#10b981" /><text x="140" y="63" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>a-z, A-Z</text><text x={String(150+350*0.25+8)} y="63" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1 byte</text>
+                  <rect x="150" y="81" width="350" height="28" rx="4" fill="rgba(16,185,129,0.15)" /><rect x="150" y="81" width={String(350*0.50)} height="28" rx="4" fill="#f59e0b" /><text x="140" y="99" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>ç, ğ, ı, ö, ş, ü, İ</text><text x={String(150+350*0.50+8)} y="99" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>2 byte</text>
+                  <rect x="150" y="117" width="350" height="28" rx="4" fill="rgba(16,185,129,0.15)" /><rect x="150" y="117" width={String(350*1.0)} height="28" rx="4" fill="#ef4444" /><text x="140" y="135" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Emoji</text><text x={String(150+350*1.0-60)} y="135" fill="#ffffff" style={{fontSize:'12px',fontWeight:'600'}}>4 byte</text>
+                </svg>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">SMS ile Türkçe karakter kullanıldığında GSM-7 yerine UCS-2 kodlamasına geçilir ve limit 160 karakterden 70 karaktere düşer. HTML sayfalarınızda daima <code className="text-emerald-400">&lt;meta charset=&quot;UTF-8&quot;&gt;</code> belirtin.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Turkish Character Encoding: UTF-8 and Beyond</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Understanding character encoding is important when working with Turkish text in digital environments. Turkish characters in Latin alphabet (modified) use UTF-8 encoding, which is the universal standard for web content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">In UTF-8, Turkish characters may use different byte sizes than ASCII characters. An English letter always uses 1 byte, but Turkish characters may use 2-4 bytes. This affects database storage, URL encoding, and some platform character limits.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When building websites with Turkish content, always declare UTF-8 encoding in your HTML head. Without proper encoding declaration, Turkish characters may display as garbled text or question marks.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">For SEO, ensure your Turkish URLs are properly encoded. Search engines handle Turkish characters in URLs, but proper encoding prevents technical issues. Our tools handle all encoding automatically, so you can focus on your content.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Pratik ipuçları</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Google Ads:</strong> 30 karakterle Türkçe başlık yazmak zordur. "Araç sigortası karşılaştırma" zaten 28 karakterdir. Kısaltmalar ve sayılar kullanın.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">SEO başlıkları:</strong> Google pikselle ölçer. Türkçe kelimeler İngilizceden ortalama daha uzundur. Güvenli sınır: 50-55 karakter.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">WhatsApp:</strong> Türkiyede 56 milyon aktif kullanıcıyla en popüler mesajlaşma uygulamasıdır. Durum limiti 700 karakter. Mesajlarda 300 karakter en okunabilir uzunluktur.</p>
             </section>
-
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Turkish Character Counting for Professional Use</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Professional Turkish writers, translators, and content creators need precise character counts for various business scenarios.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Translation projects often price by character count for Turkish because word count can be misleading due to extreme agglutination creating very long single words. Knowing both your character and word count helps you get accurate quotes and budget appropriately.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Academic writing in Turkish often specifies character limits rather than word limits, especially in regions where Turkish is the primary language. Universities and journals have specific requirements that our tool helps you meet.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Advertising and marketing copy in Turkish operates under strict character limits for Google Ads, Facebook Ads, and other platforms. Our character counter ensures your Turkish ad copy fits perfectly within platform requirements.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our free Turkish Word Counter tool at wordcountertool.net/word-counter/language/turkish for all your professional Turkish character counting needs. It is accurate, instant, and completely free.</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
           </div>
         </article>
       </main>
-
       <div className="max-w-4xl mx-auto px-4 mb-8">
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-white mb-3">Try These Turkish Tools</h2>
-          <div className="flex flex-wrap gap-2">
-            <a href="/word-counter/language/turkish" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Turkish Word Counter</a>
-            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
-            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
-            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
-            <a href="/words-per-minute" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Minute</a>
-          </div>
+          <h2 className="text-lg font-bold text-white mb-3">Türkçe Yazma Araçları</h2>
+          <div className="flex flex-wrap gap-2"><a href="/word-counter/language/turkish" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Türkçe Kelime Sayacı</a>
+            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Kelime Sayacı</a>
+            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Karakter Sayacı</a>
+            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Okuma Süresi</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Okunabilirlik Kontrolü</a>
+            <a href="/keyword-density" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Anahtar Kelime Yoğunluğu</a></div>
         </div>
       </div>
-
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Turkish Character Count: Everything You Need to Know (2026)","description":"Complete guide to Turkish character counting. Learn about Latin alphabet (modified), character limits for social media, and how to count Turkish characters accurately.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-22","dateModified":"2026-03-22","mainEntityOfPage":"https://www.wordcountertool.net/blog/turkish-character-count-guide"})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"Turkish Character Count: Everything You Need to Know (2026)","item":"https://www.wordcountertool.net/blog/turkish-character-count-guide"}]})}} />
-
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Türkçe karakter sayma: platform limitleriyle birlikte rehber (2026)","description":"Türkçe karakter sayma — ç, ğ, ı, ö, ş, ü, UTF-8 ve Twitter, Google, Instagram limitleri. Ücretsiz karakter sayacı.","inLanguage":"tr","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-04-05","dateModified":"2026-04-05","mainEntityOfPage":"https://www.wordcountertool.net/blog/turkish-character-count-guide"})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"Türkçe karakter sayma: platform limitleriyle birlikte rehber (2026)","item":"https://www.wordcountertool.net/blog/turkish-character-count-guide"}]})}} />
       <Footer />
     </>
   )

@@ -170,12 +170,12 @@ const langSections = [
     { slug: 'swedish-writing-tips-for-better-content', title: '15 tips för bättre svenska webbtexter (2026)' }
   ]},
   { key: 'turkish', name: 'Turkish', native: 'Türkçe', flag: '🇹🇷', tool: '/word-counter/language/turkish', posts: [
-    { slug: 'common-turkish-writing-mistakes', title: '10 Common Turkish Writing Mistakes and How to Fix Them (2026)' },
-    { slug: 'how-to-count-words-in-turkish', title: 'How to Count Words in Turkish: Complete Guide (2026)' },
-    { slug: 'turkish-character-count-guide', title: 'Turkish Character Count: Everything You Need to Know (2026)' },
-    { slug: 'turkish-content-length-guide', title: 'Turkish Content Length Guide: How Many Words Do You Need? (2026)' },
-    { slug: 'turkish-seo-content-strategy', title: 'Turkish SEO Content Strategy: Rank Higher in Turkish Search (2026)' },
-    { slug: 'turkish-writing-tips-for-better-content', title: 'Turkish Writing Tips: How to Write Better Content in Turkish (2026)' }
+    { slug: 'common-turkish-writing-mistakes', title: 'Türkçede en sık yapılan 15 yazım hatası ve nasıl düzeltilir (2026)' },
+    { slug: 'how-to-count-words-in-turkish', title: 'Türkçe kelime sayma: eksiksiz rehber (2026)' },
+    { slug: 'turkish-character-count-guide', title: 'Türkçe karakter sayma: platform limitleriyle birlikte rehber (2026)' },
+    { slug: 'turkish-content-length-guide', title: 'Türkçe içerik için ideal uzunluk: veriye dayalı rehber (2026)' },
+    { slug: 'turkish-seo-content-strategy', title: 'Türkçe SEO içerik stratejisi: Google.com.tr optimizasyon rehberi (2026)' },
+    { slug: 'turkish-writing-tips-for-better-content', title: 'Daha iyi Türkçe web içerikleri için 15 ipucu (2026)' }
   ]}
 ]
 

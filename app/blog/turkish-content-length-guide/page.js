@@ -5,20 +5,20 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/turkish-content-length-guide' },
-  title: 'Turkish Content Length Guide: How Many Words Do You Need? (2026)',
-  description: 'The definitive guide to Turkish content length for every format. Blog posts, social media, email, ads, and more. Data-driven word count recommendations.',
-  openGraph: {
-    title: 'Turkish Content Length Guide: How Many Words Do You Need? (2026)',
-    description: 'The definitive guide to Turkish content length for every format. Blog posts, social media, email, ads, and more. Data-driven word count recommendations.',
-    url: 'https://www.wordcountertool.net/blog/turkish-content-length-guide',
-    siteName: 'WordCounterTool',
-    type: 'article',
-  },
+  title: 'Türkçe içerik için ideal uzunluk: veriye dayalı rehber (2026)',
+  description: 'Türkçe blog yazısı, açılış sayfası, e-ticaret sitesi için ideal metin uzunluğu. Google.com.tr, Semrush ve TÜİK verileriyle.',
+  openGraph: { title: 'Türkçe içerik için ideal uzunluk: veriye dayalı rehber (2026)', description: 'Türkçe blog yazısı, açılış sayfası, e-ticaret sitesi için ideal metin uzunluğu. Google.com.tr, Semrush ve TÜİK verileriyle.', url: 'https://www.wordcountertool.net/blog/turkish-content-length-guide', siteName: 'WordCounterTool', type: 'article' },
 }
 
-const faqs = [{"q":"How do I count words in Turkish?","a":"Use our free Turkish Word Counter at wordcountertool.net/word-counter/language/turkish. Paste your Turkish text and get instant word count, character count, sentence count, and reading time."},{"q":"Is the Turkish word counter free?","a":"Yes, completely free with no sign-up required. Our Turkish word counter tool works instantly in your browser with no data stored or sent to any server."},{"q":"How many words per minute does the average person read in Turkish?","a":"The average Turkish reading speed is approximately 200-250 words per minute for native speakers, though this varies based on text complexity and the reader experience level."},{"q":"Does your tool handle Latin alphabet (modified)?","a":"Yes. Our Turkish Word Counter is specifically designed to handle Latin alphabet (modified) accurately. It accounts for extreme agglutination creating very long single words that generic word counters miss."}]
+const faqs = [
+  { q: 'Türkçe blog yazısı kaç kelime olmalı?', a: 'SEO için 1200-2000 kelime. Google.com.tr ilk 10 ortalaması 1700 kelime. 1. sıra ortalaması 2100 kelime. Kalite hacimden önemlidir.' },
+  { q: 'Türkçe metinler İngilizceden kısa mıdır?', a: 'Evet, kelime sayısı olarak %15-25 daha kısa. Sondan eklemeli yapı birden fazla İngilizce kelimeyi tek Türkçe kelimede ifade eder.' },
+  { q: 'Açılış sayfası kaç kelime olmalı?', a: '600-1000 kelime. 700-900 kelime aralığı en yüksek dönüşüm oranını sağlar.' },
+  { q: 'Metin uzunluğu Google sıralamasını etkiler mi?', a: 'Pozitif korelasyon var ama Google derinliği ödüllendirir. Odaklı 1500 kelimelik yazı dağınık 3000 kelimelik yazıdan daha iyi sıralanabilir.' },
+  { q: 'Alt başlıklar ne sıklıkta kullanılmalı?', a: 'Her 200-300 kelimede bir H2 veya H3. Türkiyede mobil trafiğin %82 olduğu düşünülürse alt başlıklar zorunludur.' },
+  { q: 'Türkiye internet pazarı ne kadar büyük?', a: '62 milyon internet kullanıcısı (%73 penetrasyon). Google.com.tr %96,5 pazar payı. E-ticaret: 650 milyar TL (TÜBİSAD 2024).' }
+]
 
 export default function Post() {
   return (
@@ -26,104 +26,82 @@ export default function Post() {
       <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
+        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Bloga Dön</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Turkish Content Length Guide: How Many Words Do You Need? (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated March 2026 | 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Türkçe içerik için ideal uzunluk: veriye dayalı rehber (2026)</h1>
+          <p className="text-slate-400 text-sm mb-8">Güncelleme: Nisan 2026 | Okuma süresi: 10 dk</p>
           <div className="result-box mb-8 border-emerald-500/30">
-            <h2 className="text-emerald-400 font-bold mb-3">Quick Summary</h2>
-            <p className="text-white">Turkish (Türkçe) is spoken by <strong>80 million</strong> people. It uses Latin alphabet (modified) and has unique word counting challenges due to extreme agglutination creating very long single words. Use our free <a href="/word-counter/language/turkish" className="text-emerald-400 underline">Turkish Word Counter</a> for accurate results.</p>
+            <h2 className="text-emerald-400 font-bold mb-3">Özet</h2>
+            <p className="text-white">Google.com.tr ilk 10 sonuçtaki Türkçe yazılar ortalama <strong className="text-white">1700 kelime</strong> içerir (Semrush 2024). Açılış sayfaları <strong className="text-white">600-1000 kelime</strong> ile en iyi dönüşüm sağlar. Türkiyede <strong className="text-white">62 milyon internet kullanıcısı</strong> vardır. <a href="/word-counter/language/turkish" className="text-emerald-400 underline">Türkçe kelime sayacımızı</a> kullanın.</p>
           </div>
           <div className="space-y-8">
+
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Why Content Length Matters in Turkish</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Content length is one of the most important factors for Turkish content success. Too short and your content lacks depth. Too long and you lose reader attention. Finding the right length for each content type is essential.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Turkish content length works differently from English because of the language structure. Turkish word counting produces dramatically fewer words than English because of agglutination. The word "Çekoslovakyalılaştıramadıklarımızdanmışsınızcasına" is one word meaning "as if you were one of those whom we could not make into a Czechoslovakian." Turkish text has 30-40% fewer words than English.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">This guide provides data-driven Turkish content length recommendations for every major format. All recommendations are based on analysis of high-performing Turkish content and adjusted for the language-specific word count characteristics.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Veriler Türkçe metin uzunluğu hakkında ne diyor?</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Semrush, 2024 yılında 4000 Türkçe anahtar kelime için ilk 20 sonucu analiz etti. Sonuç: Google.com.tr 1. sıradaki sayfalar ortalama 2100 kelime, 10. sıradakiler yaklaşık 1300 kelime içeriyor. Uzunluk ile sıralama arasında açık bir pozitif korelasyon var.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Ancak daha uzun her zaman daha iyi demek değildir. Google derinliği ve alaka düzeyini ödüllendirir, salt hacmi değil. Konudan sapan 3000 kelimelik bir yazı, soruları doğrudan yanıtlayan 1500 kelimelik odaklı bir yazıdan daha kötü sıralanır.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Türkiye e-ticaret pazarı 650 milyar TL'ye ulaştı (TÜBİSAD 2024). Trafiğin %34'ü organik aramadan geliyor. SEO içerik yatırımı Türk şirketleri için en karlı stratejilerden biridir.</p>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 240" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>Ortalama kelime sayısı: Google.com.tr İlk 10 (2024)</text>
+                  <rect x="130" y="45" width="390" height="28" rx="4" fill="rgba(16,185,129,0.15)" /><rect x="130" y="45" width={String(390*0.84)} height="28" rx="4" fill="#10b981" /><text x="120" y="63" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>1. sıra</text><text x={String(130+390*0.84+8)} y="63" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>2100 kelime</text>
+                  <rect x="130" y="81" width="390" height="28" rx="4" fill="rgba(16,185,129,0.15)" /><rect x="130" y="81" width={String(390*0.71)} height="28" rx="4" fill="#10b981" /><text x="120" y="99" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>3. sıra</text><text x={String(130+390*0.71+8)} y="99" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1800 kelime</text>
+                  <rect x="130" y="117" width="390" height="28" rx="4" fill="rgba(16,185,129,0.15)" /><rect x="130" y="117" width={String(390*0.60)} height="28" rx="4" fill="#10b981" /><text x="120" y="135" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>5. sıra</text><text x={String(130+390*0.60+8)} y="135" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1500 kelime</text>
+                  <rect x="130" y="153" width="390" height="28" rx="4" fill="rgba(16,185,129,0.15)" /><rect x="130" y="153" width={String(390*0.55)} height="28" rx="4" fill="#10b981" /><text x="120" y="171" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>7. sıra</text><text x={String(130+390*0.55+8)} y="171" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1400 kelime</text>
+                  <rect x="130" y="189" width="390" height="28" rx="4" fill="rgba(16,185,129,0.15)" /><rect x="130" y="189" width={String(390*0.52)} height="28" rx="4" fill="#10b981" /><text x="120" y="207" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>10. sıra</text><text x={String(130+390*0.52+8)} y="207" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1300 kelime</text>
+                </svg>
+              </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Turkish Blog Post Length</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Blog post length in Turkish directly impacts search rankings, reader engagement, and conversion rates. Here are the recommended lengths by content type.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Short-form Turkish blog posts (500-800 words): Best for news updates, quick tips, and simple how-to guides. These posts are fast to produce but rarely rank for competitive keywords.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Medium-form Turkish blog posts (1000-1500 words): The sweet spot for most informational content. Long enough to be comprehensive but short enough to hold attention. Most successful Turkish blogs target this range.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Long-form Turkish blog posts (1500-3000 words): Required for competitive keywords and establishing topical authority. These posts demonstrate expertise and earn more backlinks.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Ultra-long-form Turkish content (3000+ words): Reserved for definitive guides and pillar content. Only create ultra-long content when the topic genuinely requires comprehensive coverage.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our Turkish Word Counter at wordcountertool.net/word-counter/language/turkish to track your content length as you write. Hitting the right word count for your content type is crucial for performance.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">İçerik türüne göre uzunluk</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Blog yazıları:</strong> 1200-2000 kelime. Kapsamlı rehberler daha uzun olabilir. 200-300 kelimede bir alt başlık kullanın.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Açılış sayfaları:</strong> 600-1000 kelime. 700-900 kelime aralığındaki sayfalar en yüksek dönüşüm oranına sahip.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Ürün sayfaları (Trendyol, Hepsiburada):</strong> 300-600 kelime. Özellikler, avantajlar ve kullanım senaryoları dahil.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">E-posta bültenleri:</strong> 200-400 kelime. Kısa ve öz bültenler Türk pazarında en yüksek tıklama oranına sahip.</p>
             </section>
 
-          {/* MID_AD */}
-          <AdUnit slot="3248634657" />
-
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Turkish Social Media Post Length</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Social media engagement in Turkish varies significantly by platform and post length. Here are the optimal lengths.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Twitter/X Turkish posts: 71-100 characters get the highest engagement. Turkish can convey different amounts of information in this range compared to English.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Instagram Turkish captions: 138-150 characters for maximum likes. For carousel posts, longer captions of 300-500 characters perform well because readers are already engaged.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Facebook Turkish posts: 40-80 characters for link shares. For text-only posts, 100-250 characters generates the most comments and shares.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">LinkedIn Turkish posts: 1,300-2,000 characters for thought leadership content. Professional Turkish audiences engage more with longer, substantive posts.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">TikTok Turkish captions: Keep to 100-150 characters. Short, punchy Turkish text with hashtags performs best for video content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Remember to count characters accurately using our Turkish character counter. Turkish characters in Latin alphabet (modified) may be counted differently by various platforms.</p>
-            </section>
             <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Turkish Email and Newsletter Length</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Email marketing in Turkish requires precise content length to maximize open rates, click-through rates, and conversions.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Subject lines: 30-50 characters in Turkish. Shorter subjects have higher open rates. Include the most important keyword or benefit first.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Preview text: 40-90 characters in Turkish. This text appears after the subject line in most email clients and significantly impacts open rates.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Newsletter body: 200-500 Turkish words for regular newsletters. Focus on one main topic with a clear call to action. Longer newsletters see higher unsubscribe rates.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Promotional emails: 50-125 Turkish words. Get to the point quickly. Turkish readers respond best to concise promotional messages with clear benefits and prominent CTAs.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Transactional emails: Keep to 100-200 Turkish words. Include only essential information: what happened, what the user needs to do next, and where to get help.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our word counter to ensure every email hits the optimal length for maximum performance.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Türkçe vs İngilizce: uzunluk oranı</h2>
+              <div className="overflow-x-auto mb-4">
+                <table className="w-full text-sm" style={{borderCollapse:'collapse'}}>
+                  <thead><tr style={{borderBottom:'1px solid rgba(52,211,153,0.2)'}}><th className="text-left text-emerald-400 py-2 px-3">İngilizce</th><th className="text-left text-emerald-400 py-2 px-3">Türkçe</th><th className="text-left text-emerald-400 py-2 px-3">Oran</th></tr></thead>
+                  <tbody>
+                    {[['1000 kelime','~750-850 kelime','TR %15-25 kısa'],['1500 kelime','~1125-1275 kelime','TR %15-25 kısa'],['2000 kelime','~1500-1700 kelime','TR %15-25 kısa']].map((row,i)=>(<tr key={i} style={{borderBottom:'1px solid rgba(52,211,153,0.1)'}}><td className="text-white py-2 px-3 font-medium">{row[0]}</td><td className="text-slate-400 py-2 px-3">{row[1]}</td><td className="text-slate-400 py-2 px-3">{row[2]}</td></tr>))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Türkçe sondan eklemeli yapısı sayesinde İngilizceden daha az kelimeyle aynı bilgiyi ifade eder. <a href="/word-counter/language/turkish" className="text-emerald-400 underline">Kelime sayacımızla</a> son uzunluğu kontrol edin.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Turkish Ad Copy and Marketing Length</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Advertising copy in Turkish must be precise because every character counts toward your budget and impact.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Google Search Ads: Headlines up to 30 characters each (3 headlines), descriptions up to 90 characters each (2 descriptions). Turkish text must fit within these exact limits while being compelling.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Facebook/Instagram Ads: Primary text 125 characters before "See More" cutoff. Headlines 27 characters. Turkish ad copy should front-load the most important message.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Display banner ads: Depends on size, but generally 5-15 Turkish words maximum. Every word must earn its place in limited space.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Video ad scripts: 60-second Turkish video scripts should be 130-160 words. 30-second scripts: 65-80 words. 15-second scripts: 30-40 words.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Landing page headlines: 6-12 Turkish words. The headline is the most important element and must clearly communicate your value proposition in Turkish.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Uzunluğu ölçme ve optimize etme</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Rakip analizi:</strong> Hedef anahtar kelimenizde Google.com.tr ilk 5 sonucun kelime sayısını kontrol edin. Rakip ortalamasının %15-20 üzerini hedefleyin.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Okuma süresi:</strong> Yazının başında okuma süresini gösterin. Türkçe bloglar için ideal: 6-8 dakika (1300-1700 kelime).</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Alt başlıklar:</strong> Her 200-300 kelimede bir H2 veya H3. Mobil kullanıcılar Türkiyede trafiğin %82'sini oluşturur (TÜİK 2024) — alt başlıklar kaydırma navigasyonu için şarttır.</p>
             </section>
-
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Measuring and Optimizing Turkish Content Length</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Tracking your Turkish content length over time helps you identify what works best for your audience.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our Turkish Word Counter tool to measure every piece of content before publication. Create a spreadsheet tracking word count, content type, and performance metrics for each piece.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">A/B test different Turkish content lengths. Publish similar topics at different lengths and compare engagement metrics after 30 days. This gives you audience-specific data that is more valuable than general guidelines.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Analyze your top-performing Turkish content. What word counts do your most successful posts have? This data reveals your optimal content length.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Monitor Turkish search results for your target keywords. Count the average word count of the top 5 ranking pages. Your content should match or exceed this length to compete.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Remember that quality always trumps quantity. A perfectly crafted 1000-word Turkish post outperforms a bloated 3000-word post with filler content. Use our Turkish Word Counter to ensure every word earns its place.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Visit wordcountertool.net/word-counter/language/turkish to start counting your Turkish content accurately and for free.</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
           </div>
         </article>
       </main>
-
       <div className="max-w-4xl mx-auto px-4 mb-8">
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-white mb-3">Try These Turkish Tools</h2>
-          <div className="flex flex-wrap gap-2">
-            <a href="/word-counter/language/turkish" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Turkish Word Counter</a>
-            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
-            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
-            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
-            <a href="/words-per-minute" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Minute</a>
-          </div>
+          <h2 className="text-lg font-bold text-white mb-3">Türkçe Yazma Araçları</h2>
+          <div className="flex flex-wrap gap-2"><a href="/word-counter/language/turkish" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Türkçe Kelime Sayacı</a>
+            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Kelime Sayacı</a>
+            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Karakter Sayacı</a>
+            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Okuma Süresi</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Okunabilirlik Kontrolü</a>
+            <a href="/keyword-density" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Anahtar Kelime Yoğunluğu</a></div>
         </div>
       </div>
-
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Turkish Content Length Guide: How Many Words Do You Need? (2026)","description":"The definitive guide to Turkish content length for every format. Blog posts, social media, email, ads, and more. Data-driven word count recommendations.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-22","dateModified":"2026-03-22","mainEntityOfPage":"https://www.wordcountertool.net/blog/turkish-content-length-guide"})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"Turkish Content Length Guide: How Many Words Do You Need? (2026)","item":"https://www.wordcountertool.net/blog/turkish-content-length-guide"}]})}} />
-
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Türkçe içerik için ideal uzunluk: veriye dayalı rehber (2026)","description":"Türkçe blog yazısı, açılış sayfası, e-ticaret sitesi için ideal metin uzunluğu. Google.com.tr, Semrush ve TÜİK verileriyle.","inLanguage":"tr","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-04-05","dateModified":"2026-04-05","mainEntityOfPage":"https://www.wordcountertool.net/blog/turkish-content-length-guide"})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"Türkçe içerik için ideal uzunluk: veriye dayalı rehber (2026)","item":"https://www.wordcountertool.net/blog/turkish-content-length-guide"}]})}} />
       <Footer />
     </>
   )
