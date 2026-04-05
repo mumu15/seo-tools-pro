@@ -127,9 +127,9 @@ function svgBarChart(title, data, unit = '') {
   const bars = data.map((d, i) => {
     const y = 44 + i * (barH + gap);
     const w = Math.max(8, (d.value / maxVal) * chartW);
-    return `<text x="4" y="${y + 18}" fill="#94a3b8" style="font-size:12px">${d.label}</text>
+    return `<text x="4" y="${y + 18}" fill="#94a3b8" style={{fontSize:'12px'}}>${d.label}</text>
       <rect x="${labelW}" y="${y}" width="${w}" height="${barH}" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="${labelW + w + 6}" y="${y + 18}" fill="#34d399" style="font-size:12px;font-weight:600">${d.value}${unit}</text>`;
+      <text x="${labelW + w + 6}" y="${y + 18}" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>${d.value}${unit}</text>`;
   }).join('\n              ');
   return `<div className="result-box mb-6">
               <p className="text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">${title}</p>

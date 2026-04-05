@@ -54,30 +54,30 @@ export default function Post() {
               <div className="result-box mb-6">
               <p className="text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">Palabras necesarias para expresar 1000 palabras en inglés</p>
               <svg viewBox="0 0 580 348" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
-              <text x="4" y="62" fill="#94a3b8" style="font-size:12px">Chino (caracteres)</text>
+              <text x="4" y="62" fill="#94a3b8" style={{fontSize:'12px'}}>Chino (caracteres)</text>
       <rect x="160" y="44" width="212.5" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="378.5" y="62" fill="#34d399" style="font-size:12px;font-weight:600">750</text>
-              <text x="4" y="98" fill="#94a3b8" style="font-size:12px">Japonés</text>
+      <text x="378.5" y="62" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>750</text>
+              <text x="4" y="98" fill="#94a3b8" style={{fontSize:'12px'}}>Japonés</text>
       <rect x="160" y="80" width="226.66666666666666" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="392.66666666666663" y="98" fill="#34d399" style="font-size:12px;font-weight:600">800</text>
-              <text x="4" y="134" fill="#94a3b8" style="font-size:12px">Inglés (base)</text>
+      <text x="392.66666666666663" y="98" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>800</text>
+              <text x="4" y="134" fill="#94a3b8" style={{fontSize:'12px'}}>Inglés (base)</text>
       <rect x="160" y="116" width="283.33333333333337" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="449.33333333333337" y="134" fill="#34d399" style="font-size:12px;font-weight:600">1000</text>
-              <text x="4" y="170" fill="#94a3b8" style="font-size:12px">Alemán</text>
+      <text x="449.33333333333337" y="134" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1000</text>
+              <text x="4" y="170" fill="#94a3b8" style={{fontSize:'12px'}}>Alemán</text>
       <rect x="160" y="152" width="297.5" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="463.5" y="170" fill="#34d399" style="font-size:12px;font-weight:600">1050</text>
-              <text x="4" y="206" fill="#94a3b8" style="font-size:12px">Francés</text>
+      <text x="463.5" y="170" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1050</text>
+              <text x="4" y="206" fill="#94a3b8" style={{fontSize:'12px'}}>Francés</text>
       <rect x="160" y="188" width="325.83333333333337" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="491.83333333333337" y="206" fill="#34d399" style="font-size:12px;font-weight:600">1150</text>
-              <text x="4" y="242" fill="#94a3b8" style="font-size:12px">Español</text>
+      <text x="491.83333333333337" y="206" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1150</text>
+              <text x="4" y="242" fill="#94a3b8" style={{fontSize:'12px'}}>Español</text>
       <rect x="160" y="224" width="340" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="506" y="242" fill="#34d399" style="font-size:12px;font-weight:600">1200</text>
-              <text x="4" y="278" fill="#94a3b8" style="font-size:12px">Portugués</text>
+      <text x="506" y="242" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1200</text>
+              <text x="4" y="278" fill="#94a3b8" style={{fontSize:'12px'}}>Portugués</text>
       <rect x="160" y="260" width="334.3333333333333" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="500.3333333333333" y="278" fill="#34d399" style="font-size:12px;font-weight:600">1180</text>
-              <text x="4" y="314" fill="#94a3b8" style="font-size:12px">Árabe</text>
+      <text x="500.3333333333333" y="278" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1180</text>
+              <text x="4" y="314" fill="#94a3b8" style={{fontSize:'12px'}}>Árabe</text>
       <rect x="160" y="296" width="269.16666666666663" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="435.16666666666663" y="314" fill="#34d399" style="font-size:12px;font-weight:600">950</text>
+      <text x="435.16666666666663" y="314" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>950</text>
               </svg>
             </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">El conteo de palabras en español presenta algunas particularidades que los contadores genéricos manejan bien pero que conviene entender. Una "palabra" en español se define generalmente como cualquier secuencia de caracteres separada por espacios. Los artículos contractos como "del" (de + el) y "al" (a + el) cuentan como una sola palabra, no dos.</p>

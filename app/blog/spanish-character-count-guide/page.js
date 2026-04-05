@@ -88,18 +88,18 @@ export default function Post() {
               <div className="result-box mb-6">
               <p className="text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">Longitud promedio de meta titles en top 10 de Google (español)</p>
               <svg viewBox="0 0 580 204" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
-              <text x="4" y="62" fill="#94a3b8" style="font-size:12px">Posición 1</text>
+              <text x="4" y="62" fill="#94a3b8" style={{fontSize:'12px'}}>Posición 1</text>
       <rect x="160" y="44" width="327.8571428571429" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="493.8571428571429" y="62" fill="#34d399" style="font-size:12px;font-weight:600">54 chars</text>
-              <text x="4" y="98" fill="#94a3b8" style="font-size:12px">Posición 2-3</text>
+      <text x="493.8571428571429" y="62" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>54 chars</text>
+              <text x="4" y="98" fill="#94a3b8" style={{fontSize:'12px'}}>Posición 2-3</text>
       <rect x="160" y="80" width="340" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="506" y="98" fill="#34d399" style="font-size:12px;font-weight:600">56 chars</text>
-              <text x="4" y="134" fill="#94a3b8" style="font-size:12px">Posición 4-5</text>
+      <text x="506" y="98" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>56 chars</text>
+              <text x="4" y="134" fill="#94a3b8" style={{fontSize:'12px'}}>Posición 4-5</text>
       <rect x="160" y="116" width="315.7142857142857" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="481.7142857142857" y="134" fill="#34d399" style="font-size:12px;font-weight:600">52 chars</text>
-              <text x="4" y="170" fill="#94a3b8" style="font-size:12px">Posición 6-10</text>
+      <text x="481.7142857142857" y="134" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>52 chars</text>
+              <text x="4" y="170" fill="#94a3b8" style={{fontSize:'12px'}}>Posición 6-10</text>
       <rect x="160" y="152" width="291.4285714285714" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="457.4285714285714" y="170" fill="#34d399" style="font-size:12px;font-weight:600">48 chars</text>
+      <text x="457.4285714285714" y="170" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>48 chars</text>
               </svg>
             </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Los meta titles en español se truncan en Google a aproximadamente 580 píxeles de ancho, lo que equivale a unos 55-60 caracteres dependiendo de las letras usadas. Las meta descriptions se cortan alrededor de los 920 píxeles, equivalentes a 155-160 caracteres. En español, con palabras generalmente más largas, estos límites se sienten más ajustados.</p>

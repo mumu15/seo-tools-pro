@@ -54,24 +54,24 @@ export default function Post() {
               <div className="result-box mb-6">
               <p className="text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">Errores de acentuación más buscados en Google</p>
               <svg viewBox="0 0 580 276" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
-              <text x="4" y="62" fill="#94a3b8" style="font-size:12px">esta vs está</text>
+              <text x="4" y="62" fill="#94a3b8" style={{fontSize:'12px'}}>esta vs está</text>
       <rect x="160" y="44" width="340" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="506" y="62" fill="#34d399" style="font-size:12px;font-weight:600">246000 búsq/mes</text>
-              <text x="4" y="98" fill="#94a3b8" style="font-size:12px">como vs cómo</text>
+      <text x="506" y="62" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>246000 búsq/mes</text>
+              <text x="4" y="98" fill="#94a3b8" style={{fontSize:'12px'}}>como vs cómo</text>
       <rect x="160" y="80" width="261.219512195122" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="427.219512195122" y="98" fill="#34d399" style="font-size:12px;font-weight:600">189000 búsq/mes</text>
-              <text x="4" y="134" fill="#94a3b8" style="font-size:12px">mas vs más</text>
+      <text x="427.219512195122" y="98" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>189000 búsq/mes</text>
+              <text x="4" y="134" fill="#94a3b8" style={{fontSize:'12px'}}>mas vs más</text>
       <rect x="160" y="116" width="228.0487804878049" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="394.0487804878049" y="134" fill="#34d399" style="font-size:12px;font-weight:600">165000 búsq/mes</text>
-              <text x="4" y="170" fill="#94a3b8" style="font-size:12px">si vs sí</text>
+      <text x="394.0487804878049" y="134" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>165000 búsq/mes</text>
+              <text x="4" y="170" fill="#94a3b8" style={{fontSize:'12px'}}>si vs sí</text>
       <rect x="160" y="152" width="196.26016260162604" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="362.260162601626" y="170" fill="#34d399" style="font-size:12px;font-weight:600">142000 búsq/mes</text>
-              <text x="4" y="206" fill="#94a3b8" style="font-size:12px">el vs él</text>
+      <text x="362.260162601626" y="170" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>142000 búsq/mes</text>
+              <text x="4" y="206" fill="#94a3b8" style={{fontSize:'12px'}}>el vs él</text>
       <rect x="160" y="188" width="163.08943089430895" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="329.089430894309" y="206" fill="#34d399" style="font-size:12px;font-weight:600">118000 búsq/mes</text>
-              <text x="4" y="242" fill="#94a3b8" style="font-size:12px">tu vs tú</text>
+      <text x="329.089430894309" y="206" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>118000 búsq/mes</text>
+              <text x="4" y="242" fill="#94a3b8" style={{fontSize:'12px'}}>tu vs tú</text>
       <rect x="160" y="224" width="134.0650406504065" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="300.0650406504065" y="242" fill="#34d399" style="font-size:12px;font-weight:600">97000 búsq/mes</text>
+      <text x="300.0650406504065" y="242" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>97000 búsq/mes</text>
               </svg>
             </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Error 1: Confundir "esta" y "está".</strong> "Esta" sin tilde es un demostrativo ("esta mesa") o un adjetivo. "Está" con tilde es el verbo estar conjugado en tercera persona ("él está aquí"). Para verificar, intenta reemplazar la palabra por "se encuentra". Si funciona, lleva tilde. Ejemplo incorrecto: "La reunión esta programada para las 3." Correcto: "La reunión está programada para las 3."</p>
@@ -110,30 +110,30 @@ export default function Post() {
               <div className="result-box mb-6">
               <p className="text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">Variantes del español: hablantes por región (millones)</p>
               <svg viewBox="0 0 580 348" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
-              <text x="4" y="62" fill="#94a3b8" style="font-size:12px">México</text>
+              <text x="4" y="62" fill="#94a3b8" style={{fontSize:'12px'}}>México</text>
       <rect x="160" y="44" width="340" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="506" y="62" fill="#34d399" style="font-size:12px;font-weight:600">130M</text>
-              <text x="4" y="98" fill="#94a3b8" style="font-size:12px">Colombia</text>
+      <text x="506" y="62" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>130M</text>
+              <text x="4" y="98" fill="#94a3b8" style={{fontSize:'12px'}}>Colombia</text>
       <rect x="160" y="80" width="136" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="302" y="98" fill="#34d399" style="font-size:12px;font-weight:600">52M</text>
-              <text x="4" y="134" fill="#94a3b8" style="font-size:12px">España</text>
+      <text x="302" y="98" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>52M</text>
+              <text x="4" y="134" fill="#94a3b8" style={{fontSize:'12px'}}>España</text>
       <rect x="160" y="116" width="122.92307692307692" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="288.9230769230769" y="134" fill="#34d399" style="font-size:12px;font-weight:600">47M</text>
-              <text x="4" y="170" fill="#94a3b8" style="font-size:12px">Argentina</text>
+      <text x="288.9230769230769" y="134" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>47M</text>
+              <text x="4" y="170" fill="#94a3b8" style={{fontSize:'12px'}}>Argentina</text>
       <rect x="160" y="152" width="120.30769230769232" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="286.3076923076923" y="170" fill="#34d399" style="font-size:12px;font-weight:600">46M</text>
-              <text x="4" y="206" fill="#94a3b8" style="font-size:12px">EE.UU.</text>
+      <text x="286.3076923076923" y="170" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>46M</text>
+              <text x="4" y="206" fill="#94a3b8" style={{fontSize:'12px'}}>EE.UU.</text>
       <rect x="160" y="188" width="109.84615384615385" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="275.84615384615387" y="206" fill="#34d399" style="font-size:12px;font-weight:600">42M</text>
-              <text x="4" y="242" fill="#94a3b8" style="font-size:12px">Perú</text>
+      <text x="275.84615384615387" y="206" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>42M</text>
+              <text x="4" y="242" fill="#94a3b8" style={{fontSize:'12px'}}>Perú</text>
       <rect x="160" y="224" width="88.92307692307693" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="254.92307692307693" y="242" fill="#34d399" style="font-size:12px;font-weight:600">34M</text>
-              <text x="4" y="278" fill="#94a3b8" style="font-size:12px">Venezuela</text>
+      <text x="254.92307692307693" y="242" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>34M</text>
+              <text x="4" y="278" fill="#94a3b8" style={{fontSize:'12px'}}>Venezuela</text>
       <rect x="160" y="260" width="73.23076923076924" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="239.23076923076923" y="278" fill="#34d399" style="font-size:12px;font-weight:600">28M</text>
-              <text x="4" y="314" fill="#94a3b8" style="font-size:12px">Chile</text>
+      <text x="239.23076923076923" y="278" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>28M</text>
+              <text x="4" y="314" fill="#94a3b8" style={{fontSize:'12px'}}>Chile</text>
       <rect x="160" y="296" width="49.69230769230769" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="215.69230769230768" y="314" fill="#34d399" style="font-size:12px;font-weight:600">19M</text>
+      <text x="215.69230769230768" y="314" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>19M</text>
               </svg>
             </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">El español de México, España, Argentina y Colombia tiene diferencias notables en vocabulario, pronunciación y hasta gramática. En Argentina se usa el "vos" en lugar de "tú" (y con conjugación propia: "vos tenés" en vez de "tú tienes"). En España se utiliza el "vosotros" que en Latinoamérica se ha reemplazado por "ustedes." Y el vocabulario varía enormemente: lo que en México es "computadora", en España es "ordenador" y en Argentina es "computadora" pero un "auto" en Argentina es un "coche" en España y un "carro" en Colombia.</p>

@@ -54,24 +54,24 @@ export default function Post() {
               <div className="result-box mb-6">
               <p className="text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">Rendimiento SEO por longitud de artículo en español</p>
               <svg viewBox="0 0 580 276" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
-              <text x="4" y="62" fill="#94a3b8" style="font-size:12px">Menos de 800</text>
+              <text x="4" y="62" fill="#94a3b8" style={{fontSize:'12px'}}>Menos de 800</text>
       <rect x="160" y="44" width="53.68421052631579" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="219.68421052631578" y="62" fill="#34d399" style="font-size:12px;font-weight:600">15% rank p1</text>
-              <text x="4" y="98" fill="#94a3b8" style="font-size:12px">800-1200</text>
+      <text x="219.68421052631578" y="62" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>15% rank p1</text>
+              <text x="4" y="98" fill="#94a3b8" style={{fontSize:'12px'}}>800-1200</text>
       <rect x="160" y="80" width="125.26315789473684" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="291.2631578947368" y="98" fill="#34d399" style="font-size:12px;font-weight:600">35% rank p1</text>
-              <text x="4" y="134" fill="#94a3b8" style="font-size:12px">1200-1800</text>
+      <text x="291.2631578947368" y="98" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>35% rank p1</text>
+              <text x="4" y="134" fill="#94a3b8" style={{fontSize:'12px'}}>1200-1800</text>
       <rect x="160" y="116" width="214.73684210526315" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="380.7368421052631" y="134" fill="#34d399" style="font-size:12px;font-weight:600">60% rank p1</text>
-              <text x="4" y="170" fill="#94a3b8" style="font-size:12px">1800-2500</text>
+      <text x="380.7368421052631" y="134" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>60% rank p1</text>
+              <text x="4" y="170" fill="#94a3b8" style={{fontSize:'12px'}}>1800-2500</text>
       <rect x="160" y="152" width="304.2105263157895" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="470.2105263157895" y="170" fill="#34d399" style="font-size:12px;font-weight:600">85% rank p1</text>
-              <text x="4" y="206" fill="#94a3b8" style="font-size:12px">2500-3500</text>
+      <text x="470.2105263157895" y="170" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>85% rank p1</text>
+              <text x="4" y="206" fill="#94a3b8" style={{fontSize:'12px'}}>2500-3500</text>
       <rect x="160" y="188" width="340" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="506" y="206" fill="#34d399" style="font-size:12px;font-weight:600">95% rank p1</text>
-              <text x="4" y="242" fill="#94a3b8" style="font-size:12px">Más de 3500</text>
+      <text x="506" y="206" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>95% rank p1</text>
+              <text x="4" y="242" fill="#94a3b8" style={{fontSize:'12px'}}>Más de 3500</text>
       <rect x="160" y="224" width="268.42105263157896" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="434.42105263157896" y="242" fill="#34d399" style="font-size:12px;font-weight:600">75% rank p1</text>
+      <text x="434.42105263157896" y="242" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>75% rank p1</text>
               </svg>
             </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Para artículos de blog optimizados para SEO en español, la zona óptima está entre 1.800 y 3.000 palabras. Los artículos en este rango tienen la mejor combinación de profundidad de contenido, engagement del usuario y potencial de ranking. Los artículos por debajo de 1.200 palabras rara vez compiten en keywords con volumen significativo.</p>
