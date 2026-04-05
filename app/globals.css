@@ -848,3 +848,40 @@ body {
     padding-top: max(0px, env(safe-area-inset-top));
   }
 }
+
+
+/* ═══════════════════════════════════════════════ */
+/*  FIX: Remove forced min-height on short pages  */
+/* ═══════════════════════════════════════════════ */
+
+/* min-h-screen on <main> causes huge empty gaps on short pages.
+   Let content determine its own height instead. */
+main.min-h-screen,
+.min-h-screen:not(html):not(body) {
+  min-height: auto !important;
+}
+
+/* Ensure the page itself still fills viewport (no short page bounce) */
+html, body {
+  min-height: 100vh;
+}
+
+/* Use flexbox on body to push footer down naturally */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body > div, body > main, #__next {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
