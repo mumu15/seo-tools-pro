@@ -146,12 +146,12 @@ const langSections = [
     { slug: 'portuguese-writing-tips-for-better-content', title: '15 dicas para escrever melhor em português na web (2026)' }
   ]},
   { key: 'russian', name: 'Russian', native: 'Русский', flag: '🇷🇺', tool: '/word-counter/language/russian', posts: [
-    { slug: 'common-russian-writing-mistakes', title: '10 Common Russian Writing Mistakes and How to Fix Them (2026)' },
-    { slug: 'how-to-count-words-in-russian', title: 'How to Count Words in Russian: Complete Guide (2026)' },
-    { slug: 'russian-character-count-guide', title: 'Russian Character Count: Everything You Need to Know (2026)' },
-    { slug: 'russian-content-length-guide', title: 'Russian Content Length Guide: How Many Words Do You Need? (2026)' },
-    { slug: 'russian-seo-content-strategy', title: 'Russian SEO Content Strategy: Rank Higher in Russian Search (2026)' },
-    { slug: 'russian-writing-tips-for-better-content', title: 'Russian Writing Tips: How to Write Better Content in Russian (2026)' }
+    { slug: 'common-russian-writing-mistakes', title: '15 самых частых ошибок в русском языке и как их избежать (2026)' },
+    { slug: 'how-to-count-words-in-russian', title: 'Как считать слова в русском тексте: полное руководство (2026)' },
+    { slug: 'russian-character-count-guide', title: 'Подсчёт символов в русском тексте: полный гид с лимитами платформ (2026)' },
+    { slug: 'russian-content-length-guide', title: 'Оптимальная длина текста на русском: руководство с данными (2026)' },
+    { slug: 'russian-seo-content-strategy', title: 'SEO-стратегия для русскоязычного контента: Яндекс + Google (2026)' },
+    { slug: 'russian-writing-tips-for-better-content', title: '15 советов по улучшению русского веб-текста (2026)' }
   ]},
   { key: 'spanish', name: 'Spanish', native: 'Español', flag: '🇪🇸', tool: '/word-counter/language/spanish', posts: [
     { slug: 'common-spanish-writing-mistakes', title: 'Errores Comunes al Escribir en Español: Guía Completa (2026)' },
