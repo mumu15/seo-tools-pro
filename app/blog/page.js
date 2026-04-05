@@ -74,12 +74,12 @@ const langSections = [
     { slug: 'how-to-count-words-in-chinese', title: '如何统计中文字数：字数、字符数与词数的完整指南（2026）' }
   ]},
   { key: 'dutch', name: 'Dutch', native: 'Nederlands', flag: '🇳🇱', tool: '/word-counter/language/dutch', posts: [
-    { slug: 'common-dutch-writing-mistakes', title: '10 Common Dutch Writing Mistakes and How to Fix Them (2026)' },
-    { slug: 'dutch-character-count-guide', title: 'Dutch Character Count: Everything You Need to Know (2026)' },
-    { slug: 'dutch-content-length-guide', title: 'Dutch Content Length Guide: How Many Words Do You Need? (2026)' },
-    { slug: 'dutch-seo-content-strategy', title: 'Dutch SEO Content Strategy: Rank Higher in Dutch Search (2026)' },
-    { slug: 'dutch-writing-tips-for-better-content', title: 'Dutch Writing Tips: How to Write Better Content in Dutch (2026)' },
-    { slug: 'how-to-count-words-in-dutch', title: 'How to Count Words in Dutch: Complete Guide (2026)' }
+    { slug: 'common-dutch-writing-mistakes', title: 'De 15 meest voorkomende schrijffouten in het Nederlands en hoe je ze vermijdt (2026)' },
+    { slug: 'dutch-character-count-guide', title: 'Tekens tellen in het Nederlands: complete gids met platformlimieten (2026)' },
+    { slug: 'dutch-content-length-guide', title: 'De optimale tekstlengte in het Nederlands: datagedreven gids (2026)' },
+    { slug: 'dutch-seo-content-strategy', title: 'SEO-contentstrategie voor de Nederlandse markt: complete gids (2026)' },
+    { slug: 'dutch-writing-tips-for-better-content', title: '15 tips voor betere Nederlandse webteksten (2026)' },
+    { slug: 'how-to-count-words-in-dutch', title: 'Woorden tellen in het Nederlands: complete gids (2026)' }
   ]},
   { key: 'french', name: 'French', native: 'Français', flag: '🇫🇷', tool: '/word-counter/language/french', posts: [
     { slug: 'common-french-writing-mistakes', title: 'Les 15 erreurs les plus courantes en français écrit et comment les corriger (2026)' },

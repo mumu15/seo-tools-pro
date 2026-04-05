@@ -5,20 +5,26 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/dutch-writing-tips-for-better-content' },
-  title: 'Dutch Writing Tips: How to Write Better Content in Dutch (2026)',
-  description: 'Master Dutch content writing with these expert tips. Improve your Dutch writing style, grammar, and word choice for better engagement and SEO.',
+  title: '15 tips voor betere Nederlandse webteksten (2026)',
+  description: '15 praktische tips om je Nederlandse webcontent te verbeteren. Leesbaarheid, SEO, betrokkenheid en het menselijker maken van AI-teksten.',
   openGraph: {
-    title: 'Dutch Writing Tips: How to Write Better Content in Dutch (2026)',
-    description: 'Master Dutch content writing with these expert tips. Improve your Dutch writing style, grammar, and word choice for better engagement and SEO.',
+    title: '15 tips voor betere Nederlandse webteksten (2026)',
+    description: '15 praktische tips om je Nederlandse webcontent te verbeteren. Leesbaarheid, SEO, betrokkenheid en het menselijker maken van AI-teksten.',
     url: 'https://www.wordcountertool.net/blog/dutch-writing-tips-for-better-content',
     siteName: 'WordCounterTool',
     type: 'article',
   },
 }
 
-const faqs = [{"q":"How do I count words in Dutch?","a":"Use our free Dutch Word Counter at wordcountertool.net/word-counter/language/dutch. Paste your Dutch text and get instant word count, character count, sentence count, and reading time."},{"q":"Is the Dutch word counter free?","a":"Yes, completely free with no sign-up required. Our Dutch word counter tool works instantly in your browser with no data stored or sent to any server."},{"q":"How many words per minute does the average person read in Dutch?","a":"The average Dutch reading speed is approximately 200-250 words per minute for native speakers, though this varies based on text complexity and the reader experience level."},{"q":"Does your tool handle Latin alphabet?","a":"Yes. Our Dutch Word Counter is specifically designed to handle Latin alphabet accurately. It accounts for extremely long compound words that generic word counters miss."}]
+const faqs = [
+  { q: 'Wat is de ideale zinslengte voor Nederlandse webteksten?', a: '15-20 woorden. Boven de 25 woorden neemt het begrip sterk af. Wissel korte (8 woorden) en middellange (18 woorden) zinnen af voor een natuurlijk leesritme.' },
+  { q: 'Wat is een goede Flesch-Douma score voor Nederlands?', a: 'Voor webteksten: 60-70 (goed leesbaar). Zakelijke teksten: 50-60. Wetenschappelijk: 30-50. Onder 30 is moeilijk leesbaar en alleen geschikt voor specialisten.' },
+  { q: 'Hoe maak ik AI-teksten in het Nederlands menselijker?', a: 'Varieer de zinslengte, voeg persoonlijke mening toe, gebruik Nederlandse voorbeelden en uitdrukkingen, schrap "bovendien/daarnaast/echter" als ze overmatig voorkomen, en doorbreek de uniforme structuur van AI-teksten.' },
+  { q: 'Wat is de optimale zoekwoorddichtheid voor Nederlands?', a: '1-2% voor het hoofdzoekwoord. Voeg 4-6 semantisch gerelateerde termen toe. Boven de 3% wordt het als keyword stuffing beschouwd en bestraft door Google.' },
+  { q: 'Hoe vaak moet ik tussenkopjes plaatsen?', a: 'Elke 200-300 woorden een H2 of H3. Met 81% mobiel verkeer in Nederland zijn tussenkopjes essentieel voor scannen en navigeren bij het scrollen.' },
+  { q: 'Welke gratis tools helpen bij het schrijven in het Nederlands?', a: 'WordCounterTool.net: woordenteller, tekenteller, leesbaarheidscheck en zoekwoorddichtheid — allemaal gratis. LanguageTool: grammaticacontrole (basis gratis). Van Dale Online: woordenboek (beperkt gratis).' }
+]
 
 export default function Post() {
   return (
@@ -26,74 +32,73 @@ export default function Post() {
       <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
+        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Terug naar Blog</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Dutch Writing Tips: How to Write Better Content in Dutch (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated March 2026 | 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">15 tips voor betere Nederlandse webteksten (2026)</h1>
+          <p className="text-slate-400 text-sm mb-8">Bijgewerkt april 2026 | Leestijd: 9 min</p>
           <div className="result-box mb-8 border-emerald-500/30">
-            <h2 className="text-emerald-400 font-bold mb-3">Quick Summary</h2>
-            <p className="text-white">Dutch (Nederlands) is spoken by <strong>25 million</strong> people. It uses Latin alphabet and has unique word counting challenges due to extremely long compound words. Use our free <a href="/word-counter/language/dutch" className="text-emerald-400 underline">Dutch Word Counter</a> for accurate results.</p>
+            <h2 className="text-emerald-400 font-bold mb-3">Samenvatting</h2>
+            <p className="text-white">80% van de Nederlandse internetgebruikers <strong className="text-white">scant teksten</strong> in plaats van woord voor woord te lezen (NNGroup 2024). Zinnen van <strong className="text-white">15-20 woorden</strong>, alineas van <strong className="text-white">2-3 regels</strong> en tussenkopjes <strong className="text-white">elke 200-300 woorden</strong> — dat zijn de basisregels voor Nederlandse webteksten. Test je tekst met onze <a href="/readability-checker" className="text-emerald-400 underline">leesbaarheidscheck</a>.</p>
           </div>
           <div className="space-y-8">
+
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Why Good Dutch Writing Matters</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">With 25 million speakers worldwide, Dutch represents a massive audience for content creators. Writing excellent Dutch content is not just about grammar and spelling. It requires understanding the cultural context, reader expectations, and the unique features of the Dutch language.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Dutch content consumption is growing rapidly. More people are reading, writing, and creating content in Dutch than ever before. Whether you are writing blog posts, marketing copy, social media content, or academic papers, the quality of your Dutch writing directly impacts engagement and results.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The challenge is that Dutch writing has its own conventions, styles, and best practices that differ from English. What works in English content does not always translate well into Dutch. This guide covers the essential tips for creating compelling Dutch content.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Tips 1-5: De basis van goede Nederlandse webteksten</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Korte zinnen:</strong> De ideale zinslengte is 15-20 woorden. Boven de 25 woorden neemt het begrip sterk af. Wissel korte zinnen (8 woorden) af met middellange (18 woorden) voor een natuurlijk ritme. Tangconstructies zijn uit den boze.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">2. Actieve zinnen:</strong> "Het rapport is opgesteld door het team" wordt "Het team heeft het rapport opgesteld." Actieve zinnen zijn korter en krachtiger. Beperk passieve constructies tot 15% van je tekst.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">3. Korte alineas:</strong> Maximaal 2-3 zinnen. Op mobiel (81% van het Nederlandse internetverkeer) worden lange alineas als tekstmuren ervaren. Een gedachte per alinea.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">4. Informatieve tussenkopjes:</strong> Elke 200-300 woorden een H2/H3. "SEO-tips" is minder effectief dan "5 SEO-tips die je ranking direct verbeteren." Een tussenkopje moet de lezer vertellen wat hij leert.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">5. Vermijd ambtelijk taalgebruik:</strong> "Ingevolge het bovenstaande dient te worden opgemerkt dat..." wordt "Daarom..." Nederlands is beroemd-berucht om zijn ambtelijke taal. Voor webteksten: schrijf zoals je praat, maar dan verzorgd.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Understanding Dutch Sentence Structure</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Dutch follows a SOV/SVO (V2 word order) word order pattern. This fundamental difference from English (SVO) affects everything about how you construct sentences and paragraphs.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">In Dutch, the typical sentence places words in a specific order that may feel unusual to English speakers. Understanding and mastering this pattern is essential for writing natural-sounding Dutch content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Dutch is famous for compound words that can be extremely long. It uses the Latin alphabet with occasional diacritics. Dutch has two grammatical genders (common and neuter) and diminutive suffixes are very common.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When writing in Dutch, always compose directly in Dutch rather than writing in English first and translating. Direct composition produces more natural sentence structures and idiomatic expressions. Machine translation often produces awkward phrasing because it forces English sentence patterns onto Dutch grammar.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">For content creators, sentence variety is just as important in Dutch as in English. Mix short and long sentences, vary your sentence openings, and use transitional phrases natural to Dutch.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Tips 6-10: Leesbaarheid en betrokkenheid</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">6. Schrap vulwoorden:</strong> "Eigenlijk", "in principe", "als het ware", "zeg maar", "gewoon" — als de betekenis niet verandert zonder het woord, schrap het. Elk geschrapt vulwoord maakt de zin sterker.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">7. Data overtuigt:</strong> "Onze omzet is gestegen" wordt "Onze omzet steeg met 23% naar 4,2 miljoen euro (jaarverslag 2024)." Concrete cijfers met bronvermelding verhogen de geloofwaardigheid. Nederlandse lezers waarderen onderbouwde claims.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">8. Lijsten met mate:</strong> 3-7 punten werken goed. Minder dan 3 punten: schrijf het als tekst. Meer dan 7: overbelasting. Elk punt: 1-2 zinnen.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">9. Voegwoorden met mate:</strong> "Bovendien", "daarnaast", "echter", "desalniettemin" — te veel voegwoorden achter elkaar is een typisch kenmerk van AI-teksten. Goede tekst stroomt vanzelf door logica, niet door stapeling van verbindingswoorden.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">10. Stel vragen aan de lezer:</strong> "Hoe vaak publiceer jij een tekst zonder na te lezen?" — retorische vragen trekken de aandacht terug. Een vraag per sectie is voldoende.</p>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 180" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>Leesbaarheidsdoelen voor Nederlandse teksten</text>
+                  <rect x="160" y="45" width="350" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="160" y="45" width={String(350*0.70)} height="28" rx="4" fill="#10b981" />
+                  <text x="150" y="63" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Webtekst</text>
+                  <text x={String(160+350*0.70+8)} y="63" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>60-70 Flesch-Douma</text>
+                  <rect x="160" y="81" width="350" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="160" y="81" width={String(350*0.55)} height="28" rx="4" fill="#f59e0b" />
+                  <text x="150" y="99" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Zakelijk</text>
+                  <text x={String(160+350*0.55+8)} y="99" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>50-60 Flesch-Douma</text>
+                  <rect x="160" y="117" width="350" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="160" y="117" width={String(350*0.40)} height="28" rx="4" fill="#ef4444" />
+                  <text x="150" y="135" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Wetenschappelijk</text>
+                  <text x={String(160+350*0.40+8)} y="135" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>30-50 Flesch-Douma</text>
+                </svg>
+              </div>
             </section>
 
-          {/* MID_AD */}
-          <AdUnit slot="3248634657" />
-
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Dutch Vocabulary and Word Choice</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Choosing the right words in Dutch is crucial for connecting with your audience. Dutch has a rich vocabulary with many synonyms and nuanced expressions that do not have direct English equivalents.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Formal vs informal register is particularly important in Dutch. The level of formality you use affects word choice, sentence structure, and even grammar. Know your audience and choose the appropriate register.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Avoid unnecessary English loanwords when natural Dutch alternatives exist. While some English terms have been adopted into Dutch (especially in technology), overusing them can make your writing feel inauthentic and alienate readers who prefer pure Dutch.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our Dutch Word Counter to check that your vocabulary is varied. Repetitive word use reduces content quality and reader engagement. Aim for a diverse vocabulary while maintaining clarity and accessibility.</p>
-            </section>
             <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Content Length Guidelines for Dutch</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">How long should your Dutch content be? The answer depends on the content type and platform, but here are general guidelines based on Dutch content analysis.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Blog posts in Dutch should be at least 1000-1500 words for informational content. Remember that word count ratios between Dutch and English differ, so adjust accordingly. Dutch compound words create interesting word counting challenges. A word like "arbeidsongeschiktheidsverzekering" (disability insurance) is one word but extremely long. Dutch text typically has fewer words than English for the same content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Social media posts in Dutch follow platform-specific limits, but Dutch can often convey more meaning in fewer characters than English. Use our word counter to optimize your social media content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Email newsletters in Dutch should be 300-500 words for maximum engagement. Dutch readers tend to prefer concise, focused communication in email format.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Product descriptions and landing pages benefit from 500-800 words in Dutch. Include specific details, benefits, and calls to action written naturally in Dutch.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Tips 11-15: SEO en AI-teksten menselijker maken</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">11. Zoekwoorden natuurlijk verwerken:</strong> Nederlands biedt flexibiliteit in woordvolgorde. "Woorden tellen gratis" kan ook "gratis woorden tellen" of "hoe tel je gratis woorden" worden. Varieer de vorm, vermijd mechanische herhaling.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">12. Semantisch gerelateerde woorden:</strong> Voor "woordenteller" gebruik ook: "woorden tellen", "tekens tellen", "leestijd", "tekstlengte", "woordaantal". Google begrijpt semantische verwantschap en beloont brede dekking.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">13. Metabeschrijvingen als advertentie:</strong> "Tel je woorden in 3 seconden. Gratis, zonder registratie. Nederlands, Engels en 15+ talen. Probeer het nu." — cijfers, voordeel en CTA in 155 tekens.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">14. Beschrijvende ankerteksten:</strong> "<a href="/word-counter/language/dutch" className="text-emerald-400 underline">Nederlandse woordenteller</a>" werkt beter dan "klik hier". Nederlandse ankerteksten zijn natuurlijk met 3-6 woorden. Plaats 3-5 interne links per artikel.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">15. AI-teksten menselijker maken:</strong> AI-teksten in het Nederlands vertonen typische patronen: te veel "bovendien" en "daarnaast", neutrale toon zonder mening, generieke voorbeelden, uniforme zinslengte. Oplossing: varieer de zinslengte, voeg persoonlijke ervaringen toe, gebruik Nederlandse voorbeelden en uitdrukkingen, en schrap formulematige overgangen.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Dutch Grammar Essentials for Content Writers</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Even native Dutch speakers make grammar mistakes in written content. Here are the most important grammar points for Dutch content writing.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Dutch uses Latin alphabet which requires attention to extremely long compound words. Errors in this area immediately reduce credibility with Dutch readers.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Consistency in style and formatting is essential. Choose either formal or informal style and maintain it throughout your content. Mixing registers is one of the most common writing mistakes in Dutch.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Paragraph structure in Dutch follows similar principles to English: one main idea per paragraph, clear topic sentences, and logical flow between paragraphs. However, Dutch writing traditions may favor different paragraph lengths and transition styles.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Proofreading Dutch content requires native-level fluency. Always have a native Dutch speaker review important content before publication. Our word counter tool can help identify potential issues with text length and readability.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Checklist voor publicatie</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Controleer voor publicatie:</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Leesbaarheid:</strong> Zinnen 15-20 woorden? Alineas 2-3 zinnen? Tussenkopjes elke 200-300 woorden? Flesch-Douma boven 60?</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">SEO:</strong> Zoekwoorddichtheid 1-2%? 4-6 gerelateerde termen? Metabeschrijving tot 155 tekens? Titel tot 60 tekens? 3-5 interne links?</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Kwaliteit:</strong> Geen dt-fouten? Samenstellingen aan elkaar? Consequent je/u? Data met bronvermelding? Tekst klinkt natuurlijk bij hardop voorlezen?</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Gebruik onze gratis tools: <a href="/word-counter/language/dutch" className="text-emerald-400 underline">Nederlandse woordenteller</a>, <a href="/readability-checker" className="text-emerald-400 underline">leesbaarheidscheck</a>, <a href="/keyword-density" className="text-emerald-400 underline">zoekwoorddichtheid</a>.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Tools for Dutch Content Writers</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The right tools make Dutch writing easier and more efficient. Here are the essential tools every Dutch content writer should use.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Word Counter: Use our free Dutch Word Counter at wordcountertool.net/word-counter/language/dutch to accurately count words, characters, sentences, and paragraphs in your Dutch text. It handles all the unique features of Dutch text processing.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Reading Time Calculator: Check how long your Dutch content takes to read with our reading time tool. Reading speeds differ between languages, and our tool accounts for Dutch-specific reading patterns.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Keyword Research: Use Dutch-specific keyword tools to find what your target audience actually searches for. Do not rely solely on translated English keywords.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Grammar Checker: Use Dutch-specific grammar checkers to catch errors that generic tools miss. The unique grammar rules of Dutch require specialized checking.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">All these tools combined help you produce higher-quality Dutch content that ranks well and engages readers effectively.</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Veelgestelde Vragen</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
           </div>
@@ -102,19 +107,20 @@ export default function Post() {
 
       <div className="max-w-4xl mx-auto px-4 mb-8">
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-white mb-3">Try These Dutch Tools</h2>
+          <h2 className="text-lg font-bold text-white mb-3">Nederlandse Schrijftools</h2>
           <div className="flex flex-wrap gap-2">
-            <a href="/word-counter/language/dutch" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Dutch Word Counter</a>
-            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
-            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
-            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
-            <a href="/words-per-minute" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Minute</a>
+            <a href="/word-counter/language/dutch" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Nederlandse Woordenteller</a>
+            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Woordenteller</a>
+            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Tekenteller</a>
+            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Leestijd Calculator</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Leesbaarheidscheck</a>
+            <a href="/keyword-density" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Zoekwoorddichtheid</a>
           </div>
         </div>
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Dutch Writing Tips: How to Write Better Content in Dutch (2026)","description":"Master Dutch content writing with these expert tips. Improve your Dutch writing style, grammar, and word choice for better engagement and SEO.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-22","dateModified":"2026-03-22","mainEntityOfPage":"https://www.wordcountertool.net/blog/dutch-writing-tips-for-better-content"})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"Dutch Writing Tips: How to Write Better Content in Dutch (2026)","item":"https://www.wordcountertool.net/blog/dutch-writing-tips-for-better-content"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"15 tips voor betere Nederlandse webteksten (2026)","description":"15 praktische tips om je Nederlandse webcontent te verbeteren. Leesbaarheid, SEO, betrokkenheid en het menselijker maken van AI-teksten.","inLanguage":"nl","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-04-05","dateModified":"2026-04-05","mainEntityOfPage":"https://www.wordcountertool.net/blog/dutch-writing-tips-for-better-content"})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"15 tips voor betere Nederlandse webteksten (2026)","item":"https://www.wordcountertool.net/blog/dutch-writing-tips-for-better-content"}]})}} />
 
       <Footer />
     </>
