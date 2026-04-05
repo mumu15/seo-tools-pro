@@ -1,5 +1,5 @@
 import './globals.css'
-import ThemeProvider from './components/ThemeProvider'
+import ThemeProvider from '../components/ThemeProvider'
 import Script from 'next/script'
 
 export const metadata = {
