@@ -106,12 +106,12 @@ const langSections = [
     { slug: 'how-to-count-words-in-hindi', title: 'हिंदी में शब्द कैसे गिनें: संपूर्ण गाइड (2026)' }
   ]},
   { key: 'italian', name: 'Italian', native: 'Italiano', flag: '🇮🇹', tool: '/word-counter/language/italian', posts: [
-    { slug: 'common-italian-writing-mistakes', title: '10 Common Italian Writing Mistakes and How to Fix Them (2026)' },
-    { slug: 'how-to-count-words-in-italian', title: 'How to Count Words in Italian: Complete Guide (2026)' },
-    { slug: 'italian-character-count-guide', title: 'Italian Character Count: Everything You Need to Know (2026)' },
-    { slug: 'italian-content-length-guide', title: 'Italian Content Length Guide: How Many Words Do You Need? (2026)' },
-    { slug: 'italian-seo-content-strategy', title: 'Italian SEO Content Strategy: Rank Higher in Italian Search (2026)' },
-    { slug: 'italian-writing-tips-for-better-content', title: 'Italian Writing Tips: How to Write Better Content in Italian (2026)' }
+    { slug: 'common-italian-writing-mistakes', title: 'I 15 errori più comuni nella scrittura in italiano e come evitarli (2026)' },
+    { slug: 'how-to-count-words-in-italian', title: 'Come contare le parole in italiano: guida completa (2026)' },
+    { slug: 'italian-character-count-guide', title: 'Conteggio caratteri in italiano: guida con limiti delle piattaforme (2026)' },
+    { slug: 'italian-content-length-guide', title: 'La lunghezza ideale dei testi in italiano: guida basata sui dati (2026)' },
+    { slug: 'italian-seo-content-strategy', title: 'Strategia SEO per contenuti in italiano: guida completa (2026)' },
+    { slug: 'italian-writing-tips-for-better-content', title: '15 consigli per scrivere meglio in italiano sul web (2026)' }
   ]},
   { key: 'japanese', name: 'Japanese', native: '日本語', flag: '🇯🇵', tool: '/word-counter/language/japanese', posts: [
     { slug: 'common-japanese-writing-mistakes', title: '日本語ライティングでよくある15の間違いと改善方法（2026年版）' },

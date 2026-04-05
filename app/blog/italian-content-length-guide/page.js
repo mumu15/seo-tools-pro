@@ -5,20 +5,26 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/italian-content-length-guide' },
-  title: 'Italian Content Length Guide: How Many Words Do You Need? (2026)',
-  description: 'The definitive guide to Italian content length for every format. Blog posts, social media, email, ads, and more. Data-driven word count recommendations.',
+  title: 'La lunghezza ideale dei testi in italiano: guida basata sui dati (2026)',
+  description: 'Quante parole deve avere il tuo contenuto in italiano? Blog, landing page, e-commerce — con dati reali di Google Italia, SEMrush e Audiweb.',
   openGraph: {
-    title: 'Italian Content Length Guide: How Many Words Do You Need? (2026)',
-    description: 'The definitive guide to Italian content length for every format. Blog posts, social media, email, ads, and more. Data-driven word count recommendations.',
+    title: 'La lunghezza ideale dei testi in italiano: guida basata sui dati (2026)',
+    description: 'Quante parole deve avere il tuo contenuto in italiano? Blog, landing page, e-commerce — con dati reali di Google Italia, SEMrush e Audiweb.',
     url: 'https://www.wordcountertool.net/blog/italian-content-length-guide',
     siteName: 'WordCounterTool',
     type: 'article',
   },
 }
 
-const faqs = [{"q":"How do I count words in Italian?","a":"Use our free Italian Word Counter at wordcountertool.net/word-counter/language/italian. Paste your Italian text and get instant word count, character count, sentence count, and reading time."},{"q":"Is the Italian word counter free?","a":"Yes, completely free with no sign-up required. Our Italian word counter tool works instantly in your browser with no data stored or sent to any server."},{"q":"How many words per minute does the average person read in Italian?","a":"The average Italian reading speed is approximately 200-250 words per minute for native speakers, though this varies based on text complexity and the reader experience level."},{"q":"Does your tool handle Latin alphabet?","a":"Yes. Our Italian Word Counter is specifically designed to handle Latin alphabet accurately. It accounts for combined preposition-articles and phonetic spelling that generic word counters miss."}]
+const faqs = [
+  { q: 'Quante parole deve avere un articolo SEO in italiano?', a: '1.500–2.500 parole. La prima posizione su Google.it ha in media 2.500 parole. Guide approfondite possono essere più lunghe, ma la qualità conta più della quantità.' },
+  { q: 'Le landing page italiane quanto devono essere lunghe?', a: '800–1.200 parole. I dati di Unbounce mostrano che le landing page con 900–1.100 parole hanno il tasso di conversione più alto nel mercato italiano.' },
+  { q: 'Di quanto è più lungo il testo italiano rispetto all\'inglese?', a: 'Il 15–20% in più per parole. Testi tecnici possono arrivare al 25% in più. Questo è dovuto agli articoli, alle preposizioni articolate e alle forme verbali composte dell\'italiano.' },
+  { q: 'Quanto deve essere lunga una scheda prodotto?', a: '400–800 parole. Includi caratteristiche, vantaggi, scenari d\'uso e risposte alle domande frequenti. Descrizioni dettagliate migliorano la conversione del 20%.' },
+  { q: 'Quanto spesso inserire i sottotitoli?', a: 'Ogni 200–300 parole — H2 o H3. Con il 78% di traffico mobile in Italia, i sottotitoli sono fondamentali per la navigazione durante lo scroll.' },
+  { q: 'La lunghezza del testo influenza il posizionamento?', a: 'Esiste una correlazione positiva tra lunghezza e posizionamento, ma Google premia la profondità e la rilevanza. Un testo lungo ma poco utile si posiziona peggio di uno breve ma completo.' }
+]
 
 export default function Post() {
   return (
@@ -26,82 +32,96 @@ export default function Post() {
       <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
+        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Torna al Blog</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Italian Content Length Guide: How Many Words Do You Need? (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated March 2026 | 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">La lunghezza ideale dei testi in italiano: guida basata sui dati (2026)</h1>
+          <p className="text-slate-400 text-sm mb-8">Aggiornato ad aprile 2026 | Tempo di lettura: 10 min</p>
           <div className="result-box mb-8 border-emerald-500/30">
-            <h2 className="text-emerald-400 font-bold mb-3">Quick Summary</h2>
-            <p className="text-white">Italian (Italiano) is spoken by <strong>85 million</strong> people. It uses Latin alphabet and has unique word counting challenges due to combined preposition-articles and phonetic spelling. Use our free <a href="/word-counter/language/italian" className="text-emerald-400 underline">Italian Word Counter</a> for accurate results.</p>
+            <h2 className="text-emerald-400 font-bold mb-3">Riepilogo</h2>
+            <p className="text-white">Gli articoli nella prima pagina di Google.it hanno in media <strong className="text-white">2.100 parole</strong> (SEMrush Italia, 2024). Le landing page convertono meglio con <strong className="text-white">800–1.200 parole</strong>. L'Italia ha <strong className="text-white">51,4 milioni di utenti internet</strong> (87% della popolazione). Usa il nostro <a href="/word-counter/language/italian" className="text-emerald-400 underline">contaparole italiano</a> per verificare la lunghezza dei tuoi testi.</p>
           </div>
           <div className="space-y-8">
+
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Why Content Length Matters in Italian</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Content length is one of the most important factors for Italian content success. Too short and your content lacks depth. Too long and you lose reader attention. Finding the right length for each content type is essential.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Italian content length works differently from English because of the language structure. Italian text is typically 15-25% longer than English. Definite articles are more common (il, lo, la, i, gli, le) and adjectives often follow nouns. Combined prepositions (del, nel, sul) count as single words but represent two English words.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">This guide provides data-driven Italian content length recommendations for every major format. All recommendations are based on analysis of high-performing Italian content and adjusted for the language-specific word count characteristics.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Cosa dicono i dati sulla lunghezza dei testi</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">SEMrush Italia ha analizzato i primi 20 risultati per 6.000 keyword italiane nel 2024. Risultato: le pagine nella prima posizione hanno in media 2.500 parole, alla decima posizione circa 1.600 parole. La correlazione tra lunghezza e posizionamento è chiara.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Ma attenzione: più lungo non significa automaticamente migliore. Google premia la profondità e la rilevanza, non il semplice volume. Un articolo di 3.000 parole che divaga si posiziona peggio di uno di 1.500 parole che risponde direttamente alla domanda dell'utente.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Il mercato digitale italiano è in forte crescita: 54,2 miliardi di euro di e-commerce nel 2024 (Osservatorio del Politecnico di Milano), con il 38% del traffico proveniente dalla ricerca organica. Chi investe in contenuti di qualità ora ha un vantaggio competitivo.</p>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 240" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>Parole medie: Google.it Top 10 (2024)</text>
+                  <rect x="130" y="45" width="390" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="130" y="45" width={String(390*0.83)} height="28" rx="4" fill="#10b981" />
+                  <text x="120" y="63" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Posizione 1</text>
+                  <text x={String(130+390*0.83+8)} y="63" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>2.500 parole</text>
+                  <rect x="130" y="81" width="390" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="130" y="81" width={String(390*0.73)} height="28" rx="4" fill="#10b981" />
+                  <text x="120" y="99" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Posizione 3</text>
+                  <text x={String(130+390*0.73+8)} y="99" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>2.200 parole</text>
+                  <rect x="130" y="117" width="390" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="130" y="117" width={String(390*0.63)} height="28" rx="4" fill="#10b981" />
+                  <text x="120" y="135" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Posizione 5</text>
+                  <text x={String(130+390*0.63+8)} y="135" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1.900 parole</text>
+                  <rect x="130" y="153" width="390" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="130" y="153" width={String(390*0.56)} height="28" rx="4" fill="#10b981" />
+                  <text x="120" y="171" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Posizione 7</text>
+                  <text x={String(130+390*0.56+8)} y="171" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1.700 parole</text>
+                  <rect x="130" y="189" width="390" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="130" y="189" width={String(390*0.53)} height="28" rx="4" fill="#10b981" />
+                  <text x="120" y="207" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Posizione 10</text>
+                  <text x={String(130+390*0.53+8)} y="207" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1.600 parole</text>
+                </svg>
+              </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Italian Blog Post Length</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Blog post length in Italian directly impacts search rankings, reader engagement, and conversion rates. Here are the recommended lengths by content type.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Short-form Italian blog posts (500-800 words): Best for news updates, quick tips, and simple how-to guides. These posts are fast to produce but rarely rank for competitive keywords.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Medium-form Italian blog posts (1000-1500 words): The sweet spot for most informational content. Long enough to be comprehensive but short enough to hold attention. Most successful Italian blogs target this range.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Long-form Italian blog posts (1500-3000 words): Required for competitive keywords and establishing topical authority. These posts demonstrate expertise and earn more backlinks.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Ultra-long-form Italian content (3000+ words): Reserved for definitive guides and pillar content. Only create ultra-long content when the topic genuinely requires comprehensive coverage.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our Italian Word Counter at wordcountertool.net/word-counter/language/italian to track your content length as you write. Hitting the right word count for your content type is crucial for performance.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Lunghezza per tipo di contenuto</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Articoli blog e guide:</strong> 1.500–2.500 parole. Guide approfondite possono arrivare a 3.000+. Usa sottotitoli ogni 200–300 parole per la leggibilità.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Landing page:</strong> 800–1.200 parole. Le landing page italiane con 900–1.100 parole hanno il tasso di conversione più alto secondo i dati di Unbounce Italia (2024).</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Schede prodotto (Amazon.it, ePrice):</strong> 400–800 parole. Descrizioni dettagliate con caratteristiche, vantaggi e scenari d'uso migliorano la conversione del 20%.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Newsletter:</strong> 200–400 parole. Secondo Mailchimp Italia, le email fino a 300 parole hanno il CTR più alto nel mercato italiano.</p>
             </section>
 
-          {/* MID_AD */}
-          <AdUnit slot="3248634657" />
-
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Italian Social Media Post Length</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Social media engagement in Italian varies significantly by platform and post length. Here are the optimal lengths.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Twitter/X Italian posts: 71-100 characters get the highest engagement. Italian can convey different amounts of information in this range compared to English.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Instagram Italian captions: 138-150 characters for maximum likes. For carousel posts, longer captions of 300-500 characters perform well because readers are already engaged.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Facebook Italian posts: 40-80 characters for link shares. For text-only posts, 100-250 characters generates the most comments and shares.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">LinkedIn Italian posts: 1,300-2,000 characters for thought leadership content. Professional Italian audiences engage more with longer, substantive posts.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">TikTok Italian captions: Keep to 100-150 characters. Short, punchy Italian text with hashtags performs best for video content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Remember to count characters accurately using our Italian character counter. Italian characters in Latin alphabet may be counted differently by various platforms.</p>
-            </section>
             <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Italian Email and Newsletter Length</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Email marketing in Italian requires precise content length to maximize open rates, click-through rates, and conversions.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Subject lines: 30-50 characters in Italian. Shorter subjects have higher open rates. Include the most important keyword or benefit first.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Preview text: 40-90 characters in Italian. This text appears after the subject line in most email clients and significantly impacts open rates.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Newsletter body: 200-500 Italian words for regular newsletters. Focus on one main topic with a clear call to action. Longer newsletters see higher unsubscribe rates.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Promotional emails: 50-125 Italian words. Get to the point quickly. Italian readers respond best to concise promotional messages with clear benefits and prominent CTAs.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Transactional emails: Keep to 100-200 Italian words. Include only essential information: what happened, what the user needs to do next, and where to get help.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our word counter to ensure every email hits the optimal length for maximum performance.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Italiano vs inglese: rapporto di lunghezza</h2>
+              <div className="overflow-x-auto mb-4">
+                <table className="w-full text-sm" style={{borderCollapse:'collapse'}}>
+                  <thead>
+                    <tr style={{borderBottom:'1px solid rgba(52,211,153,0.2)'}}>
+                      <th className="text-left text-emerald-400 py-2 px-3">Inglese</th>
+                      <th className="text-left text-emerald-400 py-2 px-3">Italiano (stessa informazione)</th>
+                      <th className="text-left text-emerald-400 py-2 px-3">Rapporto</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ['1.000 parole', '~1.150–1.200 parole', 'IT +15–20%'],
+                      ['1.500 parole', '~1.725–1.800 parole', 'IT +15–20%'],
+                      ['2.000 parole', '~2.300–2.400 parole', 'IT +15–20%'],
+                    ].map((row, i) => (
+                      <tr key={i} style={{borderBottom:'1px solid rgba(52,211,153,0.1)'}}>
+                        <td className="text-white py-2 px-3 font-medium">{row[0]}</td>
+                        <td className="text-slate-400 py-2 px-3">{row[1]}</td>
+                        <td className="text-slate-400 py-2 px-3">{row[2]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Se traduci contenuti dall'inglese, pianifica un aumento del 15–20%. Usa il nostro <a href="/word-counter/language/italian" className="text-emerald-400 underline">contaparole</a> per verificare il volume finale e il <a href="/readability-checker" className="text-emerald-400 underline">verificatore di leggibilità</a> per assicurarti che il testo sia scorrevole.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Italian Ad Copy and Marketing Length</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Advertising copy in Italian must be precise because every character counts toward your budget and impact.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Google Search Ads: Headlines up to 30 characters each (3 headlines), descriptions up to 90 characters each (2 descriptions). Italian text must fit within these exact limits while being compelling.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Facebook/Instagram Ads: Primary text 125 characters before "See More" cutoff. Headlines 27 characters. Italian ad copy should front-load the most important message.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Display banner ads: Depends on size, but generally 5-15 Italian words maximum. Every word must earn its place in limited space.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Video ad scripts: 60-second Italian video scripts should be 130-160 words. 30-second scripts: 65-80 words. 15-second scripts: 30-40 words.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Landing page headlines: 6-12 Italian words. The headline is the most important element and must clearly communicate your value proposition in Italian.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Come misurare e ottimizzare la lunghezza</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Analisi competitiva:</strong> Verifica la lunghezza dei primi 5 risultati su Google.it per la tua keyword target. Punta alla media dei concorrenti +15%.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Tempo di lettura:</strong> Mostra il tempo di lettura all'inizio dell'articolo. L'ideale per i blog italiani è 7–10 minuti (1.700–2.400 parole).</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Sottotitoli:</strong> Ogni 200–300 parole un H2 o H3. Con il 78% di traffico mobile in Italia (Audiweb 2024), i sottotitoli sono essenziali per la navigazione con lo scroll.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Measuring and Optimizing Italian Content Length</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Tracking your Italian content length over time helps you identify what works best for your audience.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our Italian Word Counter tool to measure every piece of content before publication. Create a spreadsheet tracking word count, content type, and performance metrics for each piece.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">A/B test different Italian content lengths. Publish similar topics at different lengths and compare engagement metrics after 30 days. This gives you audience-specific data that is more valuable than general guidelines.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Analyze your top-performing Italian content. What word counts do your most successful posts have? This data reveals your optimal content length.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Monitor Italian search results for your target keywords. Count the average word count of the top 5 ranking pages. Your content should match or exceed this length to compete.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Remember that quality always trumps quantity. A perfectly crafted 1000-word Italian post outperforms a bloated 3000-word post with filler content. Use our Italian Word Counter to ensure every word earns its place.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Visit wordcountertool.net/word-counter/language/italian to start counting your Italian content accurately and for free.</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Domande Frequenti</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
           </div>
@@ -110,19 +130,20 @@ export default function Post() {
 
       <div className="max-w-4xl mx-auto px-4 mb-8">
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-white mb-3">Try These Italian Tools</h2>
+          <h2 className="text-lg font-bold text-white mb-3">Strumenti per la Scrittura in Italiano</h2>
           <div className="flex flex-wrap gap-2">
-            <a href="/word-counter/language/italian" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Italian Word Counter</a>
-            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
-            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
-            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
-            <a href="/words-per-minute" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Minute</a>
+            <a href="/word-counter/language/italian" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Contaparole Italiano</a>
+            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Contaparole</a>
+            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Contacaratteri</a>
+            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Tempo di Lettura</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Verifica Leggibilità</a>
+            <a href="/keyword-density" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Densità Parole Chiave</a>
           </div>
         </div>
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Italian Content Length Guide: How Many Words Do You Need? (2026)","description":"The definitive guide to Italian content length for every format. Blog posts, social media, email, ads, and more. Data-driven word count recommendations.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-22","dateModified":"2026-03-22","mainEntityOfPage":"https://www.wordcountertool.net/blog/italian-content-length-guide"})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"Italian Content Length Guide: How Many Words Do You Need? (2026)","item":"https://www.wordcountertool.net/blog/italian-content-length-guide"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"La lunghezza ideale dei testi in italiano: guida basata sui dati (2026)","description":"Quante parole deve avere il tuo contenuto in italiano? Blog, landing page, e-commerce — con dati reali di Google Italia, SEMrush e Audiweb.","inLanguage":"it","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-04-05","dateModified":"2026-04-05","mainEntityOfPage":"https://www.wordcountertool.net/blog/italian-content-length-guide"})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"La lunghezza ideale dei testi in italiano: guida basata sui dati (2026)","item":"https://www.wordcountertool.net/blog/italian-content-length-guide"}]})}} />
 
       <Footer />
     </>

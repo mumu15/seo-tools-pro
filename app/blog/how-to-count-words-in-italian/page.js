@@ -5,20 +5,26 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-count-words-in-italian' },
-  title: 'How to Count Words in Italian: Complete Guide (2026)',
-  description: 'Learn how to accurately count words in Italian text. Understand Italian word boundaries, character counting, and use our free Italian word counter tool.',
+  title: 'Come contare le parole in italiano: guida completa (2026)',
+  description: 'Come contare parole, caratteri e frasi in italiano. Differenze con l'inglese, velocità di lettura, strumenti gratuiti per il conteggio.',
   openGraph: {
-    title: 'How to Count Words in Italian: Complete Guide (2026)',
-    description: 'Learn how to accurately count words in Italian text. Understand Italian word boundaries, character counting, and use our free Italian word counter tool.',
+    title: 'Come contare le parole in italiano: guida completa (2026)',
+    description: 'Come contare parole, caratteri e frasi in italiano. Differenze con l'inglese, velocità di lettura, strumenti gratuiti per il conteggio.',
     url: 'https://www.wordcountertool.net/blog/how-to-count-words-in-italian',
     siteName: 'WordCounterTool',
     type: 'article',
   },
 }
 
-const faqs = [{"q":"How do I count words in Italian?","a":"Use our free Italian Word Counter at wordcountertool.net/word-counter/language/italian. Paste your Italian text and get instant word count, character count, sentence count, and reading time."},{"q":"Is the Italian word counter free?","a":"Yes, completely free with no sign-up required. Our Italian word counter tool works instantly in your browser with no data stored or sent to any server."},{"q":"How many words per minute does the average person read in Italian?","a":"The average Italian reading speed is approximately 200-250 words per minute for native speakers, though this varies based on text complexity and the reader experience level."},{"q":"Does your tool handle Latin alphabet?","a":"Yes. Our Italian Word Counter is specifically designed to handle Latin alphabet accurately. It accounts for combined preposition-articles and phonetic spelling that generic word counters miss."}]
+const faqs = [
+  { q: 'Come contare le parole in un testo italiano?', a: 'Usa il contaparole gratuito su WordCounterTool.net. Incolla il testo e ottieni istantaneamente: parole, caratteri (con e senza spazi), frasi, paragrafi e tempo di lettura. Lo strumento riconosce correttamente le lettere accentate italiane.' },
+  { q: 'I testi italiani sono più lunghi di quelli inglesi?', a: 'Sì. Le traduzioni dall\'inglese all\'italiano sono in media il 15–20% più lunghe. Per testi tecnici l\'aumento può raggiungere il 25%. Questo è dovuto agli articoli, alle preposizioni articolate e alle forme verbali composte.' },
+  { q: 'Qual è la velocità di lettura in italiano?', a: 'Testi informativi: 230–260 parole al minuto. Narrativa: 260–300. Testi tecnici: 180–220. Il nostro strumento calcola il tempo di lettura basandosi su 240 parole al minuto.' },
+  { q: 'Cos\'è una "battuta" nell\'editoria italiana?', a: 'Una "battuta" è un carattere spazi inclusi. Una cartella editoriale standard è di 1.800 battute (circa 250–300 parole). Questa unità di misura è usata nell\'editoria per calcolare compensi e lunghezze.' },
+  { q: 'Quante parole servono per un articolo SEO in italiano?', a: 'Per la SEO si consigliano 1.500–2.500 parole. Le pagine nella prima pagina di Google.it hanno in media 2.100 parole. Articoli più lunghi tendono a posizionarsi meglio e a ottenere più backlink.' },
+  { q: 'Le preposizioni articolate contano come una o due parole?', a: 'Come una parola. "Del" (di + il), "nella" (in + la), "sugli" (su + gli) sono parole singole nel conteggio. Il nostro strumento le conta correttamente.' }
+]
 
 export default function Post() {
   return (
@@ -26,72 +32,118 @@ export default function Post() {
       <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
+        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Torna al Blog</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">How to Count Words in Italian: Complete Guide (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated March 2026 | 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Come contare le parole in italiano: guida completa (2026)</h1>
+          <p className="text-slate-400 text-sm mb-8">Aggiornato ad aprile 2026 | Tempo di lettura: 8 min</p>
           <div className="result-box mb-8 border-emerald-500/30">
-            <h2 className="text-emerald-400 font-bold mb-3">Quick Summary</h2>
-            <p className="text-white">Italian (Italiano) is spoken by <strong>85 million</strong> people. It uses Latin alphabet and has unique word counting challenges due to combined preposition-articles and phonetic spelling. Use our free <a href="/word-counter/language/italian" className="text-emerald-400 underline">Italian Word Counter</a> for accurate results.</p>
+            <h2 className="text-emerald-400 font-bold mb-3">Riepilogo</h2>
+            <p className="text-white">I testi italiani sono in media <strong className="text-white">15–20% più lunghi</strong> degli equivalenti inglesi. La velocità di lettura media in italiano è di <strong className="text-white">230–260 parole al minuto</strong>. L'italiano usa l'<strong className="text-white">alfabeto latino con 21 lettere</strong> native + 5 straniere (j, k, w, x, y). Usa il nostro <a href="/word-counter/language/italian" className="text-emerald-400 underline">contaparole italiano</a> per risultati precisi.</p>
           </div>
           <div className="space-y-8">
+
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Why Counting Words in Italian Is Different</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Italian (Italiano) is spoken by 85 million people across Italy, Switzerland, San Marino. It uses Latin alphabet with 21 core letters + 5 foreign letters. Italian has a highly phonetic spelling system. It uses only 21 native letters (no J, K, W, X, Y). Italian has two grammatical genders and complex verb conjugations with many irregular verbs. Articles and adjectives agree in gender and number.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When it comes to word counting, Italian presents unique challenges compared to English. Italian text is typically 15-25% longer than English. Definite articles are more common (il, lo, la, i, gli, le) and adjectives often follow nouns. Combined prepositions (del, nel, sul) count as single words but represent two English words.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Understanding these differences is critical for anyone writing, translating, or optimizing content in Italian. Whether you are a content creator, translator, student, or SEO professional, accurate word counting in Italian requires the right tools and knowledge.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Perché il conteggio delle parole in italiano è diverso</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">L'italiano è una lingua romanza che tende a essere più verbosa dell'inglese. Le ragioni sono molteplici: articoli determinativi e indeterminativi (il, lo, la, i, gli, le, un, uno, una), preposizioni articolate (del, dello, della, dei, degli, delle), forme verbali composte e la tendenza a costruzioni più elaborate.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Secondo i dati di SDL/RWS Translation Memory (2024), la traduzione dall'inglese all'italiano risulta in media il 15–20% più lunga in termini di numero di parole. Per i testi tecnici l'aumento può raggiungere il 25%. Questo significa che un articolo inglese di 1.000 parole diventerà circa 1.150–1.200 parole in italiano.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Le preposizioni articolate come "del" (di + il), "nella" (in + la), "sugli" (su + gli) sono una sola parola — e il nostro contaparole le conta correttamente come singole parole.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Italian Writing System Explained</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Italian uses a alphabetic (Latin) writing system. The left-to-right reading direction and Latin alphabet create a unique writing experience. The average word length in Italian is 5-7 characters, which differs significantly from English average of 4-5 characters.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The Italian word order follows a SVO (Subject-Verb-Object) pattern, which affects how sentences are structured and how word count relates to meaning. A sentence that takes 10 words in English might take more or fewer words in Italian depending on the grammatical features being used.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">One of the most distinctive features of Italian is combined preposition-articles and phonetic spelling. This directly impacts how word counting tools process Italian text and why specialized tools are needed for accurate results.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Parole, caratteri e battute: le differenze</h2>
+              <div className="overflow-x-auto mb-4">
+                <table className="w-full text-sm" style={{borderCollapse:'collapse'}}>
+                  <thead>
+                    <tr style={{borderBottom:'1px solid rgba(52,211,153,0.2)'}}>
+                      <th className="text-left text-emerald-400 py-2 px-3">Metrica</th>
+                      <th className="text-left text-emerald-400 py-2 px-3">Definizione</th>
+                      <th className="text-left text-emerald-400 py-2 px-3">Esempio ("Roma è una bella città")</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ['Parole', 'Unità separate da spazi', '5 parole'],
+                      ['Caratteri (con spazi)', 'Tutti i caratteri inclusi spazi', '24 caratteri'],
+                      ['Caratteri (senza spazi)', 'Solo lettere e segni', '20 caratteri'],
+                      ['Battute', 'Sinonimo editoriale di caratteri con spazi', '24 battute'],
+                    ].map((row, i) => (
+                      <tr key={i} style={{borderBottom:'1px solid rgba(52,211,153,0.1)'}}>
+                        <td className="text-white py-2 px-3 font-medium">{row[0]}</td>
+                        <td className="text-slate-400 py-2 px-3">{row[1]}</td>
+                        <td className="text-slate-400 py-2 px-3">{row[2]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Nell'editoria italiana si usa spesso il termine "battute" (caratteri spazi inclusi). Una cartella editoriale standard è di 1.800 battute (circa 250–300 parole). Per il web e la SEO, il conteggio delle parole è la metrica più usata. Il nostro strumento mostra entrambi.</p>
             </section>
 
-          {/* MID_AD */}
-          <AdUnit slot="3248634657" />
-
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Step-by-Step: Counting Italian Words Online</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The easiest way to count words in Italian is to use our free Italian Word Counter tool. Here is how to do it:</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">First, navigate to our Italian Word Counter at wordcountertool.net/word-counter/language/italian. You will see a clean text input area designed for Italian text.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Second, paste or type your Italian text into the input field. The tool instantly analyzes your text and provides word count, character count, sentence count, and paragraph count.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Third, review the detailed breakdown. Our tool handles Italian-specific challenges like combined preposition-articles and phonetic spelling, giving you accurate results that generic word counters miss.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Fourth, use the reading time estimate to understand how long your Italian content will take to read. This is especially useful for presentations, speeches, and content planning.</p>
-            </section>
             <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Italian Word Count vs English Word Count</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When comparing Italian and English text, the word count relationship is important to understand. Italian text is typically 15-25% longer than English. Definite articles are more common (il, lo, la, i, gli, le) and adjectives often follow nouns. Combined prepositions (del, nel, sul) count as single words but represent two English words.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">This difference has practical implications for several professional contexts. Translators charging by the word need to account for the expansion or contraction between languages. Content creators targeting specific word counts must adjust their expectations. SEO professionals optimizing Italian content need different benchmarks than English content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">For example, a 1000-word English blog post might translate to a different word count in Italian. Understanding this ratio helps you plan content length appropriately and set realistic targets for Italian writing projects.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Our Italian Word Counter tool accounts for these differences and provides accurate counts regardless of the text length or complexity.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Come usare il contaparole italiano</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Passo 1:</strong> Apri il <a href="/word-counter/language/italian" className="text-emerald-400 underline">contaparole italiano</a> su WordCounterTool.net.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Passo 2:</strong> Incolla il tuo testo italiano. Lo strumento riconosce automaticamente le lettere accentate (à, è, é, ì, ò, ù) e le conta correttamente.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Passo 3:</strong> Controlla i risultati: parole, caratteri (con e senza spazi), frasi, paragrafi e tempo di lettura stimato.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Passo 4:</strong> Usa il conteggio parole per articoli e SEO, i caratteri per social media e meta description.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">La velocità di lettura in italiano è circa 230–260 parole al minuto per testi informativi, 260–300 per narrativa. Il nostro strumento calcola il tempo di lettura basandosi su 240 parole al minuto.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Italian SEO Writing Tips</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Italian SEO should account for regional dialect searches. Northern and Southern Italian vocabulary differs. The formal/informal distinction (Lei/tu) affects content tone and search behavior.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When writing SEO content in Italian, word count matters but it is not the only factor. Here are key tips for optimizing Italian content:</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">First, use natural Italian phrasing rather than direct translations from English. Search engines are increasingly sophisticated at detecting and penalizing unnatural language.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Second, research keywords specifically in Italian. Direct keyword translations often miss the terms native speakers actually search for. Use Italian-specific keyword research tools and check autocomplete suggestions in Italian.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Third, aim for comprehensive content. Italian readers expect thorough coverage of topics. A minimum of 1500 words (or the Italian equivalent) is recommended for pillar content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Fourth, optimize your metadata in Italian. Title tags, meta descriptions, and header tags should all be written naturally in Italian with target keywords included.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Numero di parole consigliato per tipo di contenuto</h2>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 260" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>Parole consigliate per tipo di contenuto (italiano)</text>
+                  <rect x="180" y="45" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="45" width={String(340*0.80)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="63" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Articolo blog</text>
+                  <text x={String(180+340*0.80+8)} y="63" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1.500–2.500</text>
+                  <rect x="180" y="81" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="81" width={String(340*0.50)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="99" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Landing page</text>
+                  <text x={String(180+340*0.50+8)} y="99" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>800–1.200</text>
+                  <rect x="180" y="117" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="117" width={String(340*0.30)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="135" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Scheda prodotto</text>
+                  <text x={String(180+340*0.30+8)} y="135" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>400–700</text>
+                  <rect x="180" y="153" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="153" width={String(340*0.18)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="171" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Newsletter</text>
+                  <text x={String(180+340*0.18+8)} y="171" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>250–450</text>
+                  <rect x="180" y="189" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="189" width={String(340*1.0)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="207" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Tesi di laurea</text>
+                  <text x={String(180+340*1.0-100)} y="207" fill="#ffffff" style={{fontSize:'12px',fontWeight:'600'}}>15.000–30.000</text>
+                </svg>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Ricorda: i testi italiani sono naturalmente più lunghi di quelli inglesi. Se traduci contenuti, aspettati un aumento del 15–20% nel conteggio parole. Non significa che il testo sia prolisso — è la natura della lingua.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Common Italian Word Counting Mistakes</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Many people make mistakes when counting words in Italian. Here are the most common errors and how to avoid them.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The first mistake is using English-optimized word counters that do not properly handle Latin alphabet. These tools may miscount or completely fail with Italian text. Always use a tool specifically designed for Italian.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The second mistake is confusing character count with word count. In Italian, these can be very different numbers. A Italian text with 500 characters might have a very different word count than an English text with 500 characters.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The third mistake is not accounting for combined preposition-articles and phonetic spelling. This feature of Italian means that standard whitespace-based counting may not give accurate results.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The fourth mistake is applying English word count benchmarks to Italian content. Because of the structural differences between the languages, you need Italian-specific benchmarks for content length.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Il mercato digitale italiano in numeri</h2>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 180" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>Internet in Italia (dati 2024)</text>
+                  <rect x="140" y="45" width="370" height="30" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="140" y="45" width={String(370*0.87)} height="30" rx="4" fill="#10b981" />
+                  <text x="130" y="64" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Utenti internet</text>
+                  <text x={String(140+370*0.87+8)} y="64" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>51,4 mln (87%)</text>
+                  <rect x="140" y="83" width="370" height="30" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="140" y="83" width={String(370*0.78)} height="30" rx="4" fill="#10b981" />
+                  <text x="130" y="102" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Mobile</text>
+                  <text x={String(140+370*0.78+8)} y="102" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>78% del traffico</text>
+                  <rect x="140" y="121" width="370" height="30" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="140" y="121" width={String(370*0.95)} height="30" rx="4" fill="#10b981" />
+                  <text x="130" y="140" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Quota Google</text>
+                  <text x={String(140+370*0.95+8)} y="140" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>95,2%</text>
+                </svg>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">L'Italia ha 51,4 milioni di utenti internet (87% della popolazione — Audiweb 2024). Google domina con il 95,2% di quota di mercato. Il mercato e-commerce italiano vale 54,2 miliardi di euro (Osservatorio del Politecnico di Milano 2024), con il 38% del traffico proveniente dalla ricerca organica.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Domande Frequenti</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
           </div>
@@ -100,19 +152,20 @@ export default function Post() {
 
       <div className="max-w-4xl mx-auto px-4 mb-8">
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-white mb-3">Try These Italian Tools</h2>
+          <h2 className="text-lg font-bold text-white mb-3">Strumenti per la Scrittura in Italiano</h2>
           <div className="flex flex-wrap gap-2">
-            <a href="/word-counter/language/italian" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Italian Word Counter</a>
-            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
-            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
-            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
-            <a href="/words-per-minute" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Minute</a>
+            <a href="/word-counter/language/italian" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Contaparole Italiano</a>
+            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Contaparole</a>
+            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Contacaratteri</a>
+            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Tempo di Lettura</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Verifica Leggibilità</a>
+            <a href="/keyword-density" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Densità Parole Chiave</a>
           </div>
         </div>
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How to Count Words in Italian: Complete Guide (2026)","description":"Learn how to accurately count words in Italian text. Understand Italian word boundaries, character counting, and use our free Italian word counter tool.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-22","dateModified":"2026-03-22","mainEntityOfPage":"https://www.wordcountertool.net/blog/how-to-count-words-in-italian"})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"How to Count Words in Italian: Complete Guide (2026)","item":"https://www.wordcountertool.net/blog/how-to-count-words-in-italian"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Come contare le parole in italiano: guida completa (2026)","description":"Come contare parole, caratteri e frasi in italiano. Differenze con l'inglese, velocità di lettura, strumenti gratuiti per il conteggio.","inLanguage":"it","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-04-05","dateModified":"2026-04-05","mainEntityOfPage":"https://www.wordcountertool.net/blog/how-to-count-words-in-italian"})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"Come contare le parole in italiano: guida completa (2026)","item":"https://www.wordcountertool.net/blog/how-to-count-words-in-italian"}]})}} />
 
       <Footer />
     </>
