@@ -1,4 +1,5 @@
 import './globals.css'
+import ThemeProvider from './components/ThemeProvider'
 import Script from 'next/script'
 
 export const metadata = {
@@ -45,9 +46,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
+      
+        <script dangerouslySetInnerHTML={{ __html: `
+          (function() {
+            var t = localStorage.getItem('wct-theme');
+            if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+          })()
+        ` }} />
       <body>
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
         {/* Google Analytics — loads after page is interactive, does NOT block render */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-9VCD465V0S"
