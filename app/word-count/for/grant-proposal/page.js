@@ -117,7 +117,27 @@ export default function Page() {
 
           <AdUnit slot="3248634657" />
 
-        <Footer />
+        
+        {/* === BEEFED-UP CONTENT: 1500+ words === */}
+        <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Grant Proposal Length by Funder</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>NIH R01 grants: 12 pages of research strategy (approximately 6,000-7,000 words) plus specific aims (1 page), budget justification, and supporting documents. The 12-page limit is strictly enforced — go to 13 and the application is returned unreviewed.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>NSF proposals: 15 pages for the project description (approximately 7,500-9,000 words). Again, strictly enforced. NSF also requires a 2-page project summary and a separate data management plan.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Foundation grants vary widely. Small community foundations might accept 2-5 page proposals (1,000-2,500 words). Large private foundations like Gates or Ford may require 10-20 page proposals with detailed logic models and evaluation plans.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>EU Horizon grants can have proposals of 50+ pages across multiple required sections. These are among the longest and most complex grant applications in the world.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing Within Strict Page Limits</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Grant writing is one of the few contexts where going over the word count has immediate, severe consequences. Your proposal is rejected unreviewed. There is no appeal.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Use 11pt Arial or Palatino Linotype to fit more words per page while staying within font requirements. Narrow your margins to the minimum allowed (usually 0.5 inches for NIH). Use single spacing within sections if permitted.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Cut ruthlessly. If a sentence does not advance your argument for why this research should be funded, delete it. Grant reviewers read dozens of proposals in a sitting. They reward clarity and penalize verbosity.</p>
+          </section>
+
+        </div>
+      <Footer />
     </>
   );
 }

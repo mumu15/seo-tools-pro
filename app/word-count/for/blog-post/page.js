@@ -117,7 +117,49 @@ export default function Page() {
 
           <AdUnit slot="3248634657" />
 
-        <Footer />
+        
+        {/* === BEEFED-UP CONTENT: 1500+ words === */}
+        <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Blog Post Length and the 2026 Algorithm</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Google does not count words. This has been stated directly by Google\'s Search Liaison multiple times. But the data consistently shows a pattern: the average first-page result contains about 1,447 words (Backlinko, 11.8 million results analyzed). Top-performing content often exceeds 2,000 words.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The explanation is not that Google rewards length. It is that comprehensive content tends to be longer, tends to earn more backlinks, and tends to keep readers on the page longer. All three of those signals help rankings. Length is a byproduct of quality, not a cause of it.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The average blog post in 2025 was 1,333 words (Orbit Media survey). Only 9% of bloggers write posts over 2,000 words. But 39% of those long-form bloggers report strong results, compared to 21% of average-length bloggers. The effort premium is real.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Optimal Length by Blog Post Type</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>List posts (listicles): 1,000-1,800 words. Readers expect these to be scannable and actionable. A "15 Tips for Better Email Subject Lines" post at 1,200 words gives each tip about 80 words — enough for a sentence of context and an example. Padding each tip to 200 words makes the post feel slow.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>How-to guides: 1,500-2,500 words. Step-by-step content needs enough detail for the reader to actually follow the instructions. Screenshots, code blocks, and examples add to the visual length without inflating the word count. If the process has 10 steps, 150-250 words per step is reasonable.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Data-driven or research content: 2,000-3,500 words. Original research performs exceptionally well for SEO because it generates backlinks when other sites cite your findings. The extra length comes from methodology explanations, data tables, and analysis — not padding.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Product reviews and comparisons: 1,000-2,000 words. Readers want pros, cons, pricing, and a recommendation. Going beyond 2,000 usually means you are reviewing too many products in one post or adding filler context the reader already knows.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>News and trend pieces: 500-1,000 words. These have a short shelf life. Write them fast, publish them fast, and move on. A 3,000-word analysis of a trend that changes in two weeks is wasted effort.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Why Most Blog Posts Are Too Long</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The "skyscraper technique" — writing the longest post on the internet about a topic — dominated SEO strategy from 2015 to 2022. It worked because Google\'s algorithm at the time rewarded comprehensiveness. It stopped working when the 2023-2024 Helpful Content Updates began penalizing sites that published high volumes of padded content.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A 5,000-word blog post that says what a 1,500-word post could say is not comprehensive. It is bloated. Readers notice. They bounce. Bounce rate is a user experience signal, and Google watches user experience signals. The irony of writing too much for SEO is that it can hurt your SEO.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>75% of readers prefer blog posts under 1,000 words (HubSpot). Yet the content that ranks best is 1,500-2,500 words. This gap means your longer content needs to be exceptionally well-structured — with headers, bullets, tables, and pull quotes — so that skimmers can extract value without reading every word.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Blog Length and Revenue</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The average US blogger earns around $103,000 annually according to Wix\'s 2025 data. But that average is heavily skewed by high earners. Most blogs make very little. The blogs that make money tend to have two things: consistent traffic and a monetization strategy that matches their content length.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Short posts (500-800 words) work well for ad-supported sites that need volume and page views. Longer posts (2,000+) work better for affiliate marketing and lead generation where the reader needs to trust the author before clicking a recommendation.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>There are 600 million active blogs worldwide. Publishing frequency is declining — most marketers now post 2-4 times per month rather than daily. The shift is toward fewer, better posts. Quality per word has replaced quantity of words as the winning strategy.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Practical Blog Length Strategy for 2026</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Search your target keyword. Open the top 5 results. Run them through a word counter. Calculate the average. That is your minimum. Then ask: what do all five miss? The answer to that question is your competitive advantage, and covering it will naturally add the right amount of length.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Set a target range, not a target number. "1,500-2,000 words" is a better goal than "exactly 1,800 words." Write to the point where you have said everything useful, then stop. If that is 1,300 words, publish at 1,300. If it takes 2,400, publish at 2,400.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Track what actually performs. After 3-6 months, check which posts get the most organic traffic. Note their word counts. That data, specific to your site and audience, is worth more than any generic benchmark. Your readers will tell you how long your posts should be through their behavior.</p>
+          </section>
+
+        </div>
+      <Footer />
     </>
   );
 }

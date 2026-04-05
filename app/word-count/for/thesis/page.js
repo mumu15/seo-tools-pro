@@ -117,7 +117,47 @@ export default function Page() {
 
           <AdUnit slot="3248634657" />
 
-        <Footer />
+        
+        {/* === BEEFED-UP CONTENT: 1500+ words === */}
+        <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Thesis Length by Academic Field</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The gap between fields is enormous. A PhD thesis in English literature or history might run 80,000-100,000 words. A PhD in physics or computer science might be 40,000-60,000 words, with much of the "content" being equations, figures, and code that do not contribute to the word count.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Master\'s theses show the same pattern. An MA in political science might require 20,000-30,000 words of dense argumentation. An MSc in engineering might be 15,000-20,000 words with the bulk of the work expressed in technical drawings, prototypes, or experimental data that sits in appendices.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The trend across most universities is toward shorter theses with more focused research questions. The 100,000-word PhD is becoming less common outside the humanities. Many science departments now accept thesis-by-publication, where three published papers plus a connecting introduction replace the traditional monograph.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Breaking Down a Thesis by Chapter</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A typical PhD thesis has five to seven chapters, and the word distribution is rarely even. The introduction runs 3,000-5,000 words. The literature review is often the longest chapter at 8,000-15,000 words. The methodology chapter runs 3,000-6,000 words. Results and discussion together take 10,000-20,000 words. The conclusion wraps up in 2,000-4,000 words.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A common mistake is spending too long on the literature review and running out of space (or energy) for the discussion. Your discussion is where original thinking lives. A 15,000-word lit review and a 3,000-word discussion suggests you spent more time summarizing others than developing your own ideas.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Appendices do not count toward the word limit at most institutions, so put raw data, interview transcripts, survey instruments, and supplementary tables there. This keeps your main chapters focused on argument and analysis rather than data presentation.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>How Long Should It Actually Take?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A full-time PhD student typically spends 6-12 months writing the thesis, after 2-3 years of research. That sounds like a lot of time for 80,000 words until you realize the writing is not linear. You write a chapter, get feedback, rewrite half of it, collect more data, rewrite again.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The productive output of a thesis writer is about 500-1,000 new words per day on a good day. But "new words" is misleading because you will also delete, rearrange, and rewrite roughly the same number of words. A realistic timeline for a 60,000-word thesis is 4-6 months of dedicated writing at 4-5 hours of writing per day.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Master\'s students have less time. Most MA/MSc programs allocate 3-6 months for the thesis, and students are often taking classes simultaneously. A 15,000-word master\'s thesis can be drafted in 6-8 weeks of focused work, with another 2-4 weeks for revision.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>What Examiners Actually Look At</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Examiners do not read your thesis linearly. They read the abstract, skim the introduction and conclusion, then dig into the methodology and results. The literature review gets skimmed unless the examiner has a specific question about your theoretical framework.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>This means the beginning and end of your thesis carry disproportionate weight. A sharp 300-word abstract can set the tone for the entire examination. A weak abstract — vague, full of jargon, missing results — puts the examiner in a skeptical frame before they reach page one.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Word count itself is rarely a problem at the thesis level. Examiners care about whether you have answered your research question, not whether you hit a number. But coming in significantly under the expected range (say, 50,000 words for a humanities PhD that expects 80,000) will raise questions about depth and rigor.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Thesis Writing in 2026: What Has Changed</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>AI writing tools have created new challenges for thesis supervision. Most universities now require AI disclosure statements, and some run submissions through AI detection tools. Using AI for grammar checking and structural feedback is generally accepted. Using it to generate literature review paragraphs is not.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The thesis-by-publication model is growing in popularity across STEM fields. Instead of a single 60,000-word document, students submit 3-4 published papers (10,000-15,000 words each) plus a 5,000-10,000 word introduction that ties them together. This format is shorter in total words but arguably harder because each paper must pass peer review.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Digital submission is now standard almost everywhere. This has made word count enforcement automatic — the system counts for you. It has also made formatting less critical since the document is read on screen, not printed. But check your university\'s requirements. Some still want a physical copy, and that means page count still matters.</p>
+          </section>
+
+        </div>
+      <Footer />
     </>
   );
 }

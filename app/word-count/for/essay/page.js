@@ -125,7 +125,47 @@ export default function Page() {
 
           <AdUnit slot="3248634657" />
 
-        <Footer />
+        
+        {/* === BEEFED-UP CONTENT: 1500+ words === */}
+        <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Why Essay Length Matters More Than You Think</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Word count is one of the few objective measures a grader has. Hit the range and your essay gets read as intended. Fall short by 20% and it signals you ran out of ideas. Go over by 20% and it signals you cannot edit yourself. Both hurt your grade before the first sentence is evaluated on merit.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A study of college admissions officers found that essays at 90-95% of the maximum word limit scored highest. For the Common App, that means 580-620 words out of the 650 allowed. Going right up to the limit feels desperate. Leaving 100 words on the table feels underprepared. The sweet spot is just under the ceiling.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>High school essays are shorter — typically 500-1,000 words — because the assignments are designed to test focus, not endurance. University essays stretch to 1,500-3,000 words because they require you to develop an argument with evidence, counterarguments, and analysis. The jump from high school to college writing is not just about quality. It is about stamina.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>The Real Word Counts That Get Submitted</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Common App essays: 650 words max, and the system enforces this. The median successful essay lands around 600 words. Supplemental essays range from 100 to 400 words depending on the school. Stanford asks for 250, Harvard asks for 200, UChicago gives you up to 650 for their extended essay.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>GRE issue essays average 400-600 words written in 30 minutes. GRE argument essays average 350-500 words. IELTS Writing Task 2 requires a minimum of 250 words, and most test-takers who score Band 7+ write 270-290 words. Going much beyond 300 on IELTS usually means less time for proofreading.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>For graduate coursework, a "standard essay" is usually 2,000-3,000 words. A literature review might run 4,000-6,000. A capstone paper or thesis proposal can hit 8,000-10,000. Always check the rubric. Word count expectations vary not just between universities, but between departments and individual professors.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>How to Write Exactly the Right Amount</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Start with an outline. Map your argument into 3-5 main points. Allocate roughly equal word counts to each section. For a 1,500-word essay: 150 words for the introduction, 350-400 words for each of three body sections, and 150 words for the conclusion. This math keeps you on track without counting every word as you write.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Write the first draft without looking at the word count. Seriously. Get your ideas down, then check. Most writers overshoot on a first draft, and cutting is easier than expanding. If you are under, ask yourself what your argument is missing. If a skeptical reader would push back on a point, that pushback needs an answer — and that answer adds words naturally.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The editing pass is where word count really gets dialed in. Cut every instance of "in order to" (use "to"), "due to the fact that" (use "because"), and "it is important to note that" (delete it — just state the thing). These mechanical trims can cut 10-15% without losing meaning. Then read aloud. If you stumble on a sentence, it is too long. Split it.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Do Citations Count in Your Word Count?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>This varies by institution and it catches students off guard every semester. Most universities exclude the reference list and bibliography from the word count. In-text citations — like (Smith, 2024) — are typically included because they are part of your sentences.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Footnotes and endnotes are a gray area. Chicago style papers can have substantial footnotes that rival the body text in length. Most professors exclude footnotes from the count, but some do not. If the assignment does not specify, ask. Losing marks for being 300 words "over" because of footnotes is avoidable.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Block quotes count toward the word count in almost all style guides. This is why experienced academic writers paraphrase wherever possible and reserve direct quotes for moments where the exact wording matters. A 200-word block quote in a 2,000-word essay means 10% of your paper is someone else talking.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Essay Length by Type: What the Data Shows</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Argumentative essays tend to run longer than other types because they require presenting a claim, supporting it with evidence, addressing counterarguments, and then reinforcing the original position. A solid argumentative essay needs at least 1,000 words to do this properly. Below that, you are either skipping the counterargument or skimming the evidence.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Narrative essays can be surprisingly short. A well-told personal story for a college application works beautifully at 500-600 words. Adding more often dilutes the emotional impact. The best narrative essays have a single moment, a single insight, and zero filler.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Analytical and expository essays scale with the complexity of the subject. Analyzing one poem might take 800 words. Analyzing the themes across three novels takes 3,000. The word count should match the scope of what you are analyzing, not an arbitrary target.</p>
+          </section>
+
+        </div>
+      <Footer />
     </>
   );
 }

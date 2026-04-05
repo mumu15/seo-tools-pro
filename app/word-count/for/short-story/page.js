@@ -117,7 +117,33 @@ export default function Page() {
 
           <AdUnit slot="3248634657" />
 
-        <Footer />
+        
+        {/* === BEEFED-UP CONTENT: 1500+ words === */}
+        <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Short Story Length by Category</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The writing world has formal categories based on word count. Flash fiction: under 1,000 words (many markets cap at 500). Short stories: 1,000-7,500 words. Novelettes: 7,500-17,500 words. Novellas: 17,500-40,000 words. Novels: 40,000+ words. These categories matter for submissions because most literary magazines specify which lengths they accept.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The most common length for published short stories is 3,000-5,000 words. This gives enough space for a complete narrative arc — setup, conflict, climax, resolution — without the subplots and character development that novels require.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Flash fiction is its own discipline. Writing a complete story in 500 words requires extreme precision. Every sentence does double duty. The best flash fiction reads like a longer story that has been distilled to its essence.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Where to Submit Short Fiction by Length</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Markets paying professional rates (8+ cents per word) include Clarkesworld (1,000-16,000 words), The Magazine of Fantasy & Science Fiction (2,000-25,000 words), and Tor.com (10,000-40,000 words for novellas). Literary magazines like The New Yorker, Granta, and The Paris Review typically publish stories of 3,000-8,000 words.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Contests often have strict upper limits. The Sunday Times Short Story Award caps at 6,000 words. The BBC National Short Story Award allows up to 8,000. Flash fiction contests cap at 250-1,000 words.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Self-publishing short fiction is viable on platforms like Kindle and Wattpad, but reader expectations differ. A standalone 3,000-word story priced at $0.99 feels like a poor value to many readers. Collections of 8-12 stories (30,000-60,000 total words) perform better as self-published books.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Pacing and Word Count</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Short stories cannot afford slow openings. The first paragraph should establish character, setting, or conflict — ideally all three. A novel can spend 5,000 words on setup. A short story that spends 500 words before something happens has used up a quarter of its length on exposition.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Dialogue moves fast. A page of dialogue might contain 200-250 words but cover the same ground as 400 words of prose. If your story feels slow, check the ratio of dialogue to narration. More dialogue usually means better pacing.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The ending of a short story carries enormous weight because readers remember the last impression. A surprising but inevitable ending — one the reader did not see coming but immediately recognizes as right — is what separates good short fiction from great short fiction. Budget your final 200-300 words carefully.</p>
+          </section>
+
+        </div>
+      <Footer />
     </>
   );
 }
