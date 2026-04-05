@@ -143,6 +143,87 @@ export default function Page() {
       </main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Words to Pages","item":"https://www.wordcountertool.net/words-to-pages"},{"@type":"ListItem","position":3,"name":"1 500 Words","item":"https://www.wordcountertool.net/words-to-pages/1500-words"}]})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"1 500 Words to Pages","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
+      
+        {/* === BEEFED-UP CONTENT: 1500+ words === */}
+        <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>What Is 1 500 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A 1,500-word piece is 6 double-spaced pages. This is a standard university essay, a comprehensive blog post, a detailed feature article, or a thorough product comparison.</p>
+            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>1,500 words is the entry point for competitive SEO content. Backlinko found the average first-page result contains 1,447 words. At this length, you can cover a topic with genuine depth — multiple perspectives, data points, and practical takeaways.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing 1 500 Words: Structure and Strategy</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The 1,500-word sweet spot works because it forces prioritization. You cannot cover everything, so you must choose the 4-6 most important subtopics. This constraint produces better content than a 3,000-word piece that covers 12 subtopics superficially.</p>
+            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Reading time: about 6 minutes. Speaking time: about 11-12 minutes. Most readers will complete a 1,500-word article if it is well-structured, but they will skim rather than read every word. Use bold text, subheadings, and pull quotes to guide skimmers.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Real-World Examples of 1 500-Word Documents</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The most common undergraduate essay length is 1,500 words. Orbit Media found the average blog post is 1,333 words, making 1,500 above average. Many trade publications cap feature articles at 1,500-2,000 words. A standard white paper executive summary is 1,000-1,500 words.</p>
+            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>At 1,500 words, do not front-load all the interesting content. Many writers put their best material in the first 500 words and then repeat themselves for the remaining 1,000. Distribute your strongest points evenly throughout the piece. The reader who makes it to paragraph 10 deserves new information, not a rephrasing of paragraph 3.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>1 500 Words in Different Formats</h2>
+            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid var(--border-color)'}}>
+              <table className="w-full text-sm">
+                <thead><tr style={{background:'var(--accent-bg)'}}>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Format</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Pages</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Time</th>
+                </tr></thead>
+                <tbody>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Single spaced (Times New Roman 12pt)</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>3.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>6 min read</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>1.5 spaced</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>4.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>6 min read</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Double spaced (standard academic)</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>6.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>6 min read</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 130 WPM</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>12 min speaking</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 150 WPM (conversational)</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>10 min speaking</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Handwritten</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>8.6 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>6 min read</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>How Long Does It Take to Write 1 500 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>At an average typing speed of 40 words per minute, the raw typing time for 1 500 words is about 38 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 3.0 hours for polished content.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 1 500-word piece takes 1-3 days of focused work.</p>
+            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>AI writing tools can generate 1 500 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>1 500 Words and SEO</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The average first-page Google result contains about 1,447 words (Backlinko). At 1 500 words, your content is above the average for first-page results. This length provides enough depth for most competitive keywords, especially when combined with strong backlinks and good on-page optimization.</p>
+            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Word count alone does not determine rankings. Google evaluates whether the content satisfies the search intent. A 1 500-word article that directly and completely answers the query will outrank a 3 000-word article that buries the answer under unnecessary context. Write to the length the topic requires, not to a target number.</p>
+          </section>
+
+        </div>
       <Footer />
     </>
   )

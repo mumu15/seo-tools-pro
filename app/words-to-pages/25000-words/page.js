@@ -143,6 +143,81 @@ export default function Page() {
       </main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Words to Pages","item":"https://www.wordcountertool.net/words-to-pages"},{"@type":"ListItem","position":3,"name":"25 000 Words","item":"https://www.wordcountertool.net/words-to-pages/25000-words"}]})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"25 000 Words to Pages","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
+      
+        {/* === BEEFED-UP CONTENT: 1500+ words === */}
+        <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>What Is 25 000 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>25,000 words fills 100 double-spaced pages. This is a short book, a detailed thesis, a comprehensive technical manual, or a long novella.</p>
+            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>25,000 words is the threshold where you can legitimately call something a "book." Amazon Kindle categorizes works of 25,000+ words as books rather than short reads. At this length, you have space for a proper introduction, 8-12 chapters, and a conclusion.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing 25 000 Words: Structure and Strategy</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Plan for 3-6 months of writing time. At a sustainable pace of 500-750 words per day, five days a week, a 25,000-word manuscript takes 7-10 weeks to draft. Budget another 3-6 weeks for revision and editing.</p>
+            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Reading time: about 105 minutes — just under two hours. This is a short book that can be read in a long flight or two commute sessions. As a printed book, it would be roughly 100-120 pages.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Real-World Examples of 25 000-Word Documents</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Many successful self-published nonfiction books are 25,000-35,000 words. A master\'s thesis in the sciences often runs 20,000-30,000 words. A comprehensive employee onboarding guide for a large company might be 20,000-30,000 words. A detailed research monograph starts at about 25,000 words.</p>
+            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>At 25,000 words, your biggest enemy is the "messy middle." The first few chapters and the last chapter are usually strong because they have clear purposes (introduce and conclude). The middle chapters need equally clear purposes. If a chapter does not advance the book\'s central argument or add essential information, it should be cut or merged with another chapter.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>25 000 Words in Different Formats</h2>
+            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid var(--border-color)'}}>
+              <table className="w-full text-sm">
+                <thead><tr style={{background:'var(--accent-bg)'}}>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Format</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Pages</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Time</th>
+                </tr></thead>
+                <tbody>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Single spaced (Times New Roman 12pt)</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>50.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>105 min read</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>1.5 spaced</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>66.7 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>105 min read</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Double spaced (standard academic)</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>100.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>105 min read</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 130 WPM</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>192 min speaking</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 150 WPM (conversational)</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>167 min speaking</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Handwritten</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>142.9 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>105 min read</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>How Long Does It Take to Write 25 000 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>At an average typing speed of 40 words per minute, the raw typing time for 25 000 words is about 625 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 50.0 hours for polished content.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 25 000-word piece takes 2-6 weeks of focused work.</p>
+            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>AI writing tools can generate 25 000 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
+          </section>
+
+        </div>
       <Footer />
     </>
   )

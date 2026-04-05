@@ -143,6 +143,81 @@ export default function Page() {
       </main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Words to Pages","item":"https://www.wordcountertool.net/words-to-pages"},{"@type":"ListItem","position":3,"name":"15 000 Words","item":"https://www.wordcountertool.net/words-to-pages/15000-words"}]})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"15 000 Words to Pages","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
+      
+        {/* === BEEFED-UP CONTENT: 1500+ words === */}
+        <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>What Is 15 000 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>15,000 words fills 60 double-spaced pages. This is a master\'s thesis, a substantial ebook, a detailed report, or a short novella.</p>
+            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Most master\'s theses fall in the 15,000-25,000 word range. At this length, you are producing a document that takes genuine expertise to write well. There are no shortcuts — 15,000 words of quality content requires deep subject knowledge.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing 15 000 Words: Structure and Strategy</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Divide into chapters or major sections of 2,000-3,000 words each. Each chapter should have its own introduction, body, and conclusion. The reader should be able to read any chapter independently and get value from it.</p>
+            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Reading time: about 63 minutes — over an hour. This is a committed read. Consider providing an executive summary of 500-1,000 words for readers who want the highlights without the full document.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Real-World Examples of 15 000-Word Documents</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A standard master\'s dissertation is 15,000-25,000 words. A comprehensive industry benchmark report is 10,000-20,000 words. A novella is 17,500-40,000 words. A detailed training manual might run 15,000-25,000 words.</p>
+            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>At 15,000 words, scope creep is the biggest risk. Define what the document covers and what it does not cover in the introduction. Without clear boundaries, 15,000 words becomes 20,000 as you keep adding "one more section" that does not quite fit the original plan.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>15 000 Words in Different Formats</h2>
+            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid var(--border-color)'}}>
+              <table className="w-full text-sm">
+                <thead><tr style={{background:'var(--accent-bg)'}}>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Format</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Pages</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Time</th>
+                </tr></thead>
+                <tbody>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Single spaced (Times New Roman 12pt)</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>30.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>63 min read</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>1.5 spaced</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>40.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>63 min read</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Double spaced (standard academic)</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>60.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>63 min read</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 130 WPM</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>115 min speaking</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 150 WPM (conversational)</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>100 min speaking</td>
+                  </tr>
+                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Handwritten</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>85.7 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>63 min read</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>How Long Does It Take to Write 15 000 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>At an average typing speed of 40 words per minute, the raw typing time for 15 000 words is about 375 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 30.0 hours for polished content.</p>
+            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 15 000-word piece takes 2-6 weeks of focused work.</p>
+            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>AI writing tools can generate 15 000 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
+          </section>
+
+        </div>
       <Footer />
     </>
   )
