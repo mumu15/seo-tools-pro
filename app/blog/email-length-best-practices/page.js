@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import Header from '../../../components/Header'
-import Footer from '../../../components/Footer'
-import AdUnit from '../../components/AdUnit'
-import FaqSchema from '../../../components/FaqSchema'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import Header from './././components/Header'
+import Footer from './././components/Footer'
+import AdUnit from '././components/AdUnit'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   title: 'Email Length Best Practices: How Long Should an Email Be? (2026) | WordCounterTool.net',
@@ -86,7 +87,7 @@ export default function Post() {
 
           <h2 className={st.h2}>Common Email Length Mistakes</h2>
           <p className={st.p}><strong style={{color:'#ef4444'}}>The Wall of Text:</strong> Emails over 300 words with no line breaks are immediately skimmed or archived. Use short paragraphs (1-2 sentences), bullet points for lists, and bold for key information.</p>
-          <p className={st.p}><strong style={{color:'#ef4444'}}>The Over-Apologizer:</strong> "Sorry to bother you, I know you are busy, but I was wondering if maybe..." — This wastes 20+ words on hedging. Be direct and confident. Busy people respect brevity.</p>
+          <p className={st.p}><strong style={{color:'#ef4444'}}>The Over-Apologizer:</strong> "Sorry to bother you, I know you are busy, but I was wondering if maybe.." — This wastes 20+ words on hedging. Be direct and confident. Busy people respect brevity.</p>
           <p className={st.p}><strong style={{color:'#ef4444'}}>The Multi-Ask Email:</strong> Emails with 3+ different asks get the lowest response rates. One email = one ask. If you have multiple topics, send separate emails or use a numbered list making it clear which items need their input.</p>
 
           <div className="bg-gradient-to-r from-emerald-900/30 to-teal-900/20 border border-emerald-500/30 rounded-2xl p-6 mb-8 text-center">

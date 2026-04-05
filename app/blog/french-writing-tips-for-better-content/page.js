@@ -5,6 +5,7 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
+  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/french-writing-tips-for-better-content' },
   title: 'French Writing Tips: How to Write Better Content in French (2026)',
   description: 'Master French content writing with these expert tips. Improve your French writing style, grammar, and word choice for better engagement and SEO.',
@@ -49,6 +50,10 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">When writing in French, always compose directly in French rather than writing in English first and translating. Direct composition produces more natural sentence structures and idiomatic expressions. Machine translation often produces awkward phrasing because it forces English sentence patterns onto French grammar.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">For content creators, sentence variety is just as important in French as in English. Mix short and long sentences, vary your sentence openings, and use transitional phrases natural to French.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">French Vocabulary and Word Choice</h2>

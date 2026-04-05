@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-write-seo-title-tags' },
@@ -52,6 +53,11 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Title Tag Formula That Gets Clicks</h2>
               <p className="text-slate-400 leading-relaxed mb-4">The best title tags follow a proven formula. Primary keyword + secondary keyword + power word or number. For example: "How to Count Words Online Free (2026 Guide)" hits the main keyword early, adds a benefit word "free" and includes the year for freshness. Numbers like "7 Ways" or "Complete Guide" increase click-through rates by up to 36%.</p>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/how-to-write-seo-title-tags.svg" alt="How To Write Seo Title Tags — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Title Tag Character Limits and Pixel Width</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Google measures title width in pixels not characters. Thin letters like i and l take less space than wide letters like W and M.</p>
@@ -70,13 +76,17 @@ export default function Post() {
                 </div>
               </div>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Power Words That Increase Click-Through Rate</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Certain words consistently improve click-through rates. Free, Ultimate, Complete, Proven, Fast, Easy, Best, New, Secret and Guide all signal value to searchers. Numbers like "7 Ways" "10 Tips" and "2026" create specificity that earns more clicks than vague titles. Negative titles like "Stop Making These Mistakes" also perform well because they trigger loss aversion.</p>
             </section>
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Check Your Title Tag Length Free</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Use our free meta tag generator to check title tag length and preview how it looks in Google search results.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">A meta tag generator can check title tag length and preview how it looks in Google search results.</p>
               <a href="/meta-tag-generator" className="btn-primary inline-block px-6 py-3">Generate Meta Tags Free →</a>
             </section>
 
@@ -94,13 +104,20 @@ export default function Post() {
             <Link href="/character-counter" className="text-emerald-400 hover:underline text-sm">Character Counter</Link>
             <Link href="/blog/how-to-write-meta-descriptions" className="text-emerald-400 hover:underline text-sm">How to Write Meta Descriptions</Link>
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">What most guides get wrong</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">Most writing advice reads like it was assembled by committee. "Be clear and concise." "Know your audience." Sure. But that is the starting line, not the finish.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">What actually moves the needle is specificity. Not "write a compelling intro" but "start with a number, a question, or a bold claim that your reader can disagree with." Not "use keywords naturally" but "put your target phrase in the first 100 words, the last paragraph, and one H2."</p>
+            <p className="text-slate-400 text-sm leading-relaxed">The gap between good-enough writing and writing that performs well is smaller than people think. A few mechanical fixes — shorter paragraphs, stronger verbs, removing filler — close most of the gap. The rest is just practice and feedback loops.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

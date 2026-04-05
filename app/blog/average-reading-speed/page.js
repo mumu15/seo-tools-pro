@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/average-reading-speed' },
@@ -15,7 +16,7 @@ const faqs = [
   { q: 'What is a good reading speed?', a: 'A good reading speed is 300-400 words per minute with good comprehension. Above 400 WPM is considered fast.' },
   { q: 'How can I read faster?', a: 'Reduce subvocalization, expand your eye fixations, use a pointer, minimize re-reading and practice daily.' },
   { q: 'How long does it take to read 1000 words?', a: 'At the average speed of 200-250 WPM, 1000 words takes approximately 4-5 minutes to read.' },
-  { q: 'Does reading faster reduce comprehension?', a: 'At moderate speed increases comprehension is usually maintained. At extreme speeds above 700-800 WPM comprehension drops significantly.' },
+  { q: 'Does reading faster reduce comprehension?', a: 'At moderate speed increases comprehension is usually maintained. At extreme speeds above 700-800 WPM comprehension drops noticeably.' },
 ]
 
 export default function Post() {
@@ -27,7 +28,7 @@ export default function Post() {
         <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">← Back to Blog</Link></div>
         <article>
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Average Reading Speed: How Fast Do People Read? (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated February 2026 · 8 min read</p>
+          <p className="text-slate-400 text-sm mb-8">Published January 2026 · Updated April 2026 · 8 min read</p>
           <div className="result-box mb-8 border-emerald-500/30">
             <h2 className="text-emerald-400 font-bold mb-3">Quick Answer</h2>
             <p className="text-white">The average adult reads <strong>200-250 words per minute</strong>. College students average <strong>300 WPM</strong>. Speed readers reach <strong>400-700 WPM</strong>.</p>
@@ -48,6 +49,11 @@ export default function Post() {
                 </div>
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/average-reading-speed.svg" alt="Average Reading Speed — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <AdUnit slot="3248634657" />
 
       <section>
@@ -66,6 +72,10 @@ export default function Post() {
                 ))}
               </div>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Calculate Your Reading Speed Free</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Find out your exact reading speed with our free reading time calculator.</p>
@@ -109,13 +119,20 @@ export default function Post() {
           <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Why reading speed numbers vary so much</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">You will see different "average reading speed" numbers depending on where you look. Some sources say 200 WPM, others say 250, others 300. The reason: they are measuring different things.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">A college student skimming a news article reads at a completely different speed than a first-year medical student working through a pharmacology textbook. Content complexity is the single biggest variable, bigger than age, education, or native language.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">We use 200-250 WPM as the baseline because it reflects typical web reading, which is the context most relevant to content creators. If you are writing academic content or technical documentation, drop that estimate to 150-180 WPM.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

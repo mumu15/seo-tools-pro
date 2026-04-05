@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/what-is-flesch-kincaid-score' },
@@ -68,10 +69,19 @@ export default function Post() {
                 </div>
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/what-is-flesch-kincaid-score.svg" alt="What Is Flesch Kincaid Score — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">5 Ways to Improve Your Readability Score</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">First, shorten your sentences. The average sentence should be under 20 words. Second, use simpler words. Replace "utilise" with "use" and "demonstrate" with "show". Third, use active voice. "The team completed the project" beats "The project was completed by the team". Fourth, break up long paragraphs. Five sentences maximum per paragraph. Fifth, use subheadings every 200-300 words to give readers visual breaks.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">shorten your sentences. The average sentence should be under 20 words. use simpler words. Replace "utilise" with "use" and "demonstrate" with "show". use active voice. "The team completed the project" beats "The project was completed by the team". break up long paragraphs. Five sentences maximum per paragraph. use subheadings every 200-300 words to give readers visual breaks.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Check Your Readability Score Free</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Paste your content into our free readability checker to get your Flesch-Kincaid score instantly with specific improvement suggestions.</p>
@@ -92,13 +102,20 @@ export default function Post() {
             <Link href="/blog/how-to-improve-readability-score" className="text-emerald-400 hover:underline text-sm">How to Improve Readability Score</Link>
             <Link href="/word-counter" className="text-emerald-400 hover:underline text-sm">Word Counter</Link>
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Putting the numbers in context</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">Raw numbers only tell part of the story. The context — who you are writing for, where it will be published, what action you want readers to take — shapes everything about how to interpret these guidelines.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">We see a lot of writers fixate on hitting an exact word count target and miss the bigger picture. A piece that communicates its point clearly in 800 words beats one that rambles to reach 1,500. The targets in this guide are starting points, not rules carved in stone.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">The best approach: write until you have covered the topic properly, then edit ruthlessly. Cut every sentence that does not earn its place. What remains will usually land close to the recommended range anyway — because those ranges reflect what readers actually want to read.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

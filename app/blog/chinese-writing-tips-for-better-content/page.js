@@ -5,6 +5,7 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
+  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/chinese-writing-tips-for-better-content' },
   title: 'Chinese Writing Tips: How to Write Better Content in Chinese (2026)',
   description: 'Master Chinese content writing with these expert tips. Improve your Chinese writing style, grammar, and word choice for better engagement and SEO.',
@@ -49,6 +50,10 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">When writing in Chinese, always compose directly in Chinese rather than writing in English first and translating. Direct composition produces more natural sentence structures and idiomatic expressions. Machine translation often produces awkward phrasing because it forces English sentence patterns onto Chinese grammar.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">For content creators, sentence variety is just as important in Chinese as in English. Mix short and long sentences, vary your sentence openings, and use transitional phrases natural to Chinese.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Chinese Vocabulary and Word Choice</h2>

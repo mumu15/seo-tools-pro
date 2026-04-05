@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import Header from '../../../components/Header'
-import Footer from '../../../components/Footer'
-import AdUnit from '../../components/AdUnit'
-import FaqSchema from '../../../components/FaqSchema'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import Header from './././components/Header'
+import Footer from './././components/Footer'
+import AdUnit from '././components/AdUnit'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   title: 'Best Free Writing Tools in 2026: The Complete List | WordCounterTool.net',
@@ -112,7 +113,7 @@ export default function Post() {
 
           <h2 className={st.h2}>Word Counting and SEO Tools</h2>
           <p className={st.p}><strong style={{color:'#34d399'}}>WordCounterTool.net</strong> — Our suite of free writing tools includes a word counter, character counter, keyword density checker, readability scorer, meta tag generator, and reading time calculator. All tools are completely free, require no sign-up, and work instantly in your browser. Perfect for bloggers, students, copywriters, and SEO professionals.</p>
-          <p className={st.p}><strong style={{color:'#e2e8f0'}}>Why word count matters for SEO:</strong> Google consistently ranks longer, more comprehensive content higher in search results. Blog posts of 1,500-2,500 words occupy the majority of page 1 positions. Use our word counter to ensure your content meets the minimum threshold for your target keywords.</p>
+          <p className={st.p}><strong style={{color:'#e2e8f0'}}>Why word count matters for SEO:</strong> Google consistently ranks longer, more full content higher in search results. Blog posts of 1,500-2,500 words occupy the majority of page 1 positions. Use our word counter to ensure your content meets the minimum threshold for your target keywords.</p>
 
           <h2 className={st.h2}>Grammar and Readability Tools</h2>
           <p className={st.p}><strong style={{color:'#34d399'}}>Grammarly Free</strong> catches grammar, spelling, and punctuation errors in real-time. The free version handles 90% of common writing mistakes. It works as a browser extension, desktop app, and mobile keyboard. Essential for anyone who writes emails, documents, or social media content.</p>

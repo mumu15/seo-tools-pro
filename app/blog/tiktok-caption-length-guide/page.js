@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import Header from '../../../components/Header'
-import Footer from '../../../components/Footer'
-import AdUnit from '../../components/AdUnit'
-import FaqSchema from '../../../components/FaqSchema'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import Header from './././components/Header'
+import Footer from './././components/Footer'
+import AdUnit from '././components/AdUnit'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   title: 'TikTok Caption Length: The Complete Guide (2026) | WordCounterTool.net',
@@ -83,7 +84,7 @@ export default function Post() {
           <p className={st.p}><strong style={{color:'#e2e8f0'}}>The Hook Question:</strong> "Wait, you do not know about THIS?" — Creates curiosity and encourages watch-through. Questions in captions increase comment rates by 30-50%.</p>
           <p className={st.p}><strong style={{color:'#e2e8f0'}}>The Controversial Take:</strong> "Unpopular opinion: remote work is making us worse at our jobs." — Controversy drives comments, and comments drive reach. Keep it authentic, not rage-bait.</p>
           <p className={st.p}><strong style={{color:'#e2e8f0'}}>The CTA Close:</strong> "Follow for more [niche] tips" or "Save this for later" — Direct calls to action work. "Save" is the most valuable engagement signal on TikTok because saved videos get re-surfaced in recommendations.</p>
-          <p className={st.p}><strong style={{color:'#e2e8f0'}}>The Story Opener:</strong> "I got rejected from my dream job, but then..." — Storytelling hooks in captions entice viewers to watch the full video. Pair with on-screen text that amplifies the story.</p>
+          <p className={st.p}><strong style={{color:'#e2e8f0'}}>The Story Opener:</strong> "I got rejected from my dream job, but then.." — Storytelling hooks in captions entice viewers to watch the full video. Pair with on-screen text that amplifies the story.</p>
 
           <div className="bg-gradient-to-r from-emerald-900/30 to-teal-900/20 border border-emerald-500/30 rounded-2xl p-6 mb-8 text-center">
             <p className="text-white font-semibold text-lg mb-2">Try It Free — No Sign Up</p>

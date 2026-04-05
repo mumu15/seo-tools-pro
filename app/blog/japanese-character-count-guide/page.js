@@ -5,6 +5,7 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
+  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/japanese-character-count-guide' },
   title: 'Japanese Character Count: Everything You Need to Know (2026)',
   description: 'Complete guide to Japanese character counting. Learn about Hiragana, Katakana, Kanji, character limits for social media, and how to count Japanese characters accurately.',
@@ -49,6 +50,10 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">For example, Twitter/X allows 280 characters. In English, this is roughly 40-50 words. In Japanese, the same 280 characters might represent a different number of words or convey a different amount of information.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Our Japanese character counter tool shows both character count and word count simultaneously, so you can optimize for both metrics at once. This dual view is especially important when you need to meet specific platform requirements.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Social Media Character Limits for Japanese</h2>

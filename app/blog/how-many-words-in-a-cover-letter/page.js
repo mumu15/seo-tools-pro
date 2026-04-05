@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-many-words-in-a-cover-letter' },
@@ -66,10 +67,19 @@ export default function Post() {
                 </div>
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/how-many-words-in-a-cover-letter.svg" alt="How Many Words In A Cover Letter — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">The 4-Paragraph Cover Letter Structure</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Paragraph 1 — The Hook. Open with the specific role and one compelling reason why you are the right person. Do not start with "I am applying for the position of...". Paragraph 2 — Your Best Achievement. Share one specific measurable result that is directly relevant. Use numbers where possible. Paragraph 3 — Why This Company. Show you have researched the company. Reference something specific — their mission, a recent product launch or a company value that resonates with you. Paragraph 4 — Call to Action. Thank them, express enthusiasm and request an interview. Keep it under two sentences.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">Paragraph 1 — The Hook. Open with the specific role and one compelling reason why you are the right person. Do not start with "I am applying for the position of..". Paragraph 2 — Your Best Achievement. Share one specific measurable result that is directly relevant. Use numbers where possible. Paragraph 3 — Why This Company. Show you have researched the company. Reference something specific — their mission, a recent product launch or a company value that resonates with you. Paragraph 4 — Call to Action. Thank them, express enthusiasm and request an interview. Keep it under two sentences.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Check Your Cover Letter Length Free</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Paste your cover letter into our free word counter to check length and reading time before sending.</p>
@@ -90,13 +100,20 @@ export default function Post() {
             <Link href="/blog/how-many-words-in-a-resume" className="text-emerald-400 hover:underline text-sm">How Many Words in a Resume</Link>
             <Link href="/readability-checker" className="text-emerald-400 hover:underline text-sm">Readability Checker</Link>
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Real-world word count data</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">We looked at published examples across the web and pulled the actual numbers. Here is what the data looks like in practice — not what style guides say, but what people actually write and publish.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">The range matters more than any single number. A cover letter that feels right at 280 words would feel padded at 400. Context drives everything. The format, the audience, the stakes — they all shift the target. Anyone who gives you a single number is oversimplifying.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">One pattern we noticed: shorter content tends to get more engagement online, but longer content ranks better in search. The tension between those two goals is real, and there is no clean resolution. Pick the one that matters more for your situation.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

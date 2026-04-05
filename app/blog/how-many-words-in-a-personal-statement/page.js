@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import Header from '../../../components/Header'
-import Footer from '../../../components/Footer'
-import AdUnit from '../../components/AdUnit'
-import FaqSchema from '../../../components/FaqSchema'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import Header from './././components/Header'
+import Footer from './././components/Footer'
+import AdUnit from '././components/AdUnit'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   title: 'How Many Words in a Personal Statement? (2026 Guide) | WordCounterTool.net',
@@ -10,7 +11,7 @@ export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-many-words-in-a-personal-statement' },
 }
 
-const faqs = [{"q":"How long is a UCAS personal statement?","a":"A UCAS personal statement must be under 4,000 characters (including spaces) and 47 lines. This is approximately 550-650 words. Both limits are hard — UCAS will cut off anything beyond."},{"q":"How long should a graduate school personal statement be?","a":"Most US graduate programs want 500-1,000 words (2-3 pages double-spaced). When no limit is specified, aim for 750-800 words. Always check the specific program requirements."},{"q":"Should I use the full word limit?","a":"Aim for 85-95% of the maximum. Going significantly under suggests you have not fully developed your ideas. Using every last word or character risks a rushed conclusion."},{"q":"What is the difference between a personal statement and statement of purpose?","a":"A personal statement focuses on your story, motivations, and personal qualities. A statement of purpose focuses on your research interests, academic goals, and fit with the program. Some programs use the terms interchangeably."}]
+const faqs = [{"q":"How long is a UCAS personal statement?","a":"A UCAS personal statement must be under 4,000 characters (including spaces) and 47 lines. This is approximately 550-650 words. Both limits are hard — UCAS will cut off anything beyond."},{"q":"How long should a graduate school personal statement be?","a":"Most US graduate programs want 500-1,000 words (2-3 pages double-spaced). When no limit is specified, aim for 750-800 words. Always check the specific program requirements."},{"q":"Should I use the full word limit?","a":"Aim for 85-95% of the maximum. Going noticeably under suggests you have not fully developed your ideas. Using every last word or character risks a rushed conclusion."},{"q":"What is the difference between a personal statement and statement of purpose?","a":"A personal statement focuses on your story, motivations, and personal qualities. A statement of purpose focuses on your research interests, academic goals, and fit with the program. Some programs use the terms interchangeably."}]
 
 export default function Post() {
   return (

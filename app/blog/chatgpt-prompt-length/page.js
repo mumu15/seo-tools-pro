@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import Header from '../../../components/Header'
-import Footer from '../../../components/Footer'
-import AdUnit from '../../components/AdUnit'
-import FaqSchema from '../../../components/FaqSchema'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import Header from './././components/Header'
+import Footer from './././components/Footer'
+import AdUnit from '././components/AdUnit'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   title: 'ChatGPT Prompt Length: How Long Should Your Prompts Be? (2026) | WordCounterTool.net',
@@ -10,7 +11,7 @@ export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/chatgpt-prompt-length' },
 }
 
-const faqs = [{"q":"What is the ChatGPT character limit?","a":"ChatGPT-4o supports approximately 128,000 tokens of input, which is roughly 96,000 words or 500,000 characters. This is more than enough for most tasks including analyzing full documents."},{"q":"How long should a ChatGPT prompt be?","a":"The optimal prompt is 100-300 words for most content generation tasks. Quick questions need only 10-30 words. Complex analysis may need 300-500 words plus source material."},{"q":"Do longer prompts give better results?","a":"Up to a point. Prompts of 100-300 words significantly outperform short prompts. But beyond 500 words, quality plateaus and key instructions may get lost. Be detailed but concise."}]
+const faqs = [{"q":"What is the ChatGPT character limit?","a":"ChatGPT-4o supports approximately 128,000 tokens of input, which is roughly 96,000 words or 500,000 characters. This is more than enough for most tasks including analyzing full documents."},{"q":"How long should a ChatGPT prompt be?","a":"The optimal prompt is 100-300 words for most content generation tasks. Quick questions need only 10-30 words. Complex analysis may need 300-500 words plus source material."},{"q":"Do longer prompts give better results?","a":"Up to a point. Prompts of 100-300 words noticeably outperform short prompts. But beyond 500 words, quality plateaus and key instructions may get lost. Be detailed but concise."}]
 
 export default function Post() {
   return (

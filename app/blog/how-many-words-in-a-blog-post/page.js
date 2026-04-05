@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import Header from '../../../components/Header'
-import Footer from '../../../components/Footer'
-import AdUnit from '../../components/AdUnit'
-import FaqSchema from '../../../components/FaqSchema'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import Header from './././components/Header'
+import Footer from './././components/Footer'
+import AdUnit from '././components/AdUnit'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   title: 'How Many Words Should a Blog Post Be? (2026 SEO Data) | WordCounterTool.net',
@@ -10,7 +11,7 @@ export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-many-words-in-a-blog-post' },
 }
 
-const faqs = [{"q":"How many words should a blog post be for SEO?","a":"The ideal SEO blog post is 1,500-2,500 words. The average Google page 1 result is 1,447 words. However, length should match search intent — some topics need 3,000+ words while others only need 800."},{"q":"Is a 500-word blog post too short?","a":"For competitive SEO keywords, yes. But 500 words is fine for news updates, quick tips, or personal blog entries where SEO is not the primary goal. Many successful newsletters are 300-500 words."},{"q":"How long does it take to write a 2,000-word blog post?","a":"An experienced writer can produce a 2,000-word blog post in 2-4 hours including research, writing, and editing. Beginners may need 4-8 hours. Using an outline cuts writing time by 30-50%."},{"q":"Does Google count blog post word count?","a":"Google does not use word count as a direct ranking factor. However, longer content tends to be more comprehensive, earn more backlinks, and better match informational search intent — all of which indirectly improve rankings."}]
+const faqs = [{"q":"How many words should a blog post be for SEO?","a":"The ideal SEO blog post is 1,500-2,500 words. The average Google page 1 result is 1,447 words. However, length should match search intent — some topics need 3,000+ words while others only need 800."},{"q":"Is a 500-word blog post too short?","a":"For competitive SEO keywords, yes. But 500 words is fine for news updates, quick tips, or personal blog entries where SEO is not the primary goal. Many successful newsletters are 300-500 words."},{"q":"How long does it take to write a 2,000-word blog post?","a":"An experienced writer can produce a 2,000-word blog post in 2-4 hours including research, writing, and editing. Beginners may need 4-8 hours. Using an outline cuts writing time by 30-50%."},{"q":"Does Google count blog post word count?","a":"Google does not use word count as a direct ranking factor. However, longer content tends to be more full, earn more backlinks, and better match informational search intent — all of which indirectly improve rankings."}]
 
 export default function Post() {
   return (
@@ -35,7 +36,7 @@ export default function Post() {
                 <th className="text-left text-emerald-400 py-3 pr-4 font-semibold text-xs uppercase">Blog Post Type</th><th className="text-left text-emerald-400 py-3 pr-4 font-semibold text-xs uppercase">Ideal Length</th><th className="text-left text-emerald-400 py-3 pr-4 font-semibold text-xs uppercase">Why</th>
               </tr></thead>
               <tbody>
-                <tr className="border-b" style={{borderColor:"rgba(52,211,153,0.05)"}}><td className="text-white font-medium py-3 pr-4 text-sm">SEO blog post</td><td className="text-slate-300 py-3 pr-4 text-sm">1,500-2,500 words</td><td className="text-slate-300 py-3 pr-4 text-sm">Comprehensive coverage ranks higher</td></tr>
+                <tr className="border-b" style={{borderColor:"rgba(52,211,153,0.05)"}}><td className="text-white font-medium py-3 pr-4 text-sm">SEO blog post</td><td className="text-slate-300 py-3 pr-4 text-sm">1,500-2,500 words</td><td className="text-slate-300 py-3 pr-4 text-sm">full coverage ranks higher</td></tr>
                 <tr className="border-b" style={{borderColor:"rgba(52,211,153,0.05)"}}><td className="text-white font-medium py-3 pr-4 text-sm">Listicle</td><td className="text-slate-300 py-3 pr-4 text-sm">1,500-3,000 words</td><td className="text-slate-300 py-3 pr-4 text-sm">More items = more value</td></tr>
                 <tr className="border-b" style={{borderColor:"rgba(52,211,153,0.05)"}}><td className="text-white font-medium py-3 pr-4 text-sm">How-to guide</td><td className="text-slate-300 py-3 pr-4 text-sm">1,200-2,500 words</td><td className="text-slate-300 py-3 pr-4 text-sm">Step-by-step depth</td></tr>
                 <tr className="border-b" style={{borderColor:"rgba(52,211,153,0.05)"}}><td className="text-white font-medium py-3 pr-4 text-sm">News/trending</td><td className="text-slate-300 py-3 pr-4 text-sm">600-1,000 words</td><td className="text-slate-300 py-3 pr-4 text-sm">Speed over depth</td></tr>
@@ -50,8 +51,8 @@ export default function Post() {
 
           <h2 className="text-2xl font-bold text-white mb-4 mt-10">What the Data Says About Blog Post Length</h2>
           <p className="text-slate-400 text-base leading-relaxed mb-4">Multiple studies from Backlinko, HubSpot, and Ahrefs consistently find that longer content correlates with higher rankings. Backlinko analyzed 11.8 million Google search results and found the average first-page result contains 1,447 words. HubSpot found that posts over 2,500 words earn the most organic traffic.</p>
-          <p className="text-slate-400 text-base leading-relaxed mb-4">However, correlation is not causation. Long posts rank well because they tend to be more comprehensive, answer more questions, and earn more backlinks. A padded 3,000-word post will not outrank a focused 1,500-word post that perfectly answers the search query. Quality per word matters more than total word count.</p>
-          <p className="text-slate-400 text-base leading-relaxed mb-4">The real insight is intent matching. For informational queries like "how to start investing," comprehensive 2,000-3,000 word guides dominate. For quick-answer queries like "what is GDP," a focused 500-800 word answer wins. Google rewards the content that best satisfies what the searcher actually wants.</p>
+          <p className="text-slate-400 text-base leading-relaxed mb-4">However, correlation is not causation. Long posts rank well because they tend to be more full, answer more questions, and earn more backlinks. A padded 3,000-word post will not outrank a focused 1,500-word post that perfectly answers the search query. Quality per word matters more than total word count.</p>
+          <p className="text-slate-400 text-base leading-relaxed mb-4">The real insight is intent matching. For informational queries like "how to start investing," full 2,000-3,000 word guides dominate. For quick-answer queries like "what is GDP," a focused 500-800 word answer wins. Google rewards the content that best satisfies what the searcher actually wants.</p>
 
           <h2 className="text-2xl font-bold text-white mb-4 mt-10">How to Determine the Right Length for Your Post</h2>
           <p className="text-slate-400 text-base leading-relaxed mb-4">Search your target keyword on Google and analyze the top 5 results. Note their word counts (use our word counter tool). The average length of top-ranking content is your baseline. Aim to be equal or slightly longer while adding more value — not just more words.</p>

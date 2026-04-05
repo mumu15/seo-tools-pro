@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import Header from '../../../components/Header'
-import Footer from '../../../components/Footer'
-import AdUnit from '../../components/AdUnit'
-import FaqSchema from '../../../components/FaqSchema'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import Header from './././components/Header'
+import Footer from './././components/Footer'
+import AdUnit from '././components/AdUnit'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   title: 'Ebook Word Count: How Long Should Your Ebook Be? (2026) | WordCounterTool.net',
@@ -49,12 +50,12 @@ export default function Post() {
 
           <h2 className="text-2xl font-bold text-white mb-4 mt-10">Ebook Length by Purpose</h2>
           <p className="text-slate-400 text-base leading-relaxed mb-4">Lead magnet ebooks (given away free to build email lists) should be 3,000-5,000 words — long enough to provide real value, short enough to be consumed in one sitting. A 50-page lead magnet overwhelms prospects. A 15-page guide that solves one specific problem converts much better.</p>
-          <p className="text-slate-400 text-base leading-relaxed mb-4">Paid Amazon KDP ebooks should be at least 10,000 words for non-fiction. Readers who pay $4.99-$9.99 expect substantial content. Ebooks under 5,000 words frequently receive negative reviews about length. The sweet spot for most non-fiction niches is 15,000-25,000 words — comprehensive but focused.</p>
+          <p className="text-slate-400 text-base leading-relaxed mb-4">Paid Amazon KDP ebooks should be at least 10,000 words for non-fiction. Readers who pay $4.99-$9.99 expect substantial content. Ebooks under 5,000 words frequently receive negative reviews about length. The sweet spot for most non-fiction niches is 15,000-25,000 words — full but focused.</p>
           <p className="text-slate-400 text-base leading-relaxed mb-4">Course companion ebooks (bundled with online courses) are typically 5,000-15,000 words and serve as reference material rather than standalone content. These can be shorter because they complement video lessons rather than standing alone.</p>
 
           <h2 className="text-2xl font-bold text-white mb-4 mt-10">How to Plan Your Ebook Length</h2>
           <p className="text-slate-400 text-base leading-relaxed mb-4">Start with an outline of 8-15 chapters. For a 15,000-word ebook, each chapter should be 1,000-2,000 words. This structure keeps chapters digestible and gives readers natural stopping points. Chapters under 800 words feel insubstantial; over 3,000 words without subheadings feel overwhelming.</p>
-          <p className="text-slate-400 text-base leading-relaxed mb-4">Research competing ebooks in your niche on Amazon. Check their page counts (visible in the product listing) and reviews. If readers consistently praise a competitor for being "comprehensive" at 200 pages, your ebook should be similar in length. If reviews mention "too long" or "padded," you have found the ceiling.</p>
+          <p className="text-slate-400 text-base leading-relaxed mb-4">Research competing ebooks in your niche on Amazon. Check their page counts (visible in the product listing) and reviews. If readers consistently praise a competitor for being "full" at 200 pages, your ebook should be similar in length. If reviews mention "too long" or "padded," you have found the ceiling.</p>
           <p className="text-slate-400 text-base leading-relaxed mb-4">Use our word counter throughout the writing process to track your progress. Set chapter-level word count targets and check against them regularly. This prevents the common problem of spending 70% of your word count on the first three chapters and rushing through the rest.</p>
 
           <div className="bg-gradient-to-r from-emerald-900/30 to-teal-900/20 border border-emerald-500/30 rounded-2xl p-6 mb-8 text-center">

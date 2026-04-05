@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/words-per-minute-reading-guide' },
@@ -50,7 +51,7 @@ export default function Post() {
           <div className="space-y-8">
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Reading Speed by Age and Education</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Reading speed increases significantly with age and education through the early adult years.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">Reading speed increases noticeably with age and education through the early adult years.</p>
               <div className="result-box mb-4">
                 <div className="overflow-x-auto">
                   <table className="w-full text-sm">
@@ -71,13 +72,22 @@ export default function Post() {
                 </div>
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/words-per-minute-reading-guide.svg" alt="Words Per Minute Reading Guide — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">5 Science-Backed Ways to Read Faster</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">These techniques are supported by reading research and can increase your speed 20-50% while maintaining comprehension. First, reduce subvocalisation — the habit of silently pronouncing each word in your head. Try humming while reading to break this habit. Second, use a pointer — move your finger or a pen under each line. This improves focus and reduces re-reading. Third, expand your eye span — train yourself to take in 3-4 words at once rather than one. Fourth, preview before reading — scan subheadings and first sentences before full reading. Fifth, reduce back-skipping — consciously stop rereading words you already passed.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">These techniques are supported by reading research and can increase your speed 20-50% while maintaining comprehension. reduce subvocalisation — the habit of silently pronouncing each word in your head. Try humming while reading to break this habit. use a pointer — move your finger or a pen under each line. This improves focus and reduces re-reading. expand your eye span — train yourself to take in 3-4 words at once rather than one. preview before reading — scan subheadings and first sentences before full reading. reduce back-skipping — consciously stop rereading words you already passed.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Calculate Reading Time for Your Content Free</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Use our free reading time calculator to see how long any piece of content takes to read.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">A reading time calculator to see how long any piece of content takes can read.</p>
               <a href="/reading-time" className="btn-primary inline-block px-6 py-3">Calculate Reading Time Free →</a>
             </section>
 
@@ -95,13 +105,20 @@ export default function Post() {
             <Link href="/blog/average-reading-speed" className="text-emerald-400 hover:underline text-sm">Average Reading Speed</Link>
             <Link href="/word-counter" className="text-emerald-400 hover:underline text-sm">Word Counter</Link>
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Why reading speed numbers vary so much</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">You will see different "average reading speed" numbers depending on where you look. Some sources say 200 WPM, others say 250, others 300. The reason: they are measuring different things.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">A college student skimming a news article reads at a completely different speed than a first-year medical student working through a pharmacology textbook. Content complexity is the single biggest variable, bigger than age, education, or native language.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">We use 200-250 WPM as the baseline because it reflects typical web reading, which is the context most relevant to content creators. If you are writing academic content or technical documentation, drop that estimate to 150-180 WPM.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

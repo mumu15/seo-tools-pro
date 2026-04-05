@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import Header from '../../../components/Header'
-import Footer from '../../../components/Footer'
-import AdUnit from '../../components/AdUnit'
-import FaqSchema from '../../../components/FaqSchema'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import Header from './././components/Header'
+import Footer from './././components/Footer'
+import AdUnit from '././components/AdUnit'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   title: 'How to Write Faster: 12 Proven Techniques to Double Your Speed | WordCounterTool.net',
@@ -10,7 +11,7 @@ export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-write-faster' },
 }
 
-const faqs = [{"q":"How can I write faster?","a":"The most effective techniques are: outline before writing, separate drafting from editing, use voice dictation (3-5x faster than typing), use templates for common formats, and eliminate distractions during writing sessions."},{"q":"How many words per hour should I write?","a":"A professional writer produces 1,000-2,000 words per hour of polished content. First drafts can be written at 1,500-3,000 words per hour. If you are under 500 words per hour, techniques like outlining and dictation can double your speed."},{"q":"Is voice dictation faster than typing?","a":"Yes — significantly. Average speaking speed is 130-150 wpm versus average typing speed of 40-60 wpm. Modern dictation tools are 95%+ accurate. Dictate your first draft, then edit for a 2-3x speed improvement."},{"q":"How long should it take to write a 1,000-word article?","a":"A 1,000-word article should take 30-60 minutes for an experienced writer (including outlining). Beginners might take 1-2 hours. With practice and the right techniques, you can consistently produce 1,000 polished words in under 45 minutes."}]
+const faqs = [{"q":"How can I write faster?","a":"The most effective techniques are: outline before writing, separate drafting from editing, use voice dictation (3-5x faster than typing), use templates for common formats, and eliminate distractions during writing sessions."},{"q":"How many words per hour should I write?","a":"A professional writer produces 1,000-2,000 words per hour of polished content. First drafts can be written at 1,500-3,000 words per hour. If you are under 500 words per hour, techniques like outlining and dictation can double your speed."},{"q":"Is voice dictation faster than typing?","a":"Yes — noticeably. Average speaking speed is 130-150 wpm versus average typing speed of 40-60 wpm. Modern dictation tools are 95%+ accurate. Dictate your first draft, then edit for a 2-3x speed improvement."},{"q":"How long should it take to write a 1,000-word article?","a":"A 1,000-word article should take 30-60 minutes for an experienced writer (including outlining). Beginners might take 1-2 hours. With practice and the right techniques, you can consistently produce 1,000 polished words in under 45 minutes."}]
 
 export default function Post() {
   const st = {
@@ -72,7 +73,7 @@ export default function Post() {
           <p className={st.p}>The single biggest speed killer is figuring out what to say while writing. Separate thinking from writing. Spend 10-15 minutes outlining your entire piece — main points, supporting evidence, key transitions — before typing a single word. A clear outline can double your drafting speed because you never stare at a blank screen wondering what comes next.</p>
           <p className={st.p}>Use bullet points, not full sentences, for your outline. The goal is a roadmap, not a first draft. Most professional writers spend 20-30% of their total writing time on outlining and research, which makes the actual writing phase 2-3x faster.</p>
 
-          <h2 className={st.h2}>2. Write First, Edit Later</h2>
+          <h2 className={st.h2}>2. Write Edit Later</h2>
           <p className={st.p}>Editing while writing is like driving with the brake on. Your inner editor kills flow and momentum. Set a timer for 25 minutes (Pomodoro technique) and write without stopping — no backspace, no spell check, no re-reading. You can fix everything later.</p>
           <p className={st.p}>This technique works because writing and editing use different cognitive processes. Writing is creative (right brain). Editing is analytical (left brain). Switching between them constantly is exhausting and slow. Batch your editing into a separate session.</p>
 

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
+  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/polish-seo-content-strategy' },
   title: 'Polish SEO Content Strategy: Rank Higher in Polish Search (2026)',
   description: 'Build a winning Polish SEO content strategy. Learn keyword research, content optimization, and word count guidelines for ranking in Polish search results.',
@@ -50,6 +51,10 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Third, analyze Polish search intent. The same query may have different intent in Polish versus English due to cultural differences. Check the search results pages for Polish queries to understand what content ranks.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Fourth, use long-tail Polish keywords. These are easier to rank for and often have higher conversion rates. Our word counter tool helps you ensure your content naturally includes target keywords at appropriate density.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Optimal Content Length for Polish SEO</h2>

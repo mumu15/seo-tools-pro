@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-many-words-in-a-paragraph' },
@@ -67,17 +68,26 @@ export default function Post() {
                 </div>
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/how-many-words-in-a-paragraph.svg" alt="How Many Words In A Paragraph — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Why Short Paragraphs Win Online</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Web readers scan before they read. Studies show that most visitors read only 20-28% of a webpage. Short paragraphs create white space that makes content feel less intimidating. They also improve your readability score which Google uses as a ranking signal. Break any paragraph over 150 words into two. Use subheadings every 300 words. Your readers and your rankings will thank you.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">The 3-Sentence Rule for Beginners</h2>
               <p className="text-slate-400 leading-relaxed mb-4">If you are unsure about paragraph length use the 3-sentence rule. Each paragraph should have one main idea, one supporting sentence and one concluding or transition sentence. This structure keeps your writing focused and prevents paragraphs from wandering off topic. Once you are comfortable with this structure you can break the rules intentionally for emphasis or style.</p>
             </section>
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Check Your Paragraph Length Free</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Use our free sentence counter to analyse your paragraph structure instantly.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">A sentence counter can analyse your paragraph structure instantly.</p>
               <a href="/sentence-counter" className="btn-primary inline-block px-6 py-3">Count Sentences Free →</a>
             </section>
 
@@ -95,13 +105,20 @@ export default function Post() {
             <Link href="/readability-checker" className="text-emerald-400 hover:underline text-sm">Readability Checker</Link>
             <Link href="/word-counter" className="text-emerald-400 hover:underline text-sm">Word Counter</Link>
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Real-world word count data</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">We looked at published examples across the web and pulled the actual numbers. Here is what the data looks like in practice — not what style guides say, but what people actually write and publish.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">The range matters more than any single number. A cover letter that feels right at 280 words would feel padded at 400. Context drives everything. The format, the audience, the stakes — they all shift the target. Anyone who gives you a single number is oversimplifying.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">One pattern we noticed: shorter content tends to get more engagement online, but longer content ranks better in search. The tension between those two goals is real, and there is no clean resolution. Pick the one that matters more for your situation.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

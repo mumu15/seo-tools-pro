@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-many-characters-in-a-tweet' },
@@ -70,17 +71,26 @@ export default function Post() {
                 </div>
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/how-many-characters-in-a-tweet.svg" alt="How Many Characters In A Tweet — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">How to Write Powerful Tweets Under 280 Characters</h2>
               <p className="text-slate-400 leading-relaxed mb-4">The 280 character limit forces clarity. Start with the most important information. Use numbers and specific facts rather than vague claims. Eliminate filler words like "very" "really" and "just". Use line breaks to create visual rhythm. Save 20-30 characters for a hashtag or call to action. The best tweets often use only 100-150 characters — leaving room feels intentional and confident.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Emoji and Special Characters on Twitter</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Emojis count as two characters each on Twitter due to Unicode encoding. Some special characters like accented letters also count as two characters. If you are close to the limit and using emojis remember to account for this. Twitter's character counter in the compose box is the most accurate guide.</p>
             </section>
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Count Your Tweet Characters Free</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Use our free character counter to check your tweet length before posting. See character counts for all major platforms.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">A character counter can check your tweet length before posting. See character counts for all major platforms.</p>
               <a href="/character-counter" className="btn-primary inline-block px-6 py-3">Count Characters Free →</a>
             </section>
 
@@ -98,13 +108,20 @@ export default function Post() {
             <Link href="/twitter-thread-counter" className="text-emerald-400 hover:underline text-sm">Twitter Thread Counter</Link>
             <Link href="/blog/how-many-hashtags-to-use" className="text-emerald-400 hover:underline text-sm">How Many Hashtags to Use</Link>
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Putting the numbers in context</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">Raw numbers only tell part of the story. The context — who you are writing for, where it will be published, what action you want readers to take — shapes everything about how to interpret these guidelines.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">We see a lot of writers fixate on hitting an exact word count target and miss the bigger picture. A piece that communicates its point clearly in 800 words beats one that rambles to reach 1,500. The targets in this guide are starting points, not rules carved in stone.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">The best approach: write until you have covered the topic properly, then edit ruthlessly. Cut every sentence that does not earn its place. What remains will usually land close to the recommended range anyway — because those ranges reflect what readers actually want to read.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

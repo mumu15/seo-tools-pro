@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-write-blog-introduction' },
@@ -61,10 +62,19 @@ export default function Post() {
                 <li className="text-slate-400 text-sm flex items-start gap-2"><span className="text-emerald-400 mt-1">→</span><span>The "If You" Hook — "If you have ever struggled with X this article is for you"</span></li>
               </ul>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/how-to-write-blog-introduction.svg" alt="How To Write Blog Introduction — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">What to Avoid in Blog Introductions</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Never start with "In this article I will..." — it is weak and delays value. Avoid lengthy background that readers did not ask for. Do not define obvious terms like "A blog is a type of website...". Do not apologise for your content or hedge with "I am not an expert but...". Get to the point within two sentences. Every word in your introduction must earn its place.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">Never start with "In this article I will.." — it is weak and delays value. Avoid lengthy background that readers did not ask for. Do not define obvious terms like "A blog is a type of website..". Do not apologise for your content or hedge with "I am not an expert but..". Get to the point within two sentences. Every word in your introduction must earn its place.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">The First Sentence Formula</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Your first sentence should do one of three things — make a bold claim, present a surprising fact or speak directly to the reader's pain. For example: "Most blog posts fail in the first sentence" is stronger than "Writing blog posts can be challenging". The first example creates curiosity and mild discomfort. The second is forgettable. Study the first sentences of your favourite blog posts and reverse-engineer the formula.</p>
@@ -89,13 +99,20 @@ export default function Post() {
             <Link href="/word-counter" className="text-emerald-400 hover:underline text-sm">Word Counter</Link>
             <Link href="/blog/ideal-blog-post-length-for-seo" className="text-emerald-400 hover:underline text-sm">Ideal Blog Post Length for SEO</Link>
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">What most guides get wrong</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">Most writing advice reads like it was assembled by committee. "Be clear and concise." "Know your audience." Sure. But that is the starting line, not the finish.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">What actually moves the needle is specificity. Not "write a compelling intro" but "start with a number, a question, or a bold claim that your reader can disagree with." Not "use keywords naturally" but "put your target phrase in the first 100 words, the last paragraph, and one H2."</p>
+            <p className="text-slate-400 text-sm leading-relaxed">The gap between good-enough writing and writing that performs well is smaller than people think. A few mechanical fixes — shorter paragraphs, stronger verbs, removing filler — close most of the gap. The rest is just practice and feedback loops.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

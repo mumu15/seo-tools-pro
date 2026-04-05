@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/instagram-caption-length' },
@@ -69,17 +70,26 @@ export default function Post() {
                 </div>
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/instagram-caption-length.svg" alt="Instagram Caption Length — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Short vs Long Captions: Which Performs Better?</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Short captions under 150 characters work best for lifestyle and personal content where the image speaks for itself. Long captions of 300-2,200 characters work best for educational content, storytelling and business posts. The key insight is that whatever length you choose you must hook the reader in the first 125 characters before the "more" button cuts off the text. Write your best line first.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Caption Formula That Gets Engagement</h2>
               <p className="text-slate-400 leading-relaxed mb-4">The most engaging Instagram captions follow a simple formula. Start with a hook — a bold statement, question or surprising fact. Add value in the middle — a tip, story or behind the scenes insight. End with a call to action — ask a question, invite a comment or direct followers to your bio link. This structure works for both short and long captions.</p>
             </section>
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Check Your Caption Length Free</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Use our free character counter to check your Instagram caption before posting. See counts for all major social platforms.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">A character counter can check your Instagram caption before posting. See counts for all major social platforms.</p>
               <a href="/character-counter" className="btn-primary inline-block px-6 py-3">Check Caption Length Free →</a>
             </section>
 
@@ -97,13 +107,20 @@ export default function Post() {
             <Link href="/blog/how-many-hashtags-to-use" className="text-emerald-400 hover:underline text-sm">How Many Hashtags to Use</Link>
             <Link href="/word-counter" className="text-emerald-400 hover:underline text-sm">Word Counter</Link>
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Platform limits change constantly</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">We check these numbers monthly because platforms update their limits without much fanfare. Twitter went from 140 to 280 characters. LinkedIn keeps adjusting what counts toward its limits. TikTok has expanded captions multiple times.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">The character limit is not the same as the ideal length. Instagram allows 2,200 characters in a caption, but the data shows captions between 138-150 characters get the highest engagement rate. The limit is a ceiling, not a target.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">One thing that does not change: the first line matters most. On every platform, some portion of your text gets truncated behind a "more" link. Front-load the hook.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import Header from '../../../components/Header'
-import Footer from '../../../components/Footer'
-import AdUnit from '../../components/AdUnit'
-import FaqSchema from '../../../components/FaqSchema'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import Header from './././components/Header'
+import Footer from './././components/Footer'
+import AdUnit from '././components/AdUnit'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   title: 'How Long Should a YouTube Script Be? Word Count by Video Length | WordCounterTool.net',
@@ -81,7 +82,7 @@ export default function Post() {
           <AdUnit slot="3248634657" />
 
           <h2 className={st.h2}>Why 10-15 Minutes Is the YouTube Sweet Spot</h2>
-          <p className={st.p}>YouTube algorithm data consistently shows that videos between 10-15 minutes perform best for most channels. This length allows for mid-roll ads (available on 8+ minute videos since 2023), which significantly increases revenue. A 10-minute video with 2 mid-roll ads can earn 3x more than a 5-minute video with only pre-roll.</p>
+          <p className={st.p}>YouTube algorithm data consistently shows that videos between 10-15 minutes perform best for most channels. This length allows for mid-roll ads (available on 8+ minute videos since 2023), which noticeably increases revenue. A 10-minute video with 2 mid-roll ads can earn 3x more than a 5-minute video with only pre-roll.</p>
           <p className={st.p}>From a viewer perspective, 10-15 minutes is long enough to provide real value but short enough to hold attention. YouTube analytics show that average view duration for most channels is 40-60% of total length — so a 10-minute video retains viewers for 4-6 minutes on average, while a 30-minute video might retain for only 8-10 minutes.</p>
 
           <h2 className={st.h2}>How to Script a YouTube Video</h2>

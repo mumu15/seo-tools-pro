@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-type-faster' },
@@ -64,6 +65,11 @@ export default function Post() {
                 <li className="text-slate-400 text-sm flex items-start gap-2"><span className="text-emerald-400 mt-1">→</span><span>Rest your wrists properly — use a wrist rest and take breaks to prevent RSI</span></li>
               </ul>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/how-to-type-faster.svg" alt="How To Type Faster — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Typing Speed Benchmarks by Profession</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Different careers have different typing speed expectations.</p>
@@ -85,9 +91,13 @@ export default function Post() {
                 </div>
               </div>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Check Your Current Typing Speed</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Use our free words per minute calculator to benchmark your current typing speed before and after practice.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">A words per minute calculator can benchmark your current typing speed before and after practice.</p>
               <a href="/words-per-minute" className="btn-primary inline-block px-6 py-3">Check Typing Speed Free →</a>
             </section>
 
@@ -105,13 +115,20 @@ export default function Post() {
             <Link href="/blog/average-typing-speed" className="text-emerald-400 hover:underline text-sm">Average Typing Speed</Link>
             <Link href="/word-counter" className="text-emerald-400 hover:underline text-sm">Word Counter</Link>
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Putting the numbers in context</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">Raw numbers only tell part of the story. The context — who you are writing for, where it will be published, what action you want readers to take — shapes everything about how to interpret these guidelines.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">We see a lot of writers fixate on hitting an exact word count target and miss the bigger picture. A piece that communicates its point clearly in 800 words beats one that rambles to reach 1,500. The targets in this guide are starting points, not rules carved in stone.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">The best approach: write until you have covered the topic properly, then edit ruthlessly. Cut every sentence that does not earn its place. What remains will usually land close to the recommended range anyway — because those ranges reflect what readers actually want to read.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

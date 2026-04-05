@@ -1,0 +1,33 @@
+<svg viewBox="0 0 680 450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="680" height="450" fill="#0f172a"/>
+  <rect width="680" height="4" fill="#10b981"/>
+
+  <!-- Brand -->
+  <rect x="30" y="24" width="28" height="28" rx="6" fill="#10b981"/>
+  <text x="40" y="44" font-family="Arial Black, sans-serif" font-size="16" font-weight="900" fill="white" text-anchor="middle">W</text>
+  <text x="68" y="44" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8">WordCounterTool.net</text>
+
+  <!-- Title -->
+  <text x="40" y="100" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#f8fafc">How To Write Email Subject Lines</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="120" x2="300" y2="120" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Subtitle -->
+  <text x="40" y="155" font-family="Arial, sans-serif" font-size="13" fill="#94a3b8">Key data at a glance — Updated 2026</text>
+
+  <!-- Stats -->
+  
+    <rect x="40" y="240" width="180" height="70" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="130" y="270" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#34d399" text-anchor="middle">2026</text>
+    <text x="130" y="292" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Updated</text>
+    <rect x="240" y="240" width="180" height="70" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="330" y="270" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#34d399" text-anchor="middle">Free</text>
+    <text x="330" y="292" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">No sign up</text>
+    <rect x="440" y="240" width="180" height="70" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="530" y="270" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#34d399" text-anchor="middle">8 min</text>
+    <text x="530" y="292" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Read time</text>
+
+  <!-- Footer -->
+  <text x="40" y="435" font-family="Arial, sans-serif" font-size="10" fill="#334155">wordcountertool.net/blog/how-to-write-email-subject-lines</text>
+</svg>

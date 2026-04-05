@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-write-for-skimmable-content' },
@@ -64,13 +65,22 @@ export default function Post() {
                 <li className="text-slate-400 text-sm flex items-start gap-2"><span className="text-emerald-400 mt-1">→</span><span>Strong first sentences — each paragraph should stand alone if the rest is skipped</span></li>
               </ul>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/how-to-write-for-skimmable-content.svg" alt="How To Write For Skimmable Content — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">The F-Pattern: How People Actually Read Online</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Eye tracking studies by the Nielsen Norman Group found that web readers follow an F-shaped pattern. They read the first line of content fully. They read a shorter second line. Then they scan down the left side looking for subheadings and the first words of paragraphs. This means your most important information must be in the first 1-3 words of every headline and paragraph. Front-load every sentence with its most important word.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Check Your Content Readability Free</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Use our free readability checker to see if your content scores above 60 — the threshold for comfortable online reading.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">A readability checker can see if your content scores above 60 — the threshold for comfortable online reading.</p>
               <a href="/readability-checker" className="btn-primary inline-block px-6 py-3">Check Readability Free →</a>
             </section>
 
@@ -88,13 +98,20 @@ export default function Post() {
             <Link href="/word-counter" className="text-emerald-400 hover:underline text-sm">Word Counter</Link>
             <Link href="/blog/how-to-improve-readability-score" className="text-emerald-400 hover:underline text-sm">How to Improve Readability Score</Link>
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">What most guides get wrong</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">Most writing advice reads like it was assembled by committee. "Be clear and concise." "Know your audience." Sure. But that is the starting line, not the finish.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">What actually moves the needle is specificity. Not "write a compelling intro" but "start with a number, a question, or a bold claim that your reader can disagree with." Not "use keywords naturally" but "put your target phrase in the first 100 words, the last paragraph, and one H2."</p>
+            <p className="text-slate-400 text-sm leading-relaxed">The gap between good-enough writing and writing that performs well is smaller than people think. A few mechanical fixes — shorter paragraphs, stronger verbs, removing filler — close most of the gap. The rest is just practice and feedback loops.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

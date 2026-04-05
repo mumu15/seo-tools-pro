@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-improve-readability-score' },
@@ -27,7 +28,7 @@ export default function Post() {
         <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
         <article>
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">How to Improve Your Readability Score (2026 Guide)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated February 2026 · 10 min read</p>
+          <p className="text-slate-400 text-sm mb-8">Published January 2026 · Updated April 2026 · 10 min read</p>
           <div className="result-box mb-8 border-emerald-500/30">
             <h2 className="text-emerald-400 font-bold mb-3">Quick Answer</h2>
             <p className="text-white">Improve your readability score by using <strong>shorter sentences</strong>, <strong>simpler words</strong>, <strong>active voice</strong> and <strong>clear paragraph breaks</strong>. Aim for a Flesch-Kincaid score of <strong>60-70</strong>.</p>
@@ -54,6 +55,11 @@ export default function Post() {
                 </div>
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/how-to-improve-readability-score.svg" alt="How To Improve Readability Score — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <AdUnit slot="3248634657" />
 
       <section>
@@ -61,7 +67,7 @@ export default function Post() {
               <div className="space-y-3">
                 {[
                   {num:'1',title:'Use shorter sentences',desc:'Aim for 15-20 words per sentence. If a sentence has more than 25 words split it into two.'},
-                  {num:'2',title:'Choose simpler words',desc:'Say use instead of utilize. Simpler words improve your score and reader understanding.'},
+                  {num:'2',title:'Choose simpler words',desc:'Say use instead of use. Simpler words improve your score and reader understanding.'},
                   {num:'3',title:'Write in active voice',desc:'Active voice is more direct and easier to read than passive voice.'},
                   {num:'4',title:'Break up long paragraphs',desc:'Keep paragraphs to 3-4 sentences for web content. Short paragraphs with white space are much easier to read.'},
                   {num:'5',title:'Use bullet points and lists',desc:'Lists are easier to read than sentences packed with multiple items. Use them whenever you list 3 or more things.'},
@@ -78,6 +84,10 @@ export default function Post() {
                 ))}
               </div>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Check Your Readability Score Free</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Instantly analyze your content and get your Flesch-Kincaid score with specific recommendations to improve it.</p>
@@ -86,13 +96,20 @@ export default function Post() {
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Putting the numbers in context</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">Raw numbers only tell part of the story. The context — who you are writing for, where it will be published, what action you want readers to take — shapes everything about how to interpret these guidelines.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">We see a lot of writers fixate on hitting an exact word count target and miss the bigger picture. A piece that communicates its point clearly in 800 words beats one that rambles to reach 1,500. The targets in this guide are starting points, not rules carved in stone.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">The best approach: write until you have covered the topic properly, then edit ruthlessly. Cut every sentence that does not earn its place. What remains will usually land close to the recommended range anyway — because those ranges reflect what readers actually want to read.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

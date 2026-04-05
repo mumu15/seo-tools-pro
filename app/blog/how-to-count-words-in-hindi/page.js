@@ -5,6 +5,7 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
+  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-count-words-in-hindi' },
   title: 'How to Count Words in Hindi: Complete Guide (2026)',
   description: 'Learn how to accurately count words in Hindi text. Understand Hindi word boundaries, character counting, and use our free Hindi word counter tool.',
@@ -47,6 +48,10 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">The Hindi word order follows a SOV (Subject-Object-Verb) pattern, which affects how sentences are structured and how word count relates to meaning. A sentence that takes 10 words in English might take more or fewer words in Hindi depending on the grammatical features being used.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">One of the most distinctive features of Hindi is connected characters under horizontal line and compound verbs. This directly impacts how word counting tools process Hindi text and why specialized tools are needed for accurate results.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Step-by-Step: Counting Hindi Words Online</h2>

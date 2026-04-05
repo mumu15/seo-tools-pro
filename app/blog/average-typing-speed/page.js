@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/average-typing-speed' },
@@ -27,7 +28,7 @@ export default function Post() {
         <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">← Back to Blog</Link></div>
         <article>
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Average Typing Speed: What is Good WPM in 2026?</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated February 2026 · 8 min read</p>
+          <p className="text-slate-400 text-sm mb-8">Published January 2026 · Updated April 2026 · 8 min read</p>
           <div className="result-box mb-8 border-emerald-500/30">
             <h2 className="text-emerald-400 font-bold mb-3">Quick Answer</h2>
             <p className="text-white">The average typing speed is <strong>40 WPM</strong>. A good speed is <strong>50-70 WPM</strong>. Professional typists average <strong>65-75 WPM</strong>. Elite typists reach <strong>100+ WPM</strong>.</p>
@@ -48,6 +49,11 @@ export default function Post() {
                 </div>
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/average-typing-speed.svg" alt="Average Typing Speed — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <AdUnit slot="3248634657" />
 
       <section>
@@ -65,6 +71,10 @@ export default function Post() {
                 ))}
               </div>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Test Your Typing Speed Free</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Find out your exact words per minute with our free typing speed test. Instant results, no sign up required.</p>
@@ -100,13 +110,20 @@ export default function Post() {
           <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">The uncomfortable truth about typing speed</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">Faster typing does not mean better writing. It just means faster typing. The bottleneck for most writers is thinking, not finger speed. A novelist producing 1,000 words a day at 30 WPM is outperforming a fast typist who produces nothing.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">That said, if you regularly hit a point where your fingers cannot keep up with your thoughts, improving your typing speed removes a genuine friction point. The sweet spot for most knowledge workers is 60-80 WPM — fast enough that typing does not interrupt your flow.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">Touch typing is the single highest-leverage improvement. If you still look at your keyboard, learning to touch type will likely double your effective speed within a month of practice.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

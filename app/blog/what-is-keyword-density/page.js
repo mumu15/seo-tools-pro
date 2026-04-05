@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/what-is-keyword-density' },
@@ -27,7 +28,7 @@ export default function WhatIsKeywordDensity() {
         <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">← Back to Blog</Link></div>
         <article>
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">What is Keyword Density? The Complete SEO Guide (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated February 2026 · 9 min read</p>
+          <p className="text-slate-400 text-sm mb-8">Published January 2026 · Updated April 2026 · 9 min read</p>
 
           <div className="result-box mb-8 border-emerald-500/30">
             <h2 className="text-emerald-400 font-bold mb-3">Quick Answer</h2>
@@ -43,6 +44,11 @@ export default function WhatIsKeywordDensity() {
               </div>
               <p className="text-slate-400 leading-relaxed mt-4">For example if your article is 1000 words and your keyword appears 15 times your density is 15 ÷ 1000 × 100 = <strong className="text-white">1.5%</strong> which is ideal.</p>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/what-is-keyword-density.svg" alt="What Is Keyword Density — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
 
             <AdUnit slot="3248634657" />
 
@@ -66,6 +72,10 @@ export default function WhatIsKeywordDensity() {
               </div>
             </section>
 
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">What Matters More Than Keyword Density in 2026</h2>
               <div className="space-y-3">
@@ -85,7 +95,7 @@ export default function WhatIsKeywordDensity() {
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Check Your Keyword Density Free</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Use our free keyword density checker to analyze your content and see exactly how your keywords are distributed throughout your text.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">A keyword density checker can analyze your content and see exactly how your keywords are distributed throughout your text.</p>
               <Link href="/keyword-density" className="btn-primary inline-block px-6 py-3">Check Keyword Density Free →</Link>
             </section>
 
@@ -99,13 +109,20 @@ export default function WhatIsKeywordDensity() {
                   </div>
                 ))}
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">What the ranking data actually shows</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">SEO advice ages fast. What worked in 2023 might be irrelevant now. The one constant: Google keeps getting better at evaluating whether content actually helps someone or just exists to attract clicks.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">The shift toward "helpful content" is not marketing speak. Sites that published hundreds of thin, templated pages saw traffic drops of 30-60% after the Helpful Content Updates. Sites that published fewer, better pages held steady or grew.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">The practical takeaway: one thorough page that genuinely answers a question will outperform five thin pages that each answer a fraction of it. Depth beats breadth, and specificity beats generality.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

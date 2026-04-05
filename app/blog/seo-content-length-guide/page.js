@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/seo-content-length-guide' },
@@ -13,7 +14,7 @@ export const metadata = {
 const faqs = [
   {
     "q": "Does longer content rank better on Google?",
-    "a": "Longer content ranks better on average because it tends to be more comprehensive. However Google rewards relevance not length. A 500 word article that fully answers a question beats a 3,000 word article that is padded."
+    "a": "Longer content ranks better on average because it tends to be more full. However Google rewards relevance not length. A 500 word article that fully answers a question beats a 3,000 word article that is padded."
   },
   {
     "q": "What is the minimum word count for SEO?",
@@ -70,13 +71,22 @@ export default function Post() {
                 </div>
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/seo-content-length-guide.svg" alt="Seo Content Length Guide — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Quality vs Quantity: The Real Rule</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Content length is a means to an end, not the goal itself. Google measures whether content fully satisfies user intent. A 500 word article that perfectly answers a specific question can outrank a 3,000 word article full of filler. The question to ask is not "how long should this be" but "have I fully answered every question a reader might have about this topic". If yes you are done. If no keep writing.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">How to Check If Your Content Is Long Enough</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Search your target keyword on Google. Look at the top 3 results. Count their word counts using our word counter. Your content should be at least as long and ideally more comprehensive. Also look at what questions they answer and what they miss. Fill those gaps in your article. This approach consistently produces content that outranks competitors.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">Search your target keyword on Google. Look at the top 3 results. Count their word counts using our word counter. Your content should be at least as long and ideally more full. Also look at what questions they answer and what they miss. Fill those gaps in your article. This approach consistently produces content that outranks competitors.</p>
             </section>
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Analyse Your Content Length Free</h2>
@@ -98,13 +108,20 @@ export default function Post() {
             <Link href="/keyword-density" className="text-emerald-400 hover:underline text-sm">Keyword Density Checker</Link>
             <Link href="/blog/ideal-blog-post-length-for-seo" className="text-emerald-400 hover:underline text-sm">Ideal Blog Post Length for SEO</Link>
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">What the ranking data actually shows</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">SEO advice ages fast. What worked in 2023 might be irrelevant now. The one constant: Google keeps getting better at evaluating whether content actually helps someone or just exists to attract clicks.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">The shift toward "helpful content" is not marketing speak. Sites that published hundreds of thin, templated pages saw traffic drops of 30-60% after the Helpful Content Updates. Sites that published fewer, better pages held steady or grew.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">The practical takeaway: one thorough page that genuinely answers a question will outperform five thin pages that each answer a fraction of it. Depth beats breadth, and specificity beats generality.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

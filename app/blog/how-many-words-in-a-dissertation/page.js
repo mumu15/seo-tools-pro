@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import Header from '../../../components/Header'
-import Footer from '../../../components/Footer'
-import AdUnit from '../../components/AdUnit'
-import FaqSchema from '../../../components/FaqSchema'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import Header from './././components/Header'
+import Footer from './././components/Footer'
+import AdUnit from '././components/AdUnit'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   title: 'How Many Words in a Dissertation? (PhD & Masters Guide 2026) | WordCounterTool.net',
@@ -34,7 +35,7 @@ export default function Post() {
 
           <div className="bg-slate-800/40 border border-emerald-500/20 rounded-2xl p-6 mb-8">
             <p className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2">Quick Answer</p>
-            <p className="text-white text-lg leading-relaxed">A <strong>PhD dissertation</strong> is typically <strong>80,000-100,000 words</strong> (200-300 pages). A <strong>Masters dissertation</strong> is <strong>15,000-25,000 words</strong> (60-100 pages). Word counts vary significantly by field: humanities dissertations are longer (80,000-100,000) while science dissertations are shorter (40,000-80,000).</p>
+            <p className="text-white text-lg leading-relaxed">A <strong>PhD dissertation</strong> is typically <strong>80,000-100,000 words</strong> (200-300 pages). A <strong>Masters dissertation</strong> is <strong>15,000-25,000 words</strong> (60-100 pages). Word counts vary noticeably by field: humanities dissertations are longer (80,000-100,000) while science dissertations are shorter (40,000-80,000).</p>
           </div>
 
           <h2 className={st.h2}>Dissertation Word Counts by Degree & Field</h2>
@@ -86,7 +87,7 @@ export default function Post() {
           <h2 className={st.h2}>How to Manage Dissertation Word Count</h2>
           <p className={st.p}>The biggest mistake doctoral students make is writing too much, not too little. Most universities set a maximum word count, and examiners penalize work that exceeds it. Here are proven strategies for staying within limits:</p>
           <p className={st.p}><strong style={{color:'#e2e8f0'}}>Write in sprints:</strong> Set a daily word count goal of 500-1,000 words. At 500 words/day, a 60,000-word dissertation takes 120 working days — roughly 6 months of consistent writing. This is achievable alongside research and teaching duties.</p>
-          <p className={st.p}><strong style={{color:'#e2e8f0'}}>Track your progress:</strong> Use a word count tracker (like our free tool) to monitor each chapter against your target. Seeing progress is motivating and helps you identify chapters that are running long early.</p>
+          <p className={st.p}><strong style={{color:'#e2e8f0'}}>Track your progress:</strong> Use a word count tracker (like a free tool) to monitor each chapter against your target. Seeing progress is motivating and helps you identify chapters that are running long early.</p>
           <p className={st.p}><strong style={{color:'#e2e8f0'}}>Edit ruthlessly:</strong> First drafts are always too long. Plan for 2-3 rounds of editing that cut 10-20% of the word count. If a paragraph does not directly serve your argument, remove it. Every sentence should earn its place.</p>
 
           <div className="bg-gradient-to-r from-emerald-900/30 to-teal-900/20 border border-emerald-500/30 rounded-2xl p-6 mb-8 text-center">

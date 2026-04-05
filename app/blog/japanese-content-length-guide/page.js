@@ -5,6 +5,7 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
+  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/japanese-content-length-guide' },
   title: 'Japanese Content Length Guide: How Many Words Do You Need? (2026)',
   description: 'The definitive guide to Japanese content length for every format. Blog posts, social media, email, ads, and more. Data-driven word count recommendations.',
@@ -50,6 +51,10 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Ultra-long-form Japanese content (3000+ words): Reserved for definitive guides and pillar content. Only create ultra-long content when the topic genuinely requires comprehensive coverage.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our Japanese Word Counter at wordcountertool.net/word-counter/language/japanese to track your content length as you write. Hitting the right word count for your content type is crucial for performance.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Japanese Social Media Post Length</h2>

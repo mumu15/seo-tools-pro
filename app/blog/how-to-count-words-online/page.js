@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-count-words-online' },
@@ -27,7 +28,7 @@ export default function Post() {
         <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">← Back to Blog</Link></div>
         <article>
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">How to Count Words Online: The Complete Free Guide (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated February 2026 · 7 min read</p>
+          <p className="text-slate-400 text-sm mb-8">Published January 2026 · Updated April 2026 · 7 min read</p>
           <div className="result-box mb-8 border-emerald-500/30">
             <h2 className="text-emerald-400 font-bold mb-3">Quick Answer</h2>
             <p className="text-white">The easiest way is to <strong>paste your text into a free word counter</strong>. It instantly shows word count, character count, sentence count and reading time — no sign up required.</p>
@@ -48,6 +49,11 @@ export default function Post() {
                 ))}
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/how-to-count-words-online.svg" alt="How To Count Words Online — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <AdUnit slot="3248634657" />
 
       <section>
@@ -65,6 +71,10 @@ export default function Post() {
                 </div>
               </div>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Count Your Words Free Now</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Instantly count words, characters, sentences and paragraphs in any text. No sign up, no downloads, completely free.</p>
@@ -73,9 +83,9 @@ export default function Post() {
             
           <section>
             <h2 className="text-2xl font-display font-bold text-white mb-4">Why Accurate Word Counting Matters</h2>
-            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Academic submissions:</strong> Going over or under a word limit can result in grade penalties or automatic rejection. Most universities deduct marks for exceeding the word limit by 10% or more. Some automatically fail submissions that are significantly under the minimum word count.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Academic submissions:</strong> Going over or under a word limit can result in grade penalties or automatic rejection. Most universities deduct marks for exceeding the word limit by 10% or more. Some automatically fail submissions that are noticeably under the minimum word count.</p>
             <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Freelance writing:</strong> Freelance writers are often paid per word — the difference between 990 and 1,010 words can mean the difference between meeting or missing a contract requirement. Clients expect exact word counts, and undercounting can lead to disputes over payment.</p>
-            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">SEO content:</strong> Search engines favor comprehensive content. Blog posts of 1,500-2,500 words consistently outrank shorter content for competitive keywords. Knowing your exact word count helps you meet the minimum threshold for ranking potential.</p>
+            <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">SEO content:</strong> Search engines favor full content. Blog posts of 1,500-2,500 words consistently outrank shorter content for competitive keywords. Knowing your exact word count helps you meet the minimum threshold for ranking potential.</p>
             <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Social media:</strong> Every platform has character limits. A tweet is 280 characters, an Instagram caption is 2,200 characters, and a LinkedIn post is 3,000 characters. Exceeding these limits means your content gets cut off or cannot be posted at all.</p>
           </section>
           <section>
@@ -87,7 +97,7 @@ export default function Post() {
           <section>
             <h2 className="text-2xl font-display font-bold text-white mb-4">Beyond Word Count: Other Metrics That Matter</h2>
             <div className="space-y-3">
-              <div className="result-box"><h3 className="text-white font-bold mb-2">Reading Time</h3><p className="text-slate-400 text-sm leading-relaxed">Calculated at 200-250 words per minute for the average adult reader. This metric is crucial for blog posts and articles — research shows that articles with a displayed reading time get 40% more engagement because readers can decide upfront if they have time to commit.</p></div>
+              <div className="result-box"><h3 className="text-white font-bold mb-2">Reading Time</h3><p className="text-slate-400 text-sm leading-relaxed">Calculated at 200-250 words per minute for the average adult reader. This metric is important for blog posts and articles — research shows that articles with a displayed reading time get 40% more engagement because readers can decide upfront if they have time to commit.</p></div>
               <div className="result-box"><h3 className="text-white font-bold mb-2">Character Count</h3><p className="text-slate-400 text-sm leading-relaxed">Essential for social media (Twitter 280 chars, Instagram 2,200 chars), meta descriptions (155-160 chars), and SMS messages (160 chars). Character count includes spaces and punctuation unless otherwise specified.</p></div>
               <div className="result-box"><h3 className="text-white font-bold mb-2">Readability Score</h3><p className="text-slate-400 text-sm leading-relaxed">The Flesch-Kincaid grade level tells you what education level is needed to understand your text. Web content should target grade 6-8 for maximum accessibility. Academic writing is typically grade 12-16. Our readability checker provides this score instantly alongside word count.</p></div>
             </div>
@@ -95,13 +105,20 @@ export default function Post() {
           <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Putting the numbers in context</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">Raw numbers only tell part of the story. The context — who you are writing for, where it will be published, what action you want readers to take — shapes everything about how to interpret these guidelines.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">We see a lot of writers fixate on hitting an exact word count target and miss the bigger picture. A piece that communicates its point clearly in 800 words beats one that rambles to reach 1,500. The targets in this guide are starting points, not rules carved in stone.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">The best approach: write until you have covered the topic properly, then edit ruthlessly. Cut every sentence that does not earn its place. What remains will usually land close to the recommended range anyway — because those ranges reflect what readers actually want to read.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

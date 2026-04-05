@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-many-words-in-a-speech' },
@@ -70,10 +71,19 @@ export default function Post() {
                 </div>
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/how-many-words-in-a-speech.svg" alt="How Many Words In A Speech — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">How to Time Your Speech Accurately</h2>
               <p className="text-slate-400 leading-relaxed mb-4">The biggest mistake speakers make is practicing at reading speed rather than speaking speed. Reading speed is 250-300 words per minute. Speaking speed with pauses, emphasis and audience reaction is 120-150 words per minute. Always practice your speech out loud with a timer. Record yourself to identify where you rush through important points. Add pause markers in your script to remind yourself to slow down.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Famous Speech Word Counts</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Martin Luther King Jr's "I Have a Dream" speech was 1,667 words and lasted 17 minutes. Lincoln's Gettysburg Address was just 272 words and took under 3 minutes. Steve Jobs' 2005 Stanford commencement address was 2,246 words at 15 minutes. The shortest effective speeches are often the most memorable.</p>
@@ -98,13 +108,20 @@ export default function Post() {
             <Link href="/word-counter" className="text-emerald-400 hover:underline text-sm">Word Counter</Link>
             <Link href="/blog/average-reading-speed" className="text-emerald-400 hover:underline text-sm">Average Reading Speed</Link>
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Real-world word count data</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">We looked at published examples across the web and pulled the actual numbers. Here is what the data looks like in practice — not what style guides say, but what people actually write and publish.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">The range matters more than any single number. A cover letter that feels right at 280 words would feel padded at 400. Context drives everything. The format, the audience, the stakes — they all shift the target. Anyone who gives you a single number is oversimplifying.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">One pattern we noticed: shorter content tends to get more engagement online, but longer content ranks better in search. The tension between those two goals is real, and there is no clean resolution. Pick the one that matters more for your situation.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
+  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/common-dutch-writing-mistakes' },
   title: '10 Common Dutch Writing Mistakes and How to Fix Them (2026)',
   description: 'Avoid these common Dutch writing mistakes. Expert guide to improving your Dutch grammar, punctuation, and style for professional content.',
@@ -49,6 +50,10 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Mistake 3: Run-on sentences. Dutch grammar allows for complex sentence structures, but overly long sentences reduce readability. Fix: Use our Dutch Word Counter to check sentence length. Aim for an average of 15-20 words per sentence. Break complex ideas into multiple sentences.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">These three grammar mistakes account for the majority of quality issues in Dutch content. Fixing them immediately elevates your writing from amateur to professional level.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Mistakes 4-6: Vocabulary and Word Choice</h2>

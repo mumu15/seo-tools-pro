@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/long-tail-keywords-guide' },
@@ -68,17 +69,26 @@ export default function Post() {
                 </div>
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/long-tail-keywords-guide.svg" alt="Long Tail Keywords Guide — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">How to Find Long-Tail Keywords for Free</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Google gives you free keyword research tools built right into search. Type your seed keyword and look at autocomplete suggestions — these are real searches people make. Scroll to the bottom of the results page for related searches. Click on a result and look at the People Also Ask box. These three sources alone can generate dozens of long-tail keyword ideas in minutes. For each idea check how many results appear — fewer than 500,000 competing pages is a green light.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">How to Use Long-Tail Keywords in Your Content</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Include your primary long-tail keyword in the page title, in the first 100 words, in one subheading and in the meta description. Use related variations naturally throughout the body text. Never force keywords — if a sentence sounds unnatural rewrite it. Google's understanding of language is sophisticated enough that keyword stuffing hurts rather than helps.</p>
             </section>
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Analyse Keyword Density Free</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Use our free keyword density checker to make sure you are using your target keywords at the ideal 1-2% density.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">A keyword density checker can make sure you are using your target keywords at the ideal 1-2% density.</p>
               <a href="/keyword-density" className="btn-primary inline-block px-6 py-3">Check Keyword Density Free →</a>
             </section>
 
@@ -96,13 +106,20 @@ export default function Post() {
             <Link href="/blog/what-is-keyword-density" className="text-emerald-400 hover:underline text-sm">What is Keyword Density</Link>
             <Link href="/blog/ideal-blog-post-length-for-seo" className="text-emerald-400 hover:underline text-sm">Ideal Blog Post Length for SEO</Link>
               </div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">What the ranking data actually shows</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">SEO advice ages fast. What worked in 2023 might be irrelevant now. The one constant: Google keeps getting better at evaluating whether content actually helps someone or just exists to attract clicks.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">The shift toward "helpful content" is not marketing speak. Sites that published hundreds of thin, templated pages saw traffic drops of 30-60% after the Helpful Content Updates. Sites that published fewer, better pages held steady or grew.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">The practical takeaway: one thorough page that genuinely answers a question will outperform five thin pages that each answer a fraction of it. Depth beats breadth, and specificity beats generality.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>

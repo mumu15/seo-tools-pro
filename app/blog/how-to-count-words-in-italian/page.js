@@ -5,6 +5,7 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
+  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-count-words-in-italian' },
   title: 'How to Count Words in Italian: Complete Guide (2026)',
   description: 'Learn how to accurately count words in Italian text. Understand Italian word boundaries, character counting, and use our free Italian word counter tool.',
@@ -47,6 +48,10 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">The Italian word order follows a SVO (Subject-Verb-Object) pattern, which affects how sentences are structured and how word count relates to meaning. A sentence that takes 10 words in English might take more or fewer words in Italian depending on the grammatical features being used.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">One of the most distinctive features of Italian is combined preposition-articles and phonetic spelling. This directly impacts how word counting tools process Italian text and why specialized tools are needed for accurate results.</p>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Step-by-Step: Counting Italian Words Online</h2>

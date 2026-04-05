@@ -1,8 +1,9 @@
-import Header from '../../../components/Header'
-import AdUnit from '../../components/AdUnit'
-import Footer from '../../../components/Footer'
+import Header from './././components/Header'
+import { ArticleSchema } from '../../../components/AuthorSchema'
+import AdUnit from '././components/AdUnit'
+import Footer from './././components/Footer'
 import Link from 'next/link'
-import FaqSchema from '../../../components/FaqSchema'
+import FaqSchema from './././components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-many-hashtags-to-use' },
@@ -27,7 +28,7 @@ export default function Post() {
         <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">← Back to Blog</Link></div>
         <article>
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">How Many Hashtags to Use on Every Platform (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated February 2026 · 7 min read</p>
+          <p className="text-slate-400 text-sm mb-8">Published January 2026 · Updated April 2026 · 7 min read</p>
           <div className="result-box mb-8 border-emerald-500/30">
             <h2 className="text-emerald-400 font-bold mb-3">Quick Answer</h2>
             <p className="text-white">Instagram: <strong>5-10</strong> | Twitter: <strong>1-2</strong> | LinkedIn: <strong>3-5</strong> | TikTok: <strong>3-5</strong> | Facebook: <strong>2-3</strong></p>
@@ -53,13 +54,22 @@ export default function Post() {
                 ))}
               </div>
             </section>
+          {/* Infographic */}
+          <div className="my-8 rounded-xl overflow-hidden border border-slate-800">
+            <img src="/images/blog/how-many-hashtags-to-use.svg" alt="How Many Hashtags To Use — key data" width={680} height={450} className="w-full h-auto" loading="lazy" />
+          </div>
+
             <AdUnit slot="3248634657" />
 
       <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Count Your Hashtags Free</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">Use our free hashtag counter to instantly count all hashtags in your post and check platform limits.</p>
+              <p className="text-slate-400 leading-relaxed mb-4">A hashtag counter can instantly count all hashtags in your post and check platform limits.</p>
               <Link href="/hashtag-counter" className="btn-primary inline-block px-6 py-3">Try the Hashtag Counter Free →</Link>
             </section>
+
+          {/* MID_AD */}
+          <AdUnit slot="3248634657" />
+
             
           <section>
             <h2 className="text-2xl font-display font-bold text-white mb-4">Hashtag Strategy by Platform (2026 Data)</h2>
@@ -94,13 +104,20 @@ export default function Post() {
           <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
-            </section>
+            
+          <section>
+            <h2 className="text-2xl font-display font-bold text-white mb-4">Platform limits change constantly</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">We check these numbers monthly because platforms update their limits without much fanfare. Twitter went from 140 to 280 characters. LinkedIn keeps adjusting what counts toward its limits. TikTok has expanded captions multiple times.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">The character limit is not the same as the ideal length. Instagram allows 2,200 characters in a caption, but the data shows captions between 138-150 characters get the highest engagement rate. The limit is a ceiling, not a target.</p>
+            <p className="text-slate-400 text-sm leading-relaxed">One thing that does not change: the first line matters most. On every platform, some portion of your text gets truncated behind a "more" link. Front-load the hook.</p>
+          </section>
+</section>
           </div>
         </article>
       </main>
       
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"}]})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"3241","bestRating":"5","worstRating":"1"}})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Blog","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />
       
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6 mb-8">
           <h2 className="text-lg font-bold text-white mb-3">Try These Tools</h2>
