@@ -3,8 +3,8 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 const englishPosts = [
-  { slug: 'average-reading-speed', title: 'Average Reading Speed: How Fast Do People Read? (2026)' },
-    { slug: 'average-typing-speed', title: 'Average Typing Speed: What is Good WPM in 2026?' },
+  { slug: 'average-reading-speed', title: 'Average Reading Speed: How Fast Do People Read? (2026 Data)' },
+    { slug: 'average-typing-speed', title: 'Average Typing Speed: How Fast Should You Type? (2026 Guide)' },
     { slug: 'best-ai-writing-tools-2026', title: 'Best AI Writing Tools in 2026: Complete Comparison | WordCounterTool.net' },
     { slug: 'best-free-writing-tools-2026', title: 'Best Free Writing Tools in 2026: The Complete List | WordCounterTool.net' },
     { slug: 'chatgpt-prompt-length', title: 'ChatGPT Prompt Length: How Long Should Your Prompts Be? (2026) | WordCounterTool.net' },
@@ -13,7 +13,7 @@ const englishPosts = [
     { slug: 'google-ads-character-limits', title: 'Google Ads Character Limits 2026: Every Ad Type Explained | WordCounterTool.net' },
     { slug: 'how-long-should-a-youtube-script-be', title: 'How Long Should a YouTube Script Be? Word Count by Video Length | WordCounterTool.net' },
     { slug: 'how-many-characters-in-a-tweet', title: 'How Many Characters in a Tweet? (Twitter/X Limits 2026)' },
-    { slug: 'how-many-hashtags-to-use', title: 'How Many Hashtags to Use on Instagram, Twitter and LinkedIn (2026)' },
+    { slug: 'how-many-hashtags-to-use', title: 'How Many Hashtags Should You Use? (2026 Platform Guide)' },
     { slug: 'how-many-words-in-a-blog-post', title: 'How Many Words Should a Blog Post Be? (2026 SEO Data) | WordCounterTool.net' },
     { slug: 'how-many-words-in-a-college-essay', title: 'How Many Words in a College Essay? Complete 2026 Guide | WordCounterTool.net' },
     { slug: 'how-many-words-in-a-cover-letter', title: 'How Many Words Should a Cover Letter Be? (2026 Guide)' },
@@ -27,8 +27,8 @@ const englishPosts = [
     { slug: 'how-many-words-in-a-short-story', title: 'How Many Words in a Short Story? (Word Count Guide 2026)' },
     { slug: 'how-many-words-in-a-speech', title: 'How Many Words in a Speech? (Minutes to Word Count Guide)' },
     { slug: 'how-many-words-per-page', title: 'How Many Words Per Page? (Definitive Guide for Every Format)' },
-    { slug: 'how-to-count-words-online', title: 'How to Count Words Online: The Complete Free Guide (2026)' },
-    { slug: 'how-to-improve-readability-score', title: 'How to Improve Your Readability Score (Flesch-Kincaid Guide)' },
+    { slug: 'how-to-count-words-online', title: 'How to Count Words Online: Free Tools and Methods (2026)' },
+    { slug: 'how-to-improve-readability-score', title: 'How to Improve Your Readability Score (10 Proven Techniques)' },
     { slug: 'how-to-type-faster', title: 'How to Type Faster: 10 Proven Tips to Boost Your Typing Speed (2026)' },
     { slug: 'how-to-use-keywords-in-blog-posts', title: 'How to Use Keywords in Blog Posts the Right Way (2026 SEO Guide)' },
     { slug: 'how-to-write-blog-conclusion', title: 'How to Write a Blog Conclusion That Drives Action (2026 Guide)' },
@@ -42,18 +42,18 @@ const englishPosts = [
     { slug: 'how-to-write-seo-title-tags', title: 'How to Write SEO Title Tags That Rank and Get Clicks (2026)' },
     { slug: 'how-to-write-twitter-thread', title: 'How to Write a Twitter Thread That Goes Viral (2026 Guide)' },
     { slug: 'how-to-write-wedding-speech', title: 'How to Write a Wedding Speech: Word Count, Structure, and Tips (2026) | WordCounterTool.net' },
-    { slug: 'ideal-blog-post-length-for-seo', title: 'Ideal Blog Post Length for SEO in 2026' },
+    { slug: 'ideal-blog-post-length-for-seo', title: 'Ideal Blog Post Length for SEO in 2026 (Data-Backed Guide)' },
     { slug: 'ideal-linkedin-post-length', title: 'The Ideal LinkedIn Post Length for Maximum Engagement (2026 Data) | WordCounterTool.net' },
     { slug: 'instagram-caption-length', title: 'Instagram Caption Length: How Long Should Your Caption Be? (2026)' },
-    { slug: 'long-tail-keywords-guide', title: 'Long-Tail Keywords: The Complete Beginners Guide (2026)' },
+    { slug: 'long-tail-keywords-guide', title: 'Long-Tail Keywords: The Complete Guide to Finding and Using Them (2026)' },
     { slug: 'reddit-post-length', title: 'Ideal Reddit Post Length for Maximum Upvotes (2026) | WordCounterTool.net' },
-    { slug: 'seo-content-length-guide', title: 'SEO Content Length Guide: How Long Should Every Page Be? (2026)' },
+    { slug: 'seo-content-length-guide', title: 'SEO Content Length Guide: How Long Should Your Content Be? (2026)' },
     { slug: 'substack-newsletter-length', title: 'Ideal Substack Newsletter Length (2026 Data) | WordCounterTool.net' },
     { slug: 'tiktok-caption-length-guide', title: 'TikTok Caption Length: The Complete Guide (2026) | WordCounterTool.net' },
     { slug: 'twitter-character-limit-2026', title: 'Twitter/X Character Limit 2026: Everything You Need to Know | WordCounterTool.net' },
-    { slug: 'what-is-flesch-kincaid-score', title: 'What Is Flesch-Kincaid Score? (And How to Improve Yours)' },
-    { slug: 'what-is-keyword-density', title: 'What is Keyword Density? The Complete SEO Guide (2026)' },
-    { slug: 'words-per-minute-reading-guide', title: 'Words Per Minute Reading: Average Speeds and How to Read Faster (2026)' }
+    { slug: 'what-is-flesch-kincaid-score', title: 'What Is Flesch-Kincaid Score? (And How to Improve Yours in 2026)' },
+    { slug: 'what-is-keyword-density', title: 'What Is Keyword Density? (And What Should Yours Be in 2026)' },
+    { slug: 'words-per-minute-reading-guide', title: 'Words Per Minute Reading Guide: How to Measure Your Speed (2026)' }
 ]
 
 const langSections = [
