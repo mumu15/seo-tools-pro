@@ -349,7 +349,7 @@ textarea:focus {
 /* ═══════════════════════════════════════════════ */
 
 /* Force ALL headings to be dark in light mode */
-:root h1, :root h2, :root h3, :root h4, :root h5, :root h6 {
+html:not([data-theme="dark"]) h1, html:not([data-theme="dark"]) h2, html:not([data-theme="dark"]) h3, html:not([data-theme="dark"]) h4, html:not([data-theme="dark"]) h5, html:not([data-theme="dark"]) h6 {
   color: #0f172a !important;
 }
 [data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3,
@@ -358,11 +358,11 @@ textarea:focus {
 }
 
 /* Force paragraph and body text darker in light mode */
-:root p, :root li, :root span, :root div {
+html:not([data-theme="dark"]) p, html:not([data-theme="dark"]) li, html:not([data-theme="dark"]) span, html:not([data-theme="dark"]) div {
   --tw-text-opacity: 1;
 }
 
-:root main p {
+html:not([data-theme="dark"]) main p {
   color: #334155 !important;
 }
 [data-theme="dark"] main p {
@@ -370,7 +370,7 @@ textarea:focus {
 }
 
 /* Article/blog content */
-:root article p, :root article li {
+html:not([data-theme="dark"]) article p, html:not([data-theme="dark"]) article li {
   color: #334155 !important;
 }
 [data-theme="dark"] article p, [data-theme="dark"] article li {
@@ -378,7 +378,7 @@ textarea:focus {
 }
 
 /* Strong/bold text in content */
-:root strong, :root b {
+html:not([data-theme="dark"]) strong, html:not([data-theme="dark"]) b {
   color: #0f172a !important;
 }
 [data-theme="dark"] strong, [data-theme="dark"] b {
@@ -386,10 +386,10 @@ textarea:focus {
 }
 
 /* Card text - descriptions inside cards/links */
-:root a > div, :root a > p, :root a div, :root a p {
+html:not([data-theme="dark"]) a > div, html:not([data-theme="dark"]) a > p, html:not([data-theme="dark"]) a div, html:not([data-theme="dark"]) a p {
   color: #475569 !important;
 }
-:root a h2, :root a h3, :root a > div:first-child {
+html:not([data-theme="dark"]) a h2, html:not([data-theme="dark"]) a h3, html:not([data-theme="dark"]) a > div:first-child {
   color: #0f172a !important;
 }
 [data-theme="dark"] a > div, [data-theme="dark"] a > p,
@@ -402,10 +402,10 @@ textarea:focus {
 }
 
 /* Navigation link text */
-:root nav a, :root header a {
+html:not([data-theme="dark"]) nav a, html:not([data-theme="dark"]) header a {
   color: #334155 !important;
 }
-:root nav a:hover, :root header a:hover {
+html:not([data-theme="dark"]) nav a:hover, html:not([data-theme="dark"]) header a:hover {
   color: #0f172a !important;
 }
 [data-theme="dark"] nav a, [data-theme="dark"] header a {
@@ -416,9 +416,9 @@ textarea:focus {
 }
 
 /* Keep emerald accent visible in both modes */
-:root .text-emerald-400, :root .text-emerald-500,
-:root [style*="color: #10b981"], :root [style*="color: #34d399"],
-:root [style*="color:'#10b981'"], :root [style*="color:'#34d399'"] {
+html:not([data-theme="dark"]) .text-emerald-400, html:not([data-theme="dark"]) .text-emerald-500,
+html:not([data-theme="dark"]) [style*="color: #10b981"], html:not([data-theme="dark"]) [style*="color: #34d399"],
+html:not([data-theme="dark"]) [style*="color:'#10b981'"], html:not([data-theme="dark"]) [style*="color:'#34d399'"] {
   color: #059669 !important;
 }
 [data-theme="dark"] .text-emerald-400, [data-theme="dark"] .text-emerald-500,
@@ -428,10 +428,10 @@ textarea:focus {
 }
 
 /* Logo text override */
-:root header .font-bold {
+html:not([data-theme="dark"]) header .font-bold {
   color: #0f172a !important;
 }
-:root header .text-emerald-400, :root header span[class*="emerald"] {
+html:not([data-theme="dark"]) header .text-emerald-400, html:not([data-theme="dark"]) header span[class*="emerald"] {
   color: #059669 !important;
 }
 [data-theme="dark"] header .font-bold {
@@ -442,16 +442,16 @@ textarea:focus {
 }
 
 /* Gradient text (hero "Rank Higher.") stays emerald in both modes */
-:root [style*="WebkitBackgroundClip"], [data-theme="dark"] [style*="WebkitBackgroundClip"] {
+html:not([data-theme="dark"]) [style*="WebkitBackgroundClip"], [data-theme="dark"] [style*="WebkitBackgroundClip"] {
   /* Don't override gradient text */
 }
 
 /* Card backgrounds in light mode — lighter and with better contrast */
-:root .bg-slate-800\/40, :root .bg-slate-800\/50,
-:root [style*="rgba(255,255,255,0.03)"],
-:root [style*="rgba(255,255,255,0.04)"],
-:root [style*="rgba(255,255,255,0.05)"],
-:root [style*="rgba(255,255,255,0.06)"] {
+html:not([data-theme="dark"]) .bg-slate-800\/40, html:not([data-theme="dark"]) .bg-slate-800\/50,
+html:not([data-theme="dark"]) [style*="rgba(255,255,255,0.03)"],
+html:not([data-theme="dark"]) [style*="rgba(255,255,255,0.04)"],
+html:not([data-theme="dark"]) [style*="rgba(255,255,255,0.05)"],
+html:not([data-theme="dark"]) [style*="rgba(255,255,255,0.06)"] {
   background: #f1f5f9 !important;
   border-color: #e2e8f0 !important;
 }
@@ -463,7 +463,7 @@ textarea:focus {
 }
 
 /* Result box / Quick Answer boxes in light mode */
-:root .result-box, :root [class*="result-box"] {
+html:not([data-theme="dark"]) .result-box, html:not([data-theme="dark"]) [class*="result-box"] {
   background: #f8fafc !important;
   border: 1px solid #e2e8f0 !important;
 }
@@ -473,7 +473,7 @@ textarea:focus {
 }
 
 /* FAQ question text */
-:root .result-box h3, :root [class*="result-box"] h3 {
+html:not([data-theme="dark"]) .result-box h3, html:not([data-theme="dark"]) [class*="result-box"] h3 {
   color: #0f172a !important;
 }
 [data-theme="dark"] .result-box h3, [data-theme="dark"] [class*="result-box"] h3 {
@@ -481,13 +481,13 @@ textarea:focus {
 }
 
 /* Footer text */
-:root footer p, :root footer span, :root footer a {
+html:not([data-theme="dark"]) footer p, html:not([data-theme="dark"]) footer span, html:not([data-theme="dark"]) footer a {
   color: #64748b !important;
 }
-:root footer h3 {
+html:not([data-theme="dark"]) footer h3 {
   color: #0f172a !important;
 }
-:root footer a:hover {
+html:not([data-theme="dark"]) footer a:hover {
   color: #059669 !important;
 }
 [data-theme="dark"] footer p, [data-theme="dark"] footer span, [data-theme="dark"] footer a {
@@ -501,7 +501,7 @@ textarea:focus {
 }
 
 /* Dropdown/mega menu */
-:root [style*="backdropFilter"], :root [style*="backdrop-filter"] {
+html:not([data-theme="dark"]) [style*="backdropFilter"], html:not([data-theme="dark"]) [style*="backdrop-filter"] {
   background: rgba(255,255,255,0.97) !important;
   border-color: #e2e8f0 !important;
 }
@@ -511,13 +511,13 @@ textarea:focus {
 }
 
 /* "Try Free" button — keep green in both modes */
-:root [style*="linear-gradient(135deg, #10b981"], 
+html:not([data-theme="dark"]) [style*="linear-gradient(135deg, #10b981"], 
 [data-theme="dark"] [style*="linear-gradient(135deg, #10b981"] {
   color: white !important;
 }
 
 /* Blog category tabs and badges */
-:root [style*="rgba(16,185,129"] {
+html:not([data-theme="dark"]) [style*="rgba(16,185,129"] {
   color: #059669 !important;
 }
 [data-theme="dark"] [style*="rgba(16,185,129"] {
@@ -525,10 +525,10 @@ textarea:focus {
 }
 
 /* Data snapshot callout */
-:root [style*="border: 2px solid rgba(16,185,129"] p {
+html:not([data-theme="dark"]) [style*="border: 2px solid rgba(16,185,129"] p {
   color: #334155 !important;
 }
-:root [style*="border: 2px solid rgba(16,185,129"] .text-lg {
+html:not([data-theme="dark"]) [style*="border: 2px solid rgba(16,185,129"] .text-lg {
   color: #0f172a !important;
 }
 [data-theme="dark"] [style*="border: 2px solid rgba(16,185,129"] p {
@@ -539,9 +539,9 @@ textarea:focus {
 }
 
 /* Breadcrumb nav text */
-:root nav.text-sm, :root nav[class*="text-sm"] {
+html:not([data-theme="dark"]) nav.text-sm, html:not([data-theme="dark"]) nav[class*="text-sm"] {
   color: #64748b !important;
 }
-:root nav.text-sm a, :root nav[class*="text-sm"] a {
+html:not([data-theme="dark"]) nav.text-sm a, html:not([data-theme="dark"]) nav[class*="text-sm"] a {
   color: #059669 !important;
 }
