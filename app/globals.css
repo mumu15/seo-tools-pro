@@ -9,18 +9,14 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: #0a0d14;
-  color: #e2e8f0;
-}
+
 
 main.min-h-screen,
 .min-h-screen:not(html):not(body) {
   min-height: auto !important;
 }
 
-body {
-  display: flex;
+body { background: #0a0d14 !important; color: #e2e8f0 !important; display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
