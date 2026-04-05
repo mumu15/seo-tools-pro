@@ -224,7 +224,7 @@ export default function Home() {
       <div style={{maxWidth:1100,margin:'0 auto',padding:'48px 16px'}}>
         <h2 style={{fontSize:'clamp(22px,3vw,30px)',fontWeight:900,color:'#fff',textAlign:'center',margin:'0 0 8px'}}>Data & Reference</h2>
         <p style={{color:'#94a3b8',textAlign:'center',margin:'0 0 28px',fontSize:14}}>Popular writing and language data — free to reference and cite</p>
-        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill, minmax(240px, 1fr))',gap:10}}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
           <a href="/word-count-popular-books" style={{display:'block',padding:'16px 20px',borderRadius:14,background:'rgba(16,185,129,0.06)',border:'1px solid rgba(16,185,129,0.15)',textDecoration:'none'}}>
             <div style={{fontSize:14,fontWeight:700,color:'#10b981'}}>Book Word Counts</div>
             <div style={{fontSize:12,color:'#64748b',marginTop:4}}>Harry Potter, LOTR, Bible & 50+ books</div>
