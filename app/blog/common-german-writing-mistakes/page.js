@@ -96,7 +96,7 @@ export default function Post() {
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Fehler 11–15: SEO und digitales Schreiben</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">11. Keyword-Stuffing auf Deutsch:</strong> Google erkennt unnatürliche Keyword-Häufung. „Wortzähler kostenlos online Wortzähler deutsch Wortzähler Tool" — das bestraft Google mit Ranking-Verlust. Nutze stattdessen natürliche Varianten und Synonyme. Unser <a href="/keyword-density-checker" className="text-emerald-400 underline">Keyword-Dichte-Checker</a> zeigt dir die optimale Balance.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">11. Keyword-Stuffing auf Deutsch:</strong> Google erkennt unnatürliche Keyword-Häufung. „Wortzähler kostenlos online Wortzähler deutsch Wortzähler Tool" — das bestraft Google mit Ranking-Verlust. Nutze stattdessen natürliche Varianten und Synonyme. Unser <a href="/keyword-density" className="text-emerald-400 underline">Keyword-Dichte-Checker</a> zeigt dir die optimale Balance.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">12. Fehlende Umlaute in URLs und Meta-Tags:</strong> Suchmaschinen verarbeiten ä, ö, ü korrekt. Aber in URLs sollten sie als ae, oe, ue codiert werden. In Meta-Descriptions und Titles dagegen solltest du die echten Umlaute nutzen — „für" statt „fuer".</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">13. Doppelte Verneinungen:</strong> „Nicht unwesentlich" — dieses Konstrukt ist im Deutschen grammatisch korrekt, aber es verwirrt Leser. Besser: „Wichtig" oder „erheblich". Einfache, direkte Sprache funktioniert online immer besser als doppelte Verneinungen.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">14. Falsche Komposita-Bildung:</strong> Deutsche Komposita werden zusammengeschrieben oder mit Bindestrich verbunden, aber nicht getrennt. „Suchmaschinen Optimierung" ist falsch — korrekt: „Suchmaschinenoptimierung" oder „Suchmaschinen-Optimierung". Die Duden-Hotline berichtet, dass 30% aller Anfragen Komposita betreffen.</p>
@@ -152,7 +152,7 @@ export default function Post() {
             <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Zeichenzähler</a>
             <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Lesezeit-Rechner</a>
             <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Lesbarkeits-Checker</a>
-            <a href="/keyword-density-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Keyword-Dichte-Checker</a>
+            <a href="/keyword-density" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Keyword-Dichte-Checker</a>
           </div>
         </div>
       </div>

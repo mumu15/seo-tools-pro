@@ -38,7 +38,7 @@ export default function Post() {
           <p className="text-slate-400 text-sm mb-8">Aktualisiert April 2026 | 11 Min. Lesezeit</p>
           <div className="result-box mb-8 border-emerald-500/30">
             <h2 className="text-emerald-400 font-bold mb-3">Zusammenfassung</h2>
-            <p className="text-white">Der deutschsprachige Markt (DACH-Raum) hat <strong className="text-white">100 Millionen Internetnutzer</strong> (Statista 2024). Google.de ist mit <strong className="text-white">91,4% Marktanteil</strong> die dominierende Suchmaschine. Deutsche Nutzer suchen anders als englische — sie verwenden längere, spezifischere Suchanfragen. Nutze unseren <a href="/keyword-density-checker" className="text-emerald-400 underline">Keyword-Dichte-Checker</a> für die Optimierung.</p>
+            <p className="text-white">Der deutschsprachige Markt (DACH-Raum) hat <strong className="text-white">100 Millionen Internetnutzer</strong> (Statista 2024). Google.de ist mit <strong className="text-white">91,4% Marktanteil</strong> die dominierende Suchmaschine. Deutsche Nutzer suchen anders als englische — sie verwenden längere, spezifischere Suchanfragen. Nutze unseren <a href="/keyword-density" className="text-emerald-400 underline">Keyword-Dichte-Checker</a> für die Optimierung.</p>
           </div>
           <div className="space-y-8">
 
@@ -76,7 +76,7 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Längere Suchanfragen:</strong> Laut einer Sistrix-Analyse 2024 haben deutsche Suchanfragen im Durchschnitt 3,2 Wörter — im Vergleich zu 2,8 auf Englisch. Das liegt an den Komposita und der Tendenz, präziser zu suchen.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">2. Fragen als Keywords:</strong> 23% der deutschen Suchanfragen beginnen mit „Wie", „Was", „Warum" oder „Wann" — bei Englisch sind es 19%. Deutsche suchen häufiger nach Erklärungen und Anleitungen.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">3. Regionale Unterschiede:</strong> „Brötchen" vs. „Semmel" vs. „Schrippe" — je nach Region (Nord/Süd/Ost) unterscheiden sich die Suchbegriffe. Berücksichtige regionale Varianten in deiner Keyword-Strategie.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Tools für die deutsche Keyword-Recherche: Google Keyword Planner (kostenlos), Sistrix (für den DACH-Markt optimiert), Ahrefs (internationale Alternative), AnswerThePublic (Fragen-Keywords) und unser <a href="/keyword-density-checker" className="text-emerald-400 underline">Keyword-Dichte-Checker</a> für die Optimierung bestehender Texte.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Tools für die deutsche Keyword-Recherche: Google Keyword Planner (kostenlos), Sistrix (für den DACH-Markt optimiert), Ahrefs (internationale Alternative), AnswerThePublic (Fragen-Keywords) und unser <a href="/keyword-density" className="text-emerald-400 underline">Keyword-Dichte-Checker</a> für die Optimierung bestehender Texte.</p>
             </section>
 
             <AdUnit slot="3248634657" />
@@ -124,7 +124,7 @@ export default function Post() {
             <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Zeichenzähler</a>
             <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Lesezeit-Rechner</a>
             <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Lesbarkeits-Checker</a>
-            <a href="/keyword-density-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Keyword-Dichte-Checker</a>
+            <a href="/keyword-density" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Keyword-Dichte-Checker</a>
           </div>
         </div>
       </div>
