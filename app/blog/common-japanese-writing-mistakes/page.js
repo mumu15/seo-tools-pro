@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">SEOの観点からも、文章の品質は重要です。Googleは日本語コンテンツのE-E-A-T評価を強化しており、誤字脱字の多い記事は専門性が低いと判断されます。以下の15の間違いを理解し、改善することで文章の質を大幅に向上させましょう。</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">間違い1〜5：漢字と表記</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. 漢字の誤変換：</strong>IMEの変換ミスは最も一般的な間違いです。「以外」と「意外」、「対象」と「対称」、「保障」と「保証」と「補償」——同音異義語は日本語に特に多く、正しい漢字を選ぶ注意が必要です。文化庁調査で72%の日本人が不安を感じるのはこの問題です。</p>
@@ -94,6 +97,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">10. 「ら抜き言葉」：</strong>「食べれる」（ら抜き）vs「食べられる」（正しい形）。口語では「ら抜き」が広く使われていますが、フォーマルな文章では避けるべきです。ただし、文化庁2024年の調査で「食べれる」を使う人が初めて過半数（52%）を超えました。</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">間違い11〜15：文章の構成とスタイル</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">11. 一文が長すぎる：</strong>日本語は文末に動詞が来る（SOV構造）ため、文が長くなりがちです。Web文章の理想的な一文の長さは40〜60文字。80文字を超えると読者が文頭の内容を忘れます。共同通信の記者ハンドブックでも「一文60字以内」を推奨しています。</p>
@@ -133,6 +139,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">アドバイス：文章を書き終えたら、声に出して読んでみてください。つまずく箇所があれば、その文は長すぎるか構造が複雑すぎます。この単純な方法で、ツールでは検出できない問題を発見できます。</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">よくある質問</h2>

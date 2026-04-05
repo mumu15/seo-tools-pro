@@ -74,6 +74,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">百度SEO vs Google SEO：关键差异</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">内容收录速度：</strong>百度的爬虫抓取频率低于Google。新网站在百度被收录可能需要2-4周，而Google通常1-3天。主动提交sitemap到百度站长平台可以加速收录。</p>
@@ -92,6 +95,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">4. 监控关键词密度：</strong>中文关键词密度建议控制在2-3%（比英文的1-2%稍高）。中文文本信息密度高，关键词自然出现的频率本身就更高。使用我们的<a href="/keyword-density" className="text-emerald-400 underline">关键词密度检查器</a>来监控。</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">中文内容集群策略</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">内容集群（Content Cluster）策略在中文市场的效果特别好，因为大多数中文网站还没有系统性地应用这一策略。竞争空间更大。</p>
@@ -104,6 +110,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">常见问题解答</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

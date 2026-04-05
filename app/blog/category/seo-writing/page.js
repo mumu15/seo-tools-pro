@@ -61,6 +61,9 @@ export default function CategoryPage() {
 
         <AdUnit slot="4444444444" />
       </main>
+
+        <AdUnit slot="3248634657" />
+
       <Footer />
     </>
   );

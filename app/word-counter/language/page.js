@@ -58,6 +58,9 @@ export default function Page() {
               </table>
             </div>
           </section>
+
+          <AdUnit slot="3763639977" />
+
           <AdUnit slot="3248634657" />
 
           <div className="bg-gradient-to-r from-emerald-900/30 to-teal-900/20 border border-emerald-500/30 rounded-2xl p-6 mb-10 text-center">
@@ -92,6 +95,9 @@ export default function Page() {
               <a href="/word-counter/language/chinese" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Chinese</a>
             </div>
           </section>
+
+          <AdUnit slot="3248634657" />
+
 
           <AdUnit slot="3763639977" />
         </div>

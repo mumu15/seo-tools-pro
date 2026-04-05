@@ -51,6 +51,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">5. Undvik byråkratspråk:</strong> "Med anledning av ovanstående vill vi härmed informera om att..." → "Därför..." Byråkratspråk är webbkommunikationens fiende. Skriv som du talar, fast genomtänkt.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Tips 6-10: Läsbarhet och engagemang</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">6. Stryk utfyllnadsord:</strong> "Egentligen", "liksom", "i princip", "typ" — om betydelsen inte ändras utan ordet, stryk det.</p>
@@ -88,6 +91,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">15. Humanisera AI-texter:</strong> AI-texter på svenska har typiska mönster: för mycket "dessutom/vidare", neutral ton utan åsikt, generiska exempel, enhetlig meningslängd. Lösning: variera meningslängd, lägg till personliga erfarenheter, använd svenska exempel och ta bort formelartade övergångar.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Checklista före publicering</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Läsbarhet:</strong> Meningar 15-20 ord? Stycken 2-3 meningar? Underrubriker var 200-300:e ord? LIX under 40?</p>
@@ -100,6 +106,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Vanliga Frågor</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

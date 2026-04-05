@@ -70,6 +70,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">네이버 SEO vs 구글 SEO: 핵심 차이</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">네이버의 특징:</strong> 네이버는 자체 생태계를 우선합니다. 네이버 블로그, 지식iN, 카페, 포스트의 콘텐츠가 검색 결과 상단에 배치됩니다. 외부 웹사이트는 "웹사이트" 탭에 별도로 표시됩니다. C-Rank 알고리즘은 블로그의 주제 전문성과 활동 빈도를 평가합니다.</p>
@@ -87,6 +90,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">4. 키워드 밀도 관리:</strong> 한국어 키워드 밀도는 2~3%가 적정합니다. <a href="/keyword-density" className="text-emerald-400 underline">키워드 밀도 검사기</a>로 글 내의 키워드 분포를 확인하세요.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">한국 시장에서의 E-E-A-T</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">경험(Experience):</strong> 한국 소비자는 실사용 후기를 매우 중시합니다. "3개월간 직접 사용한 후기", "5년 경력의 마케터로서" 등 구체적인 경험 서술이 신뢰를 높입니다.</p>
@@ -99,6 +105,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">자주 묻는 질문</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

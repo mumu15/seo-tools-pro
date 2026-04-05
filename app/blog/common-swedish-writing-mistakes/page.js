@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Ur SEO-perspektiv påverkar textkvaliteten rankingen direkt. Google bedömer innehållets expertis genom E-E-A-T, och texter med många fel anses vara mindre tillförlitliga. En SEMrush-studie (2024) visade att felfria texter rankar i genomsnitt 7 positioner högre på Google.se.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Fel 1-5: Stavning och ordbildning</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Särskrivning (den vanligaste felet):</strong> "Glass bilen" istället för "glassbilen", "rök fritt" istället för "rökfritt", "frukt salat" istället för "fruktsallad". Sammansatta ord skrivs ihop på svenska — det är en grundregel. Särskrivning kan ändra betydelsen helt: "rökfritt" (utan rök) vs "rök fritt" (rök obehindrat). Enligt Språkrådet är särskrivning det mest rapporterade språkfelet i Sverige.</p>
@@ -94,6 +97,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">10. Sin/hans/hennes-förväxling:</strong> "Sin" refererar tillbaka till satsens subjekt: "Han tog sin bil" (hans egen bil). "Hans" refererar till någon annans: "Han tog hans bil" (någon annans bil). Denna distinktion finns inte i engelskan och ställer till problem.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Fel 11-15: Digitalt skrivande och SEO</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">11. För långa meningar:</strong> Idealisk meningslängd för webbtexter är 15-20 ord. Över 25 ord sjunker förståelsen med 30% (Göteborgs universitet, 2024). Blanda korta (8 ord) och medellånga (18 ord) meningar.</p>
@@ -133,6 +139,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Tips: Läs din text högt. Om du snubblar på en mening är den förmodligen för lång eller för komplicerad. Denna enkla metod hittar problem som inget automatiskt verktyg upptäcker.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Vanliga Frågor</h2>

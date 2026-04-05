@@ -53,6 +53,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">10 Techniques to Improve Readability</h2>
               <div className="space-y-3">
@@ -93,6 +96,9 @@ export default function Post() {
                 <Link href="/readability-checker" className="btn-primary inline-block px-6 py-3">Check Readability →</Link>
               </div>
             </section>
+
+            <AdUnit slot="3763639977" />
+
             <AdUnit slot="3248634657" />
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
@@ -107,6 +113,9 @@ export default function Post() {
                 <Link href="/reading-time" className="text-emerald-400 hover:underline text-sm">Reading Time Calculator</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>
               <div className="flex flex-wrap gap-3">

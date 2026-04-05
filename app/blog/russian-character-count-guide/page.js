@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Наш счётчик символов правильно обрабатывает кириллицу и показывает количество символов с пробелами и без, количество слов, предложений и расчётное время чтения.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Лимиты символов по платформам</h2>
               <div className="overflow-x-auto mb-4">
@@ -113,6 +116,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">На веб-страницах всегда указывайте <code className="text-emerald-400">&lt;meta charset=&quot;UTF-8&quot;&gt;</code>. Без этого кириллица может отображаться как «кракозябры» — проблема, знакомая многим разработчикам в Рунете.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Практические советы по лимитам</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Яндекс.Директ:</strong> Заголовок — 56 символов, описание — 81 символ. Русские слова длиннее английских, поэтому уместить оффер сложнее. Используйте сокращения: «бесп.» вместо «бесплатно», цифры вместо слов.</p>
@@ -125,6 +131,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Часто задаваемые вопросы</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

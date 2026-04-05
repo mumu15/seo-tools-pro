@@ -58,6 +58,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">The 6-Second Resume Test</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Eye-tracking studies consistently show that recruiters spend an average of 6-7 seconds on the initial scan of a resume. In that time, their eyes follow a predictable path: name, current title, current company, start and end dates, previous title, previous company, education. If these elements do not immediately signal a match, the resume is rejected.</p>
@@ -104,6 +107,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Resume Sections and Their Word Budgets</h2>
               <p className="text-slate-400 leading-relaxed mb-4">When working with a strict one-page word limit, you need to allocate your word budget strategically. Here is how to distribute roughly 550 words across the standard resume sections for a mid-career professional. Adjust these proportions based on what is most impressive in your background.</p>
@@ -129,6 +135,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Tools</h2>

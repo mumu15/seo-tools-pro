@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">当サイトの文字数チェッカーは、全角・半角を正しく区別してカウントします。日本語テキストを貼り付けるだけで、文字数（全角・半角別）、単語数、文数、読了時間が即座に表示されます。</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">プラットフォーム別文字数制限</h2>
               <div className="overflow-x-auto mb-4">
@@ -113,6 +116,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">HTMLでは必ず<code className="text-emerald-400">&lt;meta charset=&quot;UTF-8&quot;&gt;</code>を宣言してください。Shift-JISやEUC-JPなど旧式のエンコーディングは文字化けの原因になります。2025年現在、99%以上のWebサイトがUTF-8を使用しています。</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">日本語SEOでの文字数最適化</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">タイトルタグ：</strong>Googleは約30〜32全角文字を表示します。Yahoo! JAPANは約28文字とやや短い。両方で切れないタイトルにするなら28文字以内が安全です。最重要キーワードを最初の15文字に配置しましょう。</p>
@@ -124,6 +130,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">よくある質問</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

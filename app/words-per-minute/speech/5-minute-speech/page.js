@@ -66,6 +66,9 @@ export default function Page() {
               </table>
             </div>
           </section>
+
+          <AdUnit slot="3248634657" />
+
           <AdUnit slot="3248634657" />
 
           <div className="bg-gradient-to-r from-emerald-900/30 to-teal-900/20 border border-emerald-500/30 rounded-2xl p-6 mb-10 text-center">
@@ -84,6 +87,9 @@ export default function Page() {
               <p className="text-slate-300 text-sm leading-relaxed"><strong className="text-white">Common 5-minute speeches:</strong> This length is typical for a TED-style talk, maid of honor speech, or short keynote. Use our <a href="/word-counter" className="text-emerald-400 hover:underline">free word counter</a> to check your speech length before practicing.</p>
             </div>
           </section>
+
+          <AdUnit slot="3763639977" />
+
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">Frequently Asked Questions</h2>
             <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-6">
@@ -116,6 +122,9 @@ export default function Page() {
               <a href="/words-per-minute/speech/7-minute-speech" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">7-Min Speech</a>
             </div>
           </section>
+
+          <AdUnit slot="3248634657" />
+
         </div>
       </main>
 

@@ -58,6 +58,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">The 4-Paragraph Cover Letter Structure</h2>
               <p className="text-slate-400 leading-relaxed mb-4">The most effective cover letter structure is four focused paragraphs. This format has been refined over decades of hiring practice and remains the gold standard because it answers every question a hiring manager has in a logical sequence.</p>
@@ -95,6 +98,9 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">No specific examples:</strong> Saying "I am a hard worker with strong communication skills" is meaningless without evidence. Instead, say "I increased client retention by 28% by redesigning the quarterly review process." Specific beats generic every time.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Cover Letter Formatting Tips</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Formatting directly affects the perceived length and readability of your cover letter. A well-formatted 350-word letter looks professional and approachable. A poorly formatted one looks dense and intimidating, even if the content is identical.</p>
@@ -123,6 +129,9 @@ export default function Post() {
                 <Link href="/sentence-counter" className="text-emerald-400 hover:underline text-sm">Sentence Counter</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>

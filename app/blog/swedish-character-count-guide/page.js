@@ -48,6 +48,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">I UTF-8 tar å, ä och ö vardera 2 byte, medan vanliga latinska bokstäver tar 1 byte. Vår teckenräknare räknar varje bokstav korrekt som 1 tecken, oavsett bytesstorlek.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Teckengränser per plattform</h2>
               <div className="overflow-x-auto mb-4">
@@ -105,6 +108,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">SMS med å, ä, ö byter kodning från GSM-7 till UCS-2, vilket minskar gränsen från 160 till 70 tecken per SMS. Deklarera alltid <code className="text-emerald-400">&lt;meta charset=&quot;UTF-8&quot;&gt;</code> i din HTML.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Praktiska tips för svenska teckengränser</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Google Ads:</strong> Med 30 tecken per rubrik är svenska utmanande. "Bilförsäkring jämför" är redan 20 tecken. Använd förkortningar och siffror istället för ord.</p>
@@ -116,6 +122,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Vanliga Frågor</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

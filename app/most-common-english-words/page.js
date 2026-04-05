@@ -153,6 +153,9 @@ export default function Page() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"1,000 Most Common English Words (Ranked by Frequency 2026)","description":"The 1,000 most frequently used English words ranked by usage. Includes word frequency data, parts of speech, and learning tips.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-27","dateModified":"2026-03-27","mainEntityOfPage":"https://www.wordcountertool.net/most-common-english-words"})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"1,000 Most Common English Words","item":"https://www.wordcountertool.net/most-common-english-words"}]})}} />
+
+        <AdUnit slot="3248634657" />
+
       <Footer />
     </div>
   )

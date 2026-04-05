@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Para contagem, cada letra acentuada conta como um único caractere. Nosso contador processa todos os caracteres do português corretamente — ao contrário de ferramentas antigas que contam bytes em vez de caracteres Unicode.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Limites de caracteres por plataforma</h2>
               <div className="overflow-x-auto mb-4">
@@ -110,6 +113,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Sempre declare <code className="text-emerald-400">&lt;meta charset=&quot;UTF-8&quot;&gt;</code> nas suas páginas. Sem isso, caracteres como ã, ç e ô aparecem como símbolos estranhos — problema ainda comum em sites brasileiros antigos.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Dicas práticas para limites de caracteres em português</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Google Ads:</strong> Com 30 caracteres para o título, o português fica apertado. "Seguro de automóvel" já usa 20 caracteres. Use abreviações, números ("5 dicas" vs. "cinco dicas") e CTAs curtos ("Veja" vs. "Confira agora").</p>
@@ -122,6 +128,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

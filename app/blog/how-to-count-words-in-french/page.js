@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Les élisions créent un cas intéressant. « L’homme » est-il un ou deux mots ? La plupart des compteurs le comptent comme deux mots (l’ + homme), et c’est la convention standard. De même, « aujourd’hui » est techniquement deux mots mais compte généralement comme un seul. Notre <a href="/word-counter/language/french" className="text-emerald-400 underline">compteur de mots français</a> suit les conventions standard pour des résultats cohérents.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Combien de mots pour chaque type de contenu</h2>
               <div className="result-box mb-6">
@@ -115,6 +118,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Si vous ciblez les deux marchés, écrivez en français standard et intégrez les deux variantes dans vos mots-clés. Google comprend que « courriel » et « e-mail » désignent la même chose, mais inclure les deux augmente vos chances d’apparaître dans les résultats des deux régions.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">L’Afrique francophone représente le marché à la plus forte croissance. Avec 120 millions d’internautes francophones en Afrique, et un taux de pénétration Internet qui augmente de 15-20% par an dans certains pays, le contenu français ciblant l’Afrique est une opportunité SEO majeure pour 2026 et au-delà.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Pour les traducteurs et les créateurs de contenu</h2>

@@ -74,6 +74,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Lunghezza per tipo di contenuto</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Articoli blog e guide:</strong> 1.500–2.500 parole. Guide approfondite possono arrivare a 3.000+. Usa sottotitoli ogni 200–300 parole per la leggibilità.</p>
@@ -113,6 +116,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Se traduci contenuti dall'inglese, pianifica un aumento del 15–20%. Usa il nostro <a href="/word-counter/language/italian" className="text-emerald-400 underline">contaparole</a> per verificare il volume finale e il <a href="/readability-checker" className="text-emerald-400 underline">verificatore di leggibilità</a> per assicurarti che il testo sia scorrevole.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Come misurare e ottimizzare la lunghezza</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Analisi competitiva:</strong> Verifica la lunghezza dei primi 5 risultati su Google.it per la tua keyword target. Punta alla media dei concorrenti +15%.</p>
@@ -124,6 +130,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Domande Frequenti</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

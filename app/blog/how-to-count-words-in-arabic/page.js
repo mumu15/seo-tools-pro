@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">هذا الفرق له أثر مباشر على SEO. إذا كان متوسط مقالات الصفحة الأولى بالإنجليزية 1,500 كلمة، فالمكافئ بالعربية حوالي 1,125-1,200 كلمة. Google لا يقارن أطوال المحتوى بين اللغات — يقارن فقط ضمن اللغة الواحدة.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">تحديات عد الكلمات في الخط العربي</h2>
               <div className="result-box mb-6">
@@ -114,6 +117,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">للترجمة التقنية والطبية والقانونية، الأسعار أعلى: $0.15-0.30 لكل كلمة. سوق الترجمة العربية ينمو بنسبة 8% سنوياً وفقاً لـ CSA Research 2025، مدفوعاً بالتوسع الرقمي في دول الخليج والاستثمارات السعودية في رؤية 2030.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">في التوطين (Localization) للبرمجيات والتطبيقات، يجب مراعاة أن النص العربي يتجه من اليمين لليسار. الأزرار والقوائم والتخطيطات تحتاج إلى انعكاس كامل. النص العربي قد يكون أطول أو أقصر من الإنجليزي حسب السياق — الأرقام والتواريخ والعملات تحتاج تنسيقاً خاصاً.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">المحتوى العربي على وسائل التواصل الاجتماعي</h2>

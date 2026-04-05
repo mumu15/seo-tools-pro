@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Voor SEO is tekstkwaliteit direct van invloed op de ranking. Google beoordeelt de expertise van content via E-E-A-T, en teksten met veel fouten worden als minder betrouwbaar beschouwd. Een SEMrush-onderzoek (2024) toonde aan dat foutloze teksten gemiddeld 8 posities hoger ranken in Google.nl.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Fouten 1-5: Spelling en werkwoorden</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Dt-fouten (wordt/word, vindt/vind):</strong> De beruchte dt-regel is de nummer 1 taalfout in het Nederlands. De regel: bij je/jij krijgt de stam geen -t ("jij wordt" maar ook "word jij?"). Bij hij/zij/het krijgt de stam wel een -t ("hij vindt"). Verleden tijd: nooit een -dt. Volgens Onze Taal is 34% van alle taalvragen dt-gerelateerd.</p>
@@ -94,6 +97,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">10. Verkeerd gebruik van "als" en "dan":</strong> "Groter als" is fout — correct is "groter dan". "Als" gebruik je bij gelijkheid ("net zo groot als"). "Dan" gebruik je bij vergrotende trap ("groter dan", "beter dan"). Deze fout komt vooral voor in gesproken Nederlands en wordt dan overgenomen in teksten.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Fouten 11-15: Digitaal schrijven en SEO</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">11. Te lange alineas:</strong> Op mobiele apparaten (81% van het internetverkeer in Nederland — CBS 2024) worden alineas van meer dan 4 regels als "tekstmuren" ervaren. Maximaal 2-3 zinnen per alinea. Een idee per alinea.</p>
@@ -133,6 +139,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Tip: lees je tekst hardop voor. Als je struikelt over een zin, is die waarschijnlijk te lang of te ingewikkeld. Deze simpele methode vindt fouten die geen enkele tool detecteert.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Veelgestelde Vragen</h2>

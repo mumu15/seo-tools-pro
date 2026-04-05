@@ -51,6 +51,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">5. Избегайте канцелярита:</strong> «В целях осуществления» → «Чтобы». «На основании вышеизложенного» → «Поэтому». Канцелярит — главный враг читаемости русского текста. Нора Галь посвятила этому целую книгу.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Советы 6–10: Читаемость и вовлечение</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">6. Убирайте слова-паразиты:</strong> «В принципе», «собственно говоря», «как бы», «достаточно», «определённый» — если смысл предложения не меняется без слова, удаляйте его.</p>
@@ -88,6 +91,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">15. Очеловечивание AI-текстов:</strong> AI-тексты на русском выдают: «Более того», «Стоит отметить», «Важно подчеркнуть», «Таким образом» — и отсутствие личного мнения. Решение: добавьте личный опыт, конкретные российские примеры, разнообразьте длину предложений, удалите шаблонные вводные.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Чек-лист перед публикацией</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Проверьте перед публикацией:</p>
@@ -101,6 +107,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Часто задаваемые вопросы</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

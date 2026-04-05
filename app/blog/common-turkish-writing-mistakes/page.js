@@ -43,6 +43,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">SEO açısından metin kalitesi sıralamayı doğrudan etkiler. Google, E-E-A-T ile içerik uzmanlığını değerlendirir. Semrush Türkiye verilerine göre (2024), hatasız metinler Google.com.tr sonuçlarında ortalama 8 sıra daha yüksek konumlanmaktadır.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Hatalar 1-5: Yazım ve imla</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. De/da birleşik-ayrı yazım:</strong> En yaygın Türkçe yazım hatası. "De/da" bağlacı ayrı yazılır: "Ben de geldim." Hal eki "-de/-da" bitişik yazılır: "Evde kaldım." Kolay test: kelimeyi cümleden çıkarın. Cümle hâlâ anlam taşıyorsa ayrı (bağlaç), anlamsızlaşıyorsa bitişik (ek). TDK sorularının %45'i bu konudadır.</p>
@@ -88,6 +91,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">10. Resmi dil:</strong> "Yukarıda arz olunan hususlar çerçevesinde..." yerine "Bu nedenle..." yazın. Resmi dil ile günlük dil arasındaki uçurum Türkçede çok büyüktür. Web metinlerinde sade ve anlaşılır bir dil tercih edin.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Hatalar 11-15: Dijital yazarlık ve SEO</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">11. Uzun paragraflar:</strong> Mobilde (trafiğin %82'si — TÜİK 2024) 4+ satır paragraflar "metin duvarı" görünür. Her paragrafta 2-3 cümle yeterlidir.</p>
@@ -109,6 +115,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">İpucu: Metninizi sesli okuyun. Takıldığınız cümle muhtemelen çok uzun veya karmaşıktır.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>

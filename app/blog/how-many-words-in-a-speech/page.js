@@ -58,6 +58,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Speaking Pace Comparison</h2>
               <p className="text-slate-400 leading-relaxed mb-4">How fast you should speak depends on your audience, topic, and setting. This chart shows the typical speaking pace for different types of presentations, along with recommendations for when to speed up or slow down.</p>
@@ -102,6 +105,9 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">When rehearsing, time yourself multiple times. Most speakers talk faster during practice than during the actual delivery because nerves cause them to pause more, add filler words, and lose their place. Your practice run should come in 10-15% under the time limit to account for these natural additions during live delivery.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Speech Structure by Word Count</h2>
               <p className="text-slate-400 leading-relaxed mb-4">No matter how long your speech is, the basic structure remains the same: hook the audience, deliver your content, and close with impact. What changes is how much room you have for each section. Here is how to allocate your word count for maximum effectiveness.</p>
@@ -130,6 +136,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Tools</h2>

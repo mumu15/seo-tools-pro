@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">In UTF-8, le lettere accentate italiane occupano 2 byte ciascuna (le lettere normali occupano 1 byte). Il nostro contacaratteri conta correttamente ogni lettera accentata come un singolo carattere, non come due.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Limiti di caratteri per piattaforma</h2>
               <div className="overflow-x-auto mb-4">
@@ -108,6 +111,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Nelle pagine web, dichiara sempre <code className="text-emerald-400">&lt;meta charset=&quot;UTF-8&quot;&gt;</code>. Senza questa dichiarazione, le lettere accentate possono apparire come simboli illeggibili.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Consigli pratici per i limiti di caratteri</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Google Ads:</strong> Con solo 30 caratteri per il titolo, l'italiano è particolarmente limitato. "Assicurazione auto" usa già 18 caratteri. Usa abbreviazioni dove possibile e numeri al posto delle parole.</p>
@@ -120,6 +126,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Domande Frequenti</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

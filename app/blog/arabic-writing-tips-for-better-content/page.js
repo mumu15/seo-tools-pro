@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">هذه التقنيات الـ 15 عملية ومباشرة. كل واحدة تغيير محدد يمكنك تطبيقه اليوم. لا تحتاج لأن تكون أديباً — تحتاج فقط لكتابة واضحة ومُنظمة ومفيدة.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">تقنيات البناء والوضوح</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">التقنية 1: جمل قصيرة (15-20 كلمة).</strong> العربية الأدبية تميل للجمل الطويلة المتعددة الشوائب. في المحتوى الرقمي، اجعل الجملة المتوسطة 15-20 كلمة. قبل: "نظراً لأن عدد مستخدمي الإنترنت في العالم العربي قد شهد نمواً ملحوظاً خلال السنوات الأخيرة، فإنه من الأهمية بمكان أن نُدرك أن المحتوى العربي عالي الجودة أصبح ضرورة حتمية." (32 كلمة). بعد: "مستخدمو الإنترنت العرب تجاوزوا 280 مليوناً. المحتوى العربي الجيد لم يعد ترفاً — بل ضرورة." (15 كلمة، جملتان).</p>
@@ -81,6 +84,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">التقنية 14: احذف 20%.</strong> بعد كتابة المسودة الأولى، احذف 20% من النص. ليس أسوأ 20% — بل كل ما ليس ضرورياً تماماً. إذا حُذفت جملة ولم تتأثر الفقرة، فالجملة كانت فائضة. هذه القاعدة تُنتج نصوصاً أقوى وأكثر تركيزاً.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">التقنية 15: تحقق بالأدوات.</strong> قبل النشر: <a href="/word-counter/language/arabic" className="text-emerald-400 underline">عداد الكلمات العربية</a> للتحقق من عدد الكلمات. <a href="/readability-checker" className="text-emerald-400 underline">أداة سهولة القراءة</a> للتحقق من أن النص سهل (60+ نقطة). <a href="/keyword-density" className="text-emerald-400 underline">أداة كثافة الكلمات المفتاحية</a> للتحقق من توازن الكلمات المستهدفة (1-2%). ثلاث دقائق من التحقق تُحسّن الجودة بشكل ملحوظ.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">قائمة التحقق قبل النشر</h2>

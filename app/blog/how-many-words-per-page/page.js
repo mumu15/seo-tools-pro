@@ -59,6 +59,9 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">Notice that serif fonts like Times New Roman consistently fit more words per page than sans-serif fonts like Arial. This is because serif letterforms are narrower on average. If you need to hit a page count for an assignment, switching from Arial to Times New Roman can add 10-12% more words per page without changing the font size.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Words Per Page by Document Type</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Different types of writing follow different formatting conventions. A novel page looks nothing like an academic paper, and a business report uses different margins than a screenplay. Here is how words per page breaks down across the most common document types you will encounter.</p>
@@ -134,6 +137,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Tricks Students Use to Hit Page Requirements (and Why They Fail)</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Every student has tried at least one of these formatting tricks to stretch a paper to the required page count. Here is why they almost always backfire.</p>
@@ -180,6 +186,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Tools</h2>

@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Polski używa spacji do rozdzielania słów, podobnie jak angielski, więc podstawowe liczenie jest proste. Nasz licznik poprawnie obsługuje polskie znaki diakrytyczne (ą, ć, ę, ł, ń, ó, ś, ź, ż) i łączniki (np. "biało-czerwony" jako jedno słowo).</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Słowa, znaki i znaki ze spacjami</h2>
               <div className="overflow-x-auto mb-4">
@@ -89,6 +92,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Krok 4:</strong> Użyj liczby słów dla blogów i SEO, a liczby znaków dla mediów społecznościowych i opisów meta.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Szybkość czytania po polsku: teksty informacyjne — 200-250 słów/min, beletrystyka — 250-300 słów/min, teksty naukowe — 150-200 słów/min. Nasz licznik oblicza czas czytania na podstawie 220 słów/min.</p>
             </section>
+
+            <AdUnit slot="3763639977" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Zalecana liczba słów dla polskich treści</h2>
@@ -141,6 +147,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Polska ma 33,2 miliona użytkowników internetu (87% populacji — Gemius 2024). Google.pl dominuje z 96,1% udziałem w rynku. E-commerce w Polsce to 92 mld zł (GUS 2024), z czego 36% ruchu pochodzi z wyszukiwarek.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Najczęściej Zadawane Pytania</h2>

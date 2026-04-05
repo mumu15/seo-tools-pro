@@ -53,6 +53,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">The Formulas Explained</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Both formulas use two inputs: average sentence length (ASL) and average syllables per word (ASW). Here is how each formula works and what each variable contributes to the final score.</p>
@@ -81,6 +84,9 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">Notice that the most commercially successful writers score highest on readability. Hemingway at 92 and Stephen King at 75 are among the best-selling authors in history. Simple writing is not a sign of limited vocabulary — it is a deliberate craft choice that maximizes audience reach and engagement.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Why Readability Matters for Web Content</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Web readers are less patient than book readers. They are scanning dozens of tabs, checking their phone, and multitasking. Content that requires concentration to parse loses these readers immediately. A Flesch score of 60+ ensures your message reaches the widest possible audience without sacrificing depth.</p>
@@ -106,6 +112,9 @@ export default function Post() {
                 <Link href="/reading-time" className="text-emerald-400 hover:underline text-sm">Reading Time Calculator</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>
               <div className="flex flex-wrap gap-3">

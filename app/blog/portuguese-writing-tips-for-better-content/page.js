@@ -51,6 +51,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">5. Palavras simples:</strong> "Outrossim" → "além disso". "Destarte" → "portanto". "Hodierno" → "atual". Use vocabulário que seu leitor conhece. O Flesch Reading Score para português deve ficar acima de 50 para textos web (use nosso <a href="/readability-checker" className="text-emerald-400 underline">verificador</a>).</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Dicas 6–10: Engajamento e legibilidade</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">6. Elimine palavras vazias:</strong> "Na verdade", "basicamente", "realmente", "obviamente", "de fato" — corte todas que não adicionam significado. Releia cada frase sem a palavra vazia. Se o sentido não muda, apague.</p>
@@ -88,6 +91,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">15. Humanize textos de IA:</strong> Textos gerados por IA em português têm padrões: excesso de "além disso", "portanto", "é importante ressaltar"; tom neutro demais; exemplos genéricos; frases sempre do mesmo tamanho. Quebre esses padrões: adicione opinião, exemplos brasileiros reais, humor pontual e variação de ritmo.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Checklist final para textos em português</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Antes de publicar qualquer texto em português na web, passe por esta checklist:</p>
@@ -101,6 +107,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

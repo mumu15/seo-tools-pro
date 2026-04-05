@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Le preposizioni articolate come "del" (di + il), "nella" (in + la), "sugli" (su + gli) sono una sola parola — e il nostro contaparole le conta correttamente come singole parole.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Parole, caratteri e battute: le differenze</h2>
               <div className="overflow-x-auto mb-4">
@@ -89,6 +92,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Passo 4:</strong> Usa il conteggio parole per articoli e SEO, i caratteri per social media e meta description.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">La velocità di lettura in italiano è circa 230–260 parole al minuto per testi informativi, 260–300 per narrativa. Il nostro strumento calcola il tempo di lettura basandosi su 240 parole al minuto.</p>
             </section>
+
+            <AdUnit slot="3763639977" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Numero di parole consigliato per tipo di contenuto</h2>
@@ -141,6 +147,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">L'Italia ha 51,4 milioni di utenti internet (87% della popolazione — Audiweb 2024). Google domina con il 95,2% di quota di mercato. Il mercato e-commerce italiano vale 54,2 miliardi di euro (Osservatorio del Politecnico di Milano 2024), con il 38% del traffico proveniente dalla ricerca organica.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Domande Frequenti</h2>

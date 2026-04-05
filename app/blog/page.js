@@ -1,6 +1,7 @@
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Link from 'next/link'
+import AdUnit from '../components/AdUnit'
 
 export const metadata = {
   title: 'Blog — Writing Guides, SEO Tips & Word Count Resources | WordCounterTool',
@@ -68,6 +69,9 @@ export default function BlogHub() {
                 </Link>
               </div>
             </section>
+
+            <AdUnit slot="3763639977" />
+
             <section className="mb-12">
               <h2 className="text-2xl font-display font-bold text-white mb-6 flex items-center gap-3">
                 <span className="w-2 h-8 bg-emerald-500 rounded-full"></span>
@@ -138,6 +142,9 @@ export default function BlogHub() {
                 </Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
             <section className="mb-12">
               <h2 className="text-2xl font-display font-bold text-white mb-6 flex items-center gap-3">
                 <span className="w-2 h-8 bg-emerald-500 rounded-full"></span>
@@ -205,6 +212,9 @@ export default function BlogHub() {
                 </Link>
               </div>
             </section>
+
+            <AdUnit slot="3763639977" />
+
             <section className="mb-12">
               <h2 className="text-2xl font-display font-bold text-white mb-6 flex items-center gap-3">
                 <span className="w-2 h-8 bg-emerald-500 rounded-full"></span>
@@ -425,6 +435,9 @@ export default function BlogHub() {
             </details>
             </div>
           </section>
+
+          <AdUnit slot="3248634657" />
+
         </div>
       </main>
       <Footer />

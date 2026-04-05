@@ -90,6 +90,9 @@ export default function Post() {
       </main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"ChatGPT Prompt Length: How Long Should Your Prompts Be? (2026)","author":{"@type":"Organization","name":"WordCounterTool.net"},"datePublished":"2026-03-21"})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"ChatGPT Prompt Length","item":"https://www.wordcountertool.net/blog/chatgpt-prompt-length"}]})}} />
+
+        <AdUnit slot="3248634657" />
+
       <Footer />
     </>
   )

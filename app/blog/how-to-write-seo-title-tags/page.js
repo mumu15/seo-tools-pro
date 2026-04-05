@@ -58,6 +58,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Title Tag Formulas That Rank and Convert</h2>
               <p className="text-slate-400 leading-relaxed mb-4">These title formats have been proven to generate both high rankings and high click-through rates. Choose the formula that best matches your content type.</p>
@@ -102,6 +105,9 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-yellow-400">Emotional words:</strong> Secret, Mistakes, Surprising, Shocking, Powerful, Genius. Use sparingly — one emotional word per title maximum, and only if the content genuinely delivers on the emotional promise.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Title Tag Mistakes to Avoid</h2>
               <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">Too long (over 60 characters):</strong> Truncated titles look unprofessional and may cut off your keyword or key message. Always preview your title length before publishing.</p>
@@ -131,6 +137,9 @@ export default function Post() {
                 <Link href="/word-counter" className="text-emerald-400 hover:underline text-sm">Word Counter</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>

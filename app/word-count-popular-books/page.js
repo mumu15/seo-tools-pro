@@ -149,6 +149,9 @@ export default function Page() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Word Count of Popular Books: Harry Potter, Lord of the Rings & More (2026)","description":"Exact word counts for the most popular books and series. Harry Potter, Lord of the Rings, Bible, Game of Thrones, and 50+ more books with page counts and reading times.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-27","dateModified":"2026-03-27","mainEntityOfPage":"https://www.wordcountertool.net/word-count-popular-books"})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Word Count of Popular Books","item":"https://www.wordcountertool.net/word-count-popular-books"}]})}} />
+
+        <AdUnit slot="3248634657" />
+
       <Footer />
     </div>
   )

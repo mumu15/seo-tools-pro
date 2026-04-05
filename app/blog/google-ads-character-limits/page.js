@@ -145,6 +145,9 @@ export default function Post() {
             <a href="/meta-tag-generator" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Meta Tag Generator</a>
           </div>
         </div>
+
+        <AdUnit slot="3248634657" />
+
       <Footer />
     </>
   )

@@ -58,6 +58,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">The Anatomy of a Viral Thread</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Every high-performing thread follows a predictable structure. Understanding these components lets you consistently create threads that get shared, bookmarked, and followed.</p>
@@ -105,6 +108,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Thread Writing Mistakes That Kill Engagement</h2>
               <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">Weak first tweet:</strong> If your hook does not stop the scroll, the rest is invisible. Never start with a boring introduction. Lead with the most compelling point, then provide context in tweet two.</p>
@@ -130,6 +136,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Tools</h2>

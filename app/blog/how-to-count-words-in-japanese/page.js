@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Microsoftの日本語翻訳データ（2024年）によると、英語テキストを日本語に翻訳すると、文字数は約1.5〜2倍になりますが、情報量は同等です。これは日本語の1文字が英語の1文字より多くの情報を含むためです。</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">文字数・単語数・バイト数の違い</h2>
               <div className="overflow-x-auto mb-4">
@@ -90,6 +93,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">日本語の読了速度は1分間に約400〜600文字（一般的な文章）です。小説はやや速く（500〜700文字/分）、専門書はやや遅い（300〜400文字/分）。当ツールはこの基準で読了時間を自動計算します。</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">日本語コンテンツの推奨文字数</h2>
               <div className="result-box mb-4">
@@ -128,6 +134,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">よくある質問</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

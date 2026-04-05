@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Volgens een analyse van Translated.net (2023) zijn Nederlandse teksten gemiddeld 5-10% korter in woordaantal dan Engelse equivalenten. Bij technische teksten kan dit oplopen tot 15%. Dit komt door de samenstellingen die meerdere Engelse woorden comprimeren tot een Nederlands woord.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Nederlandse samenstellingen en woordtelling</h2>
               <div className="overflow-x-auto mb-4">
@@ -92,6 +95,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Stap 4:</strong> Gebruik het woordaantal voor blogs en SEO, en het tekenaantal voor social media en metabeschrijvingen.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">De leessnelheid in het Nederlands ligt rond 230-260 woorden per minuut voor informatieve teksten en 260-300 wpm voor fictie. Onze tool berekent de leestijd op basis van 240 woorden per minuut.</p>
             </section>
+
+            <AdUnit slot="3763639977" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Aanbevolen woordaantal per contenttype</h2>
@@ -148,6 +154,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Het Nederlands is de 40e meest gebruikte taal op het internet. Nederland heeft een internetpenetratie van 98% — een van de hoogste ter wereld. De e-commerce markt in Nederland is 33,8 miljard euro waard (Thuiswinkel.org 2024). Google.nl heeft 94,7% marktaandeel.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Veelgestelde Vragen</h2>

@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">ميزة العربية في منصات ذات حدود حروف: يمكنك التعبير عن فكرة كاملة بحروف أقل. "سافرت إلى باريس أمس" (21 حرفاً) بالعربية مقابل "I traveled to Paris yesterday" (28 حرفاً) بالإنجليزية. هذا يعطيك مساحة إضافية للتفاصيل أو الهاشتاغات.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">حدود الحروف لكل منصة (2026)</h2>
               <div className="result-box mb-4">
@@ -98,6 +101,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">الوصف التعريفي (Meta Description) يُقتطع عند 155-160 حرفاً. اكتبه بالعربية مع دعوة واضحة لاتخاذ إجراء: "اكتشف أفضل..."، "تعرف على..."، "احصل على..." — هذه العبارات تزيد معدل النقر بنسبة 15-25% مقارنة بالأوصاف الجافة.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">عناوين URL: لا تستخدم الحروف العربية. اكتب URL بالأحرف اللاتينية (transliteration): /akhta-kitaba-arabiya بدلاً من /أخطاء-كتابة-عربية. Google يشفر الحروف العربية في URL مما يجعلها طويلة جداً وغير قابلة للمشاركة. استخدم <a href="/character-counter" className="text-emerald-400 underline">عداد الحروف</a> للتحقق من أطوال عناوينك.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">إعلانات Google بالعربية</h2>

@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Le piège à éviter : allonger artificiellement le texte. 68% des utilisateurs francophones naviguent sur mobile. Un article interminable mal structuré génère un taux de rebond élevé, ce qui nuit au classement. La règle : couvrez le sujet complètement, mais chaque paragraphe doit apporter de la valeur. Si le sujet est traité en 1 800 mots, publiez en 1 800 mots.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Longueur des blogs et articles en français</h2>
               <div className="result-box mb-6">
@@ -96,6 +99,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Le corps de l’e-mail dépend du type. Newsletters : 200-400 mots. E-mails promotionnels : 80-150 mots. E-mails d’onboarding : 150-250 mots. Les lecteurs francophones, comme les autres, préfèrent les messages directs et concis.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Google Ads en français : chaque titre de 30 caractères contient 4-5 mots français. Chaque description de 90 caractères contient 12-14 mots. Le CPC en français est 20-40% inférieur à l’anglais dans la plupart des secteurs. Concentrez-vous sur les bénéfices et utilisez des chiffres : « Économisez 30% » est plus percutant que « Des prix avantageux ».</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Comment mesurer et optimiser la longueur de votre contenu</h2>

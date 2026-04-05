@@ -58,6 +58,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">3 Introduction Formulas That Convert</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Professional copywriters have used these formulas for decades. They work for blog posts, landing pages, emails, and virtually any content that needs to capture attention quickly.</p>
@@ -97,6 +100,9 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">No transition to the body:</strong> The introduction should flow naturally into your first H2 section. End with a sentence that bridges to what comes next: "Here are the seven hook types that top bloggers use" transitions smoothly into a section about hook types.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Test and Improve Your Introduction</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Track your scroll depth and bounce rate in analytics. If your average scroll depth is below 25%, your introduction is likely the problem. Test different hook types by rewriting intros on existing posts and measuring engagement over 30 days. Read your intro out loud — if it sounds like a textbook, rewrite it conversationally.</p>
@@ -123,6 +129,9 @@ export default function Post() {
                 <Link href="/keyword-density" className="text-emerald-400 hover:underline text-sm">Keyword Density Checker</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>

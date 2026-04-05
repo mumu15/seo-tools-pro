@@ -74,6 +74,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Textlänge nach Content-Typ</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Blogbeiträge und Ratgeber:</strong> 1.500–2.500 Wörter. Umfassende Ratgeber dürfen 3.000+ Wörter haben, wenn das Thema es erfordert. Nutze Zwischenüberschriften alle 200–300 Wörter für die Lesbarkeit.</p>
@@ -119,6 +122,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Das bedeutet: Wenn du eine englische Vorlage mit 2.000 Wörtern ins Deutsche übersetzt, erhältst du ca. 1.650–1.800 deutsche Wörter. Das ist normal — nicht weniger Inhalt, sondern kompaktere Sprache durch Komposita.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Textlänge messen und optimieren</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Verwende unseren <a href="/word-counter/language/german" className="text-emerald-400 underline">deutschen Wortzähler</a>, um die Textlänge deines Contents zu prüfen. Achte dabei auf diese Kennzahlen:</p>
@@ -132,6 +138,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Häufig gestellte Fragen</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

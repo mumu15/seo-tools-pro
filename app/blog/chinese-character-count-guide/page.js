@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">中文标点符号是全角字符，每个标点占一个字符的宽度。这与英文不同——英文标点是半角字符。这意味着中文的句号"。"和逗号"，"各占一个完整的字符位置，在有字符限制的平台上需要计入。</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">各平台字符限制</h2>
               <div className="overflow-x-auto mb-4">
@@ -113,6 +116,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">在网页开发中，务必在HTML头部声明<code className="text-emerald-400">&lt;meta charset=&quot;UTF-8&quot;&gt;</code>。没有正确的编码声明，中文字符会显示为乱码——这仍然是一些老旧网站的常见问题。</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">中文SEO中的字符优化技巧</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">百度标题优化：</strong>百度显示约30个汉字的标题。由于中文字符等宽（不像英文有宽窄之分），这个限制比较稳定。把核心关键词放在前15个字。</p>
@@ -125,6 +131,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">常见问题解答</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

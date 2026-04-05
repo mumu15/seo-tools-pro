@@ -128,6 +128,9 @@ export default function Page() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Most Spoken Languages in the World 2026 (By Total & Native Speakers)","description":"The most spoken languages worldwide ranked by total speakers and native speakers. Top 50 languages with country data and writing systems.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-27","dateModified":"2026-03-27","mainEntityOfPage":"https://www.wordcountertool.net/most-spoken-languages-in-the-world"})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Most Spoken Languages in the World 2026","item":"https://www.wordcountertool.net/most-spoken-languages-in-the-world"}]})}} />
+
+        <AdUnit slot="3248634657" />
+
       <Footer />
     </div>
   )

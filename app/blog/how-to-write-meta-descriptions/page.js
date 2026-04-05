@@ -58,6 +58,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">5 Meta Description Formulas That Convert</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Great meta descriptions follow proven patterns. These five formulas consistently produce higher click-through rates across industries and content types.</p>
@@ -104,6 +107,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Common Meta Description Mistakes</h2>
               <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">Too long or too short:</strong> Descriptions over 160 characters get truncated mid-sentence, cutting off your most persuasive text. Under 120 characters wastes space that competitors will fill. The sweet spot is 150-160 characters.</p>
@@ -131,6 +137,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Tools</h2>

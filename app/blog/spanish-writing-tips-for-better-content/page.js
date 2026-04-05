@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Estas 15 técnicas no son teoría abstracta. Son herramientas prácticas que puedes aplicar hoy mismo. Cada una incluye un ejemplo de antes y después para que veas el impacto real.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Técnicas de estructura y claridad</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Técnica 1: La oración de 20 palabras.</strong> Las oraciones en español tienden a ser largas. El español literario clásico usaba oraciones de 40-60 palabras con múltiples cláusulas subordinadas. Para contenido digital, tu objetivo es que la oración promedio no supere las 20 palabras. No todas deben ser cortas — mezcla oraciones de 8 palabras con otras de 25 para crear ritmo. Pero si tu promedio supera las 25, tus lectores se perderán. Antes: "Es importante señalar que la implementación de estrategias de marketing digital en los mercados hispanohablantes ha experimentado un crecimiento significativo durante los últimos años, lo cual representa una oportunidad para las empresas que buscan expandir su presencia en línea." (40 palabras, una sola oración). Después: "El marketing digital en mercados hispanos crece rápido. Las empresas que crean contenido de calidad en español ahora tienen ventaja porque la competencia es menor que en inglés." (28 palabras, dos oraciones).</p>
@@ -81,6 +84,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Técnica 14: Verifica tus métricas.</strong> Pega tu texto final en nuestro <a href="/word-counter/language/spanish" className="text-emerald-400 underline">contador de palabras en español</a> y verifica: ¿cuántas palabras tiene? ¿Cumple el objetivo para el tipo de contenido? Luego usa el <a href="/readability-checker" className="text-emerald-400 underline">verificador de legibilidad</a>: ¿está por encima de 60? Si no, simplifica las oraciones más largas. Finalmente, revisa la <a href="/keyword-density" className="text-emerald-400 underline">densidad de palabras clave</a>: ¿tu keyword principal está entre el 1% y el 2%?</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Técnica 15: Lee a buenos escritores en español.</strong> No me refiero a García Márquez (aunque tampoco hace daño). Me refiero a blogs y newsletters en español que escriben bien. Kiko Llaneras en El País usa datos como nadie. Jaime Altozano explica conceptos complejos con claridad asombrosa. Platzi Blog produce contenido educativo de primer nivel en español neutro. Lee a quienes admiras, analiza por qué sus textos funcionan, y aplica las mismas técnicas a tu escritura.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Checklist rápido antes de publicar</h2>

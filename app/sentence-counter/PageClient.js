@@ -198,6 +198,9 @@ export default function SentenceCounter() {
             <a href="/character-counter" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
           </div>
         </div>
+
+        <AdUnit slot="3248634657" />
+
       <Footer />
     </>
   )

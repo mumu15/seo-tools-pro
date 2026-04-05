@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Para quienes escriben contenido digital — blogs, redes sociales, correos profesionales — el impacto va más allá de la imagen. Google evalúa la calidad del contenido, y los textos con errores recurrentes tienden a recibir menos interacción, lo que afecta indirectamente al posicionamiento SEO.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Errores de acentuación: los más frecuentes</h2>
               <div className="result-box mb-6">
@@ -104,6 +107,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Error 14: Redundancias.</strong> "Subir arriba", "bajar abajo", "salir afuera", "entrar adentro", "volver a repetir." Estas expresiones son redundantes porque el verbo ya contiene el significado del adverbio. En español coloquial son comunes, pero en escritura profesional hay que eliminarlas. Un texto con redundancias ocupa más palabras sin añadir información — algo que nuestro <a href="/word-counter/language/spanish" className="text-emerald-400 underline">contador de palabras</a> te ayuda a detectar revisando la eficiencia de tu texto.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Error 15: Gerundio mal empleado.</strong> El gerundio en español indica acción simultánea o inmediatamente anterior al verbo principal. Usarlo para indicar posterioridad es incorrecto. Incorrecto: "El ladrón huyó siendo capturado horas después." Correcto: "El ladrón huyó y fue capturado horas después." El abuso del gerundio (conocido como "gerundismo") hace que el texto suene artificial y pesado.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Diferencias regionales que debes conocer</h2>

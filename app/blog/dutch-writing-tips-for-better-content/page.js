@@ -51,6 +51,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">5. Vermijd ambtelijk taalgebruik:</strong> "Ingevolge het bovenstaande dient te worden opgemerkt dat..." wordt "Daarom..." Nederlands is beroemd-berucht om zijn ambtelijke taal. Voor webteksten: schrijf zoals je praat, maar dan verzorgd.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Tips 6-10: Leesbaarheid en betrokkenheid</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">6. Schrap vulwoorden:</strong> "Eigenlijk", "in principe", "als het ware", "zeg maar", "gewoon" — als de betekenis niet verandert zonder het woord, schrap het. Elk geschrapt vulwoord maakt de zin sterker.</p>
@@ -88,6 +91,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">15. AI-teksten menselijker maken:</strong> AI-teksten in het Nederlands vertonen typische patronen: te veel "bovendien" en "daarnaast", neutrale toon zonder mening, generieke voorbeelden, uniforme zinslengte. Oplossing: varieer de zinslengte, voeg persoonlijke ervaringen toe, gebruik Nederlandse voorbeelden en uitdrukkingen, en schrap formulematige overgangen.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Checklist voor publicatie</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Controleer voor publicatie:</p>
@@ -101,6 +107,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Veelgestelde Vragen</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

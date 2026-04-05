@@ -74,6 +74,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Оптимальная длина по типам контента</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">SEO-статьи и блоги:</strong> 1 500–3 000 слов. Подробные руководства могут быть длиннее, если тема это оправдывает. Подзаголовки (H2/H3) — каждые 200–300 слов.</p>
@@ -115,6 +118,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">При переводе контента с английского на русский планируйте увеличение объёма на 10–15%. Используйте <a href="/word-counter/language/russian" className="text-emerald-400 underline">счётчик слов</a> для проверки итогового объёма.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Как измерить и оптимизировать длину текста</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Анализ конкурентов:</strong> Проверьте объём текстов из топ-5 Яндекса и Google по вашему ключевому запросу. Нацельтесь на средний объём конкурентов +15–20%.</p>
@@ -127,6 +133,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Часто задаваемые вопросы</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

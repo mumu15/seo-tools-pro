@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">من ناحية تحسين محركات البحث (SEO)، تحديث Google للمحتوى المفيد (Helpful Content Update) يستهدف المحتوى منخفض الجودة بجميع اللغات. النصوص المليئة بالأخطاء تحصل على تفاعل أقل من المستخدمين، مما يؤثر سلباً على ترتيبها في نتائج البحث.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">أخطاء الهمزة: الأكثر شيوعاً في العربية</h2>
               <div className="result-box mb-6">
@@ -104,6 +107,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">الخطأ 14: تجاهل اتجاه الكتابة (RTL).</strong> العربية تُكتب من اليمين لليسار، وهذا يؤثر على تصميم الصفحات، ترتيب الأزرار، محاذاة النصوص، واتجاه الأيقونات. موقع عربي بتصميم LTR يبدو غير احترافي. تأكد من أن قالب موقعك يدعم RTL بشكل صحيح.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">الخطأ 15: استخدام خطوط لا تدعم العربية بشكل جيد.</strong> كثير من المواقع العربية تستخدم خطوطاً لا تعرض الحركات والتشكيل بشكل صحيح. اختر خطوطاً مثل Cairo، Tajawal، أو Noto Sans Arabic التي صُممت خصيصاً للويب العربي وتدعم جميع أشكال الحروف والحركات.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">سوق المحتوى العربي: أرقام وبيانات</h2>

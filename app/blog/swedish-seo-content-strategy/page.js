@@ -66,6 +66,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Sökordsanalys på svenska</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Svenska sökmönster:</strong> Svenskar söker med 3-4 ord per sökfråga. Populära mönster: "hur [handling]", "bästa [produkt] [år]", "[produkt] jämförelse". Svenskar söker ofta på engelska för tekniska frågor.</p>
@@ -83,6 +86,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Exempel: pillar "Ordräkning online" med kluster: "Svensk ordräknare", "Teckengränser per plattform", "Textlängd för SEO", "Nyckelordsdensitet", "Läsbarhet för svenska texter".</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">E-E-A-T i svensk kontext</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Expertis:</strong> Hänvisa till svenska källor: SCB, Internetstiftelsen, Svensk Handel, PostNord. Svenska läsare litar på dessa institutioner.</p>
@@ -94,6 +100,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Vanliga Frågor</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

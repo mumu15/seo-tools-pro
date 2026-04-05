@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Hay un matiz que pocas guías mencionan: la longitud óptima varía según el país. En España, donde el nivel educativo promedio de los usuarios de internet es alto, el contenido largo funciona bien. En México y Centroamérica, donde una mayor proporción de usuarios accede desde móviles con pantallas pequeñas, los artículos más concisos y mejor estructurados tienden a retener mejor a los lectores. No es que el contenido deba ser más corto — sino que debe ser más eficiente en cómo presenta la información.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Longitud de blogs y artículos en español</h2>
               <div className="result-box mb-6">
@@ -104,6 +107,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Las descripciones de Google Ads permiten 90 caracteres cada una (dos descripciones). En español, eso es aproximadamente 12-15 palabras por descripción. Incluye el beneficio principal, una prueba social breve ("más de 10.000 clientes") y un CTA directo. Google Ads en español tiene un CPC (costo por clic) significativamente menor que en inglés en la mayoría de industrias: entre un 30% y un 60% menos, según datos de WordStream para 2025.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Para Facebook e Instagram Ads en español, el texto principal debe tener 125 caracteres antes del corte "Ver más". Los usuarios hispanos hacen clic en "Ver más" un 12% menos que los usuarios anglosajones, así que tu mensaje principal debe estar completo en esos 125 caracteres iniciales.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Cómo medir y optimizar la longitud de tu contenido</h2>

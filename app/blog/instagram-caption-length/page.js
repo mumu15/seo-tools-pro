@@ -52,6 +52,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Caption Length vs Engagement Rate</h2>
               <div className="result-box mb-4">
@@ -82,6 +85,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Short vs Long Captions: When to Use Each</h2>
               <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Short captions (under 150 characters)</strong> work best for lifestyle, humor, and aesthetic content where the image speaks for itself. A stunning photo with a witty one-liner often outperforms a lengthy explanation. Use short captions when the visual content is the star.</p>
@@ -107,6 +113,9 @@ export default function Post() {
                 <Link href="/reading-time" className="text-emerald-400 hover:underline text-sm">Reading Time Calculator</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>
               <div className="flex flex-wrap gap-3">

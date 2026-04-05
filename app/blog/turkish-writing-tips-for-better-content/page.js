@@ -45,6 +45,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">5. Resmi dilden kaçının:</strong> "Yukarıda arz olunan hususlar çerçevesinde..." → "Bu nedenle..." Resmi dil web iletişiminin düşmanıdır.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">İpuçları 6-10: Okunabilirlik ve etkileşim</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">6. Dolgu kelimeleri silin:</strong> "Aslında", "temelde", "bir nevi", "şey" — anlam değişmiyorsa silin.</p>
@@ -73,6 +76,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">15. AI metinlerini insanlaştırma:</strong> Türkçe AI metinlerinin tipik özellikleri: fazla "ayrıca/bunun yanı sıra", nötr ton, genel örnekler, tekdüze cümle uzunluğu. Çözüm: cümle uzunluğunu çeşitlendirin, kişisel deneyim ekleyin, Türk pazarına özgü örnekler kullanın, kalıp geçişleri silin.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Yayın öncesi kontrol listesi</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Okunabilirlik:</strong> Cümleler 15-22 kelime? Paragraflar 2-3 cümle? Alt başlıklar 200-300 kelimede bir? Resmi dil yok?</p>
@@ -84,6 +90,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

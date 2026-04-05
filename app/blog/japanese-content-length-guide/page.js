@@ -74,6 +74,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">コンテンツ種類別の最適文字数</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">ブログ記事・コラム：</strong>3,000〜5,000文字。SEOを意識するなら4,000文字以上が望ましい。見出しは400〜600文字ごとに設置し、読みやすさを確保します。</p>
@@ -115,6 +118,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">日本語は漢字を使うため1文字あたりの情報密度は高いですが、助詞や助動詞、敬語表現などにより全体の文字数は英語のワード数の1.5〜2倍になります。翻訳コンテンツを作成する際はこの比率を考慮してください。</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">文字数の測定と最適化</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">競合分析：</strong>ターゲットキーワードで上位5記事の文字数をチェックし、その平均以上を目指しましょう。当サイトの<a href="/word-counter/language/japanese" className="text-emerald-400 underline">日本語文字カウンター</a>で簡単に計測できます。</p>
@@ -126,6 +132,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">よくある質問</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

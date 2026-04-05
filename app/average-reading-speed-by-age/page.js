@@ -122,6 +122,9 @@ export default function Page() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Average Reading Speed by Age, Grade & Education Level (2026 Data)","description":"Reading speed data for every age and education level. Words per minute for children, teens, adults, and speed readers with comprehension benchmarks.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-27","dateModified":"2026-03-27","mainEntityOfPage":"https://www.wordcountertool.net/average-reading-speed-by-age"})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Average Reading Speed by Age, Grade & Education Level","item":"https://www.wordcountertool.net/average-reading-speed-by-age"}]})}} />
+
+        <AdUnit slot="3248634657" />
+
       <Footer />
     </div>
   )

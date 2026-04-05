@@ -58,6 +58,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Word Counts of Famous Novels</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Looking at word counts of well-known novels gives you a concrete feel for what different word counts look like as finished books. Some of the most beloved novels in history are surprisingly short, while others are epic in both scope and page count.</p>
@@ -103,6 +106,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">How to Hit Your Novel Word Count Goal</h2>
               <p className="text-slate-400 leading-relaxed mb-4">The most effective strategy for hitting your target word count is to set a daily writing goal and stick to it consistently. At 1,000 words per day, you can complete an 80,000-word first draft in just under three months. At 500 words per day, the same draft takes about five months. The key is consistency rather than marathon writing sessions.</p>
@@ -131,6 +137,9 @@ export default function Post() {
                 <Link href="/readability-checker" className="text-emerald-400 hover:underline text-sm">Readability Checker</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>

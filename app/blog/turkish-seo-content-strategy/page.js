@@ -51,6 +51,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Türkçe anahtar kelime araştırması</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Türkçe arama kalıpları:</strong> Türkler ortalama 3-4 kelimelik sorgular kullanır. Popüler kalıplar: "nasıl [eylem]", "en iyi [ürün] [yıl]", "[ürün] karşılaştırma". Sondan eklemeli yapı nedeniyle tek kelime birçok arama varyasyonu oluşturabilir.</p>
@@ -68,6 +71,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Örnek: Ana sayfa "Online kelime sayma" → kümeler: "Türkçe kelime sayacı", "Platform karakter limitleri", "SEO metin uzunluğu", "Anahtar kelime yoğunluğu", "Okunabilirlik rehberi".</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Türk pazarında E-E-A-T</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Uzmanlık:</strong> Türk kaynaklarına atıf yapın: TÜİK, TCMB, TDK, Anadolu Ajansı. Türk okuyucular bu kurumlara güvenir.</p>
@@ -78,6 +84,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

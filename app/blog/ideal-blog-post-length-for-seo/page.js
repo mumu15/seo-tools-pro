@@ -53,6 +53,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Content Length vs Google Ranking Position</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Analysis of millions of Google search results consistently shows a correlation between content length and ranking position. Pages ranking in positions 1-3 tend to have significantly more content than those ranking on page two.</p>
@@ -86,6 +89,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">How to Determine the Right Length for Your Post</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Instead of picking an arbitrary word count, use the competitive analysis method. Search your target keyword in Google and check the word count of the top 5 results. Your content should be at least as comprehensive as the average of those top results, and ideally cover additional subtopics they missed.</p>
@@ -111,6 +117,9 @@ export default function Post() {
                 <Link href="/reading-time" className="text-emerald-400 hover:underline text-sm">Reading Time Calculator</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>
               <div className="flex flex-wrap gap-3">

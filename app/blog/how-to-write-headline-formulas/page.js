@@ -58,6 +58,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Headline Length and Performance</h2>
               <div className="result-box mb-4">
@@ -84,6 +87,9 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Self-Interest:</strong> Readers click on headlines promising personal benefit. Frame headlines around what the reader will gain, not what the article covers. "Learn about headline writing" is about the article. "Write headlines that double your traffic" is about the reader.</p>
               <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-white">Emotional Triggers:</strong> Headlines that trigger surprise, fear of missing out, or excitement generate more engagement. Words like "shocking," "essential," "mistakes," and "secret" activate emotional responses that override the decision to keep scrolling past your content.</p>
             </section>
+
+            <AdUnit slot="3763639977" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Headline Mistakes to Avoid</h2>
@@ -112,6 +118,9 @@ export default function Post() {
                 <Link href="/readability-checker" className="text-emerald-400 hover:underline text-sm">Readability Checker</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>

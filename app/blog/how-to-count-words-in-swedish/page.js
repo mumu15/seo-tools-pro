@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Svenska alfabetet har 29 bokstäver — 26 latinska plus å, ä och ö. Dessa tre bokstäver är separata bokstäver (inte varianter av a och o) och placeras sist i alfabetet. Vårt ordräkningsverktyg hanterar alla svenska tecken korrekt.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Svenska sammansättningar och ordräkning</h2>
               <div className="overflow-x-auto mb-4">
@@ -93,6 +96,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Läshastigheten på svenska är cirka 230-260 ord per minut för informativa texter och 260-300 ord/min för skönlitteratur. Vårt verktyg beräknar lästiden baserat på 240 ord per minut.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Rekommenderat ordantal per innehållstyp</h2>
               <div className="result-box mb-4">
@@ -127,6 +133,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Vanliga Frågor</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

@@ -72,6 +72,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">La France et le Québec offrent le meilleur RPM : 3-6€ pour la France, 2-5$ pour le Québec. Les sujets financiers (crédit immobilier, assurance, investissement) génèrent les RPM les plus élevés. Les sujets divertissement et lifestyle ont les RPM les plus bas.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Recherche de mots-clés en français : ne traduisez pas, recherchez</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">L’erreur la plus destructrice en SEO français : traduire directement les mots-clés anglais. « Workout routine » ne se traduit pas par « routine d’entraînement » — les Français cherchent « programme de musculation » ou « exercices à la maison ». « Side hustle » ne se traduit pas par « activité secondaire » — ils cherchent « complément de revenu » ou « gagner de l’argent en ligne ».</p>
@@ -95,6 +98,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Schema markup :</strong> Le balisage FAQ fonctionne en français exactement comme en anglais. Google affiche les rich snippets FAQ dans les résultats français. Chaque article devrait inclure 4-6 FAQ avec balisage structuré pour maximiser la visibilité.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Vitesse de chargement :</strong> Pour le marché français, un serveur en Europe (France, Pays-Bas, Allemagne) est idéal. Pour le Québec, un serveur en Amérique du Nord. Pour l’Afrique, un CDN avec des points de présence à Marseille ou Lagos. 68% du trafic web francophone est mobile — optimisez pour le mobile d’abord.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Monétiser le contenu SEO en français</h2>

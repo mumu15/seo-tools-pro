@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Die gute Nachricht: Die meisten Fehler folgen klaren Mustern. Wer diese Muster kennt, kann sie gezielt vermeiden. In diesem Leitfaden zeigen wir die 15 häufigsten Fehler mit konkreten Beispielen, Daten und Lösungen.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Fehler 1–5: Rechtschreibung und Zeichensetzung</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Kommasetzung bei Nebensätzen:</strong> Das Komma vor Nebensätzen mit „dass", „weil", „obwohl" und „wenn" fehlt in 68% aller analysierten Texte. Beispiel: „Ich denke dass es richtig ist" — korrekt: „Ich denke, dass es richtig ist." Die Regel ist einfach: Vor unterordnenden Konjunktionen steht immer ein Komma.</p>
@@ -94,6 +97,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">10. Gendern unkonsistent:</strong> Ob du Gendersternchen (Leser*innen), Doppelpunkt (Leser:innen) oder Doppelnennung (Leserinnen und Leser) verwendest — bleib konsistent. Laut einer FORSA-Umfrage 2024 stört 61% der Leser inkonsistentes Gendern mehr als das Gendern selbst.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Fehler 11–15: SEO und digitales Schreiben</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">11. Keyword-Stuffing auf Deutsch:</strong> Google erkennt unnatürliche Keyword-Häufung. „Wortzähler kostenlos online Wortzähler deutsch Wortzähler Tool" — das bestraft Google mit Ranking-Verlust. Nutze stattdessen natürliche Varianten und Synonyme. Unser <a href="/keyword-density" className="text-emerald-400 underline">Keyword-Dichte-Checker</a> zeigt dir die optimale Balance.</p>
@@ -134,6 +140,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Tipp: Lies deinen Text laut vor. Wenn du stolperst, ist der Satz zu lang oder zu kompliziert. Diese einfache Methode findet Fehler, die kein Tool erkennt.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Häufig gestellte Fragen</h2>

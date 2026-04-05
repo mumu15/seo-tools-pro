@@ -66,6 +66,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Яндекс SEO vs Google SEO: ключевые различия</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Текстовые факторы:</strong> Яндекс придаёт текстовым факторам больше веса, чем Google. Алгоритм «Палех» и нейронная сеть YATI анализируют релевантность текста на глубоком семантическом уровне. Яндекс лучше понимает морфологию русского языка — склонения, спряжения, словообразование.</p>
@@ -84,6 +87,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">4. Плотность ключевых слов:</strong> Для русского текста оптимальная плотность — 1,5–2,5% (чуть ниже, чем для английского). Яндекс чувствительнее к переоптимизации. Используйте наш <a href="/keyword-density" className="text-emerald-400 underline">инструмент проверки плотности</a>.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">E-E-A-T в российском контексте</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Экспертность:</strong> Ссылайтесь на российские авторитетные источники: Росстат, ЦБ РФ, ТАСС, РБК, Ведомости, данные отраслевых ассоциаций (АКАР, РАТЭК). Русскоязычные читатели доверяют этим источникам.</p>
@@ -95,6 +101,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Часто задаваемые вопросы</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

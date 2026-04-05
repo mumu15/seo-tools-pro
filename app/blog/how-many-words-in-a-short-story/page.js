@@ -58,6 +58,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Word Counts of Famous Short Stories</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Studying the word counts of celebrated short stories gives you a practical sense of what different lengths feel like as finished works. Notice the enormous range, from tiny flash pieces to long-form stories that push the boundaries of the category.</p>
@@ -97,6 +100,9 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">For longer works of 7,500-20,000 words, your options narrow. Consider science fiction and fantasy magazines like Clarkesworld and Asimov which accept longer stories, or look at anthology calls for submissions. Self-publishing on Amazon as a standalone ebook is increasingly viable for novelette-length works.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">How to Write a Short Story: The Word Count Method</h2>
               <p className="text-slate-400 leading-relaxed mb-4">One practical approach to short story writing is to plan your structure around word count milestones. For a 4,000-word story, allocate approximately 400 words to the opening hook and setup, 600 words to establishing the conflict, 1,500 words to rising action and complications, 800 words to the climax, and 700 words to the resolution and final image.</p>
@@ -125,6 +131,9 @@ export default function Post() {
                 <Link href="/readability-checker" className="text-emerald-400 hover:underline text-sm">Readability Checker</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>

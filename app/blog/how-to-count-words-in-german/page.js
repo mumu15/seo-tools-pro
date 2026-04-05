@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Laut einer Analyse von Translated.net aus 2023 sind englische Texte im Durchschnitt 17% länger in der Wortanzahl als ihre deutschen Entsprechungen. Bei technischen Texten steigt dieser Unterschied auf bis zu 25%.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Deutsche Komposita verstehen</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Komposita sind zusammengesetzte Wörter aus zwei oder mehr Substantiven (oder anderen Wortarten). Sie sind das Herzstück der deutschen Wortbildung und beeinflussen die Wortzählung erheblich.</p>
@@ -94,6 +97,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Tipp: Deutsche Lesegeschwindigkeit liegt bei etwa 220–250 Wörtern pro Minute für Sachtext. Romane werden mit ca. 250–300 WPM gelesen. Unser Tool berechnet die Lesezeit auf dieser Basis.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Wortanzahl für verschiedene deutsche Textformate</h2>
               <div className="result-box mb-4">
@@ -134,6 +140,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Unser Wortzähler zählt Umlaute und ß als jeweils ein Zeichen — das ist das korrekte Verhalten für die deutsche Sprache. Einige ältere Tools zählen „ä" als zwei Zeichen, weil sie Bytes statt Unicode-Zeichen zählen. Das führt zu falschen Ergebnissen.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Für URLs werden Umlaute URL-encoded: ä → %C3%A4. In SEO-Titeln und Meta-Descriptions solltest du die echten Umlaute verwenden. Google zeigt sie korrekt in den Suchergebnissen an.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Häufig gestellte Fragen</h2>

@@ -95,6 +95,9 @@ export default function Post() {
       </main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How Many Words Should a Blog Post Be? (2026 SEO Data)","author":{"@type":"Organization","name":"WordCounterTool.net"},"datePublished":"2026-03-21"})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"How Many Words Should a Blog Post Be? (2026 SEO Data)","item":"https://www.wordcountertool.net/blog/how-many-words-in-a-blog-post"}]})}} />
+
+        <AdUnit slot="3248634657" />
+
       <Footer />
     </>
   )

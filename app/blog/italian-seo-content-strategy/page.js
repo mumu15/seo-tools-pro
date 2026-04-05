@@ -66,6 +66,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Ricerca parole chiave in italiano</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Comprendere le query italiane:</strong> Gli italiani cercano in modo più colloquiale rispetto agli anglofoni. "Come contare le parole in un testo" ha più volume di "contaparole". Le query con "come", "perché", "quale" e "quanto" sono molto frequenti.</p>
@@ -83,6 +86,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Esempio: Pillar "Conteggio parole online" → cluster: "Come contare le parole in italiano", "Limiti caratteri piattaforme social", "Lunghezza ideale articoli SEO", "Densità parole chiave", "Leggibilità dei testi italiani".</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">E-E-A-T nel contesto italiano</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Esperienza:</strong> Gli italiani apprezzano le testimonianze personali. "Nella mia esperienza di 8 anni come SEO specialist..." ha più impatto di affermazioni generiche.</p>
@@ -95,6 +101,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Domande Frequenti</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

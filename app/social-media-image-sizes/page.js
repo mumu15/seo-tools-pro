@@ -145,6 +145,9 @@ export default function Page() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Social Media Image Sizes 2026: Every Platform (Complete Cheat Sheet)","description":"Definitive guide to social media image dimensions in 2026. Profile photos, cover images, post sizes, story dimensions, and ad sizes for every platform.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-27","dateModified":"2026-03-27","mainEntityOfPage":"https://www.wordcountertool.net/social-media-image-sizes"})}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Social Media Image Sizes 2026","item":"https://www.wordcountertool.net/social-media-image-sizes"}]})}} />
+
+        <AdUnit slot="3248634657" />
+
       <Footer />
     </div>
   )

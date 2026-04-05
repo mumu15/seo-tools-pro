@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Pour le SEO, Google évalue la qualité du contenu à travers les signaux d’engagement. Un texte truffé de fautes génère un taux de rebond plus élevé et un temps de lecture plus court, ce qui nuit au référencement. Écrire correctement n’est pas qu’une question d’image — c’est un facteur de performance concret.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Erreurs d’orthographe : les pièges classiques</h2>
               <div className="result-box mb-6">
@@ -104,6 +107,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Erreur 14 : La négation incomplète.</strong> « Je sais pas » au lieu de « Je ne sais pas ». À l’oral, omettre le « ne » est très courant. À l’écrit, dans un contexte professionnel ou un article de blog, la négation complète est attendue. Exception : dans les dialogues ou les citations où vous reproduisez le langage parlé.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Erreur 15 : Les phrases trop longues.</strong> Le français académique privilégie les phrases longues et complexes. Pour le web, visez 15 à 20 mots par phrase en moyenne. Les données de Hemingway App montrent que les textes avec des phrases de moins de 20 mots ont un taux de complétion de lecture 40% plus élevé que ceux dépassant 30 mots par phrase.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Le marché francophone en chiffres</h2>

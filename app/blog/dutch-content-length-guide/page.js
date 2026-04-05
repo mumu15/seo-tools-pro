@@ -74,6 +74,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Tekstlengte per contenttype</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Blogartikelen:</strong> 1.200-2.000 woorden. Uitgebreide gidsen mogen langer zijn. Gebruik tussenkopjes elke 200-300 woorden voor de leesbaarheid.</p>
@@ -113,6 +116,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Nederlandse teksten zijn korter dankzij samenstellingen. Dit is normaal — het betekent niet dat er informatie ontbreekt. Gebruik onze <a href="/word-counter/language/dutch" className="text-emerald-400 underline">woordenteller</a> om de lengte te controleren.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Tekstlengte meten en optimaliseren</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Concurrentieanalyse:</strong> Controleer het woordaantal van de top-5 resultaten in Google.nl voor je doelzoekwoord. Mik op het gemiddelde plus 15-20%.</p>
@@ -124,6 +130,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Veelgestelde Vragen</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Para los creadores de contenido y profesionales del marketing digital que trabajan en español, dominar el conteo de caracteres es una habilidad práctica que ahorra tiempo y mejora resultados. No se trata solo de no pasarse del límite — se trata de aprovechar cada carácter al máximo para transmitir el mensaje más potente posible dentro del espacio disponible.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Límites de caracteres por plataforma en 2026</h2>
               <div className="result-box mb-4">
@@ -106,6 +109,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Una técnica que funciona bien en español: coloca la palabra clave principal en los primeros 30 caracteres del title. Google da más peso a las palabras al inicio, y si el title se trunca, tu keyword sigue visible. Ejemplo: "Contador de Palabras Gratis | Herramienta Online" es mejor que "Herramienta Online Gratuita para el Conteo de Palabras en Español".</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Las URLs en español deben usar caracteres ASCII. Convierte "cómo" a "como", "información" a "informacion" en las URLs. Google entiende URLs con tildes pero muchos navegadores y herramientas las codifican de forma confusa (%C3%B3 en lugar de "ó"). URLs limpias sin caracteres especiales son más compartibles y profesionales.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">El impacto real del conteo de caracteres en tus resultados</h2>

@@ -53,6 +53,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Content Length by Industry</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Different industries have different content length norms based on topic complexity, audience expectations, and competitive landscape. These benchmarks are based on analysis of top-performing content in each vertical.</p>
@@ -84,6 +87,9 @@ export default function Post() {
                 <Link href="/word-counter" className="btn-primary inline-block px-6 py-3">Open Word Counter →</Link>
               </div>
             </section>
+
+            <AdUnit slot="3763639977" />
+
             <AdUnit slot="3248634657" />
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
@@ -98,6 +104,9 @@ export default function Post() {
                 <Link href="/readability-checker" className="text-emerald-400 hover:underline text-sm">Readability Checker</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>
               <div className="flex flex-wrap gap-3">

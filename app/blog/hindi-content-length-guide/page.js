@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">इसलिए हिंदी content strategy simple है: topic को पूरा cover करो, लेकिन filler मत डालो। हर paragraph को earn करना चाहिए। अगर 1,500 शब्दों में topic complete हो जाता है, तो 2,500 शब्द लिखने का कोई मतलब नहीं।</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">ब्लॉग और आर्टिकल की लंबाई</h2>
               <div className="result-box mb-6">
@@ -97,6 +100,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Email body 100-200 शब्दों में रखें। भारतीय users, खासकर mobile पर, लंबे emails पढ़ने में रुचि नहीं रखते। एक topic, एक CTA, एक clear message — यही formula काम करता है। Newsletter emails थोड़े लंबे (200-400 शब्द) हो सकते हैं अगर content genuinely useful है।</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">भारत में emails भेजने का best time: मंगलवार और गुरुवार, सुबह 10:00-12:00 बजे। शुक्रवार दोपहर और सोमवार सुबह worst performing slots हैं। त्योहारों (दिवाली, होली, रक्षाबंधन) के आसपास हिंदी promotional emails भेजना एक smart strategy है।</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">कंटेंट लंबाई कैसे मापें और optimize करें</h2>

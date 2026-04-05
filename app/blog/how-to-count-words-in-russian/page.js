@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Русский использует пробелы для разделения слов, как и английский, поэтому базовый подсчёт слов прост. Наш инструмент считает слова по пробелам, правильно обрабатывает кириллицу и латиницу, дефисы (составные слова типа «когда-нибудь» считаются как одно слово) и числа.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Слова, символы и знаки — в чём разница</h2>
               <div className="overflow-x-auto mb-4">
@@ -89,6 +92,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Шаг 4:</strong> Используйте нужную метрику: слова — для SEO и блогов, символы — для соцсетей и мета-описаний, знаки с пробелами — для издательских проектов.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Скорость чтения на русском языке: информационные тексты — 200–250 слов/мин, художественная литература — 250–300 слов/мин, научные тексты — 150–200 слов/мин. Наш инструмент рассчитывает время чтения на основе 220 слов/мин.</p>
             </section>
+
+            <AdUnit slot="3763639977" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Рекомендуемый объём для разных форматов</h2>
@@ -149,6 +155,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Русский — 8-й по количеству интернет-контента язык в мире (W3Techs, 2025). Рунет охватывает около 200 миллионов русскоязычных пользователей в 17+ странах. Это огромный рынок для контент-маркетинга.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Часто задаваемые вопросы</h2>

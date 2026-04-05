@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">大多数中文应用场景使用"字数"（字符数）作为标准。学术论文要求"不少于5000字"，指的是5000个字符。微信公众号文章限制是20000字，也是字符数。我们的中文字数统计工具同时提供字数、词数和字符数。</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">字数、词数、字符数的区别</h2>
               <div className="overflow-x-auto mb-4">
@@ -90,6 +93,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">中文的阅读速度约为每分钟500-600个字（字符）。相比之下，英文阅读速度是250个单词/分钟。虽然中文阅读速度看起来更高，但信息密度也更高——1个中文字符承载的信息约等于2-3个英文字母。</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">中文内容字数建议</h2>
               <div className="result-box mb-4">
@@ -128,6 +134,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">常见问题解答</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

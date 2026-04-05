@@ -187,6 +187,9 @@ export default function CharacterCounter() {
             <a href="/hashtag-counter" className="inline-block bg-slate-800/50 hover:bg-slate-700 text-slate-300 text-sm px-4 py-2 rounded-lg transition-colors">Hashtag Counter</a>
           </div>
         </div>
+
+        <AdUnit slot="3248634657" />
+
       <Footer />
     </>
   )

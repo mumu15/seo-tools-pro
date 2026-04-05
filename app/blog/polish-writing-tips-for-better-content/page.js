@@ -51,6 +51,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">5. Bez stylu urzędowego:</strong> "W nawiązaniu do powyższego uprzejmie informuję, iż..." → "Informuję, że..." Styl urzędowy jest wrogiem komunikacji webowej. Pisz prosto, ale poprawnie.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Porady 6-10: Czytelność i zaangażowanie</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">6. Wykreśl wypełniacze:</strong> "Tak naprawdę", "w zasadzie", "niejako", "swego rodzaju" — jeśli bez nich zdanie nie zmienia sensu, wykreśl je.</p>
@@ -88,6 +91,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">15. Humanizacja tekstów AI:</strong> Polskie teksty AI mają typowe cechy: nadmiar "ponadto/co więcej", neutralny ton, generyczne przykłady, jednolita długość zdań. Rozwiązanie: zróżnicuj długość zdań, dodaj osobiste doświadczenia, użyj polskich przykładów, usuń szablonowe przejścia.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Checklista przed publikacją</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Sprawdź przed publikacją:</p>
@@ -101,6 +107,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Najczęściej Zadawane Pytania</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

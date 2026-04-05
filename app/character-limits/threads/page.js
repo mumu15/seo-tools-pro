@@ -66,6 +66,9 @@ export default function Page() {
               </table>
             </div>
           </section>
+
+          <AdUnit slot="3248634657" />
+
           <AdUnit slot="3248634657" />
 
           <div className="bg-gradient-to-r from-emerald-900/30 to-teal-900/20 border border-emerald-500/30 rounded-2xl p-6 mb-10 text-center">
@@ -89,6 +92,9 @@ export default function Page() {
               </div>
             </div>
           </section>
+
+          <AdUnit slot="3763639977" />
+
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">Related Tools and Guides</h2>
             <div className="flex flex-wrap gap-3">
@@ -100,6 +106,9 @@ export default function Page() {
               <a href="/character-limits/whatsapp" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">WhatsApp Limits</a>
             </div>
           </section>
+
+          <AdUnit slot="3248634657" />
+
         </div>
       </main>
 

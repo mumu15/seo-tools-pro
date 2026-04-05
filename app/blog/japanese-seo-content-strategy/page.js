@@ -66,6 +66,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">日本語キーワードリサーチの方法</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. 日本語の検索クエリの特徴：</strong>日本語の検索クエリは平均3〜5語（10〜20文字）で、英語より具体的です。「文字数 カウント ツール 無料」のようにスペース区切りで複数の条件を指定する傾向があります。</p>
@@ -83,6 +86,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">例：ピラーページ「文字数カウントの完全ガイド」、クラスター記事「日本語の文字数カウント方法」「各プラットフォームの文字数制限」「SEOに最適な文字数」「読了時間の計算方法」「キーワード密度の最適化」など。すべてが互いにリンクし合う構造です。</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">日本市場でのE-E-A-T</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">経験（Experience）：</strong>日本の読者は実体験に基づく情報を重視します。「3年間SEOコンサルタントとして100サイトを改善した経験から言えば…」のような具体的な経験の記述が信頼性を高めます。</p>
@@ -95,6 +101,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">よくある質問</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

@@ -66,6 +66,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Zoekwoordonderzoek in het Nederlands</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Nederlandse zoekpatronen:</strong> Nederlanders zoeken gemiddeld met 3-4 woorden per zoekopdracht. Populaire patronen: "hoe [actie]" ("hoe woorden tellen"), "beste [product] [jaar]", "[product] vergelijken". Langere, specifieke zoekopdrachten converteren beter.</p>
@@ -83,6 +86,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Voorbeeld: pillar "Woorden tellen online" met clusters: "Nederlandse woordenteller", "Tekenlimieten per platform", "SEO-tekstlengte", "Zoekwoorddichtheid optimaliseren", "Leesbaarheid verbeteren".</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">E-E-A-T in de Nederlandse context</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Expertise:</strong> Verwijs naar Nederlandse bronnen: CBS, CPB, Thuiswinkel.org, Emerce, Marketingfacts. Nederlandse lezers vertrouwen deze instanties.</p>
@@ -94,6 +100,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Veelgestelde Vragen</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

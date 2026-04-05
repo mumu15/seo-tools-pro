@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">संयुक्त अक्षर जैसे "क्ष" (क + ् + ष), "त्र" (त + ् + र), और "ज्ञ" (ज + ् + ञ) तकनीकी रूप से 3 code points हैं लेकिन visually एक अक्षर दिखते हैं। Twitter जैसे प्लेटफॉर्म इन्हें कैसे count करते हैं यह प्लेटफॉर्म और उसके normalization method पर निर्भर करता है। व्यावहारिक रूप से, हमारा <a href="/character-counter" className="text-emerald-400 underline">character counter</a> इन सभी मामलों को सही से handle करता है।</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">प्लेटफॉर्म अनुसार अक्षर सीमा (2026)</h2>
               <div className="result-box mb-4">
@@ -98,6 +101,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Meta descriptions के लिए 145-155 characters aim करें। Google हिंदी descriptions दिखाता है, और हिंदी में search करने वाले users हिंदी descriptions पर अधिक click करते हैं। एक clear CTA (कॉल-टू-एक्शन) जैसे "अभी पढ़ें", "मुफ्त में जानें", "यहां देखें" जरूर शामिल करें।</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">URL में देवनागरी characters का उपयोग न करें। Google उन्हें percent-encode करता है (%E0%A4%B9...) जो बेहद लंबे और अपठनीय हो जाते हैं। Transliteration उपयोग करें: /hindi-akshar-ganana-guide — ये share करने में आसान और clean दिखते हैं।</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Google Ads में हिंदी अक्षर सीमा</h2>

@@ -53,6 +53,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">The 3-Tier Hashtag Strategy</h2>
               <p className="text-slate-400 leading-relaxed mb-4">The most effective hashtag strategy uses a mix of three hashtag sizes. This layered approach maximizes both reach and visibility by competing at different levels simultaneously.</p>
@@ -83,6 +86,9 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">The data shows peak reach at 7-10 hashtags on Instagram. Using fewer means missed discovery opportunities. Using more than 15 starts looking spammy and can trigger algorithmic suppression. The maximum of 30 actually performs worse than using 10 well-chosen hashtags.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Hashtag Mistakes That Kill Your Reach</h2>
               <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">Same hashtags every post:</strong> Instagram treats repeated identical hashtag sets as spammy behavior. Rotate your hashtag sets and use different combinations for different content types. Keep 3-5 saved sets and alternate between them.</p>
@@ -109,6 +115,9 @@ export default function Post() {
                 <Link href="/word-counter" className="text-emerald-400 hover:underline text-sm">Word Counter</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>
               <div className="flex flex-wrap gap-3">

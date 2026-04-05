@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Bei der Zeichenzählung gibt es zwei Varianten: mit Leerzeichen und ohne Leerzeichen. Für Social-Media-Plattformen wie Twitter/X zählen Leerzeichen mit (280 Zeichen inklusive Leerzeichen). Für Google-Meta-Descriptions zählt Google die Pixel-Breite, nicht die Zeichenzahl — 155 Zeichen sind eine Faustregel.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Zeichenlimits für deutsche Inhalte</h2>
               <div className="overflow-x-auto mb-4">
@@ -114,6 +117,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">In HTML solltest du immer <code className="text-emerald-400">&lt;meta charset=&quot;UTF-8&quot;&gt;</code> setzen. Fehlt diese Angabe, zeigen Browser Umlaute als Fragezeichen oder Kästchen an — ein häufiger Fehler auf deutschen Websites.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Praxistipps für deutsche Zeichenlimits</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Google-Titel optimieren:</strong> Deutsche Wörter sind durchschnittlich 6,3 Buchstaben lang (Englisch: 4,7). Das bedeutet, du passt weniger deutsche Wörter in einen 60-Zeichen-Titel. Tipp: Nutze Abkürzungen wo sinnvoll — „SEO" statt „Suchmaschinenoptimierung" spart 22 Zeichen.</p>
@@ -126,6 +132,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Häufig gestellte Fragen</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">당 사이트의 글자수 체크 도구는 한글, 영문, 숫자, 특수문자, 공백을 모두 정확하게 구분하여 카운트합니다. 공백 포함/제외 글자수를 동시에 표시하므로 어떤 용도에도 활용할 수 있습니다.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">플랫폼별 글자수 제한</h2>
               <div className="overflow-x-auto mb-4">
@@ -113,6 +116,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">SMS에서는 한글이 EUC-KR 인코딩을 사용하여 1자당 2바이트를 차지합니다. SMS 1건의 한도는 80바이트(한글 40자)이며, 이를 초과하면 장문 메시지(LMS)로 전환됩니다.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">한국어 SEO에서의 글자수 최적화</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">타이틀 태그:</strong> 구글은 약 30~32자, 네이버는 약 35~40자를 표시합니다. 두 플랫폼 모두에서 잘리지 않으려면 30자 이내가 안전합니다. 핵심 키워드를 첫 15자에 배치하세요.</p>
@@ -124,6 +130,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">자주 묻는 질문</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

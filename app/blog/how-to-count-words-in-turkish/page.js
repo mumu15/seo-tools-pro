@@ -43,6 +43,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Türk alfabesi 29 harften oluşur: 21 ünsüz ve 8 ünlü. Türkçeye özgü harfler: ç, ğ, ı, ö, ş, ü. Kelime sayacımız tüm Türkçe karakterleri doğru tanır.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Sondan eklemeli yapı ve kelime sayımı</h2>
               <div className="overflow-x-auto mb-4">
@@ -67,6 +70,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Türkçe okuma hızı: bilgilendirici metinler 200-250 kelime/dk, edebiyat 250-300 kelime/dk, akademik 150-200 kelime/dk.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Türkçe içerik için önerilen kelime sayıları</h2>
               <div className="result-box mb-4">
@@ -85,6 +91,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

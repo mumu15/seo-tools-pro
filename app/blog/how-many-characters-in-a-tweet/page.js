@@ -53,6 +53,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">How Special Characters Affect Count</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Not all characters count equally on Twitter. Understanding how different character types are counted helps you maximize your message within the 280-character limit.</p>
@@ -100,6 +103,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">X Premium vs Free: Character Limits</h2>
               <p className="text-slate-400 leading-relaxed mb-4">X Premium (formerly Twitter Blue) expanded the character limit to 25,000 characters. However, data shows that traditional 280-character tweets still get higher engagement rates per impression. Long-form posts are best suited for threads, articles, and in-depth analysis where the audience expects depth.</p>
@@ -124,6 +130,9 @@ export default function Post() {
                 <Link href="/word-counter" className="text-emerald-400 hover:underline text-sm">Word Counter</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>
               <div className="flex flex-wrap gap-3">

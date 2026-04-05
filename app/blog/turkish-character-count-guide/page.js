@@ -43,6 +43,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Özel durum: "İ" ve "I" harfleri. Türkçe bu ayrımı yapan tek dildir. Büyük İ (noktalı) → küçük i. Büyük I (noktasız) → küçük ı. Bu durum yazılım geliştirmede sık sorun yaratır.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Platform karakter limitleri</h2>
               <div className="overflow-x-auto mb-4">
@@ -71,6 +74,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">SMS ile Türkçe karakter kullanıldığında GSM-7 yerine UCS-2 kodlamasına geçilir ve limit 160 karakterden 70 karaktere düşer. HTML sayfalarınızda daima <code className="text-emerald-400">&lt;meta charset=&quot;UTF-8&quot;&gt;</code> belirtin.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Pratik ipuçları</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Google Ads:</strong> 30 karakterle Türkçe başlık yazmak zordur. "Araç sigortası karşılaştırma" zaten 28 karakterdir. Kısaltmalar ve sayılar kullanın.</p>
@@ -81,6 +87,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

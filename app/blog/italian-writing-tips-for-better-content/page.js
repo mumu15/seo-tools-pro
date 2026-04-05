@@ -51,6 +51,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">5. Elimina il burocratese:</strong> "Si rende necessario procedere alla compilazione" → "Compila il modulo". Il burocratese è il nemico della comunicazione web italiana. Usa un linguaggio semplice e diretto.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Consigli 6–10: Leggibilità e coinvolgimento</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">6. Taglia le parole inutili:</strong> "In realtà", "fondamentalmente", "effettivamente", "ovviamente" — se il significato non cambia senza la parola, eliminala. Ogni parola tagliata rende la frase più forte.</p>
@@ -88,6 +91,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">15. Umanizzare i testi AI:</strong> I testi AI in italiano hanno caratteristiche riconoscibili: eccesso di "inoltre", "pertanto", "è importante sottolineare"; tono neutro; esempi generici; lunghezza uniforme delle frasi. Soluzione: varia la lunghezza, aggiungi opinioni personali, usa esempi italiani concreti, elimina i connettivi di troppo.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Checklist pre-pubblicazione</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Prima di pubblicare qualsiasi testo in italiano sul web, verifica:</p>
@@ -101,6 +107,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Domande Frequenti</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

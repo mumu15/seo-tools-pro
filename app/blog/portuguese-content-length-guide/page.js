@@ -74,6 +74,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Tamanho ideal por tipo de conteúdo</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Blog posts informativos:</strong> 1.500–2.500 palavras. Guias completos podem ter 3.000+, desde que o conteúdo justifique. Use subtítulos a cada 200–300 palavras para facilitar a leitura.</p>
@@ -118,6 +121,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Se você trabalha com conteúdo traduzido, planeje 10–14% mais palavras para a versão em português. Use nosso <a href="/word-counter/language/portuguese" className="text-emerald-400 underline">contador de palavras</a> para verificar o tamanho final.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Como medir e otimizar o tamanho do texto</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Analise a concorrência:</strong> Antes de escrever, veja os top 5 resultados no Google.com.br para sua palavra-chave. Conte as palavras deles com nosso contador e mire no mesmo tamanho ou 15–20% mais.</p>
@@ -130,6 +136,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

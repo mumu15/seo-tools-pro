@@ -74,6 +74,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">各类型内容的最佳长度</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">SEO博客文章：</strong>2,000-4,000字。深度指南可以到5,000字以上，前提是内容确实有深度。每300-500字设置一个H2或H3小标题，方便扫读。</p>
@@ -116,6 +119,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">这意味着：如果你的英文竞争对手写了2,000词的文章，你的中文文章写1,400字就包含了等量信息。但为了在百度排名竞争中胜出，你可能需要写更多——2,500-3,000字，因为中文搜索结果的平均长度更高。</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">如何衡量和优化内容长度</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">分析竞争对手：</strong>搜索你的目标关键词，用我们的字数统计工具分析排名前5的文章长度。瞄准平均值或高出15-20%的字数。</p>
@@ -128,6 +134,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">常见问题解答</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

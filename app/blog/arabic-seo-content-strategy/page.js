@@ -75,6 +75,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">البحث الصوتي بالعربية ينمو بسرعة. مع انتشار المساعدين الصوتيين (Google Assistant, Siri) الذين يدعمون العربية، أصبحت الاستعلامات المحادثية الطويلة مهمة: "كيف أحسب قسط القرض الشهري؟" — هذه الكلمات المفتاحية الطويلة فرصة ذهبية لـ SEO العربي.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">بحث الكلمات المفتاحية بالعربية</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">القاعدة الذهبية: لا تترجم الكلمات المفتاحية الإنجليزية حرفياً. المستخدمون العرب يبحثون بطريقة مختلفة. "Weight loss" لا تُترجم إلى "فقدان الوزن" (المصطلح الطبي) بل الناس يبحثون عن "تخسيس" أو "إنقاص الوزن" أو "رجيم" — وكل مصطلح له حجم بحث مختلف.</p>
@@ -98,6 +101,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Schema Markup:</strong> بيانات الـ FAQ المُهيكلة تعمل بالعربية تماماً كالإنجليزية. Google يعرض Rich Snippets بالعربية في نتائج البحث. كل مقال يجب أن يتضمن 4-6 أسئلة شائعة مع Schema Markup.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">سرعة التحميل:</strong> خوادم قريبة من جمهورك المستهدف أساسية. للجمهور الخليجي: خوادم في البحرين أو الإمارات. للجمهور المصري: خوادم في مصر أو إيطاليا. Cloudflare يوفر CDN مجاني مع نقاط تواجد في المنطقة العربية.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">تحقيق الدخل من المحتوى العربي</h2>

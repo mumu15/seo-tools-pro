@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">O Acordo Ortográfico de 2009, que unificou a grafia entre Brasil e Portugal, gerou confusão extra. Palavras como "ideia" (antes "idéia"), "voo" (antes "vôo") e "pinguim" (antes "pingüim") mudaram — e muita gente ainda escreve na forma antiga.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Erros 1–5: Ortografia e acentuação</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Uso incorreto da crase:</strong> A crase é a fusão da preposição "a" com o artigo feminino "a". Exemplo: "Vou à escola" (correto) vs. "Vou a pé" (sem crase — não há artigo). Dica: substitua o "a" por "ao" com masculino. Se funcionar, há crase: "Vou ao colégio" → "Vou à escola".</p>
@@ -94,6 +97,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">10. Pronome oblíquo em início de frase:</strong> "Me disseram que..." — na norma culta, não se inicia frase com pronome oblíquo átono. O correto seria "Disseram-me que..." No Brasil, o uso inicial é tão comum que muitos linguistas já o aceitam em textos informais.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Erros 11–15: Estilo e escrita digital</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">11. Parágrafos longos demais:</strong> No digital, parágrafos com mais de 4 linhas afastam o leitor. Dados do RD Station mostram que posts com parágrafos de 2–3 frases têm 34% mais tempo de permanência na página.</p>
@@ -133,6 +139,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Dica prática: leia seu texto em voz alta. Se tropeçar em alguma frase, ela provavelmente está longa demais. Esse método detecta problemas que nenhum corretor automático encontra.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Perguntas Frequentes</h2>

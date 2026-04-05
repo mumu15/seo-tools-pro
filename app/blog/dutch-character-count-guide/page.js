@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Onze tekenteller verwerkt alle Nederlandse tekens correct en toont het aantal tekens met en zonder spaties, het aantal woorden, zinnen en de geschatte leestijd.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Tekenlimieten per platform</h2>
               <div className="overflow-x-auto mb-4">
@@ -107,6 +110,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Gebruik altijd <code className="text-emerald-400">&lt;meta charset=&quot;UTF-8&quot;&gt;</code> in je HTML. Zonder correcte codering kunnen letters met trema als vreemde tekens worden weergegeven.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Praktische tips voor Nederlandse tekenlimieten</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Google Ads:</strong> Met 30 tekens voor een kop is Nederlands bijzonder uitdagend. "Zorgverzekering vergelijken" is al 27 tekens. Gebruik afkortingen ("verz." voor "verzekering") en cijfers in plaats van woorden.</p>
@@ -118,6 +124,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Veelgestelde Vragen</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

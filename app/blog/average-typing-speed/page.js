@@ -52,6 +52,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Typing Speed Visualization</h2>
               <div className="result-box mb-4">
@@ -84,6 +87,9 @@ export default function Post() {
                 <Link href="/word-counter" className="btn-primary inline-block px-6 py-3">Open Word Counter →</Link>
               </div>
             </section>
+
+            <AdUnit slot="3763639977" />
+
             <AdUnit slot="3248634657" />
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
@@ -98,6 +104,9 @@ export default function Post() {
                 <Link href="/character-counter" className="text-emerald-400 hover:underline text-sm">Character Counter</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>
               <div className="flex flex-wrap gap-3">

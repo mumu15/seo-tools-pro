@@ -74,6 +74,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Textlängd per innehållstyp</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Blogginlägg:</strong> 1 200-2 000 ord. Utförliga guider kan vara längre. Underrubriker var 200-300:e ord.</p>
@@ -81,6 +84,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">E-handel (produktsidor):</strong> 300-600 ord. CDON och Zalando Sverige använder i genomsnitt 400 ord per produktsida.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Nyhetsbrev:</strong> 200-400 ord. Kortare e-postmeddelanden har högre klickfrekvens på den svenska marknaden.</p>
             </section>
+
+            <AdUnit slot="3763639977" />
+
 
             <AdUnit slot="3248634657" />
 
@@ -117,6 +123,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Vanliga Frågor</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

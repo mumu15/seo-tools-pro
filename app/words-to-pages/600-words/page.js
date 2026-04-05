@@ -76,6 +76,9 @@ export default function Page() {
             </div>
           </section>
 
+          <AdUnit slot="3763639977" />
+
+
           <AdUnit slot="3248634657" />
 
           <section className="mb-10">
@@ -121,6 +124,9 @@ export default function Page() {
               <a href="/words-to-pages" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-3 py-2 rounded-lg transition-colors">All Conversions</a>
             </div>
           </section>
+
+          <AdUnit slot="3248634657" />
+
 
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">Related Tools</h2>

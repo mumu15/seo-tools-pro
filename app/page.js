@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import AdUnit from 'components/AdUnit'
 
 const writingTools = [
   { title: 'Word Counter', desc: 'Count words, characters, sentences, paragraphs and reading time instantly.', href: '/word-counter', gradient: 'from-emerald-500 to-teal-600' },
@@ -90,6 +91,9 @@ export default function Home() {
           </div>
         </section>
 
+        <AdUnit slot="3763639977" />
+
+
         {/* WRITING TOOLS */}
         <section className="max-w-6xl mx-auto px-4 py-14">
           <div className="flex items-center justify-between mb-8">
@@ -115,6 +119,9 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        <AdUnit slot="3248634657" />
+
 
         {/* SEO TOOLS */}
         <section className="max-w-6xl mx-auto px-4 py-14">
@@ -165,6 +172,9 @@ export default function Home() {
           </div>
         </section>
 
+        <AdUnit slot="3763639977" />
+
+
         {/* GUIDES & RESOURCES */}
         <section className="max-w-6xl mx-auto px-4 py-14">
           <div className="text-center mb-10">
@@ -202,6 +212,9 @@ export default function Home() {
             </Link>
           </div>
         </section>
+
+        <AdUnit slot="3248634657" />
+
       </main>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"WordCounterTool.net","applicationCategory":"UtilityApplication","operatingSystem":"Web","url":"https://www.wordcountertool.net","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}} />

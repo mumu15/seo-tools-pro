@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Słynne zdanie testowe "Zażółć gęślą jaźń" (zabarwić żółcią instrumentu muzycznego duszę) zawiera wszystkie 9 polskich znaków diakrytycznych i jest używane do testowania poprawnego wyświetlania polskich tekstów.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Limity znaków na platformach</h2>
               <div className="overflow-x-auto mb-4">
@@ -111,6 +114,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">SMS z polskimi znakami diakrytycznymi zmienia kodowanie z GSM-7 na UCS-2, co zmniejsza limit ze 160 do 70 znaków. To ważne dla kampanii SMS-owych w Polsce.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Praktyczne wskazówki dla polskich limitów znaków</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Google Ads:</strong> Z 30 znakami na nagłówek, polski jest wyjątkowo ograniczony. "Ubezpieczenie samochodu" to już 23 znaki. Używaj skrótów ("OC/AC" zamiast "ubezpieczenie samochodu"), cyfr i krótkich CTA.</p>
@@ -122,6 +128,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Najczęściej Zadawane Pytania</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

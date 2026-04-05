@@ -51,6 +51,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">5. Nominalstil vermeiden:</strong> „Die Implementierung der Optimierung" → „Wir optimieren". Substantivierungen auf -ung, -heit, -keit machen Texte schwerfällig. Die Faustregel: Wenn du ein Substantiv durch ein Verb ersetzen kannst, tu es.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Tipp 6–10: Lesbarkeit und Stil</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">6. Einfache Wörter bevorzugen:</strong> „aufgrund der Tatsache, dass" → „weil". „zu dem Zeitpunkt" → „dann". „in der Lage sein" → „können". Deutsche hat einen enormen Wortschatz — nutze die einfacheren Varianten. Der Flesch-Index für deutsche Texte sollte über 60 liegen (gut verständlich).</p>
@@ -92,6 +95,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">15. Schema-Markup für deutsche Inhalte:</strong> Setze FAQ-Schema (für Fragen in den Suchergebnissen), Article-Schema (für Blogbeiträge) und Breadcrumb-Schema (für die Seitenstruktur). Markiere die Sprache mit inLanguage: „de" für korrekte Zuordnung.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">KI-Texte humanisieren: Deutsche Version</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">KI-generierte deutsche Texte haben typische Erkennungsmerkmale: zu viele Übergangswörter, keine Meinung, generische Beispiele, gleichförmige Satzlänge und übertriebene Höflichkeit. So machst du sie menschlicher:</p>
@@ -105,6 +111,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Häufig gestellte Fragen</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

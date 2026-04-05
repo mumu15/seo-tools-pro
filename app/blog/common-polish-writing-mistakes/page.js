@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Z perspektywy SEO, jakość tekstu bezpośrednio wpływa na pozycjonowanie. Google ocenia eksperckość treści (E-E-A-T), a teksty z częstymi błędami otrzymują niższe oceny. Badanie Senuto (2024) wykazało, że bezbłędne teksty zajmują średnio o 9 pozycji wyższe miejsca w Google.pl.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Błędy 1-5: Ortografia i pisownia</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Pisownia "ó" i "u":</strong> To najczęstszy problem ortograficzny w polskim. "Góra" czy "gura"? "Próba" czy "pruba"? Reguły: "ó" piszemy, gdy wymienia się na o, a, e (góra-gór, bój-boje). "U" piszemy zawsze na początku wyrazu (urząd, ul) i w końcówkach -un, -ung. 68% Polaków ma z tym problem (RJP, 2024).</p>
@@ -94,6 +97,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">10. Przecinek przed "że", "który", "gdy":</strong> Przed spójnikami podrzędnymi ("że", "który", "gdy", "kiedy", "ponieważ") ZAWSZE stawiamy przecinek. "Myślę że to dobry pomysł" — brak przecinka. Poprawnie: "Myślę, że to dobry pomysł." 50% błędów interpunkcyjnych dotyczy tego zagadnienia.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Błędy 11-15: Pisanie cyfrowe i SEO</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">11. Za długie zdania:</strong> Idealny tekst webowy ma zdania o długości 15-22 słów. Powyżej 30 słów zrozumienie spada o 35% (badania Uniwersytetu Warszawskiego, 2024). Mieszaj krótkie (8 słów) i średnie (18 słów) zdania.</p>
@@ -133,6 +139,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Porada: przeczytaj tekst na głos. Jeśli potykasz się o jakieś zdanie, prawdopodobnie jest za długie lub źle skonstruowane. Ta prosta metoda znajduje błędy, których żadne automatyczne narzędzie nie wykryje.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Najczęściej Zadawane Pytania</h2>

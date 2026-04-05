@@ -70,6 +70,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Pesquisa de palavras-chave em português</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Entenda as diferenças regionais:</strong> "Celular" (Brasil) vs. "telemóvel" (Portugal). "Ônibus" vs. "autocarro". Se seu público é brasileiro, use termos brasileiros. Se é português, use termos de Portugal. Para alcançar ambos, cubra as duas variantes.</p>
@@ -87,6 +90,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">No mercado BR, essa estratégia ganha peso porque o Google.com.br tem menos conteúdo de qualidade para competir. Um cluster bem construído pode dominar os resultados para todo um grupo de keywords em meses.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">E-E-A-T no contexto brasileiro e português</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Experiência:</strong> Brasileiros valorizam relatos pessoais. "Na minha experiência de 8 anos como redator SEO..." pesa mais que declarações genéricas. Inclua exemplos reais do mercado brasileiro.</p>
@@ -99,6 +105,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

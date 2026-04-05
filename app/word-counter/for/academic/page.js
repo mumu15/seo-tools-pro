@@ -88,6 +88,9 @@ export default function Page() {
 
           <AdUnit slot="3248634657" />
 
+
+          <AdUnit slot="3248634657" />
+
           {/* Tips */}
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">Tips for Academic Researchers</h2>
@@ -99,6 +102,9 @@ export default function Page() {
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Grant applications often have very strict word limits per section so check each section individually</span></li>
             </ul>
           </section>
+
+          <AdUnit slot="3763639977" />
+
 
           {/* FAQs */}
           <section className="mb-10">
@@ -138,6 +144,9 @@ export default function Page() {
               <a href="/blog/what-is-flesch-kincaid-score" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Flesch-Kincaid Score Guide</a>
             </div>
           </section>
+
+          <AdUnit slot="3248634657" />
+
 
         </div>
       </main>

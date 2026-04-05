@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Esta diferencia también importa en SEO. Google no compara la longitud del contenido entre idiomas. Si la página promedio en la primera posición de Google en español tiene 1800 palabras, ese es tu objetivo — no importa que el equivalente en inglés sea de solo 1400 palabras.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Cómo cuenta palabras el español vs otros idiomas</h2>
               <div className="result-box mb-6">
@@ -117,6 +120,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Para proyectos de localización de software y apps, el conteo funciona diferente. Las cadenas de texto (strings) se cuentan por segmento, no por palabra. Un botón que dice "Submit" en inglés puede convertirse en "Enviar solicitud" en español — una palabra frente a dos. Esto afecta el diseño de la interfaz: los botones, menús y etiquetas en español necesitan entre un 15% y un 30% más de espacio horizontal.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Datos de la industria de traducción (CSA Research, 2024): el español es el tercer idioma más demandado en traducción profesional después del chino y el francés. El mercado de traducción al español crece un 6.2% anual, impulsado por la expansión del comercio digital en Latinoamérica y el creciente mercado hispano en Estados Unidos, que ya supera los 42 millones de hablantes nativos.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Errores comunes al contar palabras en español</h2>

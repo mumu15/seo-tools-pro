@@ -94,6 +94,9 @@ export default function Page() {
 
           <AdUnit slot="3248634657" />
 
+
+          <AdUnit slot="3248634657" />
+
           {/* Tips */}
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">Tips for Social Media Managers</h2>
@@ -105,6 +108,9 @@ export default function Page() {
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Always check YouTube video descriptions as they truncate after 200 characters in search results</span></li>
             </ul>
           </section>
+
+          <AdUnit slot="3763639977" />
+
 
           {/* FAQs */}
           <section className="mb-10">
@@ -144,6 +150,9 @@ export default function Page() {
               <a href="/blog/instagram-caption-length" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Instagram Caption Length Guide</a>
             </div>
           </section>
+
+          <AdUnit slot="3248634657" />
+
 
         </div>
       </main>

@@ -58,6 +58,9 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">The lowest common denominator is approximately 35-40 characters. The most important part of your subject must fit within the first 35 characters. Everything beyond is bonus that only some recipients see depending on their email client and device.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">8 Subject Line Formulas That Boost Opens</h2>
               <div className="result-box mb-4">
@@ -93,6 +96,9 @@ export default function Post() {
               <p className="text-slate-400 leading-relaxed mb-4">Peak open rates occur at 31-40 characters — long enough to convey a specific benefit, short enough to display fully on mobile. Never exceed 50 characters without a compelling reason for the extra length.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Subject Line Mistakes to Avoid</h2>
               <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">ALL CAPS:</strong> Digital shouting triggers spam filters, reduces credibility, and makes recipients less likely to open. Maximum one capitalized word for emphasis if absolutely necessary.</p>
@@ -122,6 +128,9 @@ export default function Post() {
                 <Link href="/meta-tag-generator" className="text-emerald-400 hover:underline text-sm">Meta Tag Generator</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>

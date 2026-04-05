@@ -51,6 +51,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">5. 한자어와 순한글의 균형:</strong> 한자어가 너무 많으면 딱딱해지고, 순한글만 쓰면 정보 전달이 약해집니다. "실행" vs "해보기", "활용" vs "쓰기" — 독자층에 맞게 선택하세요. 일반 대중 대상 콘텐츠는 순한글 비율을 높이는 것이 좋습니다.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">팁 6~10: 가독성과 참여도 높이기</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">6. 군더더기 제거:</strong> "사실", "기본적으로", "어떤 의미에서", "그야말로" — 의미를 바꾸지 않는 단어는 모두 삭제하세요. 하나를 삭제할 때마다 문장이 한층 강해집니다.</p>
@@ -88,6 +91,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">15. AI 글의 인간화:</strong> AI가 생성한 한국어 글에는 특징이 있습니다: "또한", "더불어", "한편"의 과다 사용, 균일한 문장 길이, 개인 의견 부재, 구체성 없는 예시. 해결법: 문장 길이에 변화를 주고, 개인 경험을 추가하고, 한국 시장의 구체적 데이터를 인용하고, 때로는 구어체도 섞으세요.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">게시 전 체크리스트</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">한국어 웹 글을 게시하기 전에 다음을 확인하세요:</p>
@@ -101,6 +107,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">자주 묻는 질문</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

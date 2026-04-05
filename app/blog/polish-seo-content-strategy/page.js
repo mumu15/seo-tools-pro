@@ -66,6 +66,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Badanie słów kluczowych po polsku</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Polskie wzorce wyszukiwania:</strong> Polacy wyszukują średnio 3-5 słowami. Popularne wzorce: "jak [czynność]" ("jak liczyć słowa"), "najlepszy [produkt] [rok]", "[produkt] opinie". Fleksja sprawia, że jedno słowo kluczowe ma wiele form odmiany.</p>
@@ -83,6 +86,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Przykład: pillar "Liczenie słów online" z klastrami: "Polski licznik słów", "Limity znaków na platformach", "Długość tekstu SEO", "Gęstość słów kluczowych", "Czytelność tekstów polskich".</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">E-E-A-T w polskim kontekście</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Eksperckość:</strong> Cytuj polskie źródła: GUS, NBP, CBOS, IAB Polska, Gemius. Polscy czytelnicy ufają tym instytucjom.</p>
@@ -94,6 +100,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Najczęściej Zadawane Pytania</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

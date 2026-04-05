@@ -85,6 +85,9 @@ export default function Page() {
 
           <AdUnit slot="3248634657" />
 
+
+          <AdUnit slot="3248634657" />
+
           {/* Tips */}
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">Tips for Lawyers</h2>
@@ -96,6 +99,9 @@ export default function Page() {
               <li className="flex items-start gap-3 text-slate-300 text-sm"><span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span><span>Track character counts as some jurisdictions use character limits not word limits for certain filings</span></li>
             </ul>
           </section>
+
+          <AdUnit slot="3763639977" />
+
 
           {/* FAQs */}
           <section className="mb-10">
@@ -135,6 +141,9 @@ export default function Page() {
               <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
             </div>
           </section>
+
+          <AdUnit slot="3248634657" />
+
 
         </div>
       </main>

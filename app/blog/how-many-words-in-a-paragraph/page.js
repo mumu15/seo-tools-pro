@@ -58,6 +58,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Why Short Paragraphs Win Online</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Web readers do not read linearly. Eye-tracking studies from the Nielsen Norman Group found that most visitors read only 20-28% of a web page. Readers scan first, then decide whether to commit to reading fully. Short paragraphs create visual white space that makes content feel approachable rather than intimidating.</p>
@@ -96,6 +99,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Common Paragraph Mistakes and How to Fix Them</h2>
               <p className="text-slate-400 leading-relaxed mb-4"><strong className="text-red-400">The Wall of Text:</strong> Paragraphs over 200 words with no visual break. Fix this by finding the natural split point where the topic shifts slightly, then start a new paragraph. Most long paragraphs contain two or three ideas that should be separated.</p>
@@ -122,6 +128,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Tools</h2>

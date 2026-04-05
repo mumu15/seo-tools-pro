@@ -52,6 +52,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Why Word Count Matters</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Word count is not just a vanity metric. It directly affects your content performance across multiple dimensions: SEO rankings, reader engagement, academic requirements, and social media optimization.</p>
@@ -84,6 +87,9 @@ export default function Post() {
                 <Link href="/word-counter" className="btn-primary inline-block px-6 py-3">Open Word Counter →</Link>
               </div>
             </section>
+
+            <AdUnit slot="3763639977" />
+
             <AdUnit slot="3248634657" />
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
@@ -98,6 +104,9 @@ export default function Post() {
                 <Link href="/reading-time" className="text-emerald-400 hover:underline text-sm">Reading Time Calculator</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>
               <div className="flex flex-wrap gap-3">

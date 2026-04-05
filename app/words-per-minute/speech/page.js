@@ -198,6 +198,9 @@ export default function Page() {
             </div>
           </section>
 
+          <AdUnit slot="3763639977" />
+
+
           <AdUnit slot="3248634657" />
 
           <section className="mb-10">
@@ -319,6 +322,9 @@ export default function Page() {
               </a>
             </div>
           </section>
+
+          <AdUnit slot="3248634657" />
+
 
           <AdUnit slot="3763639977" />
 

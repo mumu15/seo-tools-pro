@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Pour les créateurs de contenu et les professionnels du marketing numérique travaillant en français, maîtriser le comptage de caractères est une compétence qui fait gagner du temps et améliore les résultats. Il ne s’agit pas seulement de ne pas dépasser la limite — il s’agit d’exploiter chaque caractère au maximum pour transmettre le message le plus percutant possible.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Limites de caractères par plateforme en 2026</h2>
               <div className="result-box mb-4">
@@ -98,6 +101,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Les meta descriptions en français doivent viser 145-155 caractères. Google affiche les descriptions en français, et les utilisateurs francophones cliquent davantage sur des résultats avec une description en français clair. Incluez toujours un CTA : « Découvrez », « Essayez gratuitement », « En savoir plus ».</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Les URLs en français doivent utiliser des caractères ASCII. Convertissez « é » en « e », « ç » en « c », « à » en « a » dans les URLs. /guide-comptage-caracteres est propre et partageable; /guide-comptage-caractères sera encodé en caractères illisibles. Vérifiez toujours avec notre <a href="/character-counter" className="text-emerald-400 underline">compteur de caractères</a>.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Google Ads en français : chaque caractère compte</h2>

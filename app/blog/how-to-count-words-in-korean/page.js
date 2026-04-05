@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">영어 텍스트를 한국어로 번역하면 글자수가 약 1.5~2배로 늘어납니다. 이는 한국어의 조사("을/를", "이/가", "은/는")와 어미("-습니다", "-했습니다") 때문입니다. 1,000개의 영어 단어는 한국어로 약 1,500~2,000자에 해당합니다.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">글자수, 단어수, 바이트수의 차이</h2>
               <div className="overflow-x-auto mb-4">
@@ -90,6 +93,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">한국어 읽기 속도는 분당 약 400~600자(일반 텍스트)입니다. 소설은 약 500~700자/분, 학술 텍스트는 약 250~400자/분입니다. 당 도구는 분당 500자 기준으로 읽기 시간을 자동 계산합니다.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">한국어 콘텐츠의 권장 글자수</h2>
               <div className="result-box mb-4">
@@ -128,6 +134,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">자주 묻는 질문</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

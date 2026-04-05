@@ -131,6 +131,9 @@ export default function Post() {
             <a href="/character-limits/email-subject-line" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Email Subject Limits</a>
           </div>
         </div>
+
+        <AdUnit slot="3248634657" />
+
       <Footer />
     </>
   )

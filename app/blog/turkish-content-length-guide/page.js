@@ -53,6 +53,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">İçerik türüne göre uzunluk</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Blog yazıları:</strong> 1200-2000 kelime. Kapsamlı rehberler daha uzun olabilir. 200-300 kelimede bir alt başlık kullanın.</p>
@@ -76,6 +79,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Türkçe sondan eklemeli yapısı sayesinde İngilizceden daha az kelimeyle aynı bilgiyi ifade eder. <a href="/word-counter/language/turkish" className="text-emerald-400 underline">Kelime sayacımızla</a> son uzunluğu kontrol edin.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Uzunluğu ölçme ve optimize etme</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Rakip analizi:</strong> Hedef anahtar kelimenizde Google.com.tr ilk 5 sonucun kelime sayısını kontrol edin. Rakip ortalamasının %15-20 üzerini hedefleyin.</p>
@@ -86,6 +92,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

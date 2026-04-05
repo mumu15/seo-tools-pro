@@ -74,6 +74,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">콘텐츠 유형별 최적 글자수</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">SEO 블로그 글:</strong> 3,000~5,000자. 구글 상위 노출을 위해 4,000자 이상이 유리합니다. 소제목은 400~600자마다 배치하여 가독성을 확보하세요.</p>
@@ -115,6 +118,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">한국어는 조사(-는, -을, -에서)와 어미(-습니다, -했습니다) 때문에 영어보다 글자수가 1.5~2배 많아집니다. 번역 콘텐츠를 제작할 때는 이 비율을 고려하세요.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">글자수 측정과 최적화 방법</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">경쟁 분석:</strong> 타겟 키워드로 구글과 네이버의 상위 5개 글의 글자수를 확인하세요. 당 사이트의 <a href="/word-counter/language/korean" className="text-emerald-400 underline">한국어 글자수 세기 도구</a>로 간편하게 측정할 수 있습니다. 경쟁 글 평균의 15~20% 이상을 목표로 하세요.</p>
@@ -126,6 +132,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">자주 묻는 질문</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

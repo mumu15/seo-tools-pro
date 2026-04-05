@@ -93,6 +93,9 @@ export default function Page() {
             </div>
           </section>
 
+          <AdUnit slot="3248634657" />
+
+
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">What Can You Read in 200 Words?</h2>
             <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-6">
@@ -100,6 +103,9 @@ export default function Page() {
               <a href="/reading-time" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition-colors">Calculate Reading Time Free</a>
             </div>
           </section>
+
+          <AdUnit slot="3763639977" />
+
 
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">Frequently Asked Questions</h2>
@@ -132,6 +138,9 @@ export default function Page() {
               <a href="/blog/average-reading-speed" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Average Reading Speed Guide</a>
             </div>
           </section>
+
+          <AdUnit slot="3248634657" />
+
 
         </div>
       </main>

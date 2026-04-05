@@ -58,6 +58,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">The F-Pattern: How People Read Online</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Eye-tracking studies from the Nielsen Norman Group found that web readers follow an F-shaped pattern. They read the first full line. They scan a shorter second line. Then they scan vertically down the left side, reading only subheadings and first words of paragraphs.</p>
@@ -91,6 +94,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Measuring Skimmability</h2>
               <p className="text-slate-400 leading-relaxed mb-4">Track these metrics in Google Analytics: bounce rate (under 60% for blog posts is good), average time on page (at least 30% of estimated reading time), scroll depth (aim for 50%+ average), and pages per session (higher means readers explore more of your site).</p>
@@ -118,6 +124,9 @@ export default function Post() {
                 <Link href="/reading-time" className="text-emerald-400 hover:underline text-sm">Reading Time Calculator</Link>
               </div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Related Articles</h2>

@@ -72,6 +72,9 @@ export default function Page() {
 
           <AdUnit slot="3248634657" />
 
+
+          <AdUnit slot="3248634657" />
+
           <div className="bg-gradient-to-r from-emerald-900/30 to-teal-900/20 border border-emerald-500/30 rounded-2xl p-6 mb-10 text-center">
             <p className="text-white font-semibold text-lg mb-2">Check Your Thesis Word Count Free</p>
             <p className="text-slate-400 text-sm mb-4">Paste your text to get an instant word count, reading time and character count</p>
@@ -87,6 +90,9 @@ export default function Page() {
               <a href="/word-count" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">All Word Count Guides</a>
             </div>
           </section>
+
+          <AdUnit slot="3763639977" />
+
 
         </div>
       </main>
@@ -108,6 +114,9 @@ export default function Page() {
               <a href="/word-count/for" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-3 py-2 rounded-lg transition-colors">All Guides →</a>
             </div>
           </section>
+
+          <AdUnit slot="3248634657" />
+
         <Footer />
     </>
   );

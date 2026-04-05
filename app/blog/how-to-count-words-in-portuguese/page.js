@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Contrações como "do" (de + o), "na" (em + a), "pelo" (por + o) são contadas como uma palavra cada — e isso é o correto. O português não faz elisões escritas como o francês, o que torna a contagem mais previsível.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Diferenças entre português brasileiro e europeu</h2>
               <div className="overflow-x-auto mb-4">
@@ -90,6 +93,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Passo 4:</strong> Use a contagem de caracteres para posts em redes sociais e a contagem de palavras para artigos, trabalhos acadêmicos e textos de SEO.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">A velocidade de leitura em português brasileiro é de 230–260 palavras por minuto para textos informativos e 260–300 PPM para ficção. O contador calcula o tempo de leitura com base nesses valores.</p>
             </section>
+
+            <AdUnit slot="3763639977" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Contagem de palavras por tipo de conteúdo</h2>
@@ -150,6 +156,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">O português é a 6ª língua mais falada do mundo e a língua europeia mais falada no hemisfério sul. O Brasil domina o mercado digital lusófono com 84% dos internautas de língua portuguesa.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Perguntas Frequentes</h2>

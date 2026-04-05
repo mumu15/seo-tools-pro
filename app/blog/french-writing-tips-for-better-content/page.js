@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Ces 15 conseils sont des changements concrets que vous pouvez appliquer dès aujourd’hui. Chacun fait une différence mesurable sur la qualité de votre texte.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Structure et clarté</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Conseil 1 : Des phrases de 15-20 mots maximum.</strong> Le français académique favorise les phrases longues avec des propositions subordonnées. Pour le web, gardez vos phrases courtes. Avant : « Il convient de noter que la mise en œuvre de stratégies de marketing numérique dans les marchés francophones a connu une croissance significative au cours des dernières années, ce qui représente une opportunité pour les entreprises souhaitant étendre leur présence en ligne. » (42 mots). Après : « Le marketing numérique francophone croît rapidement. Les entreprises qui produisent du contenu de qualité en français ont un avantage car la concurrence reste faible. » (24 mots, deux phrases).</p>
@@ -81,6 +84,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Conseil 14 : Coupez 20%.</strong> Après avoir écrit votre premier brouillon, supprimez 20% du texte. Pas le pire 20% — tout ce qui n’est pas absolument nécessaire. Si une phrase peut être supprimée sans que le paragraphe perde son message, supprimez-la. La version courte est presque toujours meilleure.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Conseil 15 : Vérifiez avec les outils.</strong> Avant de publier : <a href="/word-counter/language/french" className="text-emerald-400 underline">compteur de mots français</a> pour le nombre de mots. <a href="/readability-checker" className="text-emerald-400 underline">Vérificateur de lisibilité</a> pour la clarté (visez 60+). <a href="/keyword-density" className="text-emerald-400 underline">Analyseur de densité de mots-clés</a> pour l’équilibre SEO (1-2% pour le mot-clé principal). Trois minutes de vérification améliorent sensiblement la qualité.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Checklist avant publication</h2>

@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Dal punto di vista SEO, la qualità del testo influenza direttamente il posizionamento. Google valuta l'esperienza e la competenza dei contenuti (E-E-A-T), e i testi con errori frequenti ricevono valutazioni inferiori. Uno studio di SEMrush Italia (2024) ha dimostrato che i testi senza errori si posizionano in media 9 posizioni più in alto.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Errori 1–5: Ortografia e accenti</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Accento grave vs acuto su "perché":</strong> "Perché" ha l'accento acuto (é chiusa), non grave (è aperta). Lo stesso vale per "poiché", "affinché", "benché". Al contrario, "è" (verbo essere) ha l'accento grave. Errore frequentissimo: scrivere "perchè" invece di "perché". Il 45% degli italiani sbaglia questa distinzione (Crusca, 2024).</p>
@@ -94,6 +97,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">10. Frasi troppo lunghe:</strong> L'italiano permette costruzioni complesse con subordinate, ma per il web la lunghezza ideale è 15–25 parole per frase. Secondo uno studio dell'Università di Bologna (2024), la comprensione cala del 30% oltre le 30 parole. Alternare frasi brevi e medie crea un ritmo naturale.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Errori 11–15: Scrittura digitale e SEO</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">11. Burocratese:</strong> "Si prega di voler cortesemente provvedere alla compilazione del modulo sottostante" → "Compila il modulo qui sotto". Il burocratese è il nemico della comunicazione web. Usa un linguaggio diretto e semplice.</p>
@@ -133,6 +139,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Consiglio pratico: leggi il tuo testo ad alta voce. Se inciampi in una frase, probabilmente è troppo lunga o mal costruita. Questo metodo semplice trova problemi che nessuno strumento automatico rileva.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Domande Frequenti</h2>

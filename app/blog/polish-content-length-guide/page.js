@@ -74,6 +74,9 @@ export default function Post() {
               </div>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Długość tekstu według typu treści</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Artykuły blogowe:</strong> 1 500-2 500 słów. Rozbudowane poradniki mogą być dłuższe. Śródtytuły co 200-300 słów dla czytelności.</p>
@@ -113,6 +116,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Przy tłumaczeniu z angielskiego planuj wzrost o 10-15%. Użyj <a href="/word-counter/language/polish" className="text-emerald-400 underline">licznika słów</a> do sprawdzenia finalnej objętości.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">Mierzenie i optymalizacja długości</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Analiza konkurencji:</strong> Sprawdź długość top 5 wyników w Google.pl dla Twojego słowa kluczowego. Celuj w średnią konkurentów +15-20%.</p>
@@ -124,6 +130,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">Najczęściej Zadawane Pytania</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

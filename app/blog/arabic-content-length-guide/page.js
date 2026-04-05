@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">الاستراتيجية البسيطة: غطِّ الموضوع بالكامل لكن لا تحشُ. كل فقرة يجب أن تُضيف قيمة. إذا انتهى الموضوع في 1,200 كلمة، انشر بـ 1,200 كلمة. إضافة 800 كلمة حشو للوصول إلى 2,000 سيضر أكثر مما ينفع لأن Google يراقب معدل الارتداد ووقت البقاء على الصفحة.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">طول المدونات والمقالات العربية</h2>
               <div className="result-box mb-6">
@@ -97,6 +100,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">جسم البريد: 80-150 كلمة للرسائل الترويجية. 150-300 كلمة للنشرات الإخبارية. القراء العرب — خاصة على الجوال — يفضلون الرسائل المختصرة والمباشرة. دعوة واحدة واضحة لاتخاذ إجراء في كل بريد.</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">إعلانات Google بالعربية: كل عنوان 30 حرفاً (4-5 كلمات عربية). كل وصف 90 حرفاً (12-15 كلمة). CPC بالعربية أقل 30-50% من الإنجليزية. ركّز على فوائد محددة واستخدم أرقاماً: "وفّر 30%" أقوى من "وفّر الكثير".</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">كيف تقيس وتحسّن طول محتواك العربي</h2>

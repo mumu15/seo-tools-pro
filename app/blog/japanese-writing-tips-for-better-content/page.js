@@ -51,6 +51,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">5. 漢字とひらがなのバランス：</strong>漢字率は30〜40%が読みやすい。漢字が多すぎると堅い印象、少なすぎると幼い印象を与えます。「致します」→「いたします」、「予め」→「あらかじめ」——難しい漢字はひらがなに開きましょう。</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">コツ6〜10：読みやすさとエンゲージメント</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">6. 冗長な表現を削る：</strong>「〜ということ」「〜というもの」「〜のほうが」「基本的に」「ある意味」——意味を変えない限り削除しましょう。一つ削るだけで文が引き締まります。</p>
@@ -88,6 +91,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">15. AI生成文の人間化：</strong>AI生成の日本語には特徴があります。「また」「さらに」「しかしながら」の過剰使用、均一な文長、個人的意見の欠如、具体性のない例示。対策：文長にバラつきを持たせ、個人的な経験や意見を追加し、日本市場の具体的なデータを引用し、ときには口語的な表現も交えましょう。</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">公開前チェックリスト</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">日本語のWeb記事を公開する前に、以下をチェックしましょう：</p>
@@ -101,6 +107,9 @@ export default function Post() {
               <h2 className="text-2xl font-display font-bold text-white mb-4">よくある質問</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
+
+            <AdUnit slot="3248634657" />
+
           </div>
         </article>
       </main>

@@ -49,6 +49,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">SEO 관점에서도 글의 품질은 중요합니다. 네이버와 구글 모두 콘텐츠 품질을 평가하며, 맞춤법 오류가 잦은 글은 전문성이 낮다고 판단됩니다. 이 가이드에서는 가장 흔한 15가지 실수를 데이터와 함께 분석하고 해결 방법을 제시합니다.</p>
             </section>
 
+            <AdUnit slot="3248634657" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">실수 1~5: 맞춤법과 띄어쓰기</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. 띄어쓰기 오류:</strong> 한국어 띄어쓰기는 가장 어려운 영역입니다. "할 수 있다" (O) vs "할수있다" (X), "그런데" (O) vs "그런 데" (상황에 따라 다름). 국립국어원에 따르면 의존명사 앞의 띄어쓰기가 가장 많이 틀리는 규칙입니다. "것", "수", "데", "만큼" 등의 의존명사 앞은 반드시 띄어 씁니다.</p>
@@ -94,6 +97,9 @@ export default function Post() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">10. 주어와 서술어의 불일치:</strong> 한국어는 주어가 문장 앞에, 서술어가 문장 끝에 오는 SOV 구조입니다. 문장이 길어지면 주어와 서술어가 일치하지 않는 경우가 생깁니다. "회사의 목표는 시장 점유율을 확대하여 매출을 증가시키며 브랜드 인지도를 높인다" — "목표는...높인다"가 호응하지 않습니다. "목표는...높이는 것이다"로 수정해야 합니다.</p>
             </section>
 
+            <AdUnit slot="3763639977" />
+
+
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">실수 11~15: 디지털 글쓰기</h2>
               <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">11. 문장이 너무 긴 경우:</strong> 한국어 웹 텍스트의 이상적인 문장 길이는 40~60자입니다. 80자를 넘으면 독자가 문장의 앞부분을 잊어버립니다. 한국콘텐츠진흥원 2024년 데이터에 따르면 60자 이상의 문장에서 독자 이탈률이 28% 증가합니다.</p>
@@ -133,6 +139,9 @@ export default function Post() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">팁: 글을 쓴 후 소리 내어 읽어보세요. 읽다가 막히는 부분이 있다면 그 문장은 너무 길거나 구조가 복잡한 것입니다. 이 간단한 방법으로 도구가 잡지 못하는 문제를 발견할 수 있습니다.</p>
             </section>
+
+            <AdUnit slot="3248634657" />
+
 
             <section>
               <h2 className="text-2xl font-display font-bold text-white mb-4">자주 묻는 질문</h2>
