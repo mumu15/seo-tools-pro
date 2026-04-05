@@ -21,7 +21,12 @@ console.log('');
 // HELPER: Build page.js content with consistent structure
 // ============================================================
 function buildPage({ slug, title, desc, readTime, quickSummaryHtml, sectionsHtml, faqData, relatedLinks }) {
-  const faqsJson = JSON.stringify(faqData).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+  // Build FAQs as proper JS array literal (avoids JSON.stringify unicode issues with SWC)
+  const faqsJs = '[\n' + faqData.map(f => {
+    const q = f.q.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+    const a = f.a.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+    return `  { q: '${q}', a: '${a}' }`;
+  }).join(',\n') + '\n]';
   const titleEsc = title.replace(/'/g, "\\'");
   const descEsc = desc.replace(/'/g, "\\'");
   const titleJsonEsc = title.replace(/"/g, '\\"');
@@ -50,7 +55,7 @@ export const metadata = {
   },
 }
 
-const faqs = ${faqsJson}
+const faqs = ${faqsJs}
 
 export default function Post() {
   return (
