@@ -5,20 +5,26 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/french-character-count-guide' },
-  title: 'French Character Count: Everything You Need to Know (2026)',
-  description: 'Complete guide to French character counting. Learn about Latin alphabet with accents, character limits for social media, and how to count French characters accurately.',
+  title: 'Guide du comptage de caractères en français : réseaux sociaux et SEO (2026)',
+  description: 'Tout sur le comptage de caractères en français. Limites Twitter, Instagram, Google Ads. Comment les accents et cédilles affectent votre comptage.',
   openGraph: {
-    title: 'French Character Count: Everything You Need to Know (2026)',
-    description: 'Complete guide to French character counting. Learn about Latin alphabet with accents, character limits for social media, and how to count French characters accurately.',
+    title: 'Guide du comptage de caractères en français : réseaux sociaux et SEO (2026)',
+    description: 'Tout sur le comptage de caractères en français. Limites Twitter, Instagram, Google Ads. Comment les accents et cédilles affectent votre comptage.',
     url: 'https://www.wordcountertool.net/blog/french-character-count-guide',
     siteName: 'WordCounterTool',
     type: 'article',
   },
 }
 
-const faqs = [{"q":"How do I count words in French?","a":"Use our free French Word Counter at wordcountertool.net/word-counter/language/french. Paste your French text and get instant word count, character count, sentence count, and reading time."},{"q":"Is the French word counter free?","a":"Yes, completely free with no sign-up required. Our French word counter tool works instantly in your browser with no data stored or sent to any server."},{"q":"How many words per minute does the average person read in French?","a":"The average French reading speed is approximately 200-250 words per minute for native speakers, though this varies based on text complexity and the reader experience level."},{"q":"Does your tool handle Latin alphabet with accents?","a":"Yes. Our French Word Counter is specifically designed to handle Latin alphabet with accents accurately. It accounts for accented characters and elisions affecting word boundaries that generic word counters miss."}]
+const faqs = [
+  { q: 'Les accents français comptent-ils comme des caractères supplémentaires ?', a: 'Non. Sur toutes les plateformes modernes, les lettres accentuées (é, è, ê, ç, à, etc.) comptent comme un seul caractère, identique à une lettre non accentuée. Aucune pénalité pour les caractères spéciaux du français.' },
+  { q: 'Combien de caractères pour un tweet en français ?', a: 'La limite est de 280 caractères. Pour un engagement optimal en français, visez 200-240 caractères. Laissez de la place pour les retweets avec commentaire.' },
+  { q: 'Combien de caractères pour un meta title en français ?', a: 'Maximum 55-60 caractères pour éviter la troncature dans Google. Placez votre mot-clé principal dans les 30 premiers caractères.' },
+  { q: 'Google Ads : combien de mots français dans 30 caractères ?', a: 'Environ 4-5 mots français dans un titre de 30 caractères. Les descriptions (90 caractères) permettent 12-14 mots. Le CPC en français est 20-40% inférieur à l\'anglais.' },
+  { q: 'Faut-il éviter les accents dans les URLs ?', a: 'Oui. Convertissez "é" en "e", "ç" en "c", "à" en "a" dans les URLs. Google encode les caractères accentués en séquences illisibles (%C3%A9). Des URLs sans accents sont plus propres et plus partageables.' },
+  { q: 'Comment vérifier le nombre de caractères de mon texte ?', a: 'Utilisez notre compteur de caractères gratuit sur wordcountertool.net/character-counter. Collez votre texte et obtenez instantanément le nombre de caractères avec et sans espaces.' }
+]
 
 export default function Post() {
   return (
@@ -26,75 +32,84 @@ export default function Post() {
       <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
+        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">{'←'} Retour au blog</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">French Character Count: Everything You Need to Know (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated March 2026 | 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Guide du comptage de caractères en français : réseaux sociaux et SEO (2026)</h1>
+          <p className="text-slate-400 text-sm mb-8">Mis à jour avril 2026 · 10 min de lecture</p>
           <div className="result-box mb-8 border-emerald-500/30">
-            <h2 className="text-emerald-400 font-bold mb-3">Quick Summary</h2>
-            <p className="text-white">French (Français) is spoken by <strong>320 million</strong> people. It uses Latin alphabet with accents and has unique word counting challenges due to accented characters and elisions affecting word boundaries. Use our free <a href="/word-counter/language/french" className="text-emerald-400 underline">French Word Counter</a> for accurate results.</p>
+            <h2 className="text-emerald-400 font-bold mb-3">Résumé rapide</h2>
+            <p className="text-white">Le français nécessite <strong>15-20% de caractères en plus</strong> que l’anglais. Les accents (é, è, ê, ç) comptent comme un seul caractère sur toutes les plateformes. Vérifiez vos textes avec notre <a href="/character-counter" className="text-emerald-400 underline">compteur de caractères</a> gratuit.</p>
           </div>
           <div className="space-y-8">
+            
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">French Characters and the Latin alphabet with accents</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The French writing system uses Latin alphabet with accents consisting of 26 letters + 13 accented characters. Unlike the English alphabet with its 26 letters, French has a alphabetic (Latin) system that creates a unique counting challenge.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">French uses five types of diacritical marks: acute accent, grave accent, circumflex, diaeresis, and cedilla. French has grammatical gender (masculine/feminine) and complex verb conjugations with 21 tenses.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Understanding how French characters work is essential for anyone creating content in French. Character counts affect everything from social media posts to SMS messages to metadata optimization.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The distinction between characters, bytes, and glyphs matters in French. A single French character may occupy 1-4 bytes in UTF-8 encoding, which affects character limits on platforms that count bytes rather than characters.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Pourquoi le comptage de caractères est crucial en français</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Chaque plateforme numérique impose des limites de caractères, et le français vit constamment au bord de ces limites. Un message qui tient confortablement dans un tweet en anglais nécessite souvent des coupes douloureuses en français. Un titre Google Ads qui utilise 28 des 30 caractères autorisés en anglais dépasse facilement la limite en français.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">La bonne nouvelle : les caractères spéciaux du français ne posent plus de problème technique. Les lettres accentuées (é, è, ê, ë, à, â, ù, û, ô), la cédille (ç), le tréma (ï, ü) et les ligatures (œ, æ) comptent tous comme un seul caractère en Unicode. Sur Twitter, Instagram, Facebook et Google Ads, « é » prend exactement autant de place que « e ».</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Pour les créateurs de contenu et les professionnels du marketing numérique travaillant en français, maîtriser le comptage de caractères est une compétence qui fait gagner du temps et améliore les résultats. Il ne s’agit pas seulement de ne pas dépasser la limite — il s’agit d’exploiter chaque caractère au maximum pour transmettre le message le plus percutant possible.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Character Count vs Word Count in French</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">In French, the relationship between character count and word count is fundamentally different from English. French text is typically 15-20% longer than English due to articles, prepositions, and longer expressions. The word "aujourd hui" (today) is technically two words. Elisions like "l homme" vs "le homme" affect word count.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The average French word is 5-6 characters long, compared to 4-5 characters in English. This means that character limits on social media platforms and other tools affect French content differently.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">For example, Twitter/X allows 280 characters. In English, this is roughly 40-50 words. In French, the same 280 characters might represent a different number of words or convey a different amount of information.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Our French character counter tool shows both character count and word count simultaneously, so you can optimize for both metrics at once. This dual view is especially important when you need to meet specific platform requirements.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Limites de caractères par plateforme en 2026</h2>
+              <div className="result-box mb-4">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead><tr className="border-b" style={{borderColor:'rgba(52,211,153,0.1)'}}><th className="text-left text-emerald-400 py-2 pr-4">Plateforme</th><th className="text-left text-emerald-400 py-2 pr-4">Limite</th><th className="text-left text-emerald-400 py-2">Optimal en français</th></tr></thead>
+                    <tbody>
+                      {[['X/Twitter','280 caractères','200-240 (laissez de la place pour le RT)'],['Instagram caption','2 200 caractères','138-150 pour un engagement maximal'],['Instagram bio','150 caractères','120-140 avec emoji et CTA'],['LinkedIn post','3 000 caractères','1 300-1 800 pour le thought leadership'],['Facebook post','63 206 caractères','40-80 pour les posts avec lien'],['Google Ads titre','30 caractères','4-5 mots français max'],['Google Ads description','90 caractères','12-14 mots français'],['Meta title (SEO)','60 caractères','50-58 pour éviter la troncature'],['Meta description','160 caractères','145-155 avec mot-clé et CTA'],['YouTube titre','100 caractères','60-70 (partie visible)'],['TikTok caption','4 000 caractères','100-150 avec hashtags']].map((r,i) => (
+                        <tr key={i} className="border-b" style={{borderColor:'rgba(52,211,153,0.05)'}}><td className="text-white py-2 pr-4">{r[0]}</td><td className="text-slate-300 py-2 pr-4">{r[1]}</td><td className="text-slate-400 py-2 text-xs">{r[2]}</td></tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </section>
-
-          {/* MID_AD */}
-          <AdUnit slot="3248634657" />
-
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Social Media Character Limits for French</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Every social media platform has character limits that affect French content differently. Here is how to optimize your French social media posts.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Twitter/X: 280 characters. French can express more or less than English within this limit depending on the language structure. Use our character counter to maximize impact.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Instagram captions: 2,200 characters. French content should front-load the most important message in the first 125 characters (the preview length). Write compelling French hooks.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Facebook posts: 63,206 characters. While the limit is generous, optimal French Facebook posts are 40-80 characters for maximum engagement. Longer posts work for storytelling content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">LinkedIn: 3,000 characters for posts. Professional French content on LinkedIn should be well-structured with clear paragraphs. Use our counter to stay within limits.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">YouTube descriptions: 5,000 characters. French YouTube descriptions should include timestamps, links, and keywords. Character efficiency matters for SEO.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Stratégies pour écrire dans la limite en français</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Supprimez les articles quand c’est possible.</strong> « Découvrez les meilleures offres du mois » (40 caractères) vs « Découvrez nos offres du mois » (33 caractères). Dans les titres, les publications courtes et les annonces, certains articles peuvent être retirés sans nuire à la clarté.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Utilisez des synonymes plus courts.</strong> « Également » (9 caractères) vs « Aussi » (5). « Actuellement » (12) vs « Maintenant » (10) ou « Ici » (3). « Cependant » (9) vs « Mais » (4). Le français regorge de mots longs; chercher des alternatives courtes est une compétence qui s’acquiert avec la pratique.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Évitez les périphrases.</strong> « Nous allons procéder à une vérification » (43 caractères) vs « Nous vérifierons » (16). Le français formel tend à utiliser des constructions longues là où un seul verbe suffit. Dans les textes à limite de caractères, allez droit au but.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Utilisez les abréviations acceptées.</strong> « Information » → « Info » (accepté en contexte informel). « Rendez-vous » → « RDV ». « Téléphone » → « Tél. » Dans Google Ads et les réseaux sociaux, les abréviations courantes sont parfaitement valides et économisent des caractères précieux.</p>
             </section>
+
             <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">How to Count French Characters Online</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Counting French characters accurately requires a tool that understands Latin alphabet with accents. Here is the best method.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Step one: Open our free Word Counter tool at wordcountertool.net. The tool supports French text natively.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Step two: Paste your French text into the input area. The tool instantly displays character count (with and without spaces), word count, sentence count, and paragraph count.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Step three: Review the breakdown. Characters with spaces includes all visible characters plus whitespace. Characters without spaces gives you the pure text length. This distinction matters for different platform limits.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Step four: For French-specific counting, visit our dedicated French Word Counter at wordcountertool.net/word-counter/language/french. This specialized tool accounts for accented characters and elisions affecting word boundaries that generic counters may miss.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Our tool processes French text in real time with zero delay. No data is stored or sent to any server, ensuring your French content remains completely private.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Comptage de caractères pour le SEO en français</h2>
+              <div className="result-box mb-6">
+              <p className="text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">Longueur moyenne des meta titles dans le top 10 Google (français)</p>
+              <svg viewBox="0 0 560 204" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+              <text x="4" y="62" fill="#94a3b8" style={{fontSize:'12px'}}>Position 1</text>
+      <rect x="180" y="44" width="284.2105263157895" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
+      <text x="470.2105263157895" y="62" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>54 caract.</text>
+              <text x="4" y="98" fill="#94a3b8" style={{fontSize:'12px'}}>Position 2-3</text>
+      <rect x="180" y="80" width="300" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
+      <text x="486" y="98" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>57 caract.</text>
+              <text x="4" y="134" fill="#94a3b8" style={{fontSize:'12px'}}>Position 4-5</text>
+      <rect x="180" y="116" width="273.6842105263158" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
+      <text x="459.6842105263158" y="134" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>52 caract.</text>
+              <text x="4" y="170" fill="#94a3b8" style={{fontSize:'12px'}}>Position 6-10</text>
+      <rect x="180" y="152" width="252.6315789473684" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
+      <text x="438.63157894736844" y="170" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>48 caract.</text>
+              </svg>
+            </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Google tronque les meta titles français à environ 580 pixels de largeur, soit environ 55-60 caractères selon les lettres utilisées. Les lettres accentuées n’ajoutent pas de largeur visible. Pour être sûr, placez votre mot-clé principal dans les 30 premiers caractères du titre.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Les meta descriptions en français doivent viser 145-155 caractères. Google affiche les descriptions en français, et les utilisateurs francophones cliquent davantage sur des résultats avec une description en français clair. Incluez toujours un CTA : « Découvrez », « Essayez gratuitement », « En savoir plus ».</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Les URLs en français doivent utiliser des caractères ASCII. Convertissez « é » en « e », « ç » en « c », « à » en « a » dans les URLs. /guide-comptage-caracteres est propre et partageable; /guide-comptage-caractères sera encodé en caractères illisibles. Vérifiez toujours avec notre <a href="/character-counter" className="text-emerald-400 underline">compteur de caractères</a>.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">French Character Encoding: UTF-8 and Beyond</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Understanding character encoding is important when working with French text in digital environments. French characters in Latin alphabet with accents use UTF-8 encoding, which is the universal standard for web content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">In UTF-8, French characters may use different byte sizes than ASCII characters. An English letter always uses 1 byte, but French characters may use 2-4 bytes. This affects database storage, URL encoding, and some platform character limits.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When building websites with French content, always declare UTF-8 encoding in your HTML head. Without proper encoding declaration, French characters may display as garbled text or question marks.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">For SEO, ensure your French URLs are properly encoded. Search engines handle French characters in URLs, but proper encoding prevents technical issues. Our tools handle all encoding automatically, so you can focus on your content.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Google Ads en français : chaque caractère compte</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Dans Google Ads, chaque titre permet 30 caractères. En français, 30 caractères correspondent à 4-5 mots, contre 5-6 en anglais. Cela signifie que vos annonces françaises doivent être encore plus concises.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Les descriptions Google Ads permettent 90 caractères chacune. En français, c’est environ 12-14 mots. Incluez le bénéfice principal, une preuve sociale brève et un CTA direct. Le CPC en français est généralement 20-40% inférieur à l’anglais pour la plupart des secteurs, selon les données WordStream 2025.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Vérifiez systématiquement avec notre <a href="/character-counter" className="text-emerald-400 underline">compteur de caractères</a> avant de créer vos annonces. Une annonce tronquée perd 15-30% de son CTR. 10 secondes de vérification peuvent vous faire économiser des centaines d’euros par mois en budget publicitaire gaspillé.</p>
             </section>
 
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">French Character Counting for Professional Use</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Professional French writers, translators, and content creators need precise character counts for various business scenarios.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Translation projects often price by character count for French because word count can be misleading due to accented characters and elisions affecting word boundaries. Knowing both your character and word count helps you get accurate quotes and budget appropriately.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Academic writing in French often specifies character limits rather than word limits, especially in regions where French is the primary language. Universities and journals have specific requirements that our tool helps you meet.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Advertising and marketing copy in French operates under strict character limits for Google Ads, Facebook Ads, and other platforms. Our character counter ensures your French ad copy fits perfectly within platform requirements.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our free French Word Counter tool at wordcountertool.net/word-counter/language/french for all your professional French character counting needs. It is accurate, instant, and completely free.</p>
-            </section>
+            <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Questions fréquentes</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
           </div>
@@ -103,19 +118,20 @@ export default function Post() {
 
       <div className="max-w-4xl mx-auto px-4 mb-8">
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-white mb-3">Try These French Tools</h2>
+          <h2 className="text-lg font-bold text-white mb-3">Outils en français</h2>
           <div className="flex flex-wrap gap-2">
-            <a href="/word-counter/language/french" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">French Word Counter</a>
+            <a href="/word-counter/language/french" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Compteur de mots français</a>
             <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
             <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
-            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
-            <a href="/words-per-minute" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Minute</a>
+            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time</a>
+            <a href="/keyword-density" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Keyword Density</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Readability Checker</a>
           </div>
         </div>
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"French Character Count: Everything You Need to Know (2026)","description":"Complete guide to French character counting. Learn about Latin alphabet with accents, character limits for social media, and how to count French characters accurately.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-22","dateModified":"2026-03-22","mainEntityOfPage":"https://www.wordcountertool.net/blog/french-character-count-guide"})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"French Character Count: Everything You Need to Know (2026)","item":"https://www.wordcountertool.net/blog/french-character-count-guide"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Guide du comptage de caractères en français : réseaux sociaux et SEO (2026)","description":"Tout sur le comptage de caractères en français. Limites Twitter, Instagram, Google Ads. Comment les accents et cédilles affectent votre comptage.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-04-05","dateModified":"2026-04-05","mainEntityOfPage":"https://www.wordcountertool.net/blog/french-character-count-guide","inLanguage":"fr"})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"Guide du comptage de caractères en français : réseaux sociaux et SEO (2026)","item":"https://www.wordcountertool.net/blog/french-character-count-guide"}]})}} />
 
       <Footer />
     </>
