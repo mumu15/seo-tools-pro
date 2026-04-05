@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import AdUnit from 'components/AdUnit'
+import AdUnit from './components/AdUnit'
 
 const writingTools = [
   { title: 'Word Counter', desc: 'Count words, characters, sentences, paragraphs and reading time instantly.', href: '/word-counter', gradient: 'from-emerald-500 to-teal-600' },
