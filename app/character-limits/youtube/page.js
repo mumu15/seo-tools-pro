@@ -131,31 +131,31 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>YouTube Character Limits in 2026</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Video titles: 100 characters max, but only the first 60-70 show in search results and recommended feeds. Descriptions: 5,000 characters max, with only the first 157 characters visible in search results before truncation.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Channel name: 100 characters. Channel description: 1,000 characters. Comments: 10,000 characters. Playlist titles: 100 characters. Playlist descriptions: 5,000 characters. Tags: 500 characters total across all tags (individual tags have no separate limit).</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Community posts: 5,000 characters. YouTube Shorts titles follow the same 100-character limit as regular videos.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>YouTube Character Limits in 2026</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Video titles: 100 characters max, but only the first 60-70 show in search results and recommended feeds. Descriptions: 5,000 characters max, with only the first 157 characters visible in search results before truncation.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Channel name: 100 characters. Channel description: 1,000 characters. Comments: 10,000 characters. Playlist titles: 100 characters. Playlist descriptions: 5,000 characters. Tags: 500 characters total across all tags (individual tags have no separate limit).</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Community posts: 5,000 characters. YouTube Shorts titles follow the same 100-character limit as regular videos.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>YouTube Title Optimization</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The first 60 characters of your title are the most important because that is all that shows on most devices. "How to Build a Website in 2026 (Step by Step for Beginners)" is 58 characters and it works. The keyword is front-loaded, the year adds freshness, and the parenthetical clarifies the audience.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Titles with numbers consistently outperform titles without them. "7 Ways to Save Money on Groceries" gets more clicks than "How to Save Money on Groceries." The number sets an expectation for the video structure and suggests scannable content.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Avoid clickbait titles that do not match the video content. YouTube tracks viewer retention. If your title promises something the video does not deliver, viewers leave early, and the algorithm reduces the video\'s reach. Accurate titles with a curiosity gap work best.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>YouTube Title Optimization</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The first 60 characters of your title are the most important because that is all that shows on most devices. "How to Build a Website in 2026 (Step by Step for Beginners)" is 58 characters and it works. The keyword is front-loaded, the year adds freshness, and the parenthetical clarifies the audience.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Titles with numbers consistently outperform titles without them. "7 Ways to Save Money on Groceries" gets more clicks than "How to Save Money on Groceries." The number sets an expectation for the video structure and suggests scannable content.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Avoid clickbait titles that do not match the video content. YouTube tracks viewer retention. If your title promises something the video does not deliver, viewers leave early, and the algorithm reduces the video\'s reach. Accurate titles with a curiosity gap work best.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>YouTube Description: The Hidden SEO Goldmine</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Most creators waste the 5,000-character description field. They paste a few links and move on. But YouTube\'s algorithm reads descriptions to understand video content and match it to search queries. A well-written description with relevant keywords directly improves discoverability.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Structure your description: first 157 characters for your main keyword and a compelling summary (this shows in search). Then 500-1,000 characters of detailed description with natural keyword usage. Then timestamps (chapters). Then links, social media, and credits.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Timestamps are enormously valuable. YouTube turns them into clickable chapters in the video player. This improves viewer experience and can surface your video as a featured snippet for specific queries. Format: "0:00 Introduction" on separate lines.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>YouTube Description: The Hidden SEO Goldmine</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Most creators waste the 5,000-character description field. They paste a few links and move on. But YouTube\'s algorithm reads descriptions to understand video content and match it to search queries. A well-written description with relevant keywords directly improves discoverability.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Structure your description: first 157 characters for your main keyword and a compelling summary (this shows in search). Then 500-1,000 characters of detailed description with natural keyword usage. Then timestamps (chapters). Then links, social media, and credits.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Timestamps are enormously valuable. YouTube turns them into clickable chapters in the video player. This improves viewer experience and can surface your video as a featured snippet for specific queries. Format: "0:00 Introduction" on separate lines.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>YouTube Tags and Metadata</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Tags are limited to 500 characters total. They are less important than they were in 2020 but still help YouTube understand your video\'s topic, especially for misspellings and alternative terms. Use 5-10 tags mixing broad and specific terms.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Closed captions / subtitles: no character limit per se, but they should accurately reflect the spoken content. YouTube auto-generates captions, but editing them improves accuracy and adds another text layer for the algorithm to index.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>End screens and cards: titles for end screen elements max at 50 characters. Card titles: 30 characters. Card descriptions: 2 lines of text. These are often overlooked but affect click-through to other videos and playlists.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>YouTube Tags and Metadata</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Tags are limited to 500 characters total. They are less important than they were in 2020 but still help YouTube understand your video\'s topic, especially for misspellings and alternative terms. Use 5-10 tags mixing broad and specific terms.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Closed captions / subtitles: no character limit per se, but they should accurately reflect the spoken content. YouTube auto-generates captions, but editing them improves accuracy and adds another text layer for the algorithm to index.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>End screens and cards: titles for end screen elements max at 50 characters. Card titles: 30 characters. Card descriptions: 2 lines of text. These are often overlooked but affect click-through to other videos and playlists.</p>
           </section>
 
         </div>

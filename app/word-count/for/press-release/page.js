@@ -118,18 +118,18 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Press Release Length: What Editors Want</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Journalists are overworked and underresourced. A press release over 500 words will not get read. The ideal range is 400-600 words — enough to cover the who, what, when, where, why, and how without padding.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The inverted pyramid structure is non-negotiable. The most important information goes in the first paragraph (the lead). Supporting details follow in descending order of importance. A journalist should be able to cut from the bottom and still have a usable story.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The headline should be under 10 words and state the news clearly. "TechCorp Launches AI-Powered Analytics Platform" works. "TechCorp Is Excited to Announce an Innovative New Solution That Will Transform the Analytics Landscape" does not.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Press Release Length: What Editors Want</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Journalists are overworked and underresourced. A press release over 500 words will not get read. The ideal range is 400-600 words — enough to cover the who, what, when, where, why, and how without padding.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The inverted pyramid structure is non-negotiable. The most important information goes in the first paragraph (the lead). Supporting details follow in descending order of importance. A journalist should be able to cut from the bottom and still have a usable story.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The headline should be under 10 words and state the news clearly. "TechCorp Launches AI-Powered Analytics Platform" works. "TechCorp Is Excited to Announce an Innovative New Solution That Will Transform the Analytics Landscape" does not.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>What Goes in Each Section</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Lead paragraph (50-75 words): who did what, when, and why it matters. Include the most newsworthy element. If the news is a product launch, lead with what the product does, not who the CEO is.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Body paragraphs (200-300 words): supporting details, a quote from a company spokesperson (1-2 sentences), and context about why this news matters to the reader. One quote is standard. Two is the maximum. Three quotes means the press release is too long.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Boilerplate (50-75 words): a standard paragraph about the company that appears at the end of every press release. Include founding year, what the company does, key metrics (revenue, users, employees), and the website URL.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Contact information: name, title, email, and phone number. This does not count toward the word count but should always be included.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>What Goes in Each Section</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Lead paragraph (50-75 words): who did what, when, and why it matters. Include the most newsworthy element. If the news is a product launch, lead with what the product does, not who the CEO is.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Body paragraphs (200-300 words): supporting details, a quote from a company spokesperson (1-2 sentences), and context about why this news matters to the reader. One quote is standard. Two is the maximum. Three quotes means the press release is too long.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Boilerplate (50-75 words): a standard paragraph about the company that appears at the end of every press release. Include founding year, what the company does, key metrics (revenue, users, employees), and the website URL.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Contact information: name, title, email, and phone number. This does not count toward the word count but should always be included.</p>
           </section>
 
         </div>

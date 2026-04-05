@@ -119,24 +119,24 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Meta Title Length in 2026: What Google Shows</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Google displays approximately 50-60 characters of a title tag in search results before truncating with an ellipsis. The exact cutoff is pixel-based (roughly 580 pixels on desktop), not character-based, so wider characters like "W" and "M" reduce the visible count.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Moz recommends keeping title tags under 60 characters to ensure they display fully. In practice, titles of 55-60 characters give you the best balance of keyword inclusion and full display.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Google sometimes rewrites title tags in search results if it determines its version is more relevant to the search query. This happens more often with titles that are too long, duplicate the site name, or do not match the page content.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Meta Title Length in 2026: What Google Shows</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Google displays approximately 50-60 characters of a title tag in search results before truncating with an ellipsis. The exact cutoff is pixel-based (roughly 580 pixels on desktop), not character-based, so wider characters like "W" and "M" reduce the visible count.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Moz recommends keeping title tags under 60 characters to ensure they display fully. In practice, titles of 55-60 characters give you the best balance of keyword inclusion and full display.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Google sometimes rewrites title tags in search results if it determines its version is more relevant to the search query. This happens more often with titles that are too long, duplicate the site name, or do not match the page content.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing Title Tags That Rank and Get Clicked</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A good title tag does two jobs: it tells Google what the page is about (ranking) and it convinces the searcher to click (CTR). The formula: [Primary Keyword] - [Benefit or Modifier] | [Brand].</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>"Free Word Counter Online - Count Words Instantly | WordCounterTool" is 65 characters. Google may truncate the brand name, but the primary keyword and benefit are safe. If the brand gets cut, the title still works.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Including the current year ("2026") in title tags improves CTR by signaling freshness. Adding numbers ("10 Tips," "Complete Guide") sets expectations. Power words like "Free," "Best," "Easy," and "Fast" drive clicks but should be used honestly.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Writing Title Tags That Rank and Get Clicked</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>A good title tag does two jobs: it tells Google what the page is about (ranking) and it convinces the searcher to click (CTR). The formula: [Primary Keyword] - [Benefit or Modifier] | [Brand].</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>"Free Word Counter Online - Count Words Instantly | WordCounterTool" is 65 characters. Google may truncate the brand name, but the primary keyword and benefit are safe. If the brand gets cut, the title still works.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Including the current year ("2026") in title tags improves CTR by signaling freshness. Adding numbers ("10 Tips," "Complete Guide") sets expectations. Power words like "Free," "Best," "Easy," and "Fast" drive clicks but should be used honestly.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Common Title Tag Mistakes</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Keyword stuffing: "Word Counter | Free Word Counter | Online Word Counter Tool" hurts both rankings and CTR. Google may rewrite it entirely.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Missing brand name: for established brands, including the brand name at the end of the title increases CTR because brand recognition builds trust. For unknown brands, the brand name takes up characters better used for keywords.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Duplicate title tags across pages: every page needs a unique title. Using the same title on 50 pages tells Google there is nothing to differentiate them. Check Google Search Console for duplicate title warnings.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Common Title Tag Mistakes</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Keyword stuffing: "Word Counter | Free Word Counter | Online Word Counter Tool" hurts both rankings and CTR. Google may rewrite it entirely.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Missing brand name: for established brands, including the brand name at the end of the title increases CTR because brand recognition builds trust. For unknown brands, the brand name takes up characters better used for keywords.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Duplicate title tags across pages: every page needs a unique title. Using the same title on 50 pages tells Google there is nothing to differentiate them. Check Google Search Console for duplicate title warnings.</p>
           </section>
 
         </div>

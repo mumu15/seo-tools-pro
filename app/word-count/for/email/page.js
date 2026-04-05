@@ -126,32 +126,32 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Email Length and Response Rates</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Boomerang analyzed 40 million emails and found that messages between 50-125 words had the highest response rates at just over 50%. Emails under 25 words had a 44% response rate, and emails over 500 words dropped to 38%.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The sweet spot for cold outreach is even shorter: 75-100 words. This gives you enough room for a personalized opening line, one value proposition, and a clear ask. Every word beyond that reduces the probability of a reply.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Internal work emails can run slightly longer — 100-200 words — because the recipient already has context. But even internal emails benefit from brevity. If your email requires scrolling on mobile, most recipients will save it for later. "Later" often means "never."</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Email Length and Response Rates</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Boomerang analyzed 40 million emails and found that messages between 50-125 words had the highest response rates at just over 50%. Emails under 25 words had a 44% response rate, and emails over 500 words dropped to 38%.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The sweet spot for cold outreach is even shorter: 75-100 words. This gives you enough room for a personalized opening line, one value proposition, and a clear ask. Every word beyond that reduces the probability of a reply.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Internal work emails can run slightly longer — 100-200 words — because the recipient already has context. But even internal emails benefit from brevity. If your email requires scrolling on mobile, most recipients will save it for later. "Later" often means "never."</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Email Length by Type</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Cold outreach: 50-100 words. One paragraph. One clear ask. No company history, no "I hope this finds you well."</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Follow-up emails: 25-75 words. The shorter the better. "Just checking in on my note from Tuesday about [specific topic]. Happy to jump on a quick call if that is easier." That is 22 words and it does the job.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Newsletters: 200-500 words for curated content, 500-1,000 words for long-form essays. The best-performing newsletters are the ones that match a consistent length readers come to expect. Morning Brew keeps it under 500. The Hustle runs 300-400. James Clear\'s newsletter is 500-800.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Formal business emails (proposals, updates, recaps): 200-400 words. Use bullet points for action items. Bold the deadline. Put the ask in the first two sentences, not the last.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Email Length by Type</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Cold outreach: 50-100 words. One paragraph. One clear ask. No company history, no "I hope this finds you well."</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Follow-up emails: 25-75 words. The shorter the better. "Just checking in on my note from Tuesday about [specific topic]. Happy to jump on a quick call if that is easier." That is 22 words and it does the job.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Newsletters: 200-500 words for curated content, 500-1,000 words for long-form essays. The best-performing newsletters are the ones that match a consistent length readers come to expect. Morning Brew keeps it under 500. The Hustle runs 300-400. James Clear\'s newsletter is 500-800.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Formal business emails (proposals, updates, recaps): 200-400 words. Use bullet points for action items. Bold the deadline. Put the ask in the first two sentences, not the last.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Subject Lines: The 6-10 Word Sweet Spot</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Your email subject line determines whether your email gets opened. The optimal length is 6-10 words or 30-50 characters. This ensures the full subject displays on mobile without truncation.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Subject lines with numbers outperform those without. "5 changes to the Q3 plan" beats "Updates on the quarterly plan." Specificity beats vagueness in every A/B test.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>For cold emails, subject lines under 5 words perform best. "Quick question" has a 51% open rate (Yesware data). "Intro" works. Longer subject lines in cold emails feel like marketing — and get treated like marketing.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Subject Lines: The 6-10 Word Sweet Spot</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Your email subject line determines whether your email gets opened. The optimal length is 6-10 words or 30-50 characters. This ensures the full subject displays on mobile without truncation.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Subject lines with numbers outperform those without. "5 changes to the Q3 plan" beats "Updates on the quarterly plan." Specificity beats vagueness in every A/B test.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>For cold emails, subject lines under 5 words perform best. "Quick question" has a 51% open rate (Yesware data). "Intro" works. Longer subject lines in cold emails feel like marketing — and get treated like marketing.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Email Writing in the AI Era</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>AI email assistants can draft replies in seconds. The risk is that every email starts sounding the same: polished, professional, and completely forgettable. The emails that get results still have a human voice — a specific detail, a small joke, an honest admission.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>One practical tip: use AI to draft the email, then delete the first sentence. AI almost always opens with a pleasantry or a restatement of the obvious. The real email starts in sentence two.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The biggest email productivity gain in 2026 is not AI-generated drafts — it is shorter emails. Every word you cut from an email saves time for both you and the recipient. The best email you can write is the one you do not write at all, replaced by a 30-second Slack message or a 2-minute phone call.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Email Writing in the AI Era</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>AI email assistants can draft replies in seconds. The risk is that every email starts sounding the same: polished, professional, and completely forgettable. The emails that get results still have a human voice — a specific detail, a small joke, an honest admission.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>One practical tip: use AI to draft the email, then delete the first sentence. AI almost always opens with a pleasantry or a restatement of the obvious. The real email starts in sentence two.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The biggest email productivity gain in 2026 is not AI-generated drafts — it is shorter emails. Every word you cut from an email saves time for both you and the recipient. The best email you can write is the one you do not write at all, replaced by a 30-second Slack message or a 2-minute phone call.</p>
           </section>
 
         </div>

@@ -118,17 +118,17 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Product Description Length by Price Point</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The higher the price, the longer the description needs to be. A $15 t-shirt needs 50-100 words: fabric, fit, care instructions. A $500 office chair needs 200-400 words: materials, ergonomic features, warranty, dimensions, weight capacity. A $2,000 laptop needs 500-1,000 words: specs, performance benchmarks, comparisons.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The reason is risk. The more money a customer spends, the more information they need to reduce purchase anxiety. A missing detail at a high price point sends the customer to a competitor who provides it.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Amazon product listings are a useful benchmark. Top-selling products typically have 150-300 words of bullet points plus a 300-500 word product description. Together that is 450-800 words of product content.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Product Description Length by Price Point</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The higher the price, the longer the description needs to be. A $15 t-shirt needs 50-100 words: fabric, fit, care instructions. A $500 office chair needs 200-400 words: materials, ergonomic features, warranty, dimensions, weight capacity. A $2,000 laptop needs 500-1,000 words: specs, performance benchmarks, comparisons.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The reason is risk. The more money a customer spends, the more information they need to reduce purchase anxiety. A missing detail at a high price point sends the customer to a competitor who provides it.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Amazon product listings are a useful benchmark. Top-selling products typically have 150-300 words of bullet points plus a 300-500 word product description. Together that is 450-800 words of product content.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>SEO and Product Descriptions</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Google considers product pages with fewer than 200 words of unique text to be "thin content." If you are running an ecommerce site with 500 products that each have a 50-word description, Google has little reason to rank any of them.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Write unique descriptions for every product. Copying the manufacturer\'s description word-for-word means your page is identical to dozens of other retailers. Google will rank the original source and ignore yours.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Include the primary keyword naturally in the first 100 words, use the product name in at least one H2, and answer the top 3 questions a buyer would have. That structure alone gets you to 200-300 words of genuinely useful content.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>SEO and Product Descriptions</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Google considers product pages with fewer than 200 words of unique text to be "thin content." If you are running an ecommerce site with 500 products that each have a 50-word description, Google has little reason to rank any of them.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Write unique descriptions for every product. Copying the manufacturer\'s description word-for-word means your page is identical to dozens of other retailers. Google will rank the original source and ignore yours.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Include the primary keyword naturally in the first 100 words, use the product name in at least one H2, and answer the top 3 questions a buyer would have. That structure alone gets you to 200-300 words of genuinely useful content.</p>
           </section>
 
         </div>

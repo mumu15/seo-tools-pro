@@ -118,32 +118,32 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>LinkedIn Post Length and the Algorithm</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>LinkedIn\'s algorithm in 2025-2026 rewards "dwell time" — how long someone stops scrolling to read your post. Longer posts that hold attention get pushed to more feeds. But the trick is that LinkedIn truncates posts after roughly 210 characters (about 35-40 words), showing a "see more" link.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>This means your first 40 words need to hook the reader. If they do not click "see more," the algorithm learns that your content is not engaging and stops showing it. The opening line is the most important part of any LinkedIn post.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The optimal post length for engagement is 1,200-1,500 characters (roughly 200-250 words). Posts in this range get more comments and shares than shorter or longer posts. Going beyond 3,000 characters is possible but rarely necessary.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>LinkedIn Post Length and the Algorithm</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>LinkedIn\'s algorithm in 2025-2026 rewards "dwell time" — how long someone stops scrolling to read your post. Longer posts that hold attention get pushed to more feeds. But the trick is that LinkedIn truncates posts after roughly 210 characters (about 35-40 words), showing a "see more" link.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>This means your first 40 words need to hook the reader. If they do not click "see more," the algorithm learns that your content is not engaging and stops showing it. The opening line is the most important part of any LinkedIn post.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The optimal post length for engagement is 1,200-1,500 characters (roughly 200-250 words). Posts in this range get more comments and shares than shorter or longer posts. Going beyond 3,000 characters is possible but rarely necessary.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>What Actually Performs on LinkedIn</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Personal stories with a professional lesson: 200-400 words. These consistently outperform thought leadership and industry commentary. "Here is what happened and what I learned" is the format LinkedIn\'s audience responds to.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Carousel posts (document posts): each slide should have 20-50 words. A 10-slide carousel has 200-500 total words. These get high save rates and shares because they are visual and scannable.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Polls: the question should be under 140 characters. Polls generate high engagement but low meaningful interaction. Use them sparingly.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Articles (LinkedIn\'s built-in blog): 800-2,000 words. These get less visibility in the feed than regular posts but perform better in LinkedIn search and can be indexed by Google. Use articles for content you want to rank, and regular posts for content you want to go viral.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>What Actually Performs on LinkedIn</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Personal stories with a professional lesson: 200-400 words. These consistently outperform thought leadership and industry commentary. "Here is what happened and what I learned" is the format LinkedIn\'s audience responds to.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Carousel posts (document posts): each slide should have 20-50 words. A 10-slide carousel has 200-500 total words. These get high save rates and shares because they are visual and scannable.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Polls: the question should be under 140 characters. Polls generate high engagement but low meaningful interaction. Use them sparingly.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Articles (LinkedIn\'s built-in blog): 800-2,000 words. These get less visibility in the feed than regular posts but perform better in LinkedIn search and can be indexed by Google. Use articles for content you want to rank, and regular posts for content you want to go viral.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>LinkedIn Post Formatting Tricks</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Line breaks matter more on LinkedIn than on any other platform. Short paragraphs with white space between them dramatically increase readability in the feed. A post that looks like a wall of text gets scrolled past. The same post with line breaks every 1-2 sentences gets read.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Use hooks in the first line: a surprising statistic, a contrarian opinion, or a personal admission. "I got fired last month" gets more clicks than "Here are 5 tips for career resilience." The hook does not need to be dramatic — it needs to create a gap the reader wants to close.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Hashtags: 3-5 relevant hashtags at the end of the post. More than 5 and the algorithm may deprioritize your post. Use a mix of broad (#marketing, #leadership) and niche (#contentmarketing2026, #B2Bsales) hashtags.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>LinkedIn Post Formatting Tricks</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Line breaks matter more on LinkedIn than on any other platform. Short paragraphs with white space between them dramatically increase readability in the feed. A post that looks like a wall of text gets scrolled past. The same post with line breaks every 1-2 sentences gets read.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Use hooks in the first line: a surprising statistic, a contrarian opinion, or a personal admission. "I got fired last month" gets more clicks than "Here are 5 tips for career resilience." The hook does not need to be dramatic — it needs to create a gap the reader wants to close.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Hashtags: 3-5 relevant hashtags at the end of the post. More than 5 and the algorithm may deprioritize your post. Use a mix of broad (#marketing, #leadership) and niche (#contentmarketing2026, #B2Bsales) hashtags.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Posting Frequency and Timing</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Posting 2-5 times per week is the sweet spot for growing a LinkedIn audience. Daily posting can work but risks audience fatigue. Once a week is not enough to build momentum with the algorithm.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Best posting times vary by audience, but Tuesday through Thursday between 8-10 AM in your target timezone consistently performs well. Monday morning posts compete with weekend catch-up emails. Friday afternoon posts get buried by the weekend.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Engagement in the first 60-90 minutes after posting determines how widely the post is distributed. Reply to every comment in that window. Each reply counts as additional engagement and signals to the algorithm that your post is generating conversation.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Posting Frequency and Timing</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Posting 2-5 times per week is the sweet spot for growing a LinkedIn audience. Daily posting can work but risks audience fatigue. Once a week is not enough to build momentum with the algorithm.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Best posting times vary by audience, but Tuesday through Thursday between 8-10 AM in your target timezone consistently performs well. Monday morning posts compete with weekend catch-up emails. Friday afternoon posts get buried by the weekend.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Engagement in the first 60-90 minutes after posting determines how widely the post is distributed. Reply to every comment in that window. Each reply counts as additional engagement and signals to the algorithm that your post is generating conversation.</p>
           </section>
 
         </div>

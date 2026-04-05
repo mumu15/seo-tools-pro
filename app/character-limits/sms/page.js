@@ -119,24 +119,24 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>SMS Character Limits in 2026</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A single SMS message is limited to 160 characters using the GSM-7 encoding standard. This covers basic Latin characters, numbers, and common symbols. If you use any character outside this set — including many emojis, accented characters, or non-Latin scripts — the message switches to UCS-2 encoding, which cuts the limit to 70 characters per segment.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Messages longer than 160 characters are split into multiple segments. Each segment is billed separately by most carriers. A 161-character message becomes two segments (costing double). The segments are reassembled on the recipient\'s phone, but you are still charged for two messages.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>MMS (multimedia messaging) does not have a strict character limit and can include images, videos, and longer text. But MMS is more expensive and slower to deliver. For text-based communication, staying within 160 characters saves money and ensures fast delivery.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>SMS Character Limits in 2026</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>A single SMS message is limited to 160 characters using the GSM-7 encoding standard. This covers basic Latin characters, numbers, and common symbols. If you use any character outside this set — including many emojis, accented characters, or non-Latin scripts — the message switches to UCS-2 encoding, which cuts the limit to 70 characters per segment.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Messages longer than 160 characters are split into multiple segments. Each segment is billed separately by most carriers. A 161-character message becomes two segments (costing double). The segments are reassembled on the recipient\'s phone, but you are still charged for two messages.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>MMS (multimedia messaging) does not have a strict character limit and can include images, videos, and longer text. But MMS is more expensive and slower to deliver. For text-based communication, staying within 160 characters saves money and ensures fast delivery.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing Effective SMS Marketing Messages</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>SMS marketing messages need to accomplish three things in 160 characters: identify the sender, deliver the offer, and include a CTA. "ACME: Flash sale 40% off everything today only. Shop now: acme.co/sale Reply STOP to opt out" — that is 103 characters and it does all three.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The opt-out notice ("Reply STOP") is legally required in most jurisdictions for marketing SMS. This eats 20-25 characters of your limit. Plan for it. Some businesses put the opt-out in a separate automated message after the first, but this varies by regulation.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Personalization with the recipient\'s name adds relevance but costs characters. "Hi Sarah," is 10 characters. Whether that trade-off is worth it depends on your audience and message length.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Writing Effective SMS Marketing Messages</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>SMS marketing messages need to accomplish three things in 160 characters: identify the sender, deliver the offer, and include a CTA. "ACME: Flash sale 40% off everything today only. Shop now: acme.co/sale Reply STOP to opt out" — that is 103 characters and it does all three.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The opt-out notice ("Reply STOP") is legally required in most jurisdictions for marketing SMS. This eats 20-25 characters of your limit. Plan for it. Some businesses put the opt-out in a separate automated message after the first, but this varies by regulation.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Personalization with the recipient\'s name adds relevance but costs characters. "Hi Sarah," is 10 characters. Whether that trade-off is worth it depends on your audience and message length.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>SMS vs. Other Messaging Platforms</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>WhatsApp messages can be up to 65,536 characters. iMessage has no practical limit. Slack messages can be 40,000 characters. Compared to these platforms, SMS at 160 characters feels ancient.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>But SMS has one advantage none of these platforms match: 98% open rates. Almost every SMS gets read within 3 minutes of delivery. No other channel comes close. The character limit is part of why — short messages are fast to read and fast to act on.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>For businesses, SMS works best for time-sensitive communications: appointment reminders, delivery updates, flash sales, and two-factor authentication codes. For anything requiring more than 160 characters, link to a webpage or use email.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>SMS vs. Other Messaging Platforms</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>WhatsApp messages can be up to 65,536 characters. iMessage has no practical limit. Slack messages can be 40,000 characters. Compared to these platforms, SMS at 160 characters feels ancient.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>But SMS has one advantage none of these platforms match: 98% open rates. Almost every SMS gets read within 3 minutes of delivery. No other channel comes close. The character limit is part of why — short messages are fast to read and fast to act on.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>For businesses, SMS works best for time-sensitive communications: appointment reminders, delivery updates, flash sales, and two-factor authentication codes. For anything requiring more than 160 characters, link to a webpage or use email.</p>
           </section>
 
         </div>

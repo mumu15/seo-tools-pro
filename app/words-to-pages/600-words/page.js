@@ -148,62 +148,62 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>What Is 600 Words?</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>At 600 words, you have 2.4 double-spaced pages. This is the length of a standard press release, a detailed cover letter, or a medium-length blog post.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>The Common App essay allows up to 650 words, so most successful college application essays land at 580-620 words. A press release typically runs 400-600 words. Many grant proposal abstracts or project summaries fall in this range.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>What Is 600 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>At 600 words, you have 2.4 double-spaced pages. This is the length of a standard press release, a detailed cover letter, or a medium-length blog post.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>The Common App essay allows up to 650 words, so most successful college application essays land at 580-620 words. A press release typically runs 400-600 words. Many grant proposal abstracts or project summaries fall in this range.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing 600 Words: Structure and Strategy</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>At 600 words you can handle a two-part argument comfortably: introduce the topic in 75 words, develop your first point in 200 words with evidence, develop your second point in 200 words, and conclude in 125 words with a synthesis of both points.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Reading time: about 2.5 minutes. Speaking time: about 4.5 minutes at 130 WPM. A 600-word op-ed can be read during a coffee break. As a speech, it fits comfortably into a brief presentation slot.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Writing 600 Words: Structure and Strategy</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>At 600 words you can handle a two-part argument comfortably: introduce the topic in 75 words, develop your first point in 200 words with evidence, develop your second point in 200 words, and conclude in 125 words with a synthesis of both points.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Reading time: about 2.5 minutes. Speaking time: about 4.5 minutes at 130 WPM. A 600-word op-ed can be read during a coffee break. As a speech, it fits comfortably into a brief presentation slot.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Real-World Examples of 600-Word Documents</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Many newspaper op-eds run 600-750 words. The "About Us" page on a mid-size company website is typically 400-700 words. A detailed LinkedIn article summary is often 500-700 words. Most email newsletters from individual creators run 400-700 words.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>At 600 words, the temptation is to match the Common App maximum of 650. If your essay reads well at 580, do not add 70 words of padding to get closer to the limit. Admissions officers have read thousands of essays. They can tell when the last paragraph was added to fill space.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Real-World Examples of 600-Word Documents</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Many newspaper op-eds run 600-750 words. The "About Us" page on a mid-size company website is typically 400-700 words. A detailed LinkedIn article summary is often 500-700 words. Most email newsletters from individual creators run 400-700 words.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>At 600 words, the temptation is to match the Common App maximum of 650. If your essay reads well at 580, do not add 70 words of padding to get closer to the limit. Admissions officers have read thousands of essays. They can tell when the last paragraph was added to fill space.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>600 Words in Different Formats</h2>
-            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid var(--border-color)'}}>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>600 Words in Different Formats</h2>
+            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid rgba(255,255,255,0.08)'}}>
               <table className="w-full text-sm">
-                <thead><tr style={{background:'var(--accent-bg)'}}>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Format</th>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Pages</th>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Time</th>
+                <thead><tr style={{background:'rgba(16,185,129,0.06)'}}>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Format</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Pages</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Time</th>
                 </tr></thead>
                 <tbody>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Single spaced (Times New Roman 12pt)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>1.2 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>3 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Single spaced (Times New Roman 12pt)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>1.2 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>3 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>1.5 spaced</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>1.6 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>3 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>1.5 spaced</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>1.6 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>3 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Double spaced (standard academic)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>2.4 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>3 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Double spaced (standard academic)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>2.4 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>3 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 130 WPM</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>5 min speaking</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Speech at 130 WPM</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>5 min speaking</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 150 WPM (conversational)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>4 min speaking</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Speech at 150 WPM (conversational)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>4 min speaking</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Handwritten</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>3.4 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>3 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Handwritten</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>3.4 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>3 min read</td>
                   </tr>
                 </tbody>
               </table>
@@ -211,16 +211,16 @@ export default function Page() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>How Long Does It Take to Write 600 Words?</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>At an average typing speed of 40 words per minute, the raw typing time for 600 words is about 15 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 1.2 hours for polished content.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 600-word piece takes a few hours to one day of focused work.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>AI writing tools can generate 600 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>How Long Does It Take to Write 600 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>At an average typing speed of 40 words per minute, the raw typing time for 600 words is about 15 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 1.2 hours for polished content.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 600-word piece takes a few hours to one day of focused work.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>AI writing tools can generate 600 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>600 Words and SEO</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The average first-page Google result contains about 1,447 words (Backlinko). At 600 words, your content is below that average. This can still rank for lower-competition keywords or queries where a shorter, more focused answer matches the search intent better than a longer article.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Word count alone does not determine rankings. Google evaluates whether the content satisfies the search intent. A 600-word article that directly and completely answers the query will outrank a 1 200-word article that buries the answer under unnecessary context. Write to the length the topic requires, not to a target number.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>600 Words and SEO</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The average first-page Google result contains about 1,447 words (Backlinko). At 600 words, your content is below that average. This can still rank for lower-competition keywords or queries where a shorter, more focused answer matches the search intent better than a longer article.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Word count alone does not determine rankings. Google evaluates whether the content satisfies the search intent. A 600-word article that directly and completely answers the query will outrank a 1 200-word article that buries the answer under unnecessary context. Write to the length the topic requires, not to a target number.</p>
           </section>
 
         </div>

@@ -118,18 +118,18 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Business Plan Length by Purpose</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A lean startup business plan is 1-2 pages (500-1,000 words). It covers the value proposition, target customer, revenue model, and key metrics. This is what Y Combinator and most startup accelerators expect. They do not want 40-page documents.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A traditional business plan for bank loans or SBA funding runs 15-30 pages (5,000-10,000 words). Banks want to see market analysis, financial projections, management team bios, and a detailed operations plan.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Investor pitch decks are not business plans, but they are often confused. A pitch deck is 10-15 slides with minimal text (50-100 words per slide, 500-1,500 total). The deck sells the story. The business plan backs it up with data.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Business Plan Length by Purpose</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>A lean startup business plan is 1-2 pages (500-1,000 words). It covers the value proposition, target customer, revenue model, and key metrics. This is what Y Combinator and most startup accelerators expect. They do not want 40-page documents.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>A traditional business plan for bank loans or SBA funding runs 15-30 pages (5,000-10,000 words). Banks want to see market analysis, financial projections, management team bios, and a detailed operations plan.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Investor pitch decks are not business plans, but they are often confused. A pitch deck is 10-15 slides with minimal text (50-100 words per slide, 500-1,500 total). The deck sells the story. The business plan backs it up with data.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Sections and Their Lengths</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Executive summary: 500-1,000 words. This is the first thing any reader looks at and often the only thing. Make it standalone — someone who reads nothing else should understand your business.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Market analysis: 1,000-2,000 words. Include market size (TAM, SAM, SOM), growth trends, and competitive landscape. Cite sources. "The market is growing rapidly" is not analysis. "$4.2 billion market growing at 12% CAGR through 2028 (Grand View Research)" is.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Financial projections: typically presented as tables, not prose. Include 3-5 year revenue forecasts, cost structure, break-even analysis, and funding needs. The text around these tables (explanations and assumptions) might add 500-1,000 words.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Operations plan: 500-1,500 words covering supply chain, technology stack, hiring plan, and key milestones.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Sections and Their Lengths</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Executive summary: 500-1,000 words. This is the first thing any reader looks at and often the only thing. Make it standalone — someone who reads nothing else should understand your business.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Market analysis: 1,000-2,000 words. Include market size (TAM, SAM, SOM), growth trends, and competitive landscape. Cite sources. "The market is growing rapidly" is not analysis. "$4.2 billion market growing at 12% CAGR through 2028 (Grand View Research)" is.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Financial projections: typically presented as tables, not prose. Include 3-5 year revenue forecasts, cost structure, break-even analysis, and funding needs. The text around these tables (explanations and assumptions) might add 500-1,000 words.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Operations plan: 500-1,500 words covering supply chain, technology stack, hiring plan, and key milestones.</p>
           </section>
 
         </div>

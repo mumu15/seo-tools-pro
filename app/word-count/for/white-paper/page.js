@@ -138,19 +138,19 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>White Paper Length and Lead Generation</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>B2B white papers typically run 3,000-5,000 words (6-10 pages including charts and graphics). This length is long enough to demonstrate expertise and short enough that a busy executive will actually read it.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>White papers are gated content — readers provide an email address to download. If the white paper is too short (under 2,000 words), readers feel the trade was not worth their contact information. If it is too long (over 8,000 words), they download it and never read it.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The most effective white papers focus on a single problem and its solution, supported by data. A 4,000-word white paper with original research or case study data generates more leads than a 10,000-word general overview.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>White Paper Length and Lead Generation</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>B2B white papers typically run 3,000-5,000 words (6-10 pages including charts and graphics). This length is long enough to demonstrate expertise and short enough that a busy executive will actually read it.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>White papers are gated content — readers provide an email address to download. If the white paper is too short (under 2,000 words), readers feel the trade was not worth their contact information. If it is too long (over 8,000 words), they download it and never read it.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The most effective white papers focus on a single problem and its solution, supported by data. A 4,000-word white paper with original research or case study data generates more leads than a 10,000-word general overview.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Structure of a High-Converting White Paper</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Executive summary (300-500 words): the entire white paper distilled to one page. Many readers will only read this section. It needs to stand alone.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Problem statement (500-800 words): define the problem with data. "Companies waste $X billion annually on Y" is more compelling than "Many companies struggle with Y."</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Solution and methodology (1,000-1,500 words): this is where your expertise lives. Explain the approach, show the framework, present the data.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Case study or results (500-1,000 words): proof that the solution works. Real numbers from real companies. Anonymize if needed, but keep the specifics.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Conclusion and next steps (200-400 words): summarize the key takeaway and provide a clear call to action.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Structure of a High-Converting White Paper</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Executive summary (300-500 words): the entire white paper distilled to one page. Many readers will only read this section. It needs to stand alone.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Problem statement (500-800 words): define the problem with data. "Companies waste $X billion annually on Y" is more compelling than "Many companies struggle with Y."</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Solution and methodology (1,000-1,500 words): this is where your expertise lives. Explain the approach, show the framework, present the data.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Case study or results (500-1,000 words): proof that the solution works. Real numbers from real companies. Anonymize if needed, but keep the specifics.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Conclusion and next steps (200-400 words): summarize the key takeaway and provide a clear call to action.</p>
           </section>
 
         </div>

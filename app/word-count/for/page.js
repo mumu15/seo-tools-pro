@@ -55,38 +55,38 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-16 px-4 space-y-12">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Word Count Trends in 2026</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The average blog post hit 1,333 words in 2025. That number comes from Orbit Media's annual survey of 808 content marketers, and it represents a slight dip from 1,416 words the previous year. The decade-long race to write ever-longer "ultimate guides" appears to be reversing.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>But here is the part most people miss. Only 9% of bloggers write posts over 2,000 words. That tiny group is nearly twice as likely to report strong results compared to the average. Longer content still works. Most people just gave up on it too early.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The real shift is happening at Google. AI Overviews now appear on roughly 13% of US desktop searches, up from 6.5% earlier in 2025. When Google pulls a concise answer directly into the search results, users stop clicking through. Some publishers report traffic drops of 20-40% on affected pages. The takeaway is simple: if your content can be summarized in two sentences, expect less traffic from it over time.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Writing to a specific word count was always a proxy for depth. Google does not count your words. John Mueller has said this explicitly. What Google measures is whether the content satisfies the query. Sometimes that takes 400 words. Sometimes it takes 4,000. The guides on this page give you specific word count ranges for 33+ document types — not as rules, but as calibration points so you know when you are in the right zone.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Word Count Trends in 2026</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The average blog post hit 1,333 words in 2025. That number comes from Orbit Media's annual survey of 808 content marketers, and it represents a slight dip from 1,416 words the previous year. The decade-long race to write ever-longer "ultimate guides" appears to be reversing.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>But here is the part most people miss. Only 9% of bloggers write posts over 2,000 words. That tiny group is nearly twice as likely to report strong results compared to the average. Longer content still works. Most people just gave up on it too early.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The real shift is happening at Google. AI Overviews now appear on roughly 13% of US desktop searches, up from 6.5% earlier in 2025. When Google pulls a concise answer directly into the search results, users stop clicking through. Some publishers report traffic drops of 20-40% on affected pages. The takeaway is simple: if your content can be summarized in two sentences, expect less traffic from it over time.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Writing to a specific word count was always a proxy for depth. Google does not count your words. John Mueller has said this explicitly. What Google measures is whether the content satisfies the query. Sometimes that takes 400 words. Sometimes it takes 4,000. The guides on this page give you specific word count ranges for 33+ document types — not as rules, but as calibration points so you know when you are in the right zone.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>The Real Numbers Behind Content Length</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>There are roughly 600 million active blogs worldwide as of 2025. About 7 million new posts go live every single day. In that ocean of content, length alone does not help you stand out. But it correlates with the things that do: backlinks, topic coverage, and time on page.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Backlinko analyzed 11.8 million Google results and found the average first-page result contains 1,447 words. Ahrefs found that content over 2,000 words gets 2.5 times more backlinks than shorter posts. Articles over 3,000 words receive an average of 11.07 shares and links, compared to 3.47 for articles under 1,000 words.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>These numbers do not mean you should pad every article to 2,000 words. They mean that when a topic genuinely requires depth, going deep gets rewarded. A 500-word product description does not need to be 2,000 words. A guide comparing 15 project management tools probably does.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>The average time to write a blog post in 2025 was 3 hours and 28 minutes, according to Orbit Media. Bloggers who spend 6+ hours per post are significantly more likely to report strong results. There is no shortcut. The content that ranks took time to research, write, and edit. That has not changed despite AI tools now being used by 95% of content marketers in some capacity.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>The Real Numbers Behind Content Length</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>There are roughly 600 million active blogs worldwide as of 2025. About 7 million new posts go live every single day. In that ocean of content, length alone does not help you stand out. But it correlates with the things that do: backlinks, topic coverage, and time on page.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Backlinko analyzed 11.8 million Google results and found the average first-page result contains 1,447 words. Ahrefs found that content over 2,000 words gets 2.5 times more backlinks than shorter posts. Articles over 3,000 words receive an average of 11.07 shares and links, compared to 3.47 for articles under 1,000 words.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>These numbers do not mean you should pad every article to 2,000 words. They mean that when a topic genuinely requires depth, going deep gets rewarded. A 500-word product description does not need to be 2,000 words. A guide comparing 15 project management tools probably does.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>The average time to write a blog post in 2025 was 3 hours and 28 minutes, according to Orbit Media. Bloggers who spend 6+ hours per post are significantly more likely to report strong results. There is no shortcut. The content that ranks took time to research, write, and edit. That has not changed despite AI tools now being used by 95% of content marketers in some capacity.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>How to Decide the Right Length for Any Document</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The method is the same whether you are writing a college essay or a sales page. Look at what already works. For essays, check the assignment rubric — most have explicit ranges. For web content, search your target keyword and study the top three results. Note their word counts. That is your baseline.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>You do not need to be longer than the competition. You need to be more useful. A 1,200-word article that answers every question directly will outperform a 3,000-word piece that buries the answer under twelve paragraphs of setup. Readers skim — 73% of them, according to recent data. Your structure matters as much as your length.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>For academic writing, the rules are more rigid. A Common App essay has a strict 650-word maximum. Go over and the system cuts you off. A PhD dissertation in the humanities typically runs 80,000 to 100,000 words. In the sciences, 40,000 to 80,000 is more common. These are not suggestions. They are institutional requirements.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Professional documents fall somewhere in between. Resumes should be 400-600 words (one page) for anyone with fewer than 10 years of experience. Two pages for senior roles. Cover letters: 250-400 words. Press releases: 400-600. The ranges exist because recruiters, editors, and hiring managers have limited time. Respecting their time is part of good writing.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>How to Decide the Right Length for Any Document</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The method is the same whether you are writing a college essay or a sales page. Look at what already works. For essays, check the assignment rubric — most have explicit ranges. For web content, search your target keyword and study the top three results. Note their word counts. That is your baseline.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>You do not need to be longer than the competition. You need to be more useful. A 1,200-word article that answers every question directly will outperform a 3,000-word piece that buries the answer under twelve paragraphs of setup. Readers skim — 73% of them, according to recent data. Your structure matters as much as your length.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>For academic writing, the rules are more rigid. A Common App essay has a strict 650-word maximum. Go over and the system cuts you off. A PhD dissertation in the humanities typically runs 80,000 to 100,000 words. In the sciences, 40,000 to 80,000 is more common. These are not suggestions. They are institutional requirements.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Professional documents fall somewhere in between. Resumes should be 400-600 words (one page) for anyone with fewer than 10 years of experience. Two pages for senior roles. Cover letters: 250-400 words. Press releases: 400-600. The ranges exist because recruiters, editors, and hiring managers have limited time. Respecting their time is part of good writing.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Word Count Quick Reference Table</h2>
-            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid var(--border-color)'}}>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Word Count Quick Reference Table</h2>
+            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid rgba(255,255,255,0.08)'}}>
               <table className="w-full text-sm">
                 <thead>
-                  <tr style={{background:'var(--accent-bg)'}}>
-                    <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Document</th>
-                    <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Typical Range</th>
-                    <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Pages</th>
+                  <tr style={{background:'rgba(16,185,129,0.06)'}}>
+                    <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Document</th>
+                    <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Typical Range</th>
+                    <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Pages</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -108,31 +108,31 @@ export default function Page() {
                     ['Novel','80,000-100,000 words','320-400'],
                     ['PhD dissertation','60,000-100,000 words','240-400'],
                   ].map(([doc, words, pages], i) => (
-                    <tr key={i} style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                      <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>{doc}</td>
-                      <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>{words}</td>
-                      <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>{pages}</td>
+                    <tr key={i} style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                      <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>{doc}</td>
+                      <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>{words}</td>
+                      <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>{pages}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-xs mt-2" style={{color:'var(--text-faint)'}}>Page counts based on 250 words per page, 12pt Times New Roman, double-spaced, 1-inch margins.</p>
+            <p className="text-xs mt-2" style={{color:'#64748b'}}>Page counts based on 250 words per page, 12pt Times New Roman, double-spaced, 1-inch margins.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>What AI Means for Word Count in 2026</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>AI has not made word counts irrelevant. If anything, it has raised the bar. 95% of content marketers now use AI in some capacity, according to Orbit Media's 2025 survey. But only 10% use it to write complete articles. Most use it for outlines, editing, or brainstorming.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The content that AI produces tends to hit a comfortable middle length — 1,000 to 1,500 words of generic coverage. That is exactly what Google is getting better at detecting and devaluing. The 2024-2025 Helpful Content Update specifically targets sites that publish large volumes of shallow content.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>What works is using AI as a starting point, then adding original data, personal experience, and specific examples that a language model cannot fabricate. A 2,000-word article with three original data points and a genuine opinion is worth more than a 5,000-word AI-generated guide that says nothing new.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>The bottom line: word count is a planning tool, not a goal. Use the guides on this page to understand what your audience expects. Then write exactly as many words as it takes to be genuinely helpful. Not one word more.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>What AI Means for Word Count in 2026</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>AI has not made word counts irrelevant. If anything, it has raised the bar. 95% of content marketers now use AI in some capacity, according to Orbit Media's 2025 survey. But only 10% use it to write complete articles. Most use it for outlines, editing, or brainstorming.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The content that AI produces tends to hit a comfortable middle length — 1,000 to 1,500 words of generic coverage. That is exactly what Google is getting better at detecting and devaluing. The 2024-2025 Helpful Content Update specifically targets sites that publish large volumes of shallow content.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>What works is using AI as a starting point, then adding original data, personal experience, and specific examples that a language model cannot fabricate. A 2,000-word article with three original data points and a genuine opinion is worth more than a 5,000-word AI-generated guide that says nothing new.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>The bottom line: word count is a planning tool, not a goal. Use the guides on this page to understand what your audience expects. Then write exactly as many words as it takes to be genuinely helpful. Not one word more.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing Productivity Benchmarks</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>How fast should you write? Professional copywriters typically produce 1,000-2,000 polished words per day. Journalists on deadline can hit 1,500-3,000. Academic writers average 500-1,000 words of new draft per day. Novelists doing NaNoWriMo aim for 1,667 words per day to hit 50,000 in a month.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>If you are writing a 2,000-word blog post and it takes you under 2 hours, you are probably not doing enough research. If it takes you over 8 hours, you might be overthinking it. The sweet spot for most content marketers is 3-4 hours per article, including research, drafting, and one round of editing.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Typing speed matters less than thinking speed. The average person types at 40 words per minute. At that pace, 2,000 words of raw draft takes 50 minutes. The other 2-3 hours go into figuring out what to say, finding data to support it, and cutting the parts that do not earn their place.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Writing Productivity Benchmarks</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>How fast should you write? Professional copywriters typically produce 1,000-2,000 polished words per day. Journalists on deadline can hit 1,500-3,000. Academic writers average 500-1,000 words of new draft per day. Novelists doing NaNoWriMo aim for 1,667 words per day to hit 50,000 in a month.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>If you are writing a 2,000-word blog post and it takes you under 2 hours, you are probably not doing enough research. If it takes you over 8 hours, you might be overthinking it. The sweet spot for most content marketers is 3-4 hours per article, including research, drafting, and one round of editing.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Typing speed matters less than thinking speed. The average person types at 40 words per minute. At that pace, 2,000 words of raw draft takes 50 minutes. The other 2-3 hours go into figuring out what to say, finding data to support it, and cutting the parts that do not earn their place.</p>
           </section>
 
         </div>

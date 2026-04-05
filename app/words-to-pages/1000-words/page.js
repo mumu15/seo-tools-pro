@@ -148,62 +148,62 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>What Is 1 000 Words?</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A 1,000-word piece is 4 double-spaced pages or 2 single-spaced pages. This is the length of a standard college essay, a detailed blog post, a short white paper summary, or a magazine feature.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>The 1,000-word essay is a workhorse of academic writing. Most undergraduate assignments specify 1,000-1,500 words. It is long enough to develop a thesis with evidence and counterarguments, but short enough to write in a single focused sitting of 2-3 hours.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>What Is 1 000 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>A 1,000-word piece is 4 double-spaced pages or 2 single-spaced pages. This is the length of a standard college essay, a detailed blog post, a short white paper summary, or a magazine feature.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>The 1,000-word essay is a workhorse of academic writing. Most undergraduate assignments specify 1,000-1,500 words. It is long enough to develop a thesis with evidence and counterarguments, but short enough to write in a single focused sitting of 2-3 hours.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing 1 000 Words: Structure and Strategy</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>1,000 words divides neatly: 100-word introduction, three body sections of 250 words each, and a 150-word conclusion. Each body section has room for a topic sentence, 2-3 sentences of evidence or examples, and 2-3 sentences of analysis. This is the simplest structure that allows genuine intellectual depth.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Reading time: about 4 minutes at average speed. Speaking time: about 7-8 minutes. As a speech, 1,000 words fits a standard 7-minute conference presentation slot. A 1,000-word blog post takes about as long to read as one page of a newspaper.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Writing 1 000 Words: Structure and Strategy</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>1,000 words divides neatly: 100-word introduction, three body sections of 250 words each, and a 150-word conclusion. Each body section has room for a topic sentence, 2-3 sentences of evidence or examples, and 2-3 sentences of analysis. This is the simplest structure that allows genuine intellectual depth.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Reading time: about 4 minutes at average speed. Speaking time: about 7-8 minutes. As a speech, 1,000 words fits a standard 7-minute conference presentation slot. A 1,000-word blog post takes about as long to read as one page of a newspaper.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Real-World Examples of 1 000-Word Documents</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The average blog post in 2025 was 1,333 words, making 1,000 words slightly below average but still viable for less competitive keywords. A Substack newsletter from a daily writer often runs 800-1,200 words. Many trade magazine articles are 1,000-1,500 words. A chapter of a "how-to" book is often 2,500-4,000 words, so 1,000 words is a major section.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>At 1,000 words, the most common problem is a weak conclusion. After spending 850 words developing an argument, writers run out of energy and tack on a two-sentence summary. A good conclusion at this length should be 100-150 words and should add something new — a implication, a call to action, or a forward-looking question — not just repeat the introduction.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Real-World Examples of 1 000-Word Documents</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The average blog post in 2025 was 1,333 words, making 1,000 words slightly below average but still viable for less competitive keywords. A Substack newsletter from a daily writer often runs 800-1,200 words. Many trade magazine articles are 1,000-1,500 words. A chapter of a "how-to" book is often 2,500-4,000 words, so 1,000 words is a major section.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>At 1,000 words, the most common problem is a weak conclusion. After spending 850 words developing an argument, writers run out of energy and tack on a two-sentence summary. A good conclusion at this length should be 100-150 words and should add something new — a implication, a call to action, or a forward-looking question — not just repeat the introduction.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>1 000 Words in Different Formats</h2>
-            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid var(--border-color)'}}>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>1 000 Words in Different Formats</h2>
+            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid rgba(255,255,255,0.08)'}}>
               <table className="w-full text-sm">
-                <thead><tr style={{background:'var(--accent-bg)'}}>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Format</th>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Pages</th>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Time</th>
+                <thead><tr style={{background:'rgba(16,185,129,0.06)'}}>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Format</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Pages</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Time</th>
                 </tr></thead>
                 <tbody>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Single spaced (Times New Roman 12pt)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>2.0 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>4 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Single spaced (Times New Roman 12pt)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>2.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>4 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>1.5 spaced</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>2.7 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>4 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>1.5 spaced</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>2.7 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>4 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Double spaced (standard academic)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>4.0 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>4 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Double spaced (standard academic)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>4.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>4 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 130 WPM</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>8 min speaking</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Speech at 130 WPM</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>8 min speaking</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 150 WPM (conversational)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>7 min speaking</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Speech at 150 WPM (conversational)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>7 min speaking</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Handwritten</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>5.7 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>4 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Handwritten</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>5.7 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>4 min read</td>
                   </tr>
                 </tbody>
               </table>
@@ -211,16 +211,16 @@ export default function Page() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>How Long Does It Take to Write 1 000 Words?</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>At an average typing speed of 40 words per minute, the raw typing time for 1 000 words is about 25 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 2.0 hours for polished content.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 1 000-word piece takes a few hours to one day of focused work.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>AI writing tools can generate 1 000 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>How Long Does It Take to Write 1 000 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>At an average typing speed of 40 words per minute, the raw typing time for 1 000 words is about 25 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 2.0 hours for polished content.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 1 000-word piece takes a few hours to one day of focused work.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>AI writing tools can generate 1 000 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>1 000 Words and SEO</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The average first-page Google result contains about 1,447 words (Backlinko). At 1 000 words, your content is below that average. This can still rank for lower-competition keywords or queries where a shorter, more focused answer matches the search intent better than a longer article.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Word count alone does not determine rankings. Google evaluates whether the content satisfies the search intent. A 1 000-word article that directly and completely answers the query will outrank a 2 000-word article that buries the answer under unnecessary context. Write to the length the topic requires, not to a target number.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>1 000 Words and SEO</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The average first-page Google result contains about 1,447 words (Backlinko). At 1 000 words, your content is below that average. This can still rank for lower-competition keywords or queries where a shorter, more focused answer matches the search intent better than a longer article.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Word count alone does not determine rankings. Google evaluates whether the content satisfies the search intent. A 1 000-word article that directly and completely answers the query will outrank a 2 000-word article that buries the answer under unnecessary context. Write to the length the topic requires, not to a target number.</p>
           </section>
 
         </div>

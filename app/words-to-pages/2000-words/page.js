@@ -148,62 +148,62 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>What Is 2 000 Words?</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A 2,000-word piece is 8 double-spaced pages or 4 single-spaced. This is a solid long-form blog post, a standard academic essay, a detailed case study, or a short white paper.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Content over 2,000 words gets 2.5 times more backlinks than shorter content, according to Ahrefs. Only 9% of bloggers write posts this long, but 39% of those who do report strong results. The 2,000-word threshold is where content begins to attract links and shares at a materially higher rate.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>What Is 2 000 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>A 2,000-word piece is 8 double-spaced pages or 4 single-spaced. This is a solid long-form blog post, a standard academic essay, a detailed case study, or a short white paper.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Content over 2,000 words gets 2.5 times more backlinks than shorter content, according to Ahrefs. Only 9% of bloggers write posts this long, but 39% of those who do report strong results. The 2,000-word threshold is where content begins to attract links and shares at a materially higher rate.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing 2 000 Words: Structure and Strategy</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>2,000 words requires a table of contents or at least clear section headings. Without structure, the reader gets lost. Plan for 6-8 sections: introduction, 5-6 body sections of 250-300 words each, and a conclusion. Each section needs a subheading that tells the skimmer what it covers.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Reading time: about 8 minutes. Speaking time: about 15 minutes. A 2,000-word article is the upper limit for casual reading. Beyond this, you are asking for a significant time investment and the content must deliver proportional value.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Writing 2 000 Words: Structure and Strategy</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>2,000 words requires a table of contents or at least clear section headings. Without structure, the reader gets lost. Plan for 6-8 sections: introduction, 5-6 body sections of 250-300 words each, and a conclusion. Each section needs a subheading that tells the skimmer what it covers.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Reading time: about 8 minutes. Speaking time: about 15 minutes. A 2,000-word article is the upper limit for casual reading. Beyond this, you are asking for a significant time investment and the content must deliver proportional value.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Real-World Examples of 2 000-Word Documents</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Many competitive SEO blog posts target 2,000-2,500 words. A standard university mid-term essay is 2,000-3,000 words. A detailed feature article in a business magazine is 2,000-3,000 words. The average master\'s thesis chapter is roughly 4,000-8,000 words, so 2,000 is about half a chapter.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>The biggest risk at 2,000 words is losing the reader in the middle. Data shows that engagement drops significantly around the 40-60% mark of long content. Place your most valuable insight, your best data point, or your strongest example at the midpoint — not just at the beginning and end.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Real-World Examples of 2 000-Word Documents</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Many competitive SEO blog posts target 2,000-2,500 words. A standard university mid-term essay is 2,000-3,000 words. A detailed feature article in a business magazine is 2,000-3,000 words. The average master\'s thesis chapter is roughly 4,000-8,000 words, so 2,000 is about half a chapter.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>The biggest risk at 2,000 words is losing the reader in the middle. Data shows that engagement drops significantly around the 40-60% mark of long content. Place your most valuable insight, your best data point, or your strongest example at the midpoint — not just at the beginning and end.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>2 000 Words in Different Formats</h2>
-            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid var(--border-color)'}}>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>2 000 Words in Different Formats</h2>
+            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid rgba(255,255,255,0.08)'}}>
               <table className="w-full text-sm">
-                <thead><tr style={{background:'var(--accent-bg)'}}>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Format</th>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Pages</th>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Time</th>
+                <thead><tr style={{background:'rgba(16,185,129,0.06)'}}>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Format</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Pages</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Time</th>
                 </tr></thead>
                 <tbody>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Single spaced (Times New Roman 12pt)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>4.0 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>8 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Single spaced (Times New Roman 12pt)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>4.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>8 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>1.5 spaced</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>5.3 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>8 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>1.5 spaced</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>5.3 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>8 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Double spaced (standard academic)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>8.0 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>8 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Double spaced (standard academic)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>8.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>8 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 130 WPM</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>15 min speaking</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Speech at 130 WPM</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>15 min speaking</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 150 WPM (conversational)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>13 min speaking</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Speech at 150 WPM (conversational)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>13 min speaking</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Handwritten</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>11.4 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>8 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Handwritten</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>11.4 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>8 min read</td>
                   </tr>
                 </tbody>
               </table>
@@ -211,16 +211,16 @@ export default function Page() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>How Long Does It Take to Write 2 000 Words?</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>At an average typing speed of 40 words per minute, the raw typing time for 2 000 words is about 50 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 4.0 hours for polished content.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 2 000-word piece takes 1-3 days of focused work.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>AI writing tools can generate 2 000 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>How Long Does It Take to Write 2 000 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>At an average typing speed of 40 words per minute, the raw typing time for 2 000 words is about 50 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 4.0 hours for polished content.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 2 000-word piece takes 1-3 days of focused work.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>AI writing tools can generate 2 000 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>2 000 Words and SEO</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The average first-page Google result contains about 1,447 words (Backlinko). At 2 000 words, your content is above the average for first-page results. This length provides enough depth for most competitive keywords, especially when combined with strong backlinks and good on-page optimization.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Word count alone does not determine rankings. Google evaluates whether the content satisfies the search intent. A 2 000-word article that directly and completely answers the query will outrank a 4 000-word article that buries the answer under unnecessary context. Write to the length the topic requires, not to a target number.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>2 000 Words and SEO</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The average first-page Google result contains about 1,447 words (Backlinko). At 2 000 words, your content is above the average for first-page results. This length provides enough depth for most competitive keywords, especially when combined with strong backlinks and good on-page optimization.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Word count alone does not determine rankings. Google evaluates whether the content satisfies the search intent. A 2 000-word article that directly and completely answers the query will outrank a 4 000-word article that buries the answer under unnecessary context. Write to the length the topic requires, not to a target number.</p>
           </section>
 
         </div>

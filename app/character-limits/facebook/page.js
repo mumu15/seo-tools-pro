@@ -135,31 +135,31 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Facebook Character Limits in 2026</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Facebook allows up to 63,206 characters in a standard post — roughly 10,000 words. You could publish a short book as a Facebook post. But the data says you should not.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Posts under 80 characters get 66% higher engagement than longer posts. Posts under 50 characters perform even better. Facebook truncates posts at about 477 characters on desktop and fewer on mobile, showing a "See more" link for the rest.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Page names: 75 characters. Profile bios: 101 characters. Ad headlines: 40 characters recommended (255 max). Ad primary text: 125 characters recommended (no hard max). Link descriptions: 30 characters recommended. Group descriptions: 3,000 characters.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Facebook Character Limits in 2026</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Facebook allows up to 63,206 characters in a standard post — roughly 10,000 words. You could publish a short book as a Facebook post. But the data says you should not.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Posts under 80 characters get 66% higher engagement than longer posts. Posts under 50 characters perform even better. Facebook truncates posts at about 477 characters on desktop and fewer on mobile, showing a "See more" link for the rest.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Page names: 75 characters. Profile bios: 101 characters. Ad headlines: 40 characters recommended (255 max). Ad primary text: 125 characters recommended (no hard max). Link descriptions: 30 characters recommended. Group descriptions: 3,000 characters.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Why Shorter Facebook Posts Win</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>An Adspresso study analyzing 752,626 Facebook ads found that headlines with 5 words performed best. The optimal ad text length was 19 words. These numbers point to a clear pattern: on Facebook, brevity beats depth.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The algorithm favors posts that generate quick engagement — likes, comments, shares. Short posts are faster to read, faster to react to, and faster to share. A 40-character post with a striking image can outperform a 2,000-character essay because the friction to engage is near zero.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>For longer content, Facebook is not the right platform. Link to your blog or website instead. Use the Facebook post as a 50-80 character teaser that makes people want to click through. "We analyzed 10,000 email subject lines. The results surprised us." is 70 characters and it works.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Why Shorter Facebook Posts Win</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>An Adspresso study analyzing 752,626 Facebook ads found that headlines with 5 words performed best. The optimal ad text length was 19 words. These numbers point to a clear pattern: on Facebook, brevity beats depth.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The algorithm favors posts that generate quick engagement — likes, comments, shares. Short posts are faster to read, faster to react to, and faster to share. A 40-character post with a striking image can outperform a 2,000-character essay because the friction to engage is near zero.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>For longer content, Facebook is not the right platform. Link to your blog or website instead. Use the Facebook post as a 50-80 character teaser that makes people want to click through. "We analyzed 10,000 email subject lines. The results surprised us." is 70 characters and it works.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Facebook Ad Character Limits</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Facebook ad specs change frequently, but the 2026 guidelines recommend: primary text under 125 characters, headlines under 40 characters, and link descriptions under 30 characters. Going over these recommendations does not break the ad, but Facebook warns that longer text may be truncated on some placements.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The primary text appears above the ad image. Only the first 2-3 lines show before "See more." If your CTA or value proposition appears in line 4, most people will never see it.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>For carousel ads, each card gets its own headline (40 characters) and description (20 characters). With 2-10 cards, you have room to tell a sequential story — but each card must also work standalone since some viewers only see one or two cards.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Facebook Ad Character Limits</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Facebook ad specs change frequently, but the 2026 guidelines recommend: primary text under 125 characters, headlines under 40 characters, and link descriptions under 30 characters. Going over these recommendations does not break the ad, but Facebook warns that longer text may be truncated on some placements.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The primary text appears above the ad image. Only the first 2-3 lines show before "See more." If your CTA or value proposition appears in line 4, most people will never see it.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>For carousel ads, each card gets its own headline (40 characters) and description (20 characters). With 2-10 cards, you have room to tell a sequential story — but each card must also work standalone since some viewers only see one or two cards.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Facebook Groups and Events</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Group descriptions: 3,000 characters. Group post limits match regular posts at 63,206 characters. Event descriptions: 5,000 characters.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Group posts tend to be longer than feed posts because the audience is more engaged and self-selected. Members joined the group because they care about the topic. A 500-1,000 character post in a relevant group often gets better engagement than a 50-character post on a page with 10x the followers.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Event descriptions should front-load the essential information: date, time, location, and what attendees will get. Put the logistics in the first 200 characters. Details, agenda, and speaker bios can follow.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Facebook Groups and Events</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Group descriptions: 3,000 characters. Group post limits match regular posts at 63,206 characters. Event descriptions: 5,000 characters.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Group posts tend to be longer than feed posts because the audience is more engaged and self-selected. Members joined the group because they care about the topic. A 500-1,000 character post in a relevant group often gets better engagement than a 50-character post on a page with 10x the followers.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Event descriptions should front-load the essential information: date, time, location, and what attendees will get. Put the logistics in the first 200 characters. Details, agenda, and speaker bios can follow.</p>
           </section>
 
         </div>

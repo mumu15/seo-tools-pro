@@ -148,62 +148,62 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>What Is 10 000 Words?</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>10,000 words fills 40 double-spaced pages. This is a short ebook, a master\'s thesis chapter, a comprehensive industry report, or a detailed technical documentation set.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>10,000 words crosses from "article" into "document" territory. Readers expect a table of contents, chapter-style sections, and a clear structure. This is not a blog post — it is a publication.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>What Is 10 000 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>10,000 words fills 40 double-spaced pages. This is a short ebook, a master\'s thesis chapter, a comprehensive industry report, or a detailed technical documentation set.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>10,000 words crosses from "article" into "document" territory. Readers expect a table of contents, chapter-style sections, and a clear structure. This is not a blog post — it is a publication.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing 10 000 Words: Structure and Strategy</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Outline obsessively before writing. A 10,000-word document written without an outline will meander. Map every section and subsection with target word counts before drafting a single paragraph.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Reading time: about 42 minutes. This is the length of a podcast episode or a short audiobook chapter. Most readers will consume this over 2-3 sessions.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Writing 10 000 Words: Structure and Strategy</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Outline obsessively before writing. A 10,000-word document written without an outline will meander. Map every section and subsection with target word counts before drafting a single paragraph.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Reading time: about 42 minutes. This is the length of a podcast episode or a short audiobook chapter. Most readers will consume this over 2-3 sessions.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Real-World Examples of 10 000-Word Documents</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A short ebook is 10,000-15,000 words. A detailed government report summary is 8,000-12,000 words. A comprehensive competitor analysis for a business is 8,000-12,000 words. An undergraduate honors thesis is often 10,000-15,000 words.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>The introduction to a 10,000-word document should be no more than 300-500 words. At this length, the introduction\'s job is to explain what the reader will learn and help them decide whether to continue. It is not the place for background information that belongs in section 2.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Real-World Examples of 10 000-Word Documents</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>A short ebook is 10,000-15,000 words. A detailed government report summary is 8,000-12,000 words. A comprehensive competitor analysis for a business is 8,000-12,000 words. An undergraduate honors thesis is often 10,000-15,000 words.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>The introduction to a 10,000-word document should be no more than 300-500 words. At this length, the introduction\'s job is to explain what the reader will learn and help them decide whether to continue. It is not the place for background information that belongs in section 2.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>10 000 Words in Different Formats</h2>
-            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid var(--border-color)'}}>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>10 000 Words in Different Formats</h2>
+            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid rgba(255,255,255,0.08)'}}>
               <table className="w-full text-sm">
-                <thead><tr style={{background:'var(--accent-bg)'}}>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Format</th>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Pages</th>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Time</th>
+                <thead><tr style={{background:'rgba(16,185,129,0.06)'}}>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Format</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Pages</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Time</th>
                 </tr></thead>
                 <tbody>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Single spaced (Times New Roman 12pt)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>20.0 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>42 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Single spaced (Times New Roman 12pt)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>20.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>42 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>1.5 spaced</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>26.7 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>42 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>1.5 spaced</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>26.7 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>42 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Double spaced (standard academic)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>40.0 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>42 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Double spaced (standard academic)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>40.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>42 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 130 WPM</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>77 min speaking</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Speech at 130 WPM</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>77 min speaking</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 150 WPM (conversational)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>67 min speaking</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Speech at 150 WPM (conversational)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>67 min speaking</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Handwritten</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>57.1 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>42 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Handwritten</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>57.1 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>42 min read</td>
                   </tr>
                 </tbody>
               </table>
@@ -211,10 +211,10 @@ export default function Page() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>How Long Does It Take to Write 10 000 Words?</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>At an average typing speed of 40 words per minute, the raw typing time for 10 000 words is about 250 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 20.0 hours for polished content.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 10 000-word piece takes 1-2 weeks of focused work.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>AI writing tools can generate 10 000 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>How Long Does It Take to Write 10 000 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>At an average typing speed of 40 words per minute, the raw typing time for 10 000 words is about 250 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 20.0 hours for polished content.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 10 000-word piece takes 1-2 weeks of focused work.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>AI writing tools can generate 10 000 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
           </section>
 
         </div>

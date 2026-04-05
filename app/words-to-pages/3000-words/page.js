@@ -148,62 +148,62 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>What Is 3 000 Words?</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>3,000 words is 12 double-spaced pages or 6 single-spaced. This is a pillar content piece, a detailed research paper, a chapter of a nonfiction book, or a comprehensive guide.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Articles over 3,000 words receive an average of 11.07 shares and links — more than triple the rate for sub-1,000-word articles. This length signals "definitive resource" to both readers and search engines. If you are going to write 3,000 words, make it the best resource on the internet for that topic.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>What Is 3 000 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>3,000 words is 12 double-spaced pages or 6 single-spaced. This is a pillar content piece, a detailed research paper, a chapter of a nonfiction book, or a comprehensive guide.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Articles over 3,000 words receive an average of 11.07 shares and links — more than triple the rate for sub-1,000-word articles. This length signals "definitive resource" to both readers and search engines. If you are going to write 3,000 words, make it the best resource on the internet for that topic.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing 3 000 Words: Structure and Strategy</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A 3,000-word piece benefits from a table of contents at the top with anchor links. This lets readers jump to the section they care about. Not everyone will read 3,000 words linearly — give them permission to skip around.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Reading time: about 13 minutes. As a speech, about 23 minutes. A 3,000-word article is equivalent to a short podcast episode or a TED talk. Readers who engage with content this long are highly qualified — they have a real need for the information.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Writing 3 000 Words: Structure and Strategy</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>A 3,000-word piece benefits from a table of contents at the top with anchor links. This lets readers jump to the section they care about. Not everyone will read 3,000 words linearly — give them permission to skip around.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Reading time: about 13 minutes. As a speech, about 23 minutes. A 3,000-word article is equivalent to a short podcast episode or a TED talk. Readers who engage with content this long are highly qualified — they have a real need for the information.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Real-World Examples of 3 000-Word Documents</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Pillar content for content marketing hubs typically runs 3,000-5,000 words. A short nonfiction book chapter is 3,000-4,000 words. A detailed white paper is 3,000-5,000 words. An undergraduate honors thesis chapter is roughly 3,000-5,000 words.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>At 3,000 words, the introduction cannot be more than 150-200 words. Readers who committed to a long article want to get into the substance quickly. A 500-word introduction to a 3,000-word article wastes 17% of the content on setup.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Real-World Examples of 3 000-Word Documents</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Pillar content for content marketing hubs typically runs 3,000-5,000 words. A short nonfiction book chapter is 3,000-4,000 words. A detailed white paper is 3,000-5,000 words. An undergraduate honors thesis chapter is roughly 3,000-5,000 words.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>At 3,000 words, the introduction cannot be more than 150-200 words. Readers who committed to a long article want to get into the substance quickly. A 500-word introduction to a 3,000-word article wastes 17% of the content on setup.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>3 000 Words in Different Formats</h2>
-            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid var(--border-color)'}}>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>3 000 Words in Different Formats</h2>
+            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid rgba(255,255,255,0.08)'}}>
               <table className="w-full text-sm">
-                <thead><tr style={{background:'var(--accent-bg)'}}>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Format</th>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Pages</th>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Time</th>
+                <thead><tr style={{background:'rgba(16,185,129,0.06)'}}>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Format</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Pages</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Time</th>
                 </tr></thead>
                 <tbody>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Single spaced (Times New Roman 12pt)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>6.0 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>13 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Single spaced (Times New Roman 12pt)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>6.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>13 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>1.5 spaced</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>8.0 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>13 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>1.5 spaced</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>8.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>13 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Double spaced (standard academic)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>12.0 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>13 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Double spaced (standard academic)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>12.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>13 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 130 WPM</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>23 min speaking</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Speech at 130 WPM</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>23 min speaking</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 150 WPM (conversational)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>20 min speaking</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Speech at 150 WPM (conversational)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>20 min speaking</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Handwritten</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>17.1 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>13 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Handwritten</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>17.1 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>13 min read</td>
                   </tr>
                 </tbody>
               </table>
@@ -211,16 +211,16 @@ export default function Page() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>How Long Does It Take to Write 3 000 Words?</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>At an average typing speed of 40 words per minute, the raw typing time for 3 000 words is about 75 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 6.0 hours for polished content.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 3 000-word piece takes 1-3 days of focused work.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>AI writing tools can generate 3 000 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>How Long Does It Take to Write 3 000 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>At an average typing speed of 40 words per minute, the raw typing time for 3 000 words is about 75 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 6.0 hours for polished content.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 3 000-word piece takes 1-3 days of focused work.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>AI writing tools can generate 3 000 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>3 000 Words and SEO</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The average first-page Google result contains about 1,447 words (Backlinko). At 3 000 words, your content is above the average for first-page results. This length provides enough depth for most competitive keywords, especially when combined with strong backlinks and good on-page optimization.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Word count alone does not determine rankings. Google evaluates whether the content satisfies the search intent. A 3 000-word article that directly and completely answers the query will outrank a 6 000-word article that buries the answer under unnecessary context. Write to the length the topic requires, not to a target number.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>3 000 Words and SEO</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The average first-page Google result contains about 1,447 words (Backlinko). At 3 000 words, your content is above the average for first-page results. This length provides enough depth for most competitive keywords, especially when combined with strong backlinks and good on-page optimization.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Word count alone does not determine rankings. Google evaluates whether the content satisfies the search intent. A 3 000-word article that directly and completely answers the query will outrank a 6 000-word article that buries the answer under unnecessary context. Write to the length the topic requires, not to a target number.</p>
           </section>
 
         </div>

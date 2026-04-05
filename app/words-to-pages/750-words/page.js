@@ -148,62 +148,62 @@ export default function Page() {
         <div className="max-w-4xl mx-auto mt-14 px-4 space-y-10">
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>What Is 750 Words?</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>A 750-word piece is 3 double-spaced pages. This is a standard newspaper column, a detailed blog post, or an op-ed for a major publication.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Many newspaper columns are capped at 750 words. The New York Times opinion section publishes pieces of 700-1,200 words, with guest op-eds typically at the shorter end. This length is enough for a structured argument with introduction, three supporting points, and conclusion.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>What Is 750 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>A 750-word piece is 3 double-spaced pages. This is a standard newspaper column, a detailed blog post, or an op-ed for a major publication.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Many newspaper columns are capped at 750 words. The New York Times opinion section publishes pieces of 700-1,200 words, with guest op-eds typically at the shorter end. This length is enough for a structured argument with introduction, three supporting points, and conclusion.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Writing 750 Words: Structure and Strategy</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>750 words gives you room to develop ideas with examples. The ideal structure: 75-word intro, four paragraphs of 150 words each covering different aspects of your argument, and a 75-word conclusion. Alternatively, three paragraphs of 200 words with 75 words each for intro and conclusion.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Reading time: about 3 minutes. Speaking time: about 5-6 minutes. This matches a standard 5-minute speech, making 750 words a useful benchmark for short presentations, wedding speeches, and conference lightning talks.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Writing 750 Words: Structure and Strategy</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>750 words gives you room to develop ideas with examples. The ideal structure: 75-word intro, four paragraphs of 150 words each covering different aspects of your argument, and a 75-word conclusion. Alternatively, three paragraphs of 200 words with 75 words each for intro and conclusion.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Reading time: about 3 minutes. Speaking time: about 5-6 minutes. This matches a standard 5-minute speech, making 750 words a useful benchmark for short presentations, wedding speeches, and conference lightning talks.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>Real-World Examples of 750-Word Documents</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The standard op-ed length across most major newspapers is 700-800 words. Many magazine "front of book" pieces run 600-800 words. A typical chapter in a business book is 3,000-5,000 words, so 750 words represents a major section or subsection.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>At 750 words, writers often struggle with transitions. With 3-4 major points to cover, the connections between them need to be smooth. Read the last sentence of each paragraph followed by the first sentence of the next. If the jump feels abrupt, add a transition sentence.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>Real-World Examples of 750-Word Documents</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The standard op-ed length across most major newspapers is 700-800 words. Many magazine "front of book" pieces run 600-800 words. A typical chapter in a business book is 3,000-5,000 words, so 750 words represents a major section or subsection.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>At 750 words, writers often struggle with transitions. With 3-4 major points to cover, the connections between them need to be smooth. Read the last sentence of each paragraph followed by the first sentence of the next. If the jump feels abrupt, add a transition sentence.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>750 Words in Different Formats</h2>
-            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid var(--border-color)'}}>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>750 Words in Different Formats</h2>
+            <div className="overflow-x-auto rounded-xl" style={{border:'1px solid rgba(255,255,255,0.08)'}}>
               <table className="w-full text-sm">
-                <thead><tr style={{background:'var(--accent-bg)'}}>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Format</th>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Pages</th>
-                  <th className="text-left py-3 px-4 font-semibold" style={{color:'var(--accent)'}}>Time</th>
+                <thead><tr style={{background:'rgba(16,185,129,0.06)'}}>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Format</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Pages</th>
+                  <th className="text-left py-3 px-4 font-semibold" style={{color:'#34d399'}}>Time</th>
                 </tr></thead>
                 <tbody>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Single spaced (Times New Roman 12pt)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>1.5 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>3 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Single spaced (Times New Roman 12pt)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>1.5 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>3 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>1.5 spaced</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>2.0 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>3 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>1.5 spaced</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>2.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>3 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Double spaced (standard academic)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>3.0 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>3 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Double spaced (standard academic)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>3.0 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>3 min read</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 130 WPM</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>6 min speaking</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Speech at 130 WPM</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>6 min speaking</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Speech at 150 WPM (conversational)</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>N/A</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>5 min speaking</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Speech at 150 WPM (conversational)</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>N/A</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>5 min speaking</td>
                   </tr>
-                  <tr style={{borderBottom:'1px solid var(--border-subtle)'}}>
-                    <td className="py-2.5 px-4 font-medium" style={{color:'var(--text-primary)'}}>Handwritten</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>4.3 pages</td>
-                    <td className="py-2.5 px-4" style={{color:'var(--text-muted)'}}>3 min read</td>
+                  <tr style={{borderBottom:'1px solid rgba(255,255,255,0.04)'}}>
+                    <td className="py-2.5 px-4 font-medium" style={{color:'#f1f5f9'}}>Handwritten</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>4.3 pages</td>
+                    <td className="py-2.5 px-4" style={{color:'#94a3b8'}}>3 min read</td>
                   </tr>
                 </tbody>
               </table>
@@ -211,16 +211,16 @@ export default function Page() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>How Long Does It Take to Write 750 Words?</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>At an average typing speed of 40 words per minute, the raw typing time for 750 words is about 19 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 1.5 hours for polished content.</p>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 750-word piece takes a few hours to one day of focused work.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>AI writing tools can generate 750 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>How Long Does It Take to Write 750 Words?</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>At an average typing speed of 40 words per minute, the raw typing time for 750 words is about 19 minutes. But typing is not writing. Research, outlining, drafting, and editing bring the total time to roughly 1.5 hours for polished content.</p>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>Professional copywriters typically produce 1,000-2,000 polished words per day. Academic writers average 500-1,000 new words per day. At those rates, a 750-word piece takes a few hours to one day of focused work.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>AI writing tools can generate 750 words in seconds, but the output requires substantial editing for accuracy, voice, and originality. Most content marketers in 2026 use AI for first drafts and outlines, then spend the bulk of their time revising. The editing phase typically takes as long as the drafting phase, regardless of whether AI was involved.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4" style={{color:'var(--text-primary)'}}>750 Words and SEO</h2>
-            <p className="leading-relaxed mb-3" style={{color:'var(--text-muted)'}}>The average first-page Google result contains about 1,447 words (Backlinko). At 750 words, your content is below that average. This can still rank for lower-competition keywords or queries where a shorter, more focused answer matches the search intent better than a longer article.</p>
-            <p className="leading-relaxed" style={{color:'var(--text-muted)'}}>Word count alone does not determine rankings. Google evaluates whether the content satisfies the search intent. A 750-word article that directly and completely answers the query will outrank a 1 500-word article that buries the answer under unnecessary context. Write to the length the topic requires, not to a target number.</p>
+            <h2 className="text-2xl font-bold mb-4" style={{color:'#f1f5f9'}}>750 Words and SEO</h2>
+            <p className="leading-relaxed mb-3" style={{color:'#94a3b8'}}>The average first-page Google result contains about 1,447 words (Backlinko). At 750 words, your content is below that average. This can still rank for lower-competition keywords or queries where a shorter, more focused answer matches the search intent better than a longer article.</p>
+            <p className="leading-relaxed" style={{color:'#94a3b8'}}>Word count alone does not determine rankings. Google evaluates whether the content satisfies the search intent. A 750-word article that directly and completely answers the query will outrank a 1 500-word article that buries the answer under unnecessary context. Write to the length the topic requires, not to a target number.</p>
           </section>
 
         </div>
