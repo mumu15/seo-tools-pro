@@ -80,7 +80,7 @@ export default function Home() {
                 ['250+', 'Free Pages'],
                 ['11', 'Pro Tools'],
                 ['15', 'Languages'],
-                ['15', 'Languages'],
+                ['24/7', 'Always Free'],
               ].map(([num, label], i) => (
                 <div key={i} className="text-center py-4 rounded-xl" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.05)' }}>
                   <div className="text-xl md:text-2xl font-extrabold text-emerald-400">{num}</div>
