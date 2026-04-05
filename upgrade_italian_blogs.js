@@ -23,8 +23,8 @@ function buildPage({ slug, title, desc, readTime, quickSummaryHtml, sectionsHtml
     const a = f.a.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
     return `  { q: '${q}', a: '${a}' }`;
   }).join(',\n') + '\n]';
-  const titleEsc = title.replace(/'/g, "\'");
-  const descEsc = desc.replace(/'/g, "\'");
+  const titleEsc = title.replace(/'/g, "\\'");
+  const descEsc = desc.replace(/'/g, "\\'");
   const titleJsonEsc = title.replace(/"/g, '\\"');
   const descJsonEsc = desc.replace(/"/g, '\\"');
   const relatedHtml = relatedLinks.map(l =>

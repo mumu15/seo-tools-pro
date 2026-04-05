@@ -7,10 +7,10 @@ import FaqSchema from '../../../components/FaqSchema'
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-count-words-in-italian' },
   title: 'Come contare le parole in italiano: guida completa (2026)',
-  description: 'Come contare parole, caratteri e frasi in italiano. Differenze con l'inglese, velocità di lettura, strumenti gratuiti per il conteggio.',
+  description: 'Come contare parole, caratteri e frasi in italiano. Differenze con l\'inglese, velocità di lettura, strumenti gratuiti per il conteggio.',
   openGraph: {
     title: 'Come contare le parole in italiano: guida completa (2026)',
-    description: 'Come contare parole, caratteri e frasi in italiano. Differenze con l'inglese, velocità di lettura, strumenti gratuiti per il conteggio.',
+    description: 'Come contare parole, caratteri e frasi in italiano. Differenze con l\'inglese, velocità di lettura, strumenti gratuiti per il conteggio.',
     url: 'https://www.wordcountertool.net/blog/how-to-count-words-in-italian',
     siteName: 'WordCounterTool',
     type: 'article',

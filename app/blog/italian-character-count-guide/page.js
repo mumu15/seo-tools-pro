@@ -62,7 +62,7 @@ export default function Post() {
                   </thead>
                   <tbody>
                     {[
-                      ['Twitter/X', '280 caratteri', 'L'italiano è più verboso — aspettati 40–50 parole'],
+                      ['Twitter/X', '280 caratteri', 'L\'italiano è più verboso — aspettati 40–50 parole'],
                       ['Google Title', '55–60 caratteri', 'Parola chiave nei primi 30 caratteri'],
                       ['Meta Description', '150–155 caratteri', 'Beneficio principale + CTA in 150 caratteri'],
                       ['Instagram', '2.200 caratteri', 'I primi 125 caratteri sono visibili nel feed'],
