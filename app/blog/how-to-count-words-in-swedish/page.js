@@ -5,20 +5,26 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-count-words-in-swedish' },
-  title: 'How to Count Words in Swedish: Complete Guide (2026)',
-  description: 'Learn how to accurately count words in Swedish text. Understand Swedish word boundaries, character counting, and use our free Swedish word counter tool.',
+  title: 'Räkna ord på svenska: komplett guide (2026)',
+  description: 'Hur räknar man ord, tecken och meningar på svenska? Med sammansättningar, läshastighet och gratis verktyg.',
   openGraph: {
-    title: 'How to Count Words in Swedish: Complete Guide (2026)',
-    description: 'Learn how to accurately count words in Swedish text. Understand Swedish word boundaries, character counting, and use our free Swedish word counter tool.',
+    title: 'Räkna ord på svenska: komplett guide (2026)',
+    description: 'Hur räknar man ord, tecken och meningar på svenska? Med sammansättningar, läshastighet och gratis verktyg.',
     url: 'https://www.wordcountertool.net/blog/how-to-count-words-in-swedish',
     siteName: 'WordCounterTool',
     type: 'article',
   },
 }
 
-const faqs = [{"q":"How do I count words in Swedish?","a":"Use our free Swedish Word Counter at wordcountertool.net/word-counter/language/swedish. Paste your Swedish text and get instant word count, character count, sentence count, and reading time."},{"q":"Is the Swedish word counter free?","a":"Yes, completely free with no sign-up required. Our Swedish word counter tool works instantly in your browser with no data stored or sent to any server."},{"q":"How many words per minute does the average person read in Swedish?","a":"The average Swedish reading speed is approximately 200-250 words per minute for native speakers, though this varies based on text complexity and the reader experience level."},{"q":"Does your tool handle Latin alphabet with å, ä, ö?","a":"Yes. Our Swedish Word Counter is specifically designed to handle Latin alphabet with å, ä, ö accurately. It accounts for attached definite articles and compound words that generic word counters miss."}]
+const faqs = [
+  { q: 'Hur räknar jag ord i en svensk text?', a: 'Använd den gratis svenska ordräknaren på WordCounterTool.net. Klistra in din text och se direkt: ord, tecken, meningar, stycken och lästid. Verktyget hanterar å, ä, ö och sammansättningar korrekt.' },
+  { q: 'Räknas svenska sammansättningar som ett ord?', a: 'Ja. "Sjukhusundersökningsresultat" räknas som ett ord oavsett längd. Ordräknare delar text vid mellanslag, så varje sammansatt ord räknas som ett ord. Detta är korrekt enligt svenska skrivregler.' },
+  { q: 'Vad är läshastigheten på svenska?', a: 'Informativa texter: 230-260 ord/min. Skönlitteratur: 260-300 ord/min. Facktexter: 180-220 ord/min. Vårt verktyg beräknar lästiden baserat på 240 ord/min.' },
+  { q: 'Är svenska texter kortare än engelska?', a: 'Ja, i genomsnitt 5-10% kortare i ordantal tack vare sammansättningar. Vid tekniska texter kan skillnaden vara upp till 15%. Informationsinnehållet är dock detsamma.' },
+  { q: 'Hur många ord behövs för ett svenskt blogginlägg?', a: 'För SEO rekommenderar vi 1 200-2 000 ord. Topp-10-resultaten på Google.se innehåller i genomsnitt 1 700 ord. Längre artiklar rankar generellt bättre.' },
+  { q: 'Är den svenska ordräknaren gratis?', a: 'Ja, helt gratis utan registrering. Inga data lagras eller skickas till servrar. Du kan använda den svenska ordräknaren obegränsat.' }
+]
 
 export default function Post() {
   return (
@@ -26,72 +32,99 @@ export default function Post() {
       <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
+        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Tillbaka till Bloggen</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">How to Count Words in Swedish: Complete Guide (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated March 2026 | 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Räkna ord på svenska: komplett guide (2026)</h1>
+          <p className="text-slate-400 text-sm mb-8">Uppdaterad april 2026 | Lästid: 8 min</p>
           <div className="result-box mb-8 border-emerald-500/30">
-            <h2 className="text-emerald-400 font-bold mb-3">Quick Summary</h2>
-            <p className="text-white">Swedish (Svenska) is spoken by <strong>10 million</strong> people. It uses Latin alphabet with å, ä, ö and has unique word counting challenges due to attached definite articles and compound words. Use our free <a href="/word-counter/language/swedish" className="text-emerald-400 underline">Swedish Word Counter</a> for accurate results.</p>
+            <h2 className="text-emerald-400 font-bold mb-3">Sammanfattning</h2>
+            <p className="text-white">Svenska texter är i genomsnitt <strong className="text-white">5-10% kortare</strong> än engelska texter med samma information, tack vare sammansättningar. Genomsnittlig läshastighet på svenska är <strong className="text-white">230-260 ord per minut</strong>. Svenska har tre extra bokstäver: <strong className="text-white">å, ä, ö</strong>. Använd vår <a href="/word-counter/language/swedish" className="text-emerald-400 underline">svenska ordräknare</a> för exakta resultat.</p>
           </div>
           <div className="space-y-8">
+
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Why Counting Words in Swedish Is Different</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Swedish (Svenska) is spoken by 10 million people across Sweden, Finland. It uses Latin alphabet with å, ä, ö with 29 letters (26 + å, ä, ö). Swedish has two grammatical genders (common and neuter) and uses definite article suffixes attached to nouns rather than separate words. Compound words are very common and can be extremely long. Swedish has pitch accent.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When it comes to word counting, Swedish presents unique challenges compared to English. Swedish word counting is affected by compound words and attached definite articles. "Huset" (the house) is one word in Swedish but two in English. Swedish text typically has 10-15% fewer words than English due to compounding and suffixes.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Understanding these differences is critical for anyone writing, translating, or optimizing content in Swedish. Whether you are a content creator, translator, student, or SEO professional, accurate word counting in Swedish requires the right tools and knowledge.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Varför ordräkning på svenska fungerar annorlunda</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Svenska är ett nordgermanskt språk som delar många egenskaper med norska och danska. Precis som tyska och nederländska kan svenska bilda extremt långa sammansatta ord: "sjukhusundersökningsresultat" (28 bokstäver, 1 ord). I engelskan skulle detta vara "hospital examination result" — tre ord.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Enligt en analys av Translated.net (2023) är svenska texter i genomsnitt 5-10% kortare i ordantal än engelska motsvarigheter. Vid tekniska texter kan skillnaden vara upp till 15%. Detta beror på sammansättningarna som komprimerar flera engelska ord till ett svenskt.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Svenska alfabetet har 29 bokstäver — 26 latinska plus å, ä och ö. Dessa tre bokstäver är separata bokstäver (inte varianter av a och o) och placeras sist i alfabetet. Vårt ordräkningsverktyg hanterar alla svenska tecken korrekt.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Swedish Writing System Explained</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Swedish uses a alphabetic (Latin) writing system. The left-to-right reading direction and Latin alphabet with å, ä, ö create a unique writing experience. The average word length in Swedish is 5-7 characters, which differs significantly from English average of 4-5 characters.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The Swedish word order follows a SVO/V2 word order pattern, which affects how sentences are structured and how word count relates to meaning. A sentence that takes 10 words in English might take more or fewer words in Swedish depending on the grammatical features being used.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">One of the most distinctive features of Swedish is attached definite articles and compound words. This directly impacts how word counting tools process Swedish text and why specialized tools are needed for accurate results.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Svenska sammansättningar och ordräkning</h2>
+              <div className="overflow-x-auto mb-4">
+                <table className="w-full text-sm" style={{borderCollapse:'collapse'}}>
+                  <thead>
+                    <tr style={{borderBottom:'1px solid rgba(52,211,153,0.2)'}}>
+                      <th className="text-left text-emerald-400 py-2 px-3">Svensk sammansättning</th>
+                      <th className="text-left text-emerald-400 py-2 px-3">Engelska</th>
+                      <th className="text-left text-emerald-400 py-2 px-3">Tecken</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ['Sjukhus', 'hospital (1 ord)', '7'],
+                      ['Dammsugare', 'vacuum cleaner (2 ord)', '10'],
+                      ['Hastighetsbegränsning', 'speed limit (2 ord)', '21'],
+                      ['Sjukförsäkring', 'health insurance (2 ord)', '14'],
+                      ['Barnomsorgsavgift', 'childcare fee (2 ord)', '17'],
+                      ['Arbetsmarknadsdepartementet', 'Ministry of Employment (3 ord)', '27'],
+                      ['Realisationsvinstbeskattning', 'capital gains taxation (3 ord)', '28'],
+                    ].map((row, i) => (
+                      <tr key={i} style={{borderBottom:'1px solid rgba(52,211,153,0.1)'}}>
+                        <td className="text-white py-2 px-3 font-medium">{row[0]}</td>
+                        <td className="text-slate-400 py-2 px-3">{row[1]}</td>
+                        <td className="text-slate-400 py-2 px-3">{row[2]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Praktisk konsekvens: en svensk text om sjukförsäkring har färre ord än den engelska versionen, men samma informationsinnehåll. Vår ordräknare räknar varje sammansatt ord korrekt som ett ord.</p>
             </section>
 
-          {/* MID_AD */}
-          <AdUnit slot="3248634657" />
-
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Step-by-Step: Counting Swedish Words Online</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The easiest way to count words in Swedish is to use our free Swedish Word Counter tool. Here is how to do it:</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">First, navigate to our Swedish Word Counter at wordcountertool.net/word-counter/language/swedish. You will see a clean text input area designed for Swedish text.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Second, paste or type your Swedish text into the input field. The tool instantly analyzes your text and provides word count, character count, sentence count, and paragraph count.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Third, review the detailed breakdown. Our tool handles Swedish-specific challenges like attached definite articles and compound words, giving you accurate results that generic word counters miss.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Fourth, use the reading time estimate to understand how long your Swedish content will take to read. This is especially useful for presentations, speeches, and content planning.</p>
-            </section>
             <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Swedish Word Count vs English Word Count</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When comparing Swedish and English text, the word count relationship is important to understand. Swedish word counting is affected by compound words and attached definite articles. "Huset" (the house) is one word in Swedish but two in English. Swedish text typically has 10-15% fewer words than English due to compounding and suffixes.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">This difference has practical implications for several professional contexts. Translators charging by the word need to account for the expansion or contraction between languages. Content creators targeting specific word counts must adjust their expectations. SEO professionals optimizing Swedish content need different benchmarks than English content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">For example, a 1000-word English blog post might translate to a different word count in Swedish. Understanding this ratio helps you plan content length appropriately and set realistic targets for Swedish writing projects.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Our Swedish Word Counter tool accounts for these differences and provides accurate counts regardless of the text length or complexity.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Steg för steg: räkna ord på svenska</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Steg 1:</strong> Öppna den <a href="/word-counter/language/swedish" className="text-emerald-400 underline">svenska ordräknaren</a> på WordCounterTool.net.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Steg 2:</strong> Klistra in din svenska text. Verktyget känner automatiskt igen å, ä, ö och räknar dem korrekt.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Steg 3:</strong> Se resultaten: ord, tecken (med och utan mellanslag), meningar, stycken och uppskattad lästid.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Steg 4:</strong> Använd ordantal för bloggar och SEO, teckenantal för sociala medier och metabeskrivningar.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Läshastigheten på svenska är cirka 230-260 ord per minut för informativa texter och 260-300 ord/min för skönlitteratur. Vårt verktyg beräknar lästiden baserat på 240 ord per minut.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Swedish SEO Writing Tips</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Swedish SEO benefits from targeting compound word variations. Both the compound and separated forms should be considered. The å, ä, ö characters must be included in keyword research.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When writing SEO content in Swedish, word count matters but it is not the only factor. Here are key tips for optimizing Swedish content:</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">First, use natural Swedish phrasing rather than direct translations from English. Search engines are increasingly sophisticated at detecting and penalizing unnatural language.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Second, research keywords specifically in Swedish. Direct keyword translations often miss the terms native speakers actually search for. Use Swedish-specific keyword research tools and check autocomplete suggestions in Swedish.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Third, aim for comprehensive content. Swedish readers expect thorough coverage of topics. A minimum of 1500 words (or the Swedish equivalent) is recommended for pillar content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Fourth, optimize your metadata in Swedish. Title tags, meta descriptions, and header tags should all be written naturally in Swedish with target keywords included.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Rekommenderat ordantal per innehållstyp</h2>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 260" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>Rekommenderat ordantal (svenskt innehåll)</text>
+                  <rect x="180" y="45" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="45" width={String(340*0.75)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="63" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Blogginlägg</text>
+                  <text x={String(180+340*0.75+8)} y="63" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1 200-2 000</text>
+                  <rect x="180" y="81" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="81" width={String(340*0.45)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="99" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Landningssida</text>
+                  <text x={String(180+340*0.45+8)} y="99" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>600-1 000</text>
+                  <rect x="180" y="117" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="117" width={String(340*0.28)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="135" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Produktsida</text>
+                  <text x={String(180+340*0.28+8)} y="135" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>300-600</text>
+                  <rect x="180" y="153" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="153" width={String(340*0.15)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="171" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Nyhetsbrev</text>
+                  <text x={String(180+340*0.15+8)} y="171" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>200-400</text>
+                  <rect x="180" y="189" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="189" width={String(340*1.0)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="207" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Uppsats</text>
+                  <text x={String(180+340*1.0-100)} y="207" fill="#ffffff" style={{fontSize:'12px',fontWeight:'600'}}>8 000-15 000</text>
+                </svg>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Sverige har 10,4 miljoner invånare varav 96% använder internet (Internetstiftelsen 2024). Google.se har 95,3% marktandel. E-handelsmarknaden i Sverige uppgår till 165 miljarder kronor (PostNord 2024), med 35% av trafiken från organisk sökning.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Common Swedish Word Counting Mistakes</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Many people make mistakes when counting words in Swedish. Here are the most common errors and how to avoid them.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The first mistake is using English-optimized word counters that do not properly handle Latin alphabet with å, ä, ö. These tools may miscount or completely fail with Swedish text. Always use a tool specifically designed for Swedish.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The second mistake is confusing character count with word count. In Swedish, these can be very different numbers. A Swedish text with 500 characters might have a very different word count than an English text with 500 characters.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The third mistake is not accounting for attached definite articles and compound words. This feature of Swedish means that standard whitespace-based counting may not give accurate results.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The fourth mistake is applying English word count benchmarks to Swedish content. Because of the structural differences between the languages, you need Swedish-specific benchmarks for content length.</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Vanliga Frågor</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
           </div>
@@ -100,19 +133,20 @@ export default function Post() {
 
       <div className="max-w-4xl mx-auto px-4 mb-8">
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-white mb-3">Try These Swedish Tools</h2>
+          <h2 className="text-lg font-bold text-white mb-3">Svenska Skrivverktyg</h2>
           <div className="flex flex-wrap gap-2">
-            <a href="/word-counter/language/swedish" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Swedish Word Counter</a>
-            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
-            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
-            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
-            <a href="/words-per-minute" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Minute</a>
+            <a href="/word-counter/language/swedish" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Svensk Ordräknare</a>
+            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Ordräknare</a>
+            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Teckenräknare</a>
+            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Lästid</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Läsbarhetskontroll</a>
+            <a href="/keyword-density" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Nyckelordsdensitet</a>
           </div>
         </div>
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How to Count Words in Swedish: Complete Guide (2026)","description":"Learn how to accurately count words in Swedish text. Understand Swedish word boundaries, character counting, and use our free Swedish word counter tool.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-22","dateModified":"2026-03-22","mainEntityOfPage":"https://www.wordcountertool.net/blog/how-to-count-words-in-swedish"})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"How to Count Words in Swedish: Complete Guide (2026)","item":"https://www.wordcountertool.net/blog/how-to-count-words-in-swedish"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Räkna ord på svenska: komplett guide (2026)","description":"Hur räknar man ord, tecken och meningar på svenska? Med sammansättningar, läshastighet och gratis verktyg.","inLanguage":"sv","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-04-05","dateModified":"2026-04-05","mainEntityOfPage":"https://www.wordcountertool.net/blog/how-to-count-words-in-swedish"})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"Räkna ord på svenska: komplett guide (2026)","item":"https://www.wordcountertool.net/blog/how-to-count-words-in-swedish"}]})}} />
 
       <Footer />
     </>

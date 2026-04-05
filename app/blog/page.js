@@ -162,12 +162,12 @@ const langSections = [
     { slug: 'spanish-writing-tips-for-better-content', title: 'Consejos de Escritura en Español: 15 Técnicas para Contenido Profesional (2026)' }
   ]},
   { key: 'swedish', name: 'Swedish', native: 'Svenska', flag: '🇸🇪', tool: '/word-counter/language/swedish', posts: [
-    { slug: 'common-swedish-writing-mistakes', title: '10 Common Swedish Writing Mistakes and How to Fix Them (2026)' },
-    { slug: 'how-to-count-words-in-swedish', title: 'How to Count Words in Swedish: Complete Guide (2026)' },
-    { slug: 'swedish-character-count-guide', title: 'Swedish Character Count: Everything You Need to Know (2026)' },
-    { slug: 'swedish-content-length-guide', title: 'Swedish Content Length Guide: How Many Words Do You Need? (2026)' },
-    { slug: 'swedish-seo-content-strategy', title: 'Swedish SEO Content Strategy: Rank Higher in Swedish Search (2026)' },
-    { slug: 'swedish-writing-tips-for-better-content', title: 'Swedish Writing Tips: How to Write Better Content in Swedish (2026)' }
+    { slug: 'common-swedish-writing-mistakes', title: 'De 15 vanligaste skrivfelen på svenska och hur du undviker dem (2026)' },
+    { slug: 'how-to-count-words-in-swedish', title: 'Räkna ord på svenska: komplett guide (2026)' },
+    { slug: 'swedish-character-count-guide', title: 'Räkna tecken på svenska: guide med plattformsgränser (2026)' },
+    { slug: 'swedish-content-length-guide', title: 'Optimal textlängd på svenska: datadriven guide (2026)' },
+    { slug: 'swedish-seo-content-strategy', title: 'SEO-innehållsstrategi för den svenska marknaden (2026)' },
+    { slug: 'swedish-writing-tips-for-better-content', title: '15 tips för bättre svenska webbtexter (2026)' }
   ]},
   { key: 'turkish', name: 'Turkish', native: 'Türkçe', flag: '🇹🇷', tool: '/word-counter/language/turkish', posts: [
     { slug: 'common-turkish-writing-mistakes', title: '10 Common Turkish Writing Mistakes and How to Fix Them (2026)' },

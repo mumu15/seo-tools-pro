@@ -5,20 +5,26 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/swedish-seo-content-strategy' },
-  title: 'Swedish SEO Content Strategy: Rank Higher in Swedish Search (2026)',
-  description: 'Build a winning Swedish SEO content strategy. Learn keyword research, content optimization, and word count guidelines for ranking in Swedish search results.',
+  title: 'SEO-innehållsstrategi för den svenska marknaden (2026)',
+  description: 'Hur bygger du en SEO-strategi för Sverige? Sökordsanalys, innehållskluster, E-E-A-T och Google.se-optimering.',
   openGraph: {
-    title: 'Swedish SEO Content Strategy: Rank Higher in Swedish Search (2026)',
-    description: 'Build a winning Swedish SEO content strategy. Learn keyword research, content optimization, and word count guidelines for ranking in Swedish search results.',
+    title: 'SEO-innehållsstrategi för den svenska marknaden (2026)',
+    description: 'Hur bygger du en SEO-strategi för Sverige? Sökordsanalys, innehållskluster, E-E-A-T och Google.se-optimering.',
     url: 'https://www.wordcountertool.net/blog/swedish-seo-content-strategy',
     siteName: 'WordCounterTool',
     type: 'article',
   },
 }
 
-const faqs = [{"q":"How do I count words in Swedish?","a":"Use our free Swedish Word Counter at wordcountertool.net/word-counter/language/swedish. Paste your Swedish text and get instant word count, character count, sentence count, and reading time."},{"q":"Is the Swedish word counter free?","a":"Yes, completely free with no sign-up required. Our Swedish word counter tool works instantly in your browser with no data stored or sent to any server."},{"q":"How many words per minute does the average person read in Swedish?","a":"The average Swedish reading speed is approximately 200-250 words per minute for native speakers, though this varies based on text complexity and the reader experience level."},{"q":"Does your tool handle Latin alphabet with å, ä, ö?","a":"Yes. Our Swedish Word Counter is specifically designed to handle Latin alphabet with å, ä, ö accurately. It accounts for attached definite articles and compound words that generic word counters miss."}]
+const faqs = [
+  { q: 'Hur stor är den svenska sökmarknaden?', a: 'Sverige har 10 miljoner internetanvändare (96% penetration). Google har 95,3% marknadsandel. E-handeln uppgår till 165 miljarder kronor. 35% av e-handelstrafiken kommer från organisk sökning.' },
+  { q: 'Vilka verktyg ska jag använda för svensk sökordsanalys?', a: 'Google Keyword Planner (gratis), Ahrefs, SEMrush, KWFinder. Google Suggest på Google.se för long-tail. Vårt gratis verktyg för nyckelordsdensitet på WordCounterTool.net.' },
+  { q: 'Vad är optimal nyckelordsdensitet för svenska?', a: '1-2% för huvudnyckelordet. Använd 4-6 semantiskt relaterade termer. Över 3% riskerar keyword stuffing.' },
+  { q: 'Fungerar innehållskluster på svenska?', a: 'Ja, mycket bra. Få svenska webbplatser tillämpar strategin systematiskt, så konkurrensen är lägre. Ett välbyggt kluster kan dominera en hel nyckelordsgrupp på 3-6 månader.' },
+  { q: 'Söker svenskar på engelska?', a: 'Ja, 42% söker regelbundet på engelska (Internetstiftelsen 2024). Sverige har världens näst högsta engelskkunskaper. Överväg att optimera för både svenska och engelska sökord.' },
+  { q: 'Hur stärker jag E-E-A-T för den svenska marknaden?', a: 'Hänvisa till SCB, Internetstiftelsen, Svensk Handel. Få bakåtlänkar från .se-domäner. Visa organisationsnummer och integritetspolicy. Publicera på Breakit, Di Digital eller Resume.' }
+]
 
 export default function Post() {
   return (
@@ -26,77 +32,66 @@ export default function Post() {
       <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
+        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Tillbaka till Bloggen</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Swedish SEO Content Strategy: Rank Higher in Swedish Search (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated March 2026 | 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">SEO-innehållsstrategi för den svenska marknaden (2026)</h1>
+          <p className="text-slate-400 text-sm mb-8">Uppdaterad april 2026 | Lästid: 11 min</p>
           <div className="result-box mb-8 border-emerald-500/30">
-            <h2 className="text-emerald-400 font-bold mb-3">Quick Summary</h2>
-            <p className="text-white">Swedish (Svenska) is spoken by <strong>10 million</strong> people. It uses Latin alphabet with å, ä, ö and has unique word counting challenges due to attached definite articles and compound words. Use our free <a href="/word-counter/language/swedish" className="text-emerald-400 underline">Swedish Word Counter</a> for accurate results.</p>
+            <h2 className="text-emerald-400 font-bold mb-3">Sammanfattning</h2>
+            <p className="text-white">Sverige har <strong className="text-white">10 miljoner internetanvändare</strong> med 96% penetration. Google dominerar med <strong className="text-white">95,3% marknadsandel</strong> (StatCounter 2025). E-handeln är värd <strong className="text-white">165 miljarder kronor</strong>. Använd vårt <a href="/keyword-density" className="text-emerald-400 underline">verktyg för nyckelordsdensitet</a>.</p>
           </div>
           <div className="space-y-8">
+
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">The Swedish Search Market in 2026</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The Swedish search market represents a massive opportunity. With 10 million speakers across Sweden, Finland, Swedish is one of the most important languages for global SEO strategy.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Search behavior in Swedish differs from English in several key ways. Swedish speakers tend to use longer, more conversational search queries. Voice search is growing rapidly in Swedish-speaking markets, which affects keyword strategy.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Swedish SEO benefits from targeting compound word variations. Both the compound and separated forms should be considered. The å, ä, ö characters must be included in keyword research.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The competition for Swedish keywords is generally lower than English, meaning there are significant opportunities for content creators who invest in high-quality Swedish content. This makes Swedish SEO one of the best growth channels for 2026.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Den svenska sökmarknaden</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Sverige är ett av världens mest digitaliserade länder: 10 miljoner internetanvändare, 96% penetration, 93% smartphoneanvändning (Internetstiftelsen 2024). Svenskar spenderar i genomsnitt 4,8 timmar per dag online.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Google dominerar med 95,3% marknadsandel (StatCounter 2025). Bing har 2,8% och DuckDuckGo 1,2%. SEO i Sverige är i praktiken Google-optimering.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">E-handelsmarknaden uppgick till 165 miljarder kronor 2024 (PostNord). 35% av e-handelstrafiken kommer från organisk sökning. Den svenska digitala annonsmarknaden är värd 42 miljarder kronor (IRM 2024).</p>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 180" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>Sökmotormarknadsandelar i Sverige (2025)</text>
+                  <rect x="140" y="45" width="370" height="32" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="140" y="45" width={String(370*0.953)} height="32" rx="4" fill="#10b981" />
+                  <text x="130" y="65" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Google</text>
+                  <text x={String(140+370*0.953-40)} y="65" fill="#ffffff" style={{fontSize:'12px',fontWeight:'600'}}>95,3%</text>
+                  <rect x="140" y="85" width="370" height="32" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="140" y="85" width={String(370*0.028)} height="32" rx="4" fill="#10b981" />
+                  <text x="130" y="105" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Bing</text>
+                  <text x={String(140+370*0.028+8)} y="105" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>2,8%</text>
+                  <rect x="140" y="125" width="370" height="32" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="140" y="125" width={String(370*0.019)} height="32" rx="4" fill="#64748b" />
+                  <text x="130" y="145" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Övrigt</text>
+                  <text x={String(140+370*0.019+8)} y="145" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1,9%</text>
+                </svg>
+              </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Swedish Keyword Research Strategy</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Effective Swedish keyword research requires different approaches than English keyword research. Here are the essential strategies.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">First, never simply translate English keywords into Swedish. Native Swedish speakers use different terms, phrases, and question formats when searching. Use Swedish-specific keyword tools and analyze Swedish autocomplete suggestions.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Second, consider the Swedish writing system. Swedish uses Latin alphabet with å, ä, ö, and users may search using different forms or spellings of the same word. Include all common variations in your keyword strategy.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Third, analyze Swedish search intent. The same query may have different intent in Swedish versus English due to cultural differences. Check the search results pages for Swedish queries to understand what content ranks.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Fourth, use long-tail Swedish keywords. These are easier to rank for and often have higher conversion rates. Our word counter tool helps you ensure your content naturally includes target keywords at appropriate density.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Sökordsanalys på svenska</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">1. Svenska sökmönster:</strong> Svenskar söker med 3-4 ord per sökfråga. Populära mönster: "hur [handling]", "bästa [produkt] [år]", "[produkt] jämförelse". Svenskar söker ofta på engelska för tekniska frågor.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">2. Svenskt vs engelskt sökbeteende:</strong> En unik aspekt av den svenska marknaden är att många svenskar söker på engelska. Enligt Internetstiftelsen söker 42% av svenskarna regelbundet på engelska. Överväg att optimera för både svenska och engelska sökord.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">3. Verktyg:</strong> Google Keyword Planner (gratis), Ahrefs, SEMrush, KWFinder. Google Suggest på Google.se är en utmärkt gratis källa för long-tail-sökord.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">4. Nyckelordsdensitet:</strong> Optimal densitet för svenska är 1-2% för huvudnyckelordet. Använd 4-6 semantiskt relaterade termer. Vårt <a href="/keyword-density" className="text-emerald-400 underline">densitetsverktyg</a> hjälper dig hitta rätt balans.</p>
             </section>
 
-          {/* MID_AD */}
-          <AdUnit slot="3248634657" />
-
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Optimal Content Length for Swedish SEO</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Content length is a ranking factor in every language, but the optimal length differs for Swedish content. Here are data-driven guidelines.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Blog posts targeting informational queries should be 1500-2500 words in Swedish (adjusted for language-specific word count ratios). Swedish word counting is affected by compound words and attached definite articles. "Huset" (the house) is one word in Swedish but two in English. Swedish text typically has 10-15% fewer words than English due to compounding and suffixes. This means your target character or word count may differ from English benchmarks.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Product pages and landing pages perform best at 800-1200 Swedish words. Include specific product details, benefits, and social proof written naturally in Swedish.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Pillar content and comprehensive guides should exceed 3000 Swedish words to compete for competitive head terms. These long-form pieces establish topical authority in Swedish search.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our Swedish Word Counter to track your content length accurately. Remember that generic word counters may not properly handle attached definite articles and compound words, leading to inaccurate counts.</p>
-            </section>
             <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">On-Page SEO for Swedish Content</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Optimizing Swedish pages requires attention to language-specific on-page factors.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Title tags should be 50-60 characters in Swedish and include your primary keyword near the beginning. Remember that Swedish character width may differ from English, so test how your titles display in search results.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Meta descriptions should be 150-160 characters of compelling Swedish copy that includes the target keyword and a clear call to action. Write them as natural Swedish sentences, not keyword-stuffed fragments.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Header tags (H1, H2, H3) should use natural Swedish phrasing with keywords included. The H1 should match the search intent precisely. Use H2 and H3 tags to create a logical content hierarchy.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">URL structure for Swedish pages can use either transliterated or native script URLs. Search engines handle both, but consistency is important. Choose one approach and stick with it across your site.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Internal linking in Swedish content should use natural anchor text. Link to your Swedish word counter tool and other relevant Swedish resources to build topical authority.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Innehållskluster för den svenska marknaden</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Innehållskluster fungerar mycket bra på svenska eftersom få svenska webbplatser systematiskt tillämpar strategin. Konkurrensen är lägre än på engelska.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Bygg en pillar page (2 500-4 000 ord) som centrum, med 6-12 klusterartiklar (1 200-2 000 ord vardera) kopplade med interna länkar. Varje artikel länkar till pillar-sidan och till 2-3 andra klusterartiklar.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Exempel: pillar "Ordräkning online" med kluster: "Svensk ordräknare", "Teckengränser per plattform", "Textlängd för SEO", "Nyckelordsdensitet", "Läsbarhet för svenska texter".</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Swedish Content That Attracts Backlinks</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Creating Swedish content that earns backlinks requires understanding what Swedish-speaking audiences find valuable and shareable.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Original research and data about Swedish language usage, trends, or markets attracts links from Swedish media outlets and bloggers. Invest in creating unique data-driven content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Comprehensive guides and reference materials in Swedish become go-to resources that others link to. Tools like our Swedish Word Counter become linkable assets because they provide ongoing utility.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Visual content with Swedish text performs well for social sharing and link building. Infographics, charts, and interactive tools in Swedish are more likely to be shared than text-only content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Guest posting on Swedish websites builds both backlinks and brand awareness in Swedish-speaking markets. Focus on high-quality Swedish publications relevant to your niche.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">E-E-A-T i svensk kontext</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Expertis:</strong> Hänvisa till svenska källor: SCB, Internetstiftelsen, Svensk Handel, PostNord. Svenska läsare litar på dessa institutioner.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Auktoritet:</strong> Bakåtlänkar från .se-domäner stärker auktoriteten på den svenska marknaden. Publiceringar på Breakit, Di Digital, Resume och Internetworld är värdefulla.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Tillförlitlighet:</strong> Organisationsnummer, momsnummer, integritetspolicy (GDPR) och kontaktuppgifter är förtroendessignaler på den svenska marknaden.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Measuring Swedish SEO Success</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Tracking Swedish SEO performance requires the right metrics and tools.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Monitor Swedish keyword rankings separately from English rankings. Use rank tracking tools that support Swedish search engines and Latin alphabet with å, ä, ö characters.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Analyze Swedish organic traffic trends. Look at traffic from Swedish-speaking countries and filter by Swedish language settings to get accurate data.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Track Swedish content engagement metrics: time on page, bounce rate, and pages per session for Swedish content. These indicate whether your Swedish content meets user expectations.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Measure Swedish conversion rates separately. Swedish-speaking audiences may have different conversion patterns and preferences. Optimize your Swedish calls to action and conversion paths based on data.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Use our Swedish Word Counter tool as part of your content audit process. Regularly check that your Swedish content meets length targets and maintains quality as you scale your Swedish content strategy.</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Vanliga Frågor</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
           </div>
@@ -105,19 +100,20 @@ export default function Post() {
 
       <div className="max-w-4xl mx-auto px-4 mb-8">
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-white mb-3">Try These Swedish Tools</h2>
+          <h2 className="text-lg font-bold text-white mb-3">Svenska Skrivverktyg</h2>
           <div className="flex flex-wrap gap-2">
-            <a href="/word-counter/language/swedish" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Swedish Word Counter</a>
-            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
-            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
-            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
-            <a href="/words-per-minute" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Minute</a>
+            <a href="/word-counter/language/swedish" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Svensk Ordräknare</a>
+            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Ordräknare</a>
+            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Teckenräknare</a>
+            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Lästid</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Läsbarhetskontroll</a>
+            <a href="/keyword-density" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Nyckelordsdensitet</a>
           </div>
         </div>
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Swedish SEO Content Strategy: Rank Higher in Swedish Search (2026)","description":"Build a winning Swedish SEO content strategy. Learn keyword research, content optimization, and word count guidelines for ranking in Swedish search results.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-22","dateModified":"2026-03-22","mainEntityOfPage":"https://www.wordcountertool.net/blog/swedish-seo-content-strategy"})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"Swedish SEO Content Strategy: Rank Higher in Swedish Search (2026)","item":"https://www.wordcountertool.net/blog/swedish-seo-content-strategy"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"SEO-innehållsstrategi för den svenska marknaden (2026)","description":"Hur bygger du en SEO-strategi för Sverige? Sökordsanalys, innehållskluster, E-E-A-T och Google.se-optimering.","inLanguage":"sv","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-04-05","dateModified":"2026-04-05","mainEntityOfPage":"https://www.wordcountertool.net/blog/swedish-seo-content-strategy"})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"SEO-innehållsstrategi för den svenska marknaden (2026)","item":"https://www.wordcountertool.net/blog/swedish-seo-content-strategy"}]})}} />
 
       <Footer />
     </>
