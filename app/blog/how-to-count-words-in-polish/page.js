@@ -5,20 +5,26 @@ import Link from 'next/link'
 import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
-  robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.wordcountertool.net/blog/how-to-count-words-in-polish' },
-  title: 'How to Count Words in Polish: Complete Guide (2026)',
-  description: 'Learn how to accurately count words in Polish text. Understand Polish word boundaries, character counting, and use our free Polish word counter tool.',
+  title: 'Jak liczyć słowa po polsku: kompletny przewodnik (2026)',
+  description: 'Jak prawidłowo liczyć słowa, znaki i zdania w polskim tekście. Z zasadami dla polskich znaków, szybkością czytania i darmowymi narzędziami.',
   openGraph: {
-    title: 'How to Count Words in Polish: Complete Guide (2026)',
-    description: 'Learn how to accurately count words in Polish text. Understand Polish word boundaries, character counting, and use our free Polish word counter tool.',
+    title: 'Jak liczyć słowa po polsku: kompletny przewodnik (2026)',
+    description: 'Jak prawidłowo liczyć słowa, znaki i zdania w polskim tekście. Z zasadami dla polskich znaków, szybkością czytania i darmowymi narzędziami.',
     url: 'https://www.wordcountertool.net/blog/how-to-count-words-in-polish',
     siteName: 'WordCounterTool',
     type: 'article',
   },
 }
 
-const faqs = [{"q":"How do I count words in Polish?","a":"Use our free Polish Word Counter at wordcountertool.net/word-counter/language/polish. Paste your Polish text and get instant word count, character count, sentence count, and reading time."},{"q":"Is the Polish word counter free?","a":"Yes, completely free with no sign-up required. Our Polish word counter tool works instantly in your browser with no data stored or sent to any server."},{"q":"How many words per minute does the average person read in Polish?","a":"The average Polish reading speed is approximately 200-250 words per minute for native speakers, though this varies based on text complexity and the reader experience level."},{"q":"Does your tool handle Latin alphabet with diacritics?","a":"Yes. Our Polish Word Counter is specifically designed to handle Latin alphabet with diacritics accurately. It accounts for consonant clusters and seven grammatical cases that generic word counters miss."}]
+const faqs = [
+  { q: 'Jak liczyć słowa w polskim tekście?', a: 'Użyj darmowego polskiego licznika słów na WordCounterTool.net. Wklej tekst i natychmiast zobaczysz: słowa, znaki, zdania, akapity i czas czytania. Narzędzie poprawnie obsługuje polskie znaki diakrytyczne.' },
+  { q: 'Czy polskie teksty są dłuższe od angielskich?', a: 'Tak. Tłumaczenia z angielskiego na polski są średnio o 10-15% dłuższe pod względem liczby słów. Wynika to z dłuższych wyrazów, końcówek fleksyjnych i przyimków.' },
+  { q: 'Jaka jest szybkość czytania po polsku?', a: 'Teksty informacyjne: 200-250 słów/min. Beletrystyka: 250-300 słów/min. Teksty naukowe: 150-200 słów/min. Nasz licznik oblicza czas czytania na podstawie 220 słów/min.' },
+  { q: 'Ile słów powinien mieć polski artykuł blogowy?', a: 'Dla SEO zalecamy 1 500-2 500 słów. Strony w top-10 Google.pl zawierają średnio 2 000 słów. Dłuższe artykuły ranżkują się lepiej i przyciągają więcej linków zwrotnych.' },
+  { q: 'Czy polskie znaki diakrytyczne wpływają na liczenie?', a: 'Nie. Każdy polski znak (ą, ć, ę, ł, ń, ó, ś, ź, ż) liczy się jako 1 znak. W UTF-8 zajmuje 2 bajty (łacińskie — 1 bajt), ale to wpływa tylko na bazy danych i API z limitami bajtowymi.' },
+  { q: 'Czy licznik jest darmowy?', a: 'Tak, w 100% bezpłatny i bez rejestracji. Żadne dane nie są przechowywane ani przesyłane na serwery. Możesz korzystać z polskiego licznika słów bez ograniczeń.' }
+]
 
 export default function Post() {
   return (
@@ -26,72 +32,118 @@ export default function Post() {
       <FaqSchema faqs={faqs} />
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Back to Blog</Link></div>
+        <div className="mb-8"><Link href="/blog" className="text-emerald-400 text-sm hover:underline">Wróć do Bloga</Link></div>
         <article>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">How to Count Words in Polish: Complete Guide (2026)</h1>
-          <p className="text-slate-400 text-sm mb-8">Updated March 2026 | 8 min read</p>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Jak liczyć słowa po polsku: kompletny przewodnik (2026)</h1>
+          <p className="text-slate-400 text-sm mb-8">Aktualizacja: kwiecień 2026 | Czas czytania: 8 min</p>
           <div className="result-box mb-8 border-emerald-500/30">
-            <h2 className="text-emerald-400 font-bold mb-3">Quick Summary</h2>
-            <p className="text-white">Polish (Polski) is spoken by <strong>45 million</strong> people. It uses Latin alphabet with diacritics and has unique word counting challenges due to consonant clusters and seven grammatical cases. Use our free <a href="/word-counter/language/polish" className="text-emerald-400 underline">Polish Word Counter</a> for accurate results.</p>
+            <h2 className="text-emerald-400 font-bold mb-3">Podsumowanie</h2>
+            <p className="text-white">Polskie teksty są średnio o <strong className="text-white">10-15% dłuższe</strong> od angielskich odpowiedników pod względem liczby słów. Średnia szybkość czytania po polsku to <strong className="text-white">200-250 słów na minutę</strong>. Polski alfabet zawiera <strong className="text-white">32 litery</strong> (w tym 9 ze znakami diakrytycznymi: ą, ć, ę, ł, ń, ó, ś, ź, ż). Użyj naszego <a href="/word-counter/language/polish" className="text-emerald-400 underline">polskiego licznika słów</a>.</p>
           </div>
           <div className="space-y-8">
+
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Why Counting Words in Polish Is Different</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Polish (Polski) is spoken by 45 million people across Poland, diaspora communities worldwide. It uses Latin alphabet with diacritics with 32 letters (9 with diacritics: ą, ć, ę, ł, ń, ó, ś, ź, ż). Polish has seven grammatical cases, complex declension patterns, and extensive consonant clusters. The word order is relatively free because case endings clarify relationships. Polish uses both masculine personal and masculine non-personal genders.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When it comes to word counting, Polish presents unique challenges compared to English. Polish word counting is straightforward with space-separated words, but the language is highly inflected. A single English phrase may be one Polish word. Polish text is typically similar in length to English but individual words are often longer due to case endings.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Understanding these differences is critical for anyone writing, translating, or optimizing content in Polish. Whether you are a content creator, translator, student, or SEO professional, accurate word counting in Polish requires the right tools and knowledge.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Dlaczego liczenie polskich słów jest inne</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Język polski jest językiem fleksyjnym — oznacza to rozbudowany system odmiany. Jedno słowo może przybierać wiele form: "dom, domu, domowi, domem, domu, domy, domów, domom, domami, domach". Dla liczenia słów to nie problem (każda forma to jedno słowo), ale dla analizy słów kluczowych — kluczowy niuans.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Według danych SDL/RWS Translation Memory (2024), polskie tłumaczenia angielskich tekstów są średnio o 10-15% dłuższe pod względem liczby słów. Wynika to z dłuższych słów (średnia długość polskiego słowa to 6,1 litery wobec 4,7 w angielskim), przyimków i końcówek fleksyjnych.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Polski używa spacji do rozdzielania słów, podobnie jak angielski, więc podstawowe liczenie jest proste. Nasz licznik poprawnie obsługuje polskie znaki diakrytyczne (ą, ć, ę, ł, ń, ó, ś, ź, ż) i łączniki (np. "biało-czerwony" jako jedno słowo).</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Polish Writing System Explained</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Polish uses a alphabetic (Latin) writing system. The left-to-right reading direction and Latin alphabet with diacritics create a unique writing experience. The average word length in Polish is 6-8 characters, which differs significantly from English average of 4-5 characters.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The Polish word order follows a SVO (flexible due to cases) pattern, which affects how sentences are structured and how word count relates to meaning. A sentence that takes 10 words in English might take more or fewer words in Polish depending on the grammatical features being used.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">One of the most distinctive features of Polish is consonant clusters and seven grammatical cases. This directly impacts how word counting tools process Polish text and why specialized tools are needed for accurate results.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Słowa, znaki i znaki ze spacjami</h2>
+              <div className="overflow-x-auto mb-4">
+                <table className="w-full text-sm" style={{borderCollapse:'collapse'}}>
+                  <thead>
+                    <tr style={{borderBottom:'1px solid rgba(52,211,153,0.2)'}}>
+                      <th className="text-left text-emerald-400 py-2 px-3">Metryka</th>
+                      <th className="text-left text-emerald-400 py-2 px-3">Definicja</th>
+                      <th className="text-left text-emerald-400 py-2 px-3">Przykład ("Warszawa to piękne miasto")</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ['Słowa', 'Jednostki oddzielone spacjami', '5 słów'],
+                      ['Znaki ze spacjami', 'Wszystkie znaki włącznie ze spacjami', '27 znaków'],
+                      ['Znaki bez spacji', 'Tylko litery, cyfry, znaki', '23 znaki'],
+                      ['Bajty (UTF-8)', 'Pojemność przechowywania', '31 bajtów (polskie znaki: 2B)'],
+                    ].map((row, i) => (
+                      <tr key={i} style={{borderBottom:'1px solid rgba(52,211,153,0.1)'}}>
+                        <td className="text-white py-2 px-3 font-medium">{row[0]}</td>
+                        <td className="text-slate-400 py-2 px-3">{row[1]}</td>
+                        <td className="text-slate-400 py-2 px-3">{row[2]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">W polskim edytorstwie używa się metryki "znaków ze spacjami" (analogicznie do arkusza autorskiego — 40 000 znaków ze spacjami). Dla treści webowych i SEO wygodniej liczyć słowa. Nasze narzędzie pokazuje obie metryki jednocześnie.</p>
             </section>
 
-          {/* MID_AD */}
-          <AdUnit slot="3248634657" />
-
-
-            <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Step-by-Step: Counting Polish Words Online</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The easiest way to count words in Polish is to use our free Polish Word Counter tool. Here is how to do it:</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">First, navigate to our Polish Word Counter at wordcountertool.net/word-counter/language/polish. You will see a clean text input area designed for Polish text.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Second, paste or type your Polish text into the input field. The tool instantly analyzes your text and provides word count, character count, sentence count, and paragraph count.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Third, review the detailed breakdown. Our tool handles Polish-specific challenges like consonant clusters and seven grammatical cases, giving you accurate results that generic word counters miss.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Fourth, use the reading time estimate to understand how long your Polish content will take to read. This is especially useful for presentations, speeches, and content planning.</p>
-            </section>
             <AdUnit slot="3248634657" />
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Polish Word Count vs English Word Count</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When comparing Polish and English text, the word count relationship is important to understand. Polish word counting is straightforward with space-separated words, but the language is highly inflected. A single English phrase may be one Polish word. Polish text is typically similar in length to English but individual words are often longer due to case endings.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">This difference has practical implications for several professional contexts. Translators charging by the word need to account for the expansion or contraction between languages. Content creators targeting specific word counts must adjust their expectations. SEO professionals optimizing Polish content need different benchmarks than English content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">For example, a 1000-word English blog post might translate to a different word count in Polish. Understanding this ratio helps you plan content length appropriately and set realistic targets for Polish writing projects.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Our Polish Word Counter tool accounts for these differences and provides accurate counts regardless of the text length or complexity.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Krok po kroku: liczenie słów po polsku</h2>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Krok 1:</strong> Otwórz <a href="/word-counter/language/polish" className="text-emerald-400 underline">polski licznik słów</a> na WordCounterTool.net.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Krok 2:</strong> Wklej polski tekst. Narzędzie automatycznie rozpoznaje polskie znaki diakrytyczne i liczy je poprawnie.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Krok 3:</strong> Sprawdź wyniki: słowa, znaki (ze spacjami i bez), zdania, akapity i szacowany czas czytania.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4"><strong className="text-white">Krok 4:</strong> Użyj liczby słów dla blogów i SEO, a liczby znaków dla mediów społecznościowych i opisów meta.</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Szybkość czytania po polsku: teksty informacyjne — 200-250 słów/min, beletrystyka — 250-300 słów/min, teksty naukowe — 150-200 słów/min. Nasz licznik oblicza czas czytania na podstawie 220 słów/min.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Polish SEO Writing Tips</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Polish SEO must account for diacritical characters. Users search both with and without diacritics. Case forms of keywords should be considered in content optimization.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">When writing SEO content in Polish, word count matters but it is not the only factor. Here are key tips for optimizing Polish content:</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">First, use natural Polish phrasing rather than direct translations from English. Search engines are increasingly sophisticated at detecting and penalizing unnatural language.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Second, research keywords specifically in Polish. Direct keyword translations often miss the terms native speakers actually search for. Use Polish-specific keyword research tools and check autocomplete suggestions in Polish.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Third, aim for comprehensive content. Polish readers expect thorough coverage of topics. A minimum of 1500 words (or the Polish equivalent) is recommended for pillar content.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Fourth, optimize your metadata in Polish. Title tags, meta descriptions, and header tags should all be written naturally in Polish with target keywords included.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Zalecana liczba słów dla polskich treści</h2>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 260" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>Zalecana liczba słów (treści polskie)</text>
+                  <rect x="180" y="45" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="45" width={String(340*0.80)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="63" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Artykuł blog</text>
+                  <text x={String(180+340*0.80+8)} y="63" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>1 500-2 500</text>
+                  <rect x="180" y="81" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="81" width={String(340*0.45)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="99" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Landing page</text>
+                  <text x={String(180+340*0.45+8)} y="99" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>800-1 200</text>
+                  <rect x="180" y="117" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="117" width={String(340*0.30)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="135" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Karta produktu</text>
+                  <text x={String(180+340*0.30+8)} y="135" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>400-700</text>
+                  <rect x="180" y="153" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="153" width={String(340*0.15)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="171" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Newsletter</text>
+                  <text x={String(180+340*0.15+8)} y="171" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>200-400</text>
+                  <rect x="180" y="189" width="340" height="28" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="180" y="189" width={String(340*1.0)} height="28" rx="4" fill="#10b981" />
+                  <text x="170" y="207" textAnchor="end" fill="#94a3b8" style={{fontSize:'11px'}}>Praca magisterska</text>
+                  <text x={String(180+340*1.0-100)} y="207" fill="#ffffff" style={{fontSize:'12px',fontWeight:'600'}}>15 000-25 000</text>
+                </svg>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Pamiętaj: polskie teksty są o 10-15% dłuższe od angielskich. Jeśli tłumaczysz treści, spodziewaj się tego wzrostu. Użyj naszego <a href="/word-counter/language/polish" className="text-emerald-400 underline">licznika</a>, aby sprawdzić ostateczną długość i <a href="/readability-checker" className="text-emerald-400 underline">czytelność</a>.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Common Polish Word Counting Mistakes</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">Many people make mistakes when counting words in Polish. Here are the most common errors and how to avoid them.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The first mistake is using English-optimized word counters that do not properly handle Latin alphabet with diacritics. These tools may miscount or completely fail with Polish text. Always use a tool specifically designed for Polish.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The second mistake is confusing character count with word count. In Polish, these can be very different numbers. A Polish text with 500 characters might have a very different word count than an English text with 500 characters.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The third mistake is not accounting for consonant clusters and seven grammatical cases. This feature of Polish means that standard whitespace-based counting may not give accurate results.</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">The fourth mistake is applying English word count benchmarks to Polish content. Because of the structural differences between the languages, you need Polish-specific benchmarks for content length.</p>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Polski internet w liczbach</h2>
+              <div className="result-box mb-4">
+                <svg viewBox="0 0 600 180" style={{width:'100%',height:'auto'}} xmlns="http://www.w3.org/2000/svg">
+                  <text x="300" y="20" textAnchor="middle" fill="#e2e8f0" style={{fontSize:'14px',fontWeight:'700'}}>Internet w Polsce (dane 2024)</text>
+                  <rect x="140" y="45" width="370" height="30" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="140" y="45" width={String(370*0.87)} height="30" rx="4" fill="#10b981" />
+                  <text x="130" y="64" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Użytkownicy</text>
+                  <text x={String(140+370*0.87+8)} y="64" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>33,2 mln (87%)</text>
+                  <rect x="140" y="83" width="370" height="30" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="140" y="83" width={String(370*0.79)} height="30" rx="4" fill="#10b981" />
+                  <text x="130" y="102" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Mobilni</text>
+                  <text x={String(140+370*0.79+8)} y="102" fill="#e2e8f0" style={{fontSize:'12px',fontWeight:'600'}}>79% ruchu</text>
+                  <rect x="140" y="121" width="370" height="30" rx="4" fill="rgba(16,185,129,0.15)" />
+                  <rect x="140" y="121" width={String(370*0.96)} height="30" rx="4" fill="#10b981" />
+                  <text x="130" y="140" textAnchor="end" fill="#94a3b8" style={{fontSize:'12px'}}>Google.pl</text>
+                  <text x={String(140+370*0.96-40)} y="140" fill="#ffffff" style={{fontSize:'12px',fontWeight:'600'}}>96,1%</text>
+                </svg>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">Polska ma 33,2 miliona użytkowników internetu (87% populacji — Gemius 2024). Google.pl dominuje z 96,1% udziałem w rynku. E-commerce w Polsce to 92 mld zł (GUS 2024), z czego 36% ruchu pochodzi z wyszukiwarek.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-display font-bold text-white mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-4">Najczęściej Zadawane Pytania</h2>
               <div className="space-y-4">{faqs.map((faq,i)=>(<div key={i} className="result-box"><h3 className="text-white font-bold mb-2">{faq.q}</h3><p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p></div>))}</div>
             </section>
           </div>
@@ -100,19 +152,20 @@ export default function Post() {
 
       <div className="max-w-4xl mx-auto px-4 mb-8">
         <div className="bg-gradient-to-r from-emerald-900/20 to-teal-900/10 border border-emerald-500/20 rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-white mb-3">Try These Polish Tools</h2>
+          <h2 className="text-lg font-bold text-white mb-3">Narzędzia do Pisania po Polsku</h2>
           <div className="flex flex-wrap gap-2">
-            <a href="/word-counter/language/polish" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Polish Word Counter</a>
-            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Word Counter</a>
-            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Character Counter</a>
-            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Reading Time Calculator</a>
-            <a href="/words-per-minute" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Words Per Minute</a>
+            <a href="/word-counter/language/polish" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Licznik Słów Polski</a>
+            <a href="/word-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Licznik Słów</a>
+            <a href="/character-counter" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Licznik Znaków</a>
+            <a href="/reading-time" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Czas Czytania</a>
+            <a href="/readability-checker" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Sprawdzanie Czytelności</a>
+            <a href="/keyword-density" className="inline-block bg-slate-800 hover:bg-slate-700 text-emerald-400 text-sm px-4 py-2 rounded-lg transition-colors">Gęstość Słów Kluczowych</a>
           </div>
         </div>
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How to Count Words in Polish: Complete Guide (2026)","description":"Learn how to accurately count words in Polish text. Understand Polish word boundaries, character counting, and use our free Polish word counter tool.","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-03-22","dateModified":"2026-03-22","mainEntityOfPage":"https://www.wordcountertool.net/blog/how-to-count-words-in-polish"})}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"How to Count Words in Polish: Complete Guide (2026)","item":"https://www.wordcountertool.net/blog/how-to-count-words-in-polish"}]})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Jak liczyć słowa po polsku: kompletny przewodnik (2026)","description":"Jak prawidłowo liczyć słowa, znaki i zdania w polskim tekście. Z zasadami dla polskich znaków, szybkością czytania i darmowymi narzędziami.","inLanguage":"pl","author":{"@type":"Organization","name":"WordCounterTool"},"publisher":{"@type":"Organization","name":"WordCounterTool"},"datePublished":"2026-04-05","dateModified":"2026-04-05","mainEntityOfPage":"https://www.wordcountertool.net/blog/how-to-count-words-in-polish"})}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.wordcountertool.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.wordcountertool.net/blog"},{"@type":"ListItem","position":3,"name":"Jak liczyć słowa po polsku: kompletny przewodnik (2026)","item":"https://www.wordcountertool.net/blog/how-to-count-words-in-polish"}]})}} />
 
       <Footer />
     </>

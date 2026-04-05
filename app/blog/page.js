@@ -130,12 +130,12 @@ const langSections = [
     { slug: 'korean-writing-tips-for-better-content', title: '더 나은 한국어 웹 글쓰기를 위한 15가지 팁 (2026년판)' }
   ]},
   { key: 'polish', name: 'Polish', native: 'Polski', flag: '🇵🇱', tool: '/word-counter/language/polish', posts: [
-    { slug: 'common-polish-writing-mistakes', title: '10 Common Polish Writing Mistakes and How to Fix Them (2026)' },
-    { slug: 'how-to-count-words-in-polish', title: 'How to Count Words in Polish: Complete Guide (2026)' },
-    { slug: 'polish-character-count-guide', title: 'Polish Character Count: Everything You Need to Know (2026)' },
-    { slug: 'polish-content-length-guide', title: 'Polish Content Length Guide: How Many Words Do You Need? (2026)' },
-    { slug: 'polish-seo-content-strategy', title: 'Polish SEO Content Strategy: Rank Higher in Polish Search (2026)' },
-    { slug: 'polish-writing-tips-for-better-content', title: 'Polish Writing Tips: How to Write Better Content in Polish (2026)' }
+    { slug: 'common-polish-writing-mistakes', title: '15 najczęstszych błędów w pisaniu po polsku i jak ich unikać (2026)' },
+    { slug: 'how-to-count-words-in-polish', title: 'Jak liczyć słowa po polsku: kompletny przewodnik (2026)' },
+    { slug: 'polish-character-count-guide', title: 'Liczenie znaków po polsku: kompletny przewodnik z limitami platform (2026)' },
+    { slug: 'polish-content-length-guide', title: 'Optymalna długość tekstu po polsku: przewodnik oparty na danych (2026)' },
+    { slug: 'polish-seo-content-strategy', title: 'Strategia SEO dla polskich treści: kompletny przewodnik (2026)' },
+    { slug: 'polish-writing-tips-for-better-content', title: '15 porad na lepsze polskie teksty internetowe (2026)' }
   ]},
   { key: 'portuguese', name: 'Portuguese', native: 'Português', flag: '🇧🇷', tool: '/word-counter/language/portuguese', posts: [
     { slug: 'common-portuguese-writing-mistakes', title: 'Os 15 erros mais comuns na escrita em português e como evitá-los (2026)' },
