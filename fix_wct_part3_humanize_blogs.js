@@ -103,8 +103,8 @@ const AI_REPLACEMENTS = [
   [/Nevertheless, /g, 'Still, '],
   [/Notwithstanding, /g, 'Even so, '],
 
-  // Fix common doubled punctuation
-  [/\.\./g, '.'],
+  // Fix common doubled punctuation (but NOT ../ in import paths)
+  [/\.\.(?![\\/])/g, '.'],
   [/,,/g, ','],
 ];
 
@@ -462,6 +462,57 @@ fs.readdirSync(blogDir).forEach(slug => {
   }
 });
 console.log(`  ✅ Added ArticleSchema to ${schemaAdded} blog posts`);
+
+// ═══════════════════════════════════════════════════════════════════════
+// SAFETY: Fix any import paths corrupted by regex replacements
+// ═══════════════════════════════════════════════════════════════════════
+console.log('');
+console.log('── Safety: verifying import paths ──');
+
+let importFixes = 0;
+function findAllPages(dir, results = []) {
+  if (!fs.existsSync(dir)) return results;
+  fs.readdirSync(dir).forEach(item => {
+    if (item === 'node_modules' || item === '.next') return;
+    const full = path.join(dir, item);
+    if (fs.statSync(full).isDirectory()) findAllPages(full, results);
+    else if (item === 'page.js') results.push(full);
+  });
+  return results;
+}
+
+findAllPages(APP).forEach(pg => {
+  let c = fs.readFileSync(pg, 'utf8');
+  const before = c;
+
+  const relFromApp = path.relative(APP, path.dirname(pg)).replace(/\\/g, '/');
+  const depth = (relFromApp === '' || relFromApp === '.') ? 0 : relFromApp.split('/').length;
+  const rootPrefix = '../'.repeat(depth + 1);
+  const appPrefix = '../'.repeat(depth);
+
+  // Fix corrupted paths like ./././components/ or ././components/
+  ['Header', 'Footer', 'FaqSchema', 'BreadcrumbSchema', 'WebAppSchema'].forEach(comp => {
+    const badPattern = new RegExp(`from ['"](\\.\\/?)+components/${comp}['"]`, 'g');
+    c = c.replace(badPattern, `from '${rootPrefix}components/${comp}'`);
+  });
+
+  ['AdUnit', 'AuthorSchema', 'HreflangTags'].forEach(comp => {
+    const badPattern = new RegExp(`from ['"](\\.\\/?)+components/${comp}['"]`, 'g');
+    c = c.replace(badPattern, `from '${appPrefix}components/${comp}'`);
+  });
+
+  // Fix ArticleSchema destructured import
+  c = c.replace(
+    /from ['"](\.\/?)+components\/AuthorSchema['"]/g,
+    `from '${appPrefix}components/AuthorSchema'`
+  );
+
+  if (c !== before) {
+    fs.writeFileSync(pg, c, 'utf8');
+    importFixes++;
+  }
+});
+console.log(`  ✅ Verified/fixed import paths in ${importFixes} files`);
 
 // ═══════════════════════════════════════════════════════════════════════
 // SUMMARY

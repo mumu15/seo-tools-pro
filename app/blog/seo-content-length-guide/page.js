@@ -1,9 +1,9 @@
-import Header from './././components/Header'
-import { ArticleSchema } from '../../../components/AuthorSchema'
-import AdUnit from '././components/AdUnit'
-import Footer from './././components/Footer'
+import Header from '../../../components/Header'
+import { ArticleSchema } from '../../components/AuthorSchema'
+import AdUnit from '../../components/AdUnit'
+import Footer from '../../../components/Footer'
 import Link from 'next/link'
-import FaqSchema from './././components/FaqSchema'
+import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog/seo-content-length-guide' },

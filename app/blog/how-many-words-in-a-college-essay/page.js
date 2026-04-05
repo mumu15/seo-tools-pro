@@ -1,6 +1,6 @@
 import Post from './PageClient'
-import { ArticleSchema } from '../../../components/AuthorSchema'
-import AdUnit from './././components/AdUnit'
+import { ArticleSchema } from '../../components/AuthorSchema'
+import AdUnit from '../../components/AdUnit'
 
 export const metadata = {
   title: 'How Many Words in a College Essay? Complete 2026 Guide | WordCounterTool.net',

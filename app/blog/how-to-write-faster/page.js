@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import { ArticleSchema } from '../../../components/AuthorSchema'
-import Header from './././components/Header'
-import Footer from './././components/Footer'
-import AdUnit from '././components/AdUnit'
-import FaqSchema from './././components/FaqSchema'
+import { ArticleSchema } from '../../components/AuthorSchema'
+import Header from '../../../components/Header'
+import Footer from '../../../components/Footer'
+import AdUnit from '../../components/AdUnit'
+import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
   title: 'How to Write Faster: 12 Proven Techniques to Double Your Speed | WordCounterTool.net',

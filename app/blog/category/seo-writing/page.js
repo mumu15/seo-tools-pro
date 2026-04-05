@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Header from '../../../../components/Header'
 import Footer from '../../../../components/Footer'
-import AdUnit from '../../../../components/AdUnit'
+import AdUnit from '../../../components/AdUnit'
 import BreadcrumbSchema from '../../../../components/BreadcrumbSchema'
 
 export const metadata = {

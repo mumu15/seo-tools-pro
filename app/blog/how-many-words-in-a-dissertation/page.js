@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import { ArticleSchema } from '../../../components/AuthorSchema'
-import Header from './././components/Header'
-import Footer from './././components/Footer'
-import AdUnit from '././components/AdUnit'
-import FaqSchema from './././components/FaqSchema'
+import { ArticleSchema } from '../../components/AuthorSchema'
+import Header from '../../../components/Header'
+import Footer from '../../../components/Footer'
+import AdUnit from '../../components/AdUnit'
+import FaqSchema from '../../../components/FaqSchema'
 
 export const metadata = {
   title: 'How Many Words in a Dissertation? (PhD & Masters Guide 2026) | WordCounterTool.net',
