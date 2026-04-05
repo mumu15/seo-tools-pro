@@ -45,7 +45,7 @@ export function AnchorAd() {
         className="adsbygoogle"
         style={{ display: 'block' }}
         data-ad-client="ca-pub-8934829211507329"
-        data-ad-slot="ANCHOR_SLOT"
+        data-ad-slot="3248634657"
         data-ad-format="autorelaxed"
         data-full-width-responsive="true"
       />

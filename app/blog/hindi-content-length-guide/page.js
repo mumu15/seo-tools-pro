@@ -64,17 +64,17 @@ export default function Post() {
       <rect x="180" y="80" width="100" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
       <text x="286" y="98" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>30% page 1</text>
               <text x="4" y="134" fill="#94a3b8" style={{fontSize:'12px'}}>1200-1800</text>
-      <rect x="180" y="116" width="193.33333333333334" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="379.33333333333337" y="134" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>58% page 1</text>
+      <rect x="180" y="116" width="193.37636399773334" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
+      <text x="379.37636399773337" y="134" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>58% page 1</text>
               <text x="4" y="170" fill="#94a3b8" style={{fontSize:'12px'}}>1800-2500</text>
-      <rect x="180" y="152" width="273.3333333333333" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="459.3333333333333" y="170" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>82% page 1</text>
+      <rect x="180" y="152" width="273.3763639977333" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
+      <text x="459.3763639977333" y="170" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>82% page 1</text>
               <text x="4" y="206" fill="#94a3b8" style={{fontSize:'12px'}}>2500-3500</text>
       <rect x="180" y="188" width="300" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
       <text x="486" y="206" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>90% page 1</text>
               <text x="4" y="242" fill="#94a3b8" style={{fontSize:'12px'}}>3500+</text>
-      <rect x="180" y="224" width="233.33333333333334" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="419.33333333333337" y="242" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>70% page 1</text>
+      <rect x="180" y="224" width="233.37636399773334" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
+      <text x="419.37636399773337" y="242" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>70% page 1</text>
               </svg>
             </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">Data clear है: 1,800-2,500 शब्दों के हिंदी articles सबसे ज्यादा rank करते हैं। 3,500+ शब्दों पर performance थोड़ी गिरती है — शायद इसलिए कि mobile users इतना लंबा content पूरा नहीं पढ़ते और bounce rate बढ़ जाता है।</p>

@@ -126,8 +126,8 @@ export default function Post() {
       <rect x="180" y="116" width="52.77777777777778" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
       <text x="238.77777777777777" y="134" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>95M</text>
               <text x="4" y="170" fill="#94a3b8" style={{fontSize:'12px'}}>तमिल</text>
-      <rect x="180" y="152" width="44.44444444444444" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="230.44444444444446" y="170" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>80M</text>
+      <rect x="180" y="152" width="44.32486346574444" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
+      <text x="230.32486346574446" y="170" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>80M</text>
               <text x="4" y="206" fill="#94a3b8" style={{fontSize:'12px'}}>तेलुगु</text>
       <rect x="180" y="188" width="41.66666666666667" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
       <text x="227.66666666666669" y="206" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>75M</text>

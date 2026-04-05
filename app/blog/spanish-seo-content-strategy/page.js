@@ -51,8 +51,8 @@ export default function Post() {
       <rect x="160" y="44" width="340" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
       <text x="506" y="62" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1500M</text>
               <text x="4" y="98" fill="#94a3b8" style={{fontSize:'12px'}}>Chino</text>
-      <rect x="160" y="80" width="249.33333333333331" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="415.3333333333333" y="98" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1100M</text>
+      <rect x="160" y="80" width="249.37636399773331" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
+      <text x="415.3763639977333" y="98" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1100M</text>
               <text x="4" y="134" fill="#94a3b8" style={{fontSize:'12px'}}>Español</text>
       <rect x="160" y="116" width="95.2" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
       <text x="261.2" y="134" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>420M</text>
@@ -63,8 +63,8 @@ export default function Post() {
       <rect x="160" y="188" width="54.4" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
       <text x="220.4" y="206" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>240M</text>
               <text x="4" y="242" fill="#94a3b8" style={{fontSize:'12px'}}>Francés</text>
-      <rect x="160" y="224" width="45.333333333333336" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="211.33333333333334" y="242" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>200M</text>
+      <rect x="160" y="224" width="45.376363997733336" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
+      <text x="211.37636399773334" y="242" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>200M</text>
               </svg>
             </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">El español es el tercer idioma más usado en internet con aproximadamente 420 millones de usuarios, según datos de Internet World Stats. Pero aquí viene lo interesante: mientras que en inglés hay miles de sitios compitiendo por cada keyword, en español la competencia es drásticamente menor. Un término como "mortgage calculator" tiene una dificultad SEO de 85/100 en inglés. Su equivalente "calculadora de hipoteca" tiene una dificultad de 35/100 en español. La misma calidad de contenido, la tercera parte de la dificultad.</p>

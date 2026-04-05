@@ -64,20 +64,20 @@ export default function Post() {
       <rect x="160" y="80" width="226.66666666666666" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
       <text x="392.66666666666663" y="98" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>800</text>
               <text x="4" y="134" fill="#94a3b8" style={{fontSize:'12px'}}>Inglés (base)</text>
-      <rect x="160" y="116" width="283.33333333333337" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="449.33333333333337" y="134" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1000</text>
+      <rect x="160" y="116" width="283.37636399773337" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
+      <text x="449.37636399773337" y="134" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1000</text>
               <text x="4" y="170" fill="#94a3b8" style={{fontSize:'12px'}}>Alemán</text>
       <rect x="160" y="152" width="297.5" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
       <text x="463.5" y="170" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1050</text>
               <text x="4" y="206" fill="#94a3b8" style={{fontSize:'12px'}}>Francés</text>
-      <rect x="160" y="188" width="325.83333333333337" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="491.83333333333337" y="206" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1150</text>
+      <rect x="160" y="188" width="325.83763639977337" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
+      <text x="491.83763639977337" y="206" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1150</text>
               <text x="4" y="242" fill="#94a3b8" style={{fontSize:'12px'}}>Español</text>
       <rect x="160" y="224" width="340" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
       <text x="506" y="242" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1200</text>
               <text x="4" y="278" fill="#94a3b8" style={{fontSize:'12px'}}>Portugués</text>
-      <rect x="160" y="260" width="334.3333333333333" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
-      <text x="500.3333333333333" y="278" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1180</text>
+      <rect x="160" y="260" width="334.3763639977333" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
+      <text x="500.3763639977333" y="278" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>1180</text>
               <text x="4" y="314" fill="#94a3b8" style={{fontSize:'12px'}}>Árabe</text>
       <rect x="160" y="296" width="269.16666666666663" height="28" rx="4" fill="rgba(52,211,153,0.25)" />
       <text x="435.16666666666663" y="314" fill="#34d399" style={{fontSize:'12px',fontWeight:'600'}}>950</text>

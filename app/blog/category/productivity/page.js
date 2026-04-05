@@ -42,7 +42,7 @@ export default function CategoryPage() {
         <h1 className="text-3xl md:text-4xl font-display font-bold text-white mb-3">⚡ Speed & productivity</h1>
         <p className="text-lg text-slate-400 mb-8">Typing speed, reading speed, writing faster, and productivity tools.</p>
 
-        <AdUnit slot="3333333333" />
+        <AdUnit slot="3763639977" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
           {posts.map(post => (
@@ -56,7 +56,7 @@ export default function CategoryPage() {
           ))}
         </div>
 
-        <AdUnit slot="4444444444" />
+        <AdUnit slot="3248634657" />
       </main>
 
         <AdUnit slot="3248634657" />
