@@ -1,210 +1,290 @@
 import Link from 'next/link'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import AdUnit from '../components/AdUnit'
+
+const englishPosts = [
+  { slug: 'average-reading-speed', title: 'Average Reading Speed: How Fast Do People Read? (2026)' },
+    { slug: 'average-typing-speed', title: 'Average Typing Speed: What is Good WPM in 2026?' },
+    { slug: 'best-ai-writing-tools-2026', title: 'Best AI Writing Tools in 2026: Complete Comparison | WordCounterTool.net' },
+    { slug: 'best-free-writing-tools-2026', title: 'Best Free Writing Tools in 2026: The Complete List | WordCounterTool.net' },
+    { slug: 'chatgpt-prompt-length', title: 'ChatGPT Prompt Length: How Long Should Your Prompts Be? (2026) | WordCounterTool.net' },
+    { slug: 'ebook-word-count-guide', title: 'Ebook Word Count: How Long Should Your Ebook Be? (2026) | WordCounterTool.net' },
+    { slug: 'email-length-best-practices', title: 'Email Length Best Practices: How Long Should an Email Be? (2026) | WordCounterTool.net' },
+    { slug: 'google-ads-character-limits', title: 'Google Ads Character Limits 2026: Every Ad Type Explained | WordCounterTool.net' },
+    { slug: 'how-long-should-a-youtube-script-be', title: 'How Long Should a YouTube Script Be? Word Count by Video Length | WordCounterTool.net' },
+    { slug: 'how-many-characters-in-a-tweet', title: 'How Many Characters in a Tweet? (Twitter/X Limits 2026)' },
+    { slug: 'how-many-hashtags-to-use', title: 'How Many Hashtags to Use on Instagram, Twitter and LinkedIn (2026)' },
+    { slug: 'how-many-words-in-a-blog-post', title: 'How Many Words Should a Blog Post Be? (2026 SEO Data) | WordCounterTool.net' },
+    { slug: 'how-many-words-in-a-college-essay', title: 'How Many Words in a College Essay? Complete 2026 Guide | WordCounterTool.net' },
+    { slug: 'how-many-words-in-a-cover-letter', title: 'How Many Words Should a Cover Letter Be? (2026 Guide)' },
+    { slug: 'how-many-words-in-a-dissertation', title: 'How Many Words in a Dissertation? (PhD & Masters Guide 2026) | WordCounterTool.net' },
+    { slug: 'how-many-words-in-a-grant-proposal', title: 'How Many Words in a Grant Proposal? (Complete 2026 Guide) | WordCounterTool.net' },
+    { slug: 'how-many-words-in-a-novel', title: 'How Many Words in a Novel? Word Counts for Every Genre' },
+    { slug: 'how-many-words-in-a-paragraph', title: 'How Many Words Should a Paragraph Be? (The Complete Guide)' },
+    { slug: 'how-many-words-in-a-personal-statement', title: 'How Many Words in a Personal Statement? (2026 Guide) | WordCounterTool.net' },
+    { slug: 'how-many-words-in-a-podcast-episode', title: 'How Many Words in a Podcast Episode? (Word Count Calculator) | WordCounterTool.net' },
+    { slug: 'how-many-words-in-a-resume', title: 'How Many Words Should a Resume Be? (2026 Guide)' },
+    { slug: 'how-many-words-in-a-short-story', title: 'How Many Words in a Short Story? (Word Count Guide for Every Format)' },
+    { slug: 'how-many-words-in-a-speech', title: 'How Many Words in a 5, 10, 15 Minute Speech? (Word Count Calculator)' },
+    { slug: 'how-many-words-per-page', title: 'How Many Words Per Page? Complete Guide (2026)' },
+    { slug: 'how-to-count-words-online', title: 'How to Count Words Online: The Complete Free Guide (2026)' },
+    { slug: 'how-to-improve-readability-score', title: 'How to Improve Your Readability Score (Flesch-Kincaid Guide)' },
+    { slug: 'how-to-type-faster', title: 'How to Type Faster: 10 Proven Tips to Boost Your Typing Speed (2026)' },
+    { slug: 'how-to-use-keywords-in-blog-posts', title: 'How to Use Keywords in Blog Posts: The Right Way (2026)' },
+    { slug: 'how-to-write-blog-conclusion', title: 'How to Write a Blog Post Conclusion That Keeps Readers Coming Back' },
+    { slug: 'how-to-write-blog-introduction', title: 'How to Write a Blog Introduction That Hooks Readers (7 Proven Formulas)' },
+    { slug: 'how-to-write-email-subject-lines', title: 'How to Write Email Subject Lines That Get Opened (2026)' },
+    { slug: 'how-to-write-faster', title: 'How to Write Faster: 12 Proven Techniques to Double Your Speed | WordCounterTool.net' },
+    { slug: 'how-to-write-for-skimmable-content', title: 'How to Write Skimmable Content That Readers Actually Finish' },
+    { slug: 'how-to-write-headline-formulas', title: '15 Headline Formulas That Get Clicks (With Examples)' },
+    { slug: 'how-to-write-meta-descriptions', title: 'How to Write Perfect Meta Descriptions That Get Clicks (2026)' },
+    { slug: 'how-to-write-product-descriptions', title: 'How to Write Product Descriptions That Sell (Complete Guide 2026)' },
+    { slug: 'how-to-write-seo-title-tags', title: 'How to Write SEO Title Tags That Rank and Get Clicks (2026 Guide)' },
+    { slug: 'how-to-write-twitter-thread', title: 'How to Write a Twitter Thread That Goes Viral (2026 Guide)' },
+    { slug: 'how-to-write-wedding-speech', title: 'How to Write a Wedding Speech: Word Count, Structure, and Tips (2026) | WordCounterTool.net' },
+    { slug: 'ideal-blog-post-length-for-seo', title: 'Ideal Blog Post Length for SEO in 2026' },
+    { slug: 'ideal-linkedin-post-length', title: 'The Ideal LinkedIn Post Length for Maximum Engagement (2026 Data) | WordCounterTool.net' },
+    { slug: 'instagram-caption-length', title: 'Instagram Caption Length: How Long Should Your Caption Be? (2026)' },
+    { slug: 'long-tail-keywords-guide', title: 'Long-Tail Keywords: The Complete Beginners Guide (2026)' },
+    { slug: 'reddit-post-length', title: 'Ideal Reddit Post Length for Maximum Upvotes (2026) | WordCounterTool.net' },
+    { slug: 'seo-content-length-guide', title: 'SEO Content Length Guide: How Long Should Every Page Be? (2026)' },
+    { slug: 'substack-newsletter-length', title: 'Ideal Substack Newsletter Length (2026 Data) | WordCounterTool.net' },
+    { slug: 'tiktok-caption-length-guide', title: 'TikTok Caption Length: The Complete Guide (2026) | WordCounterTool.net' },
+    { slug: 'twitter-character-limit-2026', title: 'Twitter/X Character Limit 2026: Everything You Need to Know | WordCounterTool.net' },
+    { slug: 'what-is-flesch-kincaid-score', title: 'What Is Flesch-Kincaid Score? (And How to Improve Yours)' },
+    { slug: 'what-is-keyword-density', title: 'What is Keyword Density? The Complete SEO Guide (2026)' },
+    { slug: 'words-per-minute-reading-guide', title: 'Words Per Minute Reading: Average Speeds and How to Read Faster (2026)' }
+]
+
+const langSections = [
+  { key: 'arabic', name: 'Arabic', native: 'العربية', flag: '🇸🇦', tool: '/word-counter/language/arabic', posts: [
+    { slug: 'arabic-character-count-guide', title: 'دليل عد الحروف العربية: لوسائل التواصل والإعلانات و SEO (2026)' },
+    { slug: 'arabic-content-length-guide', title: 'دليل طول المحتوى العربي: كم كلمة تحتاج لكل نوع؟ (2026)' },
+    { slug: 'arabic-seo-content-strategy', title: 'استراتيجية SEO للمحتوى العربي: كيف تتصدر نتائج Google (2026)' },
+    { slug: 'arabic-writing-tips-for-better-content', title: 'نصائح الكتابة العربية: 15 تقنية لمحتوى احترافي (2026)' },
+    { slug: 'common-arabic-writing-mistakes', title: 'أخطاء الكتابة الشائعة في العربية: 15 خطأ وكيفية تصحيحها (2026)' },
+    { slug: 'how-to-count-words-in-arabic', title: 'كيفية عد الكلمات في اللغة العربية: الدليل الشامل (2026)' }
+  ]},
+  { key: 'chinese', name: 'Chinese', native: '中文', flag: '🇨🇳', tool: '/word-counter/language/chinese', posts: [
+    { slug: 'chinese-character-count-guide', title: '中文字符计数完整指南：汉字、标点与各平台限制（2026）' },
+    { slug: 'chinese-content-length-guide', title: '中文内容的最佳长度：基于数据的写作指南（2026）' },
+    { slug: 'chinese-seo-content-strategy', title: '中文SEO内容策略：百度与Google双平台优化指南（2026）' },
+    { slug: 'chinese-writing-tips-for-better-content', title: '15个提升中文在线写作质量的实用技巧（2026）' },
+    { slug: 'common-chinese-writing-mistakes', title: '中文写作中最常见的15个错误及纠正方法（2026年完整指南）' },
+    { slug: 'how-to-count-words-in-chinese', title: '如何统计中文字数：字数、字符数与词数的完整指南（2026）' }
+  ]},
+  { key: 'dutch', name: 'Dutch', native: 'Nederlands', flag: '🇳🇱', tool: '/word-counter/language/dutch', posts: [
+    { slug: 'common-dutch-writing-mistakes', title: '10 Common Dutch Writing Mistakes and How to Fix Them (2026)' },
+    { slug: 'dutch-character-count-guide', title: 'Dutch Character Count: Everything You Need to Know (2026)' },
+    { slug: 'dutch-content-length-guide', title: 'Dutch Content Length Guide: How Many Words Do You Need? (2026)' },
+    { slug: 'dutch-seo-content-strategy', title: 'Dutch SEO Content Strategy: Rank Higher in Dutch Search (2026)' },
+    { slug: 'dutch-writing-tips-for-better-content', title: 'Dutch Writing Tips: How to Write Better Content in Dutch (2026)' },
+    { slug: 'how-to-count-words-in-dutch', title: 'How to Count Words in Dutch: Complete Guide (2026)' }
+  ]},
+  { key: 'french', name: 'French', native: 'Français', flag: '🇫🇷', tool: '/word-counter/language/french', posts: [
+    { slug: 'common-french-writing-mistakes', title: 'Les 15 erreurs les plus courantes en français écrit et comment les corriger (2026)' },
+    { slug: 'french-character-count-guide', title: 'Guide du comptage de caractères en français : réseaux sociaux et SEO (2026)' },
+    { slug: 'french-content-length-guide', title: 'Guide de la longueur de contenu en français : combien de mots faut-il ? (2026)' },
+    { slug: 'french-seo-content-strategy', title: 'Stratégie SEO en français : comment se positionner sur Google (2026)' },
+    { slug: 'french-writing-tips-for-better-content', title: '15 conseils pour mieux écrire en français : guide du contenu professionnel (2026)' },
+    { slug: 'how-to-count-words-in-french', title: 'Comment compter les mots en français : guide complet (2026)' }
+  ]},
+  { key: 'german', name: 'German', native: 'Deutsch', flag: '🇩🇪', tool: '/word-counter/language/german', posts: [
+    { slug: 'common-german-writing-mistakes', title: 'Die 15 häufigsten deutschen Schreibfehler und wie du sie vermeidest (2026)' },
+    { slug: 'german-character-count-guide', title: 'Zeichen zählen auf Deutsch: Kompletter Guide mit Plattform-Limits (2026)' },
+    { slug: 'german-content-length-guide', title: 'Die optimale Textlänge auf Deutsch: Datenbasierter Guide für 2026' },
+    { slug: 'german-seo-content-strategy', title: 'SEO-Content-Strategie für den deutschen Markt: Datenbasierter Guide (2026)' },
+    { slug: 'german-writing-tips-for-better-content', title: '15 Schreibtipps für bessere deutsche Online-Texte (2026)' },
+    { slug: 'how-to-count-words-in-german', title: 'Wörter zählen auf Deutsch: Der komplette Leitfaden für 2026' }
+  ]},
+  { key: 'hindi', name: 'Hindi', native: 'हिन्दी', flag: '🇮🇳', tool: '/word-counter/language/hindi', posts: [
+    { slug: 'common-hindi-writing-mistakes', title: 'हिंदी लेखन की 15 सबसे आम गलतियां और उन्हें कैसे सुधारें (2026)' },
+    { slug: 'hindi-character-count-guide', title: 'हिंदी अक्षर गणना गाइड: सोशल मीडिया और SEO (2026)' },
+    { slug: 'hindi-content-length-guide', title: 'हिंदी कंटेंट की सही लंबाई: हर फॉर्मेट के लिए गाइड (2026)' },
+    { slug: 'hindi-seo-content-strategy', title: 'हिंदी SEO स्ट्रैटेजी: Google में रैंक कैसे करें (2026)' },
+    { slug: 'hindi-writing-tips-for-better-content', title: 'हिंदी लेखन के 15 टिप्स: बेहतर कंटेंट लिखने की कला (2026)' },
+    { slug: 'how-to-count-words-in-hindi', title: 'हिंदी में शब्द कैसे गिनें: संपूर्ण गाइड (2026)' }
+  ]},
+  { key: 'italian', name: 'Italian', native: 'Italiano', flag: '🇮🇹', tool: '/word-counter/language/italian', posts: [
+    { slug: 'common-italian-writing-mistakes', title: '10 Common Italian Writing Mistakes and How to Fix Them (2026)' },
+    { slug: 'how-to-count-words-in-italian', title: 'How to Count Words in Italian: Complete Guide (2026)' },
+    { slug: 'italian-character-count-guide', title: 'Italian Character Count: Everything You Need to Know (2026)' },
+    { slug: 'italian-content-length-guide', title: 'Italian Content Length Guide: How Many Words Do You Need? (2026)' },
+    { slug: 'italian-seo-content-strategy', title: 'Italian SEO Content Strategy: Rank Higher in Italian Search (2026)' },
+    { slug: 'italian-writing-tips-for-better-content', title: 'Italian Writing Tips: How to Write Better Content in Italian (2026)' }
+  ]},
+  { key: 'japanese', name: 'Japanese', native: '日本語', flag: '🇯🇵', tool: '/word-counter/language/japanese', posts: [
+    { slug: 'common-japanese-writing-mistakes', title: '日本語ライティングでよくある15の間違いと改善方法（2026年版）' },
+    { slug: 'how-to-count-words-in-japanese', title: '日本語の文字数カウント方法：完全ガイド（2026年版）' },
+    { slug: 'japanese-character-count-guide', title: '日本語の文字数チェック完全ガイド：プラットフォーム別制限一覧（2026）' },
+    { slug: 'japanese-content-length-guide', title: '日本語コンテンツの最適な文字数：データに基づく完全ガイド（2026）' },
+    { slug: 'japanese-seo-content-strategy', title: '日本語SEOコンテンツ戦略：Google＆Yahoo!最適化ガイド（2026）' },
+    { slug: 'japanese-writing-tips-for-better-content', title: 'より良い日本語Webライティングのための15のコツ（2026年版）' }
+  ]},
+  { key: 'korean', name: 'Korean', native: '한국어', flag: '🇰🇷', tool: '/word-counter/language/korean', posts: [
+    { slug: 'common-korean-writing-mistakes', title: '한국어 글쓰기에서 가장 흔한 15가지 실수와 교정 방법 (2026년 가이드)' },
+    { slug: 'how-to-count-words-in-korean', title: '한국어 글자수 세기: 완벽 가이드 (2026년 최신판)' },
+    { slug: 'korean-character-count-guide', title: '한국어 글자수 체크 완벽 가이드: 플랫폼별 제한 총정리 (2026)' },
+    { slug: 'korean-content-length-guide', title: '한국어 콘텐츠 최적 길이: 데이터 기반 가이드 (2026)' },
+    { slug: 'korean-seo-content-strategy', title: '한국어 SEO 콘텐츠 전략: 네이버 + 구글 동시 최적화 (2026)' },
+    { slug: 'korean-writing-tips-for-better-content', title: '더 나은 한국어 웹 글쓰기를 위한 15가지 팁 (2026년판)' }
+  ]},
+  { key: 'polish', name: 'Polish', native: 'Polski', flag: '🇵🇱', tool: '/word-counter/language/polish', posts: [
+    { slug: 'common-polish-writing-mistakes', title: '10 Common Polish Writing Mistakes and How to Fix Them (2026)' },
+    { slug: 'how-to-count-words-in-polish', title: 'How to Count Words in Polish: Complete Guide (2026)' },
+    { slug: 'polish-character-count-guide', title: 'Polish Character Count: Everything You Need to Know (2026)' },
+    { slug: 'polish-content-length-guide', title: 'Polish Content Length Guide: How Many Words Do You Need? (2026)' },
+    { slug: 'polish-seo-content-strategy', title: 'Polish SEO Content Strategy: Rank Higher in Polish Search (2026)' },
+    { slug: 'polish-writing-tips-for-better-content', title: 'Polish Writing Tips: How to Write Better Content in Polish (2026)' }
+  ]},
+  { key: 'portuguese', name: 'Portuguese', native: 'Português', flag: '🇧🇷', tool: '/word-counter/language/portuguese', posts: [
+    { slug: 'common-portuguese-writing-mistakes', title: 'Os 15 erros mais comuns na escrita em português e como evitá-los (2026)' },
+    { slug: 'how-to-count-words-in-portuguese', title: 'Como contar palavras em português: guia completo para 2026' },
+    { slug: 'portuguese-character-count-guide', title: 'Contagem de caracteres em português: guia com limites de plataformas (2026)' },
+    { slug: 'portuguese-content-length-guide', title: 'Tamanho ideal de texto em português: guia com dados reais (2026)' },
+    { slug: 'portuguese-seo-content-strategy', title: 'Estratégia de SEO para conteúdo em português: guia completo (2026)' },
+    { slug: 'portuguese-writing-tips-for-better-content', title: '15 dicas para escrever melhor em português na web (2026)' }
+  ]},
+  { key: 'russian', name: 'Russian', native: 'Русский', flag: '🇷🇺', tool: '/word-counter/language/russian', posts: [
+    { slug: 'common-russian-writing-mistakes', title: '10 Common Russian Writing Mistakes and How to Fix Them (2026)' },
+    { slug: 'how-to-count-words-in-russian', title: 'How to Count Words in Russian: Complete Guide (2026)' },
+    { slug: 'russian-character-count-guide', title: 'Russian Character Count: Everything You Need to Know (2026)' },
+    { slug: 'russian-content-length-guide', title: 'Russian Content Length Guide: How Many Words Do You Need? (2026)' },
+    { slug: 'russian-seo-content-strategy', title: 'Russian SEO Content Strategy: Rank Higher in Russian Search (2026)' },
+    { slug: 'russian-writing-tips-for-better-content', title: 'Russian Writing Tips: How to Write Better Content in Russian (2026)' }
+  ]},
+  { key: 'spanish', name: 'Spanish', native: 'Español', flag: '🇪🇸', tool: '/word-counter/language/spanish', posts: [
+    { slug: 'common-spanish-writing-mistakes', title: 'Errores Comunes al Escribir en Español: Guía Completa (2026)' },
+    { slug: 'how-to-count-words-in-spanish', title: 'Cómo Contar Palabras en Español: Guía Definitiva (2026)' },
+    { slug: 'spanish-character-count-guide', title: 'Conteo de Caracteres en Español: Guía Completa para Redes y SEO (2026)' },
+    { slug: 'spanish-content-length-guide', title: 'Longitud de Contenido en Español: ¿Cuántas Palabras Necesitas? (2026)' },
+    { slug: 'spanish-seo-content-strategy', title: 'Estrategia SEO en Español: Cómo Posicionar Contenido en Google (2026)' },
+    { slug: 'spanish-writing-tips-for-better-content', title: 'Consejos de Escritura en Español: 15 Técnicas para Contenido Profesional (2026)' }
+  ]},
+  { key: 'swedish', name: 'Swedish', native: 'Svenska', flag: '🇸🇪', tool: '/word-counter/language/swedish', posts: [
+    { slug: 'common-swedish-writing-mistakes', title: '10 Common Swedish Writing Mistakes and How to Fix Them (2026)' },
+    { slug: 'how-to-count-words-in-swedish', title: 'How to Count Words in Swedish: Complete Guide (2026)' },
+    { slug: 'swedish-character-count-guide', title: 'Swedish Character Count: Everything You Need to Know (2026)' },
+    { slug: 'swedish-content-length-guide', title: 'Swedish Content Length Guide: How Many Words Do You Need? (2026)' },
+    { slug: 'swedish-seo-content-strategy', title: 'Swedish SEO Content Strategy: Rank Higher in Swedish Search (2026)' },
+    { slug: 'swedish-writing-tips-for-better-content', title: 'Swedish Writing Tips: How to Write Better Content in Swedish (2026)' }
+  ]},
+  { key: 'turkish', name: 'Turkish', native: 'Türkçe', flag: '🇹🇷', tool: '/word-counter/language/turkish', posts: [
+    { slug: 'common-turkish-writing-mistakes', title: '10 Common Turkish Writing Mistakes and How to Fix Them (2026)' },
+    { slug: 'how-to-count-words-in-turkish', title: 'How to Count Words in Turkish: Complete Guide (2026)' },
+    { slug: 'turkish-character-count-guide', title: 'Turkish Character Count: Everything You Need to Know (2026)' },
+    { slug: 'turkish-content-length-guide', title: 'Turkish Content Length Guide: How Many Words Do You Need? (2026)' },
+    { slug: 'turkish-seo-content-strategy', title: 'Turkish SEO Content Strategy: Rank Higher in Turkish Search (2026)' },
+    { slug: 'turkish-writing-tips-for-better-content', title: 'Turkish Writing Tips: How to Write Better Content in Turkish (2026)' }
+  ]}
+]
 
 export const metadata = {
   alternates: { canonical: 'https://www.wordcountertool.net/blog' },
-  title: 'Writing & SEO Blog — Guides, Tips & Data | WordCounterTool.net',
-  description: '51 free guides on word counting, SEO writing, readability, and content optimization. Expert advice backed by data, updated for 2026.',
+  title: 'Blog - 141 Writing, SEO & Language Guides | WordCounterTool',
+  description: '141 free guides on word counting, SEO writing, readability, and content optimization in 16 languages. Expert advice updated for 2026.',
   openGraph: {
-    title: 'Writing & SEO Blog | WordCounterTool.net',
-    description: '51 free guides on word counting, SEO, and writing.',
+    title: 'Blog - 141 Writing & Language Guides | WordCounterTool',
+    description: '141 free guides on word counting, SEO, and writing in 16 languages.',
     url: 'https://www.wordcountertool.net/blog',
-    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+    siteName: 'WordCounterTool',
+    type: 'website',
   },
 }
 
-const categories = [
-  {
-    slug: 'word-count-guides',
-    name: 'Word count guides',
-    desc: 'How many words for essays, novels, resumes, dissertations, and every document type.',
-    icon: '📝',
-    posts: [
-    { slug: 'ebook-word-count-guide', title: 'Ebook Word Count: How Long Should Your Ebook Be? (2026)', desc: 'A short ebook is 5,000-10,000 words. A standard ebook is 10,000-30,000 words. A long ebook is 30,000-50,000 words. Compl', time: 3 },
-    { slug: 'how-many-words-in-a-blog-post', title: 'How Many Words Should a Blog Post Be? (2026 SEO Data)', desc: 'The ideal blog post is 1,500-2,500 words for SEO. Page 1 results average 1,447 words. Complete guide with data.', time: 3 },
-    { slug: 'how-many-words-in-a-college-essay', title: 'How Many Words in a College Essay? Complete 2026 Guide', desc: 'The definitive guide to college essay word counts in 2026. Common App 650 words, supplementals 100-400, UC essays 350.', time: 3 },
-    { slug: 'how-many-words-in-a-cover-letter', title: 'How Many Words Should a Cover Letter Be? (2026 Guide)', desc: 'The perfect cover letter length in 2026. Learn how many words, paragraphs and pages hiring managers want to see in your ', time: 3 },
-    { slug: 'how-many-words-in-a-dissertation', title: 'How Many Words in a Dissertation? (PhD & Masters Guide 2026)', desc: 'Complete guide to dissertation word counts by degree level and field. PhD: 80,000-100,000. Masters: 15,000-25,000. Chapt', time: 3 },
-    { slug: 'how-many-words-in-a-grant-proposal', title: 'How Many Words in a Grant Proposal? (Complete 2026 Guide)', desc: 'Grant proposals are typically 5-25 pages. NIH R01: 12 pages. NSF: 15 pages. Complete word counts by funder and section.', time: 3 },
-    { slug: 'how-many-words-in-a-novel', title: 'How Many Words in a Novel? Word Counts for Every Genre', desc: 'Discover the average word count for novels, short stories, novellas and more. Complete guide to word counts for every ge', time: 3 },
-    { slug: 'how-many-words-in-a-paragraph', title: 'How Many Words Should a Paragraph Be? (The Complete Guide)', desc: 'Learn the ideal paragraph length for blogs, essays, books and web content. Expert tips on paragraph structure for better', time: 3 },
-    { slug: 'how-many-words-in-a-personal-statement', title: 'How Many Words in a Personal Statement? (2026 Guide)', desc: 'UCAS personal statements: 4,000 characters. Graduate school: 500-1,000 words. Medical school: 5,300 characters. Complete', time: 3 },
-    { slug: 'how-many-words-in-a-podcast-episode', title: 'How Many Words in a Podcast Episode? (Word Count Calculator)', desc: 'A 30-minute podcast is ~4,500 words. A 60-minute episode is ~9,000 words. Full guide to podcast word counts, scripting, ', time: 3 },
-    { slug: 'how-many-words-in-a-resume', title: 'How Many Words Should a Resume Be? (2026 Guide)', desc: 'The ideal resume word count for every career level in 2026. Learn how long your resume should be and what hiring manager', time: 3 },
-    { slug: 'how-many-words-in-a-short-story', title: 'How Many Words in a Short Story? (Word Count Guide for Every Format)', desc: 'Discover the exact word count for flash fiction, short stories, novellas and novels. Complete guide for writers submitti', time: 3 },
-    { slug: 'how-many-words-in-a-speech', title: 'How Many Words in a 5, 10, 15 Minute Speech? (Word Count Calculator)', desc: 'Find out exactly how many words you need for a 1, 5, 10, 15, 20 or 30 minute speech. Includes tips for pacing and delive', time: 3 },
-    { slug: 'how-many-words-per-page', title: 'How Many Words Per Page? Complete Guide (2026)', desc: 'Find out exactly how many words per page for any font, font size and spacing. Includes double spaced, single spaced and ', time: 3 }
-    ]
-  },
-  {
-    slug: 'seo-writing',
-    name: 'SEO & content strategy',
-    desc: 'Keyword density, meta descriptions, content length, and ranking strategies.',
-    icon: '🔍',
-    posts: [
-    { slug: 'how-to-improve-readability-score', title: 'How to Improve Your Readability Score (Flesch-Kincaid Guide)', desc: 'Learn exactly how to improve your Flesch-Kincaid readability score with proven techniques that make your content easier ', time: 3 },
-    { slug: 'how-to-use-keywords-in-blog-posts', title: 'How to Use Keywords in Blog Posts: The Right Way (2026)', desc: 'Learn exactly how to use keywords in blog posts for maximum SEO impact in 2026. Includes placement strategy, density tip', time: 3 },
-    { slug: 'how-to-write-meta-descriptions', title: 'How to Write Perfect Meta Descriptions That Get Clicks (2026)', desc: 'Learn how to write compelling meta descriptions that improve your click through rate from Google search results. Include', time: 3 },
-    { slug: 'how-to-write-product-descriptions', title: 'How to Write Product Descriptions That Sell (Complete Guide 2026)', desc: 'Learn how to write product descriptions that convert browsers into buyers. Includes templates, examples and SEO best pra', time: 3 },
-    { slug: 'how-to-write-seo-title-tags', title: 'How to Write SEO Title Tags That Rank and Get Clicks (2026 Guide)', desc: 'Learn how to write perfect SEO title tags in 2026. Includes character limits, keyword placement, formulas and real examp', time: 3 },
-    { slug: 'ideal-blog-post-length-for-seo', title: 'Ideal Blog Post Length for SEO in 2026', desc: 'Discover the perfect blog post length for ranking on Google in 2026. Data driven analysis of word counts that rank on pa', time: 3 },
-    { slug: 'long-tail-keywords-guide', title: 'Long-Tail Keywords: The Complete Beginners Guide (2026)', desc: 'Learn what long-tail keywords are, why they drive more traffic than short keywords, and how to find and use them to rank', time: 3 },
-    { slug: 'seo-content-length-guide', title: 'SEO Content Length Guide: How Long Should Every Page Be? (2026)', desc: 'The definitive 2026 guide to SEO content length for every page type — blog posts, product pages, homepages, landing page', time: 3 },
-    { slug: 'what-is-flesch-kincaid-score', title: 'What Is Flesch-Kincaid Score? (And How to Improve Yours)', desc: 'Understand the Flesch-Kincaid readability score and how it affects your SEO and reader engagement. Includes formulas, be', time: 3 },
-    { slug: 'what-is-keyword-density', title: 'What is Keyword Density? The Complete SEO Guide (2026)', desc: 'Learn what keyword density is, what the ideal percentage is, and how to optimize your content for search engines without', time: 3 }
-    ]
-  },
-  {
-    slug: 'social-media',
-    name: 'Social media writing',
-    desc: 'Character limits, caption lengths, and hashtag strategies for every platform.',
-    icon: '📱',
-    posts: [
-    { slug: 'chatgpt-prompt-length', title: 'ChatGPT Prompt Length: How Long Should Your Prompts Be? (2026)', desc: 'ChatGPT input limit is ~128,000 tokens. The optimal prompt is 50-500 words. Complete guide to prompt length and structur', time: 3 },
-    { slug: 'email-length-best-practices', title: 'Email Length Best Practices: How Long Should an Email Be? (2026)', desc: 'The ideal email length for business, marketing, cold outreach, and follow-ups. Data shows 50-125 words get the best resp', time: 3 },
-    { slug: 'google-ads-character-limits', title: 'Google Ads Character Limits 2026: Every Ad Type Explained', desc: 'Complete guide to Google Ads character limits in 2026. Headlines (30 chars), descriptions (90 chars), responsive ads, di', time: 3 },
-    { slug: 'how-many-characters-in-a-tweet', title: 'How Many Characters in a Tweet? (Twitter/X Limits 2026)', desc: 'Everything about Twitter X character limits in 2026. Standard tweets, replies, DMs, bios, display names and Twitter Blue', time: 3 },
-    { slug: 'how-many-hashtags-to-use', title: 'How Many Hashtags to Use on Instagram, Twitter and LinkedIn (2026)', desc: 'Find out the optimal number of hashtags to use on every social media platform to maximize reach and engagement in 2026.', time: 3 },
-    { slug: 'how-to-write-email-subject-lines', title: 'How to Write Email Subject Lines That Get Opened (2026)', desc: 'Learn how to write email subject lines that boost open rates. Includes character limits, proven formulas and A/B testing', time: 3 },
-    { slug: 'how-to-write-twitter-thread', title: 'How to Write a Twitter Thread That Goes Viral (2026 Guide)', desc: 'Learn how to write engaging Twitter threads that get shared and go viral. Includes tips on structure, length, hooks and ', time: 3 },
-    { slug: 'ideal-linkedin-post-length', title: 'The Ideal LinkedIn Post Length for Maximum Engagement (2026 Data)', desc: 'Data-backed guide to LinkedIn post length in 2026. See the optimal character count for posts, articles, headlines and co', time: 3 },
-    { slug: 'instagram-caption-length', title: 'Instagram Caption Length: How Long Should Your Caption Be? (2026)', desc: 'The ideal Instagram caption length for maximum engagement in 2026. Data-backed guide for personal posts, business accoun', time: 3 },
-    { slug: 'reddit-post-length', title: 'Ideal Reddit Post Length for Maximum Upvotes (2026)', desc: 'Reddit posts with 100-300 words get the most upvotes. Titles under 120 characters. Comments: 50-150 words. Complete guid', time: 3 },
-    { slug: 'substack-newsletter-length', title: 'Ideal Substack Newsletter Length (2026 Data)', desc: 'The ideal Substack newsletter is 1,000-2,000 words (5-10 min read). Free vs paid length strategies. Complete guide.', time: 3 },
-    { slug: 'tiktok-caption-length-guide', title: 'TikTok Caption Length: The Complete Guide (2026)', desc: 'Everything about TikTok caption character limits in 2026. How long should your TikTok caption be? Optimal length, hashta', time: 3 },
-    { slug: 'twitter-character-limit-2026', title: 'Twitter/X Character Limit 2026: Everything You Need to Know', desc: 'Twitter/X character limit is 280 for free users, 25,000 for Premium. Complete guide to all Twitter limits in 2026.', time: 3 }
-    ]
-  },
-  {
-    slug: 'writing-craft',
-    name: 'Writing craft & technique',
-    desc: 'Introductions, conclusions, headlines, readability, and writing skills.',
-    icon: '✍️',
-    posts: [
-    { slug: 'how-long-should-a-youtube-script-be', title: 'How Long Should a YouTube Script Be? Word Count by Video Length', desc: 'Convert video length to script word count. A 10-minute YouTube video needs ~1,500 words. Full breakdown for 1-60 minute ', time: 3 },
-    { slug: 'how-to-count-words-online', title: 'How to Count Words Online: The Complete Free Guide (2026)', desc: 'Learn how to count words online for essays, blog posts, social media and more. Discover the best free word counting tool', time: 3 },
-    { slug: 'how-to-write-blog-conclusion', title: 'How to Write a Blog Post Conclusion That Keeps Readers Coming Back', desc: 'Stop ending blog posts with ', time: 3 },
-    { slug: 'how-to-write-blog-introduction', title: 'How to Write a Blog Introduction That Hooks Readers (7 Proven Formulas)', desc: 'Learn 7 proven blog introduction formulas used by top bloggers. Stop losing readers in the first paragraph with these si', time: 3 },
-    { slug: 'how-to-write-for-skimmable-content', title: 'How to Write Skimmable Content That Readers Actually Finish', desc: 'Most readers skim before they read. Learn how to write skimmable content that keeps people on the page and boosts your S', time: 3 },
-    { slug: 'how-to-write-headline-formulas', title: '15 Headline Formulas That Get Clicks (With Examples)', desc: 'Master the 15 most powerful headline formulas used by top copywriters and bloggers. Includes real examples you can swipe', time: 3 },
-    { slug: 'how-to-write-wedding-speech', title: 'How to Write a Wedding Speech: Word Count, Structure, and Tips (2026)', desc: 'Wedding speech guide: Best man 500-800 words, maid of honor 400-700, father of the bride 400-650. Structure templates an', time: 3 }
-    ]
-  },
-  {
-    slug: 'productivity',
-    name: 'Speed & productivity',
-    desc: 'Typing speed, reading speed, writing faster, and productivity tools.',
-    icon: '⚡',
-    posts: [
-    { slug: 'average-reading-speed', title: 'Average Reading Speed: How Fast Do People Read? (2026)', desc: 'Discover the average reading speed for adults, children and speed readers. Learn how to calculate and improve your readi', time: 3 },
-    { slug: 'average-typing-speed', title: 'Average Typing Speed: What is Good WPM in 2026?', desc: 'Find out what the average typing speed is in words per minute and how your speed compares. Includes tips to type faster ', time: 3 },
-    { slug: 'best-ai-writing-tools-2026', title: 'Best AI Writing Tools in 2026: Complete Comparison', desc: 'Compare the top AI writing tools in 2026. ChatGPT, Claude, Gemini, Jasper, and more. Pricing, features, and which is bes', time: 3 },
-    { slug: 'best-free-writing-tools-2026', title: 'Best Free Writing Tools in 2026: The Complete List', desc: 'The 20 best free writing tools in 2026 for word counting, grammar checking, readability, SEO optimization, plagiarism de', time: 3 },
-    { slug: 'how-to-type-faster', title: 'How to Type Faster: 10 Proven Tips to Boost Your Typing Speed (2026)', desc: 'Learn how to type faster with 10 science-backed techniques. From proper hand position to the best free typing tools, thi', time: 3 },
-    { slug: 'how-to-write-faster', title: 'How to Write Faster: 12 Proven Techniques to Double Your Speed', desc: 'Write 2x faster with these 12 science-backed writing speed techniques. From outlining to dictation, these methods work f', time: 3 },
-    { slug: 'words-per-minute-reading-guide', title: 'Words Per Minute Reading: Average Speeds and How to Read Faster (2026)', desc: 'Discover average reading speeds by age and education level. Learn science-backed techniques to read faster without losin', time: 3 }
-    ]
-  }
-]
-
-// Posts not in any category
-const uncategorized = [
-
-]
-
-function PostCard({ slug, title, desc, time, cat }) {
-  const colors = {
-    'word-count-guides': 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
-    'seo-writing': 'bg-blue-500/10 text-blue-400 border-blue-500/20',
-    'social-media': 'bg-purple-500/10 text-purple-400 border-purple-500/20',
-    'writing-craft': 'bg-amber-500/10 text-amber-400 border-amber-500/20',
-    'productivity': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20',
-  };
-  const catNames = {
-    'word-count-guides': 'Word count',
-    'seo-writing': 'SEO',
-    'social-media': 'Social media',
-    'writing-craft': 'Writing',
-    'productivity': 'Productivity',
-  };
-
-  return (
-    <Link href={'/blog/' + slug} className="group block rounded-xl border border-slate-800 bg-slate-900/50 p-5 transition-all hover:border-emerald-500/30 hover:bg-slate-800/50">
-      <div className="flex items-center gap-2 mb-3">
-        {cat && catNames[cat] && (
-          <span className={`text-xs font-medium px-2 py-0.5 rounded-full border ${colors[cat] || 'bg-slate-800 text-slate-400 border-slate-700'}`}>
-            {catNames[cat]}
-          </span>
-        )}
-        <span className="text-xs text-slate-500">{time} min read</span>
-      </div>
-      <h3 className="font-display font-bold text-white group-hover:text-emerald-400 transition-colors mb-2 text-base leading-snug">{title}</h3>
-      {desc && <p className="text-sm text-slate-400 leading-relaxed line-clamp-2">{desc}</p>}
-    </Link>
-  );
-}
-
-export default function BlogPage() {
-  const allPosts = categories.flatMap(c => c.posts.map(p => ({ ...p, cat: c.slug })));
-  const allWithUncat = [...allPosts, ...uncategorized.map(p => ({ ...p, cat: 'general' }))];
-
+export default function Blog() {
   return (
     <>
       <Header />
-      <main className="max-w-5xl mx-auto px-4 py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Writing & SEO Blog</h1>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            {allWithUncat.length} free guides on word counting, content optimization, and writing craft. Backed by data, not fluff.
-          </p>
+      <main style={{maxWidth:1100,margin:'0 auto',padding:'48px 16px 64px'}}>
+
+        {/* Hero */}
+        <div style={{textAlign:'center',marginBottom:48}}>
+          <h1 style={{fontSize:'clamp(28px, 5vw, 48px)',fontWeight:900,color:'#fff',margin:'0 0 12px'}}>Writing, SEO & Language Blog</h1>
+          <p style={{fontSize:16,color:'#94a3b8',margin:'0 0 8px'}}>Expert guides on word counting, content optimization, and writing in 16 languages</p>
+          <div style={{display:'flex',justifyContent:'center',gap:24,marginTop:16,flexWrap:'wrap'}}>
+            <div style={{textAlign:'center'}}>
+              <div style={{fontSize:28,fontWeight:900,color:'#10b981'}}>141</div>
+              <div style={{fontSize:11,color:'#64748b',textTransform:'uppercase',letterSpacing:'0.05em'}}>Free Guides</div>
+            </div>
+            <div style={{textAlign:'center'}}>
+              <div style={{fontSize:28,fontWeight:900,color:'#f0c842'}}>16</div>
+              <div style={{fontSize:11,color:'#64748b',textTransform:'uppercase',letterSpacing:'0.05em'}}>Languages</div>
+            </div>
+            <div style={{textAlign:'center'}}>
+              <div style={{fontSize:28,fontWeight:900,color:'#60a5fa'}}>51</div>
+              <div style={{fontSize:11,color:'#64748b',textTransform:'uppercase',letterSpacing:'0.05em'}}>English Guides</div>
+            </div>
+            <div style={{textAlign:'center'}}>
+              <div style={{fontSize:28,fontWeight:900,color:'#a78bfa'}}>90</div>
+              <div style={{fontSize:11,color:'#64748b',textTransform:'uppercase',letterSpacing:'0.05em'}}>Language Guides</div>
+            </div>
+          </div>
         </div>
 
-        {/* Category quick nav */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {categories.map(cat => (
-            <a key={cat.slug} href={'#' + cat.slug} className="flex items-center gap-1.5 px-4 py-2 rounded-full border border-slate-700 bg-slate-800/50 text-sm text-slate-300 hover:border-emerald-500/40 hover:text-emerald-400 transition-colors">
-              <span>{cat.icon}</span>
-              <span>{cat.name}</span>
-              <span className="text-xs text-slate-500 ml-1">{cat.posts.length}</span>
-            </a>
+        {/* Quick Jump Nav */}
+        <div style={{display:'flex',flexWrap:'wrap',gap:8,justifyContent:'center',marginBottom:40}}>
+          <a href="#english" style={{padding:'6px 16px',borderRadius:8,background:'rgba(16,185,129,0.1)',border:'1px solid rgba(16,185,129,0.25)',color:'#10b981',fontSize:13,fontWeight:700,textDecoration:'none'}}>English ({englishPosts.length})</a>
+          {langSections.map(l => (
+            <a key={l.key} href={'#' + l.key} style={{padding:'6px 16px',borderRadius:8,background:'rgba(255,255,255,0.04)',border:'1px solid rgba(255,255,255,0.08)',color:'#94a3b8',fontSize:13,fontWeight:600,textDecoration:'none'}}>{l.flag} {l.name} ({l.posts.length})</a>
           ))}
         </div>
 
-        <AdUnit slot="3333333333" />
+        {/* English Section */}
+        <section id="english" style={{marginBottom:48}}>
+          <div style={{display:'flex',alignItems:'center',gap:12,marginBottom:20}}>
+            <h2 style={{fontSize:24,fontWeight:800,color:'#10b981',margin:0}}>English Guides</h2>
+            <span style={{fontSize:13,color:'#64748b',background:'rgba(16,185,129,0.1)',padding:'4px 12px',borderRadius:20,fontWeight:700}}>{englishPosts.length} posts</span>
+          </div>
+          <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill, minmax(300px, 1fr))',gap:12}}>
+            {englishPosts.map(post => (
+              <Link key={post.slug} href={'/blog/' + post.slug} style={{display:'block',padding:'16px 20px',borderRadius:14,background:'rgba(255,255,255,0.04)',border:'1px solid rgba(255,255,255,0.08)',textDecoration:'none',transition:'all 0.15s'}}>
+                <div style={{fontSize:14,fontWeight:600,color:'#e2e8f0',lineHeight:1.4}} className="hover-gold">{post.title}</div>
+              </Link>
+            ))}
+          </div>
+        </section>
 
-        {/* Category sections */}
-        {categories.map(cat => (
-          <section key={cat.slug} id={cat.slug} className="mb-16">
-            <div className="flex items-center gap-3 mb-2">
-              <span className="text-2xl">{cat.icon}</span>
-              <h2 className="text-2xl font-display font-bold text-white">{cat.name}</h2>
-              <span className="text-sm text-slate-500">({cat.posts.length} guides)</span>
+        {/* Language Sections */}
+        {langSections.map(lang => (
+          <section key={lang.key} id={lang.key} style={{marginBottom:48}}>
+            <div style={{display:'flex',alignItems:'center',gap:12,marginBottom:16,flexWrap:'wrap'}}>
+              <h2 style={{fontSize:22,fontWeight:800,color:'#f0c842',margin:0}}>{lang.flag} {lang.name} <span style={{color:'#64748b',fontWeight:400,fontSize:14}}>({lang.native})</span></h2>
+              <span style={{fontSize:13,color:'#64748b',background:'rgba(240,200,66,0.1)',padding:'4px 12px',borderRadius:20,fontWeight:700}}>{lang.posts.length} posts</span>
+              <a href={lang.tool} style={{fontSize:12,fontWeight:700,color:'#10b981',textDecoration:'none',padding:'4px 12px',borderRadius:8,background:'rgba(16,185,129,0.08)',border:'1px solid rgba(16,185,129,0.2)'}}>
+                {lang.name} Word Counter →
+              </a>
             </div>
-            <p className="text-slate-400 text-sm mb-6">{cat.desc}</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {cat.posts.map(post => (
-                <PostCard key={post.slug} {...post} cat={cat.slug} />
+            <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill, minmax(300px, 1fr))',gap:10}}>
+              {lang.posts.map(post => (
+                <Link key={post.slug} href={'/blog/' + post.slug} style={{display:'block',padding:'14px 18px',borderRadius:12,background:'rgba(255,255,255,0.03)',border:'1px solid rgba(255,255,255,0.07)',textDecoration:'none',transition:'all 0.15s'}}>
+                  <div style={{fontSize:13,fontWeight:600,color:'#cbd5e1',lineHeight:1.4}} className="hover-gold">{post.title}</div>
+                </Link>
               ))}
             </div>
           </section>
         ))}
 
-        {uncategorized.length > 0 && (
-          <section className="mb-16">
-            <h2 className="text-2xl font-display font-bold text-white mb-6">More guides</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {uncategorized.map(post => (
-                <PostCard key={post.slug} {...post} cat="general" />
-              ))}
-            </div>
-          </section>
-        )}
-
-        <AdUnit slot="4444444444" />
+        {/* Bottom CTA */}
+        <div style={{textAlign:'center',padding:'40px 24px',borderRadius:20,background:'rgba(16,185,129,0.06)',border:'1px solid rgba(16,185,129,0.15)',marginTop:32}}>
+          <h2 style={{fontSize:22,fontWeight:800,color:'#fff',margin:'0 0 8px'}}>Try Our Free Tools</h2>
+          <p style={{fontSize:14,color:'#94a3b8',margin:'0 0 20px'}}>Word counter, character counter, reading time, and more — all free</p>
+          <div style={{display:'flex',gap:10,justifyContent:'center',flexWrap:'wrap'}}>
+            <a href="/word-counter" style={{padding:'10px 24px',borderRadius:12,background:'#10b981',color:'#fff',fontWeight:700,fontSize:14,textDecoration:'none'}}>Word Counter</a>
+            <a href="/character-counter" style={{padding:'10px 24px',borderRadius:12,background:'rgba(255,255,255,0.06)',border:'1px solid rgba(255,255,255,0.1)',color:'#e2e8f0',fontWeight:700,fontSize:14,textDecoration:'none'}}>Character Counter</a>
+            <a href="/reading-time" style={{padding:'10px 24px',borderRadius:12,background:'rgba(255,255,255,0.06)',border:'1px solid rgba(255,255,255,0.1)',color:'#e2e8f0',fontWeight:700,fontSize:14,textDecoration:'none'}}>Reading Time</a>
+            <a href="/readability-checker" style={{padding:'10px 24px',borderRadius:12,background:'rgba(255,255,255,0.06)',border:'1px solid rgba(255,255,255,0.1)',color:'#e2e8f0',fontWeight:700,fontSize:14,textDecoration:'none'}}>Readability</a>
+          </div>
+        </div>
       </main>
+
+      <style>{`
+        .hover-gold:hover { color: #10b981 !important; }
+        a:hover .hover-gold { color: #10b981 !important; }
+        section a:hover { border-color: rgba(16,185,129,0.3) !important; background: rgba(16,185,129,0.04) !important; transform: translateY(-1px); }
+      `}</style>
+
       <Footer />
     </>
-  );
+  )
 }
