@@ -2,11 +2,11 @@ export default function sitemap() {
   const base = 'https://www.wordcountertool.net';
   const today = new Date().toISOString().split('T')[0];
   return [
-    { url: "/blog/category/productivity", priority: 0.6, freq: "weekly" },
-    { url: "/blog/category/writing-craft", priority: 0.6, freq: "weekly" },
-    { url: "/blog/category/social-media", priority: 0.6, freq: "weekly" },
-    { url: "/blog/category/seo-writing", priority: 0.6, freq: "weekly" },
-    { url: "/blog/category/word-count-guides", priority: 0.6, freq: "weekly" },
+    { url: "https://www.wordcountertool.net/blog/category/productivity", priority: 0.6, freq: "weekly" },
+    { url: "https://www.wordcountertool.net/blog/category/writing-craft", priority: 0.6, freq: "weekly" },
+    { url: "https://www.wordcountertool.net/blog/category/social-media", priority: 0.6, freq: "weekly" },
+    { url: "https://www.wordcountertool.net/blog/category/seo-writing", priority: 0.6, freq: "weekly" },
+    { url: "https://www.wordcountertool.net/blog/category/word-count-guides", priority: 0.6, freq: "weekly" },
     { url: base + "/", lastModified: today, changeFrequency: "weekly", priority: 1 },
     { url: base + "/character-counter", lastModified: today, changeFrequency: "weekly", priority: 0.9 },
     { url: base + "/character-limits", lastModified: today, changeFrequency: "weekly", priority: 0.9 },
