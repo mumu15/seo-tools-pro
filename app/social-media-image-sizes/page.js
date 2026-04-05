@@ -4,7 +4,7 @@ import AdUnit from '../components/AdUnit'
 import FaqSchema from '../../components/FaqSchema'
 
 export const metadata = {
-  title: 'Social Media Image Sizes 2026: Every Platform (Complete Cheat Sheet) | WordCounterTool',
+  title: 'Social Media Image Sizes 2026: Every Platform (Complete Cheat Sheet) | WordCounterTool.net',
   description: 'Definitive guide to social media image dimensions in 2026. Profile photos, cover images, post sizes, story dimensions, and ad sizes for every platform.',
   alternates: { canonical: 'https://www.wordcountertool.net/social-media-image-sizes' },
   openGraph: {

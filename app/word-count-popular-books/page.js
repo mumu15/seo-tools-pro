@@ -4,7 +4,7 @@ import AdUnit from '../components/AdUnit'
 import FaqSchema from '../../components/FaqSchema'
 
 export const metadata = {
-  title: 'Word Count of Popular Books: Harry Potter, Lord of the Rings & More (2026) | WordCounterTool',
+  title: 'Word Count of Popular Books: Harry Potter, Lord of the Rings & More (2026) | WordCounterTool.net',
   description: 'Exact word counts for the most popular books and series. Harry Potter, Lord of the Rings, Bible, Game of Thrones, and 50+ more books with page counts and reading times.',
   alternates: { canonical: 'https://www.wordcountertool.net/word-count-popular-books' },
   openGraph: {

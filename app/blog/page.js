@@ -4,7 +4,7 @@ import Link from 'next/link'
 import AdUnit from '../components/AdUnit'
 
 export const metadata = {
-  title: 'Blog — Writing Guides, SEO Tips & Word Count Resources | WordCounterTool',
+  title: 'Blog — Writing Guides, SEO Tips & Word Count Resources | WordCounterTool.net',
   description: 'Expert guides on word count, writing, SEO, readability, and content strategy. 66+ English articles plus guides in 15 languages.',
   alternates: { canonical: 'https://www.wordcountertool.net/blog' },
 }

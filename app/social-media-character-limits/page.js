@@ -4,7 +4,7 @@ import AdUnit from '../components/AdUnit'
 import FaqSchema from '../../components/FaqSchema'
 
 export const metadata = {
-  title: 'Social Media Character Limits 2026: Every Platform (Complete Guide) | WordCounterTool',
+  title: 'Social Media Character Limits 2026: Every Platform (Complete Guide) | WordCounterTool.net',
   description: 'Complete character limits for every social media platform in 2026. Twitter/X, Instagram, Facebook, LinkedIn, TikTok, YouTube, Threads, Snapchat, Pinterest, and more.',
   alternates: { canonical: 'https://www.wordcountertool.net/social-media-character-limits' },
   openGraph: {

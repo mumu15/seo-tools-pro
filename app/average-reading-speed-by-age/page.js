@@ -4,7 +4,7 @@ import AdUnit from '../components/AdUnit'
 import FaqSchema from '../../components/FaqSchema'
 
 export const metadata = {
-  title: 'Average Reading Speed by Age, Grade & Education Level (2026 Data) | WordCounterTool',
+  title: 'Average Reading Speed by Age, Grade & Education Level (2026 Data) | WordCounterTool.net',
   description: 'Reading speed data for every age and education level. Words per minute for children, teens, adults, and speed readers with comprehension benchmarks.',
   alternates: { canonical: 'https://www.wordcountertool.net/average-reading-speed-by-age' },
   openGraph: {

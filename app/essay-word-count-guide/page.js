@@ -4,7 +4,7 @@ import AdUnit from '../components/AdUnit'
 import FaqSchema from '../../components/FaqSchema'
 
 export const metadata = {
-  title: 'Essay Word Count Guide: How Long Should Every Type of Essay Be? (2026) | WordCounterTool',
+  title: 'Essay Word Count Guide: How Long Should Every Type of Essay Be? (2026) | WordCounterTool.net',
   description: 'Definitive word count guide for every type of essay. High school, college, graduate, and professional essays with exact word counts and page lengths.',
   alternates: { canonical: 'https://www.wordcountertool.net/essay-word-count-guide' },
   openGraph: {

@@ -4,7 +4,7 @@ import AdUnit from '../components/AdUnit'
 import FaqSchema from '../../components/FaqSchema'
 
 export const metadata = {
-  title: 'Most Spoken Languages in the World 2026 (By Total & Native Speakers) | WordCounterTool',
+  title: 'Most Spoken Languages in the World 2026 (By Total & Native Speakers) | WordCounterTool.net',
   description: 'The most spoken languages worldwide ranked by total speakers and native speakers. Top 50 languages with country data and writing systems.',
   alternates: { canonical: 'https://www.wordcountertool.net/most-spoken-languages-in-the-world' },
   openGraph: {

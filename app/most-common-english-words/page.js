@@ -4,7 +4,7 @@ import AdUnit from '../components/AdUnit'
 import FaqSchema from '../../components/FaqSchema'
 
 export const metadata = {
-  title: '1,000 Most Common English Words (Ranked by Frequency 2026) | WordCounterTool',
+  title: '1,000 Most Common English Words (Ranked by Frequency 2026) | WordCounterTool.net',
   description: 'The 1,000 most frequently used English words ranked by usage. Includes word frequency data, parts of speech, and learning tips.',
   alternates: { canonical: 'https://www.wordcountertool.net/most-common-english-words' },
   openGraph: {
