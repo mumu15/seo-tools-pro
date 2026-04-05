@@ -1,7 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;700&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+const fs = require('fs');
+const path = require('path');
+
+// Fix: The cleanup script left broken CSS fragments
+// Solution: Rewrite globals.css from scratch with ONLY Tailwind + theme
+
+const globalsPath = path.join(__dirname, 'app', 'globals.css');
+
+// Read current file to extract any Tailwind directives
+const current = fs.readFileSync(globalsPath, 'utf8');
+
+// Extract Tailwind directives
+const tailwindLines = [];
+const lines = current.split('\n');
+for (const line of lines) {
+  if (line.trim().startsWith('@tailwind') || line.trim().startsWith('@import')) {
+    tailwindLines.push(line);
+  }
+}
+
+// If no Tailwind directives found, add defaults
+if (tailwindLines.length === 0) {
+  tailwindLines.push('@tailwind base;');
+  tailwindLines.push('@tailwind components;');
+  tailwindLines.push('@tailwind utilities;');
+}
+
+const cleanGlobals = tailwindLines.join('\n') + `
 
 /* ═══════════════════════════════════════════════════════════════
    MASTER THEME SYSTEM — Light (default) & Dark mode
@@ -205,3 +229,10 @@ ins.adsbygoogle { max-width: 100% !important; overflow: hidden !important; }
   header, footer, .adsbygoogle { display: none !important; }
   body, main { background: white !important; color: black !important; }
 }
+`;
+
+fs.writeFileSync(globalsPath, cleanGlobals, 'utf8');
+console.log('✅ globals.css rewritten from scratch — no syntax errors');
+console.log('');
+console.log('Now run:');
+console.log('  git add . && git commit -m "Fix globals.css syntax error - clean rewrite" && git push origin master');
