@@ -255,6 +255,9 @@ export default function Home() {
           </a>
         </div>
       </div>
+      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Organization","name":"WordCounterTool.net","url":"https://www.wordcountertool.net","description":"Free online word counter and SEO writing tools. 250+ pages of tools, guides, and calculators.","sameAs":[]}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebSite","name":"WordCounterTool.net","url":"https://www.wordcountertool.net","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.wordcountertool.net/word-counter"},"query-input":"required name=search_term_string"}}) }} />
       <Footer />
     </>
   )

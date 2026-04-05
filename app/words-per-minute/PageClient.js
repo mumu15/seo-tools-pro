@@ -251,6 +251,8 @@ export default function WordsPerMinute() {
 
         <AdUnit slot="3248634657" />
 
+      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"SoftwareApplication","name":"Words Per Minute Test - Typing Speed Calculator","description":"Test your typing speed and reading speed in words per minute with live results.","url":"https://www.wordcountertool.net/words-per-minute","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","softwareVersion":"2.0","author":{"@type":"Organization","name":"WordCounterTool.net","url":"https://www.wordcountertool.net"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":"Word counting, character counting, reading time estimation, SEO analysis"}) }} />
       <Footer />
     </>
   )

@@ -197,6 +197,8 @@ export default function HashtagCounter() {
 
         <AdUnit slot="3248634657" />
 
+      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"SoftwareApplication","name":"Hashtag Counter - Count and Optimize Hashtags","description":"Count hashtags for Instagram, Twitter and TikTok. Optimize your hashtag strategy.","url":"https://www.wordcountertool.net/hashtag-counter","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","softwareVersion":"2.0","author":{"@type":"Organization","name":"WordCounterTool.net","url":"https://www.wordcountertool.net"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":"Word counting, character counting, reading time estimation, SEO analysis"}) }} />
       <Footer />
     </>
   )

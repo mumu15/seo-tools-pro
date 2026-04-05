@@ -235,6 +235,8 @@ export default function WordsPerPage() {
 
         <AdUnit slot="3248634657" />
 
+      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"SoftwareApplication","name":"Words Per Page Calculator - Convert Words to Pages","description":"Calculate how many words fit on a page for any font size, type and spacing.","url":"https://www.wordcountertool.net/words-per-page","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","softwareVersion":"2.0","author":{"@type":"Organization","name":"WordCounterTool.net","url":"https://www.wordcountertool.net"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":"Word counting, character counting, reading time estimation, SEO analysis"}) }} />
       <Footer />
     </>
   )

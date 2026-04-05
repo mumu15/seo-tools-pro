@@ -46,7 +46,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
  return (
  <html lang="en">
- <body>
+ 
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <body>
  {children}
  {/* Google Analytics — loads after page is interactive, does NOT block render */}
  <Script

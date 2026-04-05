@@ -55,3 +55,50 @@ footer {
   margin-top: auto;
   flex-shrink: 0;
 }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   CORE WEB VITALS OPTIMIZATION
+   ═══════════════════════════════════════════════════════════════ */
+
+/* CLS: Prevent layout shift from fonts loading */
+@font-face {
+  font-display: swap !important;
+}
+
+/* CLS: Reserve space for ad units so they don't push content */
+ins.adsbygoogle {
+  min-height: 100px;
+  display: block;
+}
+
+/* CLS: Prevent images from causing layout shift */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* LCP: Optimize text rendering */
+h1, h2, h3, p {
+  text-rendering: optimizeSpeed;
+}
+
+/* INP: Smooth interactions */
+button, a, input, textarea, select {
+  touch-action: manipulation;
+}
+
+/* LCP: Reduce paint complexity on large sections */
+main section {
+  contain: layout style;
+}
+
+/* CLS: Stable header height */
+header {
+  min-height: 64px;
+}
+
+/* CLS: Stable footer */
+footer {
+  min-height: 200px;
+}

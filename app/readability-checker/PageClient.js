@@ -219,6 +219,8 @@ export default function ReadabilityChecker() {
 
         <AdUnit slot="3248634657" />
 
+      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"SoftwareApplication","name":"Readability Checker - Flesch-Kincaid Score Calculator","description":"Check your content readability with Flesch-Kincaid, Gunning Fog and more. Get grade level scores.","url":"https://www.wordcountertool.net/readability-checker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","softwareVersion":"2.0","author":{"@type":"Organization","name":"WordCounterTool.net","url":"https://www.wordcountertool.net"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":"Word counting, character counting, reading time estimation, SEO analysis"}) }} />
       <Footer />
     </>
   )

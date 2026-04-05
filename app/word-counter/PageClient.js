@@ -334,7 +334,9 @@ export default function WordCounter() {
 
           </div>
 
-          <Footer />
+          
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"SoftwareApplication","name":"Word Counter - Free Online Word Count Tool","description":"Count words, characters, sentences, paragraphs and reading time instantly. Free, no signup required.","url":"https://www.wordcountertool.net/word-counter","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","softwareVersion":"2.0","author":{"@type":"Organization","name":"WordCounterTool.net","url":"https://www.wordcountertool.net"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":"Word counting, character counting, reading time estimation, SEO analysis"}) }} />
+      <Footer />
     </>
   )
 }

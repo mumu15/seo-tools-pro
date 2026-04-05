@@ -210,6 +210,8 @@ export default function KeywordDensity() {
 
         <AdUnit slot="3248634657" />
 
+      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"SoftwareApplication","name":"Keyword Density Checker - SEO Keyword Analysis Tool","description":"Analyze keyword frequency and density in your content. Optimize for search engines.","url":"https://www.wordcountertool.net/keyword-density","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","softwareVersion":"2.0","author":{"@type":"Organization","name":"WordCounterTool.net","url":"https://www.wordcountertool.net"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":"Word counting, character counting, reading time estimation, SEO analysis"}) }} />
       <Footer />
     </>
   )
